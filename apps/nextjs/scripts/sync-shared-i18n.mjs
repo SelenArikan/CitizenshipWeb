@@ -1,11 +1,32 @@
-import { mkdir, readdir, rm, copyFile } from "fs/promises";
+import { access, mkdir, readdir, rm, copyFile } from "fs/promises";
 import path from "path";
 
 const projectRoot = process.cwd();
 const sourceDir = path.resolve(projectRoot, "../../shared/i18n");
 const targetDir = path.resolve(projectRoot, "src/generated/i18n");
 
+async function exists(targetPath) {
+  try {
+    await access(targetPath);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 async function syncSharedI18n() {
+  const sourceExists = await exists(sourceDir);
+  const targetExists = await exists(targetDir);
+
+  if (!sourceExists) {
+    if (targetExists) {
+      console.log(`Shared i18n directory not found at ${sourceDir}; using committed generated files.`);
+      return;
+    }
+
+    throw new Error(`Neither shared i18n (${sourceDir}) nor generated i18n (${targetDir}) exists.`);
+  }
+
   await rm(targetDir, { recursive: true, force: true });
   await mkdir(targetDir, { recursive: true });
 
