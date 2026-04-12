@@ -1,0 +1,162 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "Who We Are",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title_1": "Your Global Immigration and",
+    "title_2": "Citizenship Future",
+    "desc": "We are by your side with our expert staff in your citizenship, residence permit, and global investment processes.",
+    "btn_primary": "Book an Appointment",
+    "btn_secondary": "Discover the Process"
+  },
+  "stats": [
+    { "num": "15+", "text": "Years Experience" },
+    { "num": "2,100+", "text": "Successful Applications" },
+    { "num": "$850M+", "text": "Managed Investment" },
+    { "num": "25+", "text": "Global Partners" }
+  ],
+  "about": {
+    "tag": "Who We Are?",
+    "title": "Pioneering Vision in International Immigration Law",
+    "p1": "As CitizenshipWeb, we provide cross-border mobility solutions to individuals, families, and institutional investors.",
+    "p2": "Our goal is to make complex legal processes simple, transparent, and hassle-free for you."
+  },
+  "cta": {
+    "title": "Which Program is Best for You?",
+    "desc": "No need to get lost among hundreds of laws and procedures. Chat instantly with our AI assistant.",
+    "btn_ai": "Ask AI Assistant",
+    "btn_lib": "Knowledge Base"
+  },
+  "features": {
+    "title": "Why Choose Us?",
+    "list": [
+      { "title": "Top-Level Privacy and Legal Security", "desc": "All your personal data and application processes are processed with 100% security." },
+      { "title": "Comprehensive Global Partner Network", "desc": "We have an exceptional acceleration network from the UK to the Caribbean." },
+      { "title": "Zero Bureaucratic Time Waste", "desc": "All exhausting bureaucratic procedures are solved on your behalf." }
+    ]
+  },
+  "services": {
+    "tag": "Check Out Our Areas Of Expertise",
+    "title": "Our Services",
+    "view_all": "View All Services",
+    "list": [
+      { "title": "Citizenship By Investment", "desc": "Fast passport acquisition and guidance through global real estate/fund investments." },
+      { "title": "Residence Permits", "desc": "Golden Visa residence rights consultancy for independent investors." },
+      { "title": "Company Incorporation", "desc": "Fast corporate integration and tax optimization on a European and global scale." },
+      { "title": "Family Reunification", "desc": "Integrated application and social rights management for all members of your family." },
+      { "title": "Work Permits", "desc": "Acquisition of qualified work visas for investors and top-level expats." },
+      { "title": "Real Estate Law", "desc": "Title deed allocation and international real estate analysis, valuation processes." }
+    ]
+  },
+  "timeline": {
+    "title": "Prepare for the Future<br/>Step by Step",
+    "desc": "We have divided complex legal immigration processes into smoothly applicable stages.",
+    "steps": ["1. Pre-Consultation", "2. Document Management", "3. Application Submission", "4. Passport Delivery"]
+  },
+  "news_block": {
+    "title": "News and Updates",
+    "more": "Show More"
+  },
+  "faq": {
+    "tag": "Curious Minds",
+    "title": "Frequently Asked Questions",
+    "view_all": "View All Questions",
+    "list": [
+      { "q": "How long does the citizenship by investment process typically take?", "a": "It averages between 3 and 8 months." },
+      { "q": "Can my family members also get passports?", "a": "Yes, most investment programs cover spouses and children under 18." },
+      { "q": "Can investment funds be reclaimed?", "a": "It varies by program, real estate is usually held for 3-5 years." }
+    ]
+  },
+  "newsletter": {
+    "title": "Write Your",
+    "title_bold": "Question",
+    "desc": "Send us your question about citizenship, residence permits, or investment processes. Our expert team will review it and get back to you.",
+    "placeholder": "Write your question in detail...",
+    "btn": "Send Question",
+    "helper": "Your question will be reviewed by our expert team.",
+    "success": "Your question has been received. We will review it shortly.",
+    "error_required": "Please write your question.",
+    "error_generic": "There was a problem sending your question. Please try again.",
+    "sending": "Sending..."
+  },
+  "question_form": {
+    "name_placeholder": "Your name (optional)",
+    "email_placeholder": "Your email address",
+    "public_option_title": "Public",
+    "public_option_desc": "If approved, your question and answer may appear anonymously on the FAQ page.",
+    "private_option_title": "Private reply",
+    "private_option_desc": "Your answer will be sent only to your email address and will not be published on the site.",
+    "error_email_required": "Please enter a valid email address for a private reply."
+  },
+  "questions_page": {
+    "title": "Q&A",
+    "desc": "Browse frequently asked questions or send your question directly to our experts.",
+    "form_title": "Ask an Expert",
+    "form_desc": "With the public option, your question may appear anonymously on the FAQ page. With the private option, the reply is sent only by email.",
+    "no_public_questions_title": "No public community questions yet",
+    "no_public_questions_desc": "The first public question-answer entries will appear here after admin approval."
+  },
+  "chat": {
+    "title": "Live Support",
+    "intro": "Hello! Welcome to live support. We are happy to help you with citizenship, residence permits, or any other questions. Send your message and we will reply as soon as possible.",
+    "placeholder": "Type your message...",
+    "status_online": "Online · Waiting to reply",
+    "status_offline": "Leave a message, we will reply"
+  },
+  "consent_banner": {
+    "badge": "Cookies and Privacy Notice",
+    "title": "We process the data you share while using the site transparently.",
+    "description": "CitizenshipWeb uses required cookies and similar technologies to keep the site running. Personal data you share with us may also be processed for contact requests, live chat conversations, question submissions, and service delivery.",
+    "items": [
+      "Live chat messages may be stored for security, quality control, and follow-up operations.",
+      "Questions submitted with the public option may be anonymized and published on the site after editorial review.",
+      "Contact details and form content may be retained so we can reply to you and manage your consultancy process."
+    ],
+    "accept_label": "I Agree",
+    "link_label": "Detailed privacy notice"
+  },
+  "privacy_page": {
+    "meta_title": "Privacy and Personal Data Notice",
+    "meta_description": "Learn how CitizenshipWeb processes cookies, form submissions, live chat data, and published question content.",
+    "eyebrow": "Privacy and Data Processing",
+    "title": "Information about cookies and personal data",
+    "intro": "CitizenshipWeb uses required cookies and similar technologies for site security and service delivery. Personal data you share with us may also be processed for the purposes described below.",
+    "cards": [
+      {
+        "title": "Categories of data processed",
+        "desc": "We may process your name, email, phone number, question and message content, live chat conversations, device and browser records, IP/log data, and cookie preferences."
+      },
+      {
+        "title": "Why we process data",
+        "desc": "Data may be processed to respond to your requests, manage your consultancy journey, provide live support, manage publication workflows, strengthen security, and maintain operational continuity."
+      },
+      {
+        "title": "Q&A and published content",
+        "desc": "Questions submitted with the public option may be stripped of identifying details and published on the site after editorial review. Private requests are shared only with you."
+      },
+      {
+        "title": "Your rights and contact",
+        "desc": "You can contact us through the contact page to request access, correction, deletion, or objection regarding your personal data."
+      }
+    ],
+    "contact_cta": "Go to contact page"
+  },
+  "footer": {
+    "desc": "Reliable consultancy for your citizenship and immigration goals worldwide.",
+    "col1": "Quick Links",
+    "col2": "Support",
+    "col3": "Follow Us",
+    "home": "Home",
+    "services": "Professional Services",
+    "knowledge": "Knowledge Base",
+    "faq": "Q&A",
+    "contact": "Contact Us",
+    "privacy": "Privacy Policy",
+    "rights": "All Rights Reserved."
+  }
+}

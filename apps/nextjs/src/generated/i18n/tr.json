@@ -1,0 +1,162 @@
+{
+  "lang": "tr",
+  "dir": "ltr",
+  "nav": {
+    "home": "Ana Sayfa",
+    "services": "Hizmetlerimiz",
+    "about": "Biz Kimiz",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "title_1": "Küresel Göçmenlik ve",
+    "title_2": "Vatandaşlık Geleceğiniz",
+    "desc": "Vatandaşlık, oturum izni ve global yatırım süreçlerinde uzman kadromuzla yanınızdayız.",
+    "btn_primary": "Randevu Oluştur",
+    "btn_secondary": "Süreci Keşfet"
+  },
+  "stats": [
+    { "num": "15+", "text": "Yıllık Tecrübe" },
+    { "num": "2,100+", "text": "Başarılı Başvuru" },
+    { "num": "$850M+", "text": "Yönetilen Yatırım" },
+    { "num": "25+", "text": "Global Partner" }
+  ],
+  "about": {
+    "tag": "Biz Kimiz?",
+    "title": "Uluslararası Göçmenlik Hukukunda Öncü Vizyon",
+    "p1": "CitizenshipWeb olarak, 15 yılı aşkın süredir bireylere, ailelere ve kurumsal yatırımcılara sınır ötesi hareketlilik çözümleri sunuyoruz.",
+    "p2": "Hedefimiz, karmaşık yasal süreçleri sizin için basit, şeffaf ve %100 yasal güvenceyle sorunsuz hale getirmektir."
+  },
+  "cta": {
+    "title": "Hangi Program Sizin İçin En Doğrusu?",
+    "desc": "Yüzlerce yasa ve prosedür arasında kaybolmanıza gerek yok. Yapay zeka asistanımızla anında sohbet edin.",
+    "btn_ai": "Yapay Zeka Asistanına Sorun",
+    "btn_lib": "Bilgi Kütüphanesi"
+  },
+  "features": {
+    "title": "Neden Bizi Tercih Etmelisiniz?",
+    "list": [
+      { "title": "Üst Düzey Gizlilik ve Hukuki Güvence", "desc": "Tüm kişisel verileriniz, banka dökümleriniz ve başvuru süreçleriniz %100 güvence ile işlenir." },
+      { "title": "Kapsamlı Global Partner Ağı", "desc": "İngiltere'den Karayiplere uzanan eşsiz bir hızlandırma ağına sahibiz." },
+      { "title": "Sıfır Bürokratik Zaman Kaybı", "desc": "Evrak çevirisi, hukuki inceleme gibi tüm yorucu prosedürler sizin yerinize çözülür." }
+    ]
+  },
+  "services": {
+    "tag": "Uzmanlık Alanlarımıza Göz Atın",
+    "title": "Hizmetlerimiz",
+    "view_all": "Tüm Hizmetleri Gör",
+    "list": [
+      { "title": "Yatırım Yoluyla Vatandaşlık", "desc": "Global emlak/fon yatırımlarıyla hızlı pasaport kazanımı ve yönlendirmesi." },
+      { "title": "Oturum İzinleri", "desc": "Bağımsız yatırımcılar için Altın Vize (Golden Visa) oturum hakları danışmanlığı." },
+      { "title": "Şirket Kurulumu", "desc": "Avrupa ve global ölçekte hızlı kurum entegrasyonu ve vergi optimizasyonu." },
+      { "title": "Aile Birleşimi", "desc": "Ailenizin tüm fertleri için bütünleşik başvuru ve sosyal hak yönetimi." },
+      { "title": "Çalışma İzinleri", "desc": "Yatırımcı ve üst düzey expat'lar için nitelikli çalışma vizeleri alımı." },
+      { "title": "Gayrimenkul Hukuku", "desc": "Tapu tahsisi ve yurtdışı emlak analiz, değerleme ve onaylama süreçleri." }
+    ]
+  },
+  "timeline": {
+    "title": "Adım Adım Geleceğe<br/>Hazırlanın",
+    "desc": "Karmaşık hukuki göçmenlik süreçlerini uygulabilir aşamalara böldük.",
+    "steps": ["1. Ön Danışmanlık", "2. Evrak Yönetimi", "3. Başvuru İletimi", "4. Pasaport Teslimi"]
+  },
+  "news_block": {
+    "title": "Haberler ve Gelişmeler",
+    "more": "Daha Fazla Göster"
+  },
+  "faq": {
+    "tag": "Merak Edilenler",
+    "title": "Sıkça Sorulan Sorular",
+    "view_all": "Tüm Soruları Görüntüle",
+    "list": [
+      { "q": "Yatırım yoluyla vatandaşlık süreci ortalama ne kadar sürer?", "a": "Ortalama 3 ile 8 ay arasında değişmektedir." },
+      { "q": "Aile bireylerim de pasaport alabilir mi?", "a": "Evet, çoğu yatırım programı eşleri ve 18 yaş altı çocukları kapsar." },
+      { "q": "Yatırım fonları geri alınabilir mi?", "a": "Programa göre değişir, gayrimenkuller genelde 3-5 yıl tutulur." }
+    ]
+  },
+  "newsletter": {
+    "title": "Aklınızdaki",
+    "title_bold": "Soruyu Yazın",
+    "desc": "Vatandaşlık, oturum izni veya yatırım süreçleriyle ilgili sorunuzu bize iletin. Uzman ekibimiz inceleyip size dönüş yapsın.",
+    "placeholder": "Sorunuzu detaylı şekilde yazın...",
+    "btn": "Soruyu Gönder",
+    "helper": "Sorunuz uzman ekibimize iletilir ve incelendikten sonra yanıtlanır.",
+    "success": "Sorunuz başarıyla alındı. En kısa sürede inceleyeceğiz.",
+    "error_required": "Lütfen sorunuzu yazın.",
+    "error_generic": "Soru gönderilirken bir hata oluştu. Lütfen tekrar deneyin.",
+    "sending": "Gönderiliyor..."
+  },
+  "question_form": {
+    "name_placeholder": "Adınız (isteğe bağlı)",
+    "email_placeholder": "E-posta adresiniz",
+    "public_option_title": "Herkese açık",
+    "public_option_desc": "Uygun bulunursa soru ve cevap SSS sayfasında anonim olarak yayımlanabilir.",
+    "private_option_title": "Özel cevap",
+    "private_option_desc": "Yanıt yalnızca size e-posta ile gönderilir ve sitede yayımlanmaz.",
+    "error_email_required": "Özel cevap için geçerli bir e-posta adresi girin."
+  },
+  "questions_page": {
+    "title": "Soru-Cevap",
+    "desc": "Sıkça sorulan sorulara göz atabilir veya uzmanlarımıza doğrudan sorunuzu iletebilirsiniz.",
+    "form_title": "Uzmana Sorun",
+    "form_desc": "Public seçenekte soru anonim olarak SSS'de yayımlanabilir. Özel seçenekte yanıt yalnızca e-posta ile size gönderilir.",
+    "no_public_questions_title": "Topluluktan henüz public soru yok",
+    "no_public_questions_desc": "İlk public soru-cevaplar admin onayından sonra burada görünecek."
+  },
+  "chat": {
+    "title": "Canlı Destek",
+    "intro": "Merhaba! Canlı destek ekibimize hoş geldiniz. Vatandaşlık, oturum izni veya diğer konularda size yardımcı olmaktan memnuniyet duyarız. Mesajınızı yazın, en kısa sürede yanıt verelim.",
+    "placeholder": "Mesajınızı yazın...",
+    "status_online": "Çevrimiçi · Yanıt bekliyor",
+    "status_offline": "Mesaj bırakın, yanıt verelim"
+  },
+  "consent_banner": {
+    "badge": "Çerezler ve KVKK Bilgilendirmesi",
+    "title": "Siteyi kullanırken paylaştığınız verileri şeffaf biçimde işliyoruz.",
+    "description": "CitizenshipWeb, site deneyimini sürdürebilmek için zorunlu çerezler ve benzer teknolojiler kullanır. Ayrıca bize ilettiğiniz kişisel veriler; iletişim talepleriniz, canlı destek yazışmalarınız, soru gönderimleriniz ve hizmet sürecinizin yönetimi için işlenebilir.",
+    "items": [
+      "Canlı chat mesajları, güvenlik, kalite ve geri dönüş süreçlerinin yönetimi için kaydedilebilir.",
+      "Public olarak gönderdiğiniz sorular, uygun görülmesi halinde kimlik bilgilerinizden arındırılarak sitede yayımlanabilir.",
+      "İletişim bilgileri ve form içerikleri, sizinle geri iletişim kurmak ve danışmanlık sürecini yürütmek amacıyla saklanabilir."
+    ],
+    "accept_label": "Kabul Ediyorum",
+    "link_label": "Detaylı gizlilik metni"
+  },
+  "privacy_page": {
+    "meta_title": "Gizlilik ve KVKK Bilgilendirmesi",
+    "meta_description": "CitizenshipWeb üzerinde çerezler, formlar, canlı chat ve soru içerikleri kapsamında hangi verilerin nasıl işlendiğini öğrenin.",
+    "eyebrow": "Gizlilik ve Veri İşleme",
+    "title": "Çerezler ve kişisel veriler hakkında bilgilendirme",
+    "intro": "CitizenshipWeb, site güvenliği ve hizmet sunumu için zorunlu çerezler ve benzer teknolojiler kullanır. Ayrıca sizinle kurduğumuz iletişim kapsamında paylaştığınız veriler aşağıdaki amaçlarla işlenebilir.",
+    "cards": [
+      {
+        "title": "İşlenen veri kategorileri",
+        "desc": "Ad, e-posta, telefon, soru ve mesaj içerikleri, canlı destek yazışmaları, cihaz ve tarayıcı kayıtları, IP/log verileri ile çerez tercihleri işlenebilir."
+      },
+      {
+        "title": "İşleme amaçları",
+        "desc": "Taleplerinize dönüş yapmak, danışmanlık sürecini yürütmek, canlı destek sağlamak, yayın akışını yönetmek, güvenliği güçlendirmek ve operasyonel sürekliliği korumak amacıyla veri işlenebilir."
+      },
+      {
+        "title": "Soru-cevap ve yayımlanan içerikler",
+        "desc": "Public olarak iletilen sorular editoryal inceleme sonrasında kimlik bilgilerinizden arındırılarak sitede yayımlanabilir. Private olarak iletilen talepler yalnızca sizinle paylaşılır."
+      },
+      {
+        "title": "Haklarınız ve iletişim",
+        "desc": "KVKK kapsamındaki erişim, düzeltme, silme ve itiraz haklarınıza ilişkin talepleriniz için iletişim sayfamız üzerinden bize ulaşabilirsiniz."
+      }
+    ],
+    "contact_cta": "İletişim sayfasına git"
+  },
+  "footer": {
+    "desc": "Dünya çapında vatandaşlık ve göçmenlik hedefleriniz için güvenilir danışmanlık.",
+    "col1": "Hızlı Linkler",
+    "col2": "Destek",
+    "col3": "Bizi Takip Edin",
+    "home": "Ana Sayfa",
+    "services": "Profesyonel Hizmetler",
+    "knowledge": "Bilgi Bankası",
+    "faq": "Soru-Cevap",
+    "contact": "Bize Ulaşın",
+    "privacy": "Gizlilik Politikası",
+    "rights": "Tüm Hakları Saklıdır."
+  }
+}

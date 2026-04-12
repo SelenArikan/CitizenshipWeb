@@ -9,12 +9,18 @@ export type FaqItem = {
 export async function getQuestionsPageData(lang: string) {
   const dict = await getDictionary(lang);
   const staticFaqs = Array.isArray(dict.faq?.list) ? (dict.faq.list as FaqItem[]) : [];
-  const publicFaqs = getPublicQuestions(lang)
-    .filter((question) => Boolean(question.answer))
-    .map((question) => ({
-      q: question.question,
-      a: question.answer ?? "",
-    }));
+  const publicFaqs = (() => {
+    try {
+      return getPublicQuestions(lang)
+        .filter((question) => Boolean(question.answer))
+        .map((question) => ({
+          q: question.question,
+          a: question.answer ?? "",
+        }));
+    } catch {
+      return [];
+    }
+  })();
 
   return {
     dict,

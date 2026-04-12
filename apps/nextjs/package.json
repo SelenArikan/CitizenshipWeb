@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "node scripts/sync-shared-i18n.mjs",
     "dev": "node server.js",
+    "prebuild": "node scripts/sync-shared-i18n.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"

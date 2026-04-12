@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+
 import { getLocaleDirection, SEO_LOCALES } from "@/lib/seo";
 
 const locales = [...SEO_LOCALES];
@@ -11,7 +12,7 @@ function getLocaleFromPath(pathname: string): string | null {
   ) ?? null;
 }
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   const detectedLocale = getLocaleFromPath(pathname);
@@ -35,4 +36,4 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: ['/((?!api|_next/static|_next/image|assets|favicon.ico|hero.png|news1.png|news2.png|news3.png).*)'],
-}
+};

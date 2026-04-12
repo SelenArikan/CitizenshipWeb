@@ -1,17 +1,21 @@
-import fs from 'fs/promises';
-import path from 'path';
+import ar from "../generated/i18n/ar.json";
+import en from "../generated/i18n/en.json";
+import fa from "../generated/i18n/fa.json";
+import ru from "../generated/i18n/ru.json";
+import tr from "../generated/i18n/tr.json";
 
-const dictionaries: Record<string, () => Promise<any>> = {
-  tr: () => fs.readFile(path.join(process.cwd(), '../../shared/i18n/tr.json'), 'utf-8').then(JSON.parse),
-  en: () => fs.readFile(path.join(process.cwd(), '../../shared/i18n/en.json'), 'utf-8').then(JSON.parse),
-  ru: () => fs.readFile(path.join(process.cwd(), '../../shared/i18n/ru.json'), 'utf-8').then(JSON.parse),
-  ar: () => fs.readFile(path.join(process.cwd(), '../../shared/i18n/ar.json'), 'utf-8').then(JSON.parse),
-  fa: () => fs.readFile(path.join(process.cwd(), '../../shared/i18n/fa.json'), 'utf-8').then(JSON.parse),
-};
+const dictionaries = {
+  tr,
+  en,
+  ru,
+  ar,
+  fa,
+} as const;
 
 export const getDictionary = async (locale: string) => {
-  if (!dictionaries[locale]) {
-    return dictionaries['tr'](); // Fallback
+  if (!Object.prototype.hasOwnProperty.call(dictionaries, locale)) {
+    return dictionaries.tr;
   }
-  return dictionaries[locale]();
+
+  return dictionaries[locale as keyof typeof dictionaries];
 };
