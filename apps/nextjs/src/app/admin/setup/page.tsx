@@ -1,37 +1,87 @@
 import { redirect } from "next/navigation";
 
-import { createAdmin, hasAdmins, hashPassword } from "../../../lib/admin-auth";
+import {
+  createAdmin,
+  findAdminByUsername,
+  getAdminMutationErrorMessage,
+  getSession,
+  hasAdmins,
+  hashPassword,
+  setSession,
+} from "../../../lib/admin-auth";
 import { getSiteConfig } from "../../../lib/content";
+import { getDbRuntimeInfo } from "../../../lib/db";
 import type { AdminRole } from "../../../lib/admin-types";
 
 async function setupAction(formData: FormData) {
   "use server";
 
-  const name     = (formData.get("name") as string)?.trim();
+  const name = (formData.get("name") as string)?.trim();
   const username = (formData.get("username") as string)?.trim();
-  const password = (formData.get("password") as string);
-  const locale   = (formData.get("locale") as string) || null;
-  const role     = (locale ? "lang" : "super") as AdminRole;
+  const password = formData.get("password") as string;
+  const localeValue = (formData.get("locale") as string)?.trim();
+  const locale = localeValue || null;
+  const role = (locale ? "lang" : "super") as AdminRole;
+  const firstRun = !hasAdmins();
+  const session = await getSession();
 
-  if (!name || !username || !password || password.length < 6) return;
-  if (hasAdmins() && role === "super") {
-    redirect("/admin/login");
+  if (!firstRun) {
+    if (!session) {
+      redirect("/admin/login?error=unauthorized");
+    }
+
+    if (session.role !== "super") {
+      redirect("/admin/dashboard");
+    }
   }
 
-  createAdmin({
-    username,
-    name,
-    passwordHash: hashPassword(password),
-    locale:       locale || null,
-    role
-  });
+  if (!name || !username || !password || password.length < 6) {
+    redirect("/admin/setup?error=Ad%2C+kullan%C4%B1c%C4%B1+ad%C4%B1+ve+en+az+6+karakterli+%C5%9Fifre+zorunludur.");
+  }
 
-  redirect("/admin/login");
+  if (findAdminByUsername(username)) {
+    redirect("/admin/setup?error=Bu+kullan%C4%B1c%C4%B1+ad%C4%B1+zaten+kullan%C4%B1l%C4%B1yor.");
+  }
+
+  let admin;
+
+  try {
+    admin = createAdmin({
+      username,
+      name,
+      passwordHash: hashPassword(password),
+      locale,
+      role,
+    });
+  } catch (error) {
+    redirect(`/admin/setup?error=${encodeURIComponent(getAdminMutationErrorMessage(error))}`);
+  }
+
+  if (firstRun) {
+    await setSession(admin);
+    redirect("/admin/dashboard");
+  }
+
+  redirect("/admin/setup?success=Yeni+admin+hesab%C4%B1+eklendi.");
 }
 
-export default async function SetupPage() {
-  const site      = getSiteConfig();
-  const firstRun  = !hasAdmins();
+export default async function SetupPage({
+  searchParams,
+}: {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+}) {
+  const site = getSiteConfig();
+  const firstRun = !hasAdmins();
+  const session = await getSession();
+  const params = await searchParams;
+  const error = typeof params.error === "string" ? params.error : undefined;
+  const success = typeof params.success === "string" ? params.success : undefined;
+  const dbInfo = getDbRuntimeInfo();
+
+  if (!firstRun) {
+    if (!session) redirect("/admin/login?error=unauthorized");
+    if (session.role !== "super") redirect("/admin/dashboard");
+  }
 
   return (
     <div className="admin-auth-page">
@@ -49,6 +99,24 @@ export default async function SetupPage() {
         {firstRun && (
           <div className="admin-success" style={{ marginBottom: "20px" }}>
             Henüz hiç admin hesabı yok. İlk süper admin hesabını oluşturun.
+          </div>
+        )}
+
+        {dbInfo.isEphemeral && (
+          <div className="admin-error" style={{ marginBottom: "20px" }}>
+            Sunucu geçici disk kullanıyor. Vercel üzerinde oluşturulan admin, sohbet ve içerik değişiklikleri kalıcı olmayabilir.
+          </div>
+        )}
+
+        {error && (
+          <div className="admin-error" style={{ marginBottom: "20px" }}>
+            {error}
+          </div>
+        )}
+
+        {success && (
+          <div className="admin-success" style={{ marginBottom: "20px" }}>
+            {success}
           </div>
         )}
 
