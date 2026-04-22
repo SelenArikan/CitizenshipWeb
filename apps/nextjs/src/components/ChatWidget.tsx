@@ -89,6 +89,8 @@ function getOrCreateChatId(lang: string): string {
     return id;
 }
 
+const RTL_LANGS = ['ar', 'fa'];
+
 export default function ChatWidget({
     lang = 'tr',
     copy,
@@ -96,6 +98,7 @@ export default function ChatWidget({
     lang?: string;
     copy: ChatCopy;
 }) {
+    const isRtl = RTL_LANGS.includes(lang);
     const [isOpen, setIsOpen] = useState(false);
     const [messages, setMessages] = useState<ChatMessage[]>([]);
     const [inputText, setInputText] = useState('');
@@ -320,9 +323,16 @@ export default function ChatWidget({
     };
 
     return (
-        <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end pointer-events-none">
+        <div
+            className="fixed bottom-6 z-50 flex flex-col items-end pointer-events-none"
+            style={{ right: '1.5rem', left: 'auto' }}
+            dir="ltr"
+        >
             {/* Chat Window */}
-            <div className={`bg-white rounded-2xl shadow-2xl border border-gray-200 w-80 sm:w-96 mb-4 overflow-hidden flex flex-col transition-all duration-300 transform origin-bottom-right pointer-events-auto ${isOpen ? 'scale-100' : 'scale-0'}`} style={{ height: '500px', maxHeight: '80vh' }}>
+            <div
+                className={`bg-white rounded-2xl shadow-2xl border border-gray-200 w-80 sm:w-96 mb-4 overflow-hidden flex flex-col transition-all duration-300 transform pointer-events-auto ${isOpen ? 'scale-100' : 'scale-0'}`}
+                style={{ height: '500px', maxHeight: '80vh', transformOrigin: 'bottom right' }}
+            >
                 <div className="bg-navy text-white p-4 flex justify-between items-center">
                     <div className="flex items-center gap-3">
                         <div className="w-10 h-10 bg-burgundy rounded-full flex justify-center items-center">
@@ -350,7 +360,7 @@ export default function ChatWidget({
                     <button onClick={() => setIsOpen(false)} className="text-white hover:text-gray-300 border-none bg-transparent text-xl leading-none">&times;</button>
                 </div>
 
-                <div ref={chatViewRef} className="flex-1 p-4 overflow-y-auto flex flex-col gap-3 bg-gray-50">
+                <div ref={chatViewRef} className="flex-1 p-4 overflow-y-auto flex flex-col gap-3 bg-gray-50" dir={isRtl ? 'rtl' : 'ltr'}>
                     {messages.length === 0 && (
                         <div className="flex gap-2 w-full">
                             <div className="w-8 h-8 rounded-full bg-navy text-white flex items-center justify-center text-sm flex-shrink-0">🤖</div>
@@ -373,7 +383,7 @@ export default function ChatWidget({
                 </div>
 
                 <div className="p-3 bg-white border-t border-gray-200">
-                    <form onSubmit={handleSubmit} className="flex items-center gap-2">
+                    <form onSubmit={handleSubmit} className="flex items-center gap-2" dir={isRtl ? 'rtl' : 'ltr'}>
                         <input
                             type="text"
                             value={inputText}
@@ -382,9 +392,17 @@ export default function ChatWidget({
                             required
                             disabled={isLoading}
                             className="flex-1 py-2 px-4 bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-burgundy/50 text-sm"
+                            dir={isRtl ? 'rtl' : 'ltr'}
                         />
                         <button type="submit" disabled={isLoading} className="w-10 h-10 bg-burgundy hover:bg-burgundy-light text-white rounded-full flex justify-center items-center transition-colors">
-                            <svg className="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20"><path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"></path></svg>
+                            <svg
+                                className="w-5 h-5"
+                                style={{ marginLeft: isRtl ? 0 : '0.25rem', marginRight: isRtl ? '0.25rem' : 0, transform: isRtl ? 'scaleX(-1)' : 'none' }}
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                            >
+                                <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+                            </svg>
                         </button>
                     </form>
                 </div>

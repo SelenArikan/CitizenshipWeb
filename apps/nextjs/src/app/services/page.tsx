@@ -1,142 +1,154 @@
 import Link from "next/link";
+import { getDictionary } from "@/lib/dictionary";
+import { INVESTMENTS, getLocalizedField, ServiceIconKey } from "@/lib/investments";
 
-type ServiceIconKey =
-  | "citizenship"
-  | "residence"
-  | "company"
-  | "family"
-  | "work"
-  | "legal";
-
-type Service = {
-  title: string;
-  icon: ServiceIconKey;
-  description: string;
-};
-
+/* ─── Icon ─────────────────────────────────────────────────────── */
 function ServiceIcon({ icon }: { icon: ServiceIconKey }) {
-  const sharedProps = {
-    "aria-hidden": true,
-    className: "h-10 w-10",
+  const p = {
+    "aria-hidden": true as const,
     fill: "none",
     stroke: "currentColor",
     strokeLinecap: "round" as const,
     strokeLinejoin: "round" as const,
-    strokeWidth: 2.5,
+    strokeWidth: 1.8,
     viewBox: "0 0 64 64",
+    className: "h-7 w-7",
   };
-
   switch (icon) {
-    case "citizenship":
-      return (
-        <svg {...sharedProps}>
-          <rect x="16" y="10" width="32" height="44" rx="8" />
-          <path d="M24 18h16" />
-          <circle cx="32" cy="35" r="9" />
-          <path d="M32 26v18" />
-          <path d="M23 35h18" />
-          <path d="M25.5 29.5c2.5 2 10.5 2 13 0" />
-          <path d="M25.5 40.5c2.5-2 10.5-2 13 0" />
-        </svg>
-      );
-    case "residence":
-      return (
-        <svg {...sharedProps}>
-          <rect x="10" y="16" width="44" height="32" rx="8" />
-          <circle cx="24" cy="30" r="5" />
-          <path d="M17 41c1.8-4 5-6 7-6s5.2 2 7 6" />
-          <path d="M36 27h10" />
-          <path d="M36 34h10" />
-          <path d="M36 41h7" />
-        </svg>
-      );
-    case "company":
-      return (
-        <svg {...sharedProps}>
-          <path d="M16 52V18l16-6v40" />
-          <path d="M32 52V24h16v28" />
-          <path d="M22 24h4" />
-          <path d="M22 31h4" />
-          <path d="M22 38h4" />
-          <path d="M38 31h4" />
-          <path d="M38 38h4" />
-          <path d="M28 52v-8h8v8" />
-        </svg>
-      );
-    case "family":
-      return (
-        <svg {...sharedProps}>
-          <circle cx="22" cy="25" r="5" />
-          <circle cx="42" cy="25" r="5" />
-          <circle cx="32" cy="20" r="6" />
-          <path d="M14 44c2-5 5.7-8 8-8 2.3 0 6 3 8 8" />
-          <path d="M34 44c2-5 5.7-8 8-8 2.3 0 6 3 8 8" />
-          <path d="M22 46c2.2-6 6.3-10 10-10s7.8 4 10 10" />
-        </svg>
-      );
-    case "work":
-      return (
-        <svg {...sharedProps}>
-          <rect x="12" y="22" width="40" height="24" rx="6" />
-          <path d="M24 22v-4c0-2.2 1.8-4 4-4h8c2.2 0 4 1.8 4 4v4" />
-          <path d="M12 31h40" />
-          <path d="M28 31v4h8v-4" />
-        </svg>
-      );
-    case "legal":
-      return (
-        <svg {...sharedProps}>
-          <path d="M32 14v36" />
-          <path d="M20 20h24" />
-          <path d="M12 24l8 12 8-12" />
-          <path d="M36 24l8 12 8-12" />
-          <path d="M16 42c1.8 3 4.5 4.5 8 4.5S30.2 45 32 42" />
-          <path d="M32 42c1.8 3 4.5 4.5 8 4.5s6.2-1.5 8-4.5" />
-          <path d="M24 50h16" />
-        </svg>
-      );
+    case "realEstate": return <svg {...p}><path d="M10 54h44" /><path d="M16 54V26l16-12 16 12v28" /><path d="M24 54V36h16v18" /><path d="M24 28h5" /><path d="M35 28h5" /></svg>;
+    case "deposit":   return <svg {...p}><ellipse cx="32" cy="18" rx="16" ry="6" /><path d="M16 18v16c0 3.3 7.2 6 16 6s16-2.7 16-6V18" /><path d="M16 26c0 3.3 7.2 6 16 6s16-2.7 16-6" /><path d="M16 34c0 3.3 7.2 6 16 6s16-2.7 16-6" /></svg>;
+    case "employment":return <svg {...p}><circle cx="22" cy="22" r="6" /><circle cx="42" cy="22" r="6" /><path d="M12 46c2.5-6 6.5-10 10-10s7.5 4 10 10" /><path d="M32 46c2.5-6 6.5-10 10-10s7.5 4 10 10" /><path d="M32 18v12" /><path d="M26 24h12" /></svg>;
+    case "bonds":     return <svg {...p}><rect x="14" y="14" width="36" height="36" rx="8" /><path d="M24 24h16" /><path d="M24 32h10" /><path d="M24 40h16" /><path d="M42 22l4 4-4 4" /></svg>;
+    case "fund":      return <svg {...p}><path d="M18 46c0-11 7-18 14-24 7 6 14 13 14 24" /><path d="M20 46h24" /><path d="M32 22v18" /><path d="M24 32c2 1.5 4.8 2 8 2s6-0.5 8-2" /></svg>;
   }
 }
 
-export default function Services() {
-  const services: Service[] = [
-    { title: "Yatırım Yoluyla Vatandaşlık", icon: "citizenship", description: "Pasaport ve global özgürlük elde etmek için Türkiye ve dünya çapında emlak veya fon yatırımlarınızı yönetiyoruz." },
-    { title: "Oturum İzinleri", icon: "residence", description: "Altın Vize (Golden Visa) ve bağımsız yatırımcılar için uzun dönem oturum hakları danışmanlığı." },
-    { title: "Şirket Kurulumu", icon: "company", description: "Ticari göçmenlik prosedürleri, uluslararası şube açılışı ve global vergi optimizasyonu çözümleri." },
-    { title: "Aile Birleşimi", icon: "family", description: "Ailenizin tüm fertleri için eşzamanlı başvuru yapılarak bütünleşik vatandaşlık/oturum onayı alınması." },
-    { title: "Çalışma İzinleri", icon: "work", description: "Global ölçekte nitelikli çalışan vizesi ve expat yöneticiler için çalışma izni başvuru yönetimi." },
-    { title: "Hukuki Danışmanlık", icon: "legal", description: "Gayrimenkul sözleşmeleri, fon aktarımı incelemeleri ve göçmenlik hukukunda uçtan uca koruma." },
-  ];
+/* ─── Page labels ──────────────────────────────────────────────── */
+const LABELS: Record<string, { heroTag: string; heroTitle: string; heroDesc: string; compareTitle: string; btnLabel: string; thresholdLabel: string; ctaTitle: string; ctaDesc: string; ctaBtn: string; faqBtn: string }> = {
+  tr: { heroTag: "Program Kapsamındaki Seçenekler", heroTitle: "Yatırım Türleri", heroDesc: "Türkiye'de yatırım yoluyla vatandaşlık programında tanınan beş farklı yatırım modelini inceleyin.", compareTitle: "Hızlı Karşılaştırma", btnLabel: "Detayları İncele", thresholdLabel: "Asgari Eşik", ctaTitle: "Dosyanıza Uygun Modeli Birlikte Seçelim", ctaDesc: "Aile yapınız, bütçeniz ve süre beklentinize göre en uygun seçeneği belirlemek için bize ulaşın.", ctaBtn: "İletişime Geç", faqBtn: "SSS'yi İncele" },
+  en: { heroTag: "Investment Options", heroTitle: "Investment Types", heroDesc: "Explore five investment models recognized under Turkey's citizenship by investment program.", compareTitle: "Quick Comparison", btnLabel: "View Details", thresholdLabel: "Min. Threshold", ctaTitle: "Let's Choose the Right Model Together", ctaDesc: "Contact us to determine which option suits your family structure, budget and timeline.", ctaBtn: "Get in Touch", faqBtn: "View FAQ" },
+  ru: { heroTag: "Варианты инвестиций", heroTitle: "Виды инвестиций", heroDesc: "Изучите пять моделей инвестиций, признанных в рамках программы гражданства Турции по инвестициям.", compareTitle: "Быстрое сравнение", btnLabel: "Подробнее", thresholdLabel: "Мин. порог", ctaTitle: "Выберем подходящую модель вместе", ctaDesc: "Свяжитесь с нами, чтобы определить, какой вариант подходит для вашей семьи, бюджета и ожиданий.", ctaBtn: "Связаться", faqBtn: "FAQ" },
+  ar: { heroTag: "خيارات الاستثمار", heroTitle: "أنواع الاستثمار", heroDesc: "اطّلع على النماذج الاستثمارية الخمسة المعتمدة ضمن برنامج الجنسية التركية عبر الاستثمار.", compareTitle: "مقارنة سريعة", btnLabel: "عرض التفاصيل", thresholdLabel: "الحد الأدنى", ctaTitle: "لنختر النموذج المناسب معاً", ctaDesc: "تواصل معنا لتحديد الخيار الأنسب لهيكل أسرتك وميزانيتك وتوقعاتك الزمنية.", ctaBtn: "تواصل معنا", faqBtn: "الأسئلة الشائعة" },
+  fa: { heroTag: "گزینه‌های سرمایه‌گذاری", heroTitle: "انواع سرمایه‌گذاری", heroDesc: "پنج مدل سرمایه‌گذاری به رسمیت شناخته شده در برنامه شهروندی ترکیه از طریق سرمایه‌گذاری را بررسی کنید.", compareTitle: "مقایسه سریع", btnLabel: "مشاهده جزئیات", thresholdLabel: "حداقل آستانه", ctaTitle: "بیایید مدل مناسب را با هم انتخاب کنیم", ctaDesc: "برای تعیین گزینه مناسب با ساختار خانوادگی، بودجه و انتظارات زمانی‌تان با ما تماس بگیرید.", ctaBtn: "تماس با ما", faqBtn: "سؤالات متداول" },
+};
+
+/* ─── Main showcase component ──────────────────────────────────── */
+export default async function ServicesShowcase({ lang = "tr" }: { lang?: string }) {
+  const dict = await getDictionary(lang);
+  const isRtl = (dict as any).dir === "rtl";
+  const sp = (dict as any).services_page ?? {};
+  const fallback = LABELS[lang] ?? LABELS.tr;
+  const lbl = {
+    heroTag:       sp.hero_tag        ?? fallback.heroTag,
+    heroTitle:     sp.hero_title      ?? fallback.heroTitle,
+    heroDesc:      sp.hero_desc       ?? fallback.heroDesc,
+    compareTitle:  sp.compare_title   ?? fallback.compareTitle ?? "Hızlı Karşılaştırma",
+    btnLabel:      sp.btn_label       ?? fallback.btnLabel,
+    thresholdLabel:sp.threshold_label ?? fallback.thresholdLabel,
+    ctaTitle:      sp.cta_title       ?? fallback.ctaTitle,
+    ctaDesc:       sp.cta_desc        ?? fallback.ctaDesc,
+    ctaBtn:        sp.cta_btn         ?? fallback.ctaBtn,
+    faqBtn:        sp.faq_btn         ?? fallback.faqBtn,
+  };
 
   return (
-    <main className="flex flex-col items-center w-full min-h-screen bg-[#f4f6f8]">
-      <div className="w-full bg-navy py-24 text-center text-white px-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">Profesyonel Hizmetlerimiz</h1>
-          <p className="text-xl font-light text-gray-300 max-w-2xl mx-auto">Vatandaşlık ve göçmenlik süreçlerindeki uzmanlığımızla hedeflerinize güvenle ulaşın.</p>
-      </div>
+    <main dir={isRtl ? "rtl" : "ltr"} className="overflow-hidden">
 
-      <section className="w-full max-w-7xl px-8 py-20">
-         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((srv, idx) => (
-                <div key={idx} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition flex flex-col items-start border border-gray-100 group">
-                   <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-[#f4f6f8] text-burgundy transition-all duration-300 group-hover:scale-110 group-hover:text-burgundy-light">
-                      <ServiceIcon icon={srv.icon} />
-                   </div>
-                   <h3 className="text-2xl font-bold text-navy mb-4">{srv.title}</h3>
-                   <p className="text-gray-600 mb-6">{srv.description}</p>
-                   <Link href="/contact" className="mt-auto text-burgundy font-bold flex items-center hover:text-burgundy-light transition">
-                       Detaylı Bilgi Al <span className="ml-2">→</span>
-                   </Link>
-                </div>
-            ))}
-         </div>
+      {/* ══ HERO ══ */}
+      <section className="relative bg-[#0a192f] pb-20 pt-36">
+        <div className="pointer-events-none absolute inset-0 opacity-[0.035]" aria-hidden="true"
+          style={{ backgroundImage: "linear-gradient(rgba(255,255,255,1) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,1) 1px,transparent 1px)", backgroundSize: "60px 60px" }} />
+        <div className="pointer-events-none absolute inset-0" aria-hidden="true"
+          style={{ background: "radial-gradient(ellipse 70% 60% at 80% 50%,rgba(138,28,28,0.2) 0%,transparent 70%)" }} />
+
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#8a1c1c]/40 bg-[#8a1c1c]/10 px-4 py-1 text-xs font-bold uppercase tracking-widest text-[#e05a5a]">
+            <span className="h-1.5 w-1.5 rounded-full bg-[#e05a5a]" />
+            {lbl.heroTag}
+          </span>
+          <h1 className="mt-4 max-w-2xl text-5xl font-extrabold leading-[1.1] text-white sm:text-7xl">
+            {lbl.heroTitle}
+          </h1>
+          <p className="mt-5 max-w-xl text-lg leading-relaxed text-gray-400">{lbl.heroDesc}</p>
+        </div>
       </section>
 
-      {/* CTA section */}
-      <section className="w-full bg-white py-24 border-t border-gray-200 flex flex-col items-center text-center px-4">
-         <h2 className="text-3xl font-bold text-navy mb-6">Size Özel Çözümler İçin Hazırız</h2>
-         <p className="text-gray-600 mb-8 max-w-xl text-lg">Başvurunuzu başlatmak veya durumunuza en uygun yatırım/göçmenlik programını öğrenmek için bizimle iletişime geçin.</p>
-         <Link href="/contact" className="px-10 py-4 bg-burgundy hover:bg-burgundy-light text-white rounded-full font-bold text-lg shadow-lg transition">Hemen Ücretsiz Danış &rarr;</Link>
+      {/* ══ CARDS SHOWCASE ══ */}
+      <section className="bg-[#f8f9fc] py-20 lg:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+            {INVESTMENTS.map((inv, idx) => {
+              const title = getLocalizedField(inv, "title", lang);
+              const shortDesc = getLocalizedField(inv, "shortDesc", lang);
+              const threshold = getLocalizedField(inv, "threshold", lang);
+
+              return (
+                <Link
+                  key={inv.slug}
+                  href={`/${lang}/services/${inv.slug}`}
+                  className="group relative flex flex-col overflow-hidden rounded-3xl bg-white shadow-sm border border-gray-100 transition hover:-translate-y-1 hover:shadow-xl hover:border-[#8a1c1c]/20"
+                >
+                  {/* Top colored strip */}
+                  <div className="h-1.5 w-full bg-gradient-to-r from-[#0a192f] to-[#8a1c1c] transition-all duration-500 group-hover:from-[#8a1c1c] group-hover:to-[#c0392b]" />
+
+                  <div className="flex flex-1 flex-col p-8">
+                    {/* Index + Icon row */}
+                    <div className="mb-6 flex items-start justify-between">
+                      <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#f1f1f4] text-[#0a192f] transition group-hover:bg-[#8a1c1c] group-hover:text-white">
+                        <ServiceIcon icon={inv.icon} />
+                      </div>
+                      <span className="text-3xl font-extrabold text-gray-100 transition group-hover:text-[#8a1c1c]/20">
+                        0{idx + 1}
+                      </span>
+                    </div>
+
+                    {/* Title */}
+                    <h2 className="mb-3 text-xl font-extrabold text-[#0a192f] leading-snug">{title}</h2>
+
+                    {/* Short desc */}
+                    <p className="mb-6 flex-1 text-sm leading-relaxed text-gray-500">{shortDesc}</p>
+
+                    {/* Threshold pill */}
+                    <div className="mb-6 inline-flex w-fit items-center gap-2 rounded-full bg-[#fdf4f4] px-4 py-1.5 text-xs font-bold text-[#8a1c1c]">
+                      <span className="h-1.5 w-1.5 rounded-full bg-[#8a1c1c]" aria-hidden="true" />
+                      {threshold}
+                    </div>
+
+                    {/* CTA row */}
+                    <div className="flex items-center gap-1.5 text-sm font-bold text-[#8a1c1c] transition group-hover:gap-3">
+                      {lbl.btnLabel}
+                      <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={isRtl ? "M15 19l-7-7 7-7" : "M9 5l7 7-7 7"} />
+                      </svg>
+                    </div>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* ══ CTA ══ */}
+      <section className="relative bg-[#0a192f] py-24">
+        <div className="pointer-events-none absolute inset-0 opacity-[0.04]" aria-hidden="true"
+          style={{ backgroundImage: "linear-gradient(rgba(255,255,255,0.8) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.8) 1px,transparent 1px)", backgroundSize: "40px 40px" }} />
+        <div className="pointer-events-none absolute inset-0" aria-hidden="true"
+          style={{ background: "radial-gradient(ellipse 60% 80% at 50% 100%,rgba(138,28,28,0.2) 0%,transparent 70%)" }} />
+        <div className="relative mx-auto max-w-3xl px-4 text-center sm:px-6">
+          <h2 className="text-4xl font-extrabold text-white sm:text-5xl">{lbl.ctaTitle}</h2>
+          <p className="mx-auto mt-5 max-w-xl text-lg text-gray-400">{lbl.ctaDesc}</p>
+          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <Link href={`/${lang}/contact`}
+              className="inline-block rounded-full bg-[#8a1c1c] px-10 py-4 text-base font-bold text-white shadow-lg transition hover:bg-[#a32222] hover:-translate-y-0.5 hover:shadow-[0_8px_30px_rgba(138,28,28,0.4)]">
+              {lbl.ctaBtn}
+            </Link>
+            <Link href={`/${lang}/questions`}
+              className="inline-block rounded-full border border-white/20 px-10 py-4 text-base font-bold text-white transition hover:border-white/40 hover:bg-white/10">
+              {lbl.faqBtn}
+            </Link>
+          </div>
+        </div>
       </section>
     </main>
   );

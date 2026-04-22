@@ -24,7 +24,7 @@ export default async function LangContactPage({
   return (
     <>
       <JsonLd data={buildContactSchemas(lang)} />
-      <ContactPage />
+      <ContactPage lang={lang} />
     </>
   );
 }

@@ -7,116 +7,235 @@ type TimelineDict = {
   steps?: string[];
 };
 
-export default function TimelineSection({ dict }: { dict?: TimelineDict }) {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const progressLineRef = useRef<HTMLDivElement>(null);
-  const nodesRef = useRef<(HTMLDivElement | null)[]>([]);
+export default function TimelineSection({
+  dict,
+  dir = "ltr",
+}: {
+  dict?: TimelineDict;
+  dir?: "ltr" | "rtl";
+}) {
+  const containerRef    = useRef<HTMLDivElement>(null);
+  const hProgressRef    = useRef<HTMLDivElement>(null); // horizontal desktop fill
+  const vProgressRef    = useRef<HTMLDivElement>(null); // vertical   mobile  fill
+  const desktopRefs     = useRef<(HTMLDivElement | null)[]>([]);
+  const mobileRefs      = useRef<(HTMLDivElement | null)[]>([]);
+  const isRtl = dir === "rtl";
 
-  // Default values to prevent errors
   const safeDict: Required<TimelineDict> = {
-    title: "Adım Adım Geleceğe<br/>Hazırlanın",
-    desc: "Karmaşık hukuki göçmenlik süreçlerini uygulabilir aşamalara böldük.",
-    steps: ["1. Ön Danışmanlık", "2. Evrak", "3. Başvuru", "4. Teslim"],
+    title: "Başvurunun Yol Haritası",
+    desc: "Yatırım modelinin belirlenmesinden vatandaşlık kararına kadar ana adımları tek bakışta görün.",
+    steps: [
+      "1. Ön İnceleme",
+      "2. Evrak ve Vekalet",
+      "3. Yatırımın Tamamlanması",
+      "4. Uygunluk Belgesi",
+      "5. İkamet İzni",
+      "6. Vatandaşlık Başvurusu",
+    ],
     ...dict,
   };
+  const steps = safeDict.steps;
 
   useEffect(() => {
     let targetProgress = 0;
     let currentProgress = 0;
-    let animationFrameId: number;
+    let rafId: number;
 
     const handleScroll = () => {
       if (!containerRef.current) return;
       const { top, height } = containerRef.current.getBoundingClientRect();
-      const scrollableDistance = height - window.innerHeight;
-      const scrolledDistance = -top;
-      
-      targetProgress = Math.max(0, Math.min(1, scrolledDistance / scrollableDistance));
+      const scrollable = height - window.innerHeight;
+      const scrolled   = -top;
+      targetProgress = Math.max(0, Math.min(1, scrolled / scrollable));
+    };
+
+    const animateNode = (node: HTMLDivElement | null, isActive: boolean) => {
+      if (!node) return;
+      const circle = node.querySelector<HTMLDivElement>(".node-circle");
+      const texts  = node.querySelectorAll<HTMLElement>(".node-text");
+
+      if (circle) {
+        circle.style.transform       = isActive ? "scale(1.3)"  : "scale(1)";
+        circle.style.backgroundColor = isActive ? "#8a1c1c"     : "#ffffff";
+        circle.style.borderColor     = isActive ? "#8a1c1c"     : "#d1d5db";
+      }
+      texts.forEach((el) => {
+        el.style.opacity    = isActive ? "1"       : "0.35";
+        el.style.color      = isActive ? "#0a192f" : "#9ca3af";
+        el.style.fontWeight = isActive ? "700"     : "400";
+      });
     };
 
     const renderLoop = () => {
-      currentProgress += (targetProgress - currentProgress) * 0.05; // Butter smooth lerp
-      
-      if (progressLineRef.current) {
-        progressLineRef.current.style.width = `${currentProgress * 100}%`;
-      }
+      currentProgress += (targetProgress - currentProgress) * 0.05;
 
-      nodesRef.current.forEach((node, index) => {
-        if (!node) return;
-        const threshold = index / 3;
-        const isActive = currentProgress >= threshold - 0.05;
-        
-        const circle = node.querySelector('.node-circle') as HTMLDivElement;
-        const text = node.querySelector('.node-text') as HTMLHeadingElement;
-        
-        if (circle && text) {
-           if (isActive) {
-             circle.style.transform = 'scale(1.3)';
-             circle.style.backgroundColor = '#8a1c1c';
-             circle.style.borderColor = '#8a1c1c';
-             text.style.opacity = '1';
-             text.style.transform = 'translateY(0)';
-             text.style.color = '#0a192f';
-           } else {
-             circle.style.transform = 'scale(1)';
-             circle.style.backgroundColor = '#ffffff';
-             circle.style.borderColor = '#d1d5db';
-             text.style.opacity = '0';
-             text.style.transform = 'translateY(1rem)';
-             text.style.color = '#9ca3af';
-           }
-        }
+      // Progress bars
+      if (hProgressRef.current) hProgressRef.current.style.width  = `${currentProgress * 100}%`;
+      if (vProgressRef.current) vProgressRef.current.style.height = `${currentProgress * 100}%`;
+
+      // Animate both desktop and mobile nodes
+      steps.forEach((_, index) => {
+        const visualIndex = isRtl ? steps.length - 1 - index : index;
+        const threshold   = steps.length > 1 ? visualIndex / (steps.length - 1) : 0;
+        const isActive    = currentProgress >= threshold - 0.05;
+
+        animateNode(desktopRefs.current[index], isActive);
+        animateNode(mobileRefs.current[index],  isActive);
       });
-      
-      animationFrameId = requestAnimationFrame(renderLoop);
+
+      rafId = requestAnimationFrame(renderLoop);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
-    animationFrameId = requestAnimationFrame(renderLoop);
-    
+    rafId = requestAnimationFrame(renderLoop);
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      cancelAnimationFrame(animationFrameId);
+      cancelAnimationFrame(rafId);
     };
-  }, []);
+  }, [steps.length, dir]);
 
-  const steps = safeDict.steps;
+  /* ─── shared circle style ──────────────────────────────────────── */
+  const circleStyle: React.CSSProperties = {
+    borderColor: "#d1d5db",
+    transition: "transform 0.4s cubic-bezier(0.34,1.56,0.64,1), background-color 0.4s, border-color 0.4s",
+  };
+  const textStyle: React.CSSProperties = {
+    opacity: 0.35,
+    color: "#9ca3af",
+    transition: "opacity 0.4s ease, color 0.4s ease",
+  };
 
   return (
-    <section ref={containerRef} className="w-full h-[250vh] bg-white text-navy border-t border-gray-100 relative">
-      <div className="sticky top-0 w-full h-screen flex flex-col items-center justify-center px-8 overflow-hidden">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center" dangerouslySetInnerHTML={{ __html: safeDict.title }}></h2>
-        <p className="text-gray-500 mb-20 max-w-2xl text-lg text-center">{safeDict.desc}</p>
-        
-        <div className="relative w-full max-w-4xl flex items-center justify-between">
-          <div className="absolute left-0 top-1/2 w-full h-1 -translate-y-1/2 bg-gray-200 rounded-full"></div>
-          
-          <div 
-            ref={progressLineRef}
-            className="absolute top-1/2 h-1 -translate-y-1/2 bg-[#8a1c1c] rounded-full timeline-progress-line"
-            style={{ width: '0%', willChange: 'width' }}
-          ></div>
+    <section
+      ref={containerRef}
+      className="relative w-full border-t border-gray-100 bg-white text-navy"
+      style={{ height: "260vh" }}
+      dir={dir}
+    >
+      <div className="sticky top-0 flex h-screen w-full flex-col items-center justify-center overflow-hidden px-4 sm:px-8">
+
+        {/* Title */}
+        <h2
+          className="mb-3 text-center text-2xl font-bold sm:text-4xl md:text-5xl"
+          dangerouslySetInnerHTML={{ __html: safeDict.title }}
+        />
+        <p className="mb-10 max-w-2xl text-center text-sm text-gray-500 sm:mb-16 sm:text-lg">
+          {safeDict.desc}
+        </p>
+
+        {/* ══════════════════════════════════════════════════════════
+            DESKTOP  —  horizontal alternating   (sm and above)
+        ══════════════════════════════════════════════════════════ */}
+        <div className="relative hidden w-full max-w-5xl px-2 sm:block">
+          {/* BG track */}
+          <div
+            className="absolute top-1/2 h-[3px] w-full -translate-y-1/2 rounded-full bg-gray-200"
+            style={{ left: 0 }}
+          />
+          {/* Fill */}
+          <div
+            ref={hProgressRef}
+            className="absolute top-1/2 h-[3px] -translate-y-1/2 rounded-full bg-[#8a1c1c]"
+            style={{ width: "0%", willChange: "width", ...(isRtl ? { right: 0 } : { left: 0 }) }}
+          />
+          {/* Nodes */}
+          <div
+            className="relative flex items-center justify-between"
+            style={{ flexDirection: isRtl ? "row-reverse" : "row" }}
+          >
+            {steps.map((step, index) => {
+              const isAbove = index % 2 === 0;
+              return (
+                <div
+                  key={`d-${index}`}
+                  ref={(el) => { desktopRefs.current[index] = el; }}
+                  className="relative z-10 flex flex-col items-center"
+                  style={{ flex: "0 0 auto" }}
+                >
+                  {/* Label above */}
+                  <div
+                    className="node-text mb-3 w-24 text-center text-xs font-semibold leading-tight sm:w-28 sm:text-sm"
+                    style={{
+                      ...textStyle,
+                      minHeight: "2.5rem",
+                      display: "flex",
+                      alignItems: "flex-end",
+                      justifyContent: "center",
+                      visibility: isAbove ? "visible" : "hidden",
+                    }}
+                  >
+                    {isAbove ? step : ""}
+                  </div>
+
+                  {/* Circle */}
+                  <div
+                    className="node-circle h-5 w-5 rounded-full border-4 bg-white shadow-md sm:h-7 sm:w-7"
+                    style={circleStyle}
+                  />
+
+                  {/* Label below */}
+                  <div
+                    className="node-text mt-3 w-24 text-center text-xs font-semibold leading-tight sm:w-28 sm:text-sm"
+                    style={{
+                      ...textStyle,
+                      minHeight: "2.5rem",
+                      display: "flex",
+                      alignItems: "flex-start",
+                      justifyContent: "center",
+                      visibility: !isAbove ? "visible" : "hidden",
+                    }}
+                  >
+                    {!isAbove ? step : ""}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* ══════════════════════════════════════════════════════════
+            MOBILE  —  vertical list               (below sm)
+        ══════════════════════════════════════════════════════════ */}
+        <div className="relative flex w-full max-w-xs flex-col sm:hidden">
+          {/* Vertical BG track */}
+          <div
+            className="absolute bottom-0 top-0 w-[3px] rounded-full bg-gray-200"
+            style={isRtl ? { right: "0.75rem" } : { left: "0.75rem" }}
+          />
+          {/* Vertical fill */}
+          <div
+            ref={vProgressRef}
+            className="absolute top-0 w-[3px] rounded-full bg-[#8a1c1c]"
+            style={{
+              height: "0%",
+              willChange: "height",
+              ...(isRtl ? { right: "0.75rem" } : { left: "0.75rem" }),
+            }}
+          />
 
           {steps.map((step, index) => (
-              <div 
-                key={index} 
-                ref={el => { nodesRef.current[index] = el; }}
-                className="relative z-10 flex flex-col items-center"
+            <div
+              key={`m-${index}`}
+              ref={(el) => { mobileRefs.current[index] = el; }}
+              className={`relative flex items-center gap-4 py-3 ${isRtl ? "flex-row-reverse" : ""}`}
+            >
+              {/* Circle */}
+              <div
+                className="node-circle relative z-10 h-6 w-6 shrink-0 rounded-full border-4 bg-white shadow-md"
+                style={circleStyle}
+              />
+              {/* Label */}
+              <span
+                className="node-text text-sm font-semibold leading-snug"
+                style={{ ...textStyle, textAlign: isRtl ? "right" : "left" }}
               >
-                 <div 
-                   className="node-circle w-6 h-6 md:w-8 md:h-8 rounded-full border-4 shadow bg-white border-gray-300 scale-100"
-                   style={{ transition: 'transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.4s, border-color 0.4s' }}
-                 ></div>
-                 <h4 
-                   className="node-text mt-8 md:mt-10 font-bold absolute text-center w-32 whitespace-nowrap text-gray-400 opacity-0 translate-y-4"
-                   style={{ transition: 'all 0.5s cubic-bezier(0.22, 1, 0.36, 1)' }}
-                 >
-                   {step}
-                 </h4>
-              </div>
+                {step}
+              </span>
+            </div>
           ))}
         </div>
+
       </div>
     </section>
   );

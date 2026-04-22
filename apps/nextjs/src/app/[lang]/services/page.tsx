@@ -6,12 +6,26 @@ import { buildPageMetadata } from "@/lib/seo";
 import { buildServicesSchemas } from "@/lib/structured-data";
 
 const services = [
-  { title: "Yatırım Yoluyla Vatandaşlık", description: "Pasaport ve global özgürlük elde etmek için Türkiye ve dünya çapında emlak veya fon yatırımlarınızı yönetiyoruz." },
-  { title: "Oturum İzinleri", description: "Altın Vize (Golden Visa) ve bağımsız yatırımcılar için uzun dönem oturum hakları danışmanlığı." },
-  { title: "Şirket Kurulumu", description: "Ticari göçmenlik prosedürleri, uluslararası şube açılışı ve global vergi optimizasyonu çözümleri." },
-  { title: "Aile Birleşimi", description: "Ailenizin tüm fertleri için eşzamanlı başvuru yapılarak bütünleşik vatandaşlık/oturum onayı alınması." },
-  { title: "Çalışma İzinleri", description: "Global ölçekte nitelikli çalışan vizesi ve expat yöneticiler için çalışma izni başvuru yönetimi." },
-  { title: "Hukuki Danışmanlık", description: "Gayrimenkul sözleşmeleri, fon aktarımı incelemeleri ve göçmenlik hukukunda uçtan uca koruma." },
+  {
+    title: "Gayrimenkul Yatırımı",
+    description: "En az 400.000 USD tutarında taşınmaz alımı ve üç yıl satılamaz şerhi ile vatandaşlık başvurusu yapılabilir.",
+  },
+  {
+    title: "Mevduat Hesabı",
+    description: "Türk bankasında en az 500.000 USD karşılığı tutarın üç yıl tutulması ile uygunluk belgesi alınabilir.",
+  },
+  {
+    title: "İstihdam Oluşturmak",
+    description: "Türkiye'de en az 50 kişilik istihdam oluşturan yatırımcılar resmi inceleme sonrasında başvuru hakkı elde edebilir.",
+  },
+  {
+    title: "Devlet Borçlanma Araçları",
+    description: "En az 500.000 USD veya karşılığı tutarın devlet borçlanma araçlarına yatırılması ve üç yıl korunması mümkündür.",
+  },
+  {
+    title: "Gayrimenkul Yatırım Fonu",
+    description: "En az 500.000 USD değerinde fon katılma paylarının en az üç yıl tutulması ile yatırım modeli kurulabilir.",
+  },
 ];
 
 export async function generateMetadata({
@@ -33,7 +47,7 @@ export default async function LangServicesPage({
   return (
     <>
       <JsonLd data={buildServicesSchemas(lang, services)} />
-      <ServicesPage />
+      <ServicesPage lang={lang} />
     </>
   );
 }

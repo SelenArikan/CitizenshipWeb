@@ -4,7 +4,18 @@
   "nav": {
     "home": "Home",
     "services": "Services",
-    "about": "Who We Are",
+    "about": "About Us",
+    "about_company": "Who We Are",
+    "about_team": "Our Team",
+    "investment": "Investment Types",
+    "investment_real_estate": "Real Estate Investment",
+    "investment_deposit": "Bank Deposit",
+    "investment_employment": "Employment Creation",
+    "investment_bonds": "Government Bonds",
+    "investment_fund": "Real Estate Investment Fund",
+    "benefits": "Benefits of Turkish Citizenship",
+    "faq": "FAQ",
+    "knowledge": "Knowledge Base",
     "contact": "Contact"
   },
   "hero": {
@@ -24,7 +35,78 @@
     "tag": "Who We Are?",
     "title": "Pioneering Vision in International Immigration Law",
     "p1": "As CitizenshipWeb, we provide cross-border mobility solutions to individuals, families, and institutional investors.",
-    "p2": "Our goal is to make complex legal processes simple, transparent, and hassle-free for you."
+    "p2": "Our goal is to make complex legal processes simple, transparent, and hassle-free for you.",
+    "values": ["Transparency", "Reliability", "Teamwork"]
+  },
+  "about_page": {
+    "hero_tag": "About Us",
+    "hero_title": "Who We Are",
+    "story_tag": "Our Story",
+    "story_title": "Trusted Consultancy Since 2013",
+    "story_p1": "CitizenshipWeb was founded in 2013 and has grown steadily to become one of Turkey's most respected consultancy firms specializing in citizenship law.",
+    "story_p2": "Our office is organized into specialized departments aligned with each phase of the citizenship process, allowing us to manage our clients' applications efficiently and precisely.",
+    "story_p3": "With a dynamic, young, and solution-oriented team, we respond swiftly to every client need and deliver a seamless, world-class service experience.",
+    "values_tag": "Our Values",
+    "values_title": "Our Working Philosophy",
+    "values": [
+      {
+        "title": "Transparency",
+        "desc": "Maintaining strong and healthy communication with our clients is paramount. We keep clients informed of every development during citizenship and other processes, ensuring a continuous flow of information."
+      },
+      {
+        "title": "Reliability",
+        "desc": "Trust forms the cornerstone of our collaboration with clients. We support them throughout the citizenship process and carry out every necessary action on their behalf."
+      },
+      {
+        "title": "Teamwork",
+        "desc": "Our office operates on a system of specialization by field. Each team member is an expert in their domain, enabling meticulous execution of every procedure."
+      }
+    ],
+    "stats": [
+      { "num": "2013", "label": "Founded" },
+      { "num": "24+", "label": "Expert Staff" },
+      { "num": "1000+", "label": "Completed Files" },
+      { "num": "50+", "label": "Global Network" }
+    ],
+    "team_tag": "Our Team",
+    "team_title": "Expert Professionals at Every Step",
+    "cta_title": "Start Your File With Us",
+    "cta_desc": "Our expert advisors are by your side at every step of your citizenship journey.",
+    "cta_btn": "Free Initial Assessment"
+  },
+  "services_page": {
+    "hero_tag": "Investment Options",
+    "hero_title": "Investment Types",
+    "hero_desc": "Explore five investment models recognized under Turkey's Citizenship by Investment Program.",
+    "compare_title": "Quick Comparison",
+    "btn_label": "View Details",
+    "threshold_label": "Min. Threshold",
+    "cta_title": "Let's Choose the Right Model Together",
+    "cta_desc": "Contact us to determine which option suits your family structure, budget and timeline expectations.",
+    "cta_btn": "Get in Touch",
+    "faq_btn": "View FAQ",
+    "detail_back": "Investment Types",
+    "detail_others": "Other Investment Options",
+    "detail_min": "Min. Threshold",
+    "detail_authority": "Competent Authority",
+    "detail_next_title": "Next Step",
+    "detail_next_desc": "After choosing the right investment model, we plan your documentation, eligibility certificate, and residence permit steps together.",
+    "detail_cta_title": "Ready to Start Your File?",
+    "detail_cta_btn": "Free Consultation",
+    "detail_faq_btn": "View FAQ"
+  },
+  "team": {
+    "tag": "Our Team",
+    "title": "Coordinated expertise for every step of the process",
+    "view_all": "Explore All Benefits",
+    "list": [
+      { "title": "Legal Review", "desc": "We plan family structure, power of attorney, birth certificates and official document flows on a file-by-file basis." },
+      { "title": "Investment Coordination", "desc": "We align real estate, banking, fund and bond transactions in compliance with official procedures." },
+      { "title": "Title Deed & Banking", "desc": "We manage currency purchase, blocking, no-sale annotation and eligibility certificate steps in an integrated manner." },
+      { "title": "Translation & Documentation", "desc": "We handle multilingual document preparation, translation, notary and apostille flows according to each file's timeline." },
+      { "title": "Residence & Citizenship Application", "desc": "We follow the investor residence permit and subsequent citizenship application within a single timeline." },
+      { "title": "Client Communication", "desc": "We provide transparent updates throughout the process and plan next steps in advance." }
+    ]
   },
   "cta": {
     "title": "Which Program is Best for You?",
@@ -54,9 +136,16 @@
     ]
   },
   "timeline": {
-    "title": "Prepare for the Future<br/>Step by Step",
-    "desc": "We have divided complex legal immigration processes into smoothly applicable stages.",
-    "steps": ["1. Pre-Consultation", "2. Document Management", "3. Application Submission", "4. Passport Delivery"]
+    "title": "Your Application Roadmap",
+    "desc": "From selecting your investment model to receiving your passport — every key stage at a glance.",
+    "steps": [
+      "1. Initial Review",
+      "2. Documents & Power of Attorney",
+      "3. Investment Completion",
+      "4. Eligibility Certificate",
+      "5. Residence Permit",
+      "6. Citizenship Application"
+    ]
   },
   "news_block": {
     "title": "News and Updates",
@@ -150,13 +239,22 @@
     "desc": "Reliable consultancy for your citizenship and immigration goals worldwide.",
     "col1": "Quick Links",
     "col2": "Support",
-    "col3": "Follow Us",
+    "col3": "Contact",
     "home": "Home",
     "services": "Professional Services",
     "knowledge": "Knowledge Base",
     "faq": "Q&A",
     "contact": "Contact Us",
     "privacy": "Privacy Policy",
+    "location_title": "Office Location",
+    "address_line_1": "Seyitnizam Mah. Mevlana Cad. No:81/83 Kat:2",
+    "address_line_2": "GINZA PLAZA, 34015 Zeytinburnu / Istanbul",
+    "phone_label": "Phone",
+    "email_label": "Email",
+    "hours_title": "Working Hours",
+    "hours_weekdays": "Monday - Friday: 08:30 - 18:00",
+    "hours_weekend": "Saturday - Sunday: Closed",
+    "map_button": "Open in Google Maps",
     "rights": "All Rights Reserved."
   }
 }

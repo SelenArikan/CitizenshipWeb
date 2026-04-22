@@ -18,7 +18,7 @@ const OG_LOCALES: Record<SeoLocale, string> = {
   tr: "tr_TR",
   en: "en_US",
   ru: "ru_RU",
-  ar: "ar_AR",
+  ar: "ar_SA",
   fa: "fa_IR",
 };
 
@@ -26,14 +26,14 @@ const PAGE_SEO: Record<PageKey, PageSeoEntry> = {
   home: {
     path: "",
     titles: {
-      tr: "Uluslararası Vatandaşlık ve Göçmenlik Danışmanlığı",
+      tr: "Türkiye Yatırım Yoluyla Vatandaşlık Danışmanlığı",
       en: "International Citizenship and Immigration Consultancy",
       ru: "Международный консалтинг по гражданству и иммиграции",
       ar: "استشارات دولية في المواطنة والهجرة",
       fa: "مشاوره بین المللی شهروندی و مهاجرت",
     },
     descriptions: {
-      tr: "Vatandaşlık, oturum izni ve göçmenlik süreçlerinizde uzman kadromuzla yanınızdayız. Dünya çapında güvenilir danışmanlık hizmetleri için ücretsiz ön görüşme ayarlayın.",
+      tr: "Türkiye'de yatırım yoluyla vatandaşlık programı için gayrimenkul, mevduat, istihdam, fon ve başvuru süreçlerini uzman rehberlikle planlayın.",
       en: "Our expert team supports your citizenship, residence permit, and immigration journey. Book a free initial consultation for reliable global guidance.",
       ru: "Наша команда сопровождает процессы гражданства, ВНЖ и иммиграции. Запишитесь на бесплатную первичную консультацию для надежного международного сопровождения.",
       ar: "فريقنا المتخصص يرافقك في مسارات الجنسية والإقامة والهجرة. احجز استشارة أولية مجانية للحصول على دعم دولي موثوق.",
@@ -43,14 +43,14 @@ const PAGE_SEO: Record<PageKey, PageSeoEntry> = {
   services: {
     path: "/services",
     titles: {
-      tr: "Profesyonel Vatandaşlık ve Oturum İzni Hizmetlerimiz",
+      tr: "Türkiye Vatandaşlığı İçin Yatırım Türleri",
       en: "Professional Citizenship and Residence Permit Services",
       ru: "Профессиональные услуги по гражданству и ВНЖ",
       ar: "خدماتنا الاحترافية في الجنسية وتصاريح الإقامة",
       fa: "خدمات حرفه ای شهروندی و اجازه اقامت ما",
     },
     descriptions: {
-      tr: "Yatırım yoluyla vatandaşlık, global çalışma izinleri ve aile birleşimi dahil tüm göçmenlik hizmetlerimizi inceleyin. Profesyonel rehberlikle hedefinize ulaşın.",
+      tr: "Gayrimenkul yatırımı, banka mevduatı, istihdam, devlet borçlanma araçları ve gayrimenkul yatırım fonu seçeneklerini tek sayfada karşılaştırın.",
       en: "Explore our immigration services including citizenship by investment, global work permits, and family reunification. Reach your goal with professional guidance.",
       ru: "Изучите наши иммиграционные услуги: гражданство за инвестиции, международные разрешения на работу и воссоединение семьи. Двигайтесь к цели с профессиональной поддержкой.",
       ar: "تعرّف على خدماتنا في الهجرة، بما في ذلك الجنسية عبر الاستثمار، وتصاريح العمل الدولية، ولمّ شمل الأسرة. حقق هدفك بإرشاد احترافي.",
@@ -60,14 +60,14 @@ const PAGE_SEO: Record<PageKey, PageSeoEntry> = {
   citizenship: {
     path: "/citizenship",
     titles: {
-      tr: "Adım Adım Vatandaşlık Başvuru Süreci",
+      tr: "Türk Vatandaşı Olmanın Avantajları",
       en: "Step-by-Step Citizenship Application Process",
       ru: "Пошаговый процесс подачи на гражданство",
       ar: "خطوات التقديم على الجنسية خطوة بخطوة",
       fa: "فرآیند گام به گام درخواست شهروندی",
     },
     descriptions: {
-      tr: "Vatandaşlık başvuru sürecinin tüm adımlarını, gerekli hukuki belgeleri ve uzman tavsiyelerini öğrenin. Sürecinizi hızlandıracak ve güçlendirecek ipuçlarını keşfedin.",
+      tr: "Türk vatandaşlığının seyahat, sağlık, eğitim, çoklu vatandaşlık ve yatırımcı perspektifinden sunduğu temel avantajları inceleyin.",
       en: "Learn every stage of the citizenship application process, the required legal documents, and expert guidance. Discover tips that will accelerate and strengthen your case.",
       ru: "Узнайте все этапы подачи на гражданство, необходимые юридические документы и рекомендации экспертов. Откройте советы, которые ускорят и усилят ваше досье.",
       ar: "تعرّف على جميع مراحل طلب الجنسية، والوثائق القانونية المطلوبة، وإرشادات الخبراء. اكتشف نصائح تساعد على تسريع وتقوية ملفك.",
@@ -111,14 +111,14 @@ const PAGE_SEO: Record<PageKey, PageSeoEntry> = {
   questions: {
     path: "/questions",
     titles: {
-      tr: "Vatandaşlık Süreçleri Hakkında Sıkça Sorulan Sorular",
+      tr: "Türkiye Vatandaşlığı Sıkça Sorulan Sorular",
       en: "Frequently Asked Questions About Citizenship Processes",
       ru: "Часто задаваемые вопросы о процессах получения гражданства",
       ar: "الأسئلة الشائعة حول إجراءات الجنسية",
       fa: "پرسش های متداول درباره فرآیندهای شهروندی",
     },
     descriptions: {
-      tr: "Göçmenlik ve oturum izni süreçleri hakkında aklınıza takılan soruların referans yanıtlarını bulun veya uzman danışmanlarımıza doğrudan sorunuzu iletin.",
+      tr: "Türkiye yatırım yoluyla vatandaşlık programı hakkında kimlerin başvurabileceği, yatırım eşikleri ve süreç detaylarıyla ilgili sık sorulan soruları inceleyin.",
       en: "Find reference answers to your immigration and residence permit questions, or send your question directly to our expert advisors.",
       ru: "Найдите ответы на вопросы об иммиграции и ВНЖ или направьте свой вопрос напрямую нашим экспертам.",
       ar: "اعثر على إجابات مرجعية لأسئلتك حول الهجرة والإقامة، أو أرسل سؤالك مباشرة إلى خبرائنا.",
@@ -128,14 +128,14 @@ const PAGE_SEO: Record<PageKey, PageSeoEntry> = {
   contact: {
     path: "/contact",
     titles: {
-      tr: "Küresel Göçmenlik Hedefleriniz İçin Bize Ulaşın",
+      tr: "Türkiye Vatandaşlık Programı İçin Bize Ulaşın",
       en: "Contact Us for Your Global Immigration Goals",
       ru: "Свяжитесь с нами для ваших международных иммиграционных целей",
       ar: "تواصل معنا لتحقيق أهدافك في الهجرة العالمية",
       fa: "برای اهداف مهاجرتی بین المللی خود با ما تماس بگیرید",
     },
     descriptions: {
-      tr: "Vatandaşlık planlarınız için uzman ve lisanslı danışmanlarımızla iletişime geçin. Size ve ailenize özel global çözümler sunmak için her zaman buradayız.",
+      tr: "Türkiye yatırım yoluyla vatandaşlık dosyanız için adres, telefon, çalışma saatleri ve ön değerlendirme formu üzerinden bizimle iletişime geçin.",
       en: "Contact our expert licensed advisors for your citizenship plans. We are here to deliver global solutions tailored to you and your family.",
       ru: "Свяжитесь с нашими лицензированными экспертами по вопросам гражданства. Мы предлагаем международные решения, адаптированные под вас и вашу семью.",
       ar: "تواصل مع مستشارينا المرخصين والخبراء من أجل خطط الجنسية الخاصة بك. نحن هنا لنقدم حلولاً عالمية مناسبة لك ولعائلتك.",

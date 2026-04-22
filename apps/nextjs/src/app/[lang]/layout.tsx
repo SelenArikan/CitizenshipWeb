@@ -7,8 +7,12 @@ import { DocumentLang } from "@/components/DocumentLang";
 import { getDictionary } from "@/lib/dictionary";
 
 export const metadata: Metadata = {
-  title: "Citizenship and Immigration Consultancy",
-  description: "Vatandaşlık, oturum izni ve göçmenlik süreçlerinizde uzman kadromuzla yanınızdayız.",
+  title: {
+    default: "CitizenshipWeb — Global Citizenship & Immigration Consultancy",
+    template: "%s | CitizenshipWeb",
+  },
+  description: "Expert consultancy for citizenship by investment, residence permits, and immigration processes worldwide. Serving clients in TR, EN, RU, AR, FA.",
+  metadataBase: new URL("https://citizenshipweb.com"),
 };
 
 export default async function LangLayout({

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s — CitizenshipWeb",
   },
   description:
-    "Vatandaşlık, oturum izni ve göçmenlik süreçlerinizde uzman kadromuzla yanınızdayız.",
+    "Expert consultancy for Turkish citizenship by investment, residence permits and immigration. Serving clients in TR, EN, RU, AR and FA.",
   openGraph: {
     siteName: "CitizenshipWeb",
     type: "website",
@@ -29,6 +29,11 @@ export default async function RootLayout({
 
   return (
     <html lang={lang} dir={dir} className="h-full" suppressHydrationWarning>
+      <head>
+        <link rel="preconnect" href="https://maps.googleapis.com" />
+        <link rel="preconnect" href="https://maps.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://maps.googleapis.com" />
+      </head>
       <body className="min-h-full flex flex-col font-sans antialiased">{children}</body>
     </html>
   );

@@ -1,56 +1,97 @@
-export default function CitizenshipProcess() {
-  const steps = [
-    { num: 1, title: "Stratejik Değerlendirme", desc: "Durumunuza uygun vatandaşlık programının (yatırım, fon, bağış) analiz edilmesi.", pills: ["Pasaport Kopyası", "Özgeçmiş"] },
-    { num: 2, title: "Ön Onay ve Evrak Hazırlığı", desc: "Seçilen programa göre resmi başvuru evraklarının tercüme ve noter süreçleri.", pills: ["Adli Sicil", "Doğum Belgesi", "Banka Dekontu"] },
-    { num: 3, title: "Yatırımın Tamamlanması", desc: "Emlak alımı, fon yatırımı veya bağış işlemlerinin resmi kanallarla yapılması.", pills: ["Tapu/Hisse", "Değerleme Raporu"] },
-    { num: 4, title: "Resmi Başvurunun İletilmesi", desc: "Dosyanızın ilgili ülkenin Vatandaşlık ve Göçmenlik ofisine teslim edilmesi.", pills: ["Eksiksiz Dosya Onayı"] },
-    { num: 5, title: "Güvenlik Soruşturması", desc: "İlgili ülke makamlarınca yapılan geçmiş arka plan araştırması sürecinin takibi.", pills: ["Bekleme Süreci"] },
-    { num: 6, title: "Pasaport Teslimatı", desc: "Onay sertifikasının alınması ve ailenizin pasaport/kimlik teslimatının yapılması.", pills: ["Vatandaşlık Sertifikası", "Pasaport"] }
+import Link from "next/link";
+
+type Benefit = {
+  title: string;
+  desc: string;
+};
+
+export default function CitizenshipBenefits({ lang = "tr" }: { lang?: string }) {
+  const benefits: Benefit[] = [
+    {
+      title: "Vizesiz veya kolay vizeli seyahat esnekligi",
+      desc: "Turk pasaportu, bircok destinasyonda vizesiz, kapida vize veya e-vize ile seyahat planlamasinda yatirimci ailelerine esneklik saglar.",
+    },
+    {
+      title: "Genel saglik sistemi ve kamu hizmetlerine erisim",
+      desc: "Vatandaslik sonrasinda saglik altyapisi ve kamu hizmetlerinden yararlanma imkani, uzun vadeli yerlesim planlari icin guclu bir avantaj sunar.",
+    },
+    {
+      title: "Egitim imkanlari",
+      desc: "Devlet okullari, universiteler ve egitim altyapisi sayesinde aileler cocuklarinin Turkiye icindeki egitim planlamasini daha rahat kurgulayabilir.",
+    },
+    {
+      title: "Is kurma ve calisma imkanlari",
+      desc: "Turkiye icindeki ticari hayat, yatirim, istihdam ve girisimcilik adimlarinda vatandaslik sonrasi daha esnek hareket alanlari olusturabilir.",
+    },
+    {
+      title: "Amerika E-2 yatirimci vizesi icin stratejik zemin",
+      desc: "Turk vatandasligi belirli kosullarda Amerika E-2 yatirimci vizesi planlamasinda kullanilabilecek bir vatandaslik zemini sunabilir.",
+    },
+    {
+      title: "Cifte veya coklu vatandaslik imkani",
+      desc: "Turkiye coklu vatandasliga izin verir; bu nedenle mevcut vatandasliklarin korunmasi konusunda ek planlama imkanlari dogabilir.",
+    },
+    {
+      title: "Surec boyunca Turkiye'de yasama zorunlulugu yok",
+      desc: "Yatirim tamamlandiktan sonra dosyanin buyuk kismi vekalet ve resmi basvuru akisiyla uzaktan takip edilebilir.",
+    },
+    {
+      title: "Mavi Kart ve yakin haklarin devam etmesi",
+      desc: "Turk vatandasligindan ayrilan kisiler icin Mavi Kart sistemi, belirli haklarin korunmasi acisindan onemli bir referans noktasi olmaya devam eder.",
+    },
   ];
 
+  const contactHref = `/${lang}/contact`;
+  const servicesHref = `/${lang}/services`;
+
   return (
-    <main className="flex flex-col items-center w-full min-h-screen bg-white">
-      <div className="w-full bg-navy py-24 text-center text-white px-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">Adım Adım Vatandaşlık Başvuru Süreci</h1>
-          <p className="text-xl font-light text-gray-300 max-w-2xl mx-auto">Hayalinizdeki pasaporta ulaşırken hiçbir sürprizle karşılaşmayın.</p>
+    <main className="flex min-h-screen w-full flex-col items-center bg-white">
+      <div className="w-full bg-navy px-4 py-24 text-center text-white">
+        <h1 className="mb-4 text-4xl font-bold md:text-6xl">Turk Vatandasi Olmanin Avantajlari</h1>
+        <p className="mx-auto max-w-3xl text-xl font-light text-gray-300">
+          Seyahat, saglik, egitim, ticaret ve aile planlamasi acisindan Turk vatandasliginin sundugu temel avantajlari
+          bir arada inceleyin.
+        </p>
       </div>
 
-      <section className="w-full max-w-5xl px-8 py-24 overflow-hidden">
-         <div className="relative border-l-4 border-gray-200 ml-6 md:ml-0 md:border-none">
-            {/* For desktop, vertical line through middle */}
-            <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-gray-200 -ml-[2px]" />
-
-            <div className="flex flex-col space-y-16 py-10">
-              {steps.map((step, idx) => (
-                <div key={idx} className={`relative flex flex-col md:flex-row items-center ${idx % 2 === 0 ? 'md:flex-row-reverse' : ''} group`}>
-                   {/* Circle node */}
-                   <div className="absolute left-[-11px] md:left-1/2 top-0 md:top-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 w-6 h-6 bg-burgundy rounded-full border-4 border-white shadow-md z-10 group-hover:scale-150 transition-transform duration-300"></div>
-                   
-                   {/* Content Box */}
-                   <div className={`w-full md:w-1/2 ${idx % 2 === 0 ? 'pl-8 md:pl-16' : 'pl-8 md:pr-16 text-left md:text-right'}`}>
-                      <div className="bg-[#f4f6f8] p-8 rounded-2xl shadow-sm hover:shadow-xl transition transform hover:-translate-y-2 duration-300">
-                        <span className="text-burgundy font-bold text-lg mb-2 block">Aşama {step.num}</span>
-                        <h3 className="text-2xl font-bold text-navy mb-3">{step.title}</h3>
-                        <p className="text-gray-600 mb-4">{step.desc}</p>
-                        <div className={`flex flex-wrap gap-2 ${idx % 2 === 0 ? 'justify-start' : 'justify-start md:justify-end'}`}>
-                          {step.pills.map(pill => (
-                            <span key={pill} className="bg-white px-3 py-1 text-xs font-bold text-navy border border-gray-200 rounded-full">{pill}</span>
-                          ))}
-                        </div>
-                      </div>
-                   </div>
-                </div>
-              ))}
+      <section className="w-full max-w-7xl px-8 py-24">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+          {benefits.map((benefit, idx) => (
+            <div
+              key={benefit.title}
+              className={`rounded-3xl border border-gray-100 bg-[#f4f6f8] p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl ${
+                idx % 2 === 0 ? "md:mr-4" : "md:ml-4"
+              }`}
+            >
+              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-white text-burgundy shadow-sm">
+                <svg className="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <h2 className="mb-4 text-2xl font-bold text-navy">{benefit.title}</h2>
+              <p className="leading-relaxed text-gray-600">{benefit.desc}</p>
             </div>
-         </div>
+          ))}
+        </div>
       </section>
-      
-      {/* AI / Contact CTA mapping */}
-      <section className="w-full bg-navy py-24 border-t border-gray-200 flex flex-col items-center text-center px-4 relative overflow-hidden">
-         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-burgundy rounded-full blur-[120px] opacity-20 pointer-events-none"></div>
-         <h2 className="text-3xl font-bold text-white mb-6 z-10">Dosyanızı Uzmanımızla Değerlendirin</h2>
-         <p className="text-gray-300 mb-8 max-w-xl text-lg z-10">Sürecinizin ne kadar süreceğini ve hangi adımların size özel olacağını ücretsiz analiz edelim.</p>
-         <a href="/contact" className="px-10 py-4 bg-burgundy hover:bg-burgundy-light text-white rounded-full font-bold text-lg shadow-lg transition z-10">Hemen Bize Ulaşın &rarr;</a>
+
+      <section className="relative flex w-full flex-col items-center overflow-hidden bg-navy px-4 py-24 text-center">
+        <div className="absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-burgundy opacity-20 blur-[120px] pointer-events-none"></div>
+        <div className="relative z-10 max-w-3xl">
+          <h2 className="mb-6 text-3xl font-bold text-white">Avantajlari dogru yatirim modeliyle birlestirin</h2>
+          <p className="mb-8 text-lg text-gray-300">
+            Vatandaslik kararindan once hangi yatirim seceneginin sizin icin daha uygun oldugunu, aile dosyasi ve
+            butce yapinizla birlikte degerlendirelim.
+          </p>
+          <div className="flex flex-col justify-center gap-4 sm:flex-row">
+            <Link href={servicesHref} className="rounded-full bg-burgundy px-10 py-4 text-lg font-bold text-white shadow-lg transition hover:bg-burgundy-light">
+              Yatirim Turlerini Incele
+            </Link>
+            <Link href={contactHref} className="rounded-full border border-white/20 px-10 py-4 text-lg font-bold text-white transition hover:bg-white/10">
+              Bizimle Iletisime Gec
+            </Link>
+          </div>
+        </div>
       </section>
     </main>
   );

@@ -4,20 +4,20 @@ const SITE_NAME = "CitizenshipWeb";
 const SITE_URL = "https://citizenshipweb.com";
 const HERO_IMAGE = `${SITE_URL}/hero.png`;
 
-const CONTACT_PHONE = "+90 212 555 00 00";
-const CONTACT_EMAIL = "info@citizenshipweb.com";
+const CONTACT_PHONE = "+90 532 449 47 28";
+const CONTACT_EMAIL = "info@turkeyinvestmentcitizenship.com";
 const ADDRESS = {
   "@type": "PostalAddress",
-  streetAddress: "Levent Mah. Cömert Sok. No:1 Kat:15",
-  addressLocality: "Beşiktaş",
+  streetAddress: "Seyitnizam Mah. Mevlana Cad. No:81/83 Kat:2 GINZA PLAZA",
+  addressLocality: "Zeytinburnu",
   addressRegion: "İstanbul",
-  postalCode: "34330",
+  postalCode: "34015",
   addressCountry: "TR",
 };
 
 type FaqItem = { q: string; a: string };
 type ServiceItem = { title: string; description: string };
-type HowToStepItem = { title: string; desc: string };
+type SummaryItem = { title: string; desc: string };
 type CollectionItem = { title: string; summary?: string; category?: string };
 
 function buildBreadcrumbSchema(page: Exclude<PageKey, "home">, locale: string) {
@@ -50,7 +50,11 @@ function buildOrganizationSchema() {
     "@type": "Organization",
     name: SITE_NAME,
     url: SITE_URL,
+    logo: `${SITE_URL}/logo.png`,
     image: HERO_IMAGE,
+    sameAs: [
+      "https://www.linkedin.com/company/citizenshipweb",
+    ],
     address: ADDRESS,
     contactPoint: [
       {
@@ -58,7 +62,7 @@ function buildOrganizationSchema() {
         contactType: "customer support",
         telephone: CONTACT_PHONE,
         email: CONTACT_EMAIL,
-        availableLanguage: ["tr", "en", "ru", "ar", "fa"],
+        availableLanguage: ["Turkish", "English", "Russian", "Arabic", "Persian"],
       },
     ],
   };
@@ -86,6 +90,14 @@ function buildWebsiteSchema(locale: string) {
     name: SITE_NAME,
     url: getLocalizedPageUrl("home", locale),
     inLanguage: locale,
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${SITE_URL}/${locale}/questions?q={search_term_string}`,
+      },
+      "query-input": "required name=search_term_string",
+    },
   };
 }
 
@@ -95,6 +107,30 @@ export function buildHomeSchemas(locale: string, faqs: FaqItem[]) {
     buildWebsiteSchema(locale),
     buildFaqPageSchema(faqs),
   ];
+}
+
+export function buildHowToSchema(locale: string, steps: string[]) {
+  const titles: Record<string, { name: string; description: string }> = {
+    tr: { name: "Türkiye Vatandaşlığı İçin Başvuru Süreci", description: "Yatırım modelinin belirlenmesinden vatandaşlık kararına kadar 6 adımlı başvuru süreci." },
+    en: { name: "Turkish Citizenship Application Process", description: "A 6-step guide from selecting your investment model to receiving your citizenship decision." },
+    ru: { name: "Процесс подачи на гражданство Турции", description: "Пошаговое руководство из 6 этапов — от выбора модели инвестиций до получения гражданства." },
+    ar: { name: "عملية التقديم على الجنسية التركية", description: "دليل من 6 خطوات من اختيار نموذج الاستثمار حتى الحصول على قرار الجنسية." },
+    fa: { name: "فرآیند درخواست شهروندی ترکیه", description: "راهنمای ۶ مرحله‌ای از انتخاب مدل سرمایه‌گذاری تا دریافت تصمیم شهروندی." },
+  };
+  const t = titles[locale] ?? titles.tr;
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: t.name,
+    description: t.description,
+    inLanguage: locale,
+    step: steps.map((stepText, i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      name: stepText,
+      text: stepText,
+    })),
+  };
 }
 
 export function buildServicesSchemas(locale: string, services: ServiceItem[]) {
@@ -122,20 +158,22 @@ export function buildServicesSchemas(locale: string, services: ServiceItem[]) {
   ];
 }
 
-export function buildCitizenshipSchemas(locale: string, steps: HowToStepItem[]) {
+export function buildCitizenshipSchemas(locale: string, items: SummaryItem[]) {
   return [
     buildBreadcrumbSchema("citizenship", locale),
     {
       "@context": "https://schema.org",
-      "@type": "HowTo",
+      "@type": "ItemList",
       name: getPageTitle("citizenship", locale),
       description: getPageDescription("citizenship", locale),
-      image: HERO_IMAGE,
-      step: steps.map((step, index) => ({
-        "@type": "HowToStep",
+      itemListElement: items.map((item, index) => ({
+        "@type": "ListItem",
         position: index + 1,
-        name: step.title,
-        text: step.desc,
+        item: {
+          "@type": "Thing",
+          name: item.title,
+          description: item.desc,
+        },
       })),
     },
   ];
@@ -194,7 +232,7 @@ export function buildContactSchemas(locale: string) {
       email: CONTACT_EMAIL,
       telephone: CONTACT_PHONE,
       address: ADDRESS,
-      openingHours: "Mo-Fr 09:00-18:00",
+      openingHours: "Mo-Fr 08:30-18:00",
     },
     {
       "@context": "https://schema.org",

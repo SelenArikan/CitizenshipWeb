@@ -2,83 +2,231 @@
   "lang": "tr",
   "dir": "ltr",
   "nav": {
-    "home": "Ana Sayfa",
-    "services": "Hizmetlerimiz",
-    "about": "Biz Kimiz",
+    "home": "Anasayfa",
+    "services": "Yatırım Türleri",
+    "about": "Hakkımızda",
+    "about_company": "Biz Kimiz",
+    "about_team": "Ekip",
+    "investment": "Yatırım Türleri",
+    "investment_real_estate": "Gayrimenkul Yatırımı",
+    "investment_deposit": "Mevduat Hesabı",
+    "investment_employment": "İstihdam Oluşturmak",
+    "investment_bonds": "Devlet Borçlanma Araçları",
+    "investment_fund": "Gayrimenkul Yatırım Fonu",
+    "benefits": "Türk Vatandaşı Olmanın Avantajları",
+    "faq": "SSS",
     "contact": "İletişim"
   },
   "hero": {
-    "title_1": "Küresel Göçmenlik ve",
-    "title_2": "Vatandaşlık Geleceğiniz",
-    "desc": "Vatandaşlık, oturum izni ve global yatırım süreçlerinde uzman kadromuzla yanınızdayız.",
-    "btn_primary": "Randevu Oluştur",
-    "btn_secondary": "Süreci Keşfet"
+    "title_1": "Türkiye'de Yatırım",
+    "title_2": "Yoluyla Vatandaşlık",
+    "desc": "Gayrimenkul, banka mevduatı, istihdam, devlet borçlanma araçları ve yatırım fonu seçenekleriyle Türk vatandaşlığı başvuru sürecinizi güvenli şekilde planlayın.",
+    "btn_primary": "Yatırım Türlerini İncele",
+    "btn_secondary": "SSS Sayfasına Git"
   },
   "stats": [
-    { "num": "15+", "text": "Yıllık Tecrübe" },
-    { "num": "2,100+", "text": "Başarılı Başvuru" },
-    { "num": "$850M+", "text": "Yönetilen Yatırım" },
-    { "num": "25+", "text": "Global Partner" }
+    { "num": "$400K", "text": "Gayrimenkul Eşiği" },
+    { "num": "$500K", "text": "Mevduat / Fon / Borçlanma" },
+    { "num": "50", "text": "İstihdam Şartı" },
+    { "num": "~120 Gün", "text": "Ortalama Başvuru Süreci" }
   ],
   "about": {
     "tag": "Biz Kimiz?",
-    "title": "Uluslararası Göçmenlik Hukukunda Öncü Vizyon",
-    "p1": "CitizenshipWeb olarak, 15 yılı aşkın süredir bireylere, ailelere ve kurumsal yatırımcılara sınır ötesi hareketlilik çözümleri sunuyoruz.",
-    "p2": "Hedefimiz, karmaşık yasal süreçleri sizin için basit, şeffaf ve %100 yasal güvenceyle sorunsuz hale getirmektir."
+    "title": "Türkiye yatırım yoluyla vatandaşlık dosyalarını titizlikle yöneten uzman ekip",
+    "p1": "CitizenshipWeb, Türkiye yatırım yoluyla vatandaşlık programında yatırımcılara ve ailelerine başvuru öncesinden pasaport teslimine kadar rehberlik eden disiplinli bir danışmanlık ekibidir.",
+    "p2": "Süreçlerimizi şeffaflık, güvenilirlik ve ekip çalışması temelinde yürütüyor; yatırım, tapu, banka, ikamet ve vatandaşlık başvuru adımlarını tek dosya akışında koordine ediyoruz.",
+    "values": ["Şeffaflık", "Güvenilirlik", "Ekip Çalışması"]
+  },
+  "about_page": {
+    "hero_tag": "Hakkımızda",
+    "hero_title": "Biz Kimiz",
+    "story_tag": "Hikayemiz",
+    "story_title": "2013'ten Bugüne Güvenilir Danışmanlık",
+    "story_p1": "CitizenshipWeb, 2013 yılında kurulmuş olup kurulduğu günden itibaren sahip olduğu istikrarlı gelişmeyle Türkiye'nin vatandaşlık hukuku alanında faaliyet gösteren saygın danışmanlık firmalarından biri olmuştur.",
+    "story_p2": "Vatandaşlık hukuku üzerine uzmanlaşmış olan ofisimizde müvekkillerimizin vatandaşlık süreçlerini titizlikle yürütmekteyiz. Müvekkillerimizin vatandaşlık süreçlerini en verimli ve hızlı şekilde sonuçlandırmak amacıyla ofisimiz, çalışma alanlarına göre uzmanlaşmış departmanlara ayrılarak organize olmuştur.",
+    "story_p3": "Dinamik, genç ve çözüm odaklı kadrosunun sağladığı avantaj sayesinde müvekkillerimizin her türlü ihtiyacına hızlı ve etkin bir şekilde cevap vererek kusursuz bir hizmet vermekteyiz.",
+    "values_tag": "Değerlerimiz",
+    "values_title": "Çalışma Felsefemiz",
+    "values": [
+      {
+        "title": "Şeffaflık",
+        "desc": "Müvekkillerimiz ile aramızda güçlü ve sağlıklı bir iletişimimizin olması bizim için çok önemlidir. Vatandaşlık ve diğer işlemler sırasında oluşan her türlü gelişmelerle ilgili müvekkillerimizi bilgilendirir ve ne şekilde hareket edeceğimiz konusunda bilgi akışını sağlarız."
+      },
+      {
+        "title": "Güvenilirlik",
+        "desc": "Müvekkillerimizle aramızda kurulan iş birliğinin yapı taşını güven oluşturmaktadır. Vatandaşlık süreci ve diğer işlemler sırasında müvekkillerimizi destekler, onlar adına yapılması gereken her türlü işlemi yapmaktayız."
+      },
+      {
+        "title": "Ekip Çalışması",
+        "desc": "Ofisimizde uzmanlık alanlarına göre çalışma sistemi esastır. Ekip arkadaşlarımızın her biri kendi alanında uzman olup bu şekilde işlemler titiz bir şekilde yürütülmektedir."
+      }
+    ],
+    "stats": [
+      { "num": "2013", "label": "Kuruluş Yılı" },
+      { "num": "24+", "label": "Uzman Kadro" },
+      { "num": "1000+", "label": "Tamamlanan Dosya" },
+      { "num": "50+", "label": "Küresel Ağ" }
+    ],
+    "team_tag": "Ekibimiz",
+    "team_title": "Her Adımda Uzman Kadromuz",
+    "cta_title": "Dosyanızı Bizimle Başlatın",
+    "cta_desc": "Uzman danışmanlarımız vatandaşlık sürecinizin her adımında yanınızda.",
+    "cta_btn": "Ücretsiz Ön Değerlendirme"
+  },
+  "services_page": {
+    "hero_tag": "Program Kapsamındaki Seçenekler",
+    "hero_title": "Yatırım Türleri",
+    "hero_desc": "Türkiye'de yatırım yoluyla vatandaşlık programında tanınan beş farklı yatırım modelini inceleyin.",
+    "compare_title": "Hızlı Karşılaştırma",
+    "btn_label": "Detayları İncele",
+    "threshold_label": "Asgari Eşik",
+    "cta_title": "Dosyanıza Uygun Modeli Birlikte Seçelim",
+    "cta_desc": "Aile yapınız, bütçeniz ve süre beklentinize göre en uygun seçeneği belirlemek için bize ulaşın.",
+    "cta_btn": "İletişime Geç",
+    "faq_btn": "SSS'yi İncele",
+    "detail_back": "Yatırım Türleri",
+    "detail_others": "Diğer Yatırım Seçenekleri",
+    "detail_min": "Asgari Eşik",
+    "detail_authority": "Yetkili Kurum",
+    "detail_next_title": "Sonraki Adım",
+    "detail_next_desc": "Modeli belirledikten sonra evrak planı, uygunluk belgesi ve ikamet izni adımları birlikte kurgulanır.",
+    "detail_cta_title": "Dosyanızı Başlatmaya Hazır mısınız?",
+    "detail_cta_btn": "Ücretsiz Danışın",
+    "detail_faq_btn": "SSS'yi İncele"
+  },
+  "team": {
+    "tag": "Ekip",
+    "title": "Sürecin her adımı için koordineli uzmanlık",
+    "view_all": "Tüm Avantajları İncele",
+    "list": [
+      { "title": "Hukuki İnceleme", "desc": "Başvuruya esas aile yapısı, vekalet, doğum belgeleri ve resmi evrak akışlarını dosya bazında planlıyoruz." },
+      { "title": "Yatırım Koordinasyonu", "desc": "Gayrimenkul, banka, fon ve borçlanma araçlarına yönelik işlemleri resmi prosedürlerle uyumlu şekilde eşleştiriyoruz." },
+      { "title": "Tapu ve Banka Süreçleri", "desc": "Döviz alımı, bloke, satılamaz şerhi ve uygunluk belgesi için gereken adımları birbirine bağlı şekilde yürütüyoruz." },
+      { "title": "Tercüme ve Dokümantasyon", "desc": "Çok dilli belge hazırlığı, tercüme, noter ve apostil akışlarını dosyanın takvimine göre yönetiyoruz." },
+      { "title": "İkamet ve Vatandaşlık Başvurusu", "desc": "Yatırımcı ikamet izni ve ardından vatandaşlık başvurusunu tek zaman çizelgesi içinde takip ediyoruz." },
+      { "title": "Müşteri İletişimi", "desc": "Süreç boyunca gelişmeleri düzenli aktarıp bir sonraki adımları önceden planlayarak şeffaf bilgilendirme sağlıyoruz." }
+    ]
   },
   "cta": {
-    "title": "Hangi Program Sizin İçin En Doğrusu?",
-    "desc": "Yüzlerce yasa ve prosedür arasında kaybolmanıza gerek yok. Yapay zeka asistanımızla anında sohbet edin.",
-    "btn_ai": "Yapay Zeka Asistanına Sorun",
-    "btn_lib": "Bilgi Kütüphanesi"
+    "title": "Hangi yatırım modeli size uygun?",
+    "desc": "Gayrimenkul alımı, Türk bankasında mevduat, istihdam oluşturma veya fon yatırımı seçeneklerini karşılaştırarak dosyanız için en uygun yapıyı belirleyin.",
+    "btn_ai": "Yatırım Türlerini Gör",
+    "btn_lib": "Sık Sorulan Sorular"
   },
   "features": {
-    "title": "Neden Bizi Tercih Etmelisiniz?",
+    "title": "Türk Vatandaşlığının Öne Çıkan Avantajları",
     "list": [
-      { "title": "Üst Düzey Gizlilik ve Hukuki Güvence", "desc": "Tüm kişisel verileriniz, banka dökümleriniz ve başvuru süreçleriniz %100 güvence ile işlenir." },
-      { "title": "Kapsamlı Global Partner Ağı", "desc": "İngiltere'den Karayiplere uzanan eşsiz bir hızlandırma ağına sahibiz." },
-      { "title": "Sıfır Bürokratik Zaman Kaybı", "desc": "Evrak çevirisi, hukuki inceleme gibi tüm yorucu prosedürler sizin yerinize çözülür." }
+      {
+        "title": "Vizesiz veya kolay vizeyle geniş seyahat imkanı",
+        "desc": "Türk pasaportu yatırımcı ailelerine çok sayıda ülkeye vizesiz, kapıda vize veya e-vize ile seyahat planlamasında esneklik sağlar."
+      },
+      {
+        "title": "Sağlık, eğitim ve günlük yaşama hızlı entegrasyon",
+        "desc": "Genel sağlık sistemi, eğitim kurumları ve Türkiye içindeki ticari imkanlar vatandaşlık sonrasında güçlü bir yaşam zemini sunar."
+      },
+      {
+        "title": "Süreç boyunca Türkiye'de yaşama zorunluluğu yok",
+        "desc": "Yatırım tamamlandıktan sonra uygun vekalet ve başvuru planlamasıyla dosya adımlarının önemli bölümü uzaktan koordine edilebilir."
+      }
     ]
   },
   "services": {
-    "tag": "Uzmanlık Alanlarımıza Göz Atın",
-    "title": "Hizmetlerimiz",
-    "view_all": "Tüm Hizmetleri Gör",
+    "tag": "Program Kapsamındaki Seçenekler",
+    "title": "Yatırım Türleri",
+    "view_all": "Tüm Yatırım Türlerini Gör",
     "list": [
-      { "title": "Yatırım Yoluyla Vatandaşlık", "desc": "Global emlak/fon yatırımlarıyla hızlı pasaport kazanımı ve yönlendirmesi." },
-      { "title": "Oturum İzinleri", "desc": "Bağımsız yatırımcılar için Altın Vize (Golden Visa) oturum hakları danışmanlığı." },
-      { "title": "Şirket Kurulumu", "desc": "Avrupa ve global ölçekte hızlı kurum entegrasyonu ve vergi optimizasyonu." },
-      { "title": "Aile Birleşimi", "desc": "Ailenizin tüm fertleri için bütünleşik başvuru ve sosyal hak yönetimi." },
-      { "title": "Çalışma İzinleri", "desc": "Yatırımcı ve üst düzey expat'lar için nitelikli çalışma vizeleri alımı." },
-      { "title": "Gayrimenkul Hukuku", "desc": "Tapu tahsisi ve yurtdışı emlak analiz, değerleme ve onaylama süreçleri." }
+      {
+        "title": "Gayrimenkul Yatırımı",
+        "desc": "En az 400.000 USD değerinde bir veya birden fazla taşınmaz alımı ve üç yıl satılamaz şerhi ile başvuru yapılabilir."
+      },
+      {
+        "title": "Mevduat Hesabı",
+        "desc": "Türkiye'de faaliyet gösteren bir bankada en az 500.000 USD karşılığı tutarın üç yıl tutulması ile uygunluk belgesi alınabilir."
+      },
+      {
+        "title": "İstihdam Oluşturmak",
+        "desc": "Türkiye'de en az 50 kişilik istihdam oluşturan yatırımcılar belirli şartlarla vatandaşlık başvuru hakkı elde edebilir."
+      },
+      {
+        "title": "Devlet Borçlanma Araçları",
+        "desc": "En az 500.000 USD veya karşılığı tutarın devlet borçlanma araçlarına yatırılması ve üç yıl elde tutulması mümkündür."
+      },
+      {
+        "title": "Gayrimenkul Yatırım Fonu",
+        "desc": "En az 500.000 USD tutarında girişim sermayesi veya gayrimenkul yatırım fonu katılma payı en az üç yıl tutulabilir."
+      }
     ]
   },
   "timeline": {
-    "title": "Adım Adım Geleceğe<br/>Hazırlanın",
-    "desc": "Karmaşık hukuki göçmenlik süreçlerini uygulabilir aşamalara böldük.",
-    "steps": ["1. Ön Danışmanlık", "2. Evrak Yönetimi", "3. Başvuru İletimi", "4. Pasaport Teslimi"]
+    "title": "Başvurunun Yol Haritası",
+    "desc": "Yatırım modelinin belirlenmesinden vatandaşlık kararına kadar sürecin ana adımlarını tek bakışta görün.",
+    "steps": [
+      "1. Ön İnceleme",
+      "2. Evrak ve Vekalet",
+      "3. Yatırımın Tamamlanması",
+      "4. Uygunluk Belgesi",
+      "5. İkamet İzni",
+      "6. Vatandaşlık Başvurusu"
+    ]
   },
   "news_block": {
     "title": "Haberler ve Gelişmeler",
     "more": "Daha Fazla Göster"
   },
   "faq": {
-    "tag": "Merak Edilenler",
-    "title": "Sıkça Sorulan Sorular",
-    "view_all": "Tüm Soruları Görüntüle",
+    "tag": "Sıkça Sorulan Sorular",
+    "title": "Yatırım Yoluyla Türk Vatandaşlığı SSS",
+    "view_all": "Tüm SSS'yi Gör",
     "list": [
-      { "q": "Yatırım yoluyla vatandaşlık süreci ortalama ne kadar sürer?", "a": "Ortalama 3 ile 8 ay arasında değişmektedir." },
-      { "q": "Aile bireylerim de pasaport alabilir mi?", "a": "Evet, çoğu yatırım programı eşleri ve 18 yaş altı çocukları kapsar." },
-      { "q": "Yatırım fonları geri alınabilir mi?", "a": "Programa göre değişir, gayrimenkuller genelde 3-5 yıl tutulur." }
+      {
+        "q": "Programa kimler başvurabilir?",
+        "a": "18 yaşını doldurmuş yabancı yatırımcılar başvuru yapabilir. Eş ve 18 yaş altı çocuklar ile bakıma muhtaç engelli çocuklar da aile dosyasına dahil edilebilir."
+      },
+      {
+        "q": "Önceki evlilikten olan çocuklar da dosyaya eklenebilir mi?",
+        "a": "Evet. Ancak velayet ve izin durumuna göre ek belgeler istenir; bu nedenle aile yapısına göre dosya ön incelemesi yapılmalıdır."
+      },
+      {
+        "q": "Gayrimenkul yatırımında asgari tutar nedir?",
+        "a": "Gayrimenkul yatırım modelinde toplam yatırım değerinin en az 400.000 USD veya karşılığı döviz olması gerekir."
+      },
+      {
+        "q": "Birden fazla taşınmaz ile başvuru yapılabilir mi?",
+        "a": "Evet. Toplam değer şartı sağlanıyorsa birden fazla taşınmaz birlikte kullanılabilir; ancak tapulu ve noter sözleşmeli modeller birbiriyle karıştırılmadan tek bir yapıda kurgulanmalıdır."
+      },
+      {
+        "q": "Vatandaşlık için Türkiye'de ikamet etmek zorunlu mu?",
+        "a": "Hayır. Başvuru öncesinde yatırımcı ikamet izni alınması gerekir, ancak süreç boyunca Türkiye'de fiilen yaşama zorunluluğu bulunmaz."
+      },
+      {
+        "q": "Başvurunun sonuçlanması yaklaşık ne kadar sürer?",
+        "a": "Dosya hazırlandıktan sonra yatırımcı ve ailesi için süreç çoğu durumda yaklaşık 120 gün içinde sonuçlanır; süre resmi incelemelere göre değişebilir."
+      },
+      {
+        "q": "Türkçe bilmek veya dil sınavına girmek gerekir mi?",
+        "a": "Hayır. Yatırım yoluyla vatandaşlık başvurularında dil şartı aranmaz."
+      },
+      {
+        "q": "Çoklu vatandaşlık mümkün mü?",
+        "a": "Türkiye çoklu vatandaşlığa izin verir. Nihai değerlendirmede yatırımcının mevcut vatandaşlıklarının kendi ülke hukukundaki etkileri ayrıca incelenmelidir."
+      },
+      {
+        "q": "DAB (Döviz Alım Belgesi) nedir?",
+        "a": "DAB, yabancı paranın Türkiye'de faaliyet gösteren bir banka aracılığıyla Türk lirasına çevrildiğini ve resmi sürece uygun şekilde işleme alındığını gösteren belgedir."
+      },
+      {
+        "q": "Uygunluk belgesi neyi ifade eder?",
+        "a": "Uygunluk belgesi, seçilen yatırım modelinin mevzuata uygun şekilde tamamlandığını ve vatandaşlık başvurusunda kullanılabileceğini teyit eden resmi belgedir."
+      }
     ]
   },
   "newsletter": {
-    "title": "Aklınızdaki",
-    "title_bold": "Soruyu Yazın",
-    "desc": "Vatandaşlık, oturum izni veya yatırım süreçleriyle ilgili sorunuzu bize iletin. Uzman ekibimiz inceleyip size dönüş yapsın.",
-    "placeholder": "Sorunuzu detaylı şekilde yazın...",
+    "title": "Sorunuzu",
+    "title_bold": "Uzmanlara İletin",
+    "desc": "Dosyanıza uygun yatırım modelini, aile başvurusunu veya gerekli evrakları öğrenmek için sorunuzu bize gönderin.",
+    "placeholder": "Durumunuzu ve sorunuzun ayrıntılarını yazın...",
     "btn": "Soruyu Gönder",
-    "helper": "Sorunuz uzman ekibimize iletilir ve incelendikten sonra yanıtlanır.",
+    "helper": "Sorunuz uzman ekibimize iletilir ve incelendikten sonra size dönüş yapılır.",
     "success": "Sorunuz başarıyla alındı. En kısa sürede inceleyeceğiz.",
     "error_required": "Lütfen sorunuzu yazın.",
     "error_generic": "Soru gönderilirken bir hata oluştu. Lütfen tekrar deneyin.",
@@ -94,16 +242,16 @@
     "error_email_required": "Özel cevap için geçerli bir e-posta adresi girin."
   },
   "questions_page": {
-    "title": "Soru-Cevap",
-    "desc": "Sıkça sorulan sorulara göz atabilir veya uzmanlarımıza doğrudan sorunuzu iletebilirsiniz.",
+    "title": "Sıkça Sorulan Sorular",
+    "desc": "Türkiye yatırım yoluyla vatandaşlık programı hakkında en çok sorulan başlıkları inceleyin veya durumunuza özel soruyu uzman ekibimize iletin.",
     "form_title": "Uzmana Sorun",
-    "form_desc": "Public seçenekte soru anonim olarak SSS'de yayımlanabilir. Özel seçenekte yanıt yalnızca e-posta ile size gönderilir.",
-    "no_public_questions_title": "Topluluktan henüz public soru yok",
-    "no_public_questions_desc": "İlk public soru-cevaplar admin onayından sonra burada görünecek."
+    "form_desc": "Sorunuzu özel olarak iletebilir veya uygun görülürse anonim şekilde SSS bölümünde yayımlanmasına izin verebilirsiniz.",
+    "no_public_questions_title": "Henüz yayımlanmış ek soru yok",
+    "no_public_questions_desc": "Editoryal onaydan geçen yeni soru-cevaplar burada listelenecek."
   },
   "chat": {
     "title": "Canlı Destek",
-    "intro": "Merhaba! Canlı destek ekibimize hoş geldiniz. Vatandaşlık, oturum izni veya diğer konularda size yardımcı olmaktan memnuniyet duyarız. Mesajınızı yazın, en kısa sürede yanıt verelim.",
+    "intro": "Merhaba. Türkiye yatırım yoluyla vatandaşlık programı hakkında sorularınızı iletebilirsiniz. Uygun yatırım modelini ve başvuru akışını birlikte değerlendirelim.",
     "placeholder": "Mesajınızı yazın...",
     "status_online": "Çevrimiçi · Yanıt bekliyor",
     "status_offline": "Mesaj bırakın, yanıt verelim"
@@ -147,16 +295,28 @@
     "contact_cta": "İletişim sayfasına git"
   },
   "footer": {
-    "desc": "Dünya çapında vatandaşlık ve göçmenlik hedefleriniz için güvenilir danışmanlık.",
-    "col1": "Hızlı Linkler",
+    "desc": "Türkiye yatırım yoluyla vatandaşlık programında yatırım seçenekleri ve başvuru adımları için net rehberlik.",
+    "col1": "Menü",
     "col2": "Destek",
-    "col3": "Bizi Takip Edin",
-    "home": "Ana Sayfa",
-    "services": "Profesyonel Hizmetler",
+    "col3": "İletişim",
+    "home": "Anasayfa",
+    "about": "Biz Kimiz",
+    "services": "Yatırım Türleri",
+    "investments": "Yatırım Türleri",
+    "benefits": "Avantajlar",
     "knowledge": "Bilgi Bankası",
-    "faq": "Soru-Cevap",
-    "contact": "Bize Ulaşın",
+    "faq": "SSS",
+    "contact": "İletişim",
     "privacy": "Gizlilik Politikası",
+    "location_title": "Ofis Konumu",
+    "address_line_1": "Seyitnizam Mah. Mevlana Cad. No:81/83 Kat:2",
+    "address_line_2": "GINZA PLAZA, 34015 Zeytinburnu / İstanbul",
+    "phone_label": "Telefon",
+    "email_label": "E-posta",
+    "hours_title": "Çalışma Saatleri",
+    "hours_weekdays": "Pazartesi - Cuma: 08:30 - 18:00",
+    "hours_weekend": "Cumartesi - Pazar: Kapalı",
+    "map_button": "Google Maps'te Aç",
     "rights": "Tüm Hakları Saklıdır."
   }
 }
