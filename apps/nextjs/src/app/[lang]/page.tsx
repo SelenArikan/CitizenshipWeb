@@ -6,6 +6,7 @@ import NewsletterSection from "@/components/NewsletterSection";
 import ScrollRevealWrapper from "@/components/ScrollRevealWrapper";
 import ConsentBanner from "@/components/ConsentBanner";
 import { JsonLd } from "@/components/JsonLd";
+import HeroSlider from "@/components/HeroSlider";
 import { getDictionary } from "@/lib/dictionary";
 import { buildPageMetadata } from "@/lib/seo";
 import { buildHomeSchemas } from "@/lib/structured-data";
@@ -70,38 +71,24 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
       <main className="flex min-h-screen w-full flex-col items-center">
         <ScrollRevealWrapper />
 
-        <section
-          className="relative flex h-[700px] w-full items-center justify-center overflow-hidden bg-navy text-white"
-          style={{ backgroundImage: "url('/hero.png')", backgroundSize: "cover", backgroundPosition: "center" }}
-        >
-          <div className="absolute inset-0 z-0 bg-navy/70"></div>
-          <div className="reveal reveal-fade-up z-10 flex max-w-4xl flex-col items-center px-4 pt-10 text-center">
-            <h1 className="mb-6 text-5xl font-bold tracking-tight drop-shadow-xl md:text-7xl">
-              {dict.hero.title_1}
-              <br />
-              <span className="bg-gradient-to-r from-gray-200 to-white bg-clip-text text-transparent">
-                {dict.hero.title_2}
-              </span>
-            </h1>
-            <p className="mb-10 max-w-3xl text-lg font-light text-gray-200 drop-shadow-md md:text-xl">
-              {dict.hero.desc}
-            </p>
-            <div className="flex flex-col gap-4 sm:flex-row">
-              <a
-                href={`/${dict.lang}/services`}
-                className="rounded-full bg-burgundy px-8 py-4 font-medium text-white shadow-lg transition hover:bg-burgundy-light"
-              >
-                {dict.hero.btn_primary}
-              </a>
-              <a
-                href={`/${dict.lang}/questions`}
-                className="rounded-full border border-white/30 bg-white/10 px-8 py-4 font-medium text-white backdrop-blur-md transition hover:bg-white/20"
-              >
-                {dict.hero.btn_secondary}
-              </a>
-            </div>
-          </div>
-        </section>
+        <HeroSlider
+          slides={
+            Array.isArray((dict.hero as any).slides)
+              ? (dict.hero as any).slides.map((s: any) => ({
+                  ...s,
+                  href: s.href ? s.href.replace(/^\/tr\//, `/${dict.lang}/`) : undefined,
+                }))
+              : []
+          }
+          title1={dict.hero.title_1}
+          title2={dict.hero.title_2}
+          desc={dict.hero.desc}
+          btnPrimary={dict.hero.btn_primary}
+          btnSecondary={dict.hero.btn_secondary}
+          servicesHref={`/${dict.lang}/services`}
+          questionsHref={`/${dict.lang}/questions`}
+          dir={dict.dir === "rtl" ? "rtl" : "ltr"}
+        />
 
         <section className="relative z-20 flex w-full justify-center border-t border-glass-border-dark bg-navy py-20 text-white">
           <div className="grid w-full max-w-7xl grid-cols-1 gap-8 px-8 text-center divide-y divide-white/10 md:grid-cols-4 md:divide-x md:divide-y-0">

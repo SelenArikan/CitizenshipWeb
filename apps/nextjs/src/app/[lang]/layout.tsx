@@ -31,7 +31,7 @@ export default async function LangLayout({
       <DocumentLang lang={dict.lang} dir={dir} />
       <div className="min-h-full flex flex-col pt-20">
         <ScrollReveal />
-        <Navbar dict={dict.nav} lang={dict.lang} />
+        <Navbar key={resolvedParams.lang} dict={dict.nav} lang={dict.lang} />
         {children}
         <Footer dict={dict.footer} lang={dict.lang} />
         <ChatWidget lang={dict.lang} copy={dict.chat} />

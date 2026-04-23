@@ -1,9 +1,12 @@
-import { access, mkdir, readdir, rm, copyFile } from "fs/promises";
-import path from "path";
+import { access, copyFile, mkdir, readdir, rm } from "fs/promises";
+import { dirname, join, resolve } from "path";
+import { fileURLToPath } from "url";
 
-const projectRoot = process.cwd();
-const sourceDir = path.resolve(projectRoot, "../../shared/i18n");
-const targetDir = path.resolve(projectRoot, "src/generated/i18n");
+const __dirname = dirname(fileURLToPath(import.meta.url));
+/** `apps/nextjs` kökü (cwd’den bağımsız) */
+const nextjsRoot = resolve(__dirname, "..");
+const sourceDir = resolve(nextjsRoot, "../../shared/i18n");
+const targetDir = join(nextjsRoot, "src/generated/i18n");
 
 async function exists(targetPath) {
   try {
@@ -16,18 +19,18 @@ async function exists(targetPath) {
 
 async function syncSharedI18n() {
   const sourceExists = await exists(sourceDir);
-  const targetExists = await exists(targetDir);
+  const targetParent = dirname(targetDir);
 
   if (!sourceExists) {
-    if (targetExists) {
-      console.log(`Shared i18n directory not found at ${sourceDir}; using committed generated files.`);
+    if (await exists(targetDir)) {
+      console.log(`Shared i18n not found at ${sourceDir}; keeping existing ${targetDir}.`);
       return;
     }
-
-    throw new Error(`Neither shared i18n (${sourceDir}) nor generated i18n (${targetDir}) exists.`);
+    throw new Error(`No shared i18n at ${sourceDir} and no ${targetDir} to fall back.`);
   }
 
   await rm(targetDir, { recursive: true, force: true });
+  await mkdir(targetParent, { recursive: true });
   await mkdir(targetDir, { recursive: true });
 
   const entries = await readdir(sourceDir, { withFileTypes: true });
@@ -37,10 +40,10 @@ async function syncSharedI18n() {
       continue;
     }
 
-    await copyFile(path.join(sourceDir, entry.name), path.join(targetDir, entry.name));
+    await copyFile(join(sourceDir, entry.name), join(targetDir, entry.name));
   }
 
-  console.log(`Synced shared i18n files to ${targetDir}`);
+  console.log(`Synced ${sourceDir} → ${targetDir}`);
 }
 
 syncSharedI18n().catch((error) => {

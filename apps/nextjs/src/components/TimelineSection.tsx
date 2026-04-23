@@ -109,8 +109,7 @@ export default function TimelineSection({
   return (
     <section
       ref={containerRef}
-      className="relative w-full border-t border-gray-100 bg-white text-navy"
-      style={{ height: "260vh" }}
+      className="relative w-full border-t border-gray-100 bg-white text-navy h-[320vh] sm:h-[260vh]"
       dir={dir}
     >
       <div className="sticky top-0 flex h-screen w-full flex-col items-center justify-center overflow-hidden px-4 sm:px-8">
@@ -194,40 +193,29 @@ export default function TimelineSection({
           </div>
         </div>
 
-        {/* ══════════════════════════════════════════════════════════
-            MOBILE  —  vertical list               (below sm)
-        ══════════════════════════════════════════════════════════ */}
-        <div className="relative flex w-full max-w-xs flex-col sm:hidden">
-          {/* Vertical BG track */}
-          <div
-            className="absolute bottom-0 top-0 w-[3px] rounded-full bg-gray-200"
-            style={isRtl ? { right: "0.75rem" } : { left: "0.75rem" }}
-          />
-          {/* Vertical fill */}
+        {/* MOBILE: kompakt düğümler, satırlar ve scroll alanı Y ekseninde geniş */}
+        <div className="relative mx-auto flex w-full max-w-lg flex-col px-4 sm:hidden">
+          <div className="pointer-events-none absolute bottom-6 top-6 w-1 start-10 -translate-x-1/2 rounded-full bg-gray-200" />
           <div
             ref={vProgressRef}
-            className="absolute top-0 w-[3px] rounded-full bg-[#8a1c1c]"
-            style={{
-              height: "0%",
-              willChange: "height",
-              ...(isRtl ? { right: "0.75rem" } : { left: "0.75rem" }),
-            }}
+            className="pointer-events-none absolute top-6 w-1 start-10 -translate-x-1/2 rounded-full bg-[#8a1c1c]"
+            style={{ height: "0%", willChange: "height" }}
           />
 
           {steps.map((step, index) => (
             <div
               key={`m-${index}`}
               ref={(el) => { mobileRefs.current[index] = el; }}
-              className={`relative flex items-center gap-4 py-3 ${isRtl ? "flex-row-reverse" : ""}`}
+              className={`relative z-10 flex w-full max-w-lg min-h-[5.5rem] items-center gap-3 py-6 ${isRtl ? "flex-row-reverse" : ""}`}
             >
-              {/* Circle */}
-              <div
-                className="node-circle relative z-10 h-6 w-6 shrink-0 rounded-full border-4 bg-white shadow-md"
-                style={circleStyle}
-              />
-              {/* Label */}
+              <div className="flex w-10 shrink-0 justify-center">
+                <div
+                  className="node-circle h-6 w-6 rounded-full border-4 bg-white shadow-md"
+                  style={circleStyle}
+                />
+              </div>
               <span
-                className="node-text text-sm font-semibold leading-snug"
+                className="node-text min-w-0 flex-1 text-sm font-semibold leading-snug"
                 style={{ ...textStyle, textAlign: isRtl ? "right" : "left" }}
               >
                 {step}

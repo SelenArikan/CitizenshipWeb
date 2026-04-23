@@ -12,6 +12,7 @@ const dictionaries = {
   fa,
 } as const;
 
+/** Metinler `../../shared/i18n/*.json` — `predev` / `prebuild` ile `src/generated`e kopyalanır */
 export const getDictionary = async (locale: string) => {
   if (!Object.prototype.hasOwnProperty.call(dictionaries, locale)) {
     return dictionaries.tr;
