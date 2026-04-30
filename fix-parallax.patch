@@ -1,0 +1,44 @@
+--- apps/nextjs/src/app/page.tsx
++++ apps/nextjs/src/app/page.tsx
+@@ -72,13 +72,15 @@
+          </div>
+       </section>
+ 
+-      {/* Image Background CTA Component */}
+-      <section 
+-        className="w-full py-24 flex items-center justify-center relative bg-fixed bg-center bg-cover"
++      {/* COMBINED PARALLAX SECTION: Image Background CTA + Why Choose Us */}
++      <div 
++        className="w-full relative bg-fixed bg-center bg-cover"
+         style={{ backgroundImage: "url('/news3.png')" }}
+       >
+-        <div className="absolute inset-0 bg-navy/80 mix-blend-multiply flex items-center justify-center backdrop-blur-[2px]"></div>
+-        <div className="absolute inset-0 bg-gradient-to-t from-navy to-transparent opacity-90"></div>
++        {/* Combined Dark Overlay */}
++        <div className="absolute inset-0 bg-navy/90 mix-blend-multiply backdrop-blur-[2px]"></div>
+         
+-        <div className="relative z-10 max-w-4xl w-full px-8 flex flex-col items-center text-center text-white reveal reveal-fade-up">
++        {/* Top Half: AI / Knowledge Base CTA */}
++        <section className="w-full py-24 flex items-center justify-center relative z-10">
++          <div className="max-w-4xl w-full px-8 flex flex-col items-center text-center text-white reveal reveal-fade-up">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 drop-shadow-md">Hangi Program Sizin İçin En Doğrusu?</h2>
+            <p className="text-xl text-gray-300 mb-8 font-light leading-relaxed max-w-3xl drop-shadow-sm">
+@@ -94,10 +96,10 @@
+            </div>
+-        </div>
+-      </section>
++          </div>
++        </section>
+ 
+-      {/* NEW: Neden Bizi Tercih Etmelisiniz? (Why Choose Us) */}
+-      <section className="w-full pt-16 pb-24 bg-navy text-white flex flex-col items-center relative overflow-hidden">
++        {/* Bottom Half: Neden Bizi Tercih Etmelisiniz? (Why Choose Us) */}
++        <section className="w-full pb-24 text-white flex flex-col items-center relative z-10 overflow-hidden">
+          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-burgundy rounded-full blur-[150px] opacity-20 pointer-events-none -mr-40 -mt-40"></div>
+          <div className="max-w-7xl w-full px-8 flex flex-col">
+             <h2 className="text-4xl font-bold mb-12 text-center drop-shadow-md relative z-10 reveal reveal-fade-down">Neden Bizi Tercih Etmelisiniz?</h2>
+@@ -124,2 +126,3 @@
+          </div>
+-      </section>
++        </section>
++      </div>

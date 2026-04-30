@@ -39,6 +39,27 @@ export async function generateMetadata({
         "x-default": `/en/services/${type}`,
       },
     },
+    openGraph: {
+      title: `${title} | CitizenshipWeb`,
+      description: desc,
+      url: `/${lang}/services/${type}`,
+      type: "website",
+      siteName: "CitizenshipWeb",
+      images: [
+        {
+          url: "/hero/gayrimenkul-vatandaslik.webp",
+          width: 1920,
+          height: 1080,
+          alt: title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${title} | CitizenshipWeb`,
+      description: desc,
+      images: ["/hero/gayrimenkul-vatandaslik.webp"],
+    },
   };
 }
 

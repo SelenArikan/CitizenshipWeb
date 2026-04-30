@@ -71,6 +71,14 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
       <main className="flex min-h-screen w-full flex-col items-center">
         <ScrollRevealWrapper />
 
+        {/* Görsel olarak gizlenmiş H1 — SEO için zorunlu, tasarımı etkilemez */}
+        <h1
+          className="sr-only"
+          aria-label={dict.hero.title_1 + " " + dict.hero.title_2}
+        >
+          {dict.hero.title_1} {dict.hero.title_2}
+        </h1>
+
         <HeroSlider
           slides={
             Array.isArray((dict.hero as any).slides)

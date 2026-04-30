@@ -23,14 +23,20 @@ export default function HeroSlider({
   dir = "ltr",
 }: HeroSliderProps) {
   const [current, setCurrent] = useState(0);
+  const [prev, setPrev] = useState<number | null>(null);
   const [animating, setAnimating] = useState(false);
+  // Hangi slaytların daha önce görüntülendiğini takip et → preload için
+  const [loaded, setLoaded] = useState<Set<number>>(() => new Set([0]));
 
   const goTo = useCallback(
     (index: number) => {
       if (animating || index === current) return;
       setAnimating(true);
+      setPrev(current);
+      setLoaded((prev) => new Set(prev).add(index));
+      setCurrent(index);
       setTimeout(() => {
-        setCurrent(index);
+        setPrev(null);
         setAnimating(false);
       }, 500);
     },
@@ -38,8 +44,8 @@ export default function HeroSlider({
   );
 
   const goPrev = useCallback(() => {
-    const prev = (current - 1 + slides.length) % slides.length;
-    goTo(prev);
+    const prevIdx = (current - 1 + slides.length) % slides.length;
+    goTo(prevIdx);
   }, [current, slides.length, goTo]);
 
   const goNext = useCallback(() => {
@@ -48,45 +54,54 @@ export default function HeroSlider({
   }, [current, slides.length, goTo]);
 
   const slide = slides[current];
-  const activeHref = slide?.href || servicesHref;
 
   return (
     <section
       className="relative h-[700px] w-full overflow-hidden bg-navy"
       dir={dir}
       aria-label="Hero slider"
+      aria-roledescription="carousel"
     >
-      {/* Background slides */}
-      {slides.map((s, idx) => (
-        <Link
-          key={idx}
-          href={s.href || servicesHref}
-          aria-label={s.label}
-          className="absolute inset-0 block"
-          style={{
-            opacity: idx === current ? 1 : 0,
-            zIndex: idx === current ? 1 : 0,
-            transition: "opacity 0.5s ease",
-            pointerEvents: idx === current ? "auto" : "none",
-          }}
-          tabIndex={idx === current ? 0 : -1}
-        >
-          <Image
-            src={s.image}
-            alt={s.alt}
-            fill
-            sizes="100vw"
-            className="object-cover object-center"
-            priority={idx === 0}
-            quality={85}
-          />
-        </Link>
-      ))}
+      {/* Slides — sadece daha önce görüntülenenler + aktif render edilir */}
+      {slides.map((s, idx) => {
+        const isActive = idx === current;
+        const isPrev = idx === prev;
+        // Daha önce hiç gösterilmediyse DOM'a ekleme (performans)
+        if (!loaded.has(idx)) return null;
 
-      {/* Subtle gradient overlay — only at bottom for label readability */}
+        return (
+          <Link
+            key={idx}
+            href={s.href || servicesHref}
+            aria-label={s.label}
+            aria-hidden={!isActive}
+            className="absolute inset-0 block"
+            style={{
+              opacity: isActive ? 1 : isPrev ? 0 : 0,
+              zIndex: isActive ? 1 : isPrev ? 0 : -1,
+              transition: "opacity 0.5s ease",
+              pointerEvents: isActive ? "auto" : "none",
+            }}
+            tabIndex={isActive ? 0 : -1}
+          >
+            <Image
+              src={s.image}
+              alt={s.alt}
+              fill
+              // Masaüstü için 1920px, tablet 1280px, mobil 768px — gereksiz veri indirimi önler
+              sizes="(max-width: 768px) 768px, (max-width: 1280px) 1280px, 1920px"
+              className="object-cover object-center"
+              priority={idx === 0}   // Yalnızca ilk slayt → LCP görseli
+              quality={85}
+            />
+          </Link>
+        );
+      })}
+
+      {/* Gradient — label okunurluğu */}
       <div className="absolute inset-x-0 bottom-0 z-10 h-40 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
 
-      {/* Slide label badge — bottom left (or right for RTL) */}
+      {/* Label badge — sol alt (RTL için sağ) */}
       <div
         className="absolute bottom-6 z-30 px-4"
         style={dir === "rtl" ? { right: "1.5rem" } : { left: "1.5rem" }}
@@ -105,7 +120,7 @@ export default function HeroSlider({
         </span>
       </div>
 
-      {/* Arrow navigation — Left */}
+      {/* Sol ok */}
       <button
         onClick={goPrev}
         aria-label="Önceki slayt"
@@ -126,7 +141,7 @@ export default function HeroSlider({
         </svg>
       </button>
 
-      {/* Arrow navigation — Right */}
+      {/* Sağ ok */}
       <button
         onClick={goNext}
         aria-label="Sonraki slayt"
@@ -148,13 +163,18 @@ export default function HeroSlider({
       </button>
 
       {/* Dot navigation */}
-      <div className="absolute bottom-6 left-1/2 z-30 flex -translate-x-1/2 items-center gap-3">
-        {slides.map((_, idx) => (
+      <div
+        className="absolute bottom-6 left-1/2 z-30 flex -translate-x-1/2 items-center gap-3"
+        role="tablist"
+        aria-label="Slayt navigasyonu"
+      >
+        {slides.map((s, idx) => (
           <button
             key={idx}
+            role="tab"
             onClick={() => goTo(idx)}
-            aria-label={`Slayt ${idx + 1}`}
-            aria-current={idx === current ? "true" : undefined}
+            aria-label={`${s.label} — slayt ${idx + 1}`}
+            aria-selected={idx === current}
             className="flex items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-white rounded-full"
           >
             <span
@@ -163,9 +183,7 @@ export default function HeroSlider({
                 width: idx === current ? "28px" : "8px",
                 height: "8px",
                 backgroundColor:
-                  idx === current
-                    ? "#9b1c1c"
-                    : "rgba(255,255,255,0.5)",
+                  idx === current ? "#9b1c1c" : "rgba(255,255,255,0.5)",
               }}
             />
           </button>

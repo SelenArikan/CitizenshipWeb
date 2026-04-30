@@ -281,6 +281,7 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
               className="h-9 w-auto bg-transparent object-contain object-left sm:h-12"
               sizes="(max-width: 640px) 200px, 280px"
               priority
+              loading="eager"
               unoptimized
             />
           </Link>

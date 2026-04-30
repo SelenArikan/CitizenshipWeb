@@ -1,0 +1,11 @@
+{
+  "name": "citizenshipweb-monorepo",
+  "private": true,
+  "scripts": {
+    "sync-i18n": "node apps/nextjs/scripts/sync-shared-i18n.mjs",
+    "dev": "npm run dev --prefix apps/nextjs",
+    "build": "npm run build --prefix apps/nextjs",
+    "start": "npm run start --prefix apps/nextjs",
+    "lint": "npm run lint --prefix apps/nextjs"
+  }
+}

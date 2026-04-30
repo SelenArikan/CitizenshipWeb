@@ -43,11 +43,11 @@ const PAGE_SEO: Record<PageKey, PageSeoEntry> = {
   about: {
     path: "/about",
     titles: {
-      tr: "CitizenshipWeb Hakkında",
-      en: "About CitizenshipWeb",
-      ru: "О CitizenshipWeb",
-      ar: "عن CitizenshipWeb",
-      fa: "درباره CitizenshipWeb",
+      tr: "Türkiye Vatandaşlık & Yatırım Danışmanlığı — Ekibimiz",
+      en: "Turkish Citizenship Law Firm — Our Expert Team",
+      ru: "Юридическая фирма по гражданству Турции — Наша команда",
+      ar: "شركة قانونية للجنسية التركية — فريقنا المتخصص",
+      fa: "موسسه حقوقی شهروندی ترکیه — تیم متخصص ما",
     },
     descriptions: {
       tr: "CitizenshipWeb ekibinin çalışma yaklaşımını, uzmanlık alanlarını ve 2013'ten bu yana geliştirdiği danışmanlık deneyimini inceleyin.",
@@ -78,17 +78,17 @@ const PAGE_SEO: Record<PageKey, PageSeoEntry> = {
     path: "/citizenship",
     titles: {
       tr: "Türk Vatandaşı Olmanın Avantajları",
-      en: "Step-by-Step Citizenship Application Process",
-      ru: "Пошаговый процесс подачи на гражданство",
-      ar: "خطوات التقديم على الجنسية خطوة بخطوة",
-      fa: "فرآیند گام به گام درخواست شهروندی",
+      en: "Benefits of Turkish Citizenship — Travel, Health & Investment",
+      ru: "Преимущества турецкого гражданства — Путешествия, здоровье и инвестиции",
+      ar: "مزايا الجنسية التركية — السفر والصحة والاستثمار",
+      fa: "مزایای شهروندی ترکیه — سفر، بهداشت و سرمایه‌گذاری",
     },
     descriptions: {
       tr: "Türk vatandaşlığının seyahat, sağlık, eğitim, çoklu vatandaşlık ve yatırımcı perspektifinden sunduğu temel avantajları inceleyin.",
-      en: "Learn every stage of the citizenship application process, the required legal documents, and expert guidance. Discover tips that will accelerate and strengthen your case.",
-      ru: "Узнайте все этапы подачи на гражданство, необходимые юридические документы и рекомендации экспертов. Откройте советы, которые ускорят и усилят ваше досье.",
-      ar: "تعرّف على جميع مراحل طلب الجنسية، والوثائق القانونية المطلوبة، وإرشادات الخبراء. اكتشف نصائح تساعد على تسريع وتقوية ملفك.",
-      fa: "همه مراحل درخواست شهروندی، مدارک حقوقی لازم و توصیه های تخصصی را بشناسید. نکاتی را ببینید که پرونده شما را سریع تر و قوی تر می کند.",
+      en: "Explore the key benefits of Turkish citizenship: visa-free travel to 110+ countries, dual citizenship, healthcare, education rights and investor advantages.",
+      ru: "Узнайте о ключевых преимуществах турецкого гражданства: безвизовый въезд в 110+ стран, двойное гражданство, медицина, образование и инвесторские привилегии.",
+      ar: "اكتشف المزايا الرئيسية للجنسية التركية: السفر بدون تأشيرة إلى أكثر من 110 دولة، والجنسية المزدوجة، والرعاية الصحية، والتعليم، ومزايا المستثمرين.",
+      fa: "مزایای کلیدی شهروندی ترکیه را بشناسید: سفر بدون ویزا به بیش از ۱۱۰ کشور، تابعیت مضاعف، بهداشت، تحصیل و مزایای سرمایه‌گذاران.",
     },
   },
   knowledge: {
@@ -218,9 +218,9 @@ export function buildPageMetadata(page: PageKey, locale: string): Metadata {
       locale: OG_LOCALES[safeLocale],
       images: [
         {
-          url: "/hero.png",
-          width: 1200,
-          height: 630,
+          url: "/hero/gayrimenkul-vatandaslik.webp",
+          width: 1920,
+          height: 1080,
           alt: title,
         },
       ],
@@ -229,7 +229,7 @@ export function buildPageMetadata(page: PageKey, locale: string): Metadata {
       card: "summary_large_image",
       title,
       description,
-      images: ["/hero.png"],
+      images: ["/hero/gayrimenkul-vatandaslik.webp"],
     },
   };
 }

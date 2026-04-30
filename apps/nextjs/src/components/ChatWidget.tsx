@@ -357,7 +357,7 @@ export default function ChatWidget({
                             </div>
                         </div>
                     </div>
-                    <button onClick={() => setIsOpen(false)} className="text-white hover:text-gray-300 border-none bg-transparent text-xl leading-none">&times;</button>
+                    <button onClick={() => setIsOpen(false)} aria-label="Sohbeti kapat" className="text-white hover:text-gray-300 border-none bg-transparent text-xl leading-none">&times;</button>
                 </div>
 
                 <div ref={chatViewRef} className="flex-1 p-4 overflow-y-auto flex flex-col gap-3 bg-gray-50" dir={isRtl ? 'rtl' : 'ltr'}>
@@ -394,7 +394,7 @@ export default function ChatWidget({
                             className="flex-1 py-2 px-4 bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-burgundy/50 text-sm"
                             dir={isRtl ? 'rtl' : 'ltr'}
                         />
-                        <button type="submit" disabled={isLoading} className="w-10 h-10 bg-burgundy hover:bg-burgundy-light text-white rounded-full flex justify-center items-center transition-colors">
+                        <button type="submit" disabled={isLoading} aria-label="Mesajı gönder" className="w-10 h-10 bg-burgundy hover:bg-burgundy-light text-white rounded-full flex justify-center items-center transition-colors">
                             <svg
                                 className="w-5 h-5"
                                 style={{ marginLeft: isRtl ? 0 : '0.25rem', marginRight: isRtl ? '0.25rem' : 0, transform: isRtl ? 'scaleX(-1)' : 'none' }}
@@ -409,7 +409,7 @@ export default function ChatWidget({
             </div>
 
             {/* Floating Button */}
-            <button onClick={() => setIsOpen(!isOpen)} className="w-16 h-16 bg-burgundy hover:bg-burgundy-light shadow-2xl rounded-full text-white flex justify-center items-center transition-transform hover:scale-110 pointer-events-auto">
+            <button onClick={() => setIsOpen(!isOpen)} aria-label={isOpen ? "Sohbeti kapat" : "Canlı destek - Sohbeti aç"} aria-expanded={isOpen} className="w-16 h-16 bg-burgundy hover:bg-burgundy-light shadow-2xl rounded-full text-white flex justify-center items-center transition-transform hover:scale-110 pointer-events-auto">
                 {!isOpen ? (
                     <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
                 ) : (

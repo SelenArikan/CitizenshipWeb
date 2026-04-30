@@ -1,0 +1,23 @@
+{
+  "locales": ["tr", "en", "ru", "ar", "fa"],
+  "baseUrl": "https://citizenshipweb.com",
+  "routes": [
+    { "id": "home", "path": "/", "nameKey": "nav.home" },
+    { "id": "about", "path": "/about", "nameKey": "nav.about_company" },
+    { "id": "services", "path": "/services", "nameKey": "nav.services" },
+    { "id": "service_detail", "path": "/services/{slug}", "nameKey": "nav.investment" },
+    { "id": "citizenship", "path": "/citizenship", "nameKey": "nav.benefits" },
+    { "id": "knowledge", "path": "/knowledge", "nameKey": "nav.knowledge" },
+    { "id": "news", "path": "/news", "nameKey": "footer.news" },
+    { "id": "questions", "path": "/questions", "nameKey": "nav.faq" },
+    { "id": "contact", "path": "/contact", "nameKey": "nav.contact" },
+    { "id": "privacy", "path": "/privacy", "nameKey": "footer.privacy" }
+  ],
+  "serviceSlugs": [
+    "gayrimenkul-yatirimi",
+    "mevduat-hesabi",
+    "istihdam-olusturmak",
+    "devlet-borclanma-araclari",
+    "gayrimenkul-yatirim-fonu"
+  ]
+}

@@ -2,7 +2,7 @@ import { getLocalizedPageUrl, getPageDescription, getPageTitle, type PageKey } f
 
 const SITE_NAME = "CitizenshipWeb";
 const SITE_URL = "https://citizenshipweb.com";
-const HERO_IMAGE = `${SITE_URL}/hero.png`;
+const HERO_IMAGE = `${SITE_URL}/hero/gayrimenkul-vatandaslik.webp`;
 const LOGO_IMAGE = `${SITE_URL}/logo/necmettin-barman-logo.png`;
 
 const CONTACT_PHONE = "+90 532 449 47 28";
