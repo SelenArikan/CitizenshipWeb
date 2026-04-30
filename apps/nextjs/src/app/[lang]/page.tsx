@@ -75,18 +75,14 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
           slides={
             Array.isArray((dict.hero as any).slides)
               ? (dict.hero as any).slides.map((s: any) => ({
-                  ...s,
+                  image: s.image,
+                  alt: s.label ?? s.title1 ?? "",
+                  label: s.label ?? "",
                   href: s.href ? s.href.replace(/^\/tr\//, `/${dict.lang}/`) : undefined,
                 }))
               : []
           }
-          title1={dict.hero.title_1}
-          title2={dict.hero.title_2}
-          desc={dict.hero.desc}
-          btnPrimary={dict.hero.btn_primary}
-          btnSecondary={dict.hero.btn_secondary}
           servicesHref={`/${dict.lang}/services`}
-          questionsHref={`/${dict.lang}/questions`}
           dir={dict.dir === "rtl" ? "rtl" : "ltr"}
         />
 

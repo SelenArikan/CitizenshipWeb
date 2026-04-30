@@ -55,25 +55,71 @@
     "btn_primary": "Yatırım Türlerini İncele",
     "btn_secondary": "SSS Sayfasına Git",
     "slides": [
-      { "label": "Gayrimenkul Yatırımı Yoluyla Türk Vatandaşlığı", "image": "/hero_slide1.png", "title1": "Gayrimenkul Yatırımı", "title2": "Yoluyla Vatandaşlık", "href": "/tr/services/gayrimenkul-yatirimi" },
-      { "label": "Banka Yatırımı Yoluyla Türk Vatandaşlığı", "image": "/hero_slide2.png", "title1": "Banka Yatırımı", "title2": "Yoluyla Vatandaşlık", "href": "/tr/services/mevduat-hesabi" },
-      { "label": "Yatırımcı İkamet İzni", "image": "/hero_slide3.png", "title1": "Yatırımcı", "title2": "İkamet İzni", "href": "/tr/citizenship" },
-      { "label": "Gayrimenkul İkamet İzni", "image": "/hero_slide4.png", "title1": "Gayrimenkul", "title2": "İkamet İzni", "href": "/tr/citizenship" },
-      { "label": "Vergi Muafiyeti", "image": "/hero_slide5.png", "title1": "Vergi", "title2": "Muafiyeti", "href": "/tr/services" }
+      {
+        "label": "Gayrimenkul Yatırımı Yoluyla Türk Vatandaşlığı",
+        "image": "/hero/gayrimenkul-vatandaslik.webp",
+        "title1": "Gayrimenkul Yatırımı",
+        "title2": "Yoluyla Vatandaşlık",
+        "href": "/tr/services/gayrimenkul-yatirimi"
+      },
+      {
+        "label": "Banka Yatırımı Yoluyla Türk Vatandaşlığı",
+        "image": "/hero/banka-yatirimi-vatandaslik.webp",
+        "title1": "Banka Yatırımı",
+        "title2": "Yoluyla Vatandaşlık",
+        "href": "/tr/services/mevduat-hesabi"
+      },
+      {
+        "label": "Yatırımcı İkamet İzni",
+        "image": "/hero/yatirimci-ikamet-izni.webp",
+        "title1": "Yatırımcı",
+        "title2": "İkamet İzni",
+        "href": "/tr/citizenship"
+      },
+      {
+        "label": "Gayrimenkul İkamet İzni",
+        "image": "/hero/gayrimenkul-ikamet-izni.webp",
+        "title1": "Gayrimenkul",
+        "title2": "İkamet İzni",
+        "href": "/tr/citizenship"
+      },
+      {
+        "label": "Vergi Muafiyeti",
+        "image": "/hero/vergi-muafiyeti.webp",
+        "title1": "Vergi",
+        "title2": "Muafiyeti",
+        "href": "/tr/services"
+      }
     ]
   },
   "stats": [
-    { "num": "$400K", "text": "Gayrimenkul Eşiği" },
-    { "num": "$500K", "text": "Mevduat / Fon / Borçlanma" },
-    { "num": "50", "text": "İstihdam Şartı" },
-    { "num": "~120 Gün", "text": "Ortalama Başvuru Süreci" }
+    {
+      "num": "$400K",
+      "text": "Gayrimenkul Eşiği"
+    },
+    {
+      "num": "$500K",
+      "text": "Mevduat / Fon / Borçlanma"
+    },
+    {
+      "num": "50",
+      "text": "İstihdam Şartı"
+    },
+    {
+      "num": "~120 Gün",
+      "text": "Ortalama Başvuru Süreci"
+    }
   ],
   "about": {
     "tag": "Biz Kimiz?",
     "title": "Türkiye yatırım yoluyla vatandaşlık dosyalarını titizlikle yöneten uzman ekip",
     "p1": "CitizenshipWeb, Türkiye yatırım yoluyla vatandaşlık programında yatırımcılara ve ailelerine başvuru öncesinden pasaport teslimine kadar rehberlik eden disiplinli bir danışmanlık ekibidir.",
     "p2": "Süreçlerimizi şeffaflık, güvenilirlik ve ekip çalışması temelinde yürütüyor; yatırım, tapu, banka, ikamet ve vatandaşlık başvuru adımlarını tek dosya akışında koordine ediyoruz.",
-    "values": ["Şeffaflık", "Güvenilirlik", "Ekip Çalışması"]
+    "values": [
+      "Şeffaflık",
+      "Güvenilirlik",
+      "Ekip Çalışması"
+    ]
   },
   "about_page": {
     "hero_tag": "Hakkımızda",
@@ -100,10 +146,22 @@
       }
     ],
     "stats": [
-      { "num": "2013", "label": "Kuruluş Yılı" },
-      { "num": "24+", "label": "Uzman Kadro" },
-      { "num": "1000+", "label": "Tamamlanan Dosya" },
-      { "num": "50+", "label": "Küresel Ağ" }
+      {
+        "num": "2013",
+        "label": "Kuruluş Yılı"
+      },
+      {
+        "num": "24+",
+        "label": "Uzman Kadro"
+      },
+      {
+        "num": "1000+",
+        "label": "Tamamlanan Dosya"
+      },
+      {
+        "num": "50+",
+        "label": "Küresel Ağ"
+      }
     ],
     "team_tag": "Ekibimiz",
     "team_title": "Her Adımda Uzman Kadromuz",
@@ -137,12 +195,30 @@
     "title": "Sürecin her adımı için koordineli uzmanlık",
     "view_all": "Tüm Avantajları İncele",
     "list": [
-      { "title": "Hukuki İnceleme", "desc": "Başvuruya esas aile yapısı, vekalet, doğum belgeleri ve resmi evrak akışlarını dosya bazında planlıyoruz." },
-      { "title": "Yatırım Koordinasyonu", "desc": "Gayrimenkul, banka, fon ve borçlanma araçlarına yönelik işlemleri resmi prosedürlerle uyumlu şekilde eşleştiriyoruz." },
-      { "title": "Tapu ve Banka Süreçleri", "desc": "Döviz alımı, bloke, satılamaz şerhi ve uygunluk belgesi için gereken adımları birbirine bağlı şekilde yürütüyoruz." },
-      { "title": "Tercüme ve Dokümantasyon", "desc": "Çok dilli belge hazırlığı, tercüme, noter ve apostil akışlarını dosyanın takvimine göre yönetiyoruz." },
-      { "title": "İkamet ve Vatandaşlık Başvurusu", "desc": "Yatırımcı ikamet izni ve ardından vatandaşlık başvurusunu tek zaman çizelgesi içinde takip ediyoruz." },
-      { "title": "Müşteri İletişimi", "desc": "Süreç boyunca gelişmeleri düzenli aktarıp bir sonraki adımları önceden planlayarak şeffaf bilgilendirme sağlıyoruz." }
+      {
+        "title": "Hukuki İnceleme",
+        "desc": "Başvuruya esas aile yapısı, vekalet, doğum belgeleri ve resmi evrak akışlarını dosya bazında planlıyoruz."
+      },
+      {
+        "title": "Yatırım Koordinasyonu",
+        "desc": "Gayrimenkul, banka, fon ve borçlanma araçlarına yönelik işlemleri resmi prosedürlerle uyumlu şekilde eşleştiriyoruz."
+      },
+      {
+        "title": "Tapu ve Banka Süreçleri",
+        "desc": "Döviz alımı, bloke, satılamaz şerhi ve uygunluk belgesi için gereken adımları birbirine bağlı şekilde yürütüyoruz."
+      },
+      {
+        "title": "Tercüme ve Dokümantasyon",
+        "desc": "Çok dilli belge hazırlığı, tercüme, noter ve apostil akışlarını dosyanın takvimine göre yönetiyoruz."
+      },
+      {
+        "title": "İkamet ve Vatandaşlık Başvurusu",
+        "desc": "Yatırımcı ikamet izni ve ardından vatandaşlık başvurusunu tek zaman çizelgesi içinde takip ediyoruz."
+      },
+      {
+        "title": "Müşteri İletişimi",
+        "desc": "Süreç boyunca gelişmeleri düzenli aktarıp bir sonraki adımları önceden planlayarak şeffaf bilgilendirme sağlıyoruz."
+      }
     ]
   },
   "cta": {

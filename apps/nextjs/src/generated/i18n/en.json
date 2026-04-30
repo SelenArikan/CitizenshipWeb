@@ -55,25 +55,56 @@
     "btn_primary": "Book an Appointment",
     "btn_secondary": "Discover the Process",
     "slides": [
-      { "label": "Turkish Citizenship via Real Estate Investment", "image": "/hero_slide1.png" },
-      { "label": "Turkish Citizenship via Bank Investment", "image": "/hero_slide2.png" },
-      { "label": "Investor Residence Permit", "image": "/hero_slide3.png" },
-      { "label": "Real Estate Residence Permit", "image": "/hero_slide4.png" },
-      { "label": "Tax Exemption", "image": "/hero_slide5.png" }
+      {
+        "label": "Turkish Citizenship via Real Estate Investment",
+        "image": "/hero/gayrimenkul-vatandaslik.webp"
+      },
+      {
+        "label": "Turkish Citizenship via Bank Investment",
+        "image": "/hero/banka-yatirimi-vatandaslik.webp"
+      },
+      {
+        "label": "Investor Residence Permit",
+        "image": "/hero/yatirimci-ikamet-izni.webp"
+      },
+      {
+        "label": "Real Estate Residence Permit",
+        "image": "/hero/gayrimenkul-ikamet-izni.webp"
+      },
+      {
+        "label": "Tax Exemption",
+        "image": "/hero/vergi-muafiyeti.webp"
+      }
     ]
   },
   "stats": [
-    { "num": "15+", "text": "Years Experience" },
-    { "num": "2,100+", "text": "Successful Applications" },
-    { "num": "$850M+", "text": "Managed Investment" },
-    { "num": "25+", "text": "Global Partners" }
+    {
+      "num": "15+",
+      "text": "Years Experience"
+    },
+    {
+      "num": "2,100+",
+      "text": "Successful Applications"
+    },
+    {
+      "num": "$850M+",
+      "text": "Managed Investment"
+    },
+    {
+      "num": "25+",
+      "text": "Global Partners"
+    }
   ],
   "about": {
     "tag": "Who We Are?",
     "title": "Pioneering Vision in International Immigration Law",
     "p1": "As CitizenshipWeb, we provide cross-border mobility solutions to individuals, families, and institutional investors.",
     "p2": "Our goal is to make complex legal processes simple, transparent, and hassle-free for you.",
-    "values": ["Transparency", "Reliability", "Teamwork"]
+    "values": [
+      "Transparency",
+      "Reliability",
+      "Teamwork"
+    ]
   },
   "about_page": {
     "hero_tag": "About Us",
@@ -100,10 +131,22 @@
       }
     ],
     "stats": [
-      { "num": "2013", "label": "Founded" },
-      { "num": "24+", "label": "Expert Staff" },
-      { "num": "1000+", "label": "Completed Files" },
-      { "num": "50+", "label": "Global Network" }
+      {
+        "num": "2013",
+        "label": "Founded"
+      },
+      {
+        "num": "24+",
+        "label": "Expert Staff"
+      },
+      {
+        "num": "1000+",
+        "label": "Completed Files"
+      },
+      {
+        "num": "50+",
+        "label": "Global Network"
+      }
     ],
     "team_tag": "Our Team",
     "team_title": "Expert Professionals at Every Step",
@@ -137,12 +180,30 @@
     "title": "Coordinated expertise for every step of the process",
     "view_all": "Explore All Benefits",
     "list": [
-      { "title": "Legal Review", "desc": "We plan family structure, power of attorney, birth certificates and official document flows on a file-by-file basis." },
-      { "title": "Investment Coordination", "desc": "We align real estate, banking, fund and bond transactions in compliance with official procedures." },
-      { "title": "Title Deed & Banking", "desc": "We manage currency purchase, blocking, no-sale annotation and eligibility certificate steps in an integrated manner." },
-      { "title": "Translation & Documentation", "desc": "We handle multilingual document preparation, translation, notary and apostille flows according to each file's timeline." },
-      { "title": "Residence & Citizenship Application", "desc": "We follow the investor residence permit and subsequent citizenship application within a single timeline." },
-      { "title": "Client Communication", "desc": "We provide transparent updates throughout the process and plan next steps in advance." }
+      {
+        "title": "Legal Review",
+        "desc": "We plan family structure, power of attorney, birth certificates and official document flows on a file-by-file basis."
+      },
+      {
+        "title": "Investment Coordination",
+        "desc": "We align real estate, banking, fund and bond transactions in compliance with official procedures."
+      },
+      {
+        "title": "Title Deed & Banking",
+        "desc": "We manage currency purchase, blocking, no-sale annotation and eligibility certificate steps in an integrated manner."
+      },
+      {
+        "title": "Translation & Documentation",
+        "desc": "We handle multilingual document preparation, translation, notary and apostille flows according to each file's timeline."
+      },
+      {
+        "title": "Residence & Citizenship Application",
+        "desc": "We follow the investor residence permit and subsequent citizenship application within a single timeline."
+      },
+      {
+        "title": "Client Communication",
+        "desc": "We provide transparent updates throughout the process and plan next steps in advance."
+      }
     ]
   },
   "cta": {
@@ -154,9 +215,18 @@
   "features": {
     "title": "Why Choose Us?",
     "list": [
-      { "title": "Top-Level Privacy and Legal Security", "desc": "All your personal data and application processes are processed with 100% security." },
-      { "title": "Comprehensive Global Partner Network", "desc": "We have an exceptional acceleration network from the UK to the Caribbean." },
-      { "title": "Zero Bureaucratic Time Waste", "desc": "All exhausting bureaucratic procedures are solved on your behalf." }
+      {
+        "title": "Top-Level Privacy and Legal Security",
+        "desc": "All your personal data and application processes are processed with 100% security."
+      },
+      {
+        "title": "Comprehensive Global Partner Network",
+        "desc": "We have an exceptional acceleration network from the UK to the Caribbean."
+      },
+      {
+        "title": "Zero Bureaucratic Time Waste",
+        "desc": "All exhausting bureaucratic procedures are solved on your behalf."
+      }
     ]
   },
   "services": {
@@ -164,12 +234,30 @@
     "title": "Our Services",
     "view_all": "View All Services",
     "list": [
-      { "title": "Citizenship By Investment", "desc": "Fast passport acquisition and guidance through global real estate/fund investments." },
-      { "title": "Residence Permits", "desc": "Golden Visa residence rights consultancy for independent investors." },
-      { "title": "Company Incorporation", "desc": "Fast corporate integration and tax optimization on a European and global scale." },
-      { "title": "Family Reunification", "desc": "Integrated application and social rights management for all members of your family." },
-      { "title": "Work Permits", "desc": "Acquisition of qualified work visas for investors and top-level expats." },
-      { "title": "Real Estate Law", "desc": "Title deed allocation and international real estate analysis, valuation processes." }
+      {
+        "title": "Citizenship By Investment",
+        "desc": "Fast passport acquisition and guidance through global real estate/fund investments."
+      },
+      {
+        "title": "Residence Permits",
+        "desc": "Golden Visa residence rights consultancy for independent investors."
+      },
+      {
+        "title": "Company Incorporation",
+        "desc": "Fast corporate integration and tax optimization on a European and global scale."
+      },
+      {
+        "title": "Family Reunification",
+        "desc": "Integrated application and social rights management for all members of your family."
+      },
+      {
+        "title": "Work Permits",
+        "desc": "Acquisition of qualified work visas for investors and top-level expats."
+      },
+      {
+        "title": "Real Estate Law",
+        "desc": "Title deed allocation and international real estate analysis, valuation processes."
+      }
     ]
   },
   "timeline": {
@@ -193,9 +281,18 @@
     "title": "Frequently Asked Questions",
     "view_all": "View All Questions",
     "list": [
-      { "q": "How long does the citizenship by investment process typically take?", "a": "It averages between 3 and 8 months." },
-      { "q": "Can my family members also get passports?", "a": "Yes, most investment programs cover spouses and children under 18." },
-      { "q": "Can investment funds be reclaimed?", "a": "It varies by program, real estate is usually held for 3-5 years." }
+      {
+        "q": "How long does the citizenship by investment process typically take?",
+        "a": "It averages between 3 and 8 months."
+      },
+      {
+        "q": "Can my family members also get passports?",
+        "a": "Yes, most investment programs cover spouses and children under 18."
+      },
+      {
+        "q": "Can investment funds be reclaimed?",
+        "a": "It varies by program, real estate is usually held for 3-5 years."
+      }
     ]
   },
   "newsletter": {
