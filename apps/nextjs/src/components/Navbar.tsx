@@ -105,7 +105,7 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
   const triggerRefs = useRef<Record<string, HTMLDivElement | null>>({});
   const [dropdownPos, setDropdownPos] = useState<{ left: number; top: number } | null>(null);
 
-  const DROPDOWN_WIDTH = 640;
+  const DROPDOWN_WIDTH = 800;
 
   const updatePos = useCallback((key: string) => {
     const el = triggerRefs.current[key];
@@ -172,7 +172,7 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
       type: "mega",
       label: t.mega_tc,
       key: "vatandaslik",
-      featuredImage: "/hero_slide1.png",
+      featuredImage: "/hero/gayrimenkul-vatandaslik.webp",
       groups: [
         {
           heading: t.mega_h_invest,
@@ -198,7 +198,7 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
       type: "mega",
       label: t.mega_res,
       key: "oturum",
-      featuredImage: "/hero_slide3.png",
+      featuredImage: "/hero/yatirimci-ikamet-izni.webp",
       groups: [
         {
           heading: t.mega_h_rtypes,
@@ -215,7 +215,7 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
       type: "mega",
       label: t.mega_leg,
       key: "hukuki",
-      featuredImage: "/hero_slide5.png",
+      featuredImage: "/hero/vergi-muafiyeti.webp",
       groups: [
         {
           heading: t.mega_h_tax,
@@ -535,7 +535,7 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
             <div className="flex">
               {/* Featured image panel */}
               {activeMegaEntry.featuredImage && (
-                <div className="relative w-44 shrink-0 overflow-hidden" style={{ minHeight: "220px" }}>
+                <div className="relative w-56 shrink-0 overflow-hidden" style={{ minHeight: "280px" }}>
                   <div
                     className="absolute inset-0 bg-cover bg-center scale-105 transition-transform duration-700"
                     style={{ backgroundImage: `url('${activeMegaEntry.featuredImage}')` }}
@@ -552,26 +552,21 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
               {/* Groups */}
               <div className="flex flex-1 gap-0 divide-x divide-white/[0.06] overflow-x-auto">
                 {activeMegaEntry.groups.map((group, gi) => (
-                  <div key={gi} className="flex min-w-[160px] flex-col p-5">
+                  <div key={gi} className="flex min-w-[200px] flex-col p-6">
                     {group.heading && (
-                      <span className="mb-3 text-[10px] font-bold uppercase tracking-[0.15em] text-[#a33333]">
+                      <span className="mb-4 text-[11px] font-bold uppercase tracking-[0.15em] text-[#a33333]">
                         {group.heading}
                       </span>
                     )}
-                    <div className="flex flex-col gap-0.5">
+                    <div className="flex flex-col gap-1">
                       {group.items.map((item) => (
                         <Link
                           key={item.href + item.label}
                           href={item.href}
                           onClick={() => setActiveMenu(null)}
-                          className="group flex items-center justify-between rounded-lg px-3 py-2.5 text-sm text-gray-300 transition-all duration-150 hover:bg-white/[0.07] hover:text-white hover:translate-x-0.5"
+                          className="group flex items-center justify-between rounded-lg px-3 py-3 text-[0.9375rem] text-gray-300 transition-all duration-150 hover:bg-white/[0.07] hover:text-white hover:translate-x-0.5"
                         >
                           <span className="leading-snug">{item.label}</span>
-                          {item.desc && (
-                            <span className="ml-3 shrink-0 rounded-full bg-white/[0.08] px-2 py-0.5 text-[10px] font-semibold text-gray-400 group-hover:text-gray-300">
-                              {item.desc}
-                            </span>
-                          )}
                         </Link>
                       ))}
                     </div>
