@@ -11,6 +11,9 @@ import { getDictionary } from "@/lib/dictionary";
 import { buildPageMetadata } from "@/lib/seo";
 import { buildHomeSchemas } from "@/lib/structured-data";
 
+// İlk hero görseli LCP öğesi — her dilde aynı dosya
+const FIRST_HERO_IMAGE = "/hero/gayrimenkul-vatandaslik.webp";
+
 type HomeStat = {
   num: string;
   text: string;
@@ -99,7 +102,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
             {stats.map((stat, idx) => (
               <div key={idx} className={`reveal reveal-fade-up delay-${idx * 100} flex flex-col items-center justify-center p-4`}>
                 <span className="mb-2 text-5xl font-bold text-burgundy">{stat.num}</span>
-                <span className="mt-2 text-sm font-bold uppercase tracking-widest text-gray-400">{stat.text}</span>
+                <span className="mt-2 text-sm font-bold uppercase tracking-widest text-gray-200">{stat.text}</span>
               </div>
             ))}
           </div>
@@ -175,7 +178,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
           <section className="relative z-10 flex w-full items-center justify-center py-24">
             <div className="reveal reveal-fade-up flex w-full max-w-4xl flex-col items-center px-8 text-center text-white">
               <h2 className="mb-6 text-4xl font-bold drop-shadow-md md:text-5xl">{dict.cta?.title}</h2>
-              <p className="mb-8 max-w-3xl text-xl font-light leading-relaxed text-gray-300 drop-shadow-sm">
+              <p className="mb-8 max-w-3xl text-xl font-light leading-relaxed text-white/90 drop-shadow-sm">
                 {dict.cta?.desc}
               </p>
               <div className="flex w-full flex-col justify-center gap-5 sm:flex-row">
@@ -213,7 +216,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
                       </svg>
                     </div>
                     <h3 className="mb-4 text-2xl font-bold">{feature.title}</h3>
-                    <p className="text-gray-300">{feature.desc}</p>
+                    <p className="text-white/80">{feature.desc}</p>
                   </div>
                 ))}
               </div>

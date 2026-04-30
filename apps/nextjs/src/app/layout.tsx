@@ -30,6 +30,13 @@ export default async function RootLayout({
   return (
     <html lang={lang} dir={dir} className="h-full" suppressHydrationWarning>
       <head>
+      {/* LCP görseli erken keşif — "LCP request discovery" hatasını giderir */}
+        <link
+          rel="preload"
+          as="image"
+          href="/hero/gayrimenkul-vatandaslik.webp"
+          fetchPriority="high"
+        />
         <link rel="preconnect" href="https://maps.googleapis.com" />
         <link rel="preconnect" href="https://maps.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://maps.googleapis.com" />

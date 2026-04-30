@@ -101,9 +101,9 @@ export default function HeroSlider({
       {/* Gradient — label okunurluğu */}
       <div className="absolute inset-x-0 bottom-0 z-10 h-40 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
 
-      {/* Label badge — sol alt (RTL için sağ) */}
+      {/* Label badge — sol alt (RTL için sağ) — mobilde daha yukarıda, büyük ekranda alta */}
       <div
-        className="absolute bottom-6 z-30 px-4"
+        className="absolute bottom-16 sm:bottom-6 z-30 px-4"
         style={dir === "rtl" ? { right: "1.5rem" } : { left: "1.5rem" }}
       >
         <span
@@ -164,7 +164,7 @@ export default function HeroSlider({
 
       {/* Dot navigation */}
       <div
-        className="absolute bottom-6 left-1/2 z-30 flex -translate-x-1/2 items-center gap-3"
+        className="absolute bottom-4 left-1/2 z-30 flex -translate-x-1/2 items-center gap-1"
         role="tablist"
         aria-label="Slayt navigasyonu"
       >
@@ -175,7 +175,8 @@ export default function HeroSlider({
             onClick={() => goTo(idx)}
             aria-label={`${s.label} — slayt ${idx + 1}`}
             aria-selected={idx === current}
-            className="flex items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-white rounded-full"
+            /* Minimum 44×44 dokunma hedefi — görsel olarak küçük ama tıklanabilir alan büyük */
+            className="flex h-11 w-11 items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-white rounded-full"
           >
             <span
               className="block rounded-full transition-all duration-300"
@@ -183,7 +184,7 @@ export default function HeroSlider({
                 width: idx === current ? "28px" : "8px",
                 height: "8px",
                 backgroundColor:
-                  idx === current ? "#9b1c1c" : "rgba(255,255,255,0.5)",
+                  idx === current ? "#9b1c1c" : "rgba(255,255,255,0.6)",
               }}
             />
           </button>
