@@ -3,6 +3,7 @@ import { getLocalizedPageUrl, getPageDescription, getPageTitle, type PageKey } f
 const SITE_NAME = "CitizenshipWeb";
 const SITE_URL = "https://citizenshipweb.com";
 const HERO_IMAGE = `${SITE_URL}/hero.png`;
+const LOGO_IMAGE = `${SITE_URL}/logo/necmettin-barman-logo.png`;
 
 const CONTACT_PHONE = "+90 532 449 47 28";
 const CONTACT_EMAIL = "info@turkeyinvestmentcitizenship.com";
@@ -20,9 +21,18 @@ type ServiceItem = { title: string; description: string };
 type SummaryItem = { title: string; desc: string };
 type CollectionItem = { title: string; summary?: string; category?: string };
 
+const HOME_LABELS: Record<string, string> = {
+  tr: "Anasayfa",
+  en: "Home",
+  ru: "Главная",
+  ar: "الرئيسية",
+  fa: "صفحه اصلی",
+};
+
 function buildBreadcrumbSchema(page: Exclude<PageKey, "home">, locale: string) {
   const homeUrl = getLocalizedPageUrl("home", locale);
   const pageUrl = getLocalizedPageUrl(page, locale);
+  const homeLabel = HOME_LABELS[locale] ?? HOME_LABELS.en;
 
   return {
     "@context": "https://schema.org",
@@ -31,7 +41,7 @@ function buildBreadcrumbSchema(page: Exclude<PageKey, "home">, locale: string) {
       {
         "@type": "ListItem",
         position: 1,
-        name: "Home",
+        name: homeLabel,
         item: homeUrl,
       },
       {
@@ -50,7 +60,7 @@ function buildOrganizationSchema() {
     "@type": "Organization",
     name: SITE_NAME,
     url: SITE_URL,
-    logo: `${SITE_URL}/logo.png`,
+    logo: LOGO_IMAGE,
     image: HERO_IMAGE,
     sameAs: [
       "https://www.linkedin.com/company/citizenshipweb",

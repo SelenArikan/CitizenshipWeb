@@ -4,7 +4,7 @@ export const SEO_LOCALES = ["tr", "en", "ru", "ar", "fa"] as const;
 export const RTL_LOCALES = ["ar", "fa"] as const;
 
 export type SeoLocale = (typeof SEO_LOCALES)[number];
-export type PageKey = "home" | "services" | "citizenship" | "knowledge" | "news" | "questions" | "contact";
+export type PageKey = "home" | "about" | "services" | "citizenship" | "knowledge" | "news" | "questions" | "contact";
 
 type LocaleMap = Record<SeoLocale, string>;
 
@@ -38,6 +38,23 @@ const PAGE_SEO: Record<PageKey, PageSeoEntry> = {
       ru: "Наша команда сопровождает процессы гражданства, ВНЖ и иммиграции. Запишитесь на бесплатную первичную консультацию для надежного международного сопровождения.",
       ar: "فريقنا المتخصص يرافقك في مسارات الجنسية والإقامة والهجرة. احجز استشارة أولية مجانية للحصول على دعم دولي موثوق.",
       fa: "تیم متخصص ما در مسیرهای شهروندی، اقامت و مهاجرت کنار شماست. برای دریافت مشاوره بین المللی مطمئن، یک جلسه اولیه رایگان رزرو کنید.",
+    },
+  },
+  about: {
+    path: "/about",
+    titles: {
+      tr: "CitizenshipWeb Hakkında",
+      en: "About CitizenshipWeb",
+      ru: "О CitizenshipWeb",
+      ar: "عن CitizenshipWeb",
+      fa: "درباره CitizenshipWeb",
+    },
+    descriptions: {
+      tr: "CitizenshipWeb ekibinin çalışma yaklaşımını, uzmanlık alanlarını ve 2013'ten bu yana geliştirdiği danışmanlık deneyimini inceleyin.",
+      en: "Learn about CitizenshipWeb's advisory approach, specialist team structure, and experience in Turkish citizenship and investment files since 2013.",
+      ru: "Узнайте о подходе CitizenshipWeb, структуре экспертной команды и опыте сопровождения инвестиционных и гражданских дел с 2013 года.",
+      ar: "تعرّف على منهجية CitizenshipWeb وفريقها المتخصص وخبرتها في ملفات الجنسية والاستثمار التركية منذ عام 2013.",
+      fa: "با رویکرد کاری CitizenshipWeb، ساختار تیم متخصص و تجربه این مجموعه در پرونده های شهروندی و سرمایه گذاری ترکیه از سال 2013 آشنا شوید.",
     },
   },
   services: {

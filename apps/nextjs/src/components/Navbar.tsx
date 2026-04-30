@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
 import { useState, useRef, useEffect, useCallback, useMemo } from "react";
@@ -267,9 +268,21 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
-          {/* Logo */}
-          <Link href={`/${L}`} className="shrink-0 text-2xl font-bold tracking-wider text-white">
-            Citizenship<span className="text-[#a32222]">Web</span>
+          {/* Logo — Necmettin Barman & Associates (public/logo) */}
+          <Link
+            href={`/${L}`}
+            className="relative flex h-9 max-w-[min(100%,240px)] shrink-0 items-center sm:h-12 sm:max-w-[280px]"
+          >
+            <Image
+              src="/logo/necmettin-barman-logo.png"
+              alt="CITIZENSHIP LAW FIRM — Necmettin Barman & Associates — Attorneys at Law"
+              width={1024}
+              height={273}
+              className="h-9 w-auto bg-transparent object-contain object-left sm:h-12"
+              sizes="(max-width: 640px) 200px, 280px"
+              priority
+              unoptimized
+            />
           </Link>
 
           {/* Desktop nav */}
@@ -324,7 +337,7 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
 
             <Link
               href={`/${L}/contact`}
-              className="ml-2 rounded-full bg-[#8a1c1c] px-6 py-2 text-sm font-bold shadow-lg transition hover:bg-[#a32222]"
+              className="ml-2 rounded-full bg-[#8a1c1c] px-6 py-2 text-sm font-bold text-white shadow-lg transition visited:text-white hover:bg-[#a32222] hover:text-white"
             >
               {t.contact}
             </Link>
@@ -487,7 +500,7 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
             <div className="mt-3 border-t border-white/10 pt-3">
               <Link
                 href={`/${L}/contact`}
-                className="block rounded-full bg-[#8a1c1c] px-6 py-3 text-center text-sm font-bold text-white transition hover:bg-[#a32222]"
+                className="block rounded-full bg-[#8a1c1c] px-6 py-3 text-center text-sm font-bold text-white transition visited:text-white hover:bg-[#a32222] hover:text-white"
               >
                 {t.contact}
               </Link>

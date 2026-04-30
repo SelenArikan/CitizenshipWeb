@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { buildPageMetadata } from "@/lib/seo";
+import { buildPageMetadata, getSafeLocale } from "@/lib/seo";
 import { JsonLd } from "@/components/JsonLd";
 import AboutPageContent from "../../about/page";
 
@@ -8,10 +8,27 @@ const aboutSchemas = (lang: string) => [
     "@context": "https://schema.org",
     "@type": "AboutPage",
     inLanguage: lang,
-    name: "CitizenshipWeb — About Us",
+    name:
+      lang === "tr"
+        ? "CitizenshipWeb — Hakkımızda"
+        : lang === "en"
+        ? "CitizenshipWeb — About Us"
+        : lang === "ru"
+        ? "CitizenshipWeb — О нас"
+        : lang === "ar"
+        ? "CitizenshipWeb — من نحن"
+        : "CitizenshipWeb — درباره ما",
     url: `https://citizenshipweb.com/${lang}/about`,
     description:
-      "CitizenshipWeb — a leading citizenship by investment consultancy firm founded in 2013, specializing in Turkish citizenship applications.",
+      lang === "tr"
+        ? "CitizenshipWeb, Türkiye vatandaşlık ve yatırım dosyalarında uzmanlaşmış danışmanlık ekibini tanıtır."
+        : lang === "en"
+        ? "CitizenshipWeb presents its advisory team specializing in Turkish citizenship and investment files."
+        : lang === "ru"
+        ? "Страница представляет команду CitizenshipWeb, работающую со стратегией гражданства и инвестиций в Турции."
+        : lang === "ar"
+        ? "تعرّف هذه الصفحة بفريق CitizenshipWeb المتخصص في ملفات الجنسية والاستثمار في تركيا."
+        : "این صفحه تیم CitizenshipWeb را که در پرونده های شهروندی و سرمایه گذاری ترکیه تخصص دارد معرفی می کند.",
     publisher: {
       "@type": "Organization",
       name: "CitizenshipWeb",
@@ -26,29 +43,32 @@ export async function generateMetadata({
   params: Promise<{ lang: string }>;
 }): Promise<Metadata> {
   const { lang } = await params;
-  // Reuse "about" entry from seo.ts titles/descriptions as a fallback;
-  // you can add a dedicated "about" PageKey later.
-  const base = buildPageMetadata("contact", lang);
+  const safeLocale = getSafeLocale(lang);
+  const base = buildPageMetadata("about", safeLocale);
   return {
     ...base,
     title:
-      lang === "tr"
-        ? "Hakkımızda | CitizenshipWeb"
-        : lang === "en"
-        ? "About Us | CitizenshipWeb"
-        : lang === "ru"
-        ? "О нас | CitizenshipWeb"
-        : lang === "ar"
-        ? "من نحن | CitizenshipWeb"
-        : "درباره ما | CitizenshipWeb",
+      safeLocale === "tr"
+        ? "Hakkımızda"
+        : safeLocale === "en"
+        ? "About Us"
+        : safeLocale === "ru"
+        ? "О нас"
+        : safeLocale === "ar"
+        ? "من نحن"
+        : "درباره ما",
     description:
-      lang === "tr"
+      safeLocale === "tr"
         ? "CitizenshipWeb, 2013 yılından bu yana Türkiye yatırım yoluyla vatandaşlık başvurularında uzman danışmanlık firmasıdır."
-        : lang === "en"
+        : safeLocale === "en"
         ? "CitizenshipWeb is a leading citizenship by investment consultancy founded in 2013, offering expert guidance for Turkish citizenship applications."
-        : base.description,
+        : safeLocale === "ru"
+        ? "CitizenshipWeb — консультационная команда, сопровождающая дела о гражданстве через инвестиции в Турции с 2013 года."
+        : safeLocale === "ar"
+        ? "CitizenshipWeb فريق استشاري متخصص في ملفات الجنسية التركية عبر الاستثمار منذ عام 2013."
+        : "CitizenshipWeb از سال 2013 در پرونده های شهروندی ترکیه از طریق سرمایه گذاری مشاوره تخصصی ارائه می دهد.",
     alternates: {
-      canonical: `/${lang}/about`,
+      canonical: `/${safeLocale}/about`,
       languages: {
         tr: "/tr/about", en: "/en/about", ru: "/ru/about", ar: "/ar/about", fa: "/fa/about",
         "x-default": "/en/about",

@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: ['/admin/'],
+      disallow: ['/admin/', '/tr/admin/', '/en/admin/', '/ru/admin/', '/ar/admin/', '/fa/admin/'],
     },
     sitemap: 'https://citizenshipweb.com/sitemap.xml',
   }

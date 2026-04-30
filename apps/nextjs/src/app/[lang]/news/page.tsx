@@ -2,15 +2,9 @@ import type { Metadata } from "next";
 
 import { JsonLd } from "@/components/JsonLd";
 import NewsPage from "../../news/page";
+import { getPublicNewsEntries } from "@/lib/public-pages";
 import { buildPageMetadata } from "@/lib/seo";
 import { buildCollectionSchemas } from "@/lib/structured-data";
-
-const newsItems = [
-  { category: "Mülkiyet", title: "Yabancılar İçin Mülk Edinme Yasası Değişiklikleri", summary: "2026 yılı itibarıyla yürürlüğe giren yeni gayrimenkul değerleme yasaları hakkında uzman görüşlerimiz..." },
-  { category: "Aile", title: "Eş ve Çocuklar İçin Eşzamanlı Başvuru Stratejisi", summary: "Yeni bir ülkede hayata başlarken aileniz için en kaliteli eğitim ve kültürel adaptasyon adımları..." },
-  { category: "Yatırım", title: "Global Fon Yatırımlarıyla AB Oturum İzni", summary: "Avrupa ve global altın vize programlarının karşılaştırmalı analizi yayında." },
-  { category: "Vatandaşlık", title: "Çifte Vatandaşlık Kabul Eden Ülkeler", summary: "Sınırlarınızı genişletmek için çifte pasaport kurallarının tam haritası." },
-];
 
 export async function generateMetadata({
   params,
@@ -27,11 +21,17 @@ export default async function LangNewsPage({
   params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
+  const entries = getPublicNewsEntries(lang);
+  const newsItems = entries.map((item) => ({
+    category: item.category,
+    title: item.title,
+    summary: item.summary,
+  }));
 
   return (
     <>
       <JsonLd data={buildCollectionSchemas("news", lang, newsItems)} />
-      <NewsPage />
+      <NewsPage lang={lang} items={entries} />
     </>
   );
 }
