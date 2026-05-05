@@ -30,7 +30,7 @@ echo schema_render_scripts(schema_home_page($lang, __t('faq.list')));
       <section 
         id="heroSlider"
         class="relative w-full flex items-end justify-center bg-[#0a192f] text-white overflow-hidden mt-20"
-        style="height: 700px;"
+        style="height: clamp(480px, 85vh, 920px);"
       >
         <!-- Slides -->
         <?php foreach ($heroSlides as $idx => $slide): ?>
@@ -42,7 +42,7 @@ echo schema_render_scripts(schema_home_page($lang, __t('faq.list')));
         <?php endforeach; ?>
 
         <!-- Overlay gradient -->
-        <div class="absolute inset-0 z-10" style="background: linear-gradient(to top, rgba(10,25,47,0.95) 0%, rgba(10,25,47,0.60) 50%, rgba(10,25,47,0.30) 100%);"></div>
+        <div class="absolute inset-0 z-10" style="background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.18) 45%, transparent 100%);"></div>
 
         <!-- Slide label badge (top-left or top-right for RTL) -->
         <div class="absolute top-8 z-30 px-4" style="<?= __t('dir') === 'rtl' ? 'right: 2rem;' : 'left: 2rem;' ?>">
