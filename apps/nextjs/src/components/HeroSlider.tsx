@@ -57,7 +57,8 @@ export default function HeroSlider({
 
   return (
     <section
-      className="relative h-[700px] w-full overflow-hidden bg-navy"
+      className="relative w-full overflow-hidden bg-navy"
+      style={{ height: "clamp(480px, 85vh, 920px)" }}
       dir={dir}
       aria-label="Hero slider"
       aria-roledescription="carousel"
@@ -99,11 +100,11 @@ export default function HeroSlider({
       })}
 
       {/* Gradient — label okunurluğu */}
-      <div className="absolute inset-x-0 bottom-0 z-10 h-40 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
+      <div className="absolute inset-x-0 bottom-0 z-10 h-36 bg-gradient-to-t from-black/40 to-transparent pointer-events-none" />
 
-      {/* Label badge — sol alt (RTL için sağ) — mobilde daha yukarıda, büyük ekranda alta */}
+      {/* Label badge — sol alt (RTL için sağ) */}
       <div
-        className="absolute bottom-16 sm:bottom-6 z-30 px-4"
+        className="absolute bottom-14 z-30 px-4"
         style={dir === "rtl" ? { right: "1.5rem" } : { left: "1.5rem" }}
       >
         <span
