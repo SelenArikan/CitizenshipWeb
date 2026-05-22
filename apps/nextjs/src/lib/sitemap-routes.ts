@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 
 import { INVESTMENTS } from "@/lib/investments";
+import { RESIDENCE_PERMIT_SLUGS } from "@/lib/residence-permits";
 
 export type SitemapChangefreq = NonNullable<MetadataRoute.Sitemap[number]["changeFrequency"]>;
 
@@ -16,6 +17,8 @@ export const SITEMAP_STATIC_PATHS: SitemapPathConfig[] = [
   { path: "/about", priority: 0.9, changeFrequency: "monthly" },
   { path: "/services", priority: 0.9, changeFrequency: "monthly" },
   { path: "/citizenship", priority: 0.9, changeFrequency: "monthly" },
+  { path: "/ikamet-izni", priority: 0.88, changeFrequency: "monthly" },
+  { path: "/legal/yesil-pasaport", priority: 0.82, changeFrequency: "monthly" },
   { path: "/knowledge", priority: 0.8, changeFrequency: "weekly" },
   { path: "/news", priority: 0.8, changeFrequency: "weekly" },
   { path: "/questions", priority: 0.7, changeFrequency: "monthly" },
@@ -30,7 +33,14 @@ export const SITEMAP_SERVICE_SLUGS: SitemapPathConfig[] = INVESTMENTS.map((inv) 
   changeFrequency: "monthly" as const,
 }));
 
+export const SITEMAP_RESIDENCE_PATHS: SitemapPathConfig[] = RESIDENCE_PERMIT_SLUGS.map((slug) => ({
+  path: `/ikamet-izni/${slug}`,
+  priority: 0.84,
+  changeFrequency: "monthly" as const,
+}));
+
 export const ALL_SITEMAP_PATHS: SitemapPathConfig[] = [
   ...SITEMAP_STATIC_PATHS,
   ...SITEMAP_SERVICE_SLUGS,
+  ...SITEMAP_RESIDENCE_PATHS,
 ];

@@ -58,6 +58,7 @@ type NavCopy = {
   mega_h_more?: string;
   item_more_bank?: string;
   item_more_green?: string;
+  item_more_license?: string;
   nav_desc_400?: string;
   nav_desc_500?: string;
   nav_desc_emp?: string;
@@ -203,10 +204,10 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
         {
           heading: t.mega_h_rtypes,
           items: [
-            { label: t.item_res_j, href: `/${L}/citizenship` },
-            { label: t.item_res_re, href: `/${L}/citizenship` },
-            { label: t.item_res_fam, href: `/${L}/citizenship` },
-            { label: t.item_res_long, href: `/${L}/citizenship` },
+            { label: t.item_res_j, href: `/${L}/ikamet-izni/yatirimci-ikamet-izni` },
+            { label: t.item_res_re, href: `/${L}/ikamet-izni/gayrimenkul-ikamet-izni` },
+            { label: t.item_res_fam, href: `/${L}/ikamet-izni/aile-ikamet-izni` },
+            { label: t.item_res_long, href: `/${L}/ikamet-izni/uzun-donem-ikamet-izni` },
           ],
         },
       ],
@@ -215,7 +216,7 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
       type: "mega",
       label: t.mega_leg,
       key: "hukuki",
-      featuredImage: "/hero/vergi-muafiyeti.webp",
+      featuredImage: "/hero/hukuki-hizmetler.jpg",
       groups: [
         {
           heading: t.mega_h_tax,
@@ -240,7 +241,8 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
           heading: t.mega_h_more,
           items: [
             { label: t.item_more_bank, href: `/${L}/services` },
-            { label: t.item_more_green, href: `/${L}/services` },
+            { label: t.item_more_green, href: `/${L}/legal/yesil-pasaport` },
+            { label: t.item_more_license, href: `/${L}/legal/ehliyet-tebdil` },
           ],
         },
       ],
@@ -551,7 +553,7 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
               )}
 
               {/* Groups */}
-              <div className="flex flex-1 gap-0 divide-x divide-white/[0.06] overflow-x-auto">
+              <div className="flex flex-1 gap-0 divide-x divide-white/[0.06]">
                 {activeMegaEntry.groups.map((group, gi) => (
                   <div key={gi} className="flex min-w-[200px] flex-col p-6">
                     {group.heading && (

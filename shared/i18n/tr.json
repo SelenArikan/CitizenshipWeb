@@ -44,6 +44,7 @@
     "mega_h_more": "Diğer",
     "item_more_bank": "Banka İşlemleri",
     "item_more_green": "Yeşil Pasaport",
+    "item_more_license": "Ehliyet Tebdil İşlemleri",
     "nav_desc_400": "Min. $400K",
     "nav_desc_500": "Min. $500K",
     "nav_desc_emp": "50 kişi"
@@ -74,14 +75,14 @@
         "image": "/hero/yatirimci-ikamet-izni.webp",
         "title1": "Yatırımcı",
         "title2": "İkamet İzni",
-        "href": "/tr/citizenship"
+        "href": "/tr/ikamet-izni/yatirimci-ikamet-izni"
       },
       {
         "label": "Gayrimenkul İkamet İzni",
         "image": "/hero/gayrimenkul-ikamet-izni.webp",
         "title1": "Gayrimenkul",
         "title2": "İkamet İzni",
-        "href": "/tr/citizenship"
+        "href": "/tr/ikamet-izni/gayrimenkul-ikamet-izni"
       },
       {
         "label": "Vergi Muafiyeti",
@@ -433,5 +434,1419 @@
     "hours_weekend": "Cumartesi - Pazar: Kapalı",
     "map_button": "Google Maps'te Aç",
     "rights": "Tüm Hakları Saklıdır."
+  },
+  "residence_page": {
+    "labels": {
+      "contact_cta": "Ücretsiz Danışın",
+      "faq_cta": "Sık Sorulan Sorular",
+      "overview": {
+        "groups_eyebrow": "Temel Ayrım",
+        "groups_title": "Kısa dönem ve uzun dönem izinler farklı mantıklarla işler",
+        "short_terms_eyebrow": "Kısa Dönem Başlıkları",
+        "short_terms_title": "En sık karşılaşılan kısa dönem ikamet gerekçeleri",
+        "permits_eyebrow": "Navbar Alt Başlıkları",
+        "permits_title": "İçeriği dört ayrı ikamet türü altında yeniden düzenledik",
+        "permit_detail_cta": "Detay Sayfasını Aç",
+        "notes_eyebrow": "Kritik Notlar",
+        "notes_title": "Başvuru türünü seçmeden önce şu noktaları netleştirin",
+        "cta_primary": "Ön Değerlendirme İsteyin",
+        "cta_secondary": "Uzun Dönem Şartlarını İncele"
+      },
+      "detail": {
+        "all_types_cta": "Tüm İkamet Türleri",
+        "section_label": "Bölüm",
+        "process_eyebrow": "Adım Adım",
+        "faq_eyebrow": "Sık Sorulanlar",
+        "faq_title": "Öne çıkan sorular",
+        "related_eyebrow": "Diğer Başlıklar",
+        "related_title": "İlgili diğer ikamet türlerine de buradan geçebilirsiniz",
+        "related_cta": "Bu sayfaya git",
+        "expert_cta": "Uzman Görüşü Alın"
+      }
+    },
+    "overview": {
+      "heroTag": "Oturum İzni Rehberi",
+      "title": "İkamet İzni Nedir?",
+      "summary": "İkamet izni, Türkiye'de vize veya vize muafiyetinin sağladığı süreden ya da doksan günden daha uzun kalacak yabancıların, kalış amaçlarına uygun şekilde almaları gereken yasal oturum statüsüdür.",
+      "notice": "Kısa dönem ikamet izni geçici kalış amaçları için düzenlenir ve kural olarak belirli sürelerle verilir. Uzun dönem ikamet izni ise gerekli şartları sağlayan kişilere süresiz statü sağlar.",
+      "quickFacts": [
+        {
+          "value": "90 Gün",
+          "label": "Vize sonrası temel eşik",
+          "note": "Daha uzun kalış için uygun ikamet izni gerekir."
+        },
+        {
+          "value": "2 Ana Grup",
+          "label": "Kısa ve uzun dönem",
+          "note": "Başvuru gerekçesi ve ikamet geçmişi belirleyicidir."
+        },
+        {
+          "value": "2 Yıla Kadar",
+          "label": "Kısa dönem ana süre",
+          "note": "Bazı bentlerde farklı süreler öngörülebilir."
+        },
+        {
+          "value": "Süresiz",
+          "label": "Uzun dönem statü",
+          "note": "Sekiz yıllık yasal ikamet geçmişiyle gündeme gelir."
+        }
+      ],
+      "mainGroups": [
+        {
+          "title": "Kısa Dönem İkamet İzni",
+          "description": "Taşınmaz sahipliği, yatırım, turizm, ticari bağlantı, tedavi, araştırma veya aile statüsü değişikliği gibi geçici kalış gerekçeleri için düzenlenir."
+        },
+        {
+          "title": "Uzun Dönem İkamet İzni",
+          "description": "Türkiye'de uzun süre yasal ve kesintisiz yaşayan, gelir, sigorta ve kamu düzeni şartlarını sağlayan yabancılara verilen süresiz statüdür."
+        }
+      ],
+      "shortTermTypes": [
+        "Bilimsel araştırma amacıyla gelecekler",
+        "Türkiye’de 200.000 USD’den yüksek değerde taşınmazı bulunanlar",
+        "Vatandaşlıkta kullanılacak tutarda yatırım yapan yatırımcılar",
+        "Ticari bağlantı kuracak veya iş kuracaklar",
+        "Hizmet içi eğitim programına katılacaklar",
+        "Anlaşma veya öğrenci değişim programı kapsamında eğitim için gelecekler",
+        "Turizm amaçlı kalacaklar",
+        "Tedavi amacıyla gelecekler",
+        "Adli veya idari makam kararıyla Türkiye’de kalması gerekenler",
+        "Aile ikamet izninden kısa dönem ikamete geçenler",
+        "Türkçe öğrenme kursuna katılacaklar",
+        "Kamu kurumları aracılığıyla eğitim, araştırma, staj veya kurs görecekler",
+        "Türkiye’de mezun olup altı ay içinde başvuran yabancılar",
+        "Cumhurbaşkanınca belirlenen kapsamda yatırım yapacaklar ve aile üyeleri",
+        "Kuzey Kıbrıs Türk Cumhuriyeti vatandaşları"
+      ],
+      "notes": [
+        "İkamet izni tek başına çalışma hakkı sağlamaz; çalışma planı varsa ayrıca çalışma izni veya muafiyet değerlendirilmelidir.",
+        "Başvuru belgeleri ikamet türüne, aile yapısına ve başvurucunun uyruğuna göre değişebilir.",
+        "Gayrimenkul ikametinde açık-kapalı bölge kontrolü ve tapudaki gerçek değer belirleyici başlıklardır.",
+        "Uzun dönem statü süresiz olsa da kamu düzeni veya uzun yurt dışı kalışı gibi nedenlerle iptal edilebilir."
+      ],
+      "ctaTitle": "Dosyanıza uygun ikamet modelini birlikte seçelim",
+      "ctaDescription": "Hangi başlık altında ilerlemeniz gerektiği; yatırım türünüz, aile yapınız, mevcut ikamet geçmişiniz ve Türkiye planınıza göre değişir."
+    },
+    "permits": {
+      "yatirimci-ikamet-izni": {
+        "navLabel": "Yatırımcı İkamet İzni (J)",
+        "cardDescription": "Nitelikli yatırım yapan yabancı yatırımcı ve çekirdek ailesi için düzenlenen özel statülü kısa dönem ikamet izni.",
+        "heroTag": "6458 Sayılı Kanun m. 31/1-j",
+        "title": "Yatırımcı İkamet İzni (J)",
+        "description": "Gerekli yatırım eşiğini sağlayan yabancı yatırımcıların ve uygun aile üyelerinin başvurabildiği kısa dönem ikamet izni.",
+        "summary": "31/1-j bendi kapsamında düzenlenen yatırımcı ikamet izni; Cumhurbaşkanınca belirlenen kapsam ve tutarda yatırım yapan yabancı yatırımcıya, eşine ve bağımlı çocuklarına tanınan özel statülü kısa dönem ikamet iznidir.",
+        "heroImage": "/hero/yatirimci-ikamet-izni.webp",
+        "warning": "Bu statü, taşınmaz edinimine dayalı 31/1-b ikametinden farklıdır. Yatırımcı ikameti, uygunluk belgesine dayalıdır ve yatırım yoluyla vatandaşlık sürecinin ikamet temelini oluşturur.",
+        "quickFacts": [
+          {
+            "value": "$400K / $500K",
+            "label": "Yatırım eşiği",
+            "note": "Yatırım türüne göre farklı tutarlar uygulanır."
+          },
+          {
+            "value": "Aile Dahil",
+            "label": "Kimler başvurabilir",
+            "note": "Eş ve bağımlı çocuklar aynı dosyada yer alabilir."
+          },
+          {
+            "value": "5 Yıla Kadar",
+            "label": "Azami düzenleme süresi",
+            "note": "Diğer kısa dönem izinlerden daha güçlü bir statüdür."
+          },
+          {
+            "value": "Uygunluk Belgesi",
+            "label": "Kurucu belge",
+            "note": "İkamet ve vatandaşlık aşamalarında belirleyicidir."
+          }
+        ],
+        "sections": [
+          {
+            "title": "Kimler Başvurabilir?",
+            "intro": "Bu ikamet türü doğrudan yatırımcı statüsüyle bağlantılıdır ve turistik veya taşınmaz temelli kısa dönem izinlerden ayrılır.",
+            "items": [
+              {
+                "title": "Ana yatırımcı",
+                "description": "Cumhurbaşkanınca belirlenen yatırım tutarını ve şeklini sağlayan yabancı yatırımcı doğrudan başvuru hakkına sahiptir."
+              },
+              {
+                "title": "Eş ve çocuklar",
+                "description": "Yabancı eş ile ergin olmayan veya bağımlı çocuklar aynı ikamet statüsüne dahil edilebilir."
+              },
+              {
+                "title": "Kapsam dışında kalan aile üyeleri",
+                "description": "Anne, baba, kardeş ve bağımsız yetişkin çocuklar bu bent kapsamında yatırımcıyla birlikte başvuramaz."
+              },
+              {
+                "title": "Çalışma planı varsa ek değerlendirme",
+                "description": "Bu statü yasal kalış sağlar; çalışılacaksa ayrıca çalışma mevzuatı yönünden değerlendirme yapılmalıdır."
+              }
+            ]
+          },
+          {
+            "title": "Gerekli Evraklar",
+            "items": [
+              {
+                "title": "Başvuru ve kimlik seti",
+                "description": "Başvuru formu, pasaport fotokopisi, biyometrik fotoğraf, harç ve belge bedeli makbuzları hazırlanır."
+              },
+              {
+                "title": "Sağlık sigortası",
+                "description": "Başvuru sahibini kapsayan geçerli sağlık sigortası poliçesi dosyada yer almalıdır."
+              },
+              {
+                "title": "Uygunluk belgesi",
+                "description": "İlgili kamu kurumunun yatırımı mevzuata uygun bulduğunu gösteren belge başvurunun temelidir."
+              },
+              {
+                "title": "Adli sicil ve aile bağını gösteren belgeler",
+                "description": "Adli sicil kaydı ile eş ve çocuklar başvuruyorsa evlilik ve doğum gibi aile bağını gösteren belgeler sunulur."
+              }
+            ]
+          },
+          {
+            "title": "Önem Arz Eden Hususlar",
+            "items": [
+              {
+                "title": "Belge geçerlilik süreleri",
+                "description": "Özellikle adli sicil kaydının düzenlenme tarihi ve geçerlilik süresi dikkatle kontrol edilmelidir."
+              },
+              {
+                "title": "Apostil ve tercüme şartı",
+                "description": "Yurt dışından gelen belgelerin apostilli ve noter onaylı Türkçe tercümeli olması beklenir."
+              },
+              {
+                "title": "Çoklu uyruk ve isim ayniyeti",
+                "description": "Farklı pasaportlarla yapılacak başvurularda isim ayniyet belgesi gibi ek evraklar talep edilebilir."
+              },
+              {
+                "title": "Uygunluk belgesinin önemi",
+                "description": "İkamet izninin yanında istisnai vatandaşlık dosyasının da kurucu belgelerinden biridir."
+              }
+            ]
+          },
+          {
+            "title": "Vatandaşlık Perspektifi",
+            "items": [
+              {
+                "title": "Doğrudan vatandaşlık vermez",
+                "description": "Bu izin tek başına Türk vatandaşlığı kazandırmaz; vatandaşlık için ayrı bir başvuru süreci yürütülür."
+              },
+              {
+                "title": "Süreç sıralaması",
+                "description": "Önce yatırım tamamlanır, uygunluk belgesi alınır, sonra 31/1-j ikameti ve ardından vatandaşlık başvurusu yapılır."
+              },
+              {
+                "title": "Aile bütünlüğü",
+                "description": "Yatırımcı, eşi ve bağımlı çocukları aynı genel planlama içinde ilerleyebilir."
+              },
+              {
+                "title": "Çalışma hakkı ayrımı",
+                "description": "İkamet statüsü çalışma hakkını otomatik doğurmaz; ayrıca çalışma izni gerekebilir."
+              }
+            ]
+          }
+        ],
+        "processTitle": "Başvuru Süreci",
+        "process": [
+          {
+            "title": "Yatırımın tamamlanması",
+            "description": "Seçilen yatırım modelindeki tutar ve şekil şartları eksiksiz yerine getirilir."
+          },
+          {
+            "title": "Uygunluk belgesinin alınması",
+            "description": "İlgili kurum yatırımın mevzuata uygun olduğunu tespit ederek uygunluk belgesini düzenler."
+          },
+          {
+            "title": "İkamet dosyasının hazırlanması",
+            "description": "Pasaport, sigorta, adli sicil ve aile bağını gösteren belgeler başvuru dosyasına eklenir."
+          },
+          {
+            "title": "e-İkamet ve göç idaresi aşaması",
+            "description": "Ön başvuru tamamlanır ve dosya il göç idaresinin istediği usulle sunulur."
+          },
+          {
+            "title": "Vatandaşlık dosyasına geçiş",
+            "description": "İkamet statüsü kurulduktan sonra yatırım yoluyla istisnai vatandaşlık başvurusu yapılır."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Yatırımcı ikamet izni ile taşınmaz ikameti aynı şey mi?",
+            "a": "Hayır. 31/1-j yatırımcı ikameti, nitelikli yatırım ve uygunluk belgesi temellidir; 31/1-b ise taşınmaz edinimine dayalı ayrı bir ikamet türüdür."
+          },
+          {
+            "q": "Anne ve baba yatırımcıyla birlikte başvurabilir mi?",
+            "a": "Hayır. Bu kapsamda yalnızca eş ile ergin olmayan veya bağımlı çocuklar başvuruya dahil edilebilir."
+          },
+          {
+            "q": "Bu izin otomatik olarak vatandaşlık verir mi?",
+            "a": "Hayır. İkamet izni, vatandaşlık başvurusuna geçişi sağlayan statüdür; yatırım ve vatandaşlık aşamaları ayrıca tamamlanmalıdır."
+          },
+          {
+            "q": "İkamet izni çalışmaya da yeter mi?",
+            "a": "Hayır. Türkiye’de çalışılacaksa ayrıca çalışma izni veya çalışma izni muafiyeti değerlendirilmelidir."
+          }
+        ]
+      },
+      "gayrimenkul-ikamet-izni": {
+        "navLabel": "Gayrimenkul İkamet İzni",
+        "cardDescription": "Konut niteliğinde taşınmaz edinimine dayanan ve açık-kapalı bölge kontrolleri bakımından hassas kısa dönem ikamet izni.",
+        "heroTag": "6458 Sayılı Kanun m. 31/1-b",
+        "title": "Gayrimenkul İkamet İzni",
+        "description": "Türkiye’de konut niteliğinde taşınmaz edinmiş yabancıların başvurabildiği kısa dönem ikamet izni.",
+        "summary": "Gayrimenkul ikamet izni, yabancı uyruklu kişilerin Türkiye'de konut niteliğinde bir taşınmaz edinmeleri hâlinde başvurabildikleri kısa dönem ikamet iznidir. Bu statü vatandaşlık veren ayrıcalıklı yatırımcı ikametinden farklıdır.",
+        "heroImage": "/hero/gayrimenkul-ikamet-izni.webp",
+        "warning": "Tapu devir tarihindeki gerçek değer, taşınmazın açık bölgede bulunması ve tapunun başvurucu adına devredilmiş olması başvurunun en kritik unsurlarıdır.",
+        "quickFacts": [
+          {
+            "value": "$200K / $75K",
+            "label": "Değer eşiği",
+            "note": "Büyükşehir ve diğer şehir ayrımı önemlidir."
+          },
+          {
+            "value": "Açık Bölge",
+            "label": "Yer şartı",
+            "note": "Kapalı bölgede yeni başvuru kabul edilmez."
+          },
+          {
+            "value": "1 Yıl",
+            "label": "İlk izin pratiği",
+            "note": "İlk başvuruda çoğu zaman bir yıllık kart düzenlenir."
+          },
+          {
+            "value": "Tapu Sahibi",
+            "label": "Doğrudan hak sahibi",
+            "note": "Aile üyeleri ilk aşamada ayrı statüyle ilerler."
+          }
+        ],
+        "sections": [
+          {
+            "title": "Temel Şartlar",
+            "intro": "Bu ikamet türü, konut niteliğinde ve fiilen oturuma elverişli taşınmaz edinimine dayanır.",
+            "items": [
+              {
+                "title": "Konut niteliğinde taşınmaz",
+                "description": "Başvuruda kullanılacak taşınmazın oturuma hazır, tapulu ve iskânlı bir konut olması beklenir."
+              },
+              {
+                "title": "Tapu devri zorunluluğu",
+                "description": "Satış vaadi sözleşmesi tek başına yeterli değildir; tapunun doğrudan başvurucu adına devredilmiş olması gerekir."
+              },
+              {
+                "title": "Değer eşikleri",
+                "description": "Büyükşehirlerde en az 200.000 USD, diğer şehirlerde en az 75.000 USD değer şartı aranır."
+              },
+              {
+                "title": "Açık bölge kontrolü",
+                "description": "Taşınmaz yalnızca yeni başvuruya açık mahalle veya ilçelerde bulunmalıdır."
+              }
+            ]
+          },
+          {
+            "title": "Açık ve Kapalı Bölge Uygulaması",
+            "items": [
+              {
+                "title": "Kapalı bölge ne demektir?",
+                "description": "Kapalı bölge, yabancıların taşınmaz edinimine dayanarak yeni ikamet izni alamayacağı mahalle veya semtleri ifade eder."
+              },
+              {
+                "title": "Nasıl belirlenir?",
+                "description": "Göç İdaresi, yabancı nüfus oranı, göç yoğunluğu ve sosyal-idari risk analizleri üzerinden mahalle bazlı değerlendirme yapar."
+              },
+              {
+                "title": "Örnek kapalı ilçeler",
+                "description": "İstanbul, Ankara ve İzmir’de yeni başvuruya kapalı ilan edilmiş çeşitli ilçe ve mahalleler bulunmaktadır."
+              },
+              {
+                "title": "Güncel kontrol şarttır",
+                "description": "Bir mahalle bugün açık olsa bile ileride kapalı hale gelebileceğinden yatırım öncesi güncel teyit alınmalıdır."
+              }
+            ]
+          },
+          {
+            "title": "Aile Statüsü ve Gayrimenkulün Kullanımı",
+            "items": [
+              {
+                "title": "Doğrudan hak sahibi",
+                "description": "Gayrimenkul ikamet iznine yalnızca taşınmazın tapu kaydında adı bulunan kişi doğrudan başvurabilir."
+              },
+              {
+                "title": "Aile üyeleri için ilk aşama",
+                "description": "Eş ve çocuklar ilk başvuruda çoğu zaman turistik ikametle ilerler; uzatmada aile ikametine geçiş ayrıca değerlendirilebilir."
+              },
+              {
+                "title": "Yenileme imkânı",
+                "description": "Şartlar korunuyorsa uzatma başvurularında sayı sınırlaması yoktur."
+              },
+              {
+                "title": "Kullanım şekli",
+                "description": "Taşınmazın fiilen konut olarak kullanılması ve başvuru amacına uygunluğunun korunması önemlidir."
+              }
+            ]
+          },
+          {
+            "title": "Gerekli Belgeler ve Kritik Kontroller",
+            "items": [
+              {
+                "title": "Temel evrak seti",
+                "description": "Pasaport, biyometrik fotoğraf, tapu, giriş damgası, DASK, numarataj ve aile durumuna göre ek belgeler hazırlanır."
+              },
+              {
+                "title": "Ekspertiz ve banka kayıtları",
+                "description": "Edinim tarihine göre ekspertiz, döviz alım belgesi ve banka kayıtları başvuruda önem taşıyabilir."
+              },
+              {
+                "title": "Tapudaki gerçek değer",
+                "description": "Tapuda gösterilen bedel eşik değerin altında görünürse başvuruda ciddi sorun yaşanabilir."
+              },
+              {
+                "title": "Devir tarihindeki kur riski",
+                "description": "Ödeme tarihinde eşik sağlansa bile tapu devrindeki kur karşılığı altına düşerse başvuru riske girebilir."
+              }
+            ]
+          },
+          {
+            "title": "Vatandaşlık Perspektifi",
+            "items": [
+              {
+                "title": "Doğrudan vatandaşlık vermez",
+                "description": "Bu ikamet türü yatırım yoluyla vatandaşlık sağlayan özel statü değildir; genel başvuru mantığıyla değerlendirilir."
+              },
+              {
+                "title": "Kesintisiz kalış takibi",
+                "description": "Son beş yıl ve son bir yıl içindeki yurt dışı kalış süreleri genel vatandaşlık hesabında önem taşır."
+              },
+              {
+                "title": "Statünün korunması",
+                "description": "Sık ve uzun süreli yurt dışı çıkışları ya da ikamette kesinti vatandaşlığa götüren süreyi sıfırlayabilir."
+              }
+            ]
+          }
+        ],
+        "processTitle": "Başvuru Süreci",
+        "process": [
+          {
+            "title": "Taşınmaz ve bölge kontrolü",
+            "description": "Önce taşınmazın konut niteliği, açık bölge şartı ve değer eşiği teyit edilir."
+          },
+          {
+            "title": "Tapu ve destekleyici belgelerin hazırlanması",
+            "description": "Tapu, DASK, numarataj, ekspertiz ve gerekli banka belgeleri bir araya getirilir."
+          },
+          {
+            "title": "e-İkamet başvurusu",
+            "description": "Ön başvuru oluşturulur ve sistemin verdiği belge listesine göre dosya tamamlanır."
+          },
+          {
+            "title": "Göç idaresi incelemesi",
+            "description": "Dosya, tapu değeri, bölge uygunluğu ve aile durumu bakımından incelenir."
+          },
+          {
+            "title": "İlk izin ve uzatma planı",
+            "description": "İlk kart sonrası, statünün korunması ve aile üyelerinin geçişleri için uzatma takvimi planlanır."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Her taşınmaz ikamet iznine uygun mudur?",
+            "a": "Hayır. Taşınmazın konut niteliğinde olması, açık bölgede bulunması, tapunun başvurucu adına devredilmiş olması ve değer eşiğinin sağlanması gerekir."
+          },
+          {
+            "q": "Kapalı bölgede 200.000 USD üzeri taşınmaz almak yeterli midir?",
+            "a": "Hayır. Bedel şartı sağlansa bile kapalı bölgede bulunan taşınmaz üzerinden yeni ikamet izni başvurusu reddedilebilir."
+          },
+          {
+            "q": "Aile üyeleri de aynı anda gayrimenkul ikamet izni alabilir mi?",
+            "a": "Tapu sahibinin kendisi doğrudan bu statüye başvurur; aile üyeleri çoğu zaman ilk aşamada başka ikamet türleriyle ilerler."
+          },
+          {
+            "q": "Bu yöntem tek başına vatandaşlık verir mi?",
+            "a": "Hayır. Gayrimenkul ikamet izni, vatandaşlık için doğrudan hak tanıyan yatırımcı ikametinden farklıdır."
+          }
+        ]
+      },
+      "aile-ikamet-izni": {
+        "navLabel": "Aile İkamet İzni",
+        "cardDescription": "Türk vatandaşı veya uygun statüdeki destekleyiciye bağlı olarak eş ve çocuklara verilen, aile birliğini korumayı amaçlayan ikamet izni.",
+        "heroTag": "6458 Sayılı Kanun m. 34-37",
+        "title": "Aile İkamet İzni",
+        "description": "Türk vatandaşı veya uygun destekleyiciye bağlı olarak eş ve çocuklara verilen, her defasında en fazla üç yıl süreli ikamet izni.",
+        "summary": "Aile ikamet izni; Türk vatandaşı, Mavi Kart sahibi, geçerli ikamet izni sahibi yabancı, mülteci veya ikincil koruma statüsü sahibi bir kişinin belirli aile fertlerine verilen ikamet iznidir.",
+        "heroImage": "/hero/hukuki-hizmetler.jpg",
+        "warning": "Destekleyicinin gelir, sigorta, adres ve geçmiş ikamet şartları kadar; evlilik, velayet ve birlikte yaşama ilişkisini gösteren belgeler de kritik önemdedir.",
+        "quickFacts": [
+          {
+            "value": "3 Yıla Kadar",
+            "label": "Azami süre",
+            "note": "Süre destekleyicinin yasal kalışını aşamaz."
+          },
+          {
+            "value": "Destekleyici",
+            "label": "Başvurunun temeli",
+            "note": "Türk vatandaşı veya uygun statüde yabancı olabilir."
+          },
+          {
+            "value": "18 Yaş",
+            "label": "Eş başvurularında eşik",
+            "note": "Her iki tarafın da ergin olması gerekir."
+          },
+          {
+            "value": "Aile Birliği",
+            "label": "Esas amaç",
+            "note": "Birlikte yaşama veya yaşama niyeti aranır."
+          }
+        ],
+        "sections": [
+          {
+            "title": "Kimler Yararlanabilir?",
+            "intro": "Aile ikamet izni, kanunda sınırlı sayıda belirtilen aile fertlerini kapsar ve destekleyici üzerinden ilerler.",
+            "items": [
+              {
+                "title": "Yabancı eş",
+                "description": "Türk vatandaşı veya uygun statüdeki destekleyicinin yabancı eşi bu ikamet iznine başvurabilir."
+              },
+              {
+                "title": "Ergin olmayan çocuklar",
+                "description": "Kişinin veya eşinin ergin olmayan yabancı çocukları aile birliği kapsamında başvuru yapabilir."
+              },
+              {
+                "title": "Bağımlı çocuklar",
+                "description": "Engelli veya kısıtlı durumda bulunan yabancı çocuklar da kapsamda değerlendirilebilir."
+              },
+              {
+                "title": "Çok eşlilik ve velayet",
+                "description": "Çok eşlilik halinde yalnızca ilk eş için aile ikameti verilebilir; çocuk başvurularında muvafakat ve velayet belgeleri önem taşır."
+              }
+            ]
+          },
+          {
+            "title": "Destekleyici Açısından Şartlar",
+            "items": [
+              {
+                "title": "Sağlık sigortası",
+                "description": "Destekleyicinin tüm aile fertlerini kapsayan geçerli sağlık sigortasına sahip olması gerekir."
+              },
+              {
+                "title": "Yeterli ve düzenli gelir",
+                "description": "Fert başına asgari ücretin üçte birinden az olmamak üzere yeterli aylık gelir gösterilmelidir."
+              },
+              {
+                "title": "Adli sicil",
+                "description": "Son beş yıl içinde aile düzenine karşı suç işlenmediği adli sicille belgelenebilmelidir."
+              },
+              {
+                "title": "İkamet ve adres kaydı",
+                "description": "Destekleyici yabancı ise kural olarak en az bir yıllık yasal ikamet ve adres kayıt sistemi kaydı aranır."
+              }
+            ]
+          },
+          {
+            "title": "Başvuran Aile Ferdi Açısından Şartlar",
+            "items": [
+              {
+                "title": "Kalış amacını belgeleme",
+                "description": "Aile ilişkisini ve Türkiye’de kalış amacını gösteren belgeler açık biçimde sunulmalıdır."
+              },
+              {
+                "title": "Birlikte yaşama",
+                "description": "Başvuranın destekleyici ile birlikte yaşadığı veya yaşama niyeti taşıdığı ortaya konulmalıdır."
+              },
+              {
+                "title": "Yaş şartı",
+                "description": "Eşler bakımından her iki tarafın da 18 yaşını doldurmuş olması gerekir."
+              },
+              {
+                "title": "Giriş yasağı ve muvazaalı evlilik kontrolü",
+                "description": "Türkiye’ye girişi yasaklı kişiler kapsamına girmemek ve evliliğin sırf ikamet amacıyla yapılmamış olması gerekir."
+              }
+            ]
+          },
+          {
+            "title": "Gerekli Evraklar",
+            "items": [
+              {
+                "title": "Başvuran için temel belgeler",
+                "description": "Başvuru formu, pasaport, doğum belgesi, biyometrik fotoğraf, harç makbuzları ve evlilik veya aile bağını gösteren belgeler hazırlanır."
+              },
+              {
+                "title": "Çocuk başvurularında ek belgeler",
+                "description": "Velayet, muvafakatname, aile kaydı, noter taahhütnamesi ve gerekiyorsa ölüm belgesi talep edilebilir."
+              },
+              {
+                "title": "Destekleyicinin evrakları",
+                "description": "Kimlik veya statü belgesi, gelir belgesi, sağlık sigortası, adli sicil ve adres kayıt belgesi dosyada bulunmalıdır."
+              },
+              {
+                "title": "Yurt dışı belgeleri",
+                "description": "Yurt dışından getirilen resmi belgeler için genellikle apostil ve noter onaylı Türkçe tercüme gerekir."
+              },
+              {
+                "title": "Eğitim gören ergin çocuk istisnası",
+                "description": "Türkiye’de eğitim gören ergin çocuklar öğrenci belgeleriyle 25 yaşına kadar aile ikameti alabilir."
+              }
+            ]
+          },
+          {
+            "title": "Vatandaşlık Perspektifi",
+            "items": [
+              {
+                "title": "Genel başvuru mantığı",
+                "description": "Aile ikamet izni vatandaşlığı otomatik vermez; genel başvuru şartları ayrıca değerlendirilir."
+              },
+              {
+                "title": "Yurt dışı kalış süreleri",
+                "description": "Son beş yıl ve son bir yıl içindeki yurt dışı kalış süreleri genel vatandaşlık hesabında önemlidir."
+              },
+              {
+                "title": "Statünün kesintisiz korunması",
+                "description": "Sık ve uzun süreli yurt dışı çıkışları veya ikamette kesinti vatandaşlık hesabını sıfırlayabilir."
+              }
+            ]
+          }
+        ],
+        "processTitle": "Başvuru Süreci",
+        "process": [
+          {
+            "title": "Destekleyicinin uygunluğunun kontrolü",
+            "description": "Önce destekleyicinin gelir, sigorta, adres kaydı ve gerekli ise ikamet geçmişi teyit edilir."
+          },
+          {
+            "title": "Aile bağını gösteren belgelerin hazırlanması",
+            "description": "Evlilik, doğum, velayet ve muvafakat belgeleri usulüne uygun şekilde toplanır."
+          },
+          {
+            "title": "e-İkamet başvurusu",
+            "description": "Başvuru sahibi adına ön başvuru oluşturulur ve sistemin verdiği belge listesine göre dosya hazırlanır."
+          },
+          {
+            "title": "Göç idaresi incelemesi",
+            "description": "Birlikte yaşama iradesi, destekleyici şartları ve aile bağları bakımından dosya incelenir."
+          },
+          {
+            "title": "Kartın düzenlenmesi ve uzatma takibi",
+            "description": "Olumlu karar sonrasında izin düzenlenir; destekleyicinin statüsündeki değişiklikler uzatmada yeniden değerlendirilir."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Aile ikamet izni en fazla ne kadar süreyle verilir?",
+            "a": "Her defasında en fazla üç yıl süreyle verilebilir; ancak süre destekleyicinin yasal kalış süresini aşamaz."
+          },
+          {
+            "q": "Destekleyici yabancı ise Türkiye’de ne kadar süre yaşamış olmalıdır?",
+            "a": "Kural olarak geriye dönük en az bir yıllık yasal ikamet geçmişi aranır."
+          },
+          {
+            "q": "Çocuk başvurularında diğer ebeveynin izni gerekir mi?",
+            "a": "Ortak velayet veya tek ebeveynle başvuru gibi durumlarda diğer ebeveynin muvafakati ve velayet belgeleri genellikle gerekir."
+          },
+          {
+            "q": "Aile ikamet izni tek başına vatandaşlık sağlar mı?",
+            "a": "Hayır. Bu izin yalnızca yasal kalış statüsüdür; vatandaşlık için genel başvuru şartları ayrıca değerlendirilir."
+          }
+        ]
+      },
+      "uzun-donem-ikamet-izni": {
+        "navLabel": "Uzun Dönem İkamet İzni",
+        "cardDescription": "Türkiye’de sekiz yıllık kesintisiz ve yasal ikamet geçmişi bulunan yabancılar için öngörülen süresiz ikamet statüsü.",
+        "heroTag": "6458 Sayılı Kanun m. 42-45",
+        "title": "Uzun Dönem İkamet İzni",
+        "description": "Sekiz yıllık yasal ikamet, gelir, sigorta ve kamu düzeni şartlarını sağlayan yabancılara verilen süresiz statü.",
+        "summary": "Uzun dönem ikamet izni, yabancının Türkiye'de kalışını süre sınırı olmaksızın devam ettirmesine imkân tanıyan süresiz bir ikamet iznidir. Belirli aralıklarla uzatma mantığına dayanan kısa dönem izinlerden bu yönüyle ayrılır.",
+        "heroImage": "/hero/hukuki-hizmetler.jpg",
+        "warning": "Uzun dönem ikamet izni süresizdir; ancak kamu düzeni gerekçeleri veya belirli istisnalar dışında bir yıldan uzun yurt dışı kalışı halinde iptal edilebilir. Ayrıca çalışma izni yerine geçmez.",
+        "quickFacts": [
+          {
+            "value": "8 Yıl",
+            "label": "Temel ikamet geçmişi",
+            "note": "Kesintisiz ve yasal ikamet aranır."
+          },
+          {
+            "value": "Süresiz",
+            "label": "Statü süresi",
+            "note": "Kısa dönem izinlerden bu yönüyle ayrılır."
+          },
+          {
+            "value": "5 Şart",
+            "label": "Kanundaki ana koşullar",
+            "note": "Gelir, sigorta ve kamu düzeni dahil."
+          },
+          {
+            "value": "Çalışma İzni Değil",
+            "label": "Önemli ayrım",
+            "note": "Çalışma için ayrı mevzuat uygulanır."
+          }
+        ],
+        "sections": [
+          {
+            "title": "Kimler Başvurabilir?",
+            "intro": "Uzun dönem ikamet izni, Türkiye'de uzun süre yasal olarak yaşamış yabancılar için öngörülen daha kalıcı bir statüdür.",
+            "items": [
+              {
+                "title": "Sekiz yıllık yasal ikamet",
+                "description": "Kural olarak Türkiye’de kesintisiz en az sekiz yıl ikamet izniyle kalmış yabancılar başvurabilir."
+              },
+              {
+                "title": "Özel değerlendirme imkânları",
+                "description": "Bakanlığın veya Göç Politikaları Kurulu’nun belirlediği özel şartlara uyan kişiler için ayrıca değerlendirme yapılabilir."
+              },
+              {
+                "title": "Kapsam dışında kalan statüler",
+                "description": "Mülteci, şartlı mülteci, ikincil koruma, insani ikamet ve geçici koruma altındaki kişiler bu statüye geçemez."
+              },
+              {
+                "title": "Sekiz yıl hesabı",
+                "description": "Öğrenci ikamet izniyle geçen sürenin yarısı, diğer ikamet türleriyle geçen sürenin tamamı hesaplamaya dahil edilir."
+              }
+            ]
+          },
+          {
+            "title": "Aranan Şartlar",
+            "items": [
+              {
+                "title": "Kesintisiz en az sekiz yıl ikamet",
+                "description": "Başvuru tarihinde gerekli yasal ikamet süresinin tamamlanmış olması gerekir."
+              },
+              {
+                "title": "Son üç yılda sosyal yardım almamış olmak",
+                "description": "Başvuru sahibinin sosyal yardım almadığını resmi belgeyle göstermesi beklenir."
+              },
+              {
+                "title": "Yeterli ve düzenli gelir",
+                "description": "Kendisinin veya ailesinin geçimini sağlayacak düzeyde düzenli gelir bulunmalıdır."
+              },
+              {
+                "title": "Geçerli sağlık sigortası",
+                "description": "SGK, genel sağlık sigortası veya özel sigorta kapsamında sağlık güvencesi gösterilmelidir."
+              },
+              {
+                "title": "Kamu düzeni bakımından tehdit oluşturmamak",
+                "description": "Başvuru sahibinin kamu düzeni veya kamu güvenliği açısından olumsuz değerlendirilmemesi gerekir."
+              }
+            ]
+          },
+          {
+            "title": "Gerekli Evrak Listesi",
+            "items": [
+              {
+                "title": "Başvuru ve kimlik belgeleri",
+                "description": "İkamet izni formu, pasaport fotokopisi ve güncel biyometrik fotoğraflar hazırlanır."
+              },
+              {
+                "title": "Adres ve harç belgeleri",
+                "description": "Belge bedeli makbuzu, yerleşim yeri belgesi ve gerekirse fatura veya abonelik sözleşmesi sunulur."
+              },
+              {
+                "title": "Sağlık sigortası",
+                "description": "SGK kapsamı, GSS başvuru belgesi veya özel sağlık sigortası poliçesi kabul edilebilir."
+              },
+              {
+                "title": "Adli sicil kaydı",
+                "description": "Türk makamlarından ve gerekirse yabancı ülkeden alınan adli sicil kayıtları istenebilir."
+              },
+              {
+                "title": "Gelir ve sosyal yardım belgeleri",
+                "description": "Düzenli gelir ve son üç yılda sosyal yardım alınmadığını gösteren belgeler dosyada yer alır."
+              },
+              {
+                "title": "UETS ve çocuk evrakları",
+                "description": "UETS belgesi ile çocuk adına başvuru varsa doğum, velayet ve muvafakat belgeleri istenebilir."
+              }
+            ]
+          },
+          {
+            "title": "Statünün Korunması ve İptal Riski",
+            "items": [
+              {
+                "title": "Çalışma hakkı ayrımı",
+                "description": "Uzun dönem ikamet statüsü tek başına çalışma izni yerine geçmez."
+              },
+              {
+                "title": "Kamu düzeni sebebiyle iptal",
+                "description": "Kişinin kamu düzeni veya kamu güvenliği açısından ciddi tehdit oluşturması halinde izin iptal edilebilir."
+              },
+              {
+                "title": "Bir yıldan uzun yurt dışı kalışı",
+                "description": "Sağlık, eğitim veya zorunlu kamu hizmeti dışında bir nedenle kesintisiz bir yıldan fazla Türkiye dışında kalmak statüyü düşürebilir."
+              },
+              {
+                "title": "Ek belge ve inceleme riski",
+                "description": "İdare, ikamet geçmişi, gelir, sigorta ve kamu düzeni başlıklarında ilave bilgi ve belge talep edebilir."
+              }
+            ]
+          }
+        ],
+        "processTitle": "Başvuru Süreci",
+        "process": [
+          {
+            "title": "e-İkamet ön başvurusu",
+            "description": "Başvuru sahibi sistemde ön başvurusunu oluşturur ve kişiye özel belge listesini alır."
+          },
+          {
+            "title": "Sekiz yıllık geçmişin hazırlanması",
+            "description": "İkamet geçmişi, gelir, sigorta, adres, adli sicil ve sosyal yardım belgeleri bir araya getirilir."
+          },
+          {
+            "title": "İl göç idaresine sunum",
+            "description": "Randevu veya dosya teslim yöntemiyle başvuru il göç idaresine sunulur."
+          },
+          {
+            "title": "İdari inceleme",
+            "description": "İdare, kesintisiz ikamet süresini, sosyal yardım durumunu, gelir ve kamu düzeni başlıklarını birlikte inceler."
+          },
+          {
+            "title": "Süresiz kartın düzenlenmesi",
+            "description": "Başvuru olumlu sonuçlanırsa uzun dönem ikamet izni süresiz olarak düzenlenir."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Uzun dönem ikamet izni için temel süre şartı nedir?",
+            "a": "Kural olarak Türkiye’de kesintisiz en az sekiz yıl ikamet izniyle kalmış olmak gerekir."
+          },
+          {
+            "q": "Öğrenci ikamet izniyle geçen süre tamamen sayılır mı?",
+            "a": "Hayır. Öğrenci ikamet izniyle geçen sürenin yarısı, diğer ikamet türleriyle geçen sürenin tamamı dikkate alınır."
+          },
+          {
+            "q": "Uzun dönem ikamet izni ile ayrıca çalışma izni almadan çalışabilir miyim?",
+            "a": "Hayır. Bu statü tek başına çalışma izni yerine geçmez; çalışma için ayrıca ilgili mevzuat değerlendirilmelidir."
+          },
+          {
+            "q": "Süresiz izin sonradan iptal edilebilir mi?",
+            "a": "Evet. Kamu düzeni veya kamu güvenliği bakımından ciddi tehdit oluşması ya da belirli istisnalar dışında bir yıldan uzun süre Türkiye dışında kalınması halinde iptal gündeme gelebilir."
+          }
+        ]
+      }
+    }
+  },
+  "ehliyet_page": {
+    "metadata": {
+      "breadcrumbLabel": "Ehliyet Tebdili",
+      "title": "Yabancı Ehliyet Tebdili ve Türkiye'de Araç Kullanımı",
+      "description": "Yabancı sürücü belgesinin Türkiye'de kullanım süresi, tebdile uygun ülke analizi, gerekli belgeler, başvuru adımları ve sık karşılaşılan riskler için kapsamlı rehber.",
+      "howtoTitle": "Yabancı ehliyet tebdil başvuru süreci",
+      "howtoDescription": "Tebdile uygunluk analizinden randevuya ve Türk sürücü belgesinin teslimine kadar başvuru akışını özetler.",
+      "serviceDescription": "Yabancılar hukuku, ikamet statüsü, belge hazırlığı ve idari başvuru dosyalarının ön incelemesi için danışmanlık hizmeti sunar."
+    },
+    "hero": {
+      "tag": "Hukuki ve İdari Uygulama Rehberi",
+      "title": "Yabancıların Türkiye'de Araç Kullanabilmesi ve Ehliyet Tebdil İşlemleri",
+      "summary": "Yabancı sürücü belgesinin Türkiye'de ne kadar süreyle kullanılabileceğini, hangi ülkelerin tebdil kapsamında olduğunu ve başvurunun hangi belgelerle nasıl ilerlediğini tek sayfada toplayan pratik rehber.",
+      "warning": "Altı aylık kullanım süresi, son giriş tarihinden itibaren işler. Süre dolduktan sonra tebdil yapılmadan araç kullanılması ciddi yaptırımlara yol açabilir.",
+      "imageAlt": "Ehliyet tebdili hukuki danışmanlık",
+      "primaryCta": "Dosyanızı Değerlendirelim",
+      "secondaryCta": "Sık Sorulan Sorular"
+    },
+    "quickFacts": [
+      {
+        "value": "6 Ay",
+        "label": "Yabancı ehliyetle araç kullanma süresi",
+        "note": "Pasaporttaki son giriş tarihinden itibaren"
+      },
+      {
+        "value": "NVİGM",
+        "label": "Yetkili idare",
+        "note": "İl ve ilçe nüfus müdürlükleri üzerinden"
+      },
+      {
+        "value": "Şahsen",
+        "label": "Başvuru yöntemi",
+        "note": "Vekaletle sürücü belgesi başvurusu yapılamaz"
+      },
+      {
+        "value": "PTT",
+        "label": "Teslim şekli",
+        "note": "Türk sürücü belgesi bildirilen adrese gönderilir"
+      }
+    ],
+    "overview": {
+      "eyebrow": "Genel Çerçeve",
+      "title": "Başvuruya başlamadan önce bilinmesi gereken dört temel nokta",
+      "bullets": [
+        "Yabancı ehliyetin düzenlendiği ülke mutlaka önceden kontrol edilmelidir.",
+        "Başvuru yalnızca randevu ile ve nüfus müdürlüğünde şahsen yapılır.",
+        "Tercüme, belge doğrulama ve sınıf tespiti dosyanın en hassas aşamalarıdır."
+      ],
+      "spotlights": [
+        {
+          "title": "Tebdil Nedir?",
+          "description": "Yurt dışında düzenlenmiş geçerli bir sürücü belgesinin, Türkiye Cumhuriyeti makamlarınca düzenlenen Türk sürücü belgesi ile değiştirilmesi işlemidir."
+        },
+        {
+          "title": "İlk Kontrol Noktası",
+          "description": "Başvuruya başlamadan önce belgenin düzenlendiği ülkenin 1968 Viyana Karayolu Trafiği Konvansiyonuna taraf olup olmadığı veya Türkiye ile ikili anlaşma bulunup bulunmadığı incelenmelidir."
+        },
+        {
+          "title": "Kritik Zaman Kuralı",
+          "description": "Türk vatandaşı olmayan yabancı uyruklu kişiler, yabancı ehliyetlerini Türkiye'ye son giriş tarihinden itibaren en fazla altı ay süreyle kullanabilir."
+        },
+        {
+          "title": "Neden Dosya Ön İncelemesi Gerekir?",
+          "description": "Yanlış ülke değerlendirmesi, eksik tercüme, okunmayan sınıf bilgileri veya belge doğrulama talepleri başvuruyu uzatabilir ya da sonuçsuz bırakabilir."
+        }
+      ]
+    },
+    "legal": {
+      "eyebrow": "Hukuki Dayanak",
+      "title": "Yasal Çerçeve",
+      "items": [
+        "2918 sayılı Karayolları Trafik Kanunu'nun özellikle 38. ve 42. maddeleri.",
+        "Karayolları Trafik Yönetmeliği'nin 88. maddesi.",
+        "1968 tarihli Viyana Karayolu Trafiği Konvansiyonu ve tamamlayıcı Avrupa Anlaşması.",
+        "NVİGM Sürücü Belgesi İşlemlerine Dair Uygulama Talimatı.",
+        "5490 sayılı Nüfus Hizmetleri Kanunu'nun biyometrik veri işlenmesine ilişkin hükümleri."
+      ]
+    },
+    "eligibility": {
+      "eyebrow": "Tebdil Uygunluğu",
+      "title": "Kimler ehliyet tebdil işleminden yararlanabilir?",
+      "description": "Dosyanın en kritik aşaması, yabancı ehliyetin düzenlendiği ülkenin hukuki statüsünü doğru tespit etmektir. Bu ayrım başvurunun mümkün olup olmadığını doğrudan belirler.",
+      "items": [
+        {
+          "title": "Viyana Konvansiyonuna Taraf Ülkeler",
+          "description": "Bu ülkelerden alınmış geçerli sürücü belgeleri, kural olarak teorik veya uygulamalı sınav şartı aranmaksızın Türk sürücü belgesi ile değiştirilebilir.",
+          "outcome": "Doğrudan tebdil mümkündür."
+        },
+        {
+          "title": "Türkiye ile İkili Anlaşması Bulunan Ülkeler",
+          "description": "Türkiye'nin sürücü belgelerinin karşılıklı tanınmasına ilişkin yürürlükte ikili anlaşma akdettiği ülkeler bakımından başvuru, ilgili anlaşma hükümleri çerçevesinde yürütülür.",
+          "outcome": "Anlaşma metni ve uygulama şartları birlikte değerlendirilmelidir."
+        },
+        {
+          "title": "Konvansiyon ve Anlaşma Dışı Ülkeler",
+          "description": "Konvansiyona taraf olmayan ve Türkiye ile ikili anlaşması bulunmayan ülkelerden alınan sürücü belgeleri kural olarak tebdile uygun değildir.",
+          "outcome": "Türk mevzuatına göre baştan sürücü belgesi alma süreci gerekir."
+        }
+      ]
+    },
+    "countries": {
+      "eyebrow": "Ülke Listeleri",
+      "title": "Tebdil başvurusu kabul edilen ülke grupları",
+      "description": "Aşağıdaki listeler rehber amaçlıdır. Özellikle uygulamada kabul edilen diğer ülkeler bakımından nüfus müdürlüğü yaklaşımı ve doğrulama süreci farklılık gösterebilir.",
+      "countLabel": "ülke",
+      "disclaimer": "Ülke listeleri, uygulama kabulü ve ücret kalemleri zaman içinde değişebilir. Başvuru öncesinde NVİGM ve ilgili resmi kaynaklardan güncel durumun teyit edilmesi önerilir.",
+      "groups": [
+        {
+          "title": "1968 Karayolu Trafiği Konvansiyonuna Taraf Ülkeler",
+          "description": "Aşağıdaki ülkelerden alınmış geçerli sürücü belgeleri, genel kural olarak sınav aranmaksızın tebdil edilebilir."
+        },
+        {
+          "title": "İkili Anlaşma Kapsamındaki Ülkeler",
+          "description": "Türkiye ile sürücü belgelerinin karşılıklı tanınmasına ilişkin yürürlükte ikili anlaşma bulunan ülkeler aşağıdadır.",
+          "note": "İspanya aynı zamanda Viyana Konvansiyonuna da taraftır; bu nedenle iki ayrı dayanak birlikte bulunur."
+        },
+        {
+          "title": "Uygulamada Başvurusu Kabul Edilen Diğer Ülkeler",
+          "description": "Uluslararası sözleşmelere sonradan katılım, idari uygulama veya fiili karşılıklılık sebebiyle aşağıdaki ülkeler bakımından da başvuru kabul edilebilmektedir.",
+          "note": "Bu grupta nüfus müdürlüğü uygulaması ve belge doğrulama süreçleri belirleyici olabilir; başvuru öncesinde güncel teyit önemlidir."
+        }
+      ]
+    },
+    "requirements": {
+      "eyebrow": "Belge ve Süreç",
+      "title": "Gerekli belgeler, randevu sistemi ve başvuru akışı",
+      "items": [
+        {
+          "title": "Yabancı sürücü belgesinin aslı ve renkli fotokopisi",
+          "description": "Belge okunaklı olmalı; sınıf ve geçerlilik bilgileri açık biçimde görülebilmelidir."
+        },
+        {
+          "title": "Noter veya konsolosluk onaylı Türkçe tercüme",
+          "description": "Tercümede belge sınıfı, geçerlilik tarihi ve kimlik bilgileri eksiksiz yer almalıdır; eksik tercümeler başvuruyu uzatabilir."
+        },
+        {
+          "title": "Kimlik ve ikamet belgeleri",
+          "description": "Geçerli pasaport ve varsa Türkiye Cumhuriyeti tarafından düzenlenmiş ikamet izni kartı ibraz edilir."
+        },
+        {
+          "title": "Sürücü sağlık raporu",
+          "description": "Kişinin sürücü belgesi almaya elverişli olduğunu gösteren güncel sağlık raporudur."
+        },
+        {
+          "title": "Öğrenim belgesi",
+          "description": "Yurt dışından alınmış ise noter tasdikli Türkçe tercümesi ile birlikte sunulmalıdır."
+        },
+        {
+          "title": "Adli sicil kaydı",
+          "description": "Başvuru sahibinin adli sicil durumunun sistem üzerinden teyidi veya belge ile ibrazı aranır."
+        },
+        {
+          "title": "Biyometrik fotoğraf",
+          "description": "Son altı ay içinde çekilmiş, ICAO standartlarına uygun bir adet biyometrik fotoğraf gereklidir."
+        },
+        {
+          "title": "Kan grubu beyanı veya belge",
+          "description": "Kan grubunu gösteren belge sunulabilir veya sözlü/yazılı beyan verilebilir."
+        },
+        {
+          "title": "Ücret ödemeleri",
+          "description": "Harç, değerli kâğıt bedeli ve vakıf hizmet bedeline ilişkin ödemeler sistemden görülebildiği için ayrıca dekont talep edilmeyebilir."
+        }
+      ]
+    },
+    "process": {
+      "eyebrow": "Başvuru Adımları",
+      "channelsEyebrow": "Randevu Kanalları",
+      "appointmentTitle": "Randevu günü notu",
+      "appointmentNote": "Başvuru sahibinin randevu saatinden en az otuz dakika önce nüfus müdürlüğünde hazır bulunması beklenir. Randevu saatini ciddi ölçüde geciktiren başvurular yoğunluğa göre kabul edilmeyebilir.",
+      "steps": [
+        {
+          "title": "Tebdile uygunluk analizi",
+          "description": "İlk aşamada ehliyetin düzenlendiği ülkenin konvansiyon, ikili anlaşma veya kabul edilen diğer uygulama listeleri kapsamında olup olmadığı değerlendirilir."
+        },
+        {
+          "title": "Belge ve tercüme hazırlığı",
+          "description": "Ehliyet tercümesi, sağlık raporu, öğrenim belgesi, adli sicil kaydı, biyometrik fotoğraf ve ödeme kalemleri başvuru öncesinde tamamlanır."
+        },
+        {
+          "title": "Randevu alınması",
+          "description": "Başvuru yalnızca randevu ile ve şahsen yapılır. İnternet, Alo 199 veya NVİ Mobil üzerinden uygun müdürlük seçilir."
+        },
+        {
+          "title": "Nüfus müdürlüğünde şahsen başvuru",
+          "description": "Kimlik ve adres teyidi yapılır; başvuru formu oluşturulur; imza, biyometrik fotoğraf ve parmak izi alınır."
+        },
+        {
+          "title": "Belge doğrulama ve sistem kaydı",
+          "description": "Gerek görüldüğünde ilgili ülkeden belge teyidi istenebilir. Bu aşama dosyanın en çok uzadığı noktalardan biridir."
+        },
+        {
+          "title": "Türk sürücü belgesinin basımı ve teslimi",
+          "description": "Başvuru tamamlandıktan sonra belge basılır ve PTT aracılığıyla bildirilen adrese gönderilir; teslim edilen yabancı ehliyet ilgili ülkeye iade sürecine alınır."
+        }
+      ],
+      "channels": [
+        {
+          "title": "Online randevu",
+          "description": "NVİ randevu sistemi üzerinden 'Yabancı Sürücü Belgesi Değiştirme (Tebdil)' kategorisi seçilir.",
+          "href": "https://randevu.nvi.gov.tr",
+          "cta": "randevu.nvi.gov.tr"
+        },
+        {
+          "title": "Alo 199",
+          "description": "Telefon ile randevu almak isteyenler için çağrı merkezi alternatif başvuru kanalıdır."
+        },
+        {
+          "title": "NVİ Mobil",
+          "description": "Mobil uygulama üzerinden randevu yönetimi ve başvuru hazırlığı yapılabilir."
+        }
+      ]
+    },
+    "postApplication": {
+      "eyebrow": "Başvuru Sonrası",
+      "title": "Tebdil tamamlandıktan sonra bilinmesi gereken sonuçlar",
+      "feesTitle": "Ücretler",
+      "items": [
+        {
+          "title": "Ticari araç kullanamaz kodu",
+          "description": "Yabancılara düzenlenen Türk sürücü belgelerine kural olarak 'Ticari Araç Kullanamaz' kodu işlenir. Bu kısıtlama Türk vatandaşları ve Mavi Kart sahipleri için uygulanmaz."
+        },
+        {
+          "title": "Yabancı ehliyetin geri verilmemesi",
+          "description": "Tebdil sonrasında teslim edilen yabancı sürücü belgesi başvuru sahibine iade edilmez; ilgili ülkenin yetkili makamına gönderilir."
+        },
+        {
+          "title": "Şahsen başvuru zorunluluğu",
+          "description": "Başvuru vekaletle yapılamaz. Parmak izi, biyometrik fotoğraf, imza ve kimlik doğrulaması başvuru sahibinin bizzat hazır bulunmasını zorunlu kılar."
+        },
+        {
+          "title": "Ücretlerin yıllık güncellenmesi",
+          "description": "Harç, değerli kâğıt bedeli ve vakıf hizmet bedelleri her yıl değişebilir; güncel toplam tutar başvuru öncesinde resmi kaynaklardan teyit edilmelidir."
+        }
+      ],
+      "feeItems": [
+        "Harç bedeli sürücü belgesi sınıfına göre değişiklik gösterebilir.",
+        "Değerli kâğıt bedeli her yıl yeniden belirlenir.",
+        "Vakıf hizmet bedeli başvuru masrafına eklenir.",
+        "Ödemeler vergi dairesi, PTT, anlaşmalı bankalar veya ivd.gib.gov.tr üzerinden yapılabilir."
+      ]
+    },
+    "issues": {
+      "eyebrow": "Sık Karşılaşılan Sorunlar",
+      "title": "Dosyayı uzatan veya reddedilmesine yol açan tipik hatalar",
+      "riskBadge": "Risk Alanı",
+      "items": [
+        {
+          "title": "Tebdile uygun olmayan ülkeden başvuru",
+          "description": "Konvansiyon veya ikili anlaşma kapsamı dışında kalan belgelerle yapılan başvurular, dosyanın en başta sonuçsuz kalmasına neden olabilir."
+        },
+        {
+          "title": "Eksik veya hatalı tercüme",
+          "description": "Yeminli tercüman, noter veya konsolosluk onayı bulunmayan tercümeler; sınıf, tarih veya kimlik bilgisi hataları ciddi gecikmelere yol açabilir."
+        },
+        {
+          "title": "Belge sınıflarının okunamaması",
+          "description": "Eski tip veya yıpranmış belgelerde sınıf bilgileri net değilse ilgili ülkeden teyit istenebilir ve süreç aylarca uzayabilir."
+        },
+        {
+          "title": "Belgenin gerçekliği hakkında tereddüt",
+          "description": "Yetkili yabancı makamdan doğrulama yazısı talep edilmesi, uygulamada en çok zaman alan aşamalardan biridir."
+        },
+        {
+          "title": "Dosya eksikliği",
+          "description": "Sağlık raporu, öğrenim belgesi tercümesi, adli sicil kaydı veya ödeme bilgilerindeki eksiklikler başvurunun alınmasını engelleyebilir."
+        },
+        {
+          "title": "Altı aylık sürenin aşılması",
+          "description": "Süre dolduktan sonra tebdil yapılmadan araç kullanılması, 2918 sayılı Kanun kapsamında sürücü belgesiz araç kullanma yaptırımlarını gündeme getirebilir."
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "SSS",
+      "title": "Ehliyet tebdili hakkında en sık sorulan sorular",
+      "items": [
+        {
+          "q": "Yabancı ehliyet Türkiye'de ne kadar süreyle kullanılabilir?",
+          "a": "Türk vatandaşı olmayan yabancı uyruklu kişiler, yabancı sürücü belgelerini Türkiye'ye son giriş tarihinden itibaren en fazla altı ay süreyle kullanabilir."
+        },
+        {
+          "q": "Her yabancı sürücü belgesi tebdil edilebilir mi?",
+          "a": "Hayır. Tebdil için belgenin düzenlendiği ülkenin Viyana Konvansiyonuna taraf olması, Türkiye ile ikili anlaşması bulunması veya uygulamada kabul edilen diğer ülkeler listesinde yer alması gerekir."
+        },
+        {
+          "q": "Başvuru avukat veya vekil aracılığıyla yapılabilir mi?",
+          "a": "Hayır. Sürücü belgesi başvurusu bizzat kişi tarafından yapılır; çünkü parmak izi, imza, biyometrik fotoğraf ve kimlik doğrulaması alınır."
+        },
+        {
+          "q": "Tebdil edilen yabancı ehliyet başvuru sahibine geri verilir mi?",
+          "a": "Hayır. Tebdil tamamlandıktan sonra teslim edilen yabancı sürücü belgesi ilgili ülkenin yetkili makamına gönderilir."
+        },
+        {
+          "q": "Altı aylık süreden sonra araç kullanmaya devam edersem ne olur?",
+          "a": "Tebdil yapılmaksızın araç kullanılması, hukuken sürücü belgesiz araç kullanma kapsamında değerlendirilip idari para cezası ve trafikten men gibi sonuçlar doğurabilir."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Dosyanızı başvuru öncesinde hukuki ve pratik açıdan birlikte kontrol edelim",
+      "description": "Ehliyetin düzenlendiği ülkenin uygunluk analizi, tercüme ve onay süreci, belge doğrulama riskleri ve başvuru stratejisi birlikte planlandığında süreç daha güvenli ve öngörülebilir ilerler.",
+      "primaryCta": "Randevu Talep Et",
+      "secondaryCta": "Hizmet Alanlarımız"
+    }
+  },
+  "gayrimenkul_page": {
+    "hero": {
+      "breadcrumbLabel": "Gayrimenkul Yatırımı",
+      "tag": "Tapu ve Kadastro Süreci",
+      "titleLines": [
+        "Gayrimenkul Yatırımı",
+        "Yoluyla Türk",
+        "Vatandaşlığı"
+      ],
+      "highlightLineIndex": 1,
+      "summary": "Türkiye'de en az 400.000 USD değerinde taşınmaz edinerek, tapuya 3 yıllık satılamaz şerhi koydurarak Türk vatandaşlığına başvurabilirsiniz.",
+      "primaryCta": "Ücretsiz Danışın",
+      "secondaryCta": "Sıkça Sorulan Sorular",
+      "imageAlt": "Türkiye'de gayrimenkul yatırımı"
+    },
+    "stats": [
+      {
+        "value": "$400.000",
+        "label": "Minimum Yatırım Tutarı",
+        "sub": "USD"
+      },
+      {
+        "value": "3 Yıl",
+        "label": "Satılamaz Şerh Süresi",
+        "sub": "Tapuda Kayıtlı"
+      },
+      {
+        "value": "~120 Gün",
+        "label": "Ortalama Süreç",
+        "sub": "Başvurudan Pasaporta"
+      },
+      {
+        "value": "%100",
+        "label": "Yasal Güvence",
+        "sub": "Resmi Devlet Süreci"
+      }
+    ],
+    "intro": {
+      "eyebrow": "Program Hakkında",
+      "title": "Türkiye'nin En Tercih Edilen Vatandaşlık Yolu",
+      "paragraphs": [
+        "Türk vatandaşlığına başvurmanın en yaygın ve tercih edilen yöntemi gayrimenkul yatırımıdır. 2017 yılından bu yana yürürlükte olan program, binlerce yabancı yatırımcıya ve ailelerine Türk pasaportu kazandırmıştır.",
+        "Program kapsamında; konut, ticari mülk, arsa veya bir araya getirilmiş birden fazla taşınmaz ile asgari yatırım tutarına ulaşılabilir. Taşınmazın tapuya tescili ve satılamaz şerhinin işlenmesi ile süreç resmi olarak başlar."
+      ],
+      "bullets": [
+        "Tek veya birden fazla taşınmaz",
+        "Konut, ofis, arsa — tüm türler geçerli",
+        "İnşaat halindeki projeler dahil",
+        "Aile üyeleri aynı dosyaya dahil"
+      ],
+      "imageAlt": "Gayrimenkul yatırımı",
+      "cardValue": "Minimum: $400.000",
+      "cardLabel": "Tek veya çoklu taşınmaz ile karşılanabilir",
+      "badgeValue": "~120 Gün",
+      "badgeLabel": "Başvurudan Pasaporta"
+    },
+    "process": {
+      "eyebrow": "Adım Adım Süreç",
+      "title": "Başvurunun Yol Haritası",
+      "description": "Gayrimenkul alımından Türk pasaportunuzu teslim aldığınız ana kadar her adımı birlikte planlıyoruz.",
+      "items": [
+        {
+          "num": "01",
+          "title": "Gayrimenkul Seçimi ve Değerleme",
+          "desc": "SPK lisanslı bir değerleme kuruluşu tarafından hazırlanan ekspertiz raporu ile taşınmazın piyasa değeri resmi olarak belirlenir. Tek taşınmaz veya birden fazla taşınmazın toplam değeri kullanılabilir.",
+          "icon": "🏠"
+        },
+        {
+          "num": "02",
+          "title": "Döviz Alım Belgesi (DAB)",
+          "desc": "Yabancı para, Türkiye'de faaliyet gösteren bir banka aracılığıyla Türk lirasına çevrilir ve Döviz Alım Belgesi düzenlenir. DAB, vatandaşlık dosyasının temel belgelerinden biridir.",
+          "icon": "💱"
+        },
+        {
+          "num": "03",
+          "title": "Tapu Devri ve Şerh İşlemi",
+          "desc": "Taşınmaz, alıcı adına tapuya tescil edilir. Aynı anda tapuya en az 3 yıl süreyle satılamaz şerhi işlenir. Bu şerh, vatandaşlık sürecinin zorunlu ön koşuludur.",
+          "icon": "📋"
+        },
+        {
+          "num": "04",
+          "title": "Uygunluk Belgesi Başvurusu",
+          "desc": "Tapu ve Kadastro Genel Müdürlüğü'ne bağlı ilgili birime gerekli belgelerle başvurulur. İnceleme tamamlandığında Çevre, Şehircilik ve İklim Değişikliği Bakanlığı uygunluk belgesi düzenler.",
+          "icon": "📜"
+        },
+        {
+          "num": "05",
+          "title": "İkamet İzni",
+          "desc": "Uygunluk belgesi sonrasında yatırımcı ve aile üyeleri (eş + 18 yaş altı çocuklar) için kısa dönem ikamet izni başvurusu yapılır. Bu izin vatandaşlık başvurusunun ön adımıdır.",
+          "icon": "🏛️"
+        },
+        {
+          "num": "06",
+          "title": "Vatandaşlık Başvurusu",
+          "desc": "Tüm belgeler tamamlandığında Cumhurbaşkanlığı kararıyla Türk vatandaşlığı verilir. Pasaport ve nüfus cüzdanı edinilir. Aile üyeleri de aynı dosya kapsamında vatandaşlık alır.",
+          "icon": "🇹🇷"
+        }
+      ]
+    },
+    "requirements": {
+      "eyebrow": "Şartlar",
+      "title": "Başvuru Koşulları",
+      "items": [
+        {
+          "title": "Asgari Yatırım Tutarı",
+          "desc": "400.000 USD veya eşdeğeri döviz — tek taşınmaz ya da birden fazla taşınmazın toplamıyla karşılanabilir."
+        },
+        {
+          "title": "3 Yıl Satılamaz Şerhi",
+          "desc": "Tapu üzerine en az 3 yıl süreyle satış yasağı şerhi konulması zorunludur. Bu şerh kaldırılmadan taşınmaz devredilemez."
+        },
+        {
+          "title": "SPK Ekspertiz Raporu",
+          "desc": "Yetkilendirilmiş bir gayrimenkul değerleme şirketi tarafından hazırlanan ekspertiz raporu tapu işlemleri için zorunludur."
+        },
+        {
+          "title": "DAB (Döviz Alım Belgesi)",
+          "desc": "Satın alma bedelinin tamamı Türkiye'deki bir bankadan Türk lirasına çevrilerek DAB alınmalıdır."
+        },
+        {
+          "title": "Satış Vaadi Sözleşmesi",
+          "desc": "Hazır olmayan projeler için noter onaylı ve tescilli satış vaadi sözleşmesi de tapu senedi yerine kabul edilmektedir."
+        },
+        {
+          "title": "Aile Üyeleri",
+          "desc": "Eş ve 18 yaş altındaki çocuklar (bakıma muhtaç engelli çocuklar dahil) aynı dosyaya dahil edilebilir."
+        }
+      ]
+    },
+    "propertyTypes": {
+      "eyebrow": "Taşınmaz Türleri",
+      "title": "Hangi Gayrimenkuller Geçerli?",
+      "description": "Konut, ticari mülk, arsa veya inşaat halindeki projeler — program kapsamında pek çok taşınmaz türü kabul edilmektedir.",
+      "items": [
+        {
+          "icon": "🏢",
+          "title": "Konut",
+          "desc": "Daire, villa, rezidans veya müstakil ev. Tek bir konut veya birden fazla konutun toplam değeri kullanılabilir. Kat irtifakı tapusu olan projeler de geçerlidir."
+        },
+        {
+          "icon": "🏪",
+          "title": "Ticari Gayrimenkul",
+          "desc": "Ofis, dükkan, mağaza, depo veya otel gibi ticari nitelikteki taşınmazlar. Ticari taşınmazların tapusu da vatandaşlık başvurusunda kullanılabilir."
+        },
+        {
+          "icon": "🌱",
+          "title": "Arsa ve Tarla",
+          "desc": "İmar durumu olup olmadığına bakılmaksızın arsa veya tarla niteliğindeki taşınmazlar da değerleme raporuyla birlikte programa dahil edilebilir."
+        },
+        {
+          "icon": "🏗️",
+          "title": "İnşaat Halindeki Proje",
+          "desc": "Henüz teslim edilmemiş, inşaat aşamasındaki projeler için tapuya tescil edilmiş satış vaadi sözleşmesi yeterlidir."
+        },
+        {
+          "icon": "🏨",
+          "title": "Devre Mülk / Apart Otel",
+          "desc": "Devre mülk hakkı veya apart otel niteliğindeki taşınmazlar, bağımsız bölüm olarak tescil edilmeleri ve değer şartını karşılamaları kaydıyla kabul edilebilir."
+        },
+        {
+          "icon": "📦",
+          "title": "Birden Fazla Taşınmaz",
+          "desc": "Farklı şehirlerdeki ya da aynı projede birden fazla bağımsız bölüm tek dosyada birleştirilebilir. Toplam değerin 400.000 USD'yi karşılaması yeterlidir."
+        }
+      ]
+    },
+    "documents": {
+      "eyebrow": "Gerekli Belgeler",
+      "title": "Dosyanız İçin Hazırlamanız Gerekenler",
+      "description": "Aşağıdaki belgelerin tamamı eksiksiz ve güncel olmalıdır. Yabancı dildeki belgeler apostil onaylı Türkçe tercümeleriyle birlikte sunulur. Uzman ekibimiz belge hazırlık sürecinde sizi adım adım yönlendirir.",
+      "noticeTitle": "Önemli Hatırlatma",
+      "noticeText": "Belgelerin apostil onayı ve Türkçe tercümesi için gereken süreyi göz önünde bulundurarak başvuru takvimini en az 4-6 hafta öncesinden planlamanızı öneririz.",
+      "items": [
+        {
+          "num": "01",
+          "title": "Pasaport",
+          "desc": "Başvuru sahibi ve aile üyelerinin geçerli pasaportları (noter onaylı Türkçe tercüme ile birlikte)."
+        },
+        {
+          "num": "02",
+          "title": "Tapu Senedi / SVS",
+          "desc": "Taşınmazın tapuya tescil belgesi veya tapuya tescil edilmiş satış vaadi sözleşmesi (noter onaylı)."
+        },
+        {
+          "num": "03",
+          "title": "Satılamaz Şerh Belgesi",
+          "desc": "İlgili tapu müdürlüğünden alınan, tapuya işlenmiş 3 yıllık satılamaz şerhini gösteren belge."
+        },
+        {
+          "num": "04",
+          "title": "SPK Ekspertiz Raporu",
+          "desc": "Sermaye Piyasası Kurulu lisanslı bir değerleme şirketi tarafından hazırlanan güncel ekspertiz raporu."
+        },
+        {
+          "num": "05",
+          "title": "DAB (Döviz Alım Belgesi)",
+          "desc": "Satın alma bedelinin Türk lirasına çevrildiğini gösteren banka döviz alım belgesi."
+        },
+        {
+          "num": "06",
+          "title": "Biyometrik Fotoğraf",
+          "desc": "Son 6 ay içinde çekilmiş, biyometrik standartlara uygun vesikalık fotoğraf (başvuru sahibi + aile üyeleri)."
+        },
+        {
+          "num": "07",
+          "title": "Adli Sicil Kaydı",
+          "desc": "Başvuru sahibinin kendi ülkesinden alınan adli sicil kaydı (apostil onaylı ve Türkçe tercümeli)."
+        },
+        {
+          "num": "08",
+          "title": "Evlilik / Doğum Belgesi",
+          "desc": "Eş için evlilik cüzdanı, çocuklar için doğum belgesi (apostil onaylı ve Türkçe tercümeli)."
+        }
+      ]
+    },
+    "benefits": {
+      "eyebrow": "Avantajlar",
+      "title": "Türk Vatandaşlığının Faydaları",
+      "description": "Türk pasaportu yalnızca bir belge değil; seyahat özgürlüğü, iş imkânı ve yaşam kalitesi sunan stratejik bir avantajdır.",
+      "items": [
+        {
+          "icon": "✈️",
+          "title": "Vizesiz Seyahat",
+          "desc": "Türk pasaportuyla 110'dan fazla ülkeye vizesiz veya kapıda vize ile giriş imkânı. Schengen başvurusunda güçlü referans."
+        },
+        {
+          "icon": "🏦",
+          "title": "Bankacılık Kolaylığı",
+          "desc": "Türkiye'nin güçlü bankacılık sistemiyle döviz hesabı, yatırım hesabı ve uluslararası transferlere kolay erişim."
+        },
+        {
+          "icon": "📋",
+          "title": "Çift Vatandaşlık",
+          "desc": "Türkiye çift vatandaşlığa izin verir. Mevcut vatandaşlığınızı koruyarak Türk pasaportu edinebilirsiniz."
+        },
+        {
+          "icon": "🏥",
+          "title": "Sağlık ve Eğitim",
+          "desc": "Türk vatandaşı olarak devlet hastanelerinden ve devlet üniversitelerinden yerli vatandaş tarifiyle yararlanabilirsiniz."
+        },
+        {
+          "icon": "👨‍👩‍👧‍👦",
+          "title": "Aile Dahil Edilir",
+          "desc": "Eş ve 18 yaş altındaki çocuklar aynı dosyaya dahil edilir. Tüm aile tek başvuruyla Türk vatandaşlığı alır."
+        },
+        {
+          "icon": "🔒",
+          "title": "Kalıcı Statü",
+          "desc": "Türk vatandaşlığı, 3 yıllık şerh süresi bittikten sonra mülkü satmanızdan bağımsız olarak kalıcıdır."
+        },
+        {
+          "icon": "💼",
+          "title": "Çalışma Hakkı",
+          "desc": "Türkiye'de herhangi bir iş kurmak veya çalışmak için ayrıca çalışma iznine ihtiyaç duymazsınız."
+        },
+        {
+          "icon": "🌍",
+          "title": "Stratejik Konum",
+          "desc": "Avrupa, Orta Doğu ve Orta Asya'ya eşit uzaklıkta, İstanbul'un sunduğu merkezi iş dünyası ağına erişim."
+        }
+      ]
+    },
+    "legal": {
+      "eyebrow": "Yasal Çerçeve",
+      "title": "Bilmeniz Gereken Hukuki Detaylar",
+      "items": [
+        {
+          "title": "Yasal Dayanak",
+          "text": "Program, 5901 sayılı Türk Vatandaşlığı Kanunu'nun 12. maddesi ve buna bağlı 2016/9601 sayılı Bakanlar Kurulu Kararnamesi çerçevesinde yürütülmektedir. Tutar revizyonları Cumhurbaşkanlığı kararıyla yapılır."
+        },
+        {
+          "title": "Değerleme Zorunluluğu",
+          "text": "SPK lisanslı değerleme şirketinin hazırladığı ekspertiz raporundaki değer, satış bedelinden düşük olamaz. Aksi hâlde tapu müdürlüğü devir işlemini tamamlamaz."
+        },
+        {
+          "title": "DAB Şartı",
+          "text": "Satın alma bedelinin tamamının Türkiye'deki bir banka aracılığıyla Türk lirasına çevrilmesi zorunludur. Yurt içi hesaplar arası EFT/havale ile yapılan ödemeler DAB kapsamına girmez."
+        },
+        {
+          "title": "Şerhin Kaldırılması",
+          "text": "3 yıllık süre sona erdiğinde satılamaz şerhi kendiliğinden kalkmaz; tapu müdürlüğüne yazılı başvuru yapılarak şerhin kaldırılması talep edilir. Vatandaşlık statüsü etkilenmez."
+        }
+      ]
+    },
+    "strip": {
+      "eyebrow": "Uzman Kadromuz",
+      "title": "Türkiye'nin dört bir yanındaki gayrimenkul ve hukuk süreçlerinde yanınızdayız",
+      "cta": "Ücretsiz Danışmanlık Al",
+      "imageAlt": "Türkiye gayrimenkul"
+    },
+    "faq": {
+      "eyebrow": "SSS",
+      "title": "Sıkça Sorulan Sorular",
+      "items": [
+        {
+          "q": "Birden fazla taşınmazla başvuru yapılabilir mi?",
+          "a": "Evet. Toplam değer 400.000 USD eşiğini karşılıyorsa birden fazla taşınmaz aynı vatandaşlık dosyasında kullanılabilir. Her taşınmaza ayrı ayrı satılamaz şerhi konulması gerekmektedir."
+        },
+        {
+          "q": "Taşınmazı 3 yıl sonra satabilir miyim?",
+          "a": "Evet. 3 yıllık şerh süresi sona erdiğinde taşınmazı özgürce satabilirsiniz. Vatandaşlık statünüz korunmaya devam eder."
+        },
+        {
+          "q": "Süreç boyunca Türkiye'de yaşamak zorunda mıyım?",
+          "a": "Hayır. Vatandaşlık başvurusu için Türkiye'de ikamet zorunluluğu bulunmamaktadır. Yatırım tamamlandıktan sonra sürecin büyük bölümü vekâlet ile yürütülebilir."
+        },
+        {
+          "q": "Çift vatandaşlık mümkün mü?",
+          "a": "Türkiye çift vatandaşlığa izin vermektedir. Ancak kendi ülkenizin mevzuatını da ayrıca değerlendirmeniz önerilir."
+        },
+        {
+          "q": "Kat irtifakı veya inşaat halindeki proje için başvuru yapılabilir mi?",
+          "a": "Evet. İnşaat halindeki projeler için noter onaylı ve tapuya tescil edilmiş satış vaadi sözleşmesi yeterlidir."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Dosyanızı Başlatmaya Hazır mısınız?",
+      "description": "Uzman ekibimiz gayrimenkul seçiminden pasaport teslimine kadar her adımda yanınızda.",
+      "primaryCta": "Ücretsiz Danışın",
+      "secondaryCta": "SSS'yi İncele"
+    }
   }
 }

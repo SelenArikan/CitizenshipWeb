@@ -1,7 +1,24 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getDictionary } from "@/lib/dictionary";
+import { getGayrimenkulPageData } from "@/lib/gayrimenkul-page";
 import { getInvestmentBySlug, getLocalizedField, getLocalizedBullets, INVESTMENTS, ServiceIconKey } from "@/lib/investments";
+import GayrimenkulPage from "@/components/GayrimenkulPage";
+
+type ServicePageDictionary = {
+  dir?: string;
+  services_page?: {
+    detail_back?: string;
+    detail_others?: string;
+    detail_min?: string;
+    detail_authority?: string;
+    detail_next_title?: string;
+    detail_next_desc?: string;
+    detail_cta_title?: string;
+    detail_cta_btn?: string;
+    detail_faq_btn?: string;
+  };
+};
 
 /* ─── Icon ────────────────────────────────────────────────────── */
 function ServiceIcon({ icon, className = "h-8 w-8" }: { icon: ServiceIconKey; className?: string }) {
@@ -24,12 +41,26 @@ const UI: Record<string, { backLabel: string; otherTitle: string; minLabel: stri
 };
 
 export default async function ServiceDetailPage({ slug, lang = "tr" }: { slug: string; lang?: string }) {
-  const dict = await getDictionary(lang);
-  const isRtl = (dict as any).dir === "rtl";
+  const dict = (await getDictionary(lang)) as ServicePageDictionary;
+  const isRtl = dict.dir === "rtl";
   const inv = getInvestmentBySlug(slug);
   if (!inv) notFound();
 
-  const sp = (dict as any).services_page ?? {};
+  // Dedicated rich page for gayrimenkul-yatirimi
+  if (slug === "gayrimenkul-yatirimi") {
+    const pageData = await getGayrimenkulPageData(lang);
+
+    return (
+      <GayrimenkulPage
+        lang={pageData.lang}
+        dir={pageData.dir}
+        backLabel={pageData.backLabel}
+        copy={pageData.copy}
+      />
+    );
+  }
+
+  const sp = dict.services_page ?? {};
   const fallback = UI[lang] ?? UI.tr;
   const ui = {
     backLabel:     sp.detail_back      ?? fallback.backLabel,

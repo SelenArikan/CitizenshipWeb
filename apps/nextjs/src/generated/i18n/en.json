@@ -44,6 +44,7 @@
     "mega_h_more": "Other",
     "item_more_bank": "Banking Assistance",
     "item_more_green": "Special (Green) Passport",
+    "item_more_license": "Driving Licence Conversion",
     "nav_desc_400": "Min. $400K",
     "nav_desc_500": "Min. $500K",
     "nav_desc_emp": "50 jobs"
@@ -57,23 +58,28 @@
     "slides": [
       {
         "label": "Turkish Citizenship via Real Estate Investment",
-        "image": "/hero/gayrimenkul-vatandaslik.webp"
+        "image": "/hero/gayrimenkul-vatandaslik.webp",
+        "href": "/en/services/gayrimenkul-yatirimi"
       },
       {
         "label": "Turkish Citizenship via Bank Investment",
-        "image": "/hero/banka-yatirimi-vatandaslik.webp"
+        "image": "/hero/banka-yatirimi-vatandaslik.webp",
+        "href": "/en/services/mevduat-hesabi"
       },
       {
         "label": "Investor Residence Permit",
-        "image": "/hero/yatirimci-ikamet-izni.webp"
+        "image": "/hero/yatirimci-ikamet-izni.webp",
+        "href": "/en/ikamet-izni/yatirimci-ikamet-izni"
       },
       {
         "label": "Real Estate Residence Permit",
-        "image": "/hero/gayrimenkul-ikamet-izni.webp"
+        "image": "/hero/gayrimenkul-ikamet-izni.webp",
+        "href": "/en/ikamet-izni/gayrimenkul-ikamet-izni"
       },
       {
         "label": "Tax Exemption",
-        "image": "/hero/vergi-muafiyeti.webp"
+        "image": "/hero/vergi-muafiyeti.webp",
+        "href": "/en/services"
       }
     ]
   },
@@ -394,5 +400,1419 @@
     "hours_weekend": "Saturday - Sunday: Closed",
     "map_button": "Open in Google Maps",
     "rights": "All Rights Reserved."
+  },
+  "residence_page": {
+    "labels": {
+      "contact_cta": "Free Consultation",
+      "faq_cta": "Frequently Asked Questions",
+      "overview": {
+        "groups_eyebrow": "Core Distinction",
+        "groups_title": "Short-term and long-term permits operate on different legal logic",
+        "short_terms_eyebrow": "Short-Term Grounds",
+        "short_terms_title": "The most common short-term residence permit grounds",
+        "permits_eyebrow": "Navbar Subpages",
+        "permits_title": "We reorganized the content under four separate residence permit types",
+        "permit_detail_cta": "Open Detail Page",
+        "notes_eyebrow": "Key Notes",
+        "notes_title": "Clarify these points before choosing the right permit route",
+        "cta_primary": "Request a Preliminary Review",
+        "cta_secondary": "Review Long-Term Conditions"
+      },
+      "detail": {
+        "all_types_cta": "All Residence Types",
+        "section_label": "Section",
+        "process_eyebrow": "Step by Step",
+        "faq_eyebrow": "FAQ",
+        "faq_title": "Key questions",
+        "related_eyebrow": "Other Routes",
+        "related_title": "You can move directly to the other residence permit types from here",
+        "related_cta": "Go to this page",
+        "expert_cta": "Get Expert Advice"
+      }
+    },
+    "overview": {
+      "heroTag": "Residence Permit Guide",
+      "title": "What Is a Residence Permit?",
+      "summary": "A residence permit is the legal stay status foreign nationals must obtain when they intend to remain in Turkey longer than the period granted by their visa, visa exemption, or the ninety-day legal stay limit.",
+      "notice": "Short-term residence permits are issued for temporary stay purposes and are usually granted for limited periods. Long-term residence permits, by contrast, provide indefinite status for applicants who meet the statutory criteria.",
+      "quickFacts": [
+        {
+          "value": "90 Days",
+          "label": "Main threshold after entry",
+          "note": "A suitable residence permit is required for a longer stay."
+        },
+        {
+          "value": "2 Main Groups",
+          "label": "Short-term and long-term",
+          "note": "Your purpose of stay and residence history are decisive."
+        },
+        {
+          "value": "Up to 2 Years",
+          "label": "Typical short-term duration",
+          "note": "Some legal grounds allow different periods."
+        },
+        {
+          "value": "Indefinite",
+          "label": "Long-term status",
+          "note": "Usually considered after eight years of lawful stay."
+        }
+      ],
+      "mainGroups": [
+        {
+          "title": "Short-Term Residence Permit",
+          "description": "Issued for temporary stay grounds such as property ownership, investment, tourism, commercial activity, treatment, research, or a change of family status."
+        },
+        {
+          "title": "Long-Term Residence Permit",
+          "description": "An indefinite status granted to foreign nationals who have lived in Turkey lawfully and continuously for a long period and who meet income, insurance, and public order requirements."
+        }
+      ],
+      "shortTermTypes": [
+        "Scientific research",
+        "Applicants holding qualifying real estate above 200,000 USD",
+        "Investors using the qualifying investment thresholds for citizenship planning",
+        "Commercial connections or business setup",
+        "In-service training programs",
+        "Education under treaties or exchange programs",
+        "Tourism stays",
+        "Medical treatment",
+        "Applicants who must remain in Turkey by judicial or administrative decision",
+        "Applicants moving from family residence to short-term residence status",
+        "Turkish language courses",
+        "Education, research, internship, or courses through public institutions",
+        "Graduates applying within six months after higher education in Turkey",
+        "Applicants making investments within the presidentially determined scope and their family members",
+        "Citizens of the Turkish Republic of Northern Cyprus"
+      ],
+      "notes": [
+        "A residence permit does not automatically authorize employment; work permit analysis may be required separately.",
+        "The required documentation changes depending on the residence type, family structure, and nationality of the applicant.",
+        "In property-based residence files, open-area restrictions and the real title deed value are critical.",
+        "Even an indefinite long-term permit may be cancelled for public order reasons or certain long stays abroad."
+      ],
+      "ctaTitle": "Let us choose the most suitable residence route for your file",
+      "ctaDescription": "The right permit category depends on your investment model, family structure, current residence history, and your plan in Turkey."
+    },
+    "permits": {
+      "yatirimci-ikamet-izni": {
+        "navLabel": "Investor Residence Permit (J)",
+        "cardDescription": "A special short-term residence permit issued for qualifying investors and their core family members.",
+        "heroTag": "Law No. 6458 Art. 31/1-j",
+        "title": "Investor Residence Permit (J)",
+        "description": "A short-term residence permit available to foreign investors who meet the qualifying investment threshold and to eligible family members.",
+        "summary": "The investor residence permit under Article 31/1-j is a special short-term status granted to foreign investors who make a qualifying investment determined by the Presidency, together with their spouse and dependent children.",
+        "heroImage": "/hero/yatirimci-ikamet-izni.webp",
+        "warning": "This route is different from the real-estate-based residence permit under Article 31/1-b. The investor permit depends on a certificate of conformity and forms the residence basis of the citizenship-by-investment process.",
+        "quickFacts": [
+          {
+            "value": "$400K / $500K",
+            "label": "Investment threshold",
+            "note": "The required amount varies by investment model."
+          },
+          {
+            "value": "Family Included",
+            "label": "Who may apply",
+            "note": "Spouse and dependent children may be included."
+          },
+          {
+            "value": "Up to 5 Years",
+            "label": "Maximum validity",
+            "note": "It is stronger than ordinary short-term permits."
+          },
+          {
+            "value": "Certificate of Conformity",
+            "label": "Foundational document",
+            "note": "It is decisive for both residence and citizenship stages."
+          }
+        ],
+        "sections": [
+          {
+            "title": "Who Can Apply?",
+            "intro": "This category is directly tied to investor status and differs from touristic or property-based short-term permits.",
+            "items": [
+              {
+                "title": "Main investor",
+                "description": "A foreign investor who fulfills the qualifying amount and structure set by the Presidency may apply directly."
+              },
+              {
+                "title": "Spouse and children",
+                "description": "The foreign spouse and minor or dependent children may be included in the same residence status."
+              },
+              {
+                "title": "Family members outside the scope",
+                "description": "Parents, siblings, and independent adult children are not covered by this permit category."
+              },
+              {
+                "title": "Separate work analysis",
+                "description": "This status secures lawful stay, but a separate work permit analysis is needed if employment is planned."
+              }
+            ]
+          },
+          {
+            "title": "Required Documents",
+            "items": [
+              {
+                "title": "Application and identity set",
+                "description": "The file generally includes the application form, passport copy, biometric photo, and fee receipts."
+              },
+              {
+                "title": "Health insurance",
+                "description": "A valid health insurance policy covering the applicant must be presented."
+              },
+              {
+                "title": "Certificate of conformity",
+                "description": "The certificate issued by the competent authority confirming the investment is the core document of the file."
+              },
+              {
+                "title": "Criminal record and family evidence",
+                "description": "Criminal record certificates and family-link documents such as marriage or birth records are required where relevant."
+              }
+            ]
+          },
+          {
+            "title": "Important Practical Points",
+            "items": [
+              {
+                "title": "Validity periods of documents",
+                "description": "The issue date and validity period of criminal record certificates should be checked carefully."
+              },
+              {
+                "title": "Apostille and translation",
+                "description": "Foreign documents are usually expected to carry apostille formalities and notarized Turkish translations."
+              },
+              {
+                "title": "Multiple nationalities and name consistency",
+                "description": "Applicants using different passports may be asked to provide name-consistency documents."
+              },
+              {
+                "title": "Importance of the conformity certificate",
+                "description": "The certificate is also one of the key documents for the exceptional citizenship stage."
+              }
+            ]
+          },
+          {
+            "title": "Citizenship Perspective",
+            "items": [
+              {
+                "title": "It does not grant citizenship by itself",
+                "description": "The residence permit alone does not confer Turkish citizenship; a separate citizenship procedure must still be completed."
+              },
+              {
+                "title": "Order of the process",
+                "description": "The investment is completed first, then the certificate of conformity is obtained, followed by the 31/1-j residence permit and the citizenship application."
+              },
+              {
+                "title": "Family unity",
+                "description": "The investor, spouse, and dependent children can usually move forward within one integrated planning framework."
+              },
+              {
+                "title": "Work authorization remains separate",
+                "description": "Residence status should not be confused with employment authorization."
+              }
+            ]
+          }
+        ],
+        "processTitle": "Application Process",
+        "process": [
+          {
+            "title": "Complete the investment",
+            "description": "The investment model must first satisfy the required amount and legal structure."
+          },
+          {
+            "title": "Obtain the certificate of conformity",
+            "description": "The competent public authority reviews the investment and issues the conformity certificate."
+          },
+          {
+            "title": "Prepare the residence file",
+            "description": "Passport, insurance, criminal record, and family documents are added to the application file."
+          },
+          {
+            "title": "Submit through e-Residence and the migration authority",
+            "description": "The online pre-application is completed and the file is delivered under the relevant provincial migration procedure."
+          },
+          {
+            "title": "Move to the citizenship stage",
+            "description": "Once lawful residence status is established, the exceptional citizenship file may be filed."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Is the investor residence permit the same as the real estate residence permit?",
+            "a": "No. The 31/1-j investor permit is based on a qualifying investment and a certificate of conformity, while the 31/1-b route is a separate property-based residence permit."
+          },
+          {
+            "q": "Can parents be included with the investor?",
+            "a": "No. Only the spouse and minor or dependent children are generally covered in this category."
+          },
+          {
+            "q": "Does this permit automatically give citizenship?",
+            "a": "No. It creates the residence basis for the citizenship-by-investment process, but citizenship still requires a separate application and approval."
+          },
+          {
+            "q": "Is this permit enough to work in Turkey?",
+            "a": "No. If the applicant intends to work in Turkey, work permit rules must be analyzed separately."
+          }
+        ]
+      },
+      "gayrimenkul-ikamet-izni": {
+        "navLabel": "Real Estate Residence Permit",
+        "cardDescription": "A short-term residence permit based on residential real estate ownership and sensitive to open-area restrictions.",
+        "heroTag": "Law No. 6458 Art. 31/1-b",
+        "title": "Real Estate Residence Permit",
+        "description": "A short-term residence permit available to foreign nationals who acquire residential real estate in Turkey.",
+        "summary": "The real estate residence permit is a short-term residence status available to foreign nationals who acquire a residential property in Turkey. It is distinct from the investor residence route used in exceptional citizenship planning.",
+        "heroImage": "/hero/gayrimenkul-ikamet-izni.webp",
+        "warning": "The real title deed value on the transfer date, the open-area status of the property, and title registration in the applicant's own name are the most critical elements of the application.",
+        "quickFacts": [
+          {
+            "value": "$200K / $75K",
+            "label": "Value threshold",
+            "note": "The rule differs between metropolitan cities and other locations."
+          },
+          {
+            "value": "Open Area",
+            "label": "Location requirement",
+            "note": "New applications are not accepted in closed areas."
+          },
+          {
+            "value": "1 Year",
+            "label": "Typical first card",
+            "note": "The first permit is commonly granted for one year."
+          },
+          {
+            "value": "Title Holder",
+            "label": "Direct applicant",
+            "note": "Family members usually proceed under a separate status at the first stage."
+          }
+        ],
+        "sections": [
+          {
+            "title": "Core Conditions",
+            "intro": "This permit is based on the acquisition of a residential property that is actually suitable for living in.",
+            "items": [
+              {
+                "title": "Residential character",
+                "description": "The property should be residential, titled, and suitable for occupation."
+              },
+              {
+                "title": "Title transfer requirement",
+                "description": "A sale promise alone is not enough; the title deed should be transferred directly to the applicant."
+              },
+              {
+                "title": "Value thresholds",
+                "description": "The required threshold is 200,000 USD in metropolitan cities and 75,000 USD in other cities."
+              },
+              {
+                "title": "Open-area check",
+                "description": "The property must be located in a district or neighborhood open to new foreign residence registrations."
+              }
+            ]
+          },
+          {
+            "title": "Open and Closed Area Practice",
+            "items": [
+              {
+                "title": "What is a closed area?",
+                "description": "A closed area is a neighborhood or zone where new property-based residence permit registrations for foreigners are restricted."
+              },
+              {
+                "title": "How is it determined?",
+                "description": "The administration evaluates foreign population density, migration intensity, and social or administrative risks at the neighborhood level."
+              },
+              {
+                "title": "Examples of restricted districts",
+                "description": "Several districts in Istanbul, Ankara, and Izmir have already been closed to new registrations under this practice."
+              },
+              {
+                "title": "Current verification is essential",
+                "description": "A location that is open today may later be closed, so an updated check is essential before purchase."
+              }
+            ]
+          },
+          {
+            "title": "Family Status and Use of the Property",
+            "items": [
+              {
+                "title": "Direct right holder",
+                "description": "Only the person whose name appears on the title deed may apply directly under this category."
+              },
+              {
+                "title": "First-stage family planning",
+                "description": "Spouses and children often begin under a different residence category and may later transition where appropriate."
+              },
+              {
+                "title": "Renewal possibility",
+                "description": "There is generally no numerical cap on renewal applications as long as the conditions remain satisfied."
+              },
+              {
+                "title": "Use consistent with the permit purpose",
+                "description": "The property should continue to support the declared residential purpose of the application."
+              }
+            ]
+          },
+          {
+            "title": "Documents and Critical Checks",
+            "items": [
+              {
+                "title": "Basic file set",
+                "description": "Passport, biometric photographs, title deed, entry records, DASK, numbering certificate, and family-related documents may be required."
+              },
+              {
+                "title": "Valuation and banking records",
+                "description": "Depending on the acquisition date, valuation reports, foreign exchange conversion records, and bank documents may still matter."
+              },
+              {
+                "title": "Real title deed value",
+                "description": "If the value recorded in the title deed falls below the threshold, the file may face serious difficulties."
+              },
+              {
+                "title": "Exchange rate risk on the transfer date",
+                "description": "Even if the payment met the threshold earlier, the transfer-day equivalent may still create a problem if it falls below the legal minimum."
+              }
+            ]
+          },
+          {
+            "title": "Citizenship Perspective",
+            "items": [
+              {
+                "title": "It does not directly grant citizenship",
+                "description": "This is not the privileged investor residence route used for exceptional citizenship."
+              },
+              {
+                "title": "Monitoring continuous stay",
+                "description": "Time spent abroad during the last five years and the last year is relevant for general naturalization analysis."
+              },
+              {
+                "title": "Preserving the status",
+                "description": "Long or frequent exits from Turkey or interruptions in status may reset the residence-based naturalization calculation."
+              }
+            ]
+          }
+        ],
+        "processTitle": "Application Process",
+        "process": [
+          {
+            "title": "Check the property and the area",
+            "description": "The residential character, open-area status, and threshold value of the property should be verified first."
+          },
+          {
+            "title": "Prepare title and supporting documents",
+            "description": "The title deed, DASK, numbering certificate, valuation materials, and banking documents are assembled."
+          },
+          {
+            "title": "Create the e-Residence file",
+            "description": "The online pre-application is created and the file is completed according to the system checklist."
+          },
+          {
+            "title": "Migration authority review",
+            "description": "The file is reviewed for title value, area eligibility, and family status."
+          },
+          {
+            "title": "Plan the first permit and renewals",
+            "description": "After the first card is issued, extensions and family transitions should be planned carefully."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Is every property suitable for this permit?",
+            "a": "No. The property should be residential, located in an open area, transferred into the applicant’s own name, and meet the required value threshold."
+          },
+          {
+            "q": "Is buying property above 200,000 USD enough in a closed area?",
+            "a": "No. A new residence application may still be rejected if the property is located in a closed area."
+          },
+          {
+            "q": "Can family members obtain the same real estate residence permit at the same time?",
+            "a": "The title holder applies directly; family members often proceed under a different category at the initial stage."
+          },
+          {
+            "q": "Does this route itself grant citizenship?",
+            "a": "No. It differs from the investor residence route connected to exceptional citizenship applications."
+          }
+        ]
+      },
+      "aile-ikamet-izni": {
+        "navLabel": "Family Residence Permit",
+        "cardDescription": "A residence permit designed to preserve family unity for spouses and children connected to a Turkish citizen or an eligible sponsor.",
+        "heroTag": "Law No. 6458 Arts. 34-37",
+        "title": "Family Residence Permit",
+        "description": "A residence permit granted to spouses and children connected to a Turkish citizen or another eligible sponsor, usually for up to three years at a time.",
+        "summary": "The family residence permit may be issued to certain family members of a Turkish citizen, Blue Card holder, foreign national with valid residence status, refugee, or beneficiary of subsidiary protection, with the purpose of preserving family unity in Turkey.",
+        "heroImage": "/hero/hukuki-hizmetler.jpg",
+        "warning": "The sponsor's income, insurance coverage, address registration, and prior residence status are important, but so are the documents proving marriage, custody, and the intention to live together.",
+        "quickFacts": [
+          {
+            "value": "Up to 3 Years",
+            "label": "Maximum period",
+            "note": "The duration cannot exceed the sponsor’s lawful stay."
+          },
+          {
+            "value": "Sponsor-Based",
+            "label": "Application basis",
+            "note": "The sponsor may be a Turkish citizen or an eligible foreign national."
+          },
+          {
+            "value": "18 Years",
+            "label": "Threshold for spouses",
+            "note": "Both spouses must be adults."
+          },
+          {
+            "value": "Family Unity",
+            "label": "Main purpose",
+            "note": "Living together or the intention to do so is relevant."
+          }
+        ],
+        "sections": [
+          {
+            "title": "Who Can Benefit?",
+            "intro": "This category is limited to certain family members expressly listed in the law and proceeds through the sponsor.",
+            "items": [
+              {
+                "title": "Foreign spouse",
+                "description": "The foreign spouse of a Turkish citizen or another eligible sponsor may apply."
+              },
+              {
+                "title": "Minor children",
+                "description": "The minor foreign children of the applicant or of the spouse may be covered."
+              },
+              {
+                "title": "Dependent children",
+                "description": "Children who are disabled or otherwise dependent may also be included."
+              },
+              {
+                "title": "Polygamy and custody issues",
+                "description": "In polygamous situations only the first spouse may qualify, while children’s files often require custody and consent analysis."
+              }
+            ]
+          },
+          {
+            "title": "Requirements for the Sponsor",
+            "items": [
+              {
+                "title": "Health insurance",
+                "description": "The sponsor must hold valid health insurance covering all relevant family members."
+              },
+              {
+                "title": "Sufficient and regular income",
+                "description": "The sponsor must demonstrate adequate monthly income, usually calculated against the minimum wage thresholds."
+              },
+              {
+                "title": "Criminal record",
+                "description": "The sponsor should be able to show no crime against family order within the relevant period."
+              },
+              {
+                "title": "Residence and address registration",
+                "description": "If the sponsor is a foreign national, at least one year of lawful residence and address registration is generally required."
+              }
+            ]
+          },
+          {
+            "title": "Requirements for the Applying Family Member",
+            "items": [
+              {
+                "title": "Documenting the purpose of stay",
+                "description": "The family link and the purpose of staying in Turkey must be properly documented."
+              },
+              {
+                "title": "Living together",
+                "description": "The applicant should show that the family will live together or genuinely intends to do so."
+              },
+              {
+                "title": "Age requirement",
+                "description": "For spouses, both parties should be at least eighteen years old."
+              },
+              {
+                "title": "Entry ban and sham marriage review",
+                "description": "The applicant should not fall under entry-ban rules, and the marriage should not be purely for immigration purposes."
+              }
+            ]
+          },
+          {
+            "title": "Required Documents",
+            "items": [
+              {
+                "title": "Basic documents for the applicant",
+                "description": "Application form, passport, birth certificate, biometric photos, fee receipts, and documents proving marriage or family ties are required."
+              },
+              {
+                "title": "Additional documents for children",
+                "description": "Custody records, consent letters, family registry documents, notarized undertakings, or death records may be requested."
+              },
+              {
+                "title": "Sponsor’s documentation",
+                "description": "Identity or status records, income documents, health insurance, criminal record, and address registration should be included."
+              },
+              {
+                "title": "Foreign documents",
+                "description": "Foreign official documents usually require apostille formalities and notarized Turkish translations."
+              },
+              {
+                "title": "Adult students exception",
+                "description": "Adult children studying in Turkey may in some cases remain eligible up to the age of twenty-five."
+              }
+            ]
+          },
+          {
+            "title": "Citizenship Perspective",
+            "items": [
+              {
+                "title": "General naturalization logic",
+                "description": "A family residence permit does not automatically grant citizenship; naturalization criteria are reviewed separately."
+              },
+              {
+                "title": "Absence periods abroad",
+                "description": "The duration of time spent outside Turkey remains important for the ordinary naturalization analysis."
+              },
+              {
+                "title": "Continuous preservation of status",
+                "description": "Long absences or interruptions in the family residence status may reset the residence-based calculation."
+              }
+            ]
+          }
+        ],
+        "processTitle": "Application Process",
+        "process": [
+          {
+            "title": "Review the sponsor’s eligibility",
+            "description": "Income, insurance, address registration, and—where necessary—prior residence history are verified first."
+          },
+          {
+            "title": "Prepare family-link documentation",
+            "description": "Marriage, birth, custody, and consent documents are collected in the proper form."
+          },
+          {
+            "title": "Create the e-Residence file",
+            "description": "A pre-application is created for the family member and the file is completed under the system checklist."
+          },
+          {
+            "title": "Migration authority review",
+            "description": "The file is reviewed for the sponsor’s compliance, the family link, and the reality of living together."
+          },
+          {
+            "title": "Card issuance and renewal tracking",
+            "description": "Once approved, the permit is issued and future changes in sponsor status should be monitored for renewals."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "What is the maximum duration of a family residence permit?",
+            "a": "It can generally be issued for up to three years at a time, but it cannot exceed the sponsor’s lawful stay period."
+          },
+          {
+            "q": "If the sponsor is a foreign national, how long should they have lived in Turkey?",
+            "a": "As a rule, at least one year of lawful residence history in Turkey is expected."
+          },
+          {
+            "q": "Is the consent of the other parent needed for a child’s application?",
+            "a": "In many custody or single-parent application scenarios, the consent of the other parent and supporting custody documents are required."
+          },
+          {
+            "q": "Does a family residence permit itself grant citizenship?",
+            "a": "No. It only provides lawful stay status and does not replace the separate requirements for citizenship."
+          }
+        ]
+      },
+      "uzun-donem-ikamet-izni": {
+        "navLabel": "Long-Term Residence Permit",
+        "cardDescription": "An indefinite residence status designed for foreign nationals with at least eight years of lawful and uninterrupted residence in Turkey.",
+        "heroTag": "Law No. 6458 Arts. 42-45",
+        "title": "Long-Term Residence Permit",
+        "description": "An indefinite residence status granted to foreign nationals who meet the eight-year lawful stay, income, insurance, and public order criteria.",
+        "summary": "The long-term residence permit is an indefinite residence status that allows a foreign national to continue staying in Turkey without a fixed time limit. In this sense, it differs fundamentally from short-term permits based on repeated extensions.",
+        "heroImage": "/hero/hukuki-hizmetler.jpg",
+        "warning": "Although indefinite, this status may still be cancelled for public order reasons or for certain continuous absences from Turkey lasting more than one year. It also does not replace a work permit.",
+        "quickFacts": [
+          {
+            "value": "8 Years",
+            "label": "Core residence history",
+            "note": "Lawful and uninterrupted residence is required."
+          },
+          {
+            "value": "Indefinite",
+            "label": "Status duration",
+            "note": "This is what distinguishes it from short-term permits."
+          },
+          {
+            "value": "5 Conditions",
+            "label": "Main statutory criteria",
+            "note": "They include income, insurance, and public order."
+          },
+          {
+            "value": "Not a Work Permit",
+            "label": "Important distinction",
+            "note": "Separate employment rules continue to apply."
+          }
+        ],
+        "sections": [
+          {
+            "title": "Who Can Apply?",
+            "intro": "The long-term residence permit is intended for foreign nationals who have already built a long lawful residence history in Turkey.",
+            "items": [
+              {
+                "title": "Eight years of lawful residence",
+                "description": "As a rule, applicants should have completed at least eight years of uninterrupted residence under residence permits in Turkey."
+              },
+              {
+                "title": "Special review possibilities",
+                "description": "The law also allows special review for persons meeting conditions set by the Ministry or the Migration Policies Board."
+              },
+              {
+                "title": "Statuses outside the scope",
+                "description": "Refugees, conditional refugees, subsidiary protection beneficiaries, humanitarian residence holders, and temporary protection beneficiaries cannot shift to this status."
+              },
+              {
+                "title": "Calculation of the eight years",
+                "description": "Student residence periods are counted by half, while other residence periods are counted in full."
+              }
+            ]
+          },
+          {
+            "title": "Required Conditions",
+            "items": [
+              {
+                "title": "At least eight years of uninterrupted residence",
+                "description": "The required lawful residence period must be completed by the application date."
+              },
+              {
+                "title": "No social assistance in the last three years",
+                "description": "The applicant is expected to show by official documentation that they have not received social assistance during the relevant period."
+              },
+              {
+                "title": "Sufficient and regular income",
+                "description": "The applicant must show the ability to support themselves and, where relevant, their family."
+              },
+              {
+                "title": "Valid health insurance",
+                "description": "Health coverage should be demonstrated through SGK, general health insurance, or a private policy."
+              },
+              {
+                "title": "No threat to public order or security",
+                "description": "The applicant should not be negatively assessed from a public order or public security perspective."
+              }
+            ]
+          },
+          {
+            "title": "Document Checklist",
+            "items": [
+              {
+                "title": "Application and identity documents",
+                "description": "The file includes the application form, passport copy, and current biometric photos."
+              },
+              {
+                "title": "Address and fee documents",
+                "description": "Fee receipts, address certificate, and where necessary utility or subscription evidence may be required."
+              },
+              {
+                "title": "Health insurance",
+                "description": "SGK records, general health insurance application records, or private policies may be accepted."
+              },
+              {
+                "title": "Criminal records",
+                "description": "Criminal record certificates from Turkish authorities and, where relevant, foreign authorities may be requested."
+              },
+              {
+                "title": "Income and social assistance records",
+                "description": "The file should contain evidence of regular income and proof that no social assistance was received in the last three years."
+              },
+              {
+                "title": "UETS and child-related documents",
+                "description": "UETS registration and, where relevant, child-related records such as birth, custody, or consent documents may be required."
+              }
+            ]
+          },
+          {
+            "title": "Maintaining the Status and Cancellation Risks",
+            "items": [
+              {
+                "title": "Separate work authorization",
+                "description": "Long-term residence status does not by itself replace a work permit."
+              },
+              {
+                "title": "Cancellation for public order reasons",
+                "description": "The permit may be cancelled if the person becomes a serious threat to public order or public security."
+              },
+              {
+                "title": "Absence from Turkey for more than one year",
+                "description": "Continuous absence for more than one year outside the accepted exceptions may lead to loss of the status."
+              },
+              {
+                "title": "Additional document requests",
+                "description": "The administration may request further information or supporting evidence regarding residence history, income, insurance, or public order."
+              }
+            ]
+          }
+        ],
+        "processTitle": "Application Process",
+        "process": [
+          {
+            "title": "Create the e-Residence pre-application",
+            "description": "The applicant first creates the online file and obtains the personalized checklist."
+          },
+          {
+            "title": "Prepare the eight-year residence history",
+            "description": "Residence history, income, insurance, address, criminal records, and social assistance documents are collected."
+          },
+          {
+            "title": "Submit to the provincial migration authority",
+            "description": "The file is submitted through the applicable appointment or delivery method."
+          },
+          {
+            "title": "Administrative review",
+            "description": "The administration reviews uninterrupted residence, social assistance, income, and public order issues together."
+          },
+          {
+            "title": "Issue of the indefinite card",
+            "description": "If approved, the long-term residence permit card is issued without a fixed end date."
+          }
+        ],
+        "faqs": [
+          {
+            "q": "What is the main residence period requirement for a long-term permit?",
+            "a": "As a rule, the applicant must have completed at least eight years of lawful and uninterrupted residence in Turkey under residence permits."
+          },
+          {
+            "q": "Is student residence fully counted?",
+            "a": "No. Student residence periods are counted by half, while other residence permit periods are counted in full."
+          },
+          {
+            "q": "Can I work without a separate work permit once I receive this status?",
+            "a": "No. Long-term residence status does not automatically replace employment authorization."
+          },
+          {
+            "q": "Can an indefinite permit later be cancelled?",
+            "a": "Yes. It may be cancelled for public order reasons or for certain continuous absences from Turkey lasting more than one year."
+          }
+        ]
+      }
+    }
+  },
+  "ehliyet_page": {
+    "metadata": {
+      "breadcrumbLabel": "Driving Licence Conversion",
+      "title": "Foreign Driving Licence Conversion and Driving in Turkey",
+      "description": "A practical guide to how long a foreign licence may be used in Turkey, which countries qualify for conversion, the required documents, the application flow, and the most common risks.",
+      "howtoTitle": "Foreign driving licence conversion application process",
+      "howtoDescription": "Summarizes the workflow from eligibility review to appointment and delivery of the Turkish driving licence.",
+      "serviceDescription": "Provides advisory support for immigration status, document preparation, and administrative file review in foreigner law matters."
+    },
+    "hero": {
+      "tag": "Legal and Administrative Practice Guide",
+      "title": "Driving in Turkey with a Foreign Licence and Licence Conversion Procedures",
+      "summary": "A single-page guide explaining how long a foreign driving licence can be used in Turkey, which countries fall within the conversion framework, and how the application moves forward with the proper documents.",
+      "warning": "The six-month usage period starts from the date of the latest entry into Turkey. Driving after that period without conversion may lead to serious penalties.",
+      "imageAlt": "Legal advisory for driving licence conversion",
+      "primaryCta": "Let Us Review Your File",
+      "secondaryCta": "Frequently Asked Questions"
+    },
+    "quickFacts": [
+      {
+        "value": "6 Months",
+        "label": "Period to drive with a foreign licence",
+        "note": "Calculated from the latest entry stamp"
+      },
+      {
+        "value": "NPGD",
+        "label": "Competent authority",
+        "note": "Provincial and district population directorates"
+      },
+      {
+        "value": "In Person",
+        "label": "Application method",
+        "note": "A proxy cannot submit a driving licence application"
+      },
+      {
+        "value": "PTT",
+        "label": "Delivery method",
+        "note": "The Turkish licence is sent to the declared address"
+      }
+    ],
+    "overview": {
+      "eyebrow": "General Framework",
+      "title": "Four essential points to know before starting the application",
+      "bullets": [
+        "The country that issued the foreign licence should always be checked first.",
+        "The application is made only by appointment and in person at the population directorate.",
+        "Translation, document verification, and class identification are the most sensitive parts of the file."
+      ],
+      "spotlights": [
+        {
+          "title": "What Is Conversion?",
+          "description": "It is the procedure of replacing a valid driving licence issued abroad with a Turkish driving licence issued by the authorities of the Republic of Turkey."
+        },
+        {
+          "title": "First Control Point",
+          "description": "Before starting, it must be reviewed whether the issuing country is a party to the 1968 Vienna Convention on Road Traffic or has a bilateral arrangement with Turkey."
+        },
+        {
+          "title": "Critical Time Rule",
+          "description": "Foreign nationals who are not Turkish citizens may use their foreign licences in Turkey for up to six months from their latest entry date."
+        },
+        {
+          "title": "Why Is a Pre-Review Important?",
+          "description": "An incorrect country assessment, incomplete translation, unreadable class information, or verification requests may delay the file or leave it unresolved."
+        }
+      ]
+    },
+    "legal": {
+      "eyebrow": "Legal Basis",
+      "title": "Regulatory Framework",
+      "items": [
+        "Articles 38 and 42 in particular of Highway Traffic Law No. 2918.",
+        "Article 88 of the Highway Traffic Regulation.",
+        "The 1968 Vienna Convention on Road Traffic and the supplementary European Agreement.",
+        "The NPGD implementation guideline on driving licence procedures.",
+        "The biometric data provisions of Population Services Law No. 5490."
+      ]
+    },
+    "eligibility": {
+      "eyebrow": "Eligibility for Conversion",
+      "title": "Who may benefit from driving licence conversion?",
+      "description": "The most critical issue is correctly identifying the legal status of the country that issued the licence. That distinction directly determines whether the application is possible.",
+      "items": [
+        {
+          "title": "Countries Party to the Vienna Convention",
+          "description": "Valid licences from these countries can generally be exchanged for a Turkish licence without a theory or road test requirement.",
+          "outcome": "Direct conversion is generally possible."
+        },
+        {
+          "title": "Countries with a Bilateral Arrangement with Turkey",
+          "description": "Where Turkey has an effective reciprocal recognition arrangement for driving licences, the file is handled under the terms of that arrangement.",
+          "outcome": "The text of the arrangement and its practical conditions should be reviewed together."
+        },
+        {
+          "title": "Countries Outside the Convention and Bilateral Framework",
+          "description": "Licences issued by countries that are neither party to the convention nor bound by a bilateral arrangement are generally not eligible for conversion.",
+          "outcome": "A fresh Turkish licensing process is usually required."
+        }
+      ]
+    },
+    "countries": {
+      "eyebrow": "Country Lists",
+      "title": "Country groups accepted for conversion applications",
+      "description": "The lists below are for guidance only. Administrative practice and document verification may differ, especially for countries accepted in practice outside the main treaty framework.",
+      "countLabel": "countries",
+      "disclaimer": "Country lists, acceptance practice, and fee items may change over time. It is strongly recommended to confirm the current position with the NPGD and other official sources before filing.",
+      "groups": [
+        {
+          "title": "Countries Party to the 1968 Road Traffic Convention",
+          "description": "Valid licences issued by the countries below may generally be converted without an examination requirement."
+        },
+        {
+          "title": "Countries Covered by Bilateral Arrangements",
+          "description": "The following countries currently have a bilateral recognition arrangement with Turkey for driving licences.",
+          "note": "Spain is also a party to the Vienna Convention, so two different legal bases may apply together."
+        },
+        {
+          "title": "Other Countries Commonly Accepted in Practice",
+          "description": "Because of later treaty participation, administrative practice, or practical reciprocity, applications from the following countries may also be accepted in practice.",
+          "note": "For this group, the approach of the local population directorate and the verification process can be decisive, so current confirmation before filing is important."
+        }
+      ]
+    },
+    "requirements": {
+      "eyebrow": "Documents and Procedure",
+      "title": "Required documents, appointment channels, and the application flow",
+      "items": [
+        {
+          "title": "Original foreign driving licence and color copy",
+          "description": "The document should be legible, and the class and validity information should be clearly visible."
+        },
+        {
+          "title": "Turkish translation certified by a notary or consulate",
+          "description": "The translation should fully reflect the licence class, validity date, and identity data; incomplete translations may delay the file."
+        },
+        {
+          "title": "Identity and residence records",
+          "description": "A valid passport and, where applicable, a Turkish residence permit card must be presented."
+        },
+        {
+          "title": "Driver health report",
+          "description": "A current medical report showing the applicant is fit to hold a driving licence."
+        },
+        {
+          "title": "Educational certificate",
+          "description": "If obtained abroad, it should be submitted together with its notarized Turkish translation."
+        },
+        {
+          "title": "Criminal record",
+          "description": "The applicant's criminal status is checked through the system or supported with a document when required."
+        },
+        {
+          "title": "Biometric photo",
+          "description": "One biometric photo taken within the last six months and compliant with ICAO standards is required."
+        },
+        {
+          "title": "Blood group declaration or document",
+          "description": "A supporting document may be submitted, or a verbal or written declaration may be made."
+        },
+        {
+          "title": "Fee payments",
+          "description": "Because fee, valuable paper, and foundation service payments may already be visible in the system, a separate receipt may not always be requested."
+        }
+      ]
+    },
+    "process": {
+      "eyebrow": "Application Steps",
+      "channelsEyebrow": "Appointment Channels",
+      "appointmentTitle": "Note for the appointment day",
+      "appointmentNote": "The applicant is expected to be at the population directorate at least thirty minutes before the appointment time. Applications with serious delays may not be accepted depending on daily workload.",
+      "steps": [
+        {
+          "title": "Eligibility review",
+          "description": "The first stage is checking whether the issuing country falls within the convention, a bilateral arrangement, or another accepted administrative practice."
+        },
+        {
+          "title": "Document and translation preparation",
+          "description": "The licence translation, medical report, educational certificate, criminal record, biometric photo, and payment items are completed before the appointment."
+        },
+        {
+          "title": "Booking the appointment",
+          "description": "The application is made only by appointment and in person. The appropriate office is selected online, through Alo 199, or via the NPGD mobile app."
+        },
+        {
+          "title": "In-person filing at the population directorate",
+          "description": "Identity and address are checked, the application form is created, and signature, biometric photo, and fingerprint are taken."
+        },
+        {
+          "title": "Document verification and system entry",
+          "description": "If necessary, confirmation may be requested from the issuing country. This is one of the stages that most often extends the file."
+        },
+        {
+          "title": "Printing and delivery of the Turkish licence",
+          "description": "Once the file is completed, the Turkish licence is printed and sent by PTT to the declared address; the surrendered foreign licence enters the return process to the issuing authority."
+        }
+      ],
+      "channels": [
+        {
+          "title": "Online appointment",
+          "description": "Select the 'Foreign Driving Licence Conversion' category on the NPGD appointment system.",
+          "href": "https://randevu.nvi.gov.tr",
+          "cta": "randevu.nvi.gov.tr"
+        },
+        {
+          "title": "Alo 199",
+          "description": "The call center is an alternative appointment channel for applicants who prefer booking by phone."
+        },
+        {
+          "title": "NPGD Mobile",
+          "description": "The mobile application may be used for appointment management and preliminary preparation."
+        }
+      ]
+    },
+    "postApplication": {
+      "eyebrow": "After the Application",
+      "title": "Important consequences to know once the conversion is completed",
+      "feesTitle": "Fees",
+      "items": [
+        {
+          "title": "Commercial vehicle restriction code",
+          "description": "As a rule, Turkish licences issued to foreigners are marked with a 'Cannot Drive Commercial Vehicles' code. This restriction does not apply to Turkish citizens or Blue Card holders."
+        },
+        {
+          "title": "No return of the foreign licence",
+          "description": "The foreign licence surrendered during conversion is not returned to the applicant; it is sent to the competent authority of the issuing country."
+        },
+        {
+          "title": "Personal appearance requirement",
+          "description": "The application cannot be made through a proxy. Fingerprint, biometric photo, signature, and identity verification require the applicant to appear in person."
+        },
+        {
+          "title": "Annual fee updates",
+          "description": "Official fee, valuable paper, and foundation service amounts may change every year, so the current total should be confirmed through official sources before filing."
+        }
+      ],
+      "feeItems": [
+        "The official fee may vary depending on the licence class.",
+        "The valuable paper fee is re-set each year.",
+        "The foundation service fee is added to the application cost.",
+        "Payments may be made through tax offices, PTT, contracted banks, or ivd.gib.gov.tr."
+      ]
+    },
+    "issues": {
+      "eyebrow": "Common Problems",
+      "title": "Typical mistakes that delay the file or lead to refusal",
+      "riskBadge": "Risk Area",
+      "items": [
+        {
+          "title": "Applying from a non-eligible country",
+          "description": "Applications based on licences outside the convention or bilateral framework may fail from the outset."
+        },
+        {
+          "title": "Incomplete or incorrect translation",
+          "description": "Translations lacking sworn translator, notary, or consular approval, or containing errors in class, date, or identity details, may cause serious delays."
+        },
+        {
+          "title": "Unreadable licence classes",
+          "description": "If class information is unclear on old or worn documents, additional confirmation may be requested from the issuing country and the process may take months."
+        },
+        {
+          "title": "Doubts about authenticity",
+          "description": "Requests for a verification letter from the foreign authority are among the most time-consuming stages in practice."
+        },
+        {
+          "title": "Missing file items",
+          "description": "Gaps in the medical report, translated education record, criminal record, or payment information may prevent the file from being accepted."
+        },
+        {
+          "title": "Exceeding the six-month period",
+          "description": "Continuing to drive after the period without conversion may trigger penalties for driving without a valid licence under Law No. 2918."
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Most frequently asked questions about licence conversion",
+      "items": [
+        {
+          "q": "How long can a foreign driving licence be used in Turkey?",
+          "a": "Foreign nationals who are not Turkish citizens may use their foreign licences in Turkey for up to six months from their latest date of entry into the country."
+        },
+        {
+          "q": "Can every foreign driving licence be converted?",
+          "a": "No. The issuing country must be party to the Vienna Convention, have a bilateral arrangement with Turkey, or appear among other countries accepted in practice."
+        },
+        {
+          "q": "Can the application be submitted through a lawyer or representative?",
+          "a": "No. The applicant must appear personally because fingerprint, signature, biometric photo, and identity verification are taken."
+        },
+        {
+          "q": "Is the surrendered foreign licence returned after conversion?",
+          "a": "No. Once the conversion is completed, the foreign licence is sent to the competent authority of the issuing country."
+        },
+        {
+          "q": "What happens if I keep driving after the six-month period?",
+          "a": "Driving without completing the conversion may be treated as driving without a licence and can lead to administrative fines and traffic sanctions."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Let us review your file together from both the legal and practical angles before you apply",
+      "description": "When the country analysis, translation and certification workflow, verification risks, and filing strategy are planned together, the process becomes safer and more predictable.",
+      "primaryCta": "Request an Appointment",
+      "secondaryCta": "Our Service Areas"
+    }
+  },
+  "gayrimenkul_page": {
+    "hero": {
+      "breadcrumbLabel": "Real Estate Investment",
+      "tag": "Land Registry and Cadastre Process",
+      "titleLines": [
+        "Real Estate Investment",
+        "for Turkish",
+        "Citizenship"
+      ],
+      "highlightLineIndex": 1,
+      "summary": "You may apply for Turkish citizenship by purchasing real estate in Turkey worth at least USD 400,000 and placing a three-year non-sale annotation on the title deed.",
+      "primaryCta": "Free Consultation",
+      "secondaryCta": "Frequently Asked Questions",
+      "imageAlt": "Real estate investment in Turkey"
+    },
+    "stats": [
+      {
+        "value": "$400,000",
+        "label": "Minimum Investment",
+        "sub": "USD"
+      },
+      {
+        "value": "3 Years",
+        "label": "Non-Sale Annotation",
+        "sub": "Registered on title deed"
+      },
+      {
+        "value": "~120 Days",
+        "label": "Average Timeline",
+        "sub": "From application to passport"
+      },
+      {
+        "value": "100%",
+        "label": "Legal Security",
+        "sub": "Official state process"
+      }
+    ],
+    "intro": {
+      "eyebrow": "About the Program",
+      "title": "Turkey's Most Preferred Citizenship Route",
+      "paragraphs": [
+        "Real estate investment is the most widely used and preferred method for applying for Turkish citizenship. Since 2017, the program has helped thousands of foreign investors and their families obtain Turkish passports.",
+        "The threshold can be met with residential property, commercial property, land, or a combined portfolio of multiple assets. The process officially starts once the property is registered and the non-sale annotation is recorded on the title deed."
+      ],
+      "bullets": [
+        "Single or multiple properties",
+        "Residential, office, land — all asset types may qualify",
+        "Projects under construction can be included",
+        "Family members may join the same file"
+      ],
+      "imageAlt": "Real estate investment",
+      "cardValue": "Minimum: $400,000",
+      "cardLabel": "May be met through one or several properties",
+      "badgeValue": "~120 Days",
+      "badgeLabel": "From application to passport"
+    },
+    "process": {
+      "eyebrow": "Step-by-Step Process",
+      "title": "Application Roadmap",
+      "description": "We plan every stage together, from selecting the property to receiving your Turkish passport.",
+      "items": [
+        {
+          "num": "01",
+          "title": "Property Selection and Valuation",
+          "desc": "The market value is officially determined through an appraisal report prepared by a Capital Markets Board licensed valuation company. One property or several properties may be combined.",
+          "icon": "🏠"
+        },
+        {
+          "num": "02",
+          "title": "Foreign Exchange Purchase Certificate",
+          "desc": "Foreign currency is converted into Turkish lira through a Turkish bank and a foreign exchange purchase certificate is issued. This document is a core part of the citizenship file.",
+          "icon": "💱"
+        },
+        {
+          "num": "03",
+          "title": "Title Deed Transfer and Annotation",
+          "desc": "The property is transferred into the buyer's name and a non-sale annotation for at least three years is registered at the same time. This annotation is a mandatory precondition for citizenship.",
+          "icon": "📋"
+        },
+        {
+          "num": "04",
+          "title": "Eligibility Certificate Application",
+          "desc": "The required documents are submitted to the relevant unit under the General Directorate of Land Registry and Cadastre. After review, the Ministry of Environment, Urbanization and Climate Change issues the eligibility certificate.",
+          "icon": "📜"
+        },
+        {
+          "num": "05",
+          "title": "Residence Permit",
+          "desc": "After the eligibility certificate, a short-term residence permit application is filed for the investor and eligible family members. This permit is the preliminary step before the citizenship application.",
+          "icon": "🏛️"
+        },
+        {
+          "num": "06",
+          "title": "Citizenship Application",
+          "desc": "Once all documents are complete, Turkish citizenship is granted by presidential decision. The passport and identity card are then issued, and included family members also gain citizenship through the same file.",
+          "icon": "🇹🇷"
+        }
+      ]
+    },
+    "requirements": {
+      "eyebrow": "Requirements",
+      "title": "Application Conditions",
+      "items": [
+        {
+          "title": "Minimum Investment Amount",
+          "desc": "USD 400,000 or equivalent foreign currency — this may be met through one property or the combined value of multiple properties."
+        },
+        {
+          "title": "Three-Year Non-Sale Annotation",
+          "desc": "A sale restriction annotation for at least three years must be registered on the title deed. The property cannot be transferred before that annotation is lifted."
+        },
+        {
+          "title": "CMB Appraisal Report",
+          "desc": "An appraisal report issued by an authorized real estate valuation company is required for the land registry process."
+        },
+        {
+          "title": "Foreign Exchange Purchase Certificate",
+          "desc": "The full purchase price must be converted into Turkish lira through a Turkish bank and documented accordingly."
+        },
+        {
+          "title": "Preliminary Sales Agreement",
+          "desc": "For projects that are not yet completed, a notarized and registered preliminary sales agreement may be accepted instead of an issued title deed."
+        },
+        {
+          "title": "Family Members",
+          "desc": "The spouse and children under 18, including dependent disabled children, may be included in the same file."
+        }
+      ]
+    },
+    "propertyTypes": {
+      "eyebrow": "Property Types",
+      "title": "Which Real Estate Assets Qualify?",
+      "description": "Residential units, commercial assets, land plots, and even projects under construction may qualify under the program.",
+      "items": [
+        {
+          "icon": "🏢",
+          "title": "Residential Property",
+          "desc": "Apartment, villa, residence, or detached house. The threshold may be met with one unit or a combined value of multiple residential units."
+        },
+        {
+          "icon": "🏪",
+          "title": "Commercial Real Estate",
+          "desc": "Office, shop, retail space, warehouse, or hotel-type assets can also be used in a citizenship application."
+        },
+        {
+          "icon": "🌱",
+          "title": "Land and Plots",
+          "desc": "Land or field-type properties may be included together with the valuation report, regardless of zoning status."
+        },
+        {
+          "icon": "🏗️",
+          "title": "Projects Under Construction",
+          "desc": "For projects not yet delivered, a title-registered preliminary sales agreement may be sufficient."
+        },
+        {
+          "icon": "🏨",
+          "title": "Timeshare / Apart Hotel",
+          "desc": "Timeshare rights or apart-hotel units may qualify if they are individually registered and meet the valuation threshold."
+        },
+        {
+          "icon": "📦",
+          "title": "Multiple Properties",
+          "desc": "Properties in different cities or multiple units in the same development may be combined in one file as long as the total reaches USD 400,000."
+        }
+      ]
+    },
+    "documents": {
+      "eyebrow": "Required Documents",
+      "title": "What You Should Prepare for Your File",
+      "description": "All documents listed below should be complete and up to date. Foreign-language documents are submitted together with apostilled Turkish translations, and our team guides you step by step during preparation.",
+      "noticeTitle": "Important Reminder",
+      "noticeText": "We recommend planning your application timeline at least four to six weeks in advance so that apostille and translation steps can be completed properly.",
+      "items": [
+        {
+          "num": "01",
+          "title": "Passport",
+          "desc": "Valid passports for the applicant and family members, together with notarized Turkish translations."
+        },
+        {
+          "num": "02",
+          "title": "Title Deed / Preliminary Sales Agreement",
+          "desc": "The title deed registration record or the registered preliminary sales agreement for the property."
+        },
+        {
+          "num": "03",
+          "title": "Non-Sale Annotation Record",
+          "desc": "A document from the land registry showing the three-year non-sale annotation entered on the title deed."
+        },
+        {
+          "num": "04",
+          "title": "CMB Appraisal Report",
+          "desc": "A current valuation report prepared by a Capital Markets Board licensed valuation company."
+        },
+        {
+          "num": "05",
+          "title": "Foreign Exchange Purchase Certificate",
+          "desc": "The bank document proving that the purchase price was converted into Turkish lira."
+        },
+        {
+          "num": "06",
+          "title": "Biometric Photo",
+          "desc": "Biometric photographs taken within the last six months for the main applicant and included family members."
+        },
+        {
+          "num": "07",
+          "title": "Criminal Record",
+          "desc": "A criminal record certificate from the applicant's home country, apostilled and translated into Turkish."
+        },
+        {
+          "num": "08",
+          "title": "Marriage / Birth Records",
+          "desc": "Marriage certificate for the spouse and birth certificates for children, each apostilled and translated into Turkish."
+        }
+      ]
+    },
+    "benefits": {
+      "eyebrow": "Benefits",
+      "title": "Advantages of Turkish Citizenship",
+      "description": "A Turkish passport is more than a travel document; it is a strategic asset that opens access to mobility, business, and lifestyle opportunities.",
+      "items": [
+        {
+          "icon": "✈️",
+          "title": "Visa-Free Travel",
+          "desc": "Access to more than 110 destinations visa-free or with visa-on-arrival options, plus a strong reference profile for Schengen filings."
+        },
+        {
+          "icon": "🏦",
+          "title": "Banking Access",
+          "desc": "Easy access to Turkey's strong banking system, including foreign currency accounts, investment accounts, and international transfers."
+        },
+        {
+          "icon": "📋",
+          "title": "Dual Citizenship",
+          "desc": "Turkey allows dual citizenship, so you may keep your existing nationality while obtaining a Turkish passport."
+        },
+        {
+          "icon": "🏥",
+          "title": "Healthcare and Education",
+          "desc": "As a Turkish citizen, you may benefit from public hospitals and public universities under local citizen conditions."
+        },
+        {
+          "icon": "👨‍👩‍👧‍👦",
+          "title": "Family Inclusion",
+          "desc": "The spouse and children under 18 may be included in the same file so the whole family can gain citizenship together."
+        },
+        {
+          "icon": "🔒",
+          "title": "Permanent Status",
+          "desc": "Once citizenship is granted, it remains in place even after the three-year annotation period has passed and the property is later sold."
+        },
+        {
+          "icon": "💼",
+          "title": "Right to Work",
+          "desc": "You do not need a separate work permit to establish a business or work in Turkey after becoming a citizen."
+        },
+        {
+          "icon": "🌍",
+          "title": "Strategic Location",
+          "desc": "Turkey offers direct strategic access to Europe, the Middle East, and Central Asia, with Istanbul as a major commercial hub."
+        }
+      ]
+    },
+    "legal": {
+      "eyebrow": "Legal Framework",
+      "title": "Key Legal Points to Know",
+      "items": [
+        {
+          "title": "Legal Basis",
+          "text": "The program operates under Article 12 of Turkish Citizenship Law No. 5901 and the related Council of Ministers Decision No. 2016/9601. Threshold updates are made by presidential decision."
+        },
+        {
+          "title": "Valuation Requirement",
+          "text": "The value shown in the appraisal report prepared by a licensed valuation company may not be lower than the sale price. Otherwise, the land registry transfer may not be finalized."
+        },
+        {
+          "title": "Foreign Exchange Requirement",
+          "text": "The full purchase price must be converted into Turkish lira through a Turkish bank. Domestic transfers between Turkish accounts do not satisfy this foreign exchange documentation rule."
+        },
+        {
+          "title": "Removing the Annotation",
+          "text": "At the end of the three-year period, the non-sale annotation does not automatically disappear. A separate written request must be submitted to the land registry office, and citizenship status is not affected."
+        }
+      ]
+    },
+    "strip": {
+      "eyebrow": "Our Specialist Team",
+      "title": "We stand beside you in real estate and legal processes across every region of Turkey",
+      "cta": "Get Free Advice",
+      "imageAlt": "Turkey real estate"
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "Can I apply with more than one property?",
+          "a": "Yes. If the total value reaches the USD 400,000 threshold, multiple properties may be combined in the same citizenship file. Each property should carry the relevant non-sale annotation."
+        },
+        {
+          "q": "Can I sell the property after three years?",
+          "a": "Yes. Once the three-year annotation period ends, the property may be sold freely and your citizenship status remains protected."
+        },
+        {
+          "q": "Do I have to live in Turkey during the process?",
+          "a": "No. There is no residence requirement in Turkey for the citizenship filing itself, and much of the process can be managed through a power of attorney once the investment is completed."
+        },
+        {
+          "q": "Is dual citizenship possible?",
+          "a": "Turkey allows dual citizenship. However, it is still wise to review the rules of your existing nationality as well."
+        },
+        {
+          "q": "Can I apply with a condominium easement or an unfinished project?",
+          "a": "Yes. For projects under construction, a notarized and land-registered preliminary sales agreement may be sufficient."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Start Your File?",
+      "description": "Our team stays with you at every stage, from selecting the property to collecting your passport.",
+      "primaryCta": "Free Consultation",
+      "secondaryCta": "View FAQ"
+    }
   }
 }

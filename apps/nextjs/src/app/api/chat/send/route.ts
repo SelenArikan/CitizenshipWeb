@@ -1,58 +1,85 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { archiveInactive } from '@/lib/chat';
-import { getDb } from '@/lib/db';
-import { getSafeLocale } from '@/lib/seo';
 
-type TimestampRow = {
-    unix_ts: string;
+// ─── WhatsApp Cloud API config (Meta) ────────────────────────────
+// Bu değerleri .env.local dosyanıza ekleyin:
+//   WA_PHONE_NUMBER_ID   = WhatsApp Business Phone Number ID (Meta'dan alınır)
+//   WA_ACCESS_TOKEN      = Meta Cloud API erişim tokeni
+//   WA_DEST_NUMBER       = Mesajların gideceği numara (uluslararası format, + olmadan)
+// ─────────────────────────────────────────────────────────────────
+const WA_PHONE_NUMBER_ID = process.env.WA_PHONE_NUMBER_ID ?? '';
+const WA_ACCESS_TOKEN    = process.env.WA_ACCESS_TOKEN    ?? '';
+const WA_DEST_NUMBER     = process.env.WA_DEST_NUMBER     ?? '905301531041';
+
+async function sendWhatsApp(userMessage: string, lang: string): Promise<void> {
+    if (!WA_PHONE_NUMBER_ID || !WA_ACCESS_TOKEN) {
+        // Env değişkenleri yoksa sessizce geç (geliştirme ortamı)
+        console.warn('[WA] WA_PHONE_NUMBER_ID veya WA_ACCESS_TOKEN eksik — WhatsApp iletimi atlandı.');
+        return;
+    }
+
+    const langLabel: Record<string, string> = {
+        tr: '🇹🇷 Türkçe',
+        en: '🇬🇧 İngilizce',
+        ru: '🇷🇺 Rusça',
+        ar: '🇸🇦 Arapça',
+        fa: '🇮🇷 Farsça',
+    };
+
+    const body = {
+        messaging_product: 'whatsapp',
+        to: WA_DEST_NUMBER,
+        type: 'text',
+        text: {
+            body: `📩 *Yeni Site Mesajı* (${langLabel[lang] ?? lang})\n\n${userMessage}`,
+        },
+    };
+
+    const res = await fetch(
+        `https://graph.facebook.com/v20.0/${WA_PHONE_NUMBER_ID}/messages`,
+        {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                Authorization: `Bearer ${WA_ACCESS_TOKEN}`,
+            },
+            body: JSON.stringify(body),
+        }
+    );
+
+    if (!res.ok) {
+        const err = await res.text();
+        console.error('[WA] Gönderim hatası:', err);
+    }
+}
+
+const AUTO_REPLIES: Record<string, string> = {
+    tr: 'Mesajınız alındı! En kısa sürede size geri döneceğiz. 🙏',
+    en: 'Your message has been received! We will get back to you shortly. 🙏',
+    ru: 'Ваше сообщение получено! Мы свяжемся с вами в ближайшее время. 🙏',
+    ar: 'تم استلام رسالتك! سنرد عليك في أقرب وقت ممكن. 🙏',
+    fa: 'پیام شما دریافت شد! به زودی با شما تماس خواهیم گرفت. 🙏',
 };
 
 export async function POST(request: NextRequest) {
     try {
-        archiveInactive();
-
         const body = await request.json();
-        const { chat_id, message, lang = 'tr' } = body;
-        const safeLang = getSafeLocale(typeof lang === 'string' ? lang : 'tr');
-        
-        if (!chat_id || !message) {
-            return NextResponse.json({ success: false, error: 'Missing fields' }, { status: 400 });
-        }
-        
-        const db = getDb();
-        
-        const chat = db.prepare('SELECT status FROM chats WHERE id = ?').get(chat_id);
-        
-        if (!chat) {
-            db.prepare('INSERT INTO chats (id, lang, status) VALUES (?, ?, ?)').run(chat_id, safeLang, 'waiting');
-        } else {
-            db.prepare('UPDATE chats SET lang = ?, status = ?, updated_at = CURRENT_TIMESTAMP WHERE id = ?').run(safeLang, 'waiting', chat_id);
-        }
-        
-        const info = db.prepare('INSERT INTO messages (chat_id, sender_type, message) VALUES (?, ?, ?)').run(chat_id, 'user', message);
-        const messageId = String(info.lastInsertRowid);
-        const msg = db.prepare("SELECT strftime('%s', created_at) as unix_ts FROM messages WHERE id = ?").get(info.lastInsertRowid) as TimestampRow | undefined;
-        const createdAt = Number.parseInt(msg?.unix_ts ?? '0', 10);
+        const { message, lang = 'tr' } = body;
 
-        try {
-          fetch('http://localhost:3000/api/internal/ws-broadcast', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-              chat_id: chat_id,
-              message: {
-                id: messageId,
-                sender: 'visitor',
-                body: message,
-                createdAt: createdAt
-              }
-            })
-          }).catch(() => {});
-        } catch {}
+        if (!message?.trim()) {
+            return NextResponse.json({ success: false, error: 'Mesaj boş olamaz.' }, { status: 400 });
+        }
 
-        return NextResponse.json({ success: true, message_id: messageId });
+        // WhatsApp'a arka planda gönder (await — hata olsa bile kullanıcıya yanıt dönecek)
+        await sendWhatsApp(message.trim(), lang).catch((err) =>
+            console.error('[WA] sendWhatsApp hatası:', err)
+        );
+
+        // Kullanıcıya otomatik yanıt döndür
+        const reply = AUTO_REPLIES[lang] ?? AUTO_REPLIES.tr;
+        return NextResponse.json({ success: true, reply });
+
     } catch (error) {
-        const message = error instanceof Error ? error.message : 'Unknown error';
-        return NextResponse.json({ success: false, error: message }, { status: 500 });
+        const msg = error instanceof Error ? error.message : 'Bilinmeyen hata';
+        return NextResponse.json({ success: false, error: msg }, { status: 500 });
     }
 }
