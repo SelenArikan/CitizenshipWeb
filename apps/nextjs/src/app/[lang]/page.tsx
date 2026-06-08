@@ -16,7 +16,7 @@ type HomeService = { title: string; desc: string };
 type HomeFaq = { q: string; a: string };
 type HomeTeamItem = { title: string; desc: string };
 
-const investmentAnchors = [
+const investmentSlugs = [
   "gayrimenkul-yatirimi",
   "mevduat-hesabi",
   "istihdam-olusturmak",
@@ -156,10 +156,11 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
               <div className="reveal reveal-scale-in delay-200 relative h-80 w-full flex-shrink-0 overflow-hidden md:h-96 md:w-[420px]">
                 <Image
                   src="/news2.png"
-                  alt="CitizenshipWeb danışmanlık ekibi"
+                  alt="Necmettin Barman & Associates Attorneys at Law"
                   fill
                   sizes="(max-width: 768px) 100vw, 420px"
                   className="object-cover"
+                  unoptimized
                 />
               </div>
             </div>
@@ -195,7 +196,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
               {services.map((service, idx) => (
                 <li key={service.title}>
                   <Link
-                    href={`/${dict.lang}/services#${investmentAnchors[idx] ?? investmentAnchors[0]}`}
+                    href={`/${dict.lang}/services/${investmentSlugs[idx] ?? investmentSlugs[0]}`}
                     className="reveal reveal-fade-up group flex items-center justify-between py-5 transition-colors duration-150 hover:text-red-700"
                   >
                     <div className="flex items-center gap-5">

@@ -188,9 +188,9 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
         {
           heading: t.mega_h_other,
           items: [
-            { label: t.item_cit_gen, href: `/${L}/citizenship` },
-            { label: t.item_cit_marriage, href: `/${L}/citizenship` },
-            { label: t.item_cit_passport, href: `/${L}/citizenship` },
+            { label: t.item_cit_gen,      href: `/${L}/citizenship` },
+            { label: t.item_cit_marriage, href: `/${L}/citizenship/evlilik` },
+            { label: t.item_cit_passport, href: `/${L}/citizenship/pasaport` },
           ],
         },
       ],
