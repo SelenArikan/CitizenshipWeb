@@ -34,7 +34,7 @@ export default async function Questions({
           )}
           <div className="space-y-4">
             {allFaqs.map((faq, idx) => (
-              <details key={`${faq.q}-${idx}`} className="group bg-[#f4f6f8] rounded-2xl cursor-pointer">
+              <details key={`${faq.q}-${idx}`} className="group bg-[#E8ECF3] rounded-2xl cursor-pointer">
                 <summary className="flex justify-between items-center font-bold text-navy p-6 group-open:border-b border-gray-200 focus:outline-none list-none [&::-webkit-details-marker]:hidden">
                   {faq.q}
                   <span className="text-burgundy transition-transform group-open:rotate-45 text-2xl">+</span>

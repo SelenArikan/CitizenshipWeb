@@ -111,7 +111,7 @@ export default function ResidencePermitOverviewPage({
           {copy.overview.mainGroups.map((group) => (
             <article
               key={group.title}
-              className="rounded-[28px] border border-gray-200 bg-[#f4f6f8] p-8 shadow-sm"
+              className="rounded-[28px] border border-gray-200 bg-[#E8ECF3] p-8 shadow-sm"
             >
               <h3 className="text-2xl font-bold text-[#0a192f]">{group.title}</h3>
               <p className="mt-4 leading-8 text-gray-700">{group.description}</p>

@@ -20,7 +20,7 @@ export default function CitizenshipBenefits({ lang = "tr" }: { lang?: string }) 
           {copy.benefits.map((benefit, idx) => (
             <div
               key={benefit.title}
-              className={`rounded-3xl border border-gray-100 bg-[#f4f6f8] p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl ${
+              className={`rounded-3xl border border-gray-100 bg-[#E8ECF3] p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl ${
                 idx % 2 === 0 ? "md:mr-4" : "md:ml-4"
               }`}
             >

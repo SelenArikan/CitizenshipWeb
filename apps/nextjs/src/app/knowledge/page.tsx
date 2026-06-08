@@ -14,7 +14,7 @@ export default async function KnowledgeLibrary({ lang = "tr", items }: Knowledge
   const [featuredArticle, ...restArticles] = articles;
 
   return (
-    <main className="flex min-h-screen w-full flex-col items-center bg-[#f4f6f8]">
+    <main className="flex min-h-screen w-full flex-col items-center bg-[#E8ECF3]">
       <div className="w-full bg-navy px-4 py-24 text-center text-white">
         <h1 className="mb-4 text-4xl font-bold md:text-6xl">{copy.title}</h1>
         <p className="mx-auto max-w-2xl text-xl font-light text-gray-300">{copy.summary}</p>

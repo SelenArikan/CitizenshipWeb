@@ -136,7 +136,7 @@ export default function GreenPassportPage({
 
       <section className="bg-white py-20 lg:py-28">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
-          <article className="rounded-3xl border border-gray-100 bg-[#f8f9fc] p-8 shadow-sm">
+          <article className="rounded-3xl border border-gray-100 bg-[#E8ECF3] p-8 shadow-sm">
             <span className="text-xs font-bold uppercase tracking-widest text-[#8a1c1c]">
               {copy.intro.eyebrow}
             </span>
@@ -170,7 +170,7 @@ export default function GreenPassportPage({
         </div>
       </section>
 
-      <section id="sartlar" className="bg-[#f8f9fc] py-20 lg:py-28">
+      <section id="sartlar" className="bg-[#E8ECF3] py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-12 max-w-3xl">
             <span className="text-xs font-bold uppercase tracking-widest text-[#8a1c1c]">
@@ -255,21 +255,21 @@ export default function GreenPassportPage({
           </div>
 
           <div className="grid gap-6 lg:grid-cols-3">
-            <article className="rounded-3xl border border-gray-100 bg-[#f8f9fc] p-8">
+            <article className="rounded-3xl border border-gray-100 bg-[#E8ECF3] p-8">
               <h3 className="text-lg font-bold text-[#0a192f]">{copy.authorities.eligibleTitle}</h3>
               <div className="mt-6">
                 <BulletList items={copy.authorities.eligible} />
               </div>
             </article>
 
-            <article className="rounded-3xl border border-gray-100 bg-[#f8f9fc] p-8">
+            <article className="rounded-3xl border border-gray-100 bg-[#E8ECF3] p-8">
               <h3 className="text-lg font-bold text-[#0a192f]">{copy.authorities.ineligibleTitle}</h3>
               <div className="mt-6">
                 <BulletList items={copy.authorities.ineligible} />
               </div>
             </article>
 
-            <article className="rounded-3xl border border-gray-100 bg-[#f8f9fc] p-8">
+            <article className="rounded-3xl border border-gray-100 bg-[#E8ECF3] p-8">
               <h3 className="text-lg font-bold text-[#0a192f]">{copy.authorities.firmsTitle}</h3>
               <div className="mt-6">
                 <BulletList items={copy.authorities.firms} />
@@ -284,7 +284,7 @@ export default function GreenPassportPage({
         </div>
       </section>
 
-      <section className="bg-[#f8f9fc] py-20 lg:py-28">
+      <section className="bg-[#E8ECF3] py-20 lg:py-28">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="mb-12 max-w-3xl">
             <span className="text-xs font-bold uppercase tracking-widest text-[#8a1c1c]">
@@ -318,7 +318,7 @@ export default function GreenPassportPage({
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link
               href={`/${lang}/contact`}
-              className="rounded-full bg-white px-10 py-4 text-sm font-bold text-[#8a1c1c] transition hover:bg-gray-100"
+              className="rounded-full bg-white px-10 py-4 text-sm font-bold text-[#8a1c1c] transition hover:bg-[#E8ECF3]"
             >
               {copy.cta.primaryCta}
             </Link>

@@ -3,18 +3,15 @@ import { useEffect } from "react";
 
 export default function ScrollRevealWrapper() {
   useEffect(() => {
-    // A more aggressive observer setup for React
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("is-revealed");
-            // Don't unobserve immediately in dev to avoid hot-reload issues, 
-            // but for prod it's fine. We'll leave it observing so if they scroll up it might re-trigger or stay static.
           }
         });
       },
-      { threshold: 0.05, rootMargin: "50px 0px -20px 0px" } // extremely forgiving margins
+      { threshold: 0.05, rootMargin: "80px 0px -10px 0px" }
     );
 
     const observeElements = () => {
@@ -23,15 +20,20 @@ export default function ScrollRevealWrapper() {
       });
     };
 
-    // Initial pass
     observeElements();
-    
-    // Fallback passes for NextJS hydration and dynamic imports
-    const intervalId = setInterval(observeElements, 1000);
+    const intervalId = setInterval(observeElements, 800);
+
+    // Safety net: force-reveal all elements after 2s if observer missed them
+    const fallback = setTimeout(() => {
+      document.querySelectorAll(".reveal:not(.is-revealed)").forEach((el) => {
+        el.classList.add("is-revealed");
+      });
+    }, 2000);
 
     return () => {
       observer.disconnect();
       clearInterval(intervalId);
+      clearTimeout(fallback);
     };
   }, []);
 

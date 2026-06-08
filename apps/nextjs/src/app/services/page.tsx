@@ -74,7 +74,7 @@ export default async function ServicesShowcase({ lang = "tr" }: { lang?: string 
       </section>
 
       {/* ══ CARDS SHOWCASE ══ */}
-      <section className="bg-[#f8f9fc] py-20 lg:py-24">
+      <section className="bg-[#E8ECF3] py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
             {INVESTMENTS.map((inv, idx) => {
@@ -94,7 +94,7 @@ export default async function ServicesShowcase({ lang = "tr" }: { lang?: string 
                   <div className="flex flex-1 flex-col p-8">
                     {/* Index + Icon row */}
                     <div className="mb-6 flex items-start justify-between">
-                      <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#f1f1f4] text-[#0a192f] transition group-hover:bg-[#8a1c1c] group-hover:text-white">
+                      <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#E8ECF3] text-[#0a192f] transition group-hover:bg-[#8a1c1c] group-hover:text-white">
                         <ServiceIcon icon={inv.icon} />
                       </div>
                       <span className="text-3xl font-extrabold text-gray-100 transition group-hover:text-[#8a1c1c]/20">

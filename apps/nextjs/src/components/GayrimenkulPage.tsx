@@ -445,7 +445,7 @@ export default function GayrimenkulPage({
         </div>
       </section>
 
-      <section className="bg-[#f8f9fc] py-20 lg:py-28">
+      <section className="bg-[#E8ECF3] py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div
             className="mb-16 text-center"
@@ -563,7 +563,7 @@ export default function GayrimenkulPage({
                   transform: "translateY(30px)",
                   transition: `all 0.5s ease ${index * 0.07}s`,
                 }}
-                className="group flex gap-4 rounded-2xl border border-gray-100 bg-[#f8f9fc] p-6 transition-all duration-300 hover:border-[#8a1c1c]/20 hover:bg-white hover:shadow-md"
+                className="group flex gap-4 rounded-2xl border border-gray-100 bg-[#E8ECF3] p-6 transition-all duration-300 hover:border-[#8a1c1c]/20 hover:bg-white hover:shadow-md"
               >
                 <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl border border-gray-100 bg-white text-[#0a192f] shadow-sm transition-colors duration-300 group-hover:bg-[#8a1c1c] group-hover:text-white">
                   <PageIcon icon={item.icon} className="h-6 w-6" />
@@ -578,7 +578,7 @@ export default function GayrimenkulPage({
         </div>
       </section>
 
-      <section className="bg-[#f8f9fc] py-20 lg:py-28">
+      <section className="bg-[#E8ECF3] py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-16 lg:grid-cols-2 lg:items-start">
             <div
@@ -696,7 +696,7 @@ export default function GayrimenkulPage({
                   transform: "translateY(20px)",
                   transition: `all 0.4s ease ${index * 0.1}s`,
                 }}
-                className="rounded-2xl border-l-4 border-[#8a1c1c] bg-[#f8f9fc] p-7"
+                className="rounded-2xl border-l-4 border-[#8a1c1c] bg-[#E8ECF3] p-7"
               >
                 <h3 className="mb-3 font-bold text-[#0a192f]">{item.title}</h3>
                 <p className="text-sm leading-relaxed text-gray-600">{item.text}</p>
@@ -767,7 +767,7 @@ export default function GayrimenkulPage({
               >
                 <button
                   onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                  className="flex w-full items-center justify-between p-6 text-left transition-colors hover:bg-gray-50"
+                  className="flex w-full items-center justify-between p-6 text-left transition-colors hover:bg-[#F0F3F9]"
                 >
                   <span className="pr-4 font-semibold text-[#0a192f]">{faq.q}</span>
                   <span
@@ -794,7 +794,7 @@ export default function GayrimenkulPage({
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link
               href={`/${lang}/contact`}
-              className="rounded-full bg-white px-10 py-4 text-sm font-bold text-[#8a1c1c] shadow-lg transition hover:bg-gray-100"
+              className="rounded-full bg-white px-10 py-4 text-sm font-bold text-[#8a1c1c] shadow-lg transition hover:bg-[#E8ECF3]"
             >
               {copy.cta.primaryCta}
             </Link>

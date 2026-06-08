@@ -74,13 +74,13 @@ export default function QuestionSubmissionForm({
 
   const inputClass = isSidebar
     ? "w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#8a1c1c] placeholder:text-gray-400"
-    : "w-full px-5 py-4 rounded-2xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-[#8a1c1c]/50 backdrop-blur-sm transition placeholder:text-gray-400";
+    : "w-full px-5 py-4 rounded-2xl bg-white border border-[#D1D9E8] text-[#0a192f] focus:outline-none focus:border-[#0a192f]/50 focus:ring-1 focus:ring-[#0a192f]/15 transition placeholder:text-[#0a192f]/40";
 
   const optionClass = (mode: QuestionReplyMode) =>
-    `${isSidebar ? "rounded-2xl p-4" : "rounded-3xl p-5"} border text-left transition ${
+    `${isSidebar ? "rounded-2xl p-4" : "rounded-3xl p-5"} border text-left transition-all duration-200 ${
       replyMode === mode
-        ? "border-[#8a1c1c] bg-[#8a1c1c]/15"
-        : "border-white/10 bg-white/5 hover:bg-white/10"
+        ? "border-[#0a192f] bg-[#E8ECF3] ring-1 ring-[#0a192f]/20 shadow-sm"
+        : "border-[#D1D9E8] bg-white hover:border-[#0a192f]/40 hover:bg-[#F4F6FA] hover:shadow-sm"
     }`;
 
   const helperMessage =
@@ -182,8 +182,8 @@ export default function QuestionSubmissionForm({
           }}
           className={optionClass("public")}
         >
-          <div className="font-bold text-white">{formCopy.public_option_title}</div>
-          <div className="mt-1 text-sm text-gray-300">{formCopy.public_option_desc}</div>
+          <div className={`font-bold ${isSidebar ? "text-white" : "text-slate-900"}`}>{formCopy.public_option_title}</div>
+          <div className={`mt-1 text-sm ${isSidebar ? "text-gray-300" : "text-slate-500"}`}>{formCopy.public_option_desc}</div>
         </button>
         <button
           type="button"
@@ -193,8 +193,8 @@ export default function QuestionSubmissionForm({
           }}
           className={optionClass("private")}
         >
-          <div className="font-bold text-white">{formCopy.private_option_title}</div>
-          <div className="mt-1 text-sm text-gray-300">{formCopy.private_option_desc}</div>
+          <div className={`font-bold ${isSidebar ? "text-white" : "text-slate-900"}`}>{formCopy.private_option_title}</div>
+          <div className={`mt-1 text-sm ${isSidebar ? "text-gray-300" : "text-slate-500"}`}>{formCopy.private_option_desc}</div>
         </button>
       </div>
 
@@ -215,7 +215,7 @@ export default function QuestionSubmissionForm({
         <button
           type="submit"
           disabled={status === "submitting"}
-          className={`${isSidebar ? "w-full rounded-xl" : "rounded-full"} px-8 py-4 bg-[#8a1c1c] hover:bg-[#a32222] font-bold transition shadow-lg hover:shadow-[#8a1c1c]/50 text-white disabled:opacity-70 disabled:cursor-not-allowed`}
+          className={`${isSidebar ? "w-full rounded-xl" : "rounded-full"} px-8 py-4 bg-[#b52727] hover:bg-[#cc3333] font-bold transition shadow-lg hover:shadow-[#b52727]/30 text-white disabled:opacity-70 disabled:cursor-not-allowed`}
         >
           {status === "submitting" ? submitCopy.sending : submitCopy.btn}
         </button>
@@ -223,10 +223,10 @@ export default function QuestionSubmissionForm({
           aria-live="polite"
           className={
             status === "success"
-              ? "text-sm text-emerald-300"
+              ? "text-sm text-emerald-600"
               : status === "error"
-                ? "text-sm text-rose-300"
-                : "text-sm text-gray-400"
+                ? "text-sm text-rose-500"
+                : `text-sm ${isSidebar ? "text-gray-400" : "text-slate-400"}`
           }
         >
           {helperMessage}

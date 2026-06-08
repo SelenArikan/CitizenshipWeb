@@ -202,7 +202,7 @@ export default function EhliyetPage({
               {copy.overview.spotlights.map((item) => (
                 <article
                   key={item.title}
-                  className="group rounded-2xl border border-gray-100 bg-[#f8f9fc] p-6 transition-all duration-300 hover:border-[#8a1c1c]/20 hover:shadow-md"
+                  className="group rounded-2xl border border-gray-100 bg-[#E8ECF3] p-6 transition-all duration-300 hover:border-[#8a1c1c]/20 hover:shadow-md"
                 >
                   <h3 className="font-bold text-[#0a192f]">{item.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-gray-500">{item.description}</p>
@@ -257,7 +257,7 @@ export default function EhliyetPage({
         </div>
       </section>
 
-      <section className="bg-[#f8f9fc] py-20 lg:py-28">
+      <section className="bg-[#E8ECF3] py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div
             className="mb-16 text-center"
@@ -289,7 +289,7 @@ export default function EhliyetPage({
                 </div>
                 <h3 className="mt-2 text-xl font-bold text-[#0a192f]">{item.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-gray-500">{item.description}</p>
-                <div className="mt-5 rounded-xl border border-gray-100 bg-[#f8f9fc] px-4 py-3 text-sm font-semibold text-[#0a192f]">
+                <div className="mt-5 rounded-xl border border-gray-100 bg-[#E8ECF3] px-4 py-3 text-sm font-semibold text-[#0a192f]">
                   {item.outcome}
                 </div>
               </article>
@@ -328,7 +328,7 @@ export default function EhliyetPage({
               >
                 <button
                   onClick={() => setOpenCountry(openCountry === index ? null : index)}
-                  className="flex w-full items-center justify-between bg-[#f8f9fc] p-6 text-left transition-colors duration-200 hover:bg-white"
+                  className="flex w-full items-center justify-between bg-[#E8ECF3] p-6 text-left transition-colors duration-200 hover:bg-white"
                 >
                   <div className="flex items-center gap-4">
                     <span className="flex-shrink-0 rounded-xl bg-[#0a192f] px-3 py-1.5 text-xs font-black text-white">
@@ -347,7 +347,7 @@ export default function EhliyetPage({
                       {group.countries.map((country) => (
                         <div
                           key={country}
-                          className="flex items-center gap-2 rounded-xl border border-gray-100 bg-[#f8f9fc] px-4 py-2.5 text-sm text-gray-700 transition-colors hover:border-[#8a1c1c]/20"
+                          className="flex items-center gap-2 rounded-xl border border-gray-100 bg-[#E8ECF3] px-4 py-2.5 text-sm text-gray-700 transition-colors hover:border-[#8a1c1c]/20"
                         >
                           <span className="h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[#8a1c1c]" />
                           {country}
@@ -375,7 +375,7 @@ export default function EhliyetPage({
         </div>
       </section>
 
-      <section className="bg-[#f8f9fc] py-20 lg:py-28">
+      <section className="bg-[#E8ECF3] py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div
             className="max-w-4xl"
@@ -530,7 +530,7 @@ export default function EhliyetPage({
                   transform: "translateY(30px)",
                   transition: `all 0.5s ease ${index * 0.08}s`,
                 }}
-                className="rounded-2xl border-l-4 border-[#8a1c1c] bg-[#f8f9fc] p-7 transition-all duration-300 hover:shadow-md"
+                className="rounded-2xl border-l-4 border-[#8a1c1c] bg-[#E8ECF3] p-7 transition-all duration-300 hover:shadow-md"
               >
                 <h3 className="font-bold text-[#0a192f]">{item.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-gray-500">{item.description}</p>
@@ -539,7 +539,7 @@ export default function EhliyetPage({
           </div>
 
           <div
-            className="mt-12 rounded-2xl border border-gray-100 bg-[#f8f9fc] p-8 shadow-sm"
+            className="mt-12 rounded-2xl border border-gray-100 bg-[#E8ECF3] p-8 shadow-sm"
             data-reveal
             style={{ opacity: 0, transform: "translateY(20px)", transition: "all 0.5s ease" }}
           >
@@ -643,7 +643,7 @@ export default function EhliyetPage({
               >
                 <button
                   onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                  className="flex w-full items-center justify-between p-6 text-left transition-colors hover:bg-gray-50"
+                  className="flex w-full items-center justify-between p-6 text-left transition-colors hover:bg-[#F0F3F9]"
                 >
                   <span className="pr-4 font-semibold text-[#0a192f]">{faq.q}</span>
                   <span
@@ -670,7 +670,7 @@ export default function EhliyetPage({
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link
               href={`/${lang}/contact`}
-              className="rounded-full bg-white px-10 py-4 text-sm font-bold text-[#8a1c1c] transition hover:bg-gray-100 hover:shadow-lg"
+              className="rounded-full bg-white px-10 py-4 text-sm font-bold text-[#8a1c1c] transition hover:bg-[#E8ECF3] hover:shadow-lg"
             >
               {copy.cta.primaryCta}
             </Link>

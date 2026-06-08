@@ -88,7 +88,7 @@ export default function NewsletterSection({
       {/* Interactive Glowing Blob */}
       <div 
          ref={blobRef}
-         className="absolute w-[600px] h-[600px] bg-[#8a1c1c] rounded-full blur-[140px] opacity-30 pointer-events-none"
+         className="absolute w-[600px] h-[600px] bg-[#8a1c1c] rounded-full blur-[140px] opacity-25 pointer-events-none"
          style={{
            left: '50%',
            top: '50%',
@@ -97,9 +97,9 @@ export default function NewsletterSection({
          }}
       ></div>
 
-      <div className="max-w-4xl w-full px-8 flex flex-col items-center text-center z-10 p-16 rounded-3xl border border-white/10 bg-[#0a192f]/40 backdrop-blur-xl shadow-2xl relative">
-        <h2 className="text-4xl font-bold mb-4 drop-shadow-md">{safeDict.title} <span className="text-[#8a1c1c] font-light">{safeDict.title_bold}</span></h2>
-        <p className="text-gray-300 mb-8 max-w-xl text-lg">{safeDict.desc}</p>
+      <div className="max-w-4xl w-full px-8 flex flex-col items-center text-center z-10 p-16 rounded-3xl border border-white/10 bg-white/8 backdrop-blur-xl shadow-2xl relative">
+        <h2 className="text-4xl font-bold mb-4 text-white">{safeDict.title} <span className="text-[#c0524a] font-light">{safeDict.title_bold}</span></h2>
+        <p className="text-blue-100/80 mb-8 max-w-xl text-lg">{safeDict.desc}</p>
         <div className="w-full max-w-2xl">
           <QuestionSubmissionForm
             lang={lang}

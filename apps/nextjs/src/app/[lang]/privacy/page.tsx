@@ -51,7 +51,7 @@ export default async function PrivacyPage({
   const cards = Array.isArray(copy.cards) ? (copy.cards as PrivacyCard[]) : [];
 
   return (
-    <main className="min-h-screen bg-[#f4f6f8] text-navy">
+    <main className="min-h-screen bg-[#E8ECF3] text-navy">
       <section className="relative overflow-hidden bg-navy px-6 py-24 text-white sm:px-8">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(163,34,34,0.28),transparent_36%),linear-gradient(135deg,rgba(255,255,255,0.08),transparent_45%)]" />
         <div className="relative mx-auto flex max-w-5xl flex-col gap-6">

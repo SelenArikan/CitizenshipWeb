@@ -249,7 +249,7 @@ export default async function AboutPageContent({ lang }: { lang: string }) {
       {/* ══════════════════════════════════════════════════
           TEAM
       ══════════════════════════════════════════════════ */}
-      <section className="bg-[#f8f9fc] py-24 lg:py-32" id="about-team">
+      <section className="bg-[#E8ECF3] py-24 lg:py-32" id="about-team">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-16 text-center">
             <span className="mb-3 inline-block text-xs font-bold uppercase tracking-widest text-[#8a1c1c]">
@@ -315,7 +315,7 @@ export default async function AboutPageContent({ lang }: { lang: string }) {
                 <p className="font-bold text-[#0a192f] text-sm leading-snug">{m.name}</p>
                 <p className="mt-0.5 text-xs text-gray-500">{m.title}</p>
                 {m.langs && (
-                  <span className="mt-3 inline-block rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-semibold text-gray-500 transition group-hover:bg-[#fef2f2] group-hover:text-[#8a1c1c]">
+                  <span className="mt-3 inline-block rounded-full bg-[#E8ECF3] px-2.5 py-0.5 text-xs font-semibold text-[#0a192f]/60 transition group-hover:bg-[#fef2f2] group-hover:text-[#8a1c1c]">
                     {m.langs}
                   </span>
                 )}

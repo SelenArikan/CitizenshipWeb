@@ -2,8 +2,12 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getDictionary } from "@/lib/dictionary";
 import { getGayrimenkulPageData } from "@/lib/gayrimenkul-page";
+import { getMevduatPageData } from "@/lib/mevduat-page";
 import { getInvestmentBySlug, getLocalizedField, getLocalizedBullets, INVESTMENTS, ServiceIconKey } from "@/lib/investments";
 import GayrimenkulPage from "@/components/GayrimenkulPage";
+import MevduatPage from "@/components/MevduatPage";
+import GayrimenkulFonPage from "@/components/GayrimenkulFonPage";
+import { getGayrimenkulFonPageData } from "@/lib/gayrimenkul-fon-page";
 
 type ServicePageDictionary = {
   dir?: string;
@@ -52,6 +56,32 @@ export default async function ServiceDetailPage({ slug, lang = "tr" }: { slug: s
 
     return (
       <GayrimenkulPage
+        lang={pageData.lang}
+        dir={pageData.dir}
+        backLabel={pageData.backLabel}
+        copy={pageData.copy}
+      />
+    );
+  }
+
+  // Dedicated rich page for mevduat-hesabi
+  if (slug === "mevduat-hesabi") {
+    const pageData = await getMevduatPageData(lang);
+    return (
+      <MevduatPage
+        lang={pageData.lang}
+        dir={pageData.dir}
+        backLabel={pageData.backLabel}
+        copy={pageData.copy}
+      />
+    );
+  }
+
+  // Dedicated rich page for gayrimenkul-yatirim-fonu
+  if (slug === "gayrimenkul-yatirim-fonu") {
+    const pageData = await getGayrimenkulFonPageData(lang);
+    return (
+      <GayrimenkulFonPage
         lang={pageData.lang}
         dir={pageData.dir}
         backLabel={pageData.backLabel}
@@ -185,7 +215,7 @@ export default async function ServiceDetailPage({ slug, lang = "tr" }: { slug: s
       </section>
 
       {/* ══ OTHER INVESTMENTS ══ */}
-      <section className="bg-[#f8f9fc] py-16">
+      <section className="bg-[#E8ECF3] py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="mb-8 text-xs font-bold uppercase tracking-widest text-gray-400">{ui.otherTitle}</h2>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -195,7 +225,7 @@ export default async function ServiceDetailPage({ slug, lang = "tr" }: { slug: s
               return (
                 <Link key={other.slug} href={`/${lang}/services/${other.slug}`}
                   className="group flex flex-col rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:border-[#8a1c1c]/20 hover:shadow-md">
-                  <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-gray-50 text-[#0a192f] transition group-hover:bg-[#8a1c1c] group-hover:text-white">
+                  <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-[#E8ECF3] text-[#0a192f] transition group-hover:bg-[#8a1c1c] group-hover:text-white">
                     <ServiceIcon icon={other.icon} className="h-5 w-5" />
                   </div>
                   <p className="mb-2 font-bold text-[#0a192f] text-sm leading-snug">{otherTitle}</p>

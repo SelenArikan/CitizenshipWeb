@@ -157,7 +157,7 @@ export default function ResidencePermitDetailPage({
         </section>
       ))}
 
-      <section className="border-y border-gray-200 bg-[#f4f6f8] py-20">
+      <section className="border-y border-gray-200 bg-[#E8ECF3] py-20">
         <div className="mx-auto max-w-7xl px-6 sm:px-8">
           <div className="max-w-3xl">
             <span className="text-sm font-semibold uppercase tracking-[0.22em] text-[#8a1c1c]">

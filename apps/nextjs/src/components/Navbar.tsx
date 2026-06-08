@@ -266,7 +266,7 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
   return (
     <nav
       id="cw-navbar"
-      className="fixed top-0 z-50 w-full border-b border-[rgba(255,255,255,0.1)] bg-[rgba(10,25,47,0.92)] text-white shadow-sm backdrop-blur-md"
+      className="fixed top-0 z-50 w-full border-b border-blue-100 bg-white/96 text-[#0a192f] shadow-sm backdrop-blur-md"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
@@ -296,7 +296,7 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
                   <Link
                     key={entry.href}
                     href={entry.href}
-                    className="rounded-lg px-3 py-2 text-sm font-medium text-white/90 transition hover:bg-white/10 hover:text-white"
+                    className="rounded-lg px-3 py-2 text-sm font-medium text-[#0a192f] transition hover:bg-blue-50 hover:text-[#112240]"
                   >
                     {entry.label}
                   </Link>
@@ -323,13 +323,13 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
                       }
                     }}
                     className={`flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-medium transition ${
-                      isOpen ? "bg-white/10 text-white" : "text-white/90 hover:bg-white/10 hover:text-white"
+                      isOpen ? "bg-blue-50 text-[#0a192f]" : "text-[#0a192f] hover:bg-blue-50 hover:text-[#112240]"
                     }`}
                   >
                     {entry.label}
                     <svg
                       className={`h-3.5 w-3.5 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
-                      fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                      fill="none" stroke="currentColor" viewBox="0 0 24 24" color="currentColor"
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
@@ -340,7 +340,7 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
 
             <Link
               href={`/${L}/contact`}
-              className="ml-2 rounded-full bg-[#8a1c1c] px-6 py-2 text-sm font-bold text-white shadow-lg transition visited:text-white hover:bg-[#a32222] hover:text-white"
+              className="ml-2 rounded-full bg-[#b52727] px-6 py-2 text-sm font-bold text-white shadow-lg transition visited:text-white hover:bg-[#cc3333] hover:text-white"
             >
               {t.contact}
             </Link>
@@ -350,20 +350,20 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
               <button
                 type="button"
                 onClick={() => setLangOpen(!langOpen)}
-                className="flex items-center gap-1.5 rounded-lg px-2.5 py-2 text-lg transition hover:bg-white/10"
+                className="flex items-center gap-1.5 rounded-lg px-2.5 py-2 text-lg transition hover:bg-blue-50"
                 title={languages.find((l) => l.code === L)?.name}
               >
                 <span>{currentFlag}</span>
-                <svg className="h-3 w-3 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="h-3 w-3 text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
               {langOpen && (
                 <div
-                  className="absolute right-0 z-50 mt-2 w-44 overflow-hidden rounded-xl py-1.5 shadow-2xl"
+                  className="absolute right-0 z-50 mt-2 w-44 overflow-hidden rounded-xl py-1.5 shadow-xl"
                   style={{
-                    background: "rgba(10,25,47,0.98)",
-                    border: "1px solid rgba(255,255,255,0.12)",
+                    background: "rgba(255,255,255,0.99)",
+                    border: "1px solid rgba(15,45,94,0.10)",
                     backdropFilter: "blur(20px)",
                   }}
                 >
@@ -372,8 +372,8 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
                       key={l.code}
                       href={switchLang(l.code)}
                       onClick={() => setLangOpen(false)}
-                      className="flex items-center gap-3 px-4 py-2.5 text-sm font-medium transition hover:bg-white/10"
-                      style={{ color: L === l.code ? "#fff" : "rgba(255,255,255,0.6)" }}
+                      className="flex items-center gap-3 px-4 py-2.5 text-sm font-medium transition hover:bg-blue-50"
+                      style={{ color: L === l.code ? "#0a192f" : "rgba(10,25,47,0.50)" }}
                     >
                       <span className="text-xl">{l.flag}</span>
                       <span>{l.name}</span>
@@ -393,24 +393,24 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
               <button
                 type="button"
                 onClick={() => setLangOpen(!langOpen)}
-                className="flex items-center gap-1 text-xl"
+                className="flex items-center gap-1 text-xl text-slate-700"
               >
                 {currentFlag}
-                <svg className="h-3 w-3 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="h-3 w-3 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
               {langOpen && (
                 <div
                   className="absolute right-0 z-50 mt-2 w-44 overflow-hidden rounded-xl py-1.5 shadow-xl"
-                  style={{ background: "rgba(10,25,47,0.97)", border: "1px solid rgba(255,255,255,0.1)" }}
+                  style={{ background: "rgba(255,255,255,0.99)", border: "1px solid rgba(15,45,94,0.10)" }}
                 >
                   {languages.map((l) => (
                     <Link
                       key={l.code}
                       href={switchLang(l.code)}
                       onClick={() => setLangOpen(false)}
-                      className="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-white/70 transition hover:bg-white/10 hover:text-white"
+                      className="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-[#0a192f]/70 transition hover:bg-blue-50 hover:text-[#0a192f]"
                     >
                       <span className="text-xl">{l.flag}</span>
                       <span>{l.name}</span>
@@ -424,7 +424,7 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
               type="button"
               onClick={() => setMobileOpen(!mobileOpen)}
               aria-label="Toggle menu"
-              className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/20 bg-white/10 transition hover:bg-white/20"
+              className="flex h-10 w-10 items-center justify-center rounded-lg border border-blue-100 bg-white transition hover:bg-blue-50 text-[#0a192f]"
             >
               {mobileOpen ? (
                 <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -442,7 +442,7 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="border-t border-white/10 bg-[#0a192f] px-4 pb-6 pt-4 lg:hidden">
+        <div className="border-t border-blue-100 bg-white px-4 pb-6 pt-4 lg:hidden shadow-lg">
           <div className="flex flex-col gap-1">
             {menuEntries.map((entry) => {
               if (entry.type === "link") {
@@ -450,7 +450,7 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
                   <Link
                     key={entry.href}
                     href={entry.href}
-                    className="rounded-lg px-4 py-3 text-sm font-medium text-gray-200 transition hover:bg-white/10 hover:text-white"
+                    className="rounded-lg px-4 py-3 text-sm font-medium text-[#0a192f] transition hover:bg-blue-50"
                   >
                     {entry.label}
                   </Link>
@@ -462,7 +462,7 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
                   <button
                     type="button"
                     onClick={() => setMobileExpanded((c) => (c === entry.key ? null : entry.key))}
-                    className="flex w-full items-center justify-between rounded-lg px-4 py-3 text-sm font-medium text-gray-200 transition hover:bg-white/10 hover:text-white"
+                    className="flex w-full items-center justify-between rounded-lg px-4 py-3 text-sm font-medium text-[#0a192f] transition hover:bg-blue-50"
                   >
                     {entry.label}
                     <svg
@@ -473,7 +473,7 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
                     </svg>
                   </button>
                   {mobileExpanded === entry.key && (
-                    <div className="ml-4 mt-1 flex flex-col gap-0.5 border-l border-white/10 pl-4">
+                    <div className="ml-4 mt-1 flex flex-col gap-0.5 border-l border-blue-100 pl-4">
                       {entry.groups.map((group, gi) => (
                         <div key={gi}>
                           {group.heading && (
@@ -486,10 +486,10 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
                               key={item.href + item.label}
                               href={item.href}
                               onClick={() => setMobileOpen(false)}
-                              className="block rounded-lg px-3 py-2.5 text-sm text-gray-200 transition hover:text-white"
+                              className="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]"
                             >
                               {item.label}
-                              {item.desc && <span className="ml-2 text-xs text-gray-600">{item.desc}</span>}
+                              {item.desc && <span className="ml-2 text-xs text-stone-400">{item.desc}</span>}
                             </Link>
                           ))}
                         </div>
@@ -500,7 +500,7 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
               );
             })}
 
-            <div className="mt-3 border-t border-white/10 pt-3">
+            <div className="mt-3 border-t border-stone-100 pt-3">
               <Link
                 href={`/${L}/contact`}
                 className="block rounded-full bg-[#8a1c1c] px-6 py-3 text-center text-sm font-bold text-white transition visited:text-white hover:bg-[#a32222] hover:text-white"
@@ -528,9 +528,9 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
           <div
             className="overflow-hidden shadow-2xl"
             style={{
-              background: "rgba(8,20,40,0.97)",
+              background: "rgba(255,255,255,0.99)",
               backdropFilter: "blur(24px)",
-              border: "1px solid rgba(255,255,255,0.09)",
+              border: "1px solid rgba(15,45,94,0.08)",
               borderRadius: "16px",
               animation: "cwDropIn 0.18s ease both",
             }}
@@ -543,9 +543,9 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
                     className="absolute inset-0 bg-cover bg-center scale-105 transition-transform duration-700"
                     style={{ backgroundImage: `url('${activeMegaEntry.featuredImage}')` }}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#08142880] to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-white/60 to-transparent" />
                   <div className="absolute bottom-4 left-4 right-2">
-                    <span className="text-xs font-bold uppercase tracking-widest text-[#c94040]">
+                    <span className="text-xs font-bold uppercase tracking-widest text-[#b52727]">
                       {activeMegaEntry.label}
                     </span>
                   </div>
@@ -553,11 +553,11 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
               )}
 
               {/* Groups */}
-              <div className="flex flex-1 gap-0 divide-x divide-white/[0.06]">
+              <div className="flex flex-1 gap-0 divide-x divide-blue-50">
                 {activeMegaEntry.groups.map((group, gi) => (
                   <div key={gi} className="flex min-w-[200px] flex-col p-6">
                     {group.heading && (
-                      <span className="mb-4 text-[11px] font-bold uppercase tracking-[0.15em] text-[#a33333]">
+                      <span className="mb-4 text-[11px] font-bold uppercase tracking-[0.15em] text-[#8a1c1c]">
                         {group.heading}
                       </span>
                     )}
@@ -567,7 +567,7 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
                           key={item.href + item.label}
                           href={item.href}
                           onClick={() => setActiveMenu(null)}
-                          className="group flex items-center justify-between rounded-lg px-3 py-3 text-[0.9375rem] text-gray-300 transition-all duration-150 hover:bg-white/[0.07] hover:text-white hover:translate-x-0.5"
+                          className="group flex items-center justify-between rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5"
                         >
                           <span className="leading-snug">{item.label}</span>
                         </Link>

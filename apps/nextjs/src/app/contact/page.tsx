@@ -4,7 +4,7 @@ export default function Contact({ lang = "tr" }: { lang?: string }) {
   const copy = getContactPageCopy(lang);
 
   return (
-    <main className="flex min-h-screen w-full flex-col items-center bg-[#f4f6f8]">
+    <main className="flex min-h-screen w-full flex-col items-center bg-[#E8ECF3]">
       <div className="w-full bg-navy px-4 pb-24 pt-40 text-center text-white">
         <h1 className="mb-4 text-4xl font-bold md:text-6xl">{copy.title}</h1>
         <p className="mx-auto max-w-3xl text-xl font-light text-gray-300">{copy.summary}</p>
@@ -48,32 +48,32 @@ export default function Contact({ lang = "tr" }: { lang?: string }) {
                 <input
                   type="text"
                   placeholder={copy.placeholders.firstName}
-                  className="flex-1 rounded-xl bg-[#f4f6f8] px-4 py-4 text-navy outline-none focus:ring-2 focus:ring-burgundy"
+                  className="flex-1 rounded-xl bg-[#E8ECF3] px-4 py-4 text-navy outline-none focus:ring-2 focus:ring-burgundy"
                   required
                 />
                 <input
                   type="text"
                   placeholder={copy.placeholders.lastName}
-                  className="flex-1 rounded-xl bg-[#f4f6f8] px-4 py-4 text-navy outline-none focus:ring-2 focus:ring-burgundy"
+                  className="flex-1 rounded-xl bg-[#E8ECF3] px-4 py-4 text-navy outline-none focus:ring-2 focus:ring-burgundy"
                   required
                 />
               </div>
               <input
                 type="email"
                 placeholder={copy.placeholders.email}
-                className="w-full rounded-xl bg-[#f4f6f8] px-4 py-4 text-navy outline-none focus:ring-2 focus:ring-burgundy"
+                className="w-full rounded-xl bg-[#E8ECF3] px-4 py-4 text-navy outline-none focus:ring-2 focus:ring-burgundy"
                 required
               />
               <input
                 type="tel"
                 placeholder={copy.placeholders.phone}
-                className="w-full rounded-xl bg-[#f4f6f8] px-4 py-4 text-navy outline-none focus:ring-2 focus:ring-burgundy"
+                className="w-full rounded-xl bg-[#E8ECF3] px-4 py-4 text-navy outline-none focus:ring-2 focus:ring-burgundy"
                 required
               />
               <textarea
                 placeholder={copy.placeholders.message}
                 rows={5}
-                className="w-full rounded-xl bg-[#f4f6f8] px-4 py-4 text-navy outline-none focus:ring-2 focus:ring-burgundy"
+                className="w-full rounded-xl bg-[#E8ECF3] px-4 py-4 text-navy outline-none focus:ring-2 focus:ring-burgundy"
                 required
               ></textarea>
               <button

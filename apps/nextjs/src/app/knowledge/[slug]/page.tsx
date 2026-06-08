@@ -26,7 +26,7 @@ export default function KnowledgeDetailPage({ lang = "tr", slug }: KnowledgeDeta
   const paragraphs = entry.content.split("\n\n").filter(Boolean);
 
   return (
-    <main className="min-h-screen bg-[#f4f6f8] text-navy">
+    <main className="min-h-screen bg-[#E8ECF3] text-navy">
       <section className="bg-navy px-6 pb-20 pt-36 text-white sm:px-8">
         <div className="mx-auto max-w-5xl">
           <Link
@@ -54,7 +54,7 @@ export default function KnowledgeDetailPage({ lang = "tr", slug }: KnowledgeDeta
           <article className="px-6 py-8 sm:px-10 sm:py-10">
             <div className="mb-8 flex flex-wrap gap-2">
               {entry.tags.map((tag) => (
-                <span key={tag} className="rounded-full bg-[#f4f6f8] px-3 py-1 text-xs font-semibold text-gray-600">
+                <span key={tag} className="rounded-full bg-[#E8ECF3] px-3 py-1 text-xs font-semibold text-gray-600">
                   #{tag}
                 </span>
               ))}

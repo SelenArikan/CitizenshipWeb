@@ -72,7 +72,7 @@ export default function Footer({ dict, lang }: { dict?: FooterCopy; lang?: strin
   ];
 
   return (
-    <footer className="relative z-20 mt-auto border-t border-[rgba(255,255,255,0.1)] bg-[#0a192f] py-10 text-gray-300">
+    <footer className="relative z-20 mt-auto border-t border-[#0A2550] bg-[#0a192f] py-10 text-blue-100">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-5">
           <div className="sm:col-span-1">
@@ -82,11 +82,11 @@ export default function Footer({ dict, lang }: { dict?: FooterCopy; lang?: strin
                 alt="CITIZENSHIP LAW FIRM — Necmettin Barman & Associates — Attorneys at Law"
                 width={1024}
                 height={273}
-                className="h-auto w-full max-h-20 bg-transparent object-contain object-left"
+                className="h-auto w-full max-h-20 bg-transparent object-contain object-left brightness-0 invert"
                 unoptimized
               />
             </Link>
-            <p className="text-sm leading-relaxed text-gray-400">{safeDict.desc}</p>
+            <p className="text-sm leading-relaxed text-blue-200/70">{safeDict.desc}</p>
           </div>
 
           <div>
@@ -96,7 +96,7 @@ export default function Footer({ dict, lang }: { dict?: FooterCopy; lang?: strin
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-gray-300 transition no-underline hover:text-white visited:text-gray-300"
+                    className="text-blue-200/70 transition no-underline hover:text-white visited:text-blue-200/70"
                   >
                     {item.label}
                   </Link>
@@ -111,7 +111,7 @@ export default function Footer({ dict, lang }: { dict?: FooterCopy; lang?: strin
               <li>
                 <Link
                   href={`/${safeLang}/questions`}
-                  className="text-gray-300 transition no-underline hover:text-white visited:text-gray-300"
+                  className="text-blue-200/70 transition no-underline hover:text-white visited:text-blue-200/70"
                 >
                   {safeDict.faq}
                 </Link>
@@ -119,7 +119,7 @@ export default function Footer({ dict, lang }: { dict?: FooterCopy; lang?: strin
               <li>
                 <Link
                   href={`/${safeLang}/contact`}
-                  className="text-gray-300 transition no-underline hover:text-white visited:text-gray-300"
+                  className="text-blue-200/70 transition no-underline hover:text-white visited:text-blue-200/70"
                 >
                   {safeDict.contact}
                 </Link>
@@ -127,7 +127,7 @@ export default function Footer({ dict, lang }: { dict?: FooterCopy; lang?: strin
               <li>
                 <Link
                   href={`/${safeLang}/privacy`}
-                  className="text-gray-300 transition no-underline hover:text-white visited:text-gray-300"
+                  className="text-blue-200/70 transition no-underline hover:text-white visited:text-blue-200/70"
                 >
                   {safeDict.privacy}
                 </Link>
@@ -139,27 +139,27 @@ export default function Footer({ dict, lang }: { dict?: FooterCopy; lang?: strin
             <h4 className="mb-4 text-xs font-bold uppercase tracking-wider text-white">{safeDict.col3}</h4>
             <div className="space-y-3 text-sm">
               <div className="flex items-center gap-2">
-                <svg className="h-3.5 w-3.5 shrink-0 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="h-3.5 w-3.5 shrink-0 text-blue-300/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                <a href="tel:+905324494728" className="text-gray-400 transition hover:text-white" dir="ltr">
+                <a href="tel:+905324494728" className="text-blue-200/70 transition hover:text-white" dir="ltr">
                   +90 532 449 47 28
                 </a>
               </div>
               <div className="flex items-start gap-2">
-                <svg className="mt-0.5 h-3.5 w-3.5 shrink-0 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="mt-0.5 h-3.5 w-3.5 shrink-0 text-blue-300/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                <a href="mailto:info@turkeyinvestmentcitizenship.com" className="break-all text-gray-400 transition hover:text-white" dir="ltr">
+                <a href="mailto:info@turkeyinvestmentcitizenship.com" className="break-all text-blue-200/70 transition hover:text-white" dir="ltr">
                   info@turkeyinvestmentcitizenship.com
                 </a>
               </div>
               {safeDict.hours_weekdays && (
                 <div className="flex items-start gap-2">
-                  <svg className="mt-0.5 h-3.5 w-3.5 shrink-0 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="mt-0.5 h-3.5 w-3.5 shrink-0 text-blue-300/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <div className="text-gray-400">
+                  <div className="text-blue-200/70">
                     <p>{safeDict.hours_weekdays}</p>
                     {safeDict.hours_weekend && <p>{safeDict.hours_weekend}</p>}
                   </div>
@@ -175,12 +175,12 @@ export default function Footer({ dict, lang }: { dict?: FooterCopy; lang?: strin
                 href={mapLinkUrl}
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                className="shrink-0 rounded-full border border-white/20 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide text-gray-300 transition hover:bg-white/10 hover:text-white"
+                className="shrink-0 rounded-full border border-white/20 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide text-blue-200 transition hover:bg-white/10 hover:text-white"
               >
                 {safeDict.map_button ?? "Open Map"}
               </a>
             </div>
-            <p className="mb-2 text-xs leading-snug text-gray-500" dir={isRtl ? "rtl" : "ltr"}>
+            <p className="mb-2 text-xs leading-snug text-blue-200/60" dir={isRtl ? "rtl" : "ltr"}>
               {safeDict.address_line_1}
               <br />
               {safeDict.address_line_2}
@@ -197,7 +197,7 @@ export default function Footer({ dict, lang }: { dict?: FooterCopy; lang?: strin
           </div>
         </div>
 
-        <div className="mt-8 border-t border-[rgba(255,255,255,0.05)] pt-6 text-center text-sm text-gray-500">
+        <div className="mt-8 border-t border-white/10 pt-6 text-center text-sm text-blue-200/50">
           © 2026 Necmettin Barman & Associates. {safeDict.rights}
         </div>
       </div>
