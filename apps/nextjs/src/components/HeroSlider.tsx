@@ -58,7 +58,7 @@ export default function HeroSlider({
   return (
     <section
       className="relative w-full overflow-hidden bg-navy"
-      style={{ height: "clamp(480px, 85vh, 920px)" }}
+      style={{ height: "clamp(520px, 65vh, 720px)" }}
       dir={dir}
       aria-label="Hero slider"
       aria-roledescription="carousel"
@@ -90,10 +90,10 @@ export default function HeroSlider({
               alt={s.alt}
               fill
               // Masaüstü için 1920px, tablet 1280px, mobil 768px — gereksiz veri indirimi önler
-              sizes="(max-width: 768px) 768px, (max-width: 1280px) 1280px, 1920px"
+              sizes="100vw"
               className="object-cover object-center"
               priority={idx === 0}   // Yalnızca ilk slayt → LCP görseli
-              quality={85}
+              unoptimized
             />
           </Link>
         );

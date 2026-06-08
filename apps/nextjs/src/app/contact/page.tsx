@@ -5,9 +5,14 @@ export default function Contact({ lang = "tr" }: { lang?: string }) {
 
   return (
     <main className="flex min-h-screen w-full flex-col items-center bg-[#E8ECF3]">
-      <div className="w-full bg-navy px-4 pb-24 pt-40 text-center text-white">
-        <h1 className="mb-4 text-4xl font-bold md:text-6xl">{copy.title}</h1>
-        <p className="mx-auto max-w-3xl text-xl font-light text-gray-300">{copy.summary}</p>
+      <div
+        className="relative w-full px-4 pb-24 pt-40 text-center"
+        style={{ background: "linear-gradient(135deg, #EEF2F8 0%, #F5F8FD 50%, #EBF0F8 100%)" }}
+      >
+        <div className="pointer-events-none absolute inset-0 opacity-[0.06]" aria-hidden="true"
+          style={{ backgroundImage: "radial-gradient(#0a192f 1px, transparent 1px)", backgroundSize: "28px 28px" }} />
+        <h1 className="relative mb-4 text-4xl font-bold text-[#0a192f] md:text-6xl">{copy.title}</h1>
+        <p className="relative mx-auto max-w-3xl text-xl font-light text-[#0a192f]/60">{copy.summary}</p>
       </div>
 
       <section className="flex w-full max-w-7xl flex-col gap-16 px-8 py-20 lg:flex-row">

@@ -58,27 +58,27 @@
     "slides": [
       {
         "label": "Turkish Citizenship via Real Estate Investment",
-        "image": "/hero/gayrimenkul-vatandaslik.webp",
+        "image": "/hero/gayrimenkul-vatandaslik.jpg",
         "href": "/en/services/gayrimenkul-yatirimi"
       },
       {
         "label": "Turkish Citizenship via Bank Investment",
-        "image": "/hero/banka-yatirimi-vatandaslik.webp",
+        "image": "/hero/banka-yatirimi-vatandaslik.jpg",
         "href": "/en/services/mevduat-hesabi"
       },
       {
         "label": "Investor Residence Permit",
-        "image": "/hero/yatirimci-ikamet-izni.webp",
+        "image": "/hero/yatirimci-ikamet-izni.jpg",
         "href": "/en/ikamet-izni/yatirimci-ikamet-izni"
       },
       {
         "label": "Real Estate Residence Permit",
-        "image": "/hero/gayrimenkul-ikamet-izni.webp",
+        "image": "/hero/gayrimenkul-ikamet-izni.jpg",
         "href": "/en/ikamet-izni/gayrimenkul-ikamet-izni"
       },
       {
         "label": "Tax Exemption",
-        "image": "/hero/vergi-muafiyeti.webp",
+        "image": "/hero/vergi-muafiyeti.jpg",
         "href": "/en/services"
       }
     ]
@@ -501,7 +501,7 @@
         "title": "Investor Residence Permit (J)",
         "description": "A short-term residence permit available to foreign investors who meet the qualifying investment threshold and to eligible family members.",
         "summary": "The investor residence permit under Article 31/1-j is a special short-term status granted to foreign investors who make a qualifying investment determined by the Presidency, together with their spouse and dependent children.",
-        "heroImage": "/hero/yatirimci-ikamet-izni.webp",
+        "heroImage": "/hero/yatirimci-ikamet-izni.jpg",
         "warning": "This route is different from the real-estate-based residence permit under Article 31/1-b. The investor permit depends on a certificate of conformity and forms the residence basis of the citizenship-by-investment process.",
         "quickFacts": [
           {
@@ -661,7 +661,7 @@
         "title": "Real Estate Residence Permit",
         "description": "A short-term residence permit available to foreign nationals who acquire residential real estate in Turkey.",
         "summary": "The real estate residence permit is a short-term residence status available to foreign nationals who acquire a residential property in Turkey. It is distinct from the investor residence route used in exceptional citizenship planning.",
-        "heroImage": "/hero/gayrimenkul-ikamet-izni.webp",
+        "heroImage": "/hero/gayrimenkul-ikamet-izni.jpg",
         "warning": "The real title deed value on the transfer date, the open-area status of the property, and title registration in the applicant's own name are the most critical elements of the application.",
         "quickFacts": [
           {
@@ -1495,14 +1495,13 @@
   "gayrimenkul_page": {
     "hero": {
       "breadcrumbLabel": "Real Estate Investment",
-      "tag": "Land Registry and Cadastre Process",
+      "tag": "Turkish Citizenship Guide via Real Estate Purchase",
       "titleLines": [
-        "Real Estate Investment",
-        "for Turkish",
-        "Citizenship"
+        "GUIDE TO TURKISH CITIZENSHIP",
+        "THROUGH REAL ESTATE PURCHASE"
       ],
-      "highlightLineIndex": 1,
-      "summary": "You may apply for Turkish citizenship by purchasing real estate in Turkey worth at least USD 400,000 and placing a three-year non-sale annotation on the title deed.",
+      "highlightLineIndex": -1,
+      "summary": "Legal Process, Title Deed Procedures and Citizenship Application",
       "primaryCta": "Free Consultation",
       "secondaryCta": "Frequently Asked Questions",
       "imageAlt": "Real estate investment in Turkey"
@@ -1515,304 +1514,900 @@
       },
       {
         "value": "3 Years",
-        "label": "Non-Sale Annotation",
-        "sub": "Registered on title deed"
+        "label": "No-Sale Annotation Period",
+        "sub": "Registered in Title Deed"
       },
       {
         "value": "~120 Days",
-        "label": "Average Timeline",
-        "sub": "From application to passport"
+        "label": "Average Process",
+        "sub": "Application to Passport"
       },
       {
         "value": "100%",
-        "label": "Legal Security",
-        "sub": "Official state process"
+        "label": "Legal Guarantee",
+        "sub": "Official Government Process"
       }
     ],
     "intro": {
-      "eyebrow": "About the Program",
-      "title": "Turkey's Most Preferred Citizenship Route",
+      "eyebrow": "About",
+      "title": "About This Guide",
       "paragraphs": [
-        "Real estate investment is the most widely used and preferred method for applying for Turkish citizenship. Since 2017, the program has helped thousands of foreign investors and their families obtain Turkish passports.",
-        "The threshold can be met with residential property, commercial property, land, or a combined portfolio of multiple assets. The process officially starts once the property is registered and the non-sale annotation is recorded on the title deed."
+        "This guide comprehensively explains the legal processes, title deed procedures and citizenship application stages for foreign investors wishing to acquire Turkish citizenship through real estate purchase.",
+        "This guide is prepared for informational purposes only. Please consult a qualified attorney for legal advice."
       ],
       "bullets": [
-        "Single or multiple properties",
-        "Residential, office, land — all asset types may qualify",
-        "Projects under construction can be included",
-        "Family members may join the same file"
+        "Title deed legal status review",
+        "Foreign Exchange Purchase Certificate (FEPC) and payment process",
+        "Title deed appointment and sale process",
+        "Conformity certificate application"
       ],
       "imageAlt": "Real estate investment",
       "cardValue": "Minimum: $400,000",
-      "cardLabel": "May be met through one or several properties",
+      "cardLabel": "Can be met with one or multiple properties",
       "badgeValue": "~120 Days",
-      "badgeLabel": "From application to passport"
+      "badgeLabel": "Application to Passport"
     },
     "process": {
-      "eyebrow": "Step-by-Step Process",
-      "title": "Application Roadmap",
-      "description": "We plan every stage together, from selecting the property to receiving your Turkish passport.",
+      "eyebrow": "SECTION ONE",
+      "title": "INVESTIGATION AND DETERMINATION OF THE PROPERTY'S ELIGIBILITY FOR CITIZENSHIP",
+      "description": "The most critical phase in the citizenship process is the legal and technical examination conducted prior to the purchase of the real estate to be acquired.\n\nEven if a property is priced at USD 400,000, if it does not comply with the citizenship by investment application guide set out in the citizenship legislation, the citizenship application will be rejected. Therefore, before making an investment, the eligibility of the property for citizenship must be thoroughly investigated and officially verified.\n\nOnly an attorney can fully conduct this examination. The attorney may request an appointment through the Web Tapu system to inspect the title deed to be purchased, and carry out on-site examinations at the land registry office and the municipality.",
       "items": [
         {
-          "num": "01",
-          "title": "Property Selection and Valuation",
-          "desc": "The market value is officially determined through an appraisal report prepared by a Capital Markets Board licensed valuation company. One property or several properties may be combined.",
-          "icon": "🏠"
-        },
-        {
-          "num": "02",
-          "title": "Foreign Exchange Purchase Certificate",
-          "desc": "Foreign currency is converted into Turkish lira through a Turkish bank and a foreign exchange purchase certificate is issued. This document is a core part of the citizenship file.",
-          "icon": "💱"
-        },
-        {
-          "num": "03",
-          "title": "Title Deed Transfer and Annotation",
-          "desc": "The property is transferred into the buyer's name and a non-sale annotation for at least three years is registered at the same time. This annotation is a mandatory precondition for citizenship.",
+          "num": "1.1",
+          "title": "Legal Status Review of the Title Deed",
+          "desc": "First, the title deed record of the property is examined in detail. The following items are covered within this examination.",
           "icon": "📋"
         },
         {
-          "num": "04",
-          "title": "Eligibility Certificate Application",
-          "desc": "The required documents are submitted to the relevant unit under the General Directorate of Land Registry and Cadastre. After review, the Ministry of Environment, Urbanization and Climate Change issues the eligibility certificate.",
+          "num": "1.1.1",
+          "title": "Mortgage Registration",
+          "desc": "Is there a mortgage annotated on the title deed?\n\nWhen the seller is a company, since projects are generally financed through bank loans, a bank mortgage may be registered on the property. For the purposes of the citizenship application, the bank mortgage in question must be discharged (released) before the sale transaction is completed.",
+          "icon": "🏦"
+        },
+        {
+          "num": "1.1.2",
+          "title": "Attachment Registration",
+          "desc": "Is there an attachment on the title deed?\n\nAn attachment is a restriction placed by the enforcement office due to the debts of the property owner. Possible sources include:\n- Attachments arising from tax and property debts\n- Attachments arising from enforcement proceedings or invoice debts related to debts owed to a company or individual",
+          "icon": "🔒"
+        },
+        {
+          "num": "1.1.3",
+          "title": "Other Annotations",
+          "desc": "Are there any other types of annotations?\n\nAn annotation is a right or restriction registered on the title deed that can be asserted against third parties. Commonly encountered types of annotations are explained below:\n\nPromise of Sale Annotation: An annotation indicating that the property was previously sold to another person by notarial deed and that the title deed will be transferred at a future date.\n\nPreliminary Injunction Annotation: Indicates that the sale may be blocked due to an ongoing lawsuit involving the property owner.\n\nConstruction-for-Land-Share Contract Annotation: Refers to a contract indicating that the construction of the property is still ongoing and that the title deeds may be transferred once the construction reaches a certain stage. Payment must not be made for a property that is not yet ready for sale.\n\nCourt Injunction Order: An order issued by a court that temporarily suspends the sale or transfer of the property. No transactions can be made on the title deed until the injunction is lifted.\n\nBankruptcy Annotation: A registration placed on the title deed due to the insolvency of the property owner. In this case, the authority to dispose of the property usually passes to the bankruptcy administrator and a special procedure is required for the sale.\n\nExpropriation Annotation: A registration indicating that the state is in the process of expropriating the property for public benefit. In this case, the sale may be restricted or impossible until the expropriation is completed.\n\nCultural Heritage / Protected Area Registration: Indicates that the property has cultural or historical value and is under protection. Use and construction on such properties are severely restricted; special permission may be required for some transactions.\n\nMilitary Restricted Zone Registration: Indicates that the property is located in a restricted area from a military security perspective. Special permission may be required, particularly for the acquisition of real estate by foreigners or certain disposal transactions.\n\nSuch registrations may completely block the transfer transaction or require special permissions, and therefore must be reviewed by a qualified attorney before acquiring the title deed.",
           "icon": "📜"
         },
         {
-          "num": "05",
-          "title": "Residence Permit",
-          "desc": "After the eligibility certificate, a short-term residence permit application is filed for the investor and eligible family members. This permit is the preliminary step before the citizenship application.",
-          "icon": "🏛️"
+          "num": "1.1.4",
+          "title": "Has the Property Been Previously Used for Citizenship?",
+          "desc": "Has it been previously used for citizenship?\n\nProperties purchased under Turkish citizenship are generally annotated with a no-sale restriction for 3 years. The same property cannot be used in a second citizenship application. For this reason, the following matters must be checked:\n- Whether the property has previously been the subject of a citizenship file\n- Whether there is a 3-year no-sale annotation on the title deed",
+          "icon": "🇹🇷"
         },
         {
-          "num": "06",
-          "title": "Citizenship Application",
-          "desc": "Once all documents are complete, Turkish citizenship is granted by presidential decision. The passport and identity card are then issued, and included family members also gain citizenship through the same file.",
-          "icon": "🇹🇷"
+          "num": "1.2",
+          "title": "Eligibility of Title Deed Type for Citizenship",
+          "desc": "The type of title deed must be checked for the purposes of the citizenship application. It is essential that the property has condominium ownership (kat mülkiyeti) or construction servitude (kat irtifakı); these two types of title deeds indicate that the independent unit has been legally defined and that there is a building investment associated with the project.\n\nIn contrast, purchasing a vacant plot of land is not considered eligible for citizenship on its own. A property with a land title deed may only be evaluated for citizenship purposes if all of the following conditions are met simultaneously:\n- The existence of a licensed project on the land\n- Municipal approvals for construction have been obtained\n- Construction servitude has been established\n- Independent units have been clearly identified in the project\n- Payment has been made through a bank and proven with the FEPC\n- The valuation report meets the minimum amount required for citizenship\n\nIf any of these conditions are missing, the land investment will not be accepted within the scope of citizenship.",
+          "icon": "🏗️"
+        },
+        {
+          "num": "1.3",
+          "title": "Citizenship Through Notarial Contract",
+          "desc": "The property must be part of a project. The construction must be licensed and the construction servitude must be established. Sales made on vacant land and transactions based solely on contracts are not accepted for citizenship purposes.\n\nThe valuation report must meet a minimum amount of USD 400,000. Furthermore, before signing the notarial promise of sale agreement, the foreign investor as the buyer must have paid at least USD 400,000, and the Foreign Exchange Purchase Certificate (FEPC) related to this payment must have been issued no later than the date on which the notarial agreement is signed.\n\nThe notarial agreement method is generally preferred in installment sales in practice. In order to apply for citizenship, at least USD 400,000 must have been paid at the outset; the remaining amount may be paid in installments.\n\nIn particular, in projects under construction, since some companies do not complete the title deed transfer until the delivery stage, transactions in such cases are carried out through the notarial agreement method. In cases where the contractor company does not own the land, there must be a construction-for-land-share agreement between the company and the landowner; as the notarial agreement will subsequently be registered on the title deed together with the citizenship block.\n\nAfter the construction servitude title deeds are registered in the name of the company, a notarial sales agreement can be signed with the seller at the title deed registry. Provided that the other conditions are also met, citizenship proceedings may be conducted through the notarial agreement method.",
+          "icon": "📋"
+        },
+        {
+          "num": "1.4",
+          "title": "Preliminary Appraisal Assessment",
+          "desc": "If a citizenship application is to be made with a single property, an online valuation report is requested from GEDAŞ, affiliated with the Ministry of Housing, through the Web Tapu system via the seller's e-Government login.\n\nIf the value of the property meets the minimum investment amount required for citizenship, the following statement appears on the last page of the report:\n\n\"It meets the minimum investment amount required under the Regulation on the Implementation of the Turkish Citizenship Law.\"\n\nIf a citizenship application is to be made with more than one property, a separate valuation report is prepared for each property. The total investment amount is stated in the \"Assessment of amount forming the basis for acquisition of citizenship\" section on the last page of the reports.\n\nThe rule to be applied regarding the amount to be taken as the basis for the calculation is as follows:\n\nIf the Foreign Exchange Purchase Certificate (FEPC) amount related to the property is lower than the amount in the valuation report, the FEPC amount is taken as the basis for the citizenship calculation. If the amount in the valuation report is lower, then the report amount is taken as the basis.\n\nThe valid investment amount for citizenship purposes: whichever is lower between the FEPC and the valuation report.\n\nFor this reason, if there is a shortfall, the difference must be completed in order for the investment to reach the citizenship threshold.\n\nA valuation report is not mandatory for properties purchased for investment purposes; a valuation report is a mandatory element only for properties purchased for the purpose of citizenship.",
+          "icon": "💡"
         }
       ]
     },
     "requirements": {
-      "eyebrow": "Requirements",
-      "title": "Application Conditions",
+      "eyebrow": "SECTION TWO",
+      "title": "TITLE DEED SALE TO FOREIGNERS AND PAYMENT PROCESSES (FEPC AND BANKING TRANSACTIONS)",
       "items": [
         {
-          "title": "Minimum Investment Amount",
-          "desc": "USD 400,000 or equivalent foreign currency — this may be met through one property or the combined value of multiple properties."
+          "title": "Bank Account of the Foreign Buyer",
+          "desc": "It is not legally mandatory for a foreign buyer to open a bank account in Turkey. However, it is strongly recommended to open an account, especially in second-hand sales and within the scope of citizenship investment. Reason: The Foreign Exchange Purchase Certificate (FEPC) is the fundamental document proving that the investment was made through the banking system."
         },
         {
-          "title": "Three-Year Non-Sale Annotation",
-          "desc": "A sale restriction annotation for at least three years must be registered on the title deed. The property cannot be transferred before that annotation is lifted."
+          "title": "Foreign Exchange Purchase Certificate (FEPC) Process – When Done by the Buyer",
+          "desc": "The process works step by step as follows:\n\n1. The foreign buyer goes to the bank where they have an account in Turkey.\n2. They deposit the purchase price (USD, EUR, etc.) from their own account or by transferring from abroad. Cash deposits by hand are also possible.\n3. The bank converts the foreign currency into Turkish Lira at the Central Bank exchange rate of that day.\n4. The bank issues the Foreign Exchange Purchase Certificate (FEPC).\n\nInformation contained in the FEPC:\n- Name and passport number of the buyer\n- Information regarding the property to be purchased\n- Foreign currency amount and Turkish Lira equivalent\n\nThis document is sent to the land registry office by the bank via KEP (Registered Electronic Mail)."
         },
         {
-          "title": "CMB Appraisal Report",
-          "desc": "An appraisal report issued by an authorized real estate valuation company is required for the land registry process."
+          "title": "Payment Management After FEPC",
+          "desc": "For the Turkish Lira equivalent stated in the FEPC, the buyer may give instructions to their bank on the day of the sale. There are two options in this regard:\n\nOption 1 – Wire Transfer: The bank transfers the relevant amount directly to the seller's account.\n\nOption 2 – Certified Check: The bank issues a certified check in Turkish Lira for the sale price. The check is presented to the seller on the day of the sale. The seller collects the check from the bank and transfers the amount to their own account.\n\nNote: The certified check method is accepted as a reliable payment model, particularly in second-hand sales."
         },
         {
-          "title": "Foreign Exchange Purchase Certificate",
-          "desc": "The full purchase price must be converted into Turkish lira through a Turkish bank and documented accordingly."
+          "title": "When the Seller is a Company (Legal Entity)",
+          "desc": "The FEPC transaction can be done by both the buyer and the selling company; the legislation permits both methods.\n\nScenario A – If the Buyer Makes the FEPC: The buyer completes the FEPC transaction at the bank and makes a Turkish Lira transfer to the seller.\n\nScenario B – If the Company Makes the FEPC: The company issues the FEPC on behalf of the buyer based on the amount transferred to the foreign buyer's foreign currency account.\n\nNote: Payments and documents must always be traceable in bank records and the official title deed file."
         },
         {
-          "title": "Preliminary Sales Agreement",
-          "desc": "For projects that are not yet completed, a notarized and registered preliminary sales agreement may be accepted instead of an issued title deed."
-        },
-        {
-          "title": "Family Members",
-          "desc": "The spouse and children under 18, including dependent disabled children, may be included in the same file."
+          "title": "Passport Translation and Notarial Approval",
+          "desc": "The passport is translated by a sworn translator. The translation is certified by a notary. The land registry office does not accept passports without translation."
         }
       ]
     },
     "propertyTypes": {
-      "eyebrow": "Property Types",
-      "title": "Which Real Estate Assets Qualify?",
-      "description": "Residential units, commercial assets, land plots, and even projects under construction may qualify under the program.",
+      "eyebrow": "SECTION THREE",
+      "title": "TITLE DEED APPOINTMENT AND SALE PROCESS",
+      "description": "",
       "items": [
         {
-          "icon": "🏢",
-          "title": "Residential Property",
-          "desc": "Apartment, villa, residence, or detached house. The threshold may be met with one unit or a combined value of multiple residential units."
+          "icon": "📋",
+          "title": "Mandatory Documents Before the Title Deed Sale",
+          "desc": "Mandatory Earthquake Insurance (DASK): A valid DASK policy must exist for the property subject to the sale. For properties with condominium ownership, this policy is a prerequisite for transactions at the land registry.\n\nValuation Report: An appraisal report is mandatory in property sales to foreigners. In transactions that involve citizenship purposes, this report is also required as a separate request. A title deed appointment cannot be obtained without the appraisal report being uploaded to the system."
         },
         {
-          "icon": "🏪",
-          "title": "Commercial Real Estate",
-          "desc": "Office, shop, retail space, warehouse, or hotel-type assets can also be used in a citizenship application."
+          "icon": "🖥️",
+          "title": "Obtaining the Title Deed Appointment",
+          "desc": "The appointment is obtained through the Web Tapu System. The application is made by the seller.\n\nInformation entered on the appointment screen:\n- Identity information of the buyer and seller\n- Information regarding the property\n- Identity declaration form on behalf of the buyer\n- Sale price\n- Request for citizenship annotation if applicable"
         },
         {
-          "icon": "🌱",
-          "title": "Land and Plots",
-          "desc": "Land or field-type properties may be included together with the valuation report, regardless of zoning status."
+          "icon": "🏛️",
+          "title": "Examination by the Land Registry Office",
+          "desc": "Following the application, the land registry office performs the following checks:\n- Reviews the title deed record\n- Checks foreign acquisition limits\n- Performs military restricted zone check\n- Evaluates the appraisal report\n- Reviews the payment declaration\n\nApplications found to be appropriate following the examination are approved for appointment; if deficiencies are found, the process is put on hold."
         },
         {
-          "icon": "🏗️",
-          "title": "Projects Under Construction",
-          "desc": "For projects not yet delivered, a title-registered preliminary sales agreement may be sufficient."
+          "icon": "✍️",
+          "title": "Transactions to be Performed at the Land Registry on the Day of the Appointment",
+          "desc": "On the day of the appointment, the parties are present at the land registry office. Mandatory elements for the foreign buyer are as follows:\n\n- A sworn translator if the foreign buyer is present in person; a buyer's attorney if not\n- Passport\n- Notarially approved passport translation\n- Bank payment documents\n- FEPC document for citizenship applications\n\nThe sale transaction is carried out in the contract room of the land registry. The authorized officer conducts the process as follows:\n- Reads the notarial contract, if any, through the translator.\n- Inquires about the sale price.\n- Confirms the payment declaration.\n- Registers the citizenship annotation in the system.\n- Obtains signatures from the parties.\n\nUpon completion of the signing phase, ownership of the property is transferred to the buyer."
         },
         {
-          "icon": "🏨",
-          "title": "Timeshare / Apart Hotel",
-          "desc": "Timeshare rights or apart-hotel units may qualify if they are individually registered and meet the valuation threshold."
+          "icon": "💰",
+          "title": "Fees and Expenses",
+          "desc": "The expenses to be paid before entering the land registry are as follows:\n- Title deed fee (the rate is generally 4% and can be shared by the parties)\n- Revolving fund fee\n\nNo payment is collected in the contract room."
         },
         {
-          "icon": "📦",
-          "title": "Multiple Properties",
-          "desc": "Properties in different cities or multiple units in the same development may be combined in one file as long as the total reaches USD 400,000."
+          "icon": "🇹🇷",
+          "title": "Additional Controls in Sales with Citizenship Files",
+          "desc": "If the sale is for citizenship purposes, the following additional controls are applied:\n- The FEPC document is checked for compliance with the sale price.\n- A no-sale annotation for 3 years is placed in the title deed register."
         }
       ]
     },
     "documents": {
-      "eyebrow": "Required Documents",
-      "title": "What You Should Prepare for Your File",
-      "description": "All documents listed below should be complete and up to date. Foreign-language documents are submitted together with apostilled Turkish translations, and our team guides you step by step during preparation.",
-      "noticeTitle": "Important Reminder",
-      "noticeText": "We recommend planning your application timeline at least four to six weeks in advance so that apostille and translation steps can be completed properly.",
+      "eyebrow": "SECTION FOUR",
+      "title": "CONFORMITY CERTIFICATE (REAL ESTATE INVESTMENT DETERMINATION CERTIFICATE)",
+      "description": "",
+      "noticeTitle": "Important Note",
+      "noticeText": "This guide is prepared for informational purposes only. Please consult a qualified attorney for legal advice.",
       "items": [
         {
-          "num": "01",
-          "title": "Passport",
-          "desc": "Valid passports for the applicant and family members, together with notarized Turkish translations."
+          "num": "4.1",
+          "title": "Definition and Importance of the Certificate",
+          "desc": "The Real Estate Investment Determination Certificate is the document through which the state officially approves that the real estate acquisition made by the foreign investor meets the investment conditions required for Turkish citizenship.\n\nIn practice, this certificate is also referred to as the Conformity Certificate, Citizenship Conformity Certificate, or Real Estate Conformity Letter. A citizenship application cannot be initiated without this certificate."
         },
         {
-          "num": "02",
-          "title": "Title Deed / Preliminary Sales Agreement",
-          "desc": "The title deed registration record or the registered preliminary sales agreement for the property."
+          "num": "4.2",
+          "title": "Purpose and Scope of Audit of the Certificate",
+          "desc": "The purpose of the certificate is to audit whether the investment made is genuine and compliant with the legislation. The state checks the following matters during this examination:\n- Whether the investment has actually been made\n- Whether the payment was made through the banking system\n- Whether the Foreign Exchange Purchase Certificate (FEPC) was issued in accordance with the procedure\n- Whether the appraisal report reflects the truth\n- Whether the property has been previously used in a citizenship application\n- Whether there is a fictitious transaction\n- Whether the sale price has been artificially inflated\n- Whether a sale between relatives or related parties is in question\n- Whether the project carries legal risk"
         },
         {
-          "num": "03",
-          "title": "Non-Sale Annotation Record",
-          "desc": "A document from the land registry showing the three-year non-sale annotation entered on the title deed."
+          "num": "4.3",
+          "title": "Process for Obtaining the Certificate",
+          "desc": "Step 1 – Completion of the Title Deed Sale: During the sale transaction, the appraisal report is uploaded to the system, the Foreign Exchange Purchase Certificate (FEPC) is added to the file, and the sale price is paid through a bank. Additionally, an annotation stating that the property cannot be sold for 3 years is registered in the title deed register. This annotation is a mandatory element for the citizenship application.\n\nStep 2 – Submission of the File to the Center: The land registry office forwards the sale file to the Foreign Transactions Unit of the General Directorate of Land Registry and Cadastre. This application is not made separately by the buyer; the process is carried out automatically through the land registry system.\n\nStep 3 – Conformity Decision: If it is determined as a result of the central examination that the conditions are met, the Real Estate Investment Determination Certificate is issued and the decision is notified to the General Directorate of Civil Registration and Citizenship."
         },
         {
-          "num": "04",
-          "title": "CMB Appraisal Report",
-          "desc": "A current valuation report prepared by a Capital Markets Board licensed valuation company."
+          "num": "4.4",
+          "title": "Duration",
+          "desc": "The examination period is on average 1–2 weeks. This period may be extended in the event of high workload or missing documents."
         },
         {
-          "num": "05",
-          "title": "Foreign Exchange Purchase Certificate",
-          "desc": "The bank document proving that the purchase price was converted into Turkish lira."
-        },
-        {
-          "num": "06",
-          "title": "Biometric Photo",
-          "desc": "Biometric photographs taken within the last six months for the main applicant and included family members."
-        },
-        {
-          "num": "07",
-          "title": "Criminal Record",
-          "desc": "A criminal record certificate from the applicant's home country, apostilled and translated into Turkish."
-        },
-        {
-          "num": "08",
-          "title": "Marriage / Birth Records",
-          "desc": "Marriage certificate for the spouse and birth certificates for children, each apostilled and translated into Turkish."
+          "num": "4.5",
+          "title": "Stage After the Certificate is Issued",
+          "desc": "Once the Real Estate Investment Determination Certificate is issued, the investment is officially considered accepted. Subsequently, after the investor and their spouse, if any, come to Turkey, a residence permit application is made in their names and the proceedings related to the citizenship process continue."
         }
       ]
     },
     "benefits": {
       "eyebrow": "Benefits",
-      "title": "Advantages of Turkish Citizenship",
-      "description": "A Turkish passport is more than a travel document; it is a strategic asset that opens access to mobility, business, and lifestyle opportunities.",
+      "title": "Benefits of Turkish Citizenship",
+      "description": "",
       "items": [
         {
           "icon": "✈️",
-          "title": "Visa-Free Travel",
-          "desc": "Access to more than 110 destinations visa-free or with visa-on-arrival options, plus a strong reference profile for Schengen filings."
+          "title": "Wide Travel Opportunities",
+          "desc": "The Turkish passport offers visa-free or easy visa access to many countries."
         },
         {
-          "icon": "🏦",
-          "title": "Banking Access",
-          "desc": "Easy access to Turkey's strong banking system, including foreign currency accounts, investment accounts, and international transfers."
-        },
-        {
-          "icon": "📋",
-          "title": "Dual Citizenship",
-          "desc": "Turkey allows dual citizenship, so you may keep your existing nationality while obtaining a Turkish passport."
-        },
-        {
-          "icon": "🏥",
-          "title": "Healthcare and Education",
-          "desc": "As a Turkish citizen, you may benefit from public hospitals and public universities under local citizen conditions."
+          "icon": "🏛️",
+          "title": "Full Citizenship Rights",
+          "desc": "Holders enjoy the same rights as Turkish citizens; full access to property acquisition, education and health services."
         },
         {
           "icon": "👨‍👩‍👧‍👦",
-          "title": "Family Inclusion",
-          "desc": "The spouse and children under 18 may be included in the same file so the whole family can gain citizenship together."
-        },
-        {
-          "icon": "🔒",
-          "title": "Permanent Status",
-          "desc": "Once citizenship is granted, it remains in place even after the three-year annotation period has passed and the property is later sold."
+          "title": "Family Included",
+          "desc": "Spouse and children under 18 can be included in the same application."
         },
         {
           "icon": "💼",
-          "title": "Right to Work",
-          "desc": "You do not need a separate work permit to establish a business or work in Turkey after becoming a citizen."
-        },
-        {
-          "icon": "🌍",
-          "title": "Strategic Location",
-          "desc": "Turkey offers direct strategic access to Europe, the Middle East, and Central Asia, with Istanbul as a major commercial hub."
+          "title": "Remotely Manageable Process",
+          "desc": "A significant portion of the process can be conducted without being present in Turkey, through attorney power of attorney."
         }
       ]
     },
     "legal": {
       "eyebrow": "Legal Framework",
-      "title": "Key Legal Points to Know",
+      "title": "Legal Basis",
       "items": [
         {
-          "title": "Legal Basis",
-          "text": "The program operates under Article 12 of Turkish Citizenship Law No. 5901 and the related Council of Ministers Decision No. 2016/9601. Threshold updates are made by presidential decision."
+          "title": "Turkish Citizenship Law No. 5901",
+          "text": "Regulates the procedures and principles regarding the acquisition, loss and proof of Turkish citizenship."
         },
         {
-          "title": "Valuation Requirement",
-          "text": "The value shown in the appraisal report prepared by a licensed valuation company may not be lower than the sale price. Otherwise, the land registry transfer may not be finalized."
-        },
-        {
-          "title": "Foreign Exchange Requirement",
-          "text": "The full purchase price must be converted into Turkish lira through a Turkish bank. Domestic transfers between Turkish accounts do not satisfy this foreign exchange documentation rule."
-        },
-        {
-          "title": "Removing the Annotation",
-          "text": "At the end of the three-year period, the non-sale annotation does not automatically disappear. A separate written request must be submitted to the land registry office, and citizenship status is not affected."
+          "title": "Regulation on Citizenship by Investment",
+          "text": "Specifies the conditions and procedures for citizenship applications through investment, including real estate investment."
         }
       ]
     },
     "strip": {
-      "eyebrow": "Our Specialist Team",
-      "title": "We stand beside you in real estate and legal processes across every region of Turkey",
-      "cta": "Get Free Advice",
-      "imageAlt": "Turkey real estate"
+      "eyebrow": "Consultation",
+      "title": "Ready to Start Your Citizenship File?",
+      "cta": "Free Consultation",
+      "imageAlt": "Real estate investment in Turkey"
     },
     "faq": {
-      "eyebrow": "FAQ",
-      "title": "Frequently Asked Questions",
+      "eyebrow": "Frequently Asked Questions",
+      "title": "Common Questions",
       "items": [
         {
-          "q": "Can I apply with more than one property?",
-          "a": "Yes. If the total value reaches the USD 400,000 threshold, multiple properties may be combined in the same citizenship file. Each property should carry the relevant non-sale annotation."
+          "q": "How many properties can be purchased for citizenship?",
+          "a": "An application can be made with more than one property as long as the total value of a single property or multiple properties meets the USD 400,000 threshold."
         },
         {
-          "q": "Can I sell the property after three years?",
-          "a": "Yes. Once the three-year annotation period ends, the property may be sold freely and your citizenship status remains protected."
+          "q": "What should be done if there is a mortgage on the title deed?",
+          "a": "The mortgage on the title deed must be discharged (released) before the citizenship application is made. This transaction is generally carried out by the seller during the sale process."
         },
         {
-          "q": "Do I have to live in Turkey during the process?",
-          "a": "No. There is no residence requirement in Turkey for the citizenship filing itself, and much of the process can be managed through a power of attorney once the investment is completed."
+          "q": "Can an application be made without the FEPC?",
+          "a": "No. The Foreign Exchange Purchase Certificate (FEPC) is a mandatory document proving that the payment was made through the banking system. The conformity certificate is not issued without the FEPC."
         },
         {
-          "q": "Is dual citizenship possible?",
-          "a": "Turkey allows dual citizenship. However, it is still wise to review the rules of your existing nationality as well."
+          "q": "Can a property be purchased from a project under construction?",
+          "a": "Yes, a property can be acquired from projects under construction with a construction servitude title deed through the notarial promise of sale agreement method, and a citizenship application can be made."
         },
         {
-          "q": "Can I apply with a condominium easement or an unfinished project?",
-          "a": "Yes. For projects under construction, a notarized and land-registered preliminary sales agreement may be sufficient."
+          "q": "How long does the conformity certificate take?",
+          "a": "It is issued within an average of 1–2 weeks. This period may be extended in cases of missing documents or high workload."
         }
       ]
     },
     "cta": {
       "title": "Ready to Start Your File?",
-      "description": "Our team stays with you at every stage, from selecting the property to collecting your passport.",
+      "description": "This guide is prepared for informational purposes only. Please consult a qualified attorney for legal advice.",
       "primaryCta": "Free Consultation",
-      "secondaryCta": "View FAQ"
+      "secondaryCta": "Frequently Asked Questions"
+    }
+  },
+  "mevduat_page": {
+    "hero": {
+      "breadcrumbLabel": "Citizenship via Bank Deposit",
+      "tag": "Citizenship by Investment",
+      "titleLines": [
+        "Bank Deposit Account",
+        "for Turkish Citizenship"
+      ],
+      "highlightLineIndex": 1,
+      "summary": "We manage the legal and administrative aspects of acquiring Turkish citizenship end-to-end by maintaining USD 500,000 in a Turkish bank for 3 years.",
+      "primaryCta": "Free Consultation",
+      "secondaryCta": "Frequently Asked Questions",
+      "imageAlt": "Turkish Citizenship via Bank Deposit"
+    },
+    "stats": [
+      {
+        "value": "USD 500,000",
+        "label": "Minimum Deposit",
+        "sub": "or equivalent foreign currency"
+      },
+      {
+        "value": "3 Years",
+        "label": "Holding Requirement",
+        "sub": "block / commitment"
+      },
+      {
+        "value": "BDDK",
+        "label": "Competent Authority",
+        "sub": "conformity certificate"
+      },
+      {
+        "value": "5–6 Months",
+        "label": "Average Process",
+        "sub": "application completion"
+      }
+    ],
+    "intro": {
+      "eyebrow": "About the Process",
+      "title": "Turkish Citizenship Application by Investment",
+      "paragraphs": [
+        "Turkish citizenship by investment is a type of application made under the exceptional citizenship provisions of the Turkish Citizenship Law, through the use of certain investment instruments stipulated by the law.",
+        "The first and most critical step in this process is correctly identifying which investment instrument will be used to apply for citizenship. Depending on the type of investment, both the method of making the investment 'eligible for citizenship' and the institution issuing the conformity certificate differ."
+      ],
+      "imageAlt": "Turkish citizenship via deposit investment",
+      "cardValue": "BDDK Approved",
+      "cardLabel": "Conformity Certificate Process",
+      "badgeValue": "500K$",
+      "badgeLabel": "Minimum Threshold"
+    },
+    "overview": {
+      "eyebrow": "Overview",
+      "title": "The Framework of the Citizenship Process",
+      "paragraphs": [
+        "The official document proving that the investment was made in accordance with citizenship criteria is referred to in practice as the 'Conformity Certificate'. For investments made by holding money in a bank deposit account, the relevant institution for issuing the conformity certificate and determining the eligibility of the investment is the BDDK.",
+        "Our office manages the entire process of structuring the investment from start to finish in compliance with legislation, making it eligible for citizenship, correctly establishing the required official records and transaction flow, and ultimately obtaining the conformity certificate from the relevant institution."
+      ],
+      "bullets": [
+        "Making the investment correctly according to citizenship legislation",
+        "Obtaining the conformity certificate",
+        "Residence permit for the investor and family",
+        "Submitting the civil registry/citizenship application",
+        "Following up on the completion of the process",
+        "Completing identity and passport procedures"
+      ]
+    },
+    "process": {
+      "eyebrow": "Step-by-Step Process",
+      "title": "Citizenship via Bank Deposit Method",
+      "description": "In this method, the attorney's role does not end when 'money is deposited in the bank'; the transaction flow constituting the foundational element of the application must be correctly established and made verifiable in compliance with the legislation.",
+      "items": [
+        {
+          "num": "01",
+          "icon": "🏦",
+          "title": "Selection of Investment Instrument and Process Planning",
+          "desc": "The investor's country situation, family structure, plans for entry/exit to Turkey, availability of documents, possibility of transactions with power of attorney, and the financial/operational details of the investment are evaluated together."
+        },
+        {
+          "num": "02",
+          "icon": "💱",
+          "title": "Bank Selection and Account Opening",
+          "desc": "A deposit account is opened in their name at a bank operating in Turkey, with a minimum of USD 500,000 or equivalent foreign currency. It is critically important that money transfers and foreign currency transactions are made using the correct method."
+        },
+        {
+          "num": "03",
+          "icon": "🔒",
+          "title": "Establishment of 3-Year Block / Commitment",
+          "desc": "A 3-year block/commitment is established on the relevant amount. The block-commitment texts and bank correspondence must be prepared in compliance with legislation."
+        },
+        {
+          "num": "04",
+          "icon": "📜",
+          "title": "BDDK Conformity Certificate",
+          "desc": "The Conformity Certificate attesting to the eligibility of the deposit investment is obtained. For this method, the eligibility determination process is conducted within the BDDK framework."
+        },
+        {
+          "num": "05",
+          "icon": "🏛️",
+          "title": "J-Clause Residence Permit",
+          "desc": "After the conformity certificate, a J-clause residence permit application is made for the investor and their spouse. Physical presence in Turkey is required to collect fingerprint data."
+        },
+        {
+          "num": "06",
+          "icon": "🇹🇷",
+          "title": "Citizenship Application (VAT-4)",
+          "desc": "After obtaining the residence permit, an exceptional citizenship application (VAT-4) is filed. Applicants are personally present at the civil registry office, where photo and fingerprint procedures are completed."
+        }
+      ]
+    },
+    "risks": {
+      "eyebrow": "Critical Risks",
+      "title": "Most Critical Risks in This Method",
+      "description": "Despite the money being deposited, incorrectly establishing the block/commitment mechanism or failing to properly document the movement of money directly jeopardizes the process.",
+      "items": [
+        {
+          "title": "Incorrectly Establishing the Block Mechanism",
+          "desc": "Withdrawing the money or lifting the block before 3 years violates the investment requirement. The mechanism must be correctly established from the outset."
+        },
+        {
+          "title": "Incorrect Documentation of Money Movement",
+          "desc": "Failure to properly prepare foreign currency transfer documents and purchase/sale documents may disrupt the conformity certificate application."
+        },
+        {
+          "title": "Insufficient Preparation of Bank Contracts",
+          "desc": "Commitment texts that do not meet citizenship legislation requirements may lead to rejection of the application."
+        },
+        {
+          "title": "Early Withdrawal or Transfer",
+          "desc": "Any withdrawal or transfer to another bank within the 3-year period breaks the commitment and causes loss of the citizenship right."
+        }
+      ]
+    },
+    "bes": {
+      "eyebrow": "Alternative Method",
+      "title": "USD 500,000 Investment via the BES System",
+      "paragraphs": [
+        "In the BES method, the investor joins a BES plan labeled 'citizenship' through an insurance company and deposits at least USD 500,000 or equivalent foreign currency as a contribution.",
+        "The money flow, in compliance with legislation, generally involves depositing foreign currency in a bank, converting it to Turkish Lira through sale to the Central Bank of Turkey, and the 3-year period begins from the date the contract takes effect with the transfer of the contribution to the insurance company.",
+        "The Conformity Certificate/conformity letter confirming that the investment was made in accordance with citizenship criteria is issued by SEDDK in this method."
+      ],
+      "restrictionsTitle": "Restrictions for the First 3 Years",
+      "restrictions": [
+        "Transfer to another company cannot be made in the first 3 years",
+        "Plan changes cannot be made",
+        "Restrictions exist for certain fund types (funds labeled 'foreign' or 'external debt instruments')",
+        "Exiting the system before 3 years jeopardizes the citizenship process"
+      ],
+      "officeRoleTitle": "Our Office's Role in the BES Method",
+      "officeRole": [
+        "Selection of the insurance company and structuring the contract in accordance with the citizenship plan",
+        "Correct documentation of the bank-Central Bank foreign currency sale process",
+        "Organizing the contribution to meet the 'cash transfer' requirement",
+        "Managing the first 3-year restrictions for the investor clearly and in writing",
+        "Complete filing of the SEDDK conformity letter application",
+        "Integrated follow-up of residence permit and citizenship applications"
+      ]
+    },
+    "postApproval": {
+      "eyebrow": "Post-Application",
+      "title": "Process After the Conformity Certificate",
+      "paragraphs": [
+        "After the conformity certificate is obtained, the documents required for the citizenship application are prepared. While the document list generally has a standard framework, each file may differ based on the applicant's country, number of family members, and the practices of the relevant country's consulate.",
+        "After the citizenship application is approved, a Turkish identity card and passport application is filed for the applicants and family members who have acquired Turkish citizenship as of the approval date. Processing through civil registry offices in Turkey is completed much more quickly."
+      ],
+      "bullets": [
+        "Preparation of the citizenship file",
+        "Organization of the civil registry application",
+        "Obtaining passport and identity card appointments",
+        "Inclusion of all family members in the process"
+      ]
+    },
+    "whoCanApply": {
+      "eyebrow": "Application Conditions",
+      "title": "Who Can Acquire Citizenship?",
+      "conditionsTitle": "Application Conditions",
+      "conditions": [
+        "To be of legal age (18 years old)",
+        "To have capacity to act",
+        "To have no objection from a public security standpoint"
+      ],
+      "familyTitle": "Who Can Acquire Citizenship Together with the Investor?",
+      "family": [
+        "Spouse",
+        "Children under 18 (21 for Egyptian nationals, 19 for Algerian nationals)"
+      ],
+      "cannotTitle": "Who Cannot Acquire Citizenship This Way?",
+      "cannot": [
+        "Persons under 18 applying alone",
+        "Persons deemed objectionable from a public security standpoint due to open criminal records",
+        "Those who have not made the investment as stipulated by the legislation",
+        "Those who violate the 3-year holding requirement (citizenship is subsequently revoked)"
+      ],
+      "specialTitle": "Exceptional Cases",
+      "special": [
+        "In cases of multiple marriages, only the first spouse is entitled to citizenship",
+        "Children from the second/third/fourth spouse can acquire citizenship together with the investor",
+        "Children born out of wedlock can also apply together with the investor",
+        "Additional documents are requested in exceptional cases"
+      ]
+    },
+    "serviceScope": {
+      "eyebrow": "Our Service Scope",
+      "title": "End-to-End Management",
+      "items": [
+        "Selection of investment method and process planning",
+        "Coordination of bank selection and account opening",
+        "Correct execution of money transfer/foreign currency transactions",
+        "Preparation of 3-year block-commitment texts in compliance with legislation",
+        "Control and guidance of bank correspondence",
+        "Complete conduct of the BDDK conformity certificate process",
+        "Structuring of contracts for BES investments in accordance with citizenship",
+        "Filing of the SEDDK conformity letter application",
+        "Preparation and follow-up of residence permit application",
+        "Preparation of citizenship file and organization of civil registry application",
+        "End-to-end management of the process including identity and passport application"
+      ]
+    },
+    "faq": {
+      "eyebrow": "Frequently Asked Questions",
+      "title": "Common Questions",
+      "items": [
+        {
+          "q": "What is the most critical point when selecting an investment method?",
+          "a": "The most critical point is making the investment 'eligible for citizenship'. Making the investment alone is not sufficient; the payment flow, official records, and conformity certificate process must be correctly established."
+        },
+        {
+          "q": "Why is the conformity certificate so important?",
+          "a": "The conformity certificate is the document that officially confirms that your investment meets the citizenship criteria. It is the main supporting document proving the investment criterion in the citizenship file."
+        },
+        {
+          "q": "Which institution issues the conformity certificate?",
+          "a": "It varies by investment type. For bank deposits, BDDK; for the BES method, SEDDK; for real estate, the land registry processes conduct the eligibility process."
+        },
+        {
+          "q": "Is it mandatory to come to Turkey for the J-clause residence permit?",
+          "a": "Yes. Since fingerprint data is processed into the Immigration Administration system, the investor and their spouse, if any, must physically come to Turkey."
+        },
+        {
+          "q": "Is it necessary to be in Turkey during the citizenship application as well?",
+          "a": "Yes. Applicants (except children) are personally present at the civil registry office, sign documents, and photo and fingerprint procedures are carried out."
+        },
+        {
+          "q": "How long does the process take?",
+          "a": "Although completion times vary periodically, in practice an average of 5–6 months is discussed for most files. The duration may extend or shorten depending on the country situation, reviews, and clarity of documents."
+        },
+        {
+          "q": "Can all transactions be carried out with a power of attorney?",
+          "a": "Yes, all transactions can be conducted with a power of attorney, but due to biometric procedures in residence permit and citizenship applications, the applicant and their spouse must physically participate in the processes at least twice. The two appointments generally take place within one week."
+        },
+        {
+          "q": "Can I withdraw the money before 3 years?",
+          "a": "No. Lifting the block or withdrawing the money before 3 years violates the investment requirement; this results in revocation of citizenship even if citizenship has already been granted."
+        },
+        {
+          "q": "Where can the identity card and passport be obtained after citizenship approval?",
+          "a": "Application can be made at civil registry offices in Turkey or, depending on the conditions, through Turkey's foreign representations. Processing through offices in Turkey is completed much more quickly."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Start Your File?",
+      "description": "Our office manages every step of your deposit investment from start to delivery of your identity/passport on your behalf.",
+      "primaryCta": "Free Consultation",
+      "secondaryCta": "View FAQs"
+    }
+  },
+  "gayrimenkul_fon_page": {
+    "hero": {
+      "breadcrumbLabel": "Citizenship via Real Estate Purchase",
+      "tag": "Citizenship by Investment",
+      "summary": "We manage all legal and administrative aspects from real estate purchase worth USD 400,000 to the conformity certificate — including title deed review, FX Purchase Document process and official application.",
+      "primaryCta": "Free Consultation",
+      "secondaryCta": "Frequently Asked Questions"
+    },
+    "bolum1": {
+      "eyebrow": "Part One",
+      "title": "Investigating and Determining Property Eligibility for Citizenship",
+      "intro": [
+        "The most critical stage in the citizenship process is the legal and technical review conducted before the purchase of the real estate to be acquired.",
+        "Even if a property is priced at USD 400,000, if it does not comply with the citizenship application guidelines, the application will be rejected. Therefore, before investing, the property's eligibility for citizenship must be investigated and officially verified.",
+        "Only an attorney can fully carry out this review. The attorney can request an appointment through the Web Tapu system and personally conduct reviews at the land registry office and municipality."
+      ],
+      "tapu": {
+        "eyebrow": "1.1 – Title Deed Legal Status Review",
+        "title": "Detailed Title Deed Record Review",
+        "items": [
+          {
+            "num": "1.1.1",
+            "title": "Mortgage Record",
+            "paragraphs": [
+              "Is there a mortgage registered on the title deed?",
+              "When the seller is a company, projects are often financed by bank loans, so there may be a bank mortgage on the property. For citizenship purposes, this bank mortgage must be cancelled before the sale transaction."
+            ]
+          },
+          {
+            "num": "1.1.2",
+            "title": "Attachment Record",
+            "paragraphs": [
+              "Is there an attachment on the title deed?",
+              "Attachment is a restriction placed by enforcement offices due to the owner's debts."
+            ],
+            "bullets": [
+              "Attachments arising from tax and property debts",
+              "Attachments from enforcement proceedings or invoice debts"
+            ]
+          },
+          {
+            "num": "1.1.3",
+            "title": "Other Annotations",
+            "paragraphs": [
+              "Annotations are rights or restrictions registered on the title deed that can be asserted against third parties. Such records may completely prevent transfer or require special permission, so they must be reviewed by an expert attorney before purchase."
+            ]
+          },
+          {
+            "num": "1.1.4",
+            "title": "Previously Used for Citizenship?",
+            "paragraphs": [
+              "Properties purchased under Turkish citizenship are generally subject to a 3-year sales prohibition annotation. The same property cannot be used for a second citizenship application."
+            ],
+            "bullets": [
+              "Whether the property was previously subject to a citizenship file",
+              "Whether the 3-year sales prohibition annotation exists"
+            ]
+          }
+        ]
+      },
+      "sherhler": {
+        "eyebrow": "Types of Annotations",
+        "title": "Types of Annotations to Watch Out For",
+        "items": [
+          {
+            "title": "Promise of Sale Annotation",
+            "desc": "Indicates that the property was previously sold to another person by notary and the title deed will be transferred at a future date."
+          },
+          {
+            "title": "Precautionary Measure Annotation",
+            "desc": "Indicates that the sale may have been blocked due to an ongoing lawsuit of the property owner."
+          },
+          {
+            "title": "Construction in Exchange for Land Contract Annotation",
+            "desc": "Refers to a contract indicating that construction is still ongoing and title deeds can be transferred when construction reaches a certain stage."
+          },
+          {
+            "title": "Court Injunction",
+            "desc": "A court-issued order that temporarily stops the sale or transfer of the property."
+          },
+          {
+            "title": "Bankruptcy Annotation",
+            "desc": "A record placed on the title deed because the property owner has gone bankrupt."
+          },
+          {
+            "title": "Expropriation Annotation",
+            "desc": "A record indicating that the state is in the process of expropriating the property for public benefit."
+          },
+          {
+            "title": "Cultural Heritage / Protected Area Record",
+            "desc": "Indicates that the property has cultural or historical value and is protected."
+          },
+          {
+            "title": "Military Restricted Zone Record",
+            "desc": "Indicates that the property is in a restricted zone for military security purposes."
+          }
+        ]
+      },
+      "tapuTuru": {
+        "eyebrow": "1.2 – Eligibility of Title Deed Type for Citizenship",
+        "title": "Floor Ownership / Floor Easement Requirement",
+        "paragraphs": [
+          "The nature of the title deed must always be checked for citizenship purposes. The property must have floor ownership or floor easement.",
+          "Purchasing empty land is not accepted alone for citizenship."
+        ],
+        "arsaTitle": "Mandatory Conditions for Application with Land",
+        "arsaBullets": [
+          "Existence of a licensed project on the land",
+          "Obtaining municipal approvals for construction",
+          "Establishment of floor easement",
+          "Clear identification of independent units in the project",
+          "Payment made through bank and proven with FX Purchase Document",
+          "Valuation report meeting the minimum required amount for citizenship"
+        ]
+      },
+      "noter": {
+        "eyebrow": "1.3 – Citizenship via Notary Contract",
+        "title": "Method Preferred in Installment Sales",
+        "paragraphs": [
+          "The property must be part of a project. The construction must be licensed and floor easement must be established.",
+          "The valuation report must meet a minimum of USD 400,000.",
+          "The notary contract method is generally preferred in installment sales in practice.",
+          "Especially in ongoing construction projects, some companies do not transfer the title until delivery, so this method is used.",
+          "After floor easement title deeds are registered in the company's name, a notary sales contract can be signed."
+        ]
+      },
+      "ekspertiz": {
+        "eyebrow": "1.4 – Preliminary Valuation Assessment",
+        "title": "Valuation Report and Valid Amount Calculation",
+        "paragraphs": [
+          "For a single-property citizenship application, an online valuation report is requested through the GEDAŞ system via Web Tapu.",
+          "If the property's value meets the minimum investment amount, the report will include an eligibility statement.",
+          "For applications with multiple properties, a separate valuation report is prepared for each property.",
+          "A valuation report is mandatory only for properties purchased for citizenship purposes."
+        ],
+        "formula": {
+          "title": "Valid Investment Amount Calculation Formula",
+          "desc": "If the FX Purchase Document amount is lower than the valuation report, the FX amount is taken as basis. If the valuation report is lower, the report amount is taken as basis. The valid amount is whichever is lower."
+        }
+      }
+    },
+    "bolum2": {
+      "eyebrow": "Part Two",
+      "title": "Title Deed Sale to Foreigners and Payment Processes (FX Purchase Document and Bank Transactions)",
+      "items": [
+        {
+          "num": "2.1",
+          "title": "Bank Account of the Foreign Buyer",
+          "paragraphs": [
+            "It is not legally required for a foreign buyer to open a bank account in Turkey. However, opening an account is strongly recommended, especially in secondary market sales and citizenship investments.",
+            "Reason: The FX Purchase Document (DAB) is the primary document showing that the investment was made through the banking system."
+          ]
+        },
+        {
+          "num": "2.2",
+          "title": "FX Purchase Document (DAB) Process",
+          "paragraphs": [],
+          "steps": [
+            "The foreign buyer goes to the bank where they have an account in Turkey.",
+            "Deposits the purchase amount into the bank.",
+            "The bank converts the foreign currency to Turkish Lira.",
+            "The bank issues the FX Purchase Document (DAB)."
+          ],
+          "bullets": [
+            "Buyer's name and passport number",
+            "Information about the property to be purchased",
+            "Foreign currency amount and Turkish Lira equivalent"
+          ]
+        },
+        {
+          "num": "2.3",
+          "title": "Post-DAB Payment Management",
+          "paragraphs": [
+            "For the Turkish Lira equivalent in the DAB, the buyer can give instructions to their bank."
+          ],
+          "subItems": [
+            {
+              "title": "Option 1 – Wire Transfer",
+              "bullets": [
+                "The bank transfers the amount directly to the seller's account."
+              ]
+            },
+            {
+              "title": "Option 2 – Bank Draft",
+              "bullets": [
+                "The bank issues a bank draft for the sale price in Turkish Lira.",
+                "The draft is presented to the seller on the day of sale.",
+                "The seller collects the draft from the bank."
+              ]
+            }
+          ]
+        },
+        {
+          "num": "2.4",
+          "title": "When the Seller is a Company",
+          "paragraphs": [
+            "The DAB process can be carried out by either the buyer or the seller company."
+          ],
+          "subItems": [
+            {
+              "title": "Scenario A – Buyer Processes DAB",
+              "bullets": [
+                "Buyer completes the DAB and transfers TL to the seller."
+              ]
+            },
+            {
+              "title": "Scenario B – Company Processes DAB",
+              "bullets": [
+                "The company issues DAB on behalf of the foreign buyer."
+              ]
+            }
+          ]
+        },
+        {
+          "num": "2.5",
+          "title": "Passport Translation and Notary Approval",
+          "paragraphs": [],
+          "bullets": [
+            "Passport translated by a sworn translator.",
+            "Translation notarized.",
+            "Land registry does not accept passports without translation."
+          ]
+        }
+      ]
+    },
+    "bolum3": {
+      "eyebrow": "Part Three",
+      "title": "Title Deed Appointment and Sale Process",
+      "items": [
+        {
+          "num": "3.1",
+          "title": "Mandatory Documents Before Title Deed Sale",
+          "paragraphs": [
+            "Mandatory Earthquake Insurance (DASK): A valid DASK policy must exist for the property.",
+            "Valuation Report: An appraisal report is mandatory for real estate sales to foreigners."
+          ]
+        },
+        {
+          "num": "3.2",
+          "title": "Obtaining the Title Deed Appointment",
+          "paragraphs": [
+            "The appointment is made through the Web Tapu System by the seller."
+          ],
+          "bullets": [
+            "Identity information of buyer and seller",
+            "Information about the property",
+            "Identity declaration form for the buyer",
+            "Sale price",
+            "Citizenship annotation request if applicable"
+          ]
+        },
+        {
+          "num": "3.3",
+          "title": "Land Registry Office Review",
+          "paragraphs": [
+            "After the application, the land registry office conducts checks."
+          ],
+          "bullets": [
+            "Reviews the title deed record",
+            "Checks foreign acquisition limits",
+            "Performs military restricted zone check",
+            "Evaluates the appraisal report",
+            "Reviews the payment declaration"
+          ]
+        },
+        {
+          "num": "3.4",
+          "title": "Procedures at Land Registry on Appointment Day",
+          "paragraphs": [
+            "The sale is carried out in the contract room of the land registry. Ownership transfers to the buyer upon completion of signatures."
+          ],
+          "bullets": [
+            "Sworn translator if buyer is present in person, or buyer's attorney",
+            "Passport and notarized passport translation",
+            "Bank payment documents",
+            "FX Purchase Document for citizenship applications"
+          ],
+          "steps": [
+            "Reads the notary contract via translator if applicable",
+            "Queries the sale price",
+            "Confirms the payment declaration",
+            "Processes the citizenship annotation",
+            "Takes signatures from the parties"
+          ]
+        },
+        {
+          "num": "3.5",
+          "title": "Fees and Costs",
+          "paragraphs": [
+            "Costs to be paid before entering the land registry:"
+          ],
+          "bullets": [
+            "Title deed fee (generally 4%)",
+            "Revolving fund fee",
+            "No payment is taken in the contract room"
+          ]
+        },
+        {
+          "num": "3.6",
+          "title": "Additional Checks in Sales with Citizenship File",
+          "paragraphs": [
+            "If the sale involves a citizenship purpose, additional checks apply:"
+          ],
+          "bullets": [
+            "FX Purchase Document is checked for consistency with the sale price",
+            "A 3-year sales prohibition annotation is placed in the land registry"
+          ]
+        }
+      ]
+    },
+    "bolum4": {
+      "eyebrow": "Part Four",
+      "title": "Conformity Certificate (Real Estate Investment Determination Document)",
+      "intro": "The Real Estate Investment Determination Document is the document by which the state officially confirms that the real estate purchase made by the foreign investor meets the investment requirements for Turkish citizenship.",
+      "denetim": {
+        "eyebrow": "4.2 – Purpose and Scope of the Document",
+        "title": "State Review Scope",
+        "bullets": [
+          "Whether the investment was actually made",
+          "Whether payment was made through the banking system",
+          "Whether the FX Purchase Document was properly issued",
+          "Whether the appraisal report reflects reality",
+          "Whether the property was previously used for a citizenship application",
+          "Whether there is a fictitious transaction",
+          "Whether the sale price was artificially inflated",
+          "Whether there is a sale between related parties",
+          "Whether the project carries legal risk"
+        ]
+      },
+      "process": {
+        "eyebrow": "4.3 – Document Acquisition Process",
+        "title": "Three-Stage Official Process",
+        "steps": [
+          {
+            "num": "Step 1",
+            "title": "Completion of Title Deed Sale",
+            "desc": "During the sale, the appraisal report is uploaded, DAB is added to the file, and a 3-year sales prohibition annotation is placed in the land registry."
+          },
+          {
+            "num": "Step 2",
+            "title": "Sending File to the Center",
+            "desc": "The land registry office forwards the sale file to the TKGM Foreign Transactions Unit automatically."
+          },
+          {
+            "num": "Step 3",
+            "title": "Conformity Decision",
+            "desc": "If requirements are met, the Real Estate Investment Determination Document is issued and communicated to the Directorate General of Civil Registration."
+          }
+        ]
+      },
+      "sure": {
+        "title": "Review Duration",
+        "desc": "The review period is approximately 1–2 weeks on average."
+      },
+      "sonrasi": {
+        "title": "Next Stage After Document Issuance",
+        "desc": "With the document issued, the investment is officially accepted. Then a residence permit application is made for the investor and their spouse."
+      }
+    },
+    "cta": {
+      "title": "Convert Your Real Estate Investment to Citizenship",
+      "description": "We manage every step legally, from title deed review to conformity certificate, from the FX Purchase Document process to citizenship application.",
+      "primaryCta": "Free Consultation",
+      "secondaryCta": "Frequently Asked Questions"
     }
   }
 }

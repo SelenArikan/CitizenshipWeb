@@ -116,35 +116,38 @@ export default async function ServiceDetailPage({ slug, lang = "tr" }: { slug: s
     <main dir={isRtl ? "rtl" : "ltr"} className="overflow-hidden">
 
       {/* ══ HERO ══ */}
-      <section className="relative bg-[#0a192f] pb-16 pt-36">
-        <div className="pointer-events-none absolute inset-0 opacity-[0.035]" aria-hidden="true"
-          style={{ backgroundImage: "linear-gradient(rgba(255,255,255,1) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,1) 1px,transparent 1px)", backgroundSize: "60px 60px" }} />
+      <section
+        className="relative pb-16 pt-36"
+        style={{ background: "linear-gradient(135deg, #EEF2F8 0%, #F5F8FD 50%, #EBF0F8 100%)" }}
+      >
+        <div className="pointer-events-none absolute inset-0 opacity-[0.06]" aria-hidden="true"
+          style={{ backgroundImage: "radial-gradient(#0a192f 1px, transparent 1px)", backgroundSize: "28px 28px" }} />
         <div className="pointer-events-none absolute inset-0" aria-hidden="true"
-          style={{ background: "radial-gradient(ellipse 70% 60% at 80% 50%,rgba(138,28,28,0.2) 0%,transparent 70%)" }} />
+          style={{ background: "radial-gradient(ellipse 70% 60% at 80% 50%,rgba(138,28,28,0.06) 0%,transparent 70%)" }} />
 
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Breadcrumb */}
-          <nav className="mb-6 flex items-center gap-2 text-sm text-gray-400" aria-label="Breadcrumb">
-            <Link href={`/${lang}/services`} className="flex items-center gap-1.5 transition hover:text-white">
+          <nav className="mb-6 flex items-center gap-2 text-sm text-[#0a192f]/50" aria-label="Breadcrumb">
+            <Link href={`/${lang}/services`} className="flex items-center gap-1.5 transition hover:text-[#0a192f]">
               <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={isRtl ? "M9 5l7 7-7 7" : "M15 19l-7-7 7-7"} />
               </svg>
               {ui.backLabel}
             </Link>
             <span>/</span>
-            <span className="text-white">{title}</span>
+            <span className="text-[#0a192f]">{title}</span>
           </nav>
 
           <div className="flex items-start gap-6">
-            <div className="hidden shrink-0 sm:flex h-16 w-16 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-[#e05a5a]">
+            <div className="hidden shrink-0 sm:flex h-16 w-16 items-center justify-center rounded-2xl border border-[#0a192f]/10 bg-white/80 text-[#8a1c1c]">
               <ServiceIcon icon={inv.icon} className="h-8 w-8" />
             </div>
             <div>
-              <span className="mb-3 inline-flex items-center gap-2 rounded-full border border-[#8a1c1c]/40 bg-[#8a1c1c]/10 px-4 py-1 text-xs font-bold uppercase tracking-widest text-[#e05a5a]">
-                <span className="h-1.5 w-1.5 rounded-full bg-[#e05a5a]" />
+              <span className="mb-3 inline-flex items-center gap-2 rounded-full border border-[#8a1c1c]/30 bg-[#8a1c1c]/8 px-4 py-1 text-xs font-bold uppercase tracking-widest text-[#8a1c1c]">
+                <span className="h-1.5 w-1.5 rounded-full bg-[#8a1c1c]" />
                 {authority}
               </span>
-              <h1 className="mt-3 text-4xl font-extrabold leading-tight text-white sm:text-5xl md:text-6xl">{title}</h1>
+              <h1 className="mt-3 text-4xl font-extrabold leading-tight text-[#0a192f] sm:text-5xl md:text-6xl">{title}</h1>
             </div>
           </div>
         </div>
@@ -176,24 +179,27 @@ export default async function ServiceDetailPage({ slug, lang = "tr" }: { slug: s
             {/* Right — sticky sidebar */}
             <div className="lg:sticky lg:top-28 space-y-5">
               {/* Threshold card */}
-              <div className="overflow-hidden rounded-3xl bg-[#0a192f]">
+              <div
+                className="overflow-hidden rounded-3xl border border-[#0a192f]/10 shadow-md"
+                style={{ background: "linear-gradient(135deg, #EEF2F8 0%, #F0F4FA 100%)" }}
+              >
                 <div className="p-8">
-                  <div className="mb-5 flex items-center justify-center h-16 w-16 rounded-2xl border border-white/10 bg-white/5 text-[#e05a5a]">
+                  <div className="mb-5 flex items-center justify-center h-16 w-16 rounded-2xl border border-[#0a192f]/10 bg-white text-[#8a1c1c]">
                     <ServiceIcon icon={inv.icon} className="h-8 w-8" />
                   </div>
-                  <p className="text-xs font-bold uppercase tracking-widest text-gray-400">{ui.minLabel}</p>
-                  <p className="mt-2 text-3xl font-extrabold text-white">{threshold}</p>
+                  <p className="text-xs font-bold uppercase tracking-widest text-[#0a192f]/40">{ui.minLabel}</p>
+                  <p className="mt-2 text-3xl font-extrabold text-[#0a192f]">{threshold}</p>
 
-                  <div className="mt-6 border-t border-white/10 pt-6">
-                    <p className="text-xs font-bold uppercase tracking-widest text-gray-400">{ui.authorityLabel}</p>
-                    <p className="mt-2 text-sm font-semibold text-gray-200">{authority}</p>
+                  <div className="mt-6 border-t border-[#0a192f]/10 pt-6">
+                    <p className="text-xs font-bold uppercase tracking-widest text-[#0a192f]/40">{ui.authorityLabel}</p>
+                    <p className="mt-2 text-sm font-semibold text-[#0a192f]/70">{authority}</p>
                   </div>
                 </div>
                 {/* Next step */}
-                <div className="border-t border-white/10 bg-white/5 p-6">
+                <div className="border-t border-[#0a192f]/10 bg-white/50 p-6">
                   <div className="mb-3 h-0.5 w-8 rounded-full bg-[#8a1c1c]" />
-                  <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">{ui.nextTitle}</p>
-                  <p className="text-sm leading-relaxed text-gray-300">{ui.nextDesc}</p>
+                  <p className="text-xs font-bold uppercase tracking-widest text-[#0a192f]/40 mb-2">{ui.nextTitle}</p>
+                  <p className="text-sm leading-relaxed text-[#0a192f]/60">{ui.nextDesc}</p>
                 </div>
               </div>
 

@@ -173,7 +173,7 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
       type: "mega",
       label: t.mega_tc,
       key: "vatandaslik",
-      featuredImage: "/hero/gayrimenkul-vatandaslik.webp",
+      featuredImage: "/news2.png",
       groups: [
         {
           heading: t.mega_h_invest,
@@ -199,7 +199,7 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
       type: "mega",
       label: t.mega_res,
       key: "oturum",
-      featuredImage: "/hero/yatirimci-ikamet-izni.webp",
+      featuredImage: "/hero/yatirimci-ikamet-izni.jpg",
       groups: [
         {
           heading: t.mega_h_rtypes,

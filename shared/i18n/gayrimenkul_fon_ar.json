@@ -1,0 +1,366 @@
+{
+  "hero": {
+    "breadcrumbLabel": "الجنسية عبر شراء العقارات",
+    "tag": "الجنسية عن طريق الاستثمار",
+    "summary": "ندير جميع الجوانب القانونية من شراء عقار بقيمة 400,000 دولار أمريكي إلى الحصول على شهادة الامتثال.",
+    "primaryCta": "استشارة مجانية",
+    "secondaryCta": "الأسئلة الشائعة"
+  },
+  "bolum1": {
+    "eyebrow": "Part One",
+    "title": "Investigating and Determining Property Eligibility for Citizenship",
+    "intro": [
+      "The most critical stage in the citizenship process is the legal and technical review conducted before the purchase of the real estate to be acquired.",
+      "Even if a property is priced at USD 400,000, if it does not comply with the citizenship application guidelines, the application will be rejected. Therefore, before investing, the property's eligibility for citizenship must be investigated and officially verified.",
+      "Only an attorney can fully carry out this review. The attorney can request an appointment through the Web Tapu system and personally conduct reviews at the land registry office and municipality."
+    ],
+    "tapu": {
+      "eyebrow": "1.1 – Title Deed Legal Status Review",
+      "title": "Detailed Title Deed Record Review",
+      "items": [
+        {
+          "num": "1.1.1",
+          "title": "Mortgage Record",
+          "paragraphs": [
+            "Is there a mortgage registered on the title deed?",
+            "When the seller is a company, projects are often financed by bank loans, so there may be a bank mortgage on the property. For citizenship purposes, this bank mortgage must be cancelled before the sale transaction."
+          ]
+        },
+        {
+          "num": "1.1.2",
+          "title": "Attachment Record",
+          "paragraphs": [
+            "Is there an attachment on the title deed?",
+            "Attachment is a restriction placed by enforcement offices due to the owner's debts."
+          ],
+          "bullets": [
+            "Attachments arising from tax and property debts",
+            "Attachments from enforcement proceedings or invoice debts"
+          ]
+        },
+        {
+          "num": "1.1.3",
+          "title": "Other Annotations",
+          "paragraphs": [
+            "Annotations are rights or restrictions registered on the title deed that can be asserted against third parties. Such records may completely prevent transfer or require special permission, so they must be reviewed by an expert attorney before purchase."
+          ]
+        },
+        {
+          "num": "1.1.4",
+          "title": "Previously Used for Citizenship?",
+          "paragraphs": [
+            "Properties purchased under Turkish citizenship are generally subject to a 3-year sales prohibition annotation. The same property cannot be used for a second citizenship application."
+          ],
+          "bullets": [
+            "Whether the property was previously subject to a citizenship file",
+            "Whether the 3-year sales prohibition annotation exists"
+          ]
+        }
+      ]
+    },
+    "sherhler": {
+      "eyebrow": "Types of Annotations",
+      "title": "Types of Annotations to Watch Out For",
+      "items": [
+        {
+          "title": "Promise of Sale Annotation",
+          "desc": "Indicates that the property was previously sold to another person by notary and the title deed will be transferred at a future date."
+        },
+        {
+          "title": "Precautionary Measure Annotation",
+          "desc": "Indicates that the sale may have been blocked due to an ongoing lawsuit of the property owner."
+        },
+        {
+          "title": "Construction in Exchange for Land Contract Annotation",
+          "desc": "Refers to a contract indicating that construction is still ongoing and title deeds can be transferred when construction reaches a certain stage."
+        },
+        {
+          "title": "Court Injunction",
+          "desc": "A court-issued order that temporarily stops the sale or transfer of the property."
+        },
+        {
+          "title": "Bankruptcy Annotation",
+          "desc": "A record placed on the title deed because the property owner has gone bankrupt."
+        },
+        {
+          "title": "Expropriation Annotation",
+          "desc": "A record indicating that the state is in the process of expropriating the property for public benefit."
+        },
+        {
+          "title": "Cultural Heritage / Protected Area Record",
+          "desc": "Indicates that the property has cultural or historical value and is protected."
+        },
+        {
+          "title": "Military Restricted Zone Record",
+          "desc": "Indicates that the property is in a restricted zone for military security purposes."
+        }
+      ]
+    },
+    "tapuTuru": {
+      "eyebrow": "1.2 – Eligibility of Title Deed Type for Citizenship",
+      "title": "Floor Ownership / Floor Easement Requirement",
+      "paragraphs": [
+        "The nature of the title deed must always be checked for citizenship purposes. The property must have floor ownership or floor easement.",
+        "Purchasing empty land is not accepted alone for citizenship."
+      ],
+      "arsaTitle": "Mandatory Conditions for Application with Land",
+      "arsaBullets": [
+        "Existence of a licensed project on the land",
+        "Obtaining municipal approvals for construction",
+        "Establishment of floor easement",
+        "Clear identification of independent units in the project",
+        "Payment made through bank and proven with FX Purchase Document",
+        "Valuation report meeting the minimum required amount for citizenship"
+      ]
+    },
+    "noter": {
+      "eyebrow": "1.3 – Citizenship via Notary Contract",
+      "title": "Method Preferred in Installment Sales",
+      "paragraphs": [
+        "The property must be part of a project. The construction must be licensed and floor easement must be established.",
+        "The valuation report must meet a minimum of USD 400,000.",
+        "The notary contract method is generally preferred in installment sales in practice.",
+        "Especially in ongoing construction projects, some companies do not transfer the title until delivery, so this method is used.",
+        "After floor easement title deeds are registered in the company's name, a notary sales contract can be signed."
+      ]
+    },
+    "ekspertiz": {
+      "eyebrow": "1.4 – Preliminary Valuation Assessment",
+      "title": "Valuation Report and Valid Amount Calculation",
+      "paragraphs": [
+        "For a single-property citizenship application, an online valuation report is requested through the GEDAŞ system via Web Tapu.",
+        "If the property's value meets the minimum investment amount, the report will include an eligibility statement.",
+        "For applications with multiple properties, a separate valuation report is prepared for each property.",
+        "A valuation report is mandatory only for properties purchased for citizenship purposes."
+      ],
+      "formula": {
+        "title": "Valid Investment Amount Calculation Formula",
+        "desc": "If the FX Purchase Document amount is lower than the valuation report, the FX amount is taken as basis. If the valuation report is lower, the report amount is taken as basis. The valid amount is whichever is lower."
+      }
+    }
+  },
+  "bolum2": {
+    "eyebrow": "Part Two",
+    "title": "Title Deed Sale to Foreigners and Payment Processes (FX Purchase Document and Bank Transactions)",
+    "items": [
+      {
+        "num": "2.1",
+        "title": "Bank Account of the Foreign Buyer",
+        "paragraphs": [
+          "It is not legally required for a foreign buyer to open a bank account in Turkey. However, opening an account is strongly recommended, especially in secondary market sales and citizenship investments.",
+          "Reason: The FX Purchase Document (DAB) is the primary document showing that the investment was made through the banking system."
+        ]
+      },
+      {
+        "num": "2.2",
+        "title": "FX Purchase Document (DAB) Process",
+        "paragraphs": [],
+        "steps": [
+          "The foreign buyer goes to the bank where they have an account in Turkey.",
+          "Deposits the purchase amount into the bank.",
+          "The bank converts the foreign currency to Turkish Lira.",
+          "The bank issues the FX Purchase Document (DAB)."
+        ],
+        "bullets": [
+          "Buyer's name and passport number",
+          "Information about the property to be purchased",
+          "Foreign currency amount and Turkish Lira equivalent"
+        ]
+      },
+      {
+        "num": "2.3",
+        "title": "Post-DAB Payment Management",
+        "paragraphs": [
+          "For the Turkish Lira equivalent in the DAB, the buyer can give instructions to their bank."
+        ],
+        "subItems": [
+          {
+            "title": "Option 1 – Wire Transfer",
+            "bullets": [
+              "The bank transfers the amount directly to the seller's account."
+            ]
+          },
+          {
+            "title": "Option 2 – Bank Draft",
+            "bullets": [
+              "The bank issues a bank draft for the sale price in Turkish Lira.",
+              "The draft is presented to the seller on the day of sale.",
+              "The seller collects the draft from the bank."
+            ]
+          }
+        ]
+      },
+      {
+        "num": "2.4",
+        "title": "When the Seller is a Company",
+        "paragraphs": [
+          "The DAB process can be carried out by either the buyer or the seller company."
+        ],
+        "subItems": [
+          {
+            "title": "Scenario A – Buyer Processes DAB",
+            "bullets": [
+              "Buyer completes the DAB and transfers TL to the seller."
+            ]
+          },
+          {
+            "title": "Scenario B – Company Processes DAB",
+            "bullets": [
+              "The company issues DAB on behalf of the foreign buyer."
+            ]
+          }
+        ]
+      },
+      {
+        "num": "2.5",
+        "title": "Passport Translation and Notary Approval",
+        "paragraphs": [],
+        "bullets": [
+          "Passport translated by a sworn translator.",
+          "Translation notarized.",
+          "Land registry does not accept passports without translation."
+        ]
+      }
+    ]
+  },
+  "bolum3": {
+    "eyebrow": "Part Three",
+    "title": "Title Deed Appointment and Sale Process",
+    "items": [
+      {
+        "num": "3.1",
+        "title": "Mandatory Documents Before Title Deed Sale",
+        "paragraphs": [
+          "Mandatory Earthquake Insurance (DASK): A valid DASK policy must exist for the property.",
+          "Valuation Report: An appraisal report is mandatory for real estate sales to foreigners."
+        ]
+      },
+      {
+        "num": "3.2",
+        "title": "Obtaining the Title Deed Appointment",
+        "paragraphs": [
+          "The appointment is made through the Web Tapu System by the seller."
+        ],
+        "bullets": [
+          "Identity information of buyer and seller",
+          "Information about the property",
+          "Identity declaration form for the buyer",
+          "Sale price",
+          "Citizenship annotation request if applicable"
+        ]
+      },
+      {
+        "num": "3.3",
+        "title": "Land Registry Office Review",
+        "paragraphs": [
+          "After the application, the land registry office conducts checks."
+        ],
+        "bullets": [
+          "Reviews the title deed record",
+          "Checks foreign acquisition limits",
+          "Performs military restricted zone check",
+          "Evaluates the appraisal report",
+          "Reviews the payment declaration"
+        ]
+      },
+      {
+        "num": "3.4",
+        "title": "Procedures at Land Registry on Appointment Day",
+        "paragraphs": [
+          "The sale is carried out in the contract room of the land registry. Ownership transfers to the buyer upon completion of signatures."
+        ],
+        "bullets": [
+          "Sworn translator if buyer is present in person, or buyer's attorney",
+          "Passport and notarized passport translation",
+          "Bank payment documents",
+          "FX Purchase Document for citizenship applications"
+        ],
+        "steps": [
+          "Reads the notary contract via translator if applicable",
+          "Queries the sale price",
+          "Confirms the payment declaration",
+          "Processes the citizenship annotation",
+          "Takes signatures from the parties"
+        ]
+      },
+      {
+        "num": "3.5",
+        "title": "Fees and Costs",
+        "paragraphs": [
+          "Costs to be paid before entering the land registry:"
+        ],
+        "bullets": [
+          "Title deed fee (generally 4%)",
+          "Revolving fund fee",
+          "No payment is taken in the contract room"
+        ]
+      },
+      {
+        "num": "3.6",
+        "title": "Additional Checks in Sales with Citizenship File",
+        "paragraphs": [
+          "If the sale involves a citizenship purpose, additional checks apply:"
+        ],
+        "bullets": [
+          "FX Purchase Document is checked for consistency with the sale price",
+          "A 3-year sales prohibition annotation is placed in the land registry"
+        ]
+      }
+    ]
+  },
+  "bolum4": {
+    "eyebrow": "Part Four",
+    "title": "Conformity Certificate (Real Estate Investment Determination Document)",
+    "intro": "The Real Estate Investment Determination Document is the document by which the state officially confirms that the real estate purchase made by the foreign investor meets the investment requirements for Turkish citizenship.",
+    "denetim": {
+      "eyebrow": "4.2 – Purpose and Scope of the Document",
+      "title": "State Review Scope",
+      "bullets": [
+        "Whether the investment was actually made",
+        "Whether payment was made through the banking system",
+        "Whether the FX Purchase Document was properly issued",
+        "Whether the appraisal report reflects reality",
+        "Whether the property was previously used for a citizenship application",
+        "Whether there is a fictitious transaction",
+        "Whether the sale price was artificially inflated",
+        "Whether there is a sale between related parties",
+        "Whether the project carries legal risk"
+      ]
+    },
+    "process": {
+      "eyebrow": "4.3 – Document Acquisition Process",
+      "title": "Three-Stage Official Process",
+      "steps": [
+        {
+          "num": "Step 1",
+          "title": "Completion of Title Deed Sale",
+          "desc": "During the sale, the appraisal report is uploaded, DAB is added to the file, and a 3-year sales prohibition annotation is placed in the land registry."
+        },
+        {
+          "num": "Step 2",
+          "title": "Sending File to the Center",
+          "desc": "The land registry office forwards the sale file to the TKGM Foreign Transactions Unit automatically."
+        },
+        {
+          "num": "Step 3",
+          "title": "Conformity Decision",
+          "desc": "If requirements are met, the Real Estate Investment Determination Document is issued and communicated to the Directorate General of Civil Registration."
+        }
+      ]
+    },
+    "sure": {
+      "title": "Review Duration",
+      "desc": "The review period is approximately 1–2 weeks on average."
+    },
+    "sonrasi": {
+      "title": "Next Stage After Document Issuance",
+      "desc": "With the document issued, the investment is officially accepted. Then a residence permit application is made for the investor and their spouse."
+    }
+  },
+  "cta": {
+    "title": "حوّل استثمارك العقاري إلى جنسية",
+    "description": "ندير كل خطوة قانونياً، من مراجعة سند الملكية إلى شهادة الامتثال.",
+    "primaryCta": "استشارة مجانية",
+    "secondaryCta": "الأسئلة الشائعة"
+  }
+}

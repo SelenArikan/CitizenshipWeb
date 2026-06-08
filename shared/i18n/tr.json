@@ -58,35 +58,35 @@
     "slides": [
       {
         "label": "Gayrimenkul Yatırımı Yoluyla Türk Vatandaşlığı",
-        "image": "/hero/gayrimenkul-vatandaslik.webp",
+        "image": "/hero/gayrimenkul-vatandaslik.jpg",
         "title1": "Gayrimenkul Yatırımı",
         "title2": "Yoluyla Vatandaşlık",
         "href": "/tr/services/gayrimenkul-yatirimi"
       },
       {
         "label": "Banka Yatırımı Yoluyla Türk Vatandaşlığı",
-        "image": "/hero/banka-yatirimi-vatandaslik.webp",
+        "image": "/hero/banka-yatirimi-vatandaslik.jpg",
         "title1": "Banka Yatırımı",
         "title2": "Yoluyla Vatandaşlık",
         "href": "/tr/services/mevduat-hesabi"
       },
       {
         "label": "Yatırımcı İkamet İzni",
-        "image": "/hero/yatirimci-ikamet-izni.webp",
+        "image": "/hero/yatirimci-ikamet-izni.jpg",
         "title1": "Yatırımcı",
         "title2": "İkamet İzni",
         "href": "/tr/ikamet-izni/yatirimci-ikamet-izni"
       },
       {
         "label": "Gayrimenkul İkamet İzni",
-        "image": "/hero/gayrimenkul-ikamet-izni.webp",
+        "image": "/hero/gayrimenkul-ikamet-izni.jpg",
         "title1": "Gayrimenkul",
         "title2": "İkamet İzni",
         "href": "/tr/ikamet-izni/gayrimenkul-ikamet-izni"
       },
       {
         "label": "Vergi Muafiyeti",
-        "image": "/hero/vergi-muafiyeti.webp",
+        "image": "/hero/vergi-muafiyeti.jpg",
         "title1": "Vergi",
         "title2": "Muafiyeti",
         "href": "/tr/services"
@@ -535,7 +535,7 @@
         "title": "Yatırımcı İkamet İzni (J)",
         "description": "Gerekli yatırım eşiğini sağlayan yabancı yatırımcıların ve uygun aile üyelerinin başvurabildiği kısa dönem ikamet izni.",
         "summary": "31/1-j bendi kapsamında düzenlenen yatırımcı ikamet izni; Cumhurbaşkanınca belirlenen kapsam ve tutarda yatırım yapan yabancı yatırımcıya, eşine ve bağımlı çocuklarına tanınan özel statülü kısa dönem ikamet iznidir.",
-        "heroImage": "/hero/yatirimci-ikamet-izni.webp",
+        "heroImage": "/hero/yatirimci-ikamet-izni.jpg",
         "warning": "Bu statü, taşınmaz edinimine dayalı 31/1-b ikametinden farklıdır. Yatırımcı ikameti, uygunluk belgesine dayalıdır ve yatırım yoluyla vatandaşlık sürecinin ikamet temelini oluşturur.",
         "quickFacts": [
           {
@@ -695,7 +695,7 @@
         "title": "Gayrimenkul İkamet İzni",
         "description": "Türkiye’de konut niteliğinde taşınmaz edinmiş yabancıların başvurabildiği kısa dönem ikamet izni.",
         "summary": "Gayrimenkul ikamet izni, yabancı uyruklu kişilerin Türkiye'de konut niteliğinde bir taşınmaz edinmeleri hâlinde başvurabildikleri kısa dönem ikamet iznidir. Bu statü vatandaşlık veren ayrıcalıklı yatırımcı ikametinden farklıdır.",
-        "heroImage": "/hero/gayrimenkul-ikamet-izni.webp",
+        "heroImage": "/hero/gayrimenkul-ikamet-izni.jpg",
         "warning": "Tapu devir tarihindeki gerçek değer, taşınmazın açık bölgede bulunması ve tapunun başvurucu adına devredilmiş olması başvurunun en kritik unsurlarıdır.",
         "quickFacts": [
           {
@@ -1529,14 +1529,13 @@
   "gayrimenkul_page": {
     "hero": {
       "breadcrumbLabel": "Gayrimenkul Yatırımı",
-      "tag": "Tapu ve Kadastro Süreci",
+      "tag": "Taşınmaz Satın Alım Yoluyla Türk Vatandaşlığı Rehberi",
       "titleLines": [
-        "Gayrimenkul Yatırımı",
-        "Yoluyla Türk",
-        "Vatandaşlığı"
+        "TAŞINMAZ SATIN ALIM YOLUYLA",
+        "TÜRK VATANDAŞLIĞI REHBERİ"
       ],
-      "highlightLineIndex": 1,
-      "summary": "Türkiye'de en az 400.000 USD değerinde taşınmaz edinerek, tapuya 3 yıllık satılamaz şerhi koydurarak Türk vatandaşlığına başvurabilirsiniz.",
+      "highlightLineIndex": -1,
+      "summary": "Hukuki Süreç, Tapu İşlemleri ve Vatandaşlık Başvurusu",
       "primaryCta": "Ücretsiz Danışın",
       "secondaryCta": "Sıkça Sorulan Sorular",
       "imageAlt": "Türkiye'de gayrimenkul yatırımı"
@@ -1564,17 +1563,17 @@
       }
     ],
     "intro": {
-      "eyebrow": "Program Hakkında",
-      "title": "Türkiye'nin En Tercih Edilen Vatandaşlık Yolu",
+      "eyebrow": "Hakkında",
+      "title": "Bu Rehber Hakkında",
       "paragraphs": [
-        "Türk vatandaşlığına başvurmanın en yaygın ve tercih edilen yöntemi gayrimenkul yatırımıdır. 2017 yılından bu yana yürürlükte olan program, binlerce yabancı yatırımcıya ve ailelerine Türk pasaportu kazandırmıştır.",
-        "Program kapsamında; konut, ticari mülk, arsa veya bir araya getirilmiş birden fazla taşınmaz ile asgari yatırım tutarına ulaşılabilir. Taşınmazın tapuya tescili ve satılamaz şerhinin işlenmesi ile süreç resmi olarak başlar."
+        "Bu rehber, Türkiye'de taşınmaz satın alım yoluyla vatandaşlık edinmek isteyen yabancı yatırımcılara yönelik hukuki süreçleri, tapu işlemlerini ve vatandaşlık başvuru aşamalarını kapsamlı biçimde açıklamaktadır.",
+        "Rehber yalnızca bilgilendirme amacıyla hazırlanmıştır. Hukuki danışmanlık için lütfen uzman bir avukattan destek alınız."
       ],
       "bullets": [
-        "Tek veya birden fazla taşınmaz",
-        "Konut, ofis, arsa — tüm türler geçerli",
-        "İnşaat halindeki projeler dahil",
-        "Aile üyeleri aynı dosyaya dahil"
+        "Tapu hukuki durum incelemesi",
+        "DAB ve ödeme süreçleri",
+        "Tapu randevu ve satış süreci",
+        "Uygunluk belgesi başvurusu"
       ],
       "imageAlt": "Gayrimenkul yatırımı",
       "cardValue": "Minimum: $400.000",
@@ -1583,270 +1582,866 @@
       "badgeLabel": "Başvurudan Pasaporta"
     },
     "process": {
-      "eyebrow": "Adım Adım Süreç",
-      "title": "Başvurunun Yol Haritası",
-      "description": "Gayrimenkul alımından Türk pasaportunuzu teslim aldığınız ana kadar her adımı birlikte planlıyoruz.",
+      "eyebrow": "BİRİNCİ BÖLÜM",
+      "title": "TAŞINMAZIN VATANDAŞLIĞA UYGUNLUĞUNUN ARAŞTIRILMASI VE TESPİTİ",
+      "description": "Vatandaşlık sürecinde en kritik aşama, satın alınacak gayrimenkule ilişkin satın alma öncesinde yapılan hukuki ve teknik incelemedir.\n\nBir taşınmazın fiyatı 400.000 USD olsa bile, vatandaşlık mevzuatında yer alan yatırım yoluyla vatandaşlık başvuru kılavuzuna uygun değilse vatandaşlık başvurusu reddedilir. Bu nedenle yatırım öncesinde, taşınmazın vatandaşlığa uygunluğunun mutlaka araştırılması ve resmi olarak doğrulanması gerekmektedir.\n\nBu incelemeyi tam anlamıyla ancak avukat yapabilir. Avukat, Web Tapu üzerinden satın alınacak tapunun incelenmesi için randevu talep ederek tapu idaresinde ve belediye nezdinde bizzat incelemelerini gerçekleştirebilir.",
       "items": [
         {
-          "num": "01",
-          "title": "Gayrimenkul Seçimi ve Değerleme",
-          "desc": "SPK lisanslı bir değerleme kuruluşu tarafından hazırlanan ekspertiz raporu ile taşınmazın piyasa değeri resmi olarak belirlenir. Tek taşınmaz veya birden fazla taşınmazın toplam değeri kullanılabilir.",
-          "icon": "🏠"
-        },
-        {
-          "num": "02",
-          "title": "Döviz Alım Belgesi (DAB)",
-          "desc": "Yabancı para, Türkiye'de faaliyet gösteren bir banka aracılığıyla Türk lirasına çevrilir ve Döviz Alım Belgesi düzenlenir. DAB, vatandaşlık dosyasının temel belgelerinden biridir.",
-          "icon": "💱"
-        },
-        {
-          "num": "03",
-          "title": "Tapu Devri ve Şerh İşlemi",
-          "desc": "Taşınmaz, alıcı adına tapuya tescil edilir. Aynı anda tapuya en az 3 yıl süreyle satılamaz şerhi işlenir. Bu şerh, vatandaşlık sürecinin zorunlu ön koşuludur.",
+          "num": "1.1",
+          "title": "Tapu Hukuki Durum İncelemesi",
+          "desc": "Öncelikle taşınmazın tapu kaydı ayrıntılı şekilde incelenir. Bu inceleme kapsamında aşağıdaki başlıklar ele alınır.",
           "icon": "📋"
         },
         {
-          "num": "04",
-          "title": "Uygunluk Belgesi Başvurusu",
-          "desc": "Tapu ve Kadastro Genel Müdürlüğü'ne bağlı ilgili birime gerekli belgelerle başvurulur. İnceleme tamamlandığında Çevre, Şehircilik ve İklim Değişikliği Bakanlığı uygunluk belgesi düzenler.",
+          "num": "1.1.1",
+          "title": "İpotek Kaydı",
+          "desc": "Tapu üzerine şerh edilmiş bir ipotek var mı?\n\nSatıcının şirket olduğu durumlarda, projeler genellikle banka kredisi ile finanse edildiğinden taşınmaz üzerinde banka ipoteği bulunabilmektedir. Vatandaşlık başvurusu açısından, satış işlemi gerçekleştirilmeden önce söz konusu banka ipoteğinin mutlaka terkin (fek) edilmesi gerekmektedir.",
+          "icon": "🏦"
+        },
+        {
+          "num": "1.1.2",
+          "title": "Haciz Kaydı",
+          "desc": "Tapu üzerinde bir haciz var mı?\n\nHaciz; taşınmaz sahibinin borçları nedeniyle icra müdürlüğü tarafından konulan kısıtlamadır. Olası kaynakları şunlardır:\n- Vergi ve emlak borcu kaynaklı hacizler\n- Şirket veya şahsa olan borca ilişkin icra takibi ya da fatura borçlarından kaynaklanan hacizler",
+          "icon": "🔒"
+        },
+        {
+          "num": "1.1.3",
+          "title": "Diğer Şerhler",
+          "desc": "Başka türlü bir şerh var mı?\n\nŞerh; tapuya işlenen ve üçüncü kişilere karşı ileri sürülebilen hak veya kısıtlamalardır. Sık karşılaşılan şerh türleri:\n\nSatış Vaadi Şerhi: Taşınmazın önceden başka bir kişiye noterden satıldığını ve tapunun ileriki bir tarihte devredileceğini gösteren şerhtir.\n\nİhtiyati Tedbir Şerhi: Taşınmaz malikinin devam eden bir davası nedeniyle satışın engellenmiş olabileceğini gösterir.\n\nKat Karşılığı İnşaat Sözleşmesi Şerhi: Taşınmaz inşaatının hâlâ devam ettiğini ve inşaatın belirli bir aşamaya geldiğinde tapuların devredilebileceğini gösteren sözleşmeye işaret eder. Henüz satışa hazır olmayan bir taşınmaz için ödeme yapılmamalıdır.\n\nMahkeme Tedbir Kararı: Mahkeme tarafından verilen ve taşınmazın satışını veya devrini geçici olarak durduran karardır. Tedbir kaldırılmadan tapuda işlem yapılamaz.\n\nİflas Şerhi: Taşınmaz sahibinin iflas etmiş olması nedeniyle tapuya konulan kayıttır. Bu durumda taşınmaz üzerindeki tasarruf yetkisi genellikle iflas idaresine geçer ve satış için özel prosedür gerekir.\n\nKamulaştırma Şerhi: Devletin kamu yararı nedeniyle taşınmazı kamulaştırma sürecinde olduğunu gösteren kayıttır. Bu durumda satış işlemi kısıtlanabilir veya kamulaştırma tamamlanıncaya kadar mümkün olmayabilir.\n\nKültür Varlığı / Sit Alanı Kaydı: Taşınmazın kültürel veya tarihî değeri bulunduğunu ve koruma altında olduğunu gösterir. Bu tür taşınmazlarda kullanım ve yapılaşma ciddi biçimde sınırlıdır; bazı işlemler için özel izin gerekebilir.\n\nAskerî Yasak Bölge Kaydı: Taşınmazın askerî güvenlik açısından sınırlı bölgede bulunduğunu gösterir. Özellikle yabancıların taşınmaz edinimi veya bazı tasarruf işlemleri için özel izin gerekebilir.\n\nBu tür kayıtlar devir işlemini tamamen engelleyebilir ya da özel izin gerektireceğinden, tapu alımından önce mutlaka uzman bir avukat tarafından incelenmelidir.",
           "icon": "📜"
         },
         {
-          "num": "05",
-          "title": "İkamet İzni",
-          "desc": "Uygunluk belgesi sonrasında yatırımcı ve aile üyeleri (eş + 18 yaş altı çocuklar) için kısa dönem ikamet izni başvurusu yapılır. Bu izin vatandaşlık başvurusunun ön adımıdır.",
-          "icon": "🏛️"
+          "num": "1.1.4",
+          "title": "Daha Önce Vatandaşlık İçin Kullanılmış mı?",
+          "desc": "Daha önce vatandaşlık için kullanılmış mı?\n\nTürk vatandaşlığı kapsamında satın alınan taşınmazlara genellikle 3 yıl süreyle satış yasağı şerhi konulmaktadır. Aynı taşınmaz ikinci kez vatandaşlık başvurusunda kullanılamaz. Bu nedenle aşağıdaki hususların mutlaka kontrol edilmesi gerekmektedir:\n- Taşınmazın daha önce vatandaşlık dosyasına konu olup olmadığı\n- 3 yıllık satış yasağı şerhinin bulunup bulunmadığı",
+          "icon": "🇹🇷"
         },
         {
-          "num": "06",
-          "title": "Vatandaşlık Başvurusu",
-          "desc": "Tüm belgeler tamamlandığında Cumhurbaşkanlığı kararıyla Türk vatandaşlığı verilir. Pasaport ve nüfus cüzdanı edinilir. Aile üyeleri de aynı dosya kapsamında vatandaşlık alır.",
-          "icon": "🇹🇷"
+          "num": "1.2",
+          "title": "Tapu Türünün Vatandaşlığa Uygunluğu",
+          "desc": "Tapunun niteliği, vatandaşlık başvurusu açısından mutlaka kontrol edilmelidir. Taşınmazın kat mülkiyetli veya kat irtifaklı olması esastır; bu iki tapu türü, bağımsız bölümün hukuken tanımlandığını ve projeye bağlı bir yapı yatırımının bulunduğunu gösterir.\n\nBuna karşılık boş arsa satın almak, tek başına vatandaşlık için uygun kabul edilmez. Arsa tapulu bir taşınmaz, ancak aşağıdaki şartların tamamının bir arada bulunması hâlinde vatandaşlık açısından değerlendirmeye alınabilir:\n- Arsa üzerinde ruhsatlı bir projenin bulunması\n- İnşaat için belediye onaylarının alınmış olması\n- Kat irtifakının kurulmuş olması\n- Bağımsız bölümlerin projede açıkça belirlenmiş olması\n- Ödemenin banka üzerinden yapılıp DAB ile ispatlanması\n- Değerleme raporunun vatandaşlık için gerekli asgari tutarı karşılaması\n\nBu şartlardan herhangi birinin eksik olması durumunda, arsa yatırımı vatandaşlık kapsamında kabul edilmez.",
+          "icon": "🏗️"
+        },
+        {
+          "num": "1.3",
+          "title": "Noter Sözleşmesiyle Vatandaşlık",
+          "desc": "Taşınmazın mutlaka bir proje kapsamında olması gerekmektedir. İnşaatın ruhsatlı olması ve kat irtifakının kurulmuş bulunması zorunludur. Boş arsa üzerinden yapılan satışlar ve yalnızca sözleşmeye dayalı işlemler vatandaşlık açısından kabul edilmez.\n\nDeğerleme raporunun en az 400.000 USD tutarını karşılaması zorunludur. Ayrıca noter satış vaadi sözleşmesi imzalanmadan önce, alıcı konumundaki yabancı yatırımcı tarafından asgari 400.000 USD'nin ödenmiş olması ve bu ödemeye ilişkin Döviz Alım Belgesinin (DAB) en geç noter sözleşmesinin imzalandığı tarihte düzenlenmiş olması gerekmektedir.\n\nNoter sözleşmesi yöntemi, uygulamada genellikle taksitli satışlarda tercih edilmektedir. Vatandaşlık başvurusu yapılabilmesi için ilk etapta en az 400.000 USD'nin ödenmiş olması şarttır; kalan tutar taksitlendirilerek ödenebilir.\n\nÖzellikle inşaatı devam eden projelerde, bazı şirketler tapu devrini teslim aşamasına kadar gerçekleştirmediğinden, bu tür durumlarda işlemler noter sözleşmesi yöntemi üzerinden yürütülmektedir. Yüklenici şirketin arsa sahibi olmadığı durumlarda, şirket ile arsa sahibi arasında kat karşılığı sözleşme bulunması gerekmektedir; zira noter sözleşmesi daha sonra tapuya vatandaşlık blokesiyle birlikte şerh olarak işlenmektedir.\n\nKat irtifakı tapuları şirket adına tescil edildikten sonra, satıcı ile tapuda noter satış sözleşmesi imzalanabilir. Diğer şartların da sağlanması hâlinde, noter sözleşmesi yöntemiyle vatandaşlık işlemleri yürütülebilmektedir.",
+          "icon": "📋"
+        },
+        {
+          "num": "1.4",
+          "title": "Ekspertiz Ön Değerlendirmesi",
+          "desc": "Tek bir taşınmazla vatandaşlık başvurusu yapılıyorsa; İskân Bakanlığı'na bağlı GEDAŞ tarafından, satıcının e-Devlet girişi üzerinden Web Tapu aracılığıyla çevrimiçi değerleme raporu talep edilir.\n\nTaşınmazın değeri, vatandaşlık için gerekli asgari yatırım tutarını karşılıyorsa, raporun son sayfasında aşağıdaki ibare yer alır:\n\n\"Türk Vatandaşlığı Kanununun Uygulanmasına İlişkin Yönetmelik kapsamında aranan minimum yatırım tutarını karşılamaktadır.\"\n\nBirden fazla taşınmazla vatandaşlık başvurusu yapılması hâlinde ise her taşınmaz için ayrı değerleme raporu düzenlenir. Raporların son sayfasındaki \"Vatandaşlık kazanımına esas tutar değerlendirmesi\" bölümünde toplam yatırım tutarı belirtilir.\n\nHesaplamada esas alınacak tutar bakımından uygulanacak kural şudur:\n\nTaşınmaza ilişkin Döviz Alım Belgesi (DAB) tutarı, değerleme raporundaki tutardan daha düşük ise vatandaşlık hesabında DAB tutarı esas alınır. Değerleme raporundaki tutar daha düşük ise, bu durumda rapor tutarı esas alınır.\n\nVatandaşlık açısından geçerli yatırım tutarı: DAB ile değerleme raporundan hangisi daha düşükse, o tutardır.\n\nBu nedenle eksik kalan bir kısım bulunması hâlinde, yatırımın vatandaşlık eşiğine ulaşabilmesi için farkın tamamlanması gerekmektedir.\n\nYatırım amacıyla satın alınan taşınmazlarda değerleme raporu zorunlu değildir; değerleme raporu yalnızca vatandaşlık amacıyla satın alınan taşınmazlar için zorunlu bir unsurdur.",
+          "icon": "💡"
         }
       ]
     },
     "requirements": {
-      "eyebrow": "Şartlar",
-      "title": "Başvuru Koşulları",
+      "eyebrow": "İKİNCİ BÖLÜM",
+      "title": "YABANCIYA TAPU SATIŞI VE ÖDEME SÜREÇLERİ (DAB VE BANKA İŞLEMLERİ)",
       "items": [
         {
-          "title": "Asgari Yatırım Tutarı",
-          "desc": "400.000 USD veya eşdeğeri döviz — tek taşınmaz ya da birden fazla taşınmazın toplamıyla karşılanabilir."
+          "title": "Yabancı Alıcının Banka Hesabı",
+          "desc": "Türkiye'de yabancı alıcının banka hesabı açması hukuken zorunlu değildir. Ancak özellikle ikinci el satışlarda ve vatandaşlık yatırımı kapsamında hesap açılması şiddetle tavsiye edilir. Sebep: Döviz Alım Belgesi (DAB), yatırımın banka sistemi üzerinden gerçekleştiğini gösteren temel belgedir."
         },
         {
-          "title": "3 Yıl Satılamaz Şerhi",
-          "desc": "Tapu üzerine en az 3 yıl süreyle satış yasağı şerhi konulması zorunludur. Bu şerh kaldırılmadan taşınmaz devredilemez."
+          "title": "Döviz Alım Belgesi (DAB) Süreci – Alıcı Tarafından Yapılması Hâlinde",
+          "desc": "Süreç adım adım şöyle işler:\n\n1. Yabancı alıcı, Türkiye'de hesabının bulunduğu bankaya gider.\n2. Satın alma bedelini (USD, EUR vb.) kendi hesabından veya yurt dışından transfer ederek bankaya yatırır. Elden nakit yatırımı da mümkündür.\n3. Banka, dövizi o günkü Merkez Bankası kuru üzerinden Türk Lirasına çevirir.\n4. Banka, Döviz Alım Belgesi (DAB) düzenler.\n\nDAB'ta yer alan bilgiler:\n- Alıcının adı ve pasaport numarası\n- Satın alınacak taşınmaza ilişkin bilgiler\n- Döviz tutarı ve Türk Lirası karşılığı\n\nBu belge, banka tarafından KEP (Kayıtlı Elektronik Posta) aracılığıyla tapu müdürlüğüne gönderilir."
         },
         {
-          "title": "SPK Ekspertiz Raporu",
-          "desc": "Yetkilendirilmiş bir gayrimenkul değerleme şirketi tarafından hazırlanan ekspertiz raporu tapu işlemleri için zorunludur."
+          "title": "DAB Sonrası Ödeme Yönetimi",
+          "desc": "DAB belgesinde yer alan Türk Lirası karşılığı için alıcı, satış günü bankasına talimat verebilir. Bu kapsamda iki seçenek mevcuttur:\n\nSeçenek 1 – Havale / Transfer: Banka, ilgili tutarı doğrudan satıcının hesabına transfer eder.\n\nSeçenek 2 – Bloke Çek: Banka, satış bedeli kadar Türk Lirası üzerinden bloke çek düzenler. Çek, satış günü satıcıya ibraz edilir. Satıcı çeki bankadan tahsil ederek bedeli kendi hesabına alır.\n\nNot: Bloke çek yöntemi, özellikle ikinci el satışlarda güvenilir bir ödeme modeli olarak kabul görmektedir."
         },
         {
-          "title": "DAB (Döviz Alım Belgesi)",
-          "desc": "Satın alma bedelinin tamamı Türkiye'deki bir bankadan Türk lirasına çevrilerek DAB alınmalıdır."
+          "title": "Satıcının Şirket (Tüzel Kişi) Olması Durumu",
+          "desc": "DAB işlemi hem alıcı hem de satıcı şirket tarafından yapılabilir; mevzuat her iki yönteme de izin vermektedir.\n\nSenaryo A – Alıcı DAB Yaparsa: Alıcı bankada DAB işlemini tamamlar ve satıcıya Türk Lirası transferi gerçekleştirir.\n\nSenaryo B – Şirket DAB Yaparsa: Şirket, yabancı alıcının döviz hesabına aktarılan bedel üzerinden alıcı adına DAB düzenler.\n\nNot: Ödeme ve belgeler her zaman banka kayıtlarında ve resmî tapu dosyasında izlenebilir olmalıdır."
         },
         {
-          "title": "Satış Vaadi Sözleşmesi",
-          "desc": "Hazır olmayan projeler için noter onaylı ve tescilli satış vaadi sözleşmesi de tapu senedi yerine kabul edilmektedir."
-        },
-        {
-          "title": "Aile Üyeleri",
-          "desc": "Eş ve 18 yaş altındaki çocuklar (bakıma muhtaç engelli çocuklar dahil) aynı dosyaya dahil edilebilir."
+          "title": "Pasaport Tercümesi ve Noter Onayı",
+          "desc": "Pasaport, yeminli tercüman tarafından çevrilir. Çeviri noter tasdikinden geçirilir. Tapu müdürlüğü, tercümesiz pasaport kabul etmemektedir."
         }
       ]
     },
     "propertyTypes": {
-      "eyebrow": "Taşınmaz Türleri",
-      "title": "Hangi Gayrimenkuller Geçerli?",
-      "description": "Konut, ticari mülk, arsa veya inşaat halindeki projeler — program kapsamında pek çok taşınmaz türü kabul edilmektedir.",
+      "eyebrow": "ÜÇÜNCÜ BÖLÜM",
+      "title": "TAPU RANDEVU VE SATIŞ SÜRECİ",
+      "description": "",
       "items": [
         {
-          "icon": "🏢",
-          "title": "Konut",
-          "desc": "Daire, villa, rezidans veya müstakil ev. Tek bir konut veya birden fazla konutun toplam değeri kullanılabilir. Kat irtifakı tapusu olan projeler de geçerlidir."
+          "icon": "📋",
+          "title": "Tapu Satışı Öncesinde Zorunlu Belgeler",
+          "desc": "Zorunlu Deprem Sigortası (DASK): Satışa konu taşınmaz için geçerli bir DASK poliçesinin bulunması zorunludur. Kat mülkiyetli taşınmazlarda bu poliçe tapuda işlem yapılabilmesi için ön koşuldur.\n\nDeğerleme Raporu: Yabancıya yapılan taşınmaz satışlarında ekspertiz raporu zorunludur. Vatandaşlık amacı taşıyan işlemlerde bu rapor ayrıca talep olarak da istenmektedir. Tapu randevusu, eksper raporu sisteme yüklenmeden alınamamaktadır."
         },
         {
-          "icon": "🏪",
-          "title": "Ticari Gayrimenkul",
-          "desc": "Ofis, dükkan, mağaza, depo veya otel gibi ticari nitelikteki taşınmazlar. Ticari taşınmazların tapusu da vatandaşlık başvurusunda kullanılabilir."
+          "icon": "🖥️",
+          "title": "Tapu Randevusunun Alınması",
+          "desc": "Randevu, Web Tapu Sistemi üzerinden alınır. Başvuru satıcı tarafından yapılır.\n\nRandevu ekranına girilen bilgiler:\n- Alıcı ve satıcıya ait kimlik bilgileri\n- Taşınmaza ilişkin bilgiler\n- Alıcı adına kimlik beyan formu\n- Satış bedeli\n- Varsa vatandaşlık şerhi talebi"
         },
         {
-          "icon": "🌱",
-          "title": "Arsa ve Tarla",
-          "desc": "İmar durumu olup olmadığına bakılmaksızın arsa veya tarla niteliğindeki taşınmazlar da değerleme raporuyla birlikte programa dahil edilebilir."
+          "icon": "🏛️",
+          "title": "Tapu Müdürlüğünün İncelemesi",
+          "desc": "Başvurunun ardından tapu müdürlüğü şu kontrolleri gerçekleştirir:\n- Tapu kaydını inceler\n- Yabancı edinim sınırlarını kontrol eder\n- Askerî yasak bölge kontrolü yapar\n- Ekspertiz raporunu değerlendirir\n- Ödeme beyanını inceler\n\nİnceleme sonucunda uygun görülen başvurularda randevu onaylanır; eksik bulunması hâlinde işlem bekletilir."
         },
         {
-          "icon": "🏗️",
-          "title": "İnşaat Halindeki Proje",
-          "desc": "Henüz teslim edilmemiş, inşaat aşamasındaki projeler için tapuya tescil edilmiş satış vaadi sözleşmesi yeterlidir."
+          "icon": "✍️",
+          "title": "Randevu Günü Tapuda Yapılacak İşlemler",
+          "desc": "Randevu günü taraflar tapu müdürlüğünde hazır bulunur. Yabancı alıcı için zorunlu unsurlar şunlardır:\n\n- Yabancı alıcı bizzat geliyorsa yeminli tercüman; gelmiyorsa alıcı avukat\n- Pasaport\n- Noter onaylı pasaport tercümesi\n- Banka ödeme belgeleri\n- Vatandaşlık başvurularında DAB belgesi\n\nSatış işlemi tapunun akit odasında gerçekleştirilir. Görevli memur süreci şöyle yürütür:\n- Varsa noter sözleşmesini tercüman aracılığıyla okur.\n- Satış bedelini sorgular.\n- Ödeme beyanını teyit eder.\n- Vatandaşlık şerhini sisteme işler.\n- Taraflardan imzaları alır.\n\nİmza aşamasının tamamlanmasıyla birlikte taşınmazın mülkiyeti alıcıya geçmiş olur."
         },
         {
-          "icon": "🏨",
-          "title": "Devre Mülk / Apart Otel",
-          "desc": "Devre mülk hakkı veya apart otel niteliğindeki taşınmazlar, bağımsız bölüm olarak tescil edilmeleri ve değer şartını karşılamaları kaydıyla kabul edilebilir."
+          "icon": "💰",
+          "title": "Harçlar ve Masraflar",
+          "desc": "Tapuya girmeden önce ödenmesi gereken masraflar şunlardır:\n- Tapu harcı (oranı genellikle %4 olup taraflarca paylaşılabilir)\n- Döner sermaye ücreti\n\nAkit odasında herhangi bir ödeme alınmamaktadır."
         },
         {
-          "icon": "📦",
-          "title": "Birden Fazla Taşınmaz",
-          "desc": "Farklı şehirlerdeki ya da aynı projede birden fazla bağımsız bölüm tek dosyada birleştirilebilir. Toplam değerin 400.000 USD'yi karşılaması yeterlidir."
+          "icon": "🇹🇷",
+          "title": "Vatandaşlık Dosyası Olan Satışlarda Ek Kontroller",
+          "desc": "Satışın vatandaşlık amacı taşıması hâlinde aşağıdaki ek kontroller uygulanır:\n- DAB belgesi, satış bedeliyle uyumu açısından kontrol edilir.\n- Tapu kütüğüne 3 yıl süreyle satış yasağı şerhi konulur."
         }
       ]
     },
     "documents": {
-      "eyebrow": "Gerekli Belgeler",
-      "title": "Dosyanız İçin Hazırlamanız Gerekenler",
-      "description": "Aşağıdaki belgelerin tamamı eksiksiz ve güncel olmalıdır. Yabancı dildeki belgeler apostil onaylı Türkçe tercümeleriyle birlikte sunulur. Uzman ekibimiz belge hazırlık sürecinde sizi adım adım yönlendirir.",
-      "noticeTitle": "Önemli Hatırlatma",
-      "noticeText": "Belgelerin apostil onayı ve Türkçe tercümesi için gereken süreyi göz önünde bulundurarak başvuru takvimini en az 4-6 hafta öncesinden planlamanızı öneririz.",
+      "eyebrow": "DÖRDÜNCÜ BÖLÜM",
+      "title": "UYGUNLUK BELGESİ (TAŞINMAZ YATIRIM TESPİT BELGESİ)",
+      "description": "",
+      "noticeTitle": "Önemli Not",
+      "noticeText": "Bu rehber yalnızca bilgilendirme amacıyla hazırlanmıştır. Hukuki danışmanlık için lütfen uzman bir avukattan destek alınız.",
       "items": [
         {
-          "num": "01",
-          "title": "Pasaport",
-          "desc": "Başvuru sahibi ve aile üyelerinin geçerli pasaportları (noter onaylı Türkçe tercüme ile birlikte)."
+          "num": "4.1",
+          "title": "Belgenin Tanımı ve Önemi",
+          "desc": "Taşınmaz Yatırım Tespit Belgesi; yabancı yatırımcının gerçekleştirdiği taşınmaz alımının, Türk vatandaşlığı için gerekli yatırım şartlarını karşıladığını devletin resmî olarak onayladığı belgedir.\n\nUygulamada bu belge; Uygunluk Belgesi, Citizenship Conformity Certificate veya Taşınmaz Uygunluk Yazısı gibi adlarla da anılmaktadır. Bu belge olmaksızın vatandaşlık başvurusu başlatılamaz."
         },
         {
-          "num": "02",
-          "title": "Tapu Senedi / SVS",
-          "desc": "Taşınmazın tapuya tescil belgesi veya tapuya tescil edilmiş satış vaadi sözleşmesi (noter onaylı)."
+          "num": "4.2",
+          "title": "Belgenin Amacı ve Denetim Kapsamı",
+          "desc": "Belgenin amacı, yapılan yatırımın gerçek ve mevzuata uygun olup olmadığını denetlemektir. Devlet bu inceleme sırasında aşağıdaki hususları kontrol etmektedir:\n- Yatırımın fiilen gerçekleşip gerçekleşmediği\n- Ödemenin banka sistemi üzerinden yapılıp yapılmadığı\n- Döviz Alım Belgesinin (DAB) usulüne uygun düzenlenip düzenlenmediği\n- Ekspertiz raporunun gerçeği yansıtıp yansıtmadığı\n- Taşınmazın daha önce vatandaşlık başvurusunda kullanılıp kullanılmadığı\n- Muvazaalı bir işlem bulunup bulunmadığı\n- Satış bedelinin yapay biçimde şişirilip şişirilmediği\n- Akraba veya ilişkili taraflar arasında bir satışın söz konusu olup olmadığı\n- Projenin hukuki risk taşıyıp taşımadığı"
         },
         {
-          "num": "03",
-          "title": "Satılamaz Şerh Belgesi",
-          "desc": "İlgili tapu müdürlüğünden alınan, tapuya işlenmiş 3 yıllık satılamaz şerhini gösteren belge."
+          "num": "4.3",
+          "title": "Belgenin Alınma Süreci",
+          "desc": "Adım 1 – Tapu Satışının Gerçekleştirilmesi: Satış işlemi sırasında ekspertiz raporu sisteme yüklenir, Döviz Alım Belgesi (DAB) dosyaya eklenir ve satış bedeli banka üzerinden ödenir. Ayrıca tapu kütüğüne taşınmazın 3 yıl süreyle satılamayacağına dair şerh işlenir. Bu şerh, vatandaşlık başvurusu açısından zorunlu bir unsurdur.\n\nAdım 2 – Dosyanın Merkeze Gönderilmesi: Tapu müdürlüğü, satış dosyasını Tapu ve Kadastro Genel Müdürlüğü Yabancı İşlemler Birimi'ne iletir. Bu başvuru alıcı tarafından ayrıca yapılmaz; işlem, tapu sistemi üzerinden otomatik olarak gerçekleştirilir.\n\nAdım 3 – Uygunluk Kararı: Merkez incelemesi sonucunda şartların sağlandığı tespit edilirse Taşınmaz Yatırım Tespit Belgesi düzenlenir ve karar Nüfus ve Vatandaşlık İşleri Genel Müdürlüğü'ne bildirilir."
         },
         {
-          "num": "04",
-          "title": "SPK Ekspertiz Raporu",
-          "desc": "Sermaye Piyasası Kurulu lisanslı bir değerleme şirketi tarafından hazırlanan güncel ekspertiz raporu."
+          "num": "4.4",
+          "title": "Süre",
+          "desc": "İnceleme süresi ortalama 1–2 hafta arasındadır. Yoğunluk veya eksik evrak bulunması hâlinde bu süre uzayabilir."
         },
         {
-          "num": "05",
-          "title": "DAB (Döviz Alım Belgesi)",
-          "desc": "Satın alma bedelinin Türk lirasına çevrildiğini gösteren banka döviz alım belgesi."
-        },
-        {
-          "num": "06",
-          "title": "Biyometrik Fotoğraf",
-          "desc": "Son 6 ay içinde çekilmiş, biyometrik standartlara uygun vesikalık fotoğraf (başvuru sahibi + aile üyeleri)."
-        },
-        {
-          "num": "07",
-          "title": "Adli Sicil Kaydı",
-          "desc": "Başvuru sahibinin kendi ülkesinden alınan adli sicil kaydı (apostil onaylı ve Türkçe tercümeli)."
-        },
-        {
-          "num": "08",
-          "title": "Evlilik / Doğum Belgesi",
-          "desc": "Eş için evlilik cüzdanı, çocuklar için doğum belgesi (apostil onaylı ve Türkçe tercümeli)."
+          "num": "4.5",
+          "title": "Belge Çıktıktan Sonraki Aşama",
+          "desc": "Taşınmaz Yatırım Tespit Belgesinin düzenlenmesiyle birlikte yatırım resmî olarak kabul edilmiş sayılır. Ardından yatırımcı ve varsa eşi Türkiye'ye geldikten sonra adlarına ikamet izni başvurusu yapılır ve vatandaşlık sürecine ilişkin işlemlere devam edilir."
         }
       ]
     },
     "benefits": {
       "eyebrow": "Avantajlar",
-      "title": "Türk Vatandaşlığının Faydaları",
-      "description": "Türk pasaportu yalnızca bir belge değil; seyahat özgürlüğü, iş imkânı ve yaşam kalitesi sunan stratejik bir avantajdır.",
+      "title": "Türk Vatandaşlığının Avantajları",
+      "description": "",
       "items": [
         {
           "icon": "✈️",
-          "title": "Vizesiz Seyahat",
-          "desc": "Türk pasaportuyla 110'dan fazla ülkeye vizesiz veya kapıda vize ile giriş imkânı. Schengen başvurusunda güçlü referans."
+          "title": "Geniş Seyahat İmkânı",
+          "desc": "Türk pasaportu pek çok ülkeye vizesiz veya kolaylıkla vize alarak seyahat imkânı sunar."
         },
         {
-          "icon": "🏦",
-          "title": "Bankacılık Kolaylığı",
-          "desc": "Türkiye'nin güçlü bankacılık sistemiyle döviz hesabı, yatırım hesabı ve uluslararası transferlere kolay erişim."
-        },
-        {
-          "icon": "📋",
-          "title": "Çift Vatandaşlık",
-          "desc": "Türkiye çift vatandaşlığa izin verir. Mevcut vatandaşlığınızı koruyarak Türk pasaportu edinebilirsiniz."
-        },
-        {
-          "icon": "🏥",
-          "title": "Sağlık ve Eğitim",
-          "desc": "Türk vatandaşı olarak devlet hastanelerinden ve devlet üniversitelerinden yerli vatandaş tarifiyle yararlanabilirsiniz."
+          "icon": "🏛️",
+          "title": "Tam Vatandaşlık Hakları",
+          "desc": "Türk vatandaşları ile aynı haklara sahip olunur; mülk edinimi, eğitim ve sağlık hizmetlerinden tam yararlanılır."
         },
         {
           "icon": "👨‍👩‍👧‍👦",
-          "title": "Aile Dahil Edilir",
-          "desc": "Eş ve 18 yaş altındaki çocuklar aynı dosyaya dahil edilir. Tüm aile tek başvuruyla Türk vatandaşlığı alır."
-        },
-        {
-          "icon": "🔒",
-          "title": "Kalıcı Statü",
-          "desc": "Türk vatandaşlığı, 3 yıllık şerh süresi bittikten sonra mülkü satmanızdan bağımsız olarak kalıcıdır."
+          "title": "Aile Dahil",
+          "desc": "Eş ve 18 yaş altı çocuklar aynı başvuruya dahil edilebilir."
         },
         {
           "icon": "💼",
-          "title": "Çalışma Hakkı",
-          "desc": "Türkiye'de herhangi bir iş kurmak veya çalışmak için ayrıca çalışma iznine ihtiyaç duymazsınız."
-        },
-        {
-          "icon": "🌍",
-          "title": "Stratejik Konum",
-          "desc": "Avrupa, Orta Doğu ve Orta Asya'ya eşit uzaklıkta, İstanbul'un sunduğu merkezi iş dünyası ağına erişim."
+          "title": "Uzaktan Yönetilebilir Süreç",
+          "desc": "Sürecin önemli bir bölümü Türkiye'de bulunmaksızın avukat vekaleti ile yürütülebilir."
         }
       ]
     },
     "legal": {
-      "eyebrow": "Yasal Çerçeve",
-      "title": "Bilmeniz Gereken Hukuki Detaylar",
+      "eyebrow": "Hukuki Çerçeve",
+      "title": "Yasal Dayanak",
       "items": [
         {
-          "title": "Yasal Dayanak",
-          "text": "Program, 5901 sayılı Türk Vatandaşlığı Kanunu'nun 12. maddesi ve buna bağlı 2016/9601 sayılı Bakanlar Kurulu Kararnamesi çerçevesinde yürütülmektedir. Tutar revizyonları Cumhurbaşkanlığı kararıyla yapılır."
+          "title": "5901 Sayılı Türk Vatandaşlığı Kanunu",
+          "text": "Türk vatandaşlığının kazanılması, kaybedilmesi ve ispatına ilişkin usul ve esasları düzenler."
         },
         {
-          "title": "Değerleme Zorunluluğu",
-          "text": "SPK lisanslı değerleme şirketinin hazırladığı ekspertiz raporundaki değer, satış bedelinden düşük olamaz. Aksi hâlde tapu müdürlüğü devir işlemini tamamlamaz."
-        },
-        {
-          "title": "DAB Şartı",
-          "text": "Satın alma bedelinin tamamının Türkiye'deki bir banka aracılığıyla Türk lirasına çevrilmesi zorunludur. Yurt içi hesaplar arası EFT/havale ile yapılan ödemeler DAB kapsamına girmez."
-        },
-        {
-          "title": "Şerhin Kaldırılması",
-          "text": "3 yıllık süre sona erdiğinde satılamaz şerhi kendiliğinden kalkmaz; tapu müdürlüğüne yazılı başvuru yapılarak şerhin kaldırılması talep edilir. Vatandaşlık statüsü etkilenmez."
+          "title": "Yatırım Yoluyla Vatandaşlık Yönetmeliği",
+          "text": "Gayrimenkul yatırımı dahil yatırım yoluyla vatandaşlık başvurularının şart ve prosedürlerini belirler."
         }
       ]
     },
     "strip": {
-      "eyebrow": "Uzman Kadromuz",
-      "title": "Türkiye'nin dört bir yanındaki gayrimenkul ve hukuk süreçlerinde yanınızdayız",
-      "cta": "Ücretsiz Danışmanlık Al",
-      "imageAlt": "Türkiye gayrimenkul"
+      "eyebrow": "Danışmanlık",
+      "title": "Vatandaşlık Dosyanızı Başlatmaya Hazır mısınız?",
+      "cta": "Ücretsiz Danışın",
+      "imageAlt": "Türkiye'de gayrimenkul yatırımı"
     },
     "faq": {
-      "eyebrow": "SSS",
-      "title": "Sıkça Sorulan Sorular",
+      "eyebrow": "Sık Sorulan Sorular",
+      "title": "Merak Edilenler",
       "items": [
         {
-          "q": "Birden fazla taşınmazla başvuru yapılabilir mi?",
-          "a": "Evet. Toplam değer 400.000 USD eşiğini karşılıyorsa birden fazla taşınmaz aynı vatandaşlık dosyasında kullanılabilir. Her taşınmaza ayrı ayrı satılamaz şerhi konulması gerekmektedir."
+          "q": "Vatandaşlık için kaç taşınmaz satın alınabilir?",
+          "a": "Tek taşınmaz veya birden fazla taşınmazın toplam değeri 400.000 USD eşiğini karşıladığı sürece birden fazla taşınmazla başvuru yapılabilir."
         },
         {
-          "q": "Taşınmazı 3 yıl sonra satabilir miyim?",
-          "a": "Evet. 3 yıllık şerh süresi sona erdiğinde taşınmazı özgürce satabilirsiniz. Vatandaşlık statünüz korunmaya devam eder."
+          "q": "Tapu üzerinde ipotek varsa ne yapılır?",
+          "a": "Vatandaşlık başvurusu yapılmadan önce tapudaki ipoteğin terkin (fek) edilmesi zorunludur. Bu işlem genellikle satıcı tarafından satış sürecinde gerçekleştirilir."
         },
         {
-          "q": "Süreç boyunca Türkiye'de yaşamak zorunda mıyım?",
-          "a": "Hayır. Vatandaşlık başvurusu için Türkiye'de ikamet zorunluluğu bulunmamaktadır. Yatırım tamamlandıktan sonra sürecin büyük bölümü vekâlet ile yürütülebilir."
+          "q": "DAB olmadan başvuru yapılabilir mi?",
+          "a": "Hayır. Döviz Alım Belgesi (DAB), ödemenin banka sistemi üzerinden yapıldığını kanıtlayan zorunlu belgedir. DAB olmaksızın uygunluk belgesi düzenlenmez."
         },
         {
-          "q": "Çift vatandaşlık mümkün mü?",
-          "a": "Türkiye çift vatandaşlığa izin vermektedir. Ancak kendi ülkenizin mevzuatını da ayrıca değerlendirmeniz önerilir."
+          "q": "İnşaat halindeki bir projeden taşınmaz alınabilir mi?",
+          "a": "Evet, kat irtifakı tapusu mevcut ve inşaatı devam eden projelerden noter satış vaadi sözleşmesi yöntemiyle taşınmaz edinilebilir ve vatandaşlık başvurusu yapılabilir."
         },
         {
-          "q": "Kat irtifakı veya inşaat halindeki proje için başvuru yapılabilir mi?",
-          "a": "Evet. İnşaat halindeki projeler için noter onaylı ve tapuya tescil edilmiş satış vaadi sözleşmesi yeterlidir."
+          "q": "Uygunluk belgesi ne kadar sürede çıkar?",
+          "a": "Ortalama 1–2 hafta içinde çıkmaktadır. Eksik evrak veya yoğunluk durumunda bu süre uzayabilir."
         }
       ]
     },
     "cta": {
       "title": "Dosyanızı Başlatmaya Hazır mısınız?",
-      "description": "Uzman ekibimiz gayrimenkul seçiminden pasaport teslimine kadar her adımda yanınızda.",
+      "description": "Bu rehber yalnızca bilgilendirme amacıyla hazırlanmıştır. Hukuki danışmanlık için lütfen uzman bir avukattan destek alınız.",
+      "primaryCta": "Ücretsiz Danışın",
+      "secondaryCta": "Sıkça Sorulan Sorular"
+    }
+  },
+  "mevduat_page": {
+    "hero": {
+      "breadcrumbLabel": "Mevduat Hesabı ile Vatandaşlık",
+      "tag": "Yatırım Yoluyla Vatandaşlık",
+      "titleLines": [
+        "Banka Mevduat Hesabı",
+        "ile Türk Vatandaşlığı"
+      ],
+      "highlightLineIndex": 1,
+      "summary": "500.000 USD'yi 3 yıl boyunca Türkiye'deki bir bankada tutarak Türk vatandaşlığı edinme sürecinin hukuki ve idari boyutlarını uçtan uca yönetiyoruz.",
+      "primaryCta": "Ücretsiz Danışın",
+      "secondaryCta": "Sık Sorulan Sorular",
+      "imageAlt": "Banka Mevduatı ile Türk Vatandaşlığı"
+    },
+    "stats": [
+      {
+        "value": "500.000 USD",
+        "label": "Minimum Mevduat",
+        "sub": "veya karşılığı döviz"
+      },
+      {
+        "value": "3 Yıl",
+        "label": "Tutma Zorunluluğu",
+        "sub": "blokaj / taahhüt"
+      },
+      {
+        "value": "BDDK",
+        "label": "Yetkili Kurum",
+        "sub": "uygunluk belgesi"
+      },
+      {
+        "value": "5–6 Ay",
+        "label": "Ortalama Süreç",
+        "sub": "başvuru sonuçlanması"
+      }
+    ],
+    "intro": {
+      "eyebrow": "Süreç Hakkında",
+      "title": "Yatırım Yoluyla Türk Vatandaşlığı Başvurusu",
+      "paragraphs": [
+        "Yatırım yoluyla Türk vatandaşlığı, Türk Vatandaşlığı Kanunu'nun istisnai vatandaşlık hükümleri kapsamında, kanunun öngördüğü belirli yatırım araçlarının kullanılması suretiyle gerçekleştirilen bir başvuru türüdür.",
+        "Bu süreçte ilk ve en önemli adım, hangi yatırım aracı kullanılarak vatandaşlık başvurusu yapılacağının doğru şekilde belirlenmesidir. Yatırımın türüne göre hem yatırımın 'vatandaşlığa uygun' hale getirilme yöntemi hem de uygunluk belgesini düzenleyen kurum değişmektedir."
+      ],
+      "imageAlt": "Mevduat yatırımı ile Türk vatandaşlığı",
+      "cardValue": "BDDK Onaylı",
+      "cardLabel": "Uygunluk Belgesi Süreci",
+      "badgeValue": "500K$",
+      "badgeLabel": "Minimum Eşik"
+    },
+    "overview": {
+      "eyebrow": "Genel Bakış",
+      "title": "Vatandaşlık Sürecinin İskeleti",
+      "paragraphs": [
+        "Yatırımın vatandaşlık kriterlerine uygun olarak gerçekleştirildiğini gösteren resmi belgeye uygulamada 'Uygunluk Belgesi' denilmektedir. Banka mevduat hesabında para tutma yöntemiyle yapılan yatırımlarda uygunluk belgesinin düzenlenmesi ve yatırımın uygunluğunun tespiti bakımından ilgili kurum BDDK'dır.",
+        "Büromuz; seçilecek yatırım yöntemine göre yatırımın baştan sona mevzuata uygun biçimde yapılandırılması, vatandaşlık kriterlerine uygun hale getirilmesi, gerekli resmi kayıtların ve işlem akışının doğru kurulması ve nihayetinde ilgili kurumdan uygunluk belgesinin alınması süreçlerinin tamamını bütüncül biçimde yönetmektedir."
+      ],
+      "bullets": [
+        "Yatırımı vatandaşlık mevzuatına göre doğru yapmak",
+        "Uygunluk belgesini almak",
+        "Yatırımcı ve aile için ikamet izni",
+        "Nüfus/vatandaşlık başvurusunu yapmak",
+        "Sürecin sonuçlanmasını takip etmek",
+        "Kimlik ve pasaport işlemlerini tamamlamak"
+      ]
+    },
+    "process": {
+      "eyebrow": "Adım Adım Süreç",
+      "title": "Mevduat Hesabı Yöntemiyle Vatandaşlık",
+      "description": "Bu yöntemde avukatın rolü 'bankaya para yatırıldı' noktasında bitmez; başvurunun kurucu unsuru sayılan işlem akışının mevzuata uygun şekilde kurulması ve ispatlanabilir hale getirilmesi gerekir.",
+      "items": [
+        {
+          "num": "01",
+          "icon": "🏦",
+          "title": "Yatırım Aracının Seçimi ve Süreç Planlaması",
+          "desc": "Yatırımcının ülke durumu, aile yapısı, Türkiye'ye giriş-çıkış planı, belgelerin temin edilebilirliği, vekâletname ile işlem yapılabilme ihtimali ve yatırımın finansal/operasyonel detayları birlikte değerlendirilir."
+        },
+        {
+          "num": "02",
+          "icon": "💱",
+          "title": "Banka Seçimi ve Hesap Açılışı",
+          "desc": "Türkiye'de faaliyet gösteren bir bankada kendi adına en az 500.000 USD veya karşılığı döviz tutarında mevduat hesabı açılır. Para transferi ve döviz işlemlerinin doğru yöntemle yapılması kritik önemdedir."
+        },
+        {
+          "num": "03",
+          "icon": "🔒",
+          "title": "3 Yıllık Blokaj / Taahhüt Tesisi",
+          "desc": "İlgili tutar üzerine 3 yıl süreli blokaj/taahhüt tesis edilir. Blokaj-taahhüt metinlerinin ve banka yazışmalarının mevzuata uygun şekilde hazırlanması gerekir."
+        },
+        {
+          "num": "04",
+          "icon": "📜",
+          "title": "BDDK Uygunluk Belgesi",
+          "desc": "Mevduat yöntemine ilişkin yatırımın uygunluğunu tevsik eden Uygunluk Belgesi alınır. Bu yöntem bakımından uygunluk tespit süreci BDDK çerçevesinde yürütülür."
+        },
+        {
+          "num": "05",
+          "icon": "🏛️",
+          "title": "J Bendi İkamet İzni",
+          "desc": "Uygunluk belgesi sonrasında yatırımcı ve eşi için J bendi ikamet izni başvurusu yapılır. Parmak izi verisi alınması için fiziken Türkiye'ye gelme zorunluluğu mevcuttur."
+        },
+        {
+          "num": "06",
+          "icon": "🇹🇷",
+          "title": "Vatandaşlık Başvurusu (VAT-4)",
+          "desc": "İkamet izninin alınmasının ardından istisnai vatandaşlık başvurusu (VAT-4) yapılır. Başvurucular nüfus müdürlüğünde bizzat bulunur, fotoğraf ve parmak izi işlemleri tamamlanır."
+        }
+      ]
+    },
+    "risks": {
+      "eyebrow": "Kritik Riskler",
+      "title": "Bu Yöntemde En Kritik Riskler",
+      "description": "Paranın yatırılmış olmasına rağmen blokaj/taahhüt mekanizmasının hatalı kurulması veya para hareketinin doğru belgelendirilememesi, süreci doğrudan riske sokar.",
+      "items": [
+        {
+          "title": "Blokaj Mekanizmasının Hatalı Kurulması",
+          "desc": "3 yıl dolmadan paranın çekilmesi veya blokajın kaldırılması yatırım şartını bozar. Mekanizmanın baştan doğru kurulması şarttır."
+        },
+        {
+          "title": "Para Hareketinin Yanlış Belgelenmesi",
+          "desc": "Döviz transferlerinin ve alım-satım belgelerinin usulüne uygun düzenlenmemesi uygunluk belgesi başvurusunu sekteye uğratabilir."
+        },
+        {
+          "title": "Banka Sözleşmelerinin Yetersiz Hazırlanması",
+          "desc": "Taahhüt metinlerinin vatandaşlık mevzuatı gerekliliklerini karşılamaması başvurunun reddedilmesine yol açabilir."
+        },
+        {
+          "title": "Erken Çekim veya Transfer",
+          "desc": "3 yıllık süre içinde yapılan herhangi bir çekim işlemi ya da başka bankaya transfer taahhüdü bozar ve vatandaşlık hakkını kaybettirir."
+        }
+      ]
+    },
+    "bes": {
+      "eyebrow": "Alternatif Yöntem",
+      "title": "BES Sistemiyle 500.000 USD Yatırımı",
+      "paragraphs": [
+        "BES yönteminde yatırımcı, bir emeklilik şirketi üzerinden 'vatandaşlık' ibareli BES planına dahil olur ve en az 500.000 USD veya karşılığı döviz tutarını katkı payı olarak yatırır.",
+        "Para akışı, mevzuata uygun biçimde genellikle dövizin bankaya yatırılması, bunun TCMB'ye satış yoluyla TL'ye çevrilmesi ve 3 yıllık süre, katkı payının emeklilik şirketine intikaliyle sözleşmenin yürürlüğe girdiği tarihten itibaren başlar.",
+        "Yatırımın vatandaşlık kriterlerine uygun yapıldığını teyit eden Uygunluk Belgesi/uygunluk yazısı bu yöntemde SEDDK tarafından düzenlenir."
+      ],
+      "restrictionsTitle": "İlk 3 Yıl Kısıtlamaları",
+      "restrictions": [
+        "İlk 3 yıl başka şirkete aktarım (transfer) yapılamaz",
+        "Plan değişikliği yapılamaz",
+        "Belirli fon türlerine ilişkin kısıtlar mevcuttur ('yabancı' veya 'dış borçlanma araçları' ibareli fonlar)",
+        "3 yıl dolmadan sistemden çıkış vatandaşlık sürecini riske sokar"
+      ],
+      "officeRoleTitle": "BES Yönteminde Büromuzun Rolü",
+      "officeRole": [
+        "Emeklilik şirketi seçimi ve sözleşme kurgusunun vatandaşlık planına uygun yapılması",
+        "Banka-TCMB döviz satış sürecinin doğru belgelenmesi",
+        "Katkı payının 'nakden intikal' şartını sağlayacak şekilde organize edilmesi",
+        "İlk 3 yıl kısıtlarının yatırımcıya açık ve yazılı şekilde yönetilmesi",
+        "SEDDK uygunluk yazısı başvurusunun eksiksiz dosyalanması",
+        "İkamet izni ile vatandaşlık başvurularının bütünleşik takibi"
+      ]
+    },
+    "postApproval": {
+      "eyebrow": "Başvuru Sonrası",
+      "title": "Uygunluk Belgesi Sonrası Süreç",
+      "paragraphs": [
+        "Uygunluk belgesi alındıktan sonra vatandaşlık başvurusu için gerekli belgeler hazırlanır. Evrak listesi genel olarak matbu bir çerçeveye sahip olsa da, başvurucunun ülkesi, aile üyesi sayısı ve ilgili ülke temsilciliğinin uygulaması nedeniyle her dosya kendi içinde farklılaşabilir.",
+        "Vatandaşlık başvurusu onaylandıktan sonra, onay tarihinden itibaren Türk vatandaşlığını kazanan başvurucular ve aile bireyleri için Türk kimlik kartı ve pasaport başvurusu yapılır. Kimlik ve pasaportun Türkiye'deki nüfus müdürlüklerinden yapılması süreç açısından çok daha hızlı sonuçlanmaktadır."
+      ],
+      "bullets": [
+        "Vatandaşlık dosyasının hazırlanması",
+        "Nüfus başvurusunun organize edilmesi",
+        "Pasaport ve kimlik randevularının alınması",
+        "Tüm aile bireylerinin sürece dahil edilmesi"
+      ]
+    },
+    "whoCanApply": {
+      "eyebrow": "Başvuru Koşulları",
+      "title": "Kimler Vatandaşlık Alabilir?",
+      "conditionsTitle": "Başvuru Koşulları",
+      "conditions": [
+        "Reşit (18 yaşını doldurmuş) olmak",
+        "Ayırt etme gücüne sahip olmak",
+        "Kamu güvenliği açısından sakıncası bulunmamak"
+      ],
+      "familyTitle": "Yatırımcıyla Birlikte Kimler Vatandaşlık Alabilir?",
+      "family": [
+        "Eşi",
+        "18 yaş altı çocukları (Mısır uyruklu için 21 yaş, Cezayir uyruklu için 19 yaş)"
+      ],
+      "cannotTitle": "Kimler Bu Yoldan Vatandaşlık Alamaz?",
+      "cannot": [
+        "18 yaş altı, tek başına başvuran kişiler",
+        "Açık adli kayıtları nedeniyle kamu güvenliği açısından sakıncalı görülen kişiler",
+        "Yatırımı mevzuatın öngördüğü şekilde yapmamış olanlar",
+        "3 yıl elde tutma şartını ihlal edenler (vatandaşlık sonradan düşer)"
+      ],
+      "specialTitle": "İstisnai Durumlar",
+      "special": [
+        "Birden fazla evliliği olan kişilerde yalnızca ilk eş vatandaşlığa hak kazanır",
+        "İkinci/üçüncü/dördüncü eşten olan çocuklar yatırımcıyla birlikte vatandaşlık alabilir",
+        "Evlilik dışı dünyaya gelen çocuklar da yatırımcıyla birlikte başvurabilir",
+        "İstisnai durumlarda ek evraklar talep edilir"
+      ]
+    },
+    "serviceScope": {
+      "eyebrow": "Hizmet Kapsamımız",
+      "title": "Uçtan Uca Yönetim",
+      "items": [
+        "Yatırım yönteminin seçimi ve süreç planlaması",
+        "Banka seçimi ve hesap açılışının koordinasyonu",
+        "Para transferi/döviz işlemlerinin doğru yöntemle yapılması",
+        "3 yıllık blokaj-taahhüt metinlerinin mevzuata uygun hazırlanması",
+        "Banka yazışmalarının kontrolü ve yönlendirilmesi",
+        "BDDK uygunluk belgesi sürecinin eksiksiz yürütülmesi",
+        "BES yatırımlarında sözleşmelerin vatandaşlığa uygun kurgulanması",
+        "SEDDK uygunluk yazısı başvurusunun dosyalanması",
+        "İkamet izni başvurusu hazırlığı ve takibi",
+        "Vatandaşlık dosyasının hazırlanması ve nüfus başvurusunun organizasyonu",
+        "Kimlik ve pasaport başvurusu dahil sürecin uçtan uca yönetimi"
+      ]
+    },
+    "faq": {
+      "eyebrow": "Sık Sorulan Sorular",
+      "title": "Merak Edilenler",
+      "items": [
+        {
+          "q": "Yatırım yöntemini seçerken en kritik nokta nedir?",
+          "a": "En kritik nokta, yatırımın 'vatandaşlığa uygun hale getirilmesi'dir. Yatırım yapılması tek başına yeterli değildir; yatırımın ödeme akışı, resmi kayıtları ve uygunluk belgesi süreci hatasız kurulmalıdır."
+        },
+        {
+          "q": "Uygunluk belgesi neden bu kadar önemlidir?",
+          "a": "Uygunluk belgesi, yaptığınız yatırımın vatandaşlık kriterlerini sağladığını resmi olarak teyit eden belgedir. Vatandaşlık dosyasında yatırım kriterini ispatlayan ana dayanak belge niteliğindedir."
+        },
+        {
+          "q": "Uygunluk belgesini hangi kurum verir?",
+          "a": "Yatırım türüne göre değişir. Banka mevduatında BDDK, BES yönteminde SEDDK, taşınmazda Tapu süreçleri uygunluk sürecini yürütür."
+        },
+        {
+          "q": "J bendi ikamet izni için Türkiye'ye gelmek zorunlu mudur?",
+          "a": "Evet. Parmak izi verisi Göç İdaresi sistemine işlendiği için yatırımcı ve varsa eşinin fiziken Türkiye'ye gelmesi gerekir."
+        },
+        {
+          "q": "Vatandaşlık başvurusu sırasında da Türkiye'de bulunmak gerekir mi?",
+          "a": "Evet. Başvurucular (çocuklar hariç) nüfus müdürlüğünde bizzat bulunur, imza atar; fotoğraf ve parmak izi işlemleri yapılır."
+        },
+        {
+          "q": "Süreç ne kadar sürer?",
+          "a": "Sonuçlanma süreleri dönemsel değişmekle birlikte uygulamada çoğu dosyada ortalama 5–6 ay bandı konuşulmaktadır. Süre; ülke durumu, incelemeler ve evrakların açıklığına göre uzayabilir veya kısalabilir."
+        },
+        {
+          "q": "Vekâletname ile tüm işlemler yapılabilir mi?",
+          "a": "Evet, bütün işlemler vekâletname ile yürütülebilse de ikamet izni ve vatandaşlık başvurularında biyometrik işlemler nedeniyle başvurucu ve eşin en az iki kez fiziken süreçlere katılması gerekir. İki randevu ortalama bir hafta içerisinde gerçekleşmektedir."
+        },
+        {
+          "q": "3 yıl dolmadan parayı çekebilir miyim?",
+          "a": "Hayır. 3 yıl dolmadan blokajın kaldırılması veya paranın çekilmesi yatırım şartını bozar; bu durum vatandaşlık alınmış olsa dahi vatandaşlığın düşürülmesiyle sonuçlanır."
+        },
+        {
+          "q": "Vatandaşlık onayı sonrası kimlik ve pasaport nereden alınır?",
+          "a": "Türkiye'de nüfus müdürlüklerinden veya şartlara göre Türkiye'nin dış temsilcilikleri aracılığıyla başvurusu yapılabilir. Türkiye'deki müdürlüklerden işlem çok daha hızlı tamamlanmaktadır."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Dosyanızı Başlatmaya Hazır mısınız?",
+      "description": "Büromuz, mevduat yatırımınızın başından kimlik/pasaport teslimina kadar her adımı sizin adınıza yönetir.",
       "primaryCta": "Ücretsiz Danışın",
       "secondaryCta": "SSS'yi İncele"
+    }
+  },
+  "gayrimenkul_fon_page": {
+    "hero": {
+      "breadcrumbLabel": "Taşınmaz Satın Alımı ile Vatandaşlık",
+      "tag": "Yatırım Yoluyla Vatandaşlık",
+      "summary": "400.000 USD değerinde gayrimenkul alımından uygunluk belgesine kadar tapu incelemesi, DAB süreci ve resmi başvuru aşamalarının tamamını hukuki güvenceyle yönetiyoruz.",
+      "primaryCta": "Ücretsiz Danışın",
+      "secondaryCta": "Sık Sorulan Sorular"
+    },
+    "bolum1": {
+      "eyebrow": "Birinci Bölüm",
+      "title": "Taşınmazın Vatandaşlığa Uygunluğunun Araştırılması ve Tespiti",
+      "intro": [
+        "Vatandaşlık sürecinde en kritik aşama, satın alınacak gayrimenkule ilişkin satın alma öncesinde yapılan hukuki ve teknik incelemedir.",
+        "Bir taşınmazın fiyatı 400.000 USD olsa bile, vatandaşlık mevzuatında yer alan yatırım yoluyla vatandaşlık başvuru kılavuzuna uygun değilse vatandaşlık başvurusu reddedilir. Bu nedenle yatırım öncesinde, taşınmazın vatandaşlığa uygunluğunun mutlaka araştırılması ve resmi olarak doğrulanması gerekmektedir.",
+        "Bu incelemeyi tam anlamıyla ancak avukat yapabilir. Avukat, Web Tapu üzerinden satın alınacak tapunun incelenmesi için randevu talep ederek tapu idaresinde ve belediye nezdinde bizzat incelemelerini gerçekleştirebilir."
+      ],
+      "tapu": {
+        "eyebrow": "1.1 – Tapu Hukuki Durum İncelemesi",
+        "title": "Tapu Kaydı Detaylı İnceleme",
+        "items": [
+          {
+            "num": "1.1.1",
+            "title": "İpotek Kaydı",
+            "paragraphs": [
+              "Tapu üzerine şerh edilmiş bir ipotek var mı?",
+              "Satıcının şirket olduğu durumlarda, projeler genellikle banka kredisi ile finanse edildiğinden taşınmaz üzerinde banka ipoteği bulunabilmektedir. Vatandaşlık başvurusu açısından, satış işlemi gerçekleştirilmeden önce söz konusu banka ipoteğinin mutlaka terkin (fek) edilmesi gerekmektedir."
+            ]
+          },
+          {
+            "num": "1.1.2",
+            "title": "Haciz Kaydı",
+            "paragraphs": [
+              "Tapu üzerinde bir haciz var mı?",
+              "Haciz; taşınmaz sahibinin borçları nedeniyle icra müdürlüğü tarafından konulan kısıtlamadır."
+            ],
+            "bullets": [
+              "Vergi ve emlak borcu kaynaklı hacizler",
+              "Şirket veya şahsa olan borca ilişkin icra takibi ya da fatura borçlarından kaynaklanan hacizler"
+            ]
+          },
+          {
+            "num": "1.1.3",
+            "title": "Diğer Şerhler",
+            "paragraphs": [
+              "Şerh; tapuya işlenen ve üçüncü kişilere karşı ileri sürülebilen hak veya kısıtlamalardır. Bu tür kayıtlar devir işlemini tamamen engelleyebilir ya da özel izin gerektireceğinden, tapu alımından önce mutlaka uzman bir avukat tarafından incelenmelidir."
+            ]
+          },
+          {
+            "num": "1.1.4",
+            "title": "Daha Önce Vatandaşlık İçin Kullanılmış mı?",
+            "paragraphs": [
+              "Türk vatandaşlığı kapsamında satın alınan taşınmazlara genellikle 3 yıl süreyle satış yasağı şerhi konulmaktadır. Aynı taşınmaz ikinci kez vatandaşlık başvurusunda kullanılamaz."
+            ],
+            "bullets": [
+              "Taşınmazın daha önce vatandaşlık dosyasına konu olup olmadığı",
+              "3 yıllık satış yasağı şerhinin bulunup bulunmadığı"
+            ]
+          }
+        ]
+      },
+      "sherhler": {
+        "eyebrow": "Şerh Türleri",
+        "title": "Dikkat Edilmesi Gereken Şerh Çeşitleri",
+        "items": [
+          {
+            "title": "Satış Vaadi Şerhi",
+            "desc": "Taşınmazın önceden başka bir kişiye noterden satıldığını ve tapunun ileriki bir tarihte devredileceğini gösteren şerhtir."
+          },
+          {
+            "title": "İhtiyati Tedbir Şerhi",
+            "desc": "Taşınmaz malikinin devam eden bir davası nedeniyle satışın engellenmiş olabileceğini gösterir."
+          },
+          {
+            "title": "Kat Karşılığı İnşaat Sözleşmesi Şerhi",
+            "desc": "Taşınmaz inşaatının hâlâ devam ettiğini ve inşaatın belirli bir aşamaya geldiğinde tapuların devredilebileceğini gösteren sözleşmeye işaret eder."
+          },
+          {
+            "title": "Mahkeme Tedbir Kararı",
+            "desc": "Mahkeme tarafından verilen ve taşınmazın satışını veya devrini geçici olarak durduran karardır."
+          },
+          {
+            "title": "İflas Şerhi",
+            "desc": "Taşınmaz sahibinin iflas etmiş olması nedeniyle tapuya konulan kayıttır."
+          },
+          {
+            "title": "Kamulaştırma Şerhi",
+            "desc": "Devletin kamu yararı nedeniyle taşınmazı kamulaştırma sürecinde olduğunu gösteren kayıttır."
+          },
+          {
+            "title": "Kültür Varlığı / Sit Alanı Kaydı",
+            "desc": "Taşınmazın kültürel veya tarihî değeri bulunduğunu ve koruma altında olduğunu gösterir."
+          },
+          {
+            "title": "Askerî Yasak Bölge Kaydı",
+            "desc": "Taşınmazın askerî güvenlik açısından sınırlı bölgede bulunduğunu gösterir."
+          }
+        ]
+      },
+      "tapuTuru": {
+        "eyebrow": "1.2 – Tapu Türünün Vatandaşlığa Uygunluğu",
+        "title": "Kat Mülkiyeti / Kat İrtifakı Zorunluluğu",
+        "paragraphs": [
+          "Tapunun niteliği, vatandaşlık başvurusu açısından mutlaka kontrol edilmelidir. Taşınmazın kat mülkiyetli veya kat irtifaklı olması esastır.",
+          "Boş arsa satın almak, tek başına vatandaşlık için uygun kabul edilmez."
+        ],
+        "arsaTitle": "Arsa ile Başvuru İçin Zorunlu Koşullar",
+        "arsaBullets": [
+          "Arsa üzerinde ruhsatlı bir projenin bulunması",
+          "İnşaat için belediye onaylarının alınmış olması",
+          "Kat irtifakının kurulmuş olması",
+          "Bağımsız bölümlerin projede açıkça belirlenmiş olması",
+          "Ödemenin banka üzerinden yapılıp DAB ile ispatlanması",
+          "Değerleme raporunun vatandaşlık için gerekli asgari tutarı karşılaması"
+        ]
+      },
+      "noter": {
+        "eyebrow": "1.3 – Noter Sözleşmesiyle Vatandaşlık",
+        "title": "Taksitli Satışlarda Tercih Edilen Yöntem",
+        "paragraphs": [
+          "Taşınmazın mutlaka bir proje kapsamında olması gerekmektedir. İnşaatın ruhsatlı olması ve kat irtifakının kurulmuş bulunması zorunludur.",
+          "Değerleme raporunun en az 400.000 USD tutarını karşılaması zorunludur.",
+          "Noter sözleşmesi yöntemi, uygulamada genellikle taksitli satışlarda tercih edilmektedir.",
+          "Özellikle inşaatı devam eden projelerde, bazı şirketler tapu devrini teslim aşamasına kadar gerçekleştirmediğinden bu yöntem kullanılmaktadır.",
+          "Kat irtifakı tapuları şirket adına tescil edildikten sonra noter satış sözleşmesi imzalanabilir."
+        ]
+      },
+      "ekspertiz": {
+        "eyebrow": "1.4 – Ekspertiz Ön Değerlendirmesi",
+        "title": "Değerleme Raporu ve Geçerli Tutar Hesaplama",
+        "paragraphs": [
+          "Tek bir taşınmazla vatandaşlık başvurusu yapılıyorsa; GEDAŞ tarafından, satıcının e-Devlet girişi üzerinden Web Tapu aracılığıyla çevrimiçi değerleme raporu talep edilir.",
+          "Taşınmazın değeri asgari yatırım tutarını karşılıyorsa, raporun son sayfasında uygunluk ibaresi yer alır.",
+          "Birden fazla taşınmazla başvuru yapılması hâlinde her taşınmaz için ayrı değerleme raporu düzenlenir.",
+          "Değerleme raporu yalnızca vatandaşlık amacıyla satın alınan taşınmazlar için zorunludur."
+        ],
+        "formula": {
+          "title": "Geçerli Yatırım Tutarı Hesaplama Formülü",
+          "desc": "DAB tutarı değerleme raporundan düşükse DAB tutarı esas alınır. Değerleme raporu daha düşükse rapor tutarı esas alınır. Geçerli tutar: ikisinden hangisi daha düşükse odur."
+        }
+      }
+    },
+    "bolum2": {
+      "eyebrow": "İkinci Bölüm",
+      "title": "Yabancıya Tapu Satışı ve Ödeme Süreçleri (DAB ve Banka İşlemleri)",
+      "items": [
+        {
+          "num": "2.1",
+          "title": "Yabancı Alıcının Banka Hesabı",
+          "paragraphs": [
+            "Türkiye'de yabancı alıcının banka hesabı açması hukuken zorunlu değildir. Ancak özellikle ikinci el satışlarda ve vatandaşlık yatırımı kapsamında hesap açılması şiddetle tavsiye edilir.",
+            "Sebep: Döviz Alım Belgesi (DAB), yatırımın banka sistemi üzerinden gerçekleştiğini gösteren temel belgedir."
+          ]
+        },
+        {
+          "num": "2.2",
+          "title": "Döviz Alım Belgesi (DAB) Süreci",
+          "paragraphs": [],
+          "steps": [
+            "Yabancı alıcı, Türkiye'de hesabının bulunduğu bankaya gider.",
+            "Satın alma bedelini bankaya yatırır.",
+            "Banka dövizi Türk Lirasına çevirir.",
+            "Banka, Döviz Alım Belgesi (DAB) düzenler."
+          ],
+          "bullets": [
+            "Alıcının adı ve pasaport numarası",
+            "Satın alınacak taşınmaza ilişkin bilgiler",
+            "Döviz tutarı ve Türk Lirası karşılığı"
+          ]
+        },
+        {
+          "num": "2.3",
+          "title": "DAB Sonrası Ödeme Yönetimi",
+          "paragraphs": [
+            "DAB belgesindeki Türk Lirası karşılığı için alıcı bankasına talimat verebilir."
+          ],
+          "subItems": [
+            {
+              "title": "Seçenek 1 – Havale / Transfer",
+              "bullets": [
+                "Banka tutarı doğrudan satıcının hesabına transfer eder."
+              ]
+            },
+            {
+              "title": "Seçenek 2 – Bloke Çek",
+              "bullets": [
+                "Banka satış bedeli kadar bloke çek düzenler.",
+                "Çek satış günü satıcıya ibraz edilir.",
+                "Satıcı çeki bankadan tahsil eder."
+              ]
+            }
+          ]
+        },
+        {
+          "num": "2.4",
+          "title": "Satıcının Şirket Olması Durumu",
+          "paragraphs": [
+            "DAB işlemi hem alıcı hem de satıcı şirket tarafından yapılabilir."
+          ],
+          "subItems": [
+            {
+              "title": "Senaryo A – Alıcı DAB Yaparsa",
+              "bullets": [
+                "Alıcı bankada DAB işlemini tamamlar ve satıcıya TL transferi gerçekleştirir."
+              ]
+            },
+            {
+              "title": "Senaryo B – Şirket DAB Yaparsa",
+              "bullets": [
+                "Şirket, yabancı alıcı adına DAB düzenler."
+              ]
+            }
+          ]
+        },
+        {
+          "num": "2.5",
+          "title": "Pasaport Tercümesi ve Noter Onayı",
+          "paragraphs": [],
+          "bullets": [
+            "Pasaport yeminli tercüman tarafından çevrilir.",
+            "Çeviri noter tasdikinden geçirilir.",
+            "Tapu müdürlüğü tercümesiz pasaport kabul etmemektedir."
+          ]
+        }
+      ]
+    },
+    "bolum3": {
+      "eyebrow": "Üçüncü Bölüm",
+      "title": "Tapu Randevu ve Satış Süreci",
+      "items": [
+        {
+          "num": "3.1",
+          "title": "Tapu Satışı Öncesinde Zorunlu Belgeler",
+          "paragraphs": [
+            "Zorunlu Deprem Sigortası (DASK): Geçerli bir DASK poliçesinin bulunması zorunludur.",
+            "Değerleme Raporu: Yabancıya yapılan taşınmaz satışlarında ekspertiz raporu zorunludur."
+          ]
+        },
+        {
+          "num": "3.2",
+          "title": "Tapu Randevusunun Alınması",
+          "paragraphs": [
+            "Randevu, Web Tapu Sistemi üzerinden alınır. Başvuru satıcı tarafından yapılır."
+          ],
+          "bullets": [
+            "Alıcı ve satıcıya ait kimlik bilgileri",
+            "Taşınmaza ilişkin bilgiler",
+            "Alıcı adına kimlik beyan formu",
+            "Satış bedeli",
+            "Varsa vatandaşlık şerhi talebi"
+          ]
+        },
+        {
+          "num": "3.3",
+          "title": "Tapu Müdürlüğünün İncelemesi",
+          "paragraphs": [
+            "Başvurunun ardından tapu müdürlüğü kontrolleri gerçekleştirir."
+          ],
+          "bullets": [
+            "Tapu kaydını inceler",
+            "Yabancı edinim sınırlarını kontrol eder",
+            "Askerî yasak bölge kontrolü yapar",
+            "Ekspertiz raporunu değerlendirir",
+            "Ödeme beyanını inceler"
+          ]
+        },
+        {
+          "num": "3.4",
+          "title": "Randevu Günü Tapuda Yapılacak İşlemler",
+          "paragraphs": [
+            "Satış işlemi tapunun akit odasında gerçekleştirilir. İmzaların tamamlanmasıyla mülkiyet alıcıya geçer."
+          ],
+          "bullets": [
+            "Yeminli tercüman veya alıcı avukat",
+            "Pasaport ve noter onaylı pasaport tercümesi",
+            "Banka ödeme belgeleri",
+            "Vatandaşlık başvurularında DAB belgesi"
+          ],
+          "steps": [
+            "Varsa noter sözleşmesini okur",
+            "Satış bedelini sorgular",
+            "Ödeme beyanını teyit eder",
+            "Vatandaşlık şerhini sisteme işler",
+            "Taraflardan imzaları alır"
+          ]
+        },
+        {
+          "num": "3.5",
+          "title": "Harçlar ve Masraflar",
+          "paragraphs": [
+            "Tapuya girmeden önce ödenmesi gereken masraflar:"
+          ],
+          "bullets": [
+            "Tapu harcı (genellikle %4)",
+            "Döner sermaye ücreti",
+            "Akit odasında ödeme alınmamaktadır"
+          ]
+        },
+        {
+          "num": "3.6",
+          "title": "Vatandaşlık Dosyası Olan Satışlarda Ek Kontroller",
+          "paragraphs": [
+            "Satışın vatandaşlık amacı taşıması hâlinde ek kontroller uygulanır:"
+          ],
+          "bullets": [
+            "DAB belgesi, satış bedeliyle uyumu açısından kontrol edilir",
+            "Tapu kütüğüne 3 yıl süreyle satış yasağı şerhi konulur"
+          ]
+        }
+      ]
+    },
+    "bolum4": {
+      "eyebrow": "Dördüncü Bölüm",
+      "title": "Uygunluk Belgesi (Taşınmaz Yatırım Tespit Belgesi)",
+      "intro": "Taşınmaz Yatırım Tespit Belgesi; yabancı yatırımcının gerçekleştirdiği taşınmaz alımının, Türk vatandaşlığı için gerekli yatırım şartlarını karşıladığını devletin resmî olarak onayladığı belgedir.",
+      "denetim": {
+        "eyebrow": "4.2 – Belgenin Amacı ve Denetim Kapsamı",
+        "title": "Devletin İnceleme Kapsamı",
+        "bullets": [
+          "Yatırımın fiilen gerçekleşip gerçekleşmediği",
+          "Ödemenin banka sistemi üzerinden yapılıp yapılmadığı",
+          "DAB'ın usulüne uygun düzenlenip düzenlenmediği",
+          "Ekspertiz raporunun gerçeği yansıtıp yansıtmadığı",
+          "Taşınmazın daha önce vatandaşlık başvurusunda kullanılıp kullanılmadığı",
+          "Muvazaalı işlem bulunup bulunmadığı",
+          "Satış bedelinin şişirilip şişirilmediği",
+          "Akraba veya ilişkili taraflar arasında satış olup olmadığı",
+          "Projenin hukuki risk taşıyıp taşımadığı"
+        ]
+      },
+      "process": {
+        "eyebrow": "4.3 – Belgenin Alınma Süreci",
+        "title": "Üç Aşamalı Resmi Süreç",
+        "steps": [
+          {
+            "num": "Adım 1",
+            "title": "Tapu Satışının Gerçekleştirilmesi",
+            "desc": "Satış sırasında ekspertiz raporu sisteme yüklenir, DAB dosyaya eklenir ve tapu kütüğüne 3 yıl satış yasağı şerhi işlenir."
+          },
+          {
+            "num": "Adım 2",
+            "title": "Dosyanın Merkeze Gönderilmesi",
+            "desc": "Tapu müdürlüğü, satış dosyasını TKGM Yabancı İşlemler Birimi'ne iletir. Bu başvuru otomatik olarak gerçekleştirilir."
+          },
+          {
+            "num": "Adım 3",
+            "title": "Uygunluk Kararı",
+            "desc": "Şartların sağlandığı tespit edilirse Taşınmaz Yatırım Tespit Belgesi düzenlenir ve NVİGM'e bildirilir."
+          }
+        ]
+      },
+      "sure": {
+        "title": "İnceleme Süresi",
+        "desc": "İnceleme süresi ortalama 1–2 haftadır."
+      },
+      "sonrasi": {
+        "title": "Belge Çıktıktan Sonraki Aşama",
+        "desc": "Belgenin düzenlenmesiyle yatırım resmî olarak kabul edilir. Ardından ikamet izni başvurusu yapılır ve vatandaşlık sürecine devam edilir."
+      }
+    },
+    "cta": {
+      "title": "Taşınmaz Yatırımınızı Vatandaşlığa Dönüştürün",
+      "description": "Tapu incelemesinden uygunluk belgesine, DAB sürecinden vatandaşlık başvurusuna kadar her adımı hukuki güvenceyle yönetiyoruz.",
+      "primaryCta": "Ücretsiz Danışın",
+      "secondaryCta": "Sık Sorulan Sorular"
     }
   }
 }

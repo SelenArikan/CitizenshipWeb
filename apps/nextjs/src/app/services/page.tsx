@@ -55,21 +55,24 @@ export default async function ServicesShowcase({ lang = "tr" }: { lang?: string 
     <main dir={isRtl ? "rtl" : "ltr"} className="overflow-hidden">
 
       {/* ══ HERO ══ */}
-      <section className="relative bg-[#0a192f] pb-20 pt-36">
-        <div className="pointer-events-none absolute inset-0 opacity-[0.035]" aria-hidden="true"
-          style={{ backgroundImage: "linear-gradient(rgba(255,255,255,1) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,1) 1px,transparent 1px)", backgroundSize: "60px 60px" }} />
+      <section
+        className="relative pb-20 pt-36"
+        style={{ background: "linear-gradient(135deg, #EEF2F8 0%, #F5F8FD 50%, #EBF0F8 100%)" }}
+      >
+        <div className="pointer-events-none absolute inset-0 opacity-[0.06]" aria-hidden="true"
+          style={{ backgroundImage: "radial-gradient(#0a192f 1px, transparent 1px)", backgroundSize: "28px 28px" }} />
         <div className="pointer-events-none absolute inset-0" aria-hidden="true"
-          style={{ background: "radial-gradient(ellipse 70% 60% at 80% 50%,rgba(138,28,28,0.2) 0%,transparent 70%)" }} />
+          style={{ background: "radial-gradient(ellipse 70% 60% at 80% 50%,rgba(138,28,28,0.07) 0%,transparent 70%)" }} />
 
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#8a1c1c]/40 bg-[#8a1c1c]/10 px-4 py-1 text-xs font-bold uppercase tracking-widest text-[#e05a5a]">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#e05a5a]" />
+          <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#8a1c1c]/30 bg-[#8a1c1c]/8 px-4 py-1 text-xs font-bold uppercase tracking-widest text-[#8a1c1c]">
+            <span className="h-1.5 w-1.5 rounded-full bg-[#8a1c1c]" />
             {lbl.heroTag}
           </span>
-          <h1 className="mt-4 max-w-2xl text-5xl font-extrabold leading-[1.1] text-white sm:text-7xl">
+          <h1 className="mt-4 max-w-2xl text-5xl font-extrabold leading-[1.1] text-[#0a192f] sm:text-7xl">
             {lbl.heroTitle}
           </h1>
-          <p className="mt-5 max-w-xl text-lg leading-relaxed text-gray-400">{lbl.heroDesc}</p>
+          <p className="mt-5 max-w-xl text-lg leading-relaxed text-[#0a192f]/60">{lbl.heroDesc}</p>
         </div>
       </section>
 
@@ -130,21 +133,24 @@ export default async function ServicesShowcase({ lang = "tr" }: { lang?: string 
       </section>
 
       {/* ══ CTA ══ */}
-      <section className="relative bg-[#0a192f] py-24">
+      <section
+        className="relative py-24"
+        style={{ background: "linear-gradient(135deg, #F5F8FD 0%, #EEF2F8 60%, #E8EEF6 100%)" }}
+      >
         <div className="pointer-events-none absolute inset-0 opacity-[0.04]" aria-hidden="true"
-          style={{ backgroundImage: "linear-gradient(rgba(255,255,255,0.8) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.8) 1px,transparent 1px)", backgroundSize: "40px 40px" }} />
+          style={{ backgroundImage: "linear-gradient(rgba(10,25,47,0.6) 1px,transparent 1px),linear-gradient(90deg,rgba(10,25,47,0.6) 1px,transparent 1px)", backgroundSize: "40px 40px" }} />
         <div className="pointer-events-none absolute inset-0" aria-hidden="true"
-          style={{ background: "radial-gradient(ellipse 60% 80% at 50% 100%,rgba(138,28,28,0.2) 0%,transparent 70%)" }} />
+          style={{ background: "radial-gradient(ellipse 60% 80% at 50% 100%,rgba(138,28,28,0.08) 0%,transparent 70%)" }} />
         <div className="relative mx-auto max-w-3xl px-4 text-center sm:px-6">
-          <h2 className="text-4xl font-extrabold text-white sm:text-5xl">{lbl.ctaTitle}</h2>
-          <p className="mx-auto mt-5 max-w-xl text-lg text-gray-400">{lbl.ctaDesc}</p>
+          <h2 className="text-4xl font-extrabold text-[#0a192f] sm:text-5xl">{lbl.ctaTitle}</h2>
+          <p className="mx-auto mt-5 max-w-xl text-lg text-[#0a192f]/60">{lbl.ctaDesc}</p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link href={`/${lang}/contact`}
-              className="inline-block rounded-full bg-[#8a1c1c] px-10 py-4 text-base font-bold text-white shadow-lg transition hover:bg-[#a32222] hover:-translate-y-0.5 hover:shadow-[0_8px_30px_rgba(138,28,28,0.4)]">
+              className="inline-block rounded-full bg-[#8a1c1c] px-10 py-4 text-base font-bold text-white shadow-lg transition hover:bg-[#a32222] hover:-translate-y-0.5 hover:shadow-[0_8px_30px_rgba(138,28,28,0.35)]">
               {lbl.ctaBtn}
             </Link>
             <Link href={`/${lang}/questions`}
-              className="inline-block rounded-full border border-white/20 px-10 py-4 text-base font-bold text-white transition hover:border-white/40 hover:bg-white/10">
+              className="inline-block rounded-full border border-[#0a192f]/20 px-10 py-4 text-base font-bold text-[#0a192f] transition hover:border-[#8a1c1c] hover:bg-[#8a1c1c]/5">
               {lbl.faqBtn}
             </Link>
           </div>

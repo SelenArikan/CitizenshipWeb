@@ -10,10 +10,14 @@
   --color-burgundy-light: #a32222;
 
   /* Light navy tint — used for alternating section backgrounds */
-  --color-section-tint: #E8ECF3;
+  --color-section-tint: #EEF2F8;
   /* Card icon bg — derived from navy */
-  --color-icon-bg: #E8ECF3;
-  
+  --color-icon-bg: #EEF2F8;
+
+  /* Light hero / CTA replacement — soft blue-slate, stays bright */
+  --color-hero-light: #F0F4FA;
+  --color-hero-mid:   #E8EEF6;
+
   /* Navy-derived glass utilities */
   --color-glass-dark: rgba(255, 255, 255, 0.85);
   --color-glass-light: rgba(255, 255, 255, 0.96);
@@ -28,6 +32,10 @@
   --color-burgundy-light: var(--color-burgundy-light);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-section-tint: var(--color-section-tint);
+  --color-icon-bg: var(--color-icon-bg);
+  --color-hero-light: var(--color-hero-light);
+  --color-hero-mid: var(--color-hero-mid);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }

@@ -85,35 +85,38 @@ export default async function AboutPageContent({ lang }: { lang: string }) {
       {/* ══════════════════════════════════════════════════
           HERO — split layout
       ══════════════════════════════════════════════════ */}
-      <section className="relative min-h-[75vh] bg-[#0a192f]" id="about-hero">
-        {/* Noise-like grid */}
+      <section
+        className="relative min-h-[75vh]"
+        id="about-hero"
+        style={{ background: "linear-gradient(135deg, #EEF2F8 0%, #F5F8FD 50%, #EBF0F8 100%)" }}
+      >
+        {/* Subtle dot grid */}
         <div
-          className="pointer-events-none absolute inset-0 opacity-[0.035]"
+          className="pointer-events-none absolute inset-0 opacity-[0.06]"
           aria-hidden="true"
           style={{
-            backgroundImage:
-              "linear-gradient(rgba(255,255,255,1) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,1) 1px,transparent 1px)",
-            backgroundSize: "60px 60px",
+            backgroundImage: "radial-gradient(#0a192f 1px, transparent 1px)",
+            backgroundSize: "28px 28px",
           }}
         />
-        {/* Right burgundy wash */}
+        {/* Right burgundy wash — lighter */}
         <div
           className="pointer-events-none absolute inset-y-0 right-0 w-1/2"
           aria-hidden="true"
           style={{
             background:
-              "radial-gradient(ellipse 80% 70% at 80% 50%, rgba(138,28,28,0.22) 0%, transparent 70%)",
+              "radial-gradient(ellipse 80% 70% at 80% 50%, rgba(138,28,28,0.07) 0%, transparent 70%)",
           }}
         />
 
         <div className="relative mx-auto flex min-h-[75vh] max-w-7xl flex-col justify-end px-4 pb-20 pt-36 sm:px-6 lg:flex-row lg:items-center lg:pb-0 lg:px-8">
           {/* Left: text */}
           <div className="flex-1 lg:pr-16">
-            <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#8a1c1c]/40 bg-[#8a1c1c]/10 px-4 py-1 text-xs font-bold uppercase tracking-widest text-[#e05a5a]">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#e05a5a]" />
+            <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#8a1c1c]/30 bg-[#8a1c1c]/8 px-4 py-1 text-xs font-bold uppercase tracking-widest text-[#8a1c1c]">
+              <span className="h-1.5 w-1.5 rounded-full bg-[#8a1c1c]" />
               {d.hero_tag ?? "Hakkımızda"}
             </span>
-            <h1 className="mt-4 text-5xl font-extrabold leading-[1.1] text-white sm:text-6xl md:text-7xl lg:text-8xl">
+            <h1 className="mt-4 text-5xl font-extrabold leading-[1.1] text-[#0a192f] sm:text-6xl md:text-7xl lg:text-8xl">
               {d.hero_title ?? "Biz"}&nbsp;
               <span
                 style={{
@@ -124,29 +127,28 @@ export default async function AboutPageContent({ lang }: { lang: string }) {
                 {lang === "tr" ? "Kimiz" : lang === "en" ? "Who" : lang === "ar" ? "من نحن" : lang === "fa" ? "کی‌ایم" : "Кто мы"}
               </span>
             </h1>
-            <p className="mt-6 max-w-lg text-lg leading-relaxed text-gray-400">
+            <p className="mt-6 max-w-lg text-lg leading-relaxed text-[#0a192f]/60">
               {d.story_p1 ?? "CitizenshipWeb, 2013 yılından bu yana Türkiye vatandaşlık hukuku alanında saygın bir danışmanlık firmasıdır."}
             </p>
             <div className="mt-10 flex flex-wrap gap-3">
               {stats.map((s) => (
-                <div key={s.label} className="rounded-2xl border border-white/10 bg-white/5 px-6 py-4 text-center backdrop-blur-sm">
-                  <p className="text-2xl font-extrabold text-[#e05a5a]">{s.num}</p>
-                  <p className="mt-0.5 text-xs font-semibold text-gray-400">{s.label}</p>
+                <div key={s.label} className="rounded-2xl border border-[#0a192f]/10 bg-white/80 px-6 py-4 text-center shadow-sm backdrop-blur-sm">
+                  <p className="text-2xl font-extrabold text-[#8a1c1c]">{s.num}</p>
+                  <p className="mt-0.5 text-xs font-semibold text-[#0a192f]/50">{s.label}</p>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Right: decorative vertical line + quote card */}
+          {/* Right: quote card */}
           <div className="mt-12 flex-shrink-0 lg:mt-0 lg:w-80">
-            <div className="relative rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-md">
-              {/* Red top bar */}
+            <div className="relative rounded-3xl border border-[#0a192f]/10 bg-white/70 p-8 shadow-md backdrop-blur-md">
               <div className="mb-5 h-1 w-12 rounded-full bg-[#8a1c1c]" />
-              <p className="text-base leading-relaxed text-gray-300 italic">
+              <p className="text-base leading-relaxed text-[#0a192f]/70 italic">
                 "Müvekkillerimizin vatandaşlık süreçlerini en verimli ve hızlı şekilde sonuçlandırmak amacıyla uzmanlaşmış departmanlarla çalışıyoruz."
               </p>
-              <p className="mt-5 text-sm font-bold text-white">Av. Necmettin Barman</p>
-              <p className="text-xs text-[#e05a5a]">Kurucu Avukat</p>
+              <p className="mt-5 text-sm font-bold text-[#0a192f]">Av. Necmettin Barman</p>
+              <p className="text-xs text-[#8a1c1c]">Kurucu Avukat</p>
             </div>
           </div>
         </div>
@@ -189,33 +191,37 @@ export default async function AboutPageContent({ lang }: { lang: string }) {
       {/* ══════════════════════════════════════════════════
           VALUES — dark with large numbers
       ══════════════════════════════════════════════════ */}
-      <section className="relative bg-[#0a192f] py-24 lg:py-32" id="about-values">
-        {/* Subtle diagonal lines bg */}
+      <section
+        className="relative py-24 lg:py-32"
+        id="about-values"
+        style={{ background: "linear-gradient(135deg, #E8EEF6 0%, #EEF2F8 50%, #F0F5FA 100%)" }}
+      >
+        {/* Subtle diagonal lines */}
         <div
-          className="pointer-events-none absolute inset-0 opacity-[0.03]"
+          className="pointer-events-none absolute inset-0 opacity-[0.04]"
           aria-hidden="true"
           style={{
-            backgroundImage: "repeating-linear-gradient(45deg, #fff 0, #fff 1px, transparent 0, transparent 50%)",
+            backgroundImage: "repeating-linear-gradient(45deg, #0a192f 0, #0a192f 1px, transparent 0, transparent 50%)",
             backgroundSize: "24px 24px",
           }}
         />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-16 flex flex-col items-start lg:flex-row lg:items-end lg:justify-between">
             <div>
-              <span className="mb-3 inline-block text-xs font-bold uppercase tracking-widest text-[#e05a5a]">
+              <span className="mb-3 inline-block text-xs font-bold uppercase tracking-widest text-[#8a1c1c]">
                 {d.values_tag ?? "Değerlerimiz"}
               </span>
-              <h2 className="text-4xl font-extrabold text-white sm:text-5xl">
+              <h2 className="text-4xl font-extrabold text-[#0a192f] sm:text-5xl">
                 {d.values_title ?? "Çalışma Felsefemiz"}
               </h2>
             </div>
           </div>
 
-          <div className="grid gap-px lg:grid-cols-3" style={{ background: "rgba(255,255,255,0.07)" }}>
+          <div className="grid gap-4 lg:grid-cols-3">
             {values.map((val, idx) => (
               <div
                 key={val.title}
-                className="reveal reveal-fade-up group relative flex flex-col bg-[#0a192f] p-10 transition hover:bg-[#0e2240]"
+                className="reveal reveal-fade-up group relative flex flex-col rounded-3xl border border-[#0a192f]/8 bg-white/80 p-10 shadow-sm backdrop-blur-sm transition hover:-translate-y-1 hover:shadow-md"
                 style={{ transitionDelay: `${idx * 80}ms` }}
               >
                 {/* Large index number */}
@@ -223,19 +229,19 @@ export default async function AboutPageContent({ lang }: { lang: string }) {
                   className="mb-6 block font-extrabold leading-none select-none"
                   style={{
                     fontSize: "clamp(4rem,8vw,7rem)",
-                    WebkitTextStroke: "2px rgba(180,40,40,0.65)",
-                    color: "rgba(138,28,28,0.12)",
+                    WebkitTextStroke: "2px rgba(138,28,28,0.30)",
+                    color: "rgba(138,28,28,0.06)",
                     lineHeight: 1,
                   }}
                 >
                   0{idx + 1}
                 </span>
                 {/* Icon */}
-                <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-[#8a1c1c]/20 text-[#e05a5a]">
+                <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-[#8a1c1c]/10 text-[#8a1c1c]">
                   {VALUE_CONFIG[idx]?.icon}
                 </div>
-                <h3 className="mb-3 text-xl font-bold text-white">{val.title}</h3>
-                <p className="text-sm leading-relaxed text-gray-400">{val.desc}</p>
+                <h3 className="mb-3 text-xl font-bold text-[#0a192f]">{val.title}</h3>
+                <p className="text-sm leading-relaxed text-[#0a192f]/60">{val.desc}</p>
                 {/* Bottom accent line */}
                 <div className="mt-auto pt-8">
                   <div className="h-px w-0 bg-[#8a1c1c] transition-all duration-500 group-hover:w-full" />
@@ -265,7 +271,8 @@ export default async function AboutPageContent({ lang }: { lang: string }) {
             {TEAM.filter((m) => m.founder).map((m) => (
               <div
                 key={m.name}
-                className="reveal reveal-fade-up group relative overflow-hidden rounded-3xl bg-[#0a192f] p-8 shadow-xl"
+                className="reveal reveal-fade-up group relative overflow-hidden rounded-3xl p-8 shadow-md border border-[#0a192f]/10"
+                style={{ background: "linear-gradient(135deg, #EEF2F8 0%, #F0F4FA 100%)" }}
               >
                 {/* Hover glow */}
                 <div
@@ -282,10 +289,10 @@ export default async function AboutPageContent({ lang }: { lang: string }) {
                     {m.initials}
                   </div>
                   <div>
-                    <p className="text-xl font-bold text-white">{m.name}</p>
-                    <p className="mt-1 text-sm font-semibold text-[#e05a5a]">{m.title}</p>
+                    <p className="text-xl font-bold text-[#0a192f]">{m.name}</p>
+                    <p className="mt-1 text-sm font-semibold text-[#8a1c1c]">{m.title}</p>
                     {m.langs && (
-                      <span className="mt-3 inline-block rounded-full bg-white/10 px-3 py-0.5 text-xs font-bold text-gray-300">
+                      <span className="mt-3 inline-block rounded-full bg-[#0a192f]/8 px-3 py-0.5 text-xs font-bold text-[#0a192f]/60">
                         {m.langs}
                       </span>
                     )}
@@ -328,36 +335,40 @@ export default async function AboutPageContent({ lang }: { lang: string }) {
       {/* ══════════════════════════════════════════════════
           CTA — full-bleed dark with diagonal cut
       ══════════════════════════════════════════════════ */}
-      <section className="relative bg-[#0a192f] py-24" id="about-cta">
+      <section
+        className="relative py-24"
+        id="about-cta"
+        style={{ background: "linear-gradient(135deg, #F5F8FD 0%, #EEF2F8 60%, #E8EEF6 100%)" }}
+      >
         <div
           className="pointer-events-none absolute inset-0 opacity-[0.04]"
           aria-hidden="true"
           style={{
             backgroundImage:
-              "linear-gradient(rgba(255,255,255,0.8) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.8) 1px,transparent 1px)",
+              "linear-gradient(rgba(10,25,47,0.6) 1px,transparent 1px),linear-gradient(90deg,rgba(10,25,47,0.6) 1px,transparent 1px)",
             backgroundSize: "40px 40px",
           }}
         />
         <div
           className="pointer-events-none absolute inset-0"
           aria-hidden="true"
-          style={{ background: "radial-gradient(ellipse 60% 80% at 50% 100%, rgba(138,28,28,0.2) 0%, transparent 70%)" }}
+          style={{ background: "radial-gradient(ellipse 60% 80% at 50% 100%, rgba(138,28,28,0.08) 0%, transparent 70%)" }}
         />
         <div className="relative mx-auto max-w-3xl px-4 text-center sm:px-6">
-          <h2 className="text-4xl font-extrabold leading-tight text-white sm:text-5xl">
+          <h2 className="text-4xl font-extrabold leading-tight text-[#0a192f] sm:text-5xl">
             {d.cta_title ?? "Dosyanızı Bizimle Başlatın"}
           </h2>
-          <p className="mx-auto mt-5 max-w-xl text-lg text-gray-400">{d.cta_desc}</p>
+          <p className="mx-auto mt-5 max-w-xl text-lg text-[#0a192f]/60">{d.cta_desc}</p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
               href={`/${lang}/contact`}
-              className="inline-block rounded-full bg-[#8a1c1c] px-10 py-4 text-base font-bold text-white shadow-lg transition hover:bg-[#a32222] hover:-translate-y-0.5 hover:shadow-[0_8px_30px_rgba(138,28,28,0.4)]"
+              className="inline-block rounded-full bg-[#8a1c1c] px-10 py-4 text-base font-bold text-white shadow-lg transition hover:bg-[#a32222] hover:-translate-y-0.5 hover:shadow-[0_8px_30px_rgba(138,28,28,0.35)]"
             >
               {d.cta_btn ?? "Ücretsiz Ön Değerlendirme"}
             </a>
             <a
               href={`/${lang}/questions`}
-              className="inline-block rounded-full border border-white/20 px-10 py-4 text-base font-bold text-white transition hover:border-white/40 hover:bg-white/10"
+              className="inline-block rounded-full border border-[#0a192f]/20 px-10 py-4 text-base font-bold text-[#0a192f] transition hover:border-[#8a1c1c] hover:bg-[#8a1c1c]/5"
             >
               {lang === "tr" ? "SSS" : lang === "en" ? "FAQ" : lang === "ru" ? "FAQ" : "SSS"}
             </a>

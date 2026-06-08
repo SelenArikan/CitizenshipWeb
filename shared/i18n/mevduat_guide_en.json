@@ -1,0 +1,246 @@
+{
+  "hero": {
+    "breadcrumbLabel": "Citizenship via Bank Deposit",
+    "tag": "Citizenship by Investment",
+    "titleLines": ["Bank Deposit Account", "for Turkish Citizenship"],
+    "highlightLineIndex": 1,
+    "summary": "We manage the legal and administrative aspects of acquiring Turkish citizenship end-to-end by maintaining USD 500,000 in a Turkish bank for 3 years.",
+    "primaryCta": "Free Consultation",
+    "secondaryCta": "Frequently Asked Questions",
+    "imageAlt": "Turkish Citizenship via Bank Deposit"
+  },
+  "stats": [
+    { "value": "USD 500,000", "label": "Minimum Deposit", "sub": "or equivalent foreign currency" },
+    { "value": "3 Years", "label": "Holding Requirement", "sub": "block / commitment" },
+    { "value": "BDDK", "label": "Competent Authority", "sub": "conformity certificate" },
+    { "value": "5–6 Months", "label": "Average Process", "sub": "application completion" }
+  ],
+  "intro": {
+    "eyebrow": "About the Process",
+    "title": "Turkish Citizenship Application by Investment",
+    "paragraphs": [
+      "Turkish citizenship by investment is a type of application made under the exceptional citizenship provisions of the Turkish Citizenship Law, through the use of certain investment instruments stipulated by the law.",
+      "The first and most critical step in this process is correctly identifying which investment instrument will be used to apply for citizenship. Depending on the type of investment, both the method of making the investment 'eligible for citizenship' and the institution issuing the conformity certificate differ."
+    ],
+    "imageAlt": "Turkish citizenship via deposit investment",
+    "cardValue": "BDDK Approved",
+    "cardLabel": "Conformity Certificate Process",
+    "badgeValue": "500K$",
+    "badgeLabel": "Minimum Threshold"
+  },
+  "overview": {
+    "eyebrow": "Overview",
+    "title": "The Framework of the Citizenship Process",
+    "paragraphs": [
+      "The official document proving that the investment was made in accordance with citizenship criteria is referred to in practice as the 'Conformity Certificate'. For investments made by holding money in a bank deposit account, the relevant institution for issuing the conformity certificate and determining the eligibility of the investment is the BDDK.",
+      "Our office manages the entire process of structuring the investment from start to finish in compliance with legislation, making it eligible for citizenship, correctly establishing the required official records and transaction flow, and ultimately obtaining the conformity certificate from the relevant institution."
+    ],
+    "bullets": [
+      "Making the investment correctly according to citizenship legislation",
+      "Obtaining the conformity certificate",
+      "Residence permit for the investor and family",
+      "Submitting the civil registry/citizenship application",
+      "Following up on the completion of the process",
+      "Completing identity and passport procedures"
+    ]
+  },
+  "process": {
+    "eyebrow": "Step-by-Step Process",
+    "title": "Citizenship via Bank Deposit Method",
+    "description": "In this method, the attorney's role does not end when 'money is deposited in the bank'; the transaction flow constituting the foundational element of the application must be correctly established and made verifiable in compliance with the legislation.",
+    "items": [
+      {
+        "num": "01",
+        "icon": "🏦",
+        "title": "Selection of Investment Instrument and Process Planning",
+        "desc": "The investor's country situation, family structure, plans for entry/exit to Turkey, availability of documents, possibility of transactions with power of attorney, and the financial/operational details of the investment are evaluated together."
+      },
+      {
+        "num": "02",
+        "icon": "💱",
+        "title": "Bank Selection and Account Opening",
+        "desc": "A deposit account is opened in their name at a bank operating in Turkey, with a minimum of USD 500,000 or equivalent foreign currency. It is critically important that money transfers and foreign currency transactions are made using the correct method."
+      },
+      {
+        "num": "03",
+        "icon": "🔒",
+        "title": "Establishment of 3-Year Block / Commitment",
+        "desc": "A 3-year block/commitment is established on the relevant amount. The block-commitment texts and bank correspondence must be prepared in compliance with legislation."
+      },
+      {
+        "num": "04",
+        "icon": "📜",
+        "title": "BDDK Conformity Certificate",
+        "desc": "The Conformity Certificate attesting to the eligibility of the deposit investment is obtained. For this method, the eligibility determination process is conducted within the BDDK framework."
+      },
+      {
+        "num": "05",
+        "icon": "🏛️",
+        "title": "J-Clause Residence Permit",
+        "desc": "After the conformity certificate, a J-clause residence permit application is made for the investor and their spouse. Physical presence in Turkey is required to collect fingerprint data."
+      },
+      {
+        "num": "06",
+        "icon": "🇹🇷",
+        "title": "Citizenship Application (VAT-4)",
+        "desc": "After obtaining the residence permit, an exceptional citizenship application (VAT-4) is filed. Applicants are personally present at the civil registry office, where photo and fingerprint procedures are completed."
+      }
+    ]
+  },
+  "risks": {
+    "eyebrow": "Critical Risks",
+    "title": "Most Critical Risks in This Method",
+    "description": "Despite the money being deposited, incorrectly establishing the block/commitment mechanism or failing to properly document the movement of money directly jeopardizes the process.",
+    "items": [
+      {
+        "title": "Incorrectly Establishing the Block Mechanism",
+        "desc": "Withdrawing the money or lifting the block before 3 years violates the investment requirement. The mechanism must be correctly established from the outset."
+      },
+      {
+        "title": "Incorrect Documentation of Money Movement",
+        "desc": "Failure to properly prepare foreign currency transfer documents and purchase/sale documents may disrupt the conformity certificate application."
+      },
+      {
+        "title": "Insufficient Preparation of Bank Contracts",
+        "desc": "Commitment texts that do not meet citizenship legislation requirements may lead to rejection of the application."
+      },
+      {
+        "title": "Early Withdrawal or Transfer",
+        "desc": "Any withdrawal or transfer to another bank within the 3-year period breaks the commitment and causes loss of the citizenship right."
+      }
+    ]
+  },
+  "bes": {
+    "eyebrow": "Alternative Method",
+    "title": "USD 500,000 Investment via the BES System",
+    "paragraphs": [
+      "In the BES method, the investor joins a BES plan labeled 'citizenship' through an insurance company and deposits at least USD 500,000 or equivalent foreign currency as a contribution.",
+      "The money flow, in compliance with legislation, generally involves depositing foreign currency in a bank, converting it to Turkish Lira through sale to the Central Bank of Turkey, and the 3-year period begins from the date the contract takes effect with the transfer of the contribution to the insurance company.",
+      "The Conformity Certificate/conformity letter confirming that the investment was made in accordance with citizenship criteria is issued by SEDDK in this method."
+    ],
+    "restrictionsTitle": "Restrictions for the First 3 Years",
+    "restrictions": [
+      "Transfer to another company cannot be made in the first 3 years",
+      "Plan changes cannot be made",
+      "Restrictions exist for certain fund types (funds labeled 'foreign' or 'external debt instruments')",
+      "Exiting the system before 3 years jeopardizes the citizenship process"
+    ],
+    "officeRoleTitle": "Our Office's Role in the BES Method",
+    "officeRole": [
+      "Selection of the insurance company and structuring the contract in accordance with the citizenship plan",
+      "Correct documentation of the bank-Central Bank foreign currency sale process",
+      "Organizing the contribution to meet the 'cash transfer' requirement",
+      "Managing the first 3-year restrictions for the investor clearly and in writing",
+      "Complete filing of the SEDDK conformity letter application",
+      "Integrated follow-up of residence permit and citizenship applications"
+    ]
+  },
+  "postApproval": {
+    "eyebrow": "Post-Application",
+    "title": "Process After the Conformity Certificate",
+    "paragraphs": [
+      "After the conformity certificate is obtained, the documents required for the citizenship application are prepared. While the document list generally has a standard framework, each file may differ based on the applicant's country, number of family members, and the practices of the relevant country's consulate.",
+      "After the citizenship application is approved, a Turkish identity card and passport application is filed for the applicants and family members who have acquired Turkish citizenship as of the approval date. Processing through civil registry offices in Turkey is completed much more quickly."
+    ],
+    "bullets": [
+      "Preparation of the citizenship file",
+      "Organization of the civil registry application",
+      "Obtaining passport and identity card appointments",
+      "Inclusion of all family members in the process"
+    ]
+  },
+  "whoCanApply": {
+    "eyebrow": "Application Conditions",
+    "title": "Who Can Acquire Citizenship?",
+    "conditionsTitle": "Application Conditions",
+    "conditions": [
+      "To be of legal age (18 years old)",
+      "To have capacity to act",
+      "To have no objection from a public security standpoint"
+    ],
+    "familyTitle": "Who Can Acquire Citizenship Together with the Investor?",
+    "family": [
+      "Spouse",
+      "Children under 18 (21 for Egyptian nationals, 19 for Algerian nationals)"
+    ],
+    "cannotTitle": "Who Cannot Acquire Citizenship This Way?",
+    "cannot": [
+      "Persons under 18 applying alone",
+      "Persons deemed objectionable from a public security standpoint due to open criminal records",
+      "Those who have not made the investment as stipulated by the legislation",
+      "Those who violate the 3-year holding requirement (citizenship is subsequently revoked)"
+    ],
+    "specialTitle": "Exceptional Cases",
+    "special": [
+      "In cases of multiple marriages, only the first spouse is entitled to citizenship",
+      "Children from the second/third/fourth spouse can acquire citizenship together with the investor",
+      "Children born out of wedlock can also apply together with the investor",
+      "Additional documents are requested in exceptional cases"
+    ]
+  },
+  "serviceScope": {
+    "eyebrow": "Our Service Scope",
+    "title": "End-to-End Management",
+    "items": [
+      "Selection of investment method and process planning",
+      "Coordination of bank selection and account opening",
+      "Correct execution of money transfer/foreign currency transactions",
+      "Preparation of 3-year block-commitment texts in compliance with legislation",
+      "Control and guidance of bank correspondence",
+      "Complete conduct of the BDDK conformity certificate process",
+      "Structuring of contracts for BES investments in accordance with citizenship",
+      "Filing of the SEDDK conformity letter application",
+      "Preparation and follow-up of residence permit application",
+      "Preparation of citizenship file and organization of civil registry application",
+      "End-to-end management of the process including identity and passport application"
+    ]
+  },
+  "faq": {
+    "eyebrow": "Frequently Asked Questions",
+    "title": "Common Questions",
+    "items": [
+      {
+        "q": "What is the most critical point when selecting an investment method?",
+        "a": "The most critical point is making the investment 'eligible for citizenship'. Making the investment alone is not sufficient; the payment flow, official records, and conformity certificate process must be correctly established."
+      },
+      {
+        "q": "Why is the conformity certificate so important?",
+        "a": "The conformity certificate is the document that officially confirms that your investment meets the citizenship criteria. It is the main supporting document proving the investment criterion in the citizenship file."
+      },
+      {
+        "q": "Which institution issues the conformity certificate?",
+        "a": "It varies by investment type. For bank deposits, BDDK; for the BES method, SEDDK; for real estate, the land registry processes conduct the eligibility process."
+      },
+      {
+        "q": "Is it mandatory to come to Turkey for the J-clause residence permit?",
+        "a": "Yes. Since fingerprint data is processed into the Immigration Administration system, the investor and their spouse, if any, must physically come to Turkey."
+      },
+      {
+        "q": "Is it necessary to be in Turkey during the citizenship application as well?",
+        "a": "Yes. Applicants (except children) are personally present at the civil registry office, sign documents, and photo and fingerprint procedures are carried out."
+      },
+      {
+        "q": "How long does the process take?",
+        "a": "Although completion times vary periodically, in practice an average of 5–6 months is discussed for most files. The duration may extend or shorten depending on the country situation, reviews, and clarity of documents."
+      },
+      {
+        "q": "Can all transactions be carried out with a power of attorney?",
+        "a": "Yes, all transactions can be conducted with a power of attorney, but due to biometric procedures in residence permit and citizenship applications, the applicant and their spouse must physically participate in the processes at least twice. The two appointments generally take place within one week."
+      },
+      {
+        "q": "Can I withdraw the money before 3 years?",
+        "a": "No. Lifting the block or withdrawing the money before 3 years violates the investment requirement; this results in revocation of citizenship even if citizenship has already been granted."
+      },
+      {
+        "q": "Where can the identity card and passport be obtained after citizenship approval?",
+        "a": "Application can be made at civil registry offices in Turkey or, depending on the conditions, through Turkey's foreign representations. Processing through offices in Turkey is completed much more quickly."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Start Your File?",
+    "description": "Our office manages every step of your deposit investment from start to delivery of your identity/passport on your behalf.",
+    "primaryCta": "Free Consultation",
+    "secondaryCta": "View FAQs"
+  }
+}

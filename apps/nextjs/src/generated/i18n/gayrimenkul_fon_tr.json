@@ -1,0 +1,366 @@
+{
+  "hero": {
+    "breadcrumbLabel": "Taşınmaz Satın Alımı ile Vatandaşlık",
+    "tag": "Yatırım Yoluyla Vatandaşlık",
+    "summary": "400.000 USD değerinde gayrimenkul alımından uygunluk belgesine kadar tapu incelemesi, DAB süreci ve resmi başvuru aşamalarının tamamını hukuki güvenceyle yönetiyoruz.",
+    "primaryCta": "Ücretsiz Danışın",
+    "secondaryCta": "Sık Sorulan Sorular"
+  },
+  "bolum1": {
+    "eyebrow": "Birinci Bölüm",
+    "title": "Taşınmazın Vatandaşlığa Uygunluğunun Araştırılması ve Tespiti",
+    "intro": [
+      "Vatandaşlık sürecinde en kritik aşama, satın alınacak gayrimenkule ilişkin satın alma öncesinde yapılan hukuki ve teknik incelemedir.",
+      "Bir taşınmazın fiyatı 400.000 USD olsa bile, vatandaşlık mevzuatında yer alan yatırım yoluyla vatandaşlık başvuru kılavuzuna uygun değilse vatandaşlık başvurusu reddedilir. Bu nedenle yatırım öncesinde, taşınmazın vatandaşlığa uygunluğunun mutlaka araştırılması ve resmi olarak doğrulanması gerekmektedir.",
+      "Bu incelemeyi tam anlamıyla ancak avukat yapabilir. Avukat, Web Tapu üzerinden satın alınacak tapunun incelenmesi için randevu talep ederek tapu idaresinde ve belediye nezdinde bizzat incelemelerini gerçekleştirebilir."
+    ],
+    "tapu": {
+      "eyebrow": "1.1 – Tapu Hukuki Durum İncelemesi",
+      "title": "Tapu Kaydı Detaylı İnceleme",
+      "items": [
+        {
+          "num": "1.1.1",
+          "title": "İpotek Kaydı",
+          "paragraphs": [
+            "Tapu üzerine şerh edilmiş bir ipotek var mı?",
+            "Satıcının şirket olduğu durumlarda, projeler genellikle banka kredisi ile finanse edildiğinden taşınmaz üzerinde banka ipoteği bulunabilmektedir. Vatandaşlık başvurusu açısından, satış işlemi gerçekleştirilmeden önce söz konusu banka ipoteğinin mutlaka terkin (fek) edilmesi gerekmektedir."
+          ]
+        },
+        {
+          "num": "1.1.2",
+          "title": "Haciz Kaydı",
+          "paragraphs": [
+            "Tapu üzerinde bir haciz var mı?",
+            "Haciz; taşınmaz sahibinin borçları nedeniyle icra müdürlüğü tarafından konulan kısıtlamadır."
+          ],
+          "bullets": [
+            "Vergi ve emlak borcu kaynaklı hacizler",
+            "Şirket veya şahsa olan borca ilişkin icra takibi ya da fatura borçlarından kaynaklanan hacizler"
+          ]
+        },
+        {
+          "num": "1.1.3",
+          "title": "Diğer Şerhler",
+          "paragraphs": [
+            "Şerh; tapuya işlenen ve üçüncü kişilere karşı ileri sürülebilen hak veya kısıtlamalardır. Bu tür kayıtlar devir işlemini tamamen engelleyebilir ya da özel izin gerektireceğinden, tapu alımından önce mutlaka uzman bir avukat tarafından incelenmelidir."
+          ]
+        },
+        {
+          "num": "1.1.4",
+          "title": "Daha Önce Vatandaşlık İçin Kullanılmış mı?",
+          "paragraphs": [
+            "Türk vatandaşlığı kapsamında satın alınan taşınmazlara genellikle 3 yıl süreyle satış yasağı şerhi konulmaktadır. Aynı taşınmaz ikinci kez vatandaşlık başvurusunda kullanılamaz."
+          ],
+          "bullets": [
+            "Taşınmazın daha önce vatandaşlık dosyasına konu olup olmadığı",
+            "3 yıllık satış yasağı şerhinin bulunup bulunmadığı"
+          ]
+        }
+      ]
+    },
+    "sherhler": {
+      "eyebrow": "Şerh Türleri",
+      "title": "Dikkat Edilmesi Gereken Şerh Çeşitleri",
+      "items": [
+        {
+          "title": "Satış Vaadi Şerhi",
+          "desc": "Taşınmazın önceden başka bir kişiye noterden satıldığını ve tapunun ileriki bir tarihte devredileceğini gösteren şerhtir."
+        },
+        {
+          "title": "İhtiyati Tedbir Şerhi",
+          "desc": "Taşınmaz malikinin devam eden bir davası nedeniyle satışın engellenmiş olabileceğini gösterir."
+        },
+        {
+          "title": "Kat Karşılığı İnşaat Sözleşmesi Şerhi",
+          "desc": "Taşınmaz inşaatının hâlâ devam ettiğini ve inşaatın belirli bir aşamaya geldiğinde tapuların devredilebileceğini gösteren sözleşmeye işaret eder."
+        },
+        {
+          "title": "Mahkeme Tedbir Kararı",
+          "desc": "Mahkeme tarafından verilen ve taşınmazın satışını veya devrini geçici olarak durduran karardır."
+        },
+        {
+          "title": "İflas Şerhi",
+          "desc": "Taşınmaz sahibinin iflas etmiş olması nedeniyle tapuya konulan kayıttır."
+        },
+        {
+          "title": "Kamulaştırma Şerhi",
+          "desc": "Devletin kamu yararı nedeniyle taşınmazı kamulaştırma sürecinde olduğunu gösteren kayıttır."
+        },
+        {
+          "title": "Kültür Varlığı / Sit Alanı Kaydı",
+          "desc": "Taşınmazın kültürel veya tarihî değeri bulunduğunu ve koruma altında olduğunu gösterir."
+        },
+        {
+          "title": "Askerî Yasak Bölge Kaydı",
+          "desc": "Taşınmazın askerî güvenlik açısından sınırlı bölgede bulunduğunu gösterir."
+        }
+      ]
+    },
+    "tapuTuru": {
+      "eyebrow": "1.2 – Tapu Türünün Vatandaşlığa Uygunluğu",
+      "title": "Kat Mülkiyeti / Kat İrtifakı Zorunluluğu",
+      "paragraphs": [
+        "Tapunun niteliği, vatandaşlık başvurusu açısından mutlaka kontrol edilmelidir. Taşınmazın kat mülkiyetli veya kat irtifaklı olması esastır.",
+        "Boş arsa satın almak, tek başına vatandaşlık için uygun kabul edilmez."
+      ],
+      "arsaTitle": "Arsa ile Başvuru İçin Zorunlu Koşullar",
+      "arsaBullets": [
+        "Arsa üzerinde ruhsatlı bir projenin bulunması",
+        "İnşaat için belediye onaylarının alınmış olması",
+        "Kat irtifakının kurulmuş olması",
+        "Bağımsız bölümlerin projede açıkça belirlenmiş olması",
+        "Ödemenin banka üzerinden yapılıp DAB ile ispatlanması",
+        "Değerleme raporunun vatandaşlık için gerekli asgari tutarı karşılaması"
+      ]
+    },
+    "noter": {
+      "eyebrow": "1.3 – Noter Sözleşmesiyle Vatandaşlık",
+      "title": "Taksitli Satışlarda Tercih Edilen Yöntem",
+      "paragraphs": [
+        "Taşınmazın mutlaka bir proje kapsamında olması gerekmektedir. İnşaatın ruhsatlı olması ve kat irtifakının kurulmuş bulunması zorunludur.",
+        "Değerleme raporunun en az 400.000 USD tutarını karşılaması zorunludur.",
+        "Noter sözleşmesi yöntemi, uygulamada genellikle taksitli satışlarda tercih edilmektedir.",
+        "Özellikle inşaatı devam eden projelerde, bazı şirketler tapu devrini teslim aşamasına kadar gerçekleştirmediğinden bu yöntem kullanılmaktadır.",
+        "Kat irtifakı tapuları şirket adına tescil edildikten sonra noter satış sözleşmesi imzalanabilir."
+      ]
+    },
+    "ekspertiz": {
+      "eyebrow": "1.4 – Ekspertiz Ön Değerlendirmesi",
+      "title": "Değerleme Raporu ve Geçerli Tutar Hesaplama",
+      "paragraphs": [
+        "Tek bir taşınmazla vatandaşlık başvurusu yapılıyorsa; GEDAŞ tarafından, satıcının e-Devlet girişi üzerinden Web Tapu aracılığıyla çevrimiçi değerleme raporu talep edilir.",
+        "Taşınmazın değeri asgari yatırım tutarını karşılıyorsa, raporun son sayfasında uygunluk ibaresi yer alır.",
+        "Birden fazla taşınmazla başvuru yapılması hâlinde her taşınmaz için ayrı değerleme raporu düzenlenir.",
+        "Değerleme raporu yalnızca vatandaşlık amacıyla satın alınan taşınmazlar için zorunludur."
+      ],
+      "formula": {
+        "title": "Geçerli Yatırım Tutarı Hesaplama Formülü",
+        "desc": "DAB tutarı değerleme raporundan düşükse DAB tutarı esas alınır. Değerleme raporu daha düşükse rapor tutarı esas alınır. Geçerli tutar: ikisinden hangisi daha düşükse odur."
+      }
+    }
+  },
+  "bolum2": {
+    "eyebrow": "İkinci Bölüm",
+    "title": "Yabancıya Tapu Satışı ve Ödeme Süreçleri (DAB ve Banka İşlemleri)",
+    "items": [
+      {
+        "num": "2.1",
+        "title": "Yabancı Alıcının Banka Hesabı",
+        "paragraphs": [
+          "Türkiye'de yabancı alıcının banka hesabı açması hukuken zorunlu değildir. Ancak özellikle ikinci el satışlarda ve vatandaşlık yatırımı kapsamında hesap açılması şiddetle tavsiye edilir.",
+          "Sebep: Döviz Alım Belgesi (DAB), yatırımın banka sistemi üzerinden gerçekleştiğini gösteren temel belgedir."
+        ]
+      },
+      {
+        "num": "2.2",
+        "title": "Döviz Alım Belgesi (DAB) Süreci",
+        "paragraphs": [],
+        "steps": [
+          "Yabancı alıcı, Türkiye'de hesabının bulunduğu bankaya gider.",
+          "Satın alma bedelini bankaya yatırır.",
+          "Banka dövizi Türk Lirasına çevirir.",
+          "Banka, Döviz Alım Belgesi (DAB) düzenler."
+        ],
+        "bullets": [
+          "Alıcının adı ve pasaport numarası",
+          "Satın alınacak taşınmaza ilişkin bilgiler",
+          "Döviz tutarı ve Türk Lirası karşılığı"
+        ]
+      },
+      {
+        "num": "2.3",
+        "title": "DAB Sonrası Ödeme Yönetimi",
+        "paragraphs": [
+          "DAB belgesindeki Türk Lirası karşılığı için alıcı bankasına talimat verebilir."
+        ],
+        "subItems": [
+          {
+            "title": "Seçenek 1 – Havale / Transfer",
+            "bullets": [
+              "Banka tutarı doğrudan satıcının hesabına transfer eder."
+            ]
+          },
+          {
+            "title": "Seçenek 2 – Bloke Çek",
+            "bullets": [
+              "Banka satış bedeli kadar bloke çek düzenler.",
+              "Çek satış günü satıcıya ibraz edilir.",
+              "Satıcı çeki bankadan tahsil eder."
+            ]
+          }
+        ]
+      },
+      {
+        "num": "2.4",
+        "title": "Satıcının Şirket Olması Durumu",
+        "paragraphs": [
+          "DAB işlemi hem alıcı hem de satıcı şirket tarafından yapılabilir."
+        ],
+        "subItems": [
+          {
+            "title": "Senaryo A – Alıcı DAB Yaparsa",
+            "bullets": [
+              "Alıcı bankada DAB işlemini tamamlar ve satıcıya TL transferi gerçekleştirir."
+            ]
+          },
+          {
+            "title": "Senaryo B – Şirket DAB Yaparsa",
+            "bullets": [
+              "Şirket, yabancı alıcı adına DAB düzenler."
+            ]
+          }
+        ]
+      },
+      {
+        "num": "2.5",
+        "title": "Pasaport Tercümesi ve Noter Onayı",
+        "paragraphs": [],
+        "bullets": [
+          "Pasaport yeminli tercüman tarafından çevrilir.",
+          "Çeviri noter tasdikinden geçirilir.",
+          "Tapu müdürlüğü tercümesiz pasaport kabul etmemektedir."
+        ]
+      }
+    ]
+  },
+  "bolum3": {
+    "eyebrow": "Üçüncü Bölüm",
+    "title": "Tapu Randevu ve Satış Süreci",
+    "items": [
+      {
+        "num": "3.1",
+        "title": "Tapu Satışı Öncesinde Zorunlu Belgeler",
+        "paragraphs": [
+          "Zorunlu Deprem Sigortası (DASK): Geçerli bir DASK poliçesinin bulunması zorunludur.",
+          "Değerleme Raporu: Yabancıya yapılan taşınmaz satışlarında ekspertiz raporu zorunludur."
+        ]
+      },
+      {
+        "num": "3.2",
+        "title": "Tapu Randevusunun Alınması",
+        "paragraphs": [
+          "Randevu, Web Tapu Sistemi üzerinden alınır. Başvuru satıcı tarafından yapılır."
+        ],
+        "bullets": [
+          "Alıcı ve satıcıya ait kimlik bilgileri",
+          "Taşınmaza ilişkin bilgiler",
+          "Alıcı adına kimlik beyan formu",
+          "Satış bedeli",
+          "Varsa vatandaşlık şerhi talebi"
+        ]
+      },
+      {
+        "num": "3.3",
+        "title": "Tapu Müdürlüğünün İncelemesi",
+        "paragraphs": [
+          "Başvurunun ardından tapu müdürlüğü kontrolleri gerçekleştirir."
+        ],
+        "bullets": [
+          "Tapu kaydını inceler",
+          "Yabancı edinim sınırlarını kontrol eder",
+          "Askerî yasak bölge kontrolü yapar",
+          "Ekspertiz raporunu değerlendirir",
+          "Ödeme beyanını inceler"
+        ]
+      },
+      {
+        "num": "3.4",
+        "title": "Randevu Günü Tapuda Yapılacak İşlemler",
+        "paragraphs": [
+          "Satış işlemi tapunun akit odasında gerçekleştirilir. İmzaların tamamlanmasıyla mülkiyet alıcıya geçer."
+        ],
+        "bullets": [
+          "Yeminli tercüman veya alıcı avukat",
+          "Pasaport ve noter onaylı pasaport tercümesi",
+          "Banka ödeme belgeleri",
+          "Vatandaşlık başvurularında DAB belgesi"
+        ],
+        "steps": [
+          "Varsa noter sözleşmesini okur",
+          "Satış bedelini sorgular",
+          "Ödeme beyanını teyit eder",
+          "Vatandaşlık şerhini sisteme işler",
+          "Taraflardan imzaları alır"
+        ]
+      },
+      {
+        "num": "3.5",
+        "title": "Harçlar ve Masraflar",
+        "paragraphs": [
+          "Tapuya girmeden önce ödenmesi gereken masraflar:"
+        ],
+        "bullets": [
+          "Tapu harcı (genellikle %4)",
+          "Döner sermaye ücreti",
+          "Akit odasında ödeme alınmamaktadır"
+        ]
+      },
+      {
+        "num": "3.6",
+        "title": "Vatandaşlık Dosyası Olan Satışlarda Ek Kontroller",
+        "paragraphs": [
+          "Satışın vatandaşlık amacı taşıması hâlinde ek kontroller uygulanır:"
+        ],
+        "bullets": [
+          "DAB belgesi, satış bedeliyle uyumu açısından kontrol edilir",
+          "Tapu kütüğüne 3 yıl süreyle satış yasağı şerhi konulur"
+        ]
+      }
+    ]
+  },
+  "bolum4": {
+    "eyebrow": "Dördüncü Bölüm",
+    "title": "Uygunluk Belgesi (Taşınmaz Yatırım Tespit Belgesi)",
+    "intro": "Taşınmaz Yatırım Tespit Belgesi; yabancı yatırımcının gerçekleştirdiği taşınmaz alımının, Türk vatandaşlığı için gerekli yatırım şartlarını karşıladığını devletin resmî olarak onayladığı belgedir.",
+    "denetim": {
+      "eyebrow": "4.2 – Belgenin Amacı ve Denetim Kapsamı",
+      "title": "Devletin İnceleme Kapsamı",
+      "bullets": [
+        "Yatırımın fiilen gerçekleşip gerçekleşmediği",
+        "Ödemenin banka sistemi üzerinden yapılıp yapılmadığı",
+        "DAB'ın usulüne uygun düzenlenip düzenlenmediği",
+        "Ekspertiz raporunun gerçeği yansıtıp yansıtmadığı",
+        "Taşınmazın daha önce vatandaşlık başvurusunda kullanılıp kullanılmadığı",
+        "Muvazaalı işlem bulunup bulunmadığı",
+        "Satış bedelinin şişirilip şişirilmediği",
+        "Akraba veya ilişkili taraflar arasında satış olup olmadığı",
+        "Projenin hukuki risk taşıyıp taşımadığı"
+      ]
+    },
+    "process": {
+      "eyebrow": "4.3 – Belgenin Alınma Süreci",
+      "title": "Üç Aşamalı Resmi Süreç",
+      "steps": [
+        {
+          "num": "Adım 1",
+          "title": "Tapu Satışının Gerçekleştirilmesi",
+          "desc": "Satış sırasında ekspertiz raporu sisteme yüklenir, DAB dosyaya eklenir ve tapu kütüğüne 3 yıl satış yasağı şerhi işlenir."
+        },
+        {
+          "num": "Adım 2",
+          "title": "Dosyanın Merkeze Gönderilmesi",
+          "desc": "Tapu müdürlüğü, satış dosyasını TKGM Yabancı İşlemler Birimi'ne iletir. Bu başvuru otomatik olarak gerçekleştirilir."
+        },
+        {
+          "num": "Adım 3",
+          "title": "Uygunluk Kararı",
+          "desc": "Şartların sağlandığı tespit edilirse Taşınmaz Yatırım Tespit Belgesi düzenlenir ve NVİGM'e bildirilir."
+        }
+      ]
+    },
+    "sure": {
+      "title": "İnceleme Süresi",
+      "desc": "İnceleme süresi ortalama 1–2 haftadır."
+    },
+    "sonrasi": {
+      "title": "Belge Çıktıktan Sonraki Aşama",
+      "desc": "Belgenin düzenlenmesiyle yatırım resmî olarak kabul edilir. Ardından ikamet izni başvurusu yapılır ve vatandaşlık sürecine devam edilir."
+    }
+  },
+  "cta": {
+    "title": "Taşınmaz Yatırımınızı Vatandaşlığa Dönüştürün",
+    "description": "Tapu incelemesinden uygunluk belgesine, DAB sürecinden vatandaşlık başvurusuna kadar her adımı hukuki güvenceyle yönetiyoruz.",
+    "primaryCta": "Ücretsiz Danışın",
+    "secondaryCta": "Sık Sorulan Sorular"
+  }
+}

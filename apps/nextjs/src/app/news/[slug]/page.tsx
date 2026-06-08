@@ -27,21 +27,26 @@ export default function NewsDetailPage({ lang = "tr", slug }: NewsDetailPageProp
 
   return (
     <main className="min-h-screen bg-[#E8ECF3] text-navy">
-      <section className="bg-navy px-6 pb-20 pt-36 text-white sm:px-8">
-        <div className="mx-auto max-w-5xl">
+      <section
+        className="relative px-6 pb-20 pt-36 sm:px-8"
+        style={{ background: "linear-gradient(135deg, #EEF2F8 0%, #F5F8FD 50%, #EBF0F8 100%)" }}
+      >
+        <div className="pointer-events-none absolute inset-0 opacity-[0.06]" aria-hidden="true"
+          style={{ backgroundImage: "radial-gradient(#0a192f 1px, transparent 1px)", backgroundSize: "28px 28px" }} />
+        <div className="relative mx-auto max-w-5xl">
           <Link
             href={`/${lang}/news`}
-            className="inline-flex items-center rounded-full border border-white/15 px-4 py-2 text-xs font-bold uppercase tracking-wide text-gray-200 transition hover:bg-white/10"
+            className="inline-flex items-center rounded-full border border-[#0a192f]/20 bg-white/70 px-4 py-2 text-xs font-bold uppercase tracking-wide text-[#0a192f]/70 transition hover:bg-white hover:text-[#0a192f]"
           >
             ← {copy.title}
           </Link>
-          <div className="mt-6 flex flex-wrap items-center gap-3 text-xs font-bold uppercase tracking-wide text-gray-300">
-            <span className="rounded-full bg-white/10 px-3 py-1">{entry.category}</span>
+          <div className="mt-6 flex flex-wrap items-center gap-3 text-xs font-bold uppercase tracking-wide text-[#0a192f]/50">
+            <span className="rounded-full bg-[#0a192f]/8 px-3 py-1">{entry.category}</span>
             <span>{formatDate(entry.publishedAt, lang)}</span>
             {entry.authorName && <span>{entry.authorName}</span>}
           </div>
-          <h1 className="mt-6 max-w-4xl text-4xl font-bold leading-tight sm:text-5xl">{entry.title}</h1>
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-gray-300">{entry.summary}</p>
+          <h1 className="mt-6 max-w-4xl text-4xl font-bold leading-tight text-[#0a192f] sm:text-5xl">{entry.title}</h1>
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-[#0a192f]/60">{entry.summary}</p>
         </div>
       </section>
 
