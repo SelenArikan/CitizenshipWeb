@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 
+import { CITIZENSHIP_DETAIL_INDEXABLE_SLUGS } from "@/lib/citizenship-detail-pages";
 import { INVESTMENTS } from "@/lib/investments";
+import { LEGAL_DETAIL_SLUGS } from "@/lib/legal-detail-pages";
 import { RESIDENCE_PERMIT_SLUGS } from "@/lib/residence-permits";
 
 export type SitemapChangefreq = NonNullable<MetadataRoute.Sitemap[number]["changeFrequency"]>;
@@ -18,7 +20,7 @@ export const SITEMAP_STATIC_PATHS: SitemapPathConfig[] = [
   { path: "/services", priority: 0.9, changeFrequency: "monthly" },
   { path: "/citizenship", priority: 0.9, changeFrequency: "monthly" },
   { path: "/ikamet-izni", priority: 0.88, changeFrequency: "monthly" },
-  { path: "/legal/yesil-pasaport", priority: 0.82, changeFrequency: "monthly" },
+  { path: "/legal", priority: 0.84, changeFrequency: "monthly" },
   { path: "/knowledge", priority: 0.8, changeFrequency: "weekly" },
   { path: "/news", priority: 0.8, changeFrequency: "weekly" },
   { path: "/questions", priority: 0.7, changeFrequency: "monthly" },
@@ -39,8 +41,24 @@ export const SITEMAP_RESIDENCE_PATHS: SitemapPathConfig[] = RESIDENCE_PERMIT_SLU
   changeFrequency: "monthly" as const,
 }));
 
+export const SITEMAP_CITIZENSHIP_DETAIL_PATHS: SitemapPathConfig[] =
+  CITIZENSHIP_DETAIL_INDEXABLE_SLUGS.map((slug) => ({
+    path: `/citizenship/${slug}`,
+    priority: 0.82,
+    changeFrequency: "monthly" as const,
+  }));
+
+export const SITEMAP_LEGAL_DETAIL_PATHS: SitemapPathConfig[] =
+  LEGAL_DETAIL_SLUGS.map((slug) => ({
+    path: `/legal/${slug}`,
+    priority: 0.82,
+    changeFrequency: "monthly" as const,
+  }));
+
 export const ALL_SITEMAP_PATHS: SitemapPathConfig[] = [
   ...SITEMAP_STATIC_PATHS,
   ...SITEMAP_SERVICE_SLUGS,
   ...SITEMAP_RESIDENCE_PATHS,
+  ...SITEMAP_CITIZENSHIP_DETAIL_PATHS,
+  ...SITEMAP_LEGAL_DETAIL_PATHS,
 ];

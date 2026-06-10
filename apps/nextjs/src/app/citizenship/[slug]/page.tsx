@@ -1,31 +1,32 @@
-import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { JsonLd } from "@/components/JsonLd";
 import ServicePageLayout from "@/components/ServicePageLayout";
 import {
-  buildLegalDetailMetadata,
-  buildLegalDetailSchemas,
-  getLegalDetailPageData,
-} from "@/lib/legal-detail-pages";
+  buildCitizenshipDetailSchemas,
+  buildCitizenshipDetailStaticParams,
+  getCitizenshipDetailPageData,
+} from "@/lib/citizenship-detail-pages";
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ lang: string }>;
-}): Promise<Metadata> {
-  const { lang } = await params;
-  return buildLegalDetailMetadata(lang, "ehliyet-tebdil");
+export function generateStaticParams() {
+  return buildCitizenshipDetailStaticParams();
 }
 
-export default async function EhliyetTebdilPage({ params }: { params: Promise<{ lang: string }> }) {
-  const { lang } = await params;
-  const pageData = await getLegalDetailPageData(lang, "ehliyet-tebdil");
-  const schemas = await buildLegalDetailSchemas(lang, "ehliyet-tebdil");
+export default async function CitizenshipDetailRoute({
+  params,
+  lang = "tr",
+}: {
+  params: Promise<{ slug: string }>;
+  lang?: string;
+}) {
+  const { slug } = await params;
+  const pageData = await getCitizenshipDetailPageData(lang, slug);
 
   if (!pageData) {
     notFound();
   }
+
+  const schemas = await buildCitizenshipDetailSchemas(lang, slug);
 
   return (
     <>
@@ -35,12 +36,12 @@ export default async function EhliyetTebdilPage({ params }: { params: Promise<{ 
         dir={pageData.dir}
         homeLabel={pageData.homeLabel}
         backLabel={pageData.backLabel}
-        backHref={`/${pageData.lang}/legal`}
+        backHref={`/${pageData.lang}/citizenship`}
         consultationLabel={pageData.consultationLabel}
         hero={{
           breadcrumbLabel: pageData.copy.metadata.breadcrumbLabel,
           summary: pageData.copy.hero.summary,
-          backgroundImage: pageData.copy.hero.backgroundImage,
+          backgroundImage: "/gayrimenkul-hero.jpg",
         }}
         sections={pageData.copy.sections}
         cta={pageData.cta}

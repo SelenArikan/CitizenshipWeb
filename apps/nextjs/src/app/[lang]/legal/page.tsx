@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
 
 import { JsonLd } from "@/components/JsonLd";
 import ServicePageLayout from "@/components/ServicePageLayout";
 import {
-  buildLegalDetailMetadata,
-  buildLegalDetailSchemas,
-  getLegalDetailPageData,
+  buildLegalOverviewMetadata,
+  buildLegalOverviewSchemas,
+  getLegalOverviewPageData,
 } from "@/lib/legal-detail-pages";
 
 export async function generateMetadata({
@@ -15,17 +14,17 @@ export async function generateMetadata({
   params: Promise<{ lang: string }>;
 }): Promise<Metadata> {
   const { lang } = await params;
-  return buildLegalDetailMetadata(lang, "ehliyet-tebdil");
+  return buildLegalOverviewMetadata(lang);
 }
 
-export default async function EhliyetTebdilPage({ params }: { params: Promise<{ lang: string }> }) {
+export default async function LegalOverviewRoute({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
   const { lang } = await params;
-  const pageData = await getLegalDetailPageData(lang, "ehliyet-tebdil");
-  const schemas = await buildLegalDetailSchemas(lang, "ehliyet-tebdil");
-
-  if (!pageData) {
-    notFound();
-  }
+  const pageData = await getLegalOverviewPageData(lang);
+  const schemas = await buildLegalOverviewSchemas(lang);
 
   return (
     <>
@@ -44,7 +43,7 @@ export default async function EhliyetTebdilPage({ params }: { params: Promise<{ 
         }}
         sections={pageData.copy.sections}
         cta={pageData.cta}
-        otherPrograms={pageData.relatedLinks}
+        otherPrograms={[]}
         otherProgramsTitle={pageData.relatedTitle}
       />
     </>

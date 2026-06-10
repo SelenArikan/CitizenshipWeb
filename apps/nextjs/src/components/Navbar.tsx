@@ -27,6 +27,7 @@ type NavCopy = {
   investment_employment?: string;
   investment_bonds?: string;
   investment_fund?: string;
+  investment_bes?: string;
   benefits?: string;
   knowledge?: string;
   faq?: string;
@@ -180,6 +181,7 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
           items: [
             { label: t.investment_real_estate, href: `/${L}/services/gayrimenkul-yatirimi`, desc: t.nav_desc_400 },
             { label: t.investment_deposit, href: `/${L}/services/mevduat-hesabi`, desc: t.nav_desc_500 },
+            { label: t.investment_bes, href: `/${L}/citizenship/bes-yatirimi`, desc: t.nav_desc_500 },
             { label: t.investment_fund, href: `/${L}/services/gayrimenkul-yatirim-fonu`, desc: t.nav_desc_500 },
             { label: t.investment_employment, href: `/${L}/services/istihdam-olusturmak`, desc: t.nav_desc_emp },
             { label: t.investment_bonds, href: `/${L}/services/devlet-borclanma-araclari`, desc: t.nav_desc_500 },
@@ -188,7 +190,7 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
         {
           heading: t.mega_h_other,
           items: [
-            { label: t.item_cit_gen,      href: `/${L}/citizenship` },
+            { label: t.item_cit_gen,      href: `/${L}/citizenship/basvuru-sureci` },
             { label: t.item_cit_marriage, href: `/${L}/citizenship/evlilik` },
             { label: t.item_cit_passport, href: `/${L}/citizenship/pasaport` },
           ],
@@ -221,26 +223,26 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
         {
           heading: t.mega_h_tax,
           items: [
-            { label: t.item_tax_exempt, href: `/${L}/services` },
-            { label: t.item_tax_deed, href: `/${L}/services` },
-            { label: t.item_tax_re, href: `/${L}/services` },
-            { label: t.item_tax_rent, href: `/${L}/services` },
+            { label: t.item_tax_exempt, href: `/${L}/legal/vergi-muafiyeti` },
+            { label: t.item_tax_deed, href: `/${L}/legal/tapu-islemleri` },
+            { label: t.item_tax_re, href: `/${L}/legal/emlak-vergisi-beyannamesi` },
+            { label: t.item_tax_rent, href: `/${L}/legal/kira-geliri-vergisi` },
           ],
         },
         {
           heading: t.mega_h_law,
           items: [
-            { label: t.item_law_rent, href: `/${L}/services` },
+            { label: t.item_law_rent, href: `/${L}/legal/kira-hukuku-davalari` },
             { label: t.item_law_com, href: `/${L}/services` },
-            { label: t.item_law_inherit, href: `/${L}/services` },
-            { label: t.item_law_pop, href: `/${L}/services` },
-            { label: t.item_law_enf, href: `/${L}/services` },
+            { label: t.item_law_inherit, href: `/${L}/legal/veraset-ilami` },
+            { label: t.item_law_pop, href: `/${L}/legal/nufus-kaydi-duzeltme` },
+            { label: t.item_law_enf, href: `/${L}/legal/tanima-tenfiz` },
           ],
         },
         {
           heading: t.mega_h_more,
           items: [
-            { label: t.item_more_bank, href: `/${L}/services` },
+            { label: t.item_more_bank, href: `/${L}/legal/banka-islemleri` },
             { label: t.item_more_green, href: `/${L}/legal/yesil-pasaport` },
             { label: t.item_more_license, href: `/${L}/legal/ehliyet-tebdil` },
           ],

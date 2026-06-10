@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import ResidencePermitDetailPage from "@/components/ResidencePermitDetailPage";
 import { JsonLd } from "@/components/JsonLd";
+import ServicePageLayout from "@/components/ServicePageLayout";
+import {
+  getResidenceServicePageCopy,
+  getResidenceServiceRelatedLinks,
+} from "@/lib/residence-detail-page-content";
 import {
   buildResidencePermitMetadata,
   buildResidencePermitSchemas,
@@ -44,8 +48,19 @@ export default async function ResidencePermitDetailRoute({
   const { lang, slug } = await params;
   const data = await getResidencePageData(lang);
   const entry = getResidencePermitEntry(data.copy, slug);
+  const typedSlug = slug as ResidencePermitSlug;
 
   if (!entry) {
+    notFound();
+  }
+
+  const pageCopy = getResidenceServicePageCopy({
+    copy: data.copy,
+    slug: typedSlug,
+    useExactTurkishContent: data.lang === "tr",
+  });
+
+  if (!pageCopy) {
     notFound();
   }
 
@@ -55,16 +70,35 @@ export default async function ResidencePermitDetailRoute({
         data={buildResidencePermitSchemas(
           data.lang,
           data.copy,
-          slug as ResidencePermitSlug,
+          typedSlug,
           data.homeLabel
         )}
       />
-      <ResidencePermitDetailPage
+      <ServicePageLayout
         lang={data.lang}
         dir={data.dir}
         homeLabel={data.homeLabel}
-        copy={data.copy}
-        slug={slug as ResidencePermitSlug}
+        backLabel={data.copy.overview.title}
+        backHref={`/${data.lang}/ikamet-izni`}
+        consultationLabel={data.copy.labels.detail.expert_cta}
+        hero={{
+          breadcrumbLabel: pageCopy.metadata.breadcrumbLabel,
+          summary: pageCopy.hero.summary,
+          backgroundImage: pageCopy.hero.backgroundImage,
+        }}
+        sections={pageCopy.sections}
+        cta={{
+          title: data.copy.overview.ctaTitle,
+          description: data.copy.overview.ctaDescription,
+          primaryCta: data.copy.labels.contact_cta,
+          secondaryCta: data.copy.labels.faq_cta,
+        }}
+        otherPrograms={getResidenceServiceRelatedLinks({
+          copy: data.copy,
+          lang: data.lang,
+          currentSlug: typedSlug,
+        })}
+        otherProgramsTitle={data.copy.labels.detail.related_title}
       />
     </>
   );

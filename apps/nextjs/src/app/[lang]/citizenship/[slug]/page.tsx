@@ -4,28 +4,38 @@ import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
 import ServicePageLayout from "@/components/ServicePageLayout";
 import {
-  buildLegalDetailMetadata,
-  buildLegalDetailSchemas,
-  getLegalDetailPageData,
-} from "@/lib/legal-detail-pages";
+  buildCitizenshipDetailMetadata,
+  buildCitizenshipDetailSchemas,
+  buildLocalizedCitizenshipDetailStaticParams,
+  getCitizenshipDetailPageData,
+} from "@/lib/citizenship-detail-pages";
+
+export function generateStaticParams() {
+  return buildLocalizedCitizenshipDetailStaticParams();
+}
 
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ lang: string }>;
+  params: Promise<{ lang: string; slug: string }>;
 }): Promise<Metadata> {
-  const { lang } = await params;
-  return buildLegalDetailMetadata(lang, "ehliyet-tebdil");
+  const { lang, slug } = await params;
+  return buildCitizenshipDetailMetadata(lang, slug);
 }
 
-export default async function EhliyetTebdilPage({ params }: { params: Promise<{ lang: string }> }) {
-  const { lang } = await params;
-  const pageData = await getLegalDetailPageData(lang, "ehliyet-tebdil");
-  const schemas = await buildLegalDetailSchemas(lang, "ehliyet-tebdil");
+export default async function LangCitizenshipDetailRoute({
+  params,
+}: {
+  params: Promise<{ lang: string; slug: string }>;
+}) {
+  const { lang, slug } = await params;
+  const pageData = await getCitizenshipDetailPageData(lang, slug);
 
   if (!pageData) {
     notFound();
   }
+
+  const schemas = await buildCitizenshipDetailSchemas(lang, slug);
 
   return (
     <>
@@ -35,12 +45,12 @@ export default async function EhliyetTebdilPage({ params }: { params: Promise<{ 
         dir={pageData.dir}
         homeLabel={pageData.homeLabel}
         backLabel={pageData.backLabel}
-        backHref={`/${pageData.lang}/legal`}
+        backHref={`/${pageData.lang}/citizenship`}
         consultationLabel={pageData.consultationLabel}
         hero={{
           breadcrumbLabel: pageData.copy.metadata.breadcrumbLabel,
           summary: pageData.copy.hero.summary,
-          backgroundImage: pageData.copy.hero.backgroundImage,
+          backgroundImage: "/gayrimenkul-hero.jpg",
         }}
         sections={pageData.copy.sections}
         cta={pageData.cta}

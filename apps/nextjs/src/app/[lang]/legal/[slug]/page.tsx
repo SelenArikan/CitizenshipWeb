@@ -6,26 +6,36 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 import {
   buildLegalDetailMetadata,
   buildLegalDetailSchemas,
+  buildLegalDetailStaticParams,
   getLegalDetailPageData,
 } from "@/lib/legal-detail-pages";
+
+export function generateStaticParams() {
+  return buildLegalDetailStaticParams();
+}
 
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ lang: string }>;
+  params: Promise<{ lang: string; slug: string }>;
 }): Promise<Metadata> {
-  const { lang } = await params;
-  return buildLegalDetailMetadata(lang, "ehliyet-tebdil");
+  const { lang, slug } = await params;
+  return buildLegalDetailMetadata(lang, slug);
 }
 
-export default async function EhliyetTebdilPage({ params }: { params: Promise<{ lang: string }> }) {
-  const { lang } = await params;
-  const pageData = await getLegalDetailPageData(lang, "ehliyet-tebdil");
-  const schemas = await buildLegalDetailSchemas(lang, "ehliyet-tebdil");
+export default async function LegalDetailRoute({
+  params,
+}: {
+  params: Promise<{ lang: string; slug: string }>;
+}) {
+  const { lang, slug } = await params;
+  const pageData = await getLegalDetailPageData(lang, slug);
 
   if (!pageData) {
     notFound();
   }
+
+  const schemas = await buildLegalDetailSchemas(lang, slug);
 
   return (
     <>
