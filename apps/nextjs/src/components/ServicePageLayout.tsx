@@ -27,18 +27,31 @@ export type NumberedSection = {
   eyebrow?: string;
   title?: string;
   description?: string;
-  items: Array<{ title: string; desc?: string }>;
+  items: Array<{
+    title: string;
+    desc?: string;
+    /** Kalın terim + açıklama çiftleri için (orijinal doküman yapısına uygun) */
+    richDesc?: Array<{ term: string; explanation: string }>;
+    /** richDesc sonrası eklenecek kapanış cümlesi */
+    richDescFooter?: string;
+    /** Item içindeki görsel (src = public/ yolu, caption = altíyazı) */
+    image?: { src: string; caption?: string };
+  }>;
   /** Liste sonunda gösterilecek uyarı kutusu (isteğe bağlı) */
   notice?: { title: string; text: string };
 };
 
-/** Bullet (noktalı) liste: her item { title, desc } */
+/** Bullet (noktalı) liste: her item { title, desc, image } */
 export type BulletSection = {
   type: "bullet";
   eyebrow?: string;
   title?: string;
   description?: string;
-  items: Array<{ title: string; desc?: string }>;
+  items: Array<{
+    title: string;
+    desc?: string;
+    image?: { src: string; caption?: string };
+  }>;
 };
 
 /** Saf metin bullet'ları (başlıksız kısa maddeler) */
@@ -74,6 +87,15 @@ export type LegalSection = {
   items: Array<{ title: string; text: string }>;
 };
 
+export type TableSection = {
+  type: "table";
+  eyebrow?: string;
+  title?: string;
+  description?: string;
+  headers: string[];
+  rows: string[][];
+};
+
 export type PageSection =
   | IntroSection
   | NumberedSection
@@ -81,7 +103,8 @@ export type PageSection =
   | PlainBulletSection
   | FaqSection
   | InfoBoxSection
-  | LegalSection;
+  | LegalSection
+  | TableSection;
 
 /* ─────────────────────────────────────────────────────────────────
    ANA PROP YAPISI
@@ -139,7 +162,7 @@ function SectionEyebrow({ text }: { text?: string }) {
   );
 }
 
-/* ── Başlık: h2 = çok büyük extrabold siyah | h3 = orta semibold ── */
+/* ── Başlık: h2 = kompakt bold siyah | h3 = orta semibold ── */
 function SectionTitle({
   text,
   as: Tag = "h2",
@@ -152,8 +175,8 @@ function SectionTitle({
     <Tag
       className={
         Tag === "h2"
-          ? "mb-5 text-3xl font-extrabold leading-tight tracking-tight text-gray-950 sm:text-4xl"
-          : "mb-3 text-xl font-bold text-gray-900"
+          ? "mb-4 text-xl font-bold leading-snug tracking-tight text-gray-900 sm:text-2xl"
+          : "mb-3 text-lg font-semibold text-gray-900"
       }
     >
       {text}
@@ -164,7 +187,154 @@ function SectionTitle({
 function SectionDesc({ text }: { text?: string }) {
   if (!text) return null;
   return (
-    <p className="mb-6 text-sm leading-relaxed text-gray-500">{text}</p>
+    <p className="mb-6 text-[15px] leading-7 text-gray-600">{text}</p>
+  );
+}
+
+/**
+ * desc metnini akıllıca render eder:
+ * - "\n\n" ile ayrılan blokları ayrı parıgraflar olarak gösterir
+ * - "- " ile başlayan satırları bullet list olarak gösterir
+ * - "1. ", "2. " ile başlayan satırları numaralı liste olarak gösterir
+ * - Karma blokları (intro metin + bullet) doğru ayırır
+ */
+function ParsedDesc({ text }: { text: string }) {
+  const base = "text-[14px] leading-7 text-gray-600";
+
+  const blocks = text.split(/\n\n+/);
+
+  const renderBlock = (block: string, idx: number) => {
+    const trimmedBlock = block.trim();
+    if (!trimmedBlock) return null;
+
+    // 1. Check for blue banner blockquote
+    if (trimmedBlock.startsWith(">")) {
+      const cleanText = trimmedBlock.replace(/^>\s*/, "");
+      return (
+        <blockquote key={idx} className="border-l-4 border-blue-600 bg-blue-50/50 px-4 py-3 text-blue-950 rounded-r-lg my-4 text-[14px] leading-relaxed font-normal not-italic">
+          {cleanText}
+        </blockquote>
+      );
+    }
+
+    // 2. Check for inline image markdown
+    const imageMatch = trimmedBlock.match(/^!\[(.*?)\]\((.*?)\)$/);
+    if (imageMatch) {
+      const caption = imageMatch[1];
+      const src = imageMatch[2];
+      return (
+        <figure key={idx} className="my-5">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={src}
+            alt={caption}
+            className="w-full rounded-lg border border-gray-200 object-contain shadow-sm"
+          />
+          {caption && (
+            <figcaption className="mt-2 text-center text-xs italic text-gray-400">
+              {caption}
+            </figcaption>
+          )}
+        </figure>
+      );
+    }
+
+    // 3. Check for subheadings
+    if (trimmedBlock.startsWith("###")) {
+      const cleanText = trimmedBlock.replace(/^###\s*/, "");
+      return (
+        <h4 key={idx} className="text-[15px] font-bold text-gray-900 mt-4 mb-2">
+          {cleanText}
+        </h4>
+      );
+    }
+
+    const lines = block.split('\n').filter(l => l.trim());
+    if (lines.length === 0) return null;
+
+    const isBullet = (l: string) => /^[-•✔✓]\s/.test(l);
+    const isNumbered = (l: string) => /^\d+\.\s/.test(l);
+
+    const allBullet = lines.every(isBullet);
+    const allNumbered = lines.every(isNumbered);
+
+    if (allBullet) {
+      return (
+        <ul key={idx} className="list-none space-y-1.5">
+          {lines.map((line, j) => (
+            <li key={j} className={`flex gap-2.5 ${base}`}>
+              <span className="mt-[10px] h-1.5 w-1.5 shrink-0 rounded-full bg-red-700" />
+              <span>{line.replace(/^[\s\t\u200B\uFEFF•\-*✓✔◦‣▪]+\s*/, "")}</span>
+            </li>
+          ))}
+        </ul>
+      );
+    }
+
+    if (allNumbered) {
+      return (
+        <ol key={idx} className="space-y-1.5">
+          {lines.map((line, j) => {
+            const m = line.match(/^(\d+)\.\s+(.*)/);
+            return (
+              <li key={j} className={`flex gap-2 ${base}`}>
+                <span className="shrink-0 font-medium text-gray-500">{m?.[1] ?? j + 1}.</span>
+                <span>{m?.[2] ?? line}</span>
+              </li>
+            );
+          })}
+        </ol>
+      );
+    }
+
+    // Karma: intro satırlar + bullet/number
+    const firstBulletIdx = lines.findIndex(isBullet);
+    const firstNumberedIdx = lines.findIndex(isNumbered);
+    const splitIdx = firstBulletIdx >= 0 ? firstBulletIdx
+      : firstNumberedIdx >= 0 ? firstNumberedIdx
+      : -1;
+
+    if (splitIdx > 0) {
+      const introLines = lines.slice(0, splitIdx);
+      const listLines = lines.slice(splitIdx);
+      const useBullet = isBullet(listLines[0]);
+      return (
+        <div key={idx}>
+          <p className={base}>{introLines.join(' ')}</p>
+          {useBullet ? (
+            <ul className="list-none mt-2 space-y-1.5">
+              {listLines.map((line, j) => (
+                <li key={j} className={`flex gap-2.5 ${base}`}>
+                  <span className="mt-[10px] h-1.5 w-1.5 shrink-0 rounded-full bg-red-700" />
+                  <span>{line.replace(/^[\s\t\u200B\uFEFF•\-*✓✔◦‣▪]+\s*/, "")}</span>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <ol className="mt-2 space-y-1.5">
+              {listLines.map((line, j) => {
+                const m = line.match(/^(\d+)\.\s+(.*)/);
+                return (
+                  <li key={j} className={`flex gap-2 ${base}`}>
+                    <span className="shrink-0 font-medium text-gray-500">{m?.[1] ?? j + 1}.</span>
+                    <span>{m?.[2] ?? line}</span>
+                  </li>
+                );
+              })}
+            </ol>
+          )}
+        </div>
+      );
+    }
+
+    // Düz paragraf
+    return <p key={idx} className={base}>{lines.join(' ')}</p>;
+  };
+
+  return (
+    <div className="mt-2 space-y-3">
+      {blocks.map((block, i) => renderBlock(block, i))}
+    </div>
   );
 }
 
@@ -173,39 +343,157 @@ function IntroBlock({ section }: { section: IntroSection }) {
   /* eyebrow varsa ana başlık (h2), yoksa alt başlık (h3) */
   const headingTag = section.eyebrow ? "h2" : "h3";
   const hasParagraphs = section.paragraphs.some((p) => p.trim().length > 0);
+
+  // Group consecutive bullet and numbered lines
+  type GroupedBlock =
+    | { type: "paragraph"; text: string }
+    | { type: "bullets"; items: string[] }
+    | { type: "numbers"; items: Array<{ num: string; text: string }> }
+    | { type: "quote"; text: string };
+
+  const grouped: GroupedBlock[] = [];
+
+  section.paragraphs.forEach((p) => {
+    const isQuote = p.trim().startsWith(">");
+    const isBullet = !isQuote && (/^[\s\t\u200B\uFEFF•\-*✓✔◦‣▪]+\s*/.test(p) || /^[•\-*✓✔◦‣▪]/.test(p.trim()));
+    const isNumbered = !isQuote && /^\d+\.\s+/.test(p.trim());
+
+    if (isQuote) {
+      const cleanText = p.trim().replace(/^>\s*/, "");
+      grouped.push({ type: "quote", text: cleanText });
+    } else if (isBullet) {
+      const cleanText = p.replace(/^[\s\t\u200B\uFEFF•\-*✓✔◦‣▪]+\s*/, "");
+      const last = grouped[grouped.length - 1];
+      if (last && last.type === "bullets") {
+        last.items.push(cleanText);
+      } else {
+        grouped.push({ type: "bullets", items: [cleanText] });
+      }
+    } else if (isNumbered) {
+      const m = p.trim().match(/^(\d+)\.\s+(.*)/);
+      const num = m?.[1] ?? "1";
+      const cleanText = m?.[2] ?? p;
+      const last = grouped[grouped.length - 1];
+      if (last && last.type === "numbers") {
+        last.items.push({ num, text: cleanText });
+      } else {
+        grouped.push({ type: "numbers", items: [{ num, text: cleanText }] });
+      }
+    } else {
+      grouped.push({ type: "paragraph", text: p });
+    }
+  });
+
   return (
-    <div className={hasParagraphs ? "mb-10" : "mb-4"}>
+    <div className={hasParagraphs ? "mb-12" : "mb-4"}>
       <SectionEyebrow text={section.eyebrow} />
       <SectionTitle text={section.title} as={headingTag} />
-      {section.paragraphs.map((p, i) => (
-        <p key={i} className="mb-4 text-[15px] leading-relaxed text-gray-700">
-          {p}
-        </p>
-      ))}
+      {grouped.map((block, i) => {
+        if (block.type === "paragraph") {
+          return (
+            <p key={i} className="mb-4 text-base leading-7 text-gray-700">
+              {block.text}
+            </p>
+          );
+        }
+
+        if (block.type === "quote") {
+          return (
+            <blockquote key={i} className="border-l-4 border-blue-600 bg-blue-50/50 px-4 py-3 text-blue-950 rounded-r-lg my-4 text-base leading-relaxed font-normal not-italic">
+              {block.text}
+            </blockquote>
+          );
+        }
+
+        if (block.type === "bullets") {
+          return (
+            <ul key={i} className="list-none mb-4 space-y-1.5 pl-1">
+              {block.items.map((item, j) => (
+                <li key={j} className="flex gap-3 text-base leading-relaxed text-gray-700">
+                  <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-red-700" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          );
+        }
+
+        if (block.type === "numbers") {
+          return (
+            <ol key={i} className="list-none mb-4 space-y-1.5 pl-1">
+              {block.items.map((item, j) => (
+                <li key={j} className="flex gap-2 text-base leading-relaxed text-gray-700">
+                  <span className="shrink-0 font-bold text-slate-900">{item.num}.</span>
+                  <span>{item.text}</span>
+                </li>
+              ))}
+            </ol>
+          );
+        }
+
+        return null;
+      })}
     </div>
   );
 }
 
 /* Numaralı liste */
 function NumberedBlock({ section }: { section: NumberedSection }) {
+  const headingTag = section.eyebrow ? "h2" : "h3";
   return (
-    <div className="mb-10">
+    <div className="mb-14 border-t border-gray-100 pt-10 first:border-t-0 first:pt-0">
       <SectionEyebrow text={section.eyebrow} />
-      <SectionTitle text={section.title} />
+      <SectionTitle text={section.title} as={headingTag} />
       <SectionDesc text={section.description} />
-      <ol className="divide-y divide-gray-100 border-y border-gray-100">
+      <ol className="space-y-4">
         {section.items.map((item, i) => (
-          <li key={i} className="flex gap-4 py-5">
+          <li key={i} className="flex gap-4 rounded-lg border border-gray-100 bg-gray-50 p-5">
             {/* Koyu daire — her zaman */}
-            <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#0a192f] text-xs font-bold text-white">
+            <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#0a192f] text-xs font-bold text-white">
               {i + 1}
             </span>
-            <div className="min-w-0">
-              <p className="font-semibold leading-snug text-gray-900">{item.title}</p>
-              {item.desc && (
-                <p className="mt-1.5 text-sm leading-relaxed text-gray-500">
-                  {item.desc}
-                </p>
+            <div className="min-w-0 w-full">
+              <p className="text-[15px] font-semibold leading-snug text-gray-900">{item.title.replace(/^[\s\t\u200B\uFEFF•\-*✓✔◦‣▪]+\s*/, "")}</p>
+              {/* Sıradan açıklama — akıllı parse ile */}
+              {item.desc && <ParsedDesc text={item.desc} />}
+              {/* Kalın terim + açıklama çiftleri */}
+              {item.richDesc && item.richDesc.length > 0 && (
+                <ul className="mt-3 space-y-2">
+                  {item.richDesc.map((entry, j) => (
+                    <li key={j} className="text-[14px] leading-7 text-gray-600">
+                      <strong className="font-semibold text-gray-800">{entry.term}:</strong>{" "}
+                      {entry.explanation}
+                    </li>
+                  ))}
+                </ul>
+              )}
+              {/* Kapanış cümlesi */}
+              {item.richDescFooter && (
+                item.richDescFooter.trim().startsWith(">") ? (
+                  <blockquote className="mt-3 border-l-4 border-blue-600 bg-blue-50/50 px-4 py-3 text-blue-950 rounded-r-lg text-[14px] leading-relaxed font-normal not-italic">
+                    {item.richDescFooter.trim().replace(/^>\s*/, "")}
+                  </blockquote>
+                ) : (
+                  <p className="mt-3 text-[14px] leading-7 text-gray-500 italic">
+                    {item.richDescFooter}
+                  </p>
+                )
+              )}
+              {/* Dokümandan alınan görsel */}
+              {item.image && (
+                <figure className="mt-5">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={item.image.src}
+                    alt={item.image.caption ?? ""}
+                    className="w-full rounded-lg border border-gray-200 object-contain shadow-sm"
+                  />
+                  {item.image.caption && (
+                    <figcaption className="mt-2 text-center text-xs italic text-gray-400">
+                      {item.image.caption}
+                    </figcaption>
+                  )}
+                </figure>
               )}
             </div>
           </li>
@@ -216,7 +504,7 @@ function NumberedBlock({ section }: { section: NumberedSection }) {
           <p className="text-xs font-bold uppercase tracking-widest text-red-700">
             {section.notice.title}
           </p>
-          <p className="mt-1 text-sm leading-relaxed text-gray-500">
+          <p className="mt-1 text-[14px] leading-7 text-gray-600">
             {section.notice.text}
           </p>
         </div>
@@ -227,21 +515,34 @@ function NumberedBlock({ section }: { section: NumberedSection }) {
 
 /* Bullet liste (başlıklı madde) */
 function BulletBlock({ section }: { section: BulletSection }) {
+  const headingTag = section.eyebrow ? "h2" : "h3";
   return (
-    <div className="mb-10">
+    <div className="mb-14 border-t border-gray-100 pt-10 first:border-t-0 first:pt-0">
       <SectionEyebrow text={section.eyebrow} />
-      <SectionTitle text={section.title} />
+      <SectionTitle text={section.title} as={headingTag} />
       <SectionDesc text={section.description} />
-      <ul className="divide-y divide-gray-100 border-y border-gray-100">
+      <ul className="list-none space-y-4">
         {section.items.map((item, i) => (
-          <li key={i} className="flex gap-4 py-4">
-            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-red-700" />
-            <div className="min-w-0">
-              <p className="font-semibold leading-snug text-gray-900">{item.title}</p>
-              {item.desc && (
-                <p className="mt-1 text-sm leading-relaxed text-gray-500">
-                  {item.desc}
-                </p>
+          <li key={i} className="flex gap-4 rounded-lg border border-gray-100 bg-gray-50 p-5">
+            <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-red-700" />
+            <div className="min-w-0 w-full">
+              <p className="text-[15px] font-semibold leading-snug text-gray-900">{item.title.replace(/^[\s\t\u200B\uFEFF•\-*✓✔◦‣▪]+\s*/, "")}</p>
+              {item.desc && <ParsedDesc text={item.desc} />}
+              {/* Dokümandan alınan görsel */}
+              {item.image && (
+                <figure className="mt-5">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={item.image.src}
+                    alt={item.image.caption ?? ""}
+                    className="w-full rounded-lg border border-gray-200 object-contain shadow-sm"
+                  />
+                  {item.image.caption && (
+                    <figcaption className="mt-2 text-center text-xs italic text-gray-400">
+                      {item.image.caption}
+                    </figcaption>
+                  )}
+                </figure>
               )}
             </div>
           </li>
@@ -253,16 +554,17 @@ function BulletBlock({ section }: { section: BulletSection }) {
 
 /* Saf metin bullet */
 function PlainBulletBlock({ section }: { section: PlainBulletSection }) {
+  const headingTag = section.eyebrow ? "h2" : "h3";
   return (
     <div className="mb-10">
       <SectionEyebrow text={section.eyebrow} />
-      <SectionTitle text={section.title} />
+      <SectionTitle text={section.title} as={headingTag} />
       <SectionDesc text={section.description} />
-      <ul className="divide-y divide-gray-100 border-y border-gray-100">
+      <ul className="list-none divide-y divide-gray-100 border-y border-gray-100">
         {section.items.map((item, i) => (
           <li key={i} className="flex gap-3 py-3 text-sm leading-relaxed text-gray-700">
             <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-red-700" />
-            {item}
+            {item.replace(/^[\s\t\u200B\uFEFF•\-*✓✔◦‣▪]+\s*/, "")}
           </li>
         ))}
       </ul>
@@ -273,10 +575,11 @@ function PlainBulletBlock({ section }: { section: PlainBulletSection }) {
 /* SSS Accordion */
 function FaqBlock({ section }: { section: FaqSection }) {
   const [open, setOpen] = useState<number | null>(null);
+  const headingTag = section.eyebrow ? "h2" : "h3";
   return (
     <div className="mb-10">
       <SectionEyebrow text={section.eyebrow} />
-      <SectionTitle text={section.title} />
+      <SectionTitle text={section.title} as={headingTag} />
       <div className="divide-y divide-gray-100 border-y border-gray-100">
         {section.items.map((faq, i) => (
           <details
@@ -333,20 +636,67 @@ function InfoBoxBlock({ section }: { section: InfoBoxSection }) {
 
 /* Hukuki */
 function LegalBlock({ section }: { section: LegalSection }) {
+  const headingTag = section.eyebrow ? "h2" : "h3";
   return (
-    <div className="mb-10">
+    <div className="mb-14 border-t border-gray-100 pt-10 first:border-t-0 first:pt-0">
       <SectionEyebrow text={section.eyebrow} />
-      <SectionTitle text={section.title} />
-      <ul className="divide-y divide-gray-100 border-y border-gray-100">
+      <SectionTitle text={section.title} as={headingTag} />
+      <ul className="space-y-4">
         {section.items.map((item, i) => (
-          <li key={i} className="py-4">
-            <p className="text-sm font-semibold text-gray-900">{item.title}</p>
-            <p className="mt-1 text-sm leading-relaxed text-gray-500">
+          <li key={i} className="rounded-lg border border-gray-100 bg-gray-50 p-5">
+            <p className="text-[15px] font-semibold text-gray-900">{item.title}</p>
+            <p className="mt-2 text-[14px] leading-7 text-gray-600">
               {item.text}
             </p>
           </li>
         ))}
       </ul>
+    </div>
+  );
+}
+
+/* Tablo */
+function TableBlock({ section }: { section: TableSection }) {
+  const headingTag = section.eyebrow ? "h2" : "h3";
+  return (
+    <div className="mb-14 border-t border-gray-100 pt-10 first:border-t-0 first:pt-0">
+      <SectionEyebrow text={section.eyebrow} />
+      <SectionTitle text={section.title} as={headingTag} />
+      <SectionDesc text={section.description} />
+      <div className="mt-4 overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm">
+        <div className="overflow-x-auto">
+          <table className="min-w-full divide-y divide-gray-200 text-sm">
+            <thead className="bg-slate-50 text-xs font-semibold uppercase tracking-wider text-slate-700">
+              <tr>
+                {section.headers.map((header, i) => (
+                  <th
+                    key={i}
+                    className="px-6 py-3.5 text-left font-bold text-slate-900 border-b border-gray-200"
+                  >
+                    {header}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200 bg-white">
+              {section.rows.map((row, i) => (
+                <tr key={i} className="transition-colors hover:bg-slate-50/50">
+                  {row.map((cell, j) => (
+                    <td
+                      key={j}
+                      className={`px-6 py-4 text-gray-600 leading-relaxed ${
+                        j === 0 ? "font-semibold text-slate-900 whitespace-nowrap" : "font-normal"
+                      }`}
+                    >
+                      {cell}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   );
 }
@@ -368,6 +718,8 @@ function RenderSection({ section }: { section: PageSection }) {
       return <InfoBoxBlock section={section} />;
     case "legal":
       return <LegalBlock section={section} />;
+    case "table":
+      return <TableBlock section={section} />;
   }
 }
 
@@ -397,48 +749,85 @@ export default function ServicePageLayout({
     <main dir={dir} className="bg-white">
 
       {/* ── BREADCRUMB + BAŞLIK ── */}
-      <section className="relative overflow-hidden border-b border-gray-100 bg-white pt-8 pb-12">
-        {hero.backgroundImage && (
-          // eslint-disable-next-line @next/next/no-img-element
+      {hero.backgroundImage ? (
+        <section className="relative overflow-hidden min-h-[450px] md:min-h-[540px] flex flex-col justify-between pt-10 pb-16 bg-slate-950">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={hero.backgroundImage}
             alt=""
             aria-hidden="true"
-            className="absolute inset-0 h-full w-full object-cover object-center"
-            style={{ opacity: 0.25 }}
+            className="absolute inset-0 h-full w-full object-cover object-center opacity-90 transition-opacity duration-500"
           />
-        )}
-        <div className="relative mx-auto max-w-6xl px-6">
-          {/* Breadcrumb */}
-          <nav
-            className="mb-8 flex items-center gap-1.5 text-xs text-gray-400"
-            aria-label="Breadcrumb"
-          >
-            <Link href={`/${lang}`} className="transition hover:text-gray-700">
-              {homeLabel}
-            </Link>
-            <span>/</span>
-            <Link
-              href={resolvedBackHref}
-              className="transition hover:text-gray-700"
+          {/* Gradient Overlay: dark at bottom for title contrast, dark at top for breadcrumb contrast, lighter in the middle */}
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-slate-950/60" />
+          
+          <div className="relative mx-auto w-full max-w-6xl px-6 flex flex-col justify-between flex-1">
+            {/* Breadcrumb at the top */}
+            <nav
+              className="mb-auto flex items-center gap-1.5 text-xs text-white/70"
+              aria-label="Breadcrumb"
             >
-              {backLabel}
-            </Link>
-            <span>/</span>
-            <span className="text-gray-700">{hero.breadcrumbLabel}</span>
-          </nav>
+              <Link href={`/${lang}`} className="transition hover:text-white">
+                {homeLabel}
+              </Link>
+              <span>/</span>
+              <Link
+                href={resolvedBackHref}
+                className="transition hover:text-white"
+              >
+                {backLabel}
+              </Link>
+              <span>/</span>
+              <span className="text-white font-medium">{hero.breadcrumbLabel}</span>
+            </nav>
 
-          {/* Başlık */}
-          <h1 className="text-3xl font-extrabold leading-tight tracking-tight text-gray-950 md:text-4xl">
-            {hero.breadcrumbLabel}
-          </h1>
-          {hero.summary && (
-            <p className="mt-4 max-w-2xl text-sm leading-relaxed text-gray-500">
-              {hero.summary}
-            </p>
-          )}
-        </div>
-      </section>
+            {/* Başlık at the bottom */}
+            <div className="mt-20">
+              <h1 className="text-4xl font-extrabold leading-tight tracking-tight text-white md:text-5xl lg:text-6xl drop-shadow-md">
+                {hero.breadcrumbLabel}
+              </h1>
+              {hero.summary && (
+                <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/80 drop-shadow">
+                  {hero.summary}
+                </p>
+              )}
+            </div>
+          </div>
+        </section>
+      ) : (
+        <section className="relative overflow-hidden border-b border-gray-100 bg-white pt-8 pb-12">
+          <div className="relative mx-auto max-w-6xl px-6">
+            {/* Breadcrumb */}
+            <nav
+              className="mb-8 flex items-center gap-1.5 text-xs text-gray-400"
+              aria-label="Breadcrumb"
+            >
+              <Link href={`/${lang}`} className="transition hover:text-gray-700">
+                {homeLabel}
+              </Link>
+              <span>/</span>
+              <Link
+                href={resolvedBackHref}
+                className="transition hover:text-gray-700"
+              >
+                {backLabel}
+              </Link>
+              <span>/</span>
+              <span className="text-gray-700">{hero.breadcrumbLabel}</span>
+            </nav>
+
+            {/* Başlık */}
+            <h1 className="text-3xl font-extrabold leading-tight tracking-tight text-gray-950 md:text-4xl">
+              {hero.breadcrumbLabel}
+            </h1>
+            {hero.summary && (
+              <p className="mt-4 max-w-2xl text-sm leading-relaxed text-gray-500">
+                {hero.summary}
+              </p>
+            )}
+          </div>
+        </section>
+      )}
 
       {/* ── ANA İÇERİK + SIDEBAR ── */}
       <section className="bg-white py-16">

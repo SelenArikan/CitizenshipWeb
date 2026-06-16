@@ -12,23 +12,29 @@ export type StepItem = {
   title: string;
   desc: string;
   icon: string;
+  richDesc?: Array<{ term: string; explanation: string }>;
+  richDescFooter?: string;
+  image?: { src: string; caption?: string };
 };
 
 export type ContentItem = {
   title: string;
   desc: string;
+  image?: { src: string; caption?: string };
 };
 
 export type NumberedItem = {
   num: string;
   title: string;
   desc: string;
+  image?: { src: string; caption?: string };
 };
 
 export type IconItem = {
   icon: string;
   title: string;
   desc: string;
+  image?: { src: string; caption?: string };
 };
 
 export type FaqItem = {

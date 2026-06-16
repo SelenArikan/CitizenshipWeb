@@ -21,6 +21,7 @@ export type MevduatPageCopy = {
     eyebrow: string;
     title: string;
     paragraphs: string[];
+    bullets?: string[] | null;
     imageAlt: string;
     cardValue: string;
     cardLabel: string;
@@ -45,7 +46,7 @@ export type MevduatPageCopy = {
     description: string;
     items: MevduatRiskItem[];
   };
-  bes: {
+  bes?: {
     eyebrow: string;
     title: string;
     paragraphs: string[];
@@ -53,13 +54,13 @@ export type MevduatPageCopy = {
     restrictions: string[];
     officeRoleTitle: string;
     officeRole: string[];
-  };
-  postApproval: {
+  } | null;
+  postApproval?: {
     eyebrow: string;
     title: string;
     paragraphs: string[];
     bullets: string[];
-  };
+  } | null;
   whoCanApply: {
     eyebrow: string;
     title: string;

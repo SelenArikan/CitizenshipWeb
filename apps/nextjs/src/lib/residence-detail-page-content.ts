@@ -20,7 +20,7 @@ export type ResidenceServicePageCopy = {
   sections: PageSection[];
 };
 
-const LONG_TERM_RESIDENCE_TEXT = String.raw`1. UZUN DÖNEM İKAMET İZNİ
+const LONG_TERM_RESIDENCE_TEXT = String.raw`Uzun Dönem İkamet İzni
 Uzun dönem ikamet izni, 6458 sayılı Kanun’un 42 ila 45. maddelerinde düzenlenen ve yabancının Türkiye’de kalışını süre sınırı olmaksızın devam ettirmesine imkân tanıyan ikamet iznidir. Diğer pek çok ikamet türünden farklı olarak süresiz düzenlenir; yani belirli aralıklarla süre uzatma mantığına dayanan kısa dönem izinlerden ayrılır.
 Uzun dönem ikamet izni, Türkiye’de uzun süre yasal ve kesintisiz şekilde yaşamış yabancılara verilen süresiz bir ikamet izni türüdür. 6458 sayılı Kanun’a göre bu izin, Bakanlığın onayıyla valilikler tarafından düzenlenir. Ancak uygulamada önemli bir ayrım vardır: uzun dönem ikamet izni bir ikamet statüsüdür; başlı başına çalışma izni belgesi yerine geçmez. e-İkamet başvuru belgelerinde açıkça, “ikamet izni Türkiye’de çalışma hakkı sağlamaz; çalışacak yabancıların 6735 sayılı Kanun kapsamında çalışma izni veya çalışma izni muafiyeti başvurusu yapması gerekir” ifadesi yer almaktadır. Bu nedenle Türkiye’de çalışmayı planlayan kişilerin, durumlarını ayrıca çalışma mevzuatı yönünden de değerlendirmesi gerekir.
 1.1. Kimler Başvurabilir?
@@ -58,7 +58,7 @@ Başvuru süreci, kural olarak e-İkamet sistemi üzerinden yürür. Başvuru sa
 Başvuru dosyası il göç idaresine sunulduktan sonra idare; başvuranın sekiz yıllık kesintisiz ikamet süresini, gelir ve sigorta durumunu, sosyal yardım alıp almadığını ve kamu düzeni ile kamu güvenliği yönünden durumunu inceler. Gerek görülmesi hâlinde ek bilgi ve belge talep edilebilir. Başvurunun olumlu sonuçlanması durumunda uzun dönem ikamet izni süresiz olarak düzenlenir.
 Uzun dönem ikamet izni süresiz olmakla birlikte tamamen dokunulmaz bir statü değildir. Kanun’a göre kişi; kamu düzeni veya kamu güvenliği açısından ciddi tehdit oluşturursa ya da sağlık, eğitim veya ülkesindeki zorunlu kamu hizmeti dışındaki bir nedenle kesintisiz bir yıldan fazla Türkiye dışında kalırsa izin iptal edilebilir.`;
 
-const REAL_ESTATE_RESIDENCE_TEXT = String.raw`2.1. Gayrimenkul İkamet İzni (6458 Sayılı Kanun m. 31/1-b)
+const REAL_ESTATE_RESIDENCE_TEXT = String.raw`Gayrimenkul İkamet İzni (6458 Sayılı Kanun m. 31/1-b)
 Gayrimenkul (b bendi) ikamet izni, yabancı uyruklu kişilerin Türkiye’de konut niteliğinde bir taşınmaz edinmeleri hâlinde başvurabildikleri kısa dönem ikamet izni türüdür. 6458 sayılı Yabancılar ve Uluslararası Koruma Kanunu kapsamında düzenlenen bu izin; Türkiye’de gayrimenkul sahibi olan yabancılara, belirli sürelerle (genellikle bir ila iki yıl) ikamet etme hakkı tanır.
 6458 sayılı Kanun’un 31. maddesinin 1. fıkrasının (b) bendiyle öngörülen taşınmaz ikamet izni; büyükşehirlerde 200.000 USD ve üzeri, diğer şehirlerde ise en az 75.000 USD ve üzeri bedelle gayrimenkul satın alınmasına dayalı bir ikamet izni türüdür. Bu ikamet izni vatandaşlık için bir yatırım programı değildir ve Türk vatandaşlığına doğrudan hak sağlamaz.
 2.1.1. Temel Şartlar
@@ -131,7 +131,7 @@ Başvurucunun son beş yıl içinde toplam yurt dışı kalış süresinin 365 g
 Kesintisiz ve yasal gayrimenkul ikamet izni statüsünün korunması.
 Önemli not: Sık ve uzun süreli yurt dışı çıkışlar, ikamet süresinin sıfırlanmasına neden olabilir.`;
 
-const FAMILY_RESIDENCE_TEXT = String.raw`2.2. Aile İkamet İzni (6458 Sayılı Kanun m. 34–37)
+const FAMILY_RESIDENCE_TEXT = String.raw`Aile İkamet İzni (6458 Sayılı Kanun m. 34–37)
 Aile ikamet izni, 6458 sayılı Kanun’un 34 ila 37. maddelerinde düzenlenmiştir. Bu izin; Türk vatandaşı, Mavi Kart sahibi, geçerli ikamet izni sahibi yabancı, mülteci veya ikincil koruma statüsü sahibi bir kişinin belirli aile fertlerine, aile birliğinin Türkiye’de korunması amacıyla verilen ikamet iznidir. Resmî tanıma göre aile ikamet izni şu kişiler için düzenlenebilir:
 Yabancı eş,
 Kişinin veya eşinin ergin olmayan yabancı çocuğu,
@@ -186,7 +186,26 @@ Başvurucunun son beş yıl içinde toplam yurt dışı kalış süresinin 365 g
 Kesintisiz ve yasal aile ikamet izni statüsünün korunması.
 Önemli not: Sık ve uzun süreli yurt dışı çıkışlar, ikamet süresinin sıfırlanmasına neden olabilir.`;
 
-const INVESTOR_RESIDENCE_TEXT = String.raw`2.3. Yatırımcı İkamet İzni (6458 Sayılı Kanun m. 31/1-j)
+const INVESTOR_RESIDENCE_TEXT = String.raw`İKAMET İZNİ NEDİR?
+İkamet izinleri genel olarak kısa dönem ikamet izni ve uzun dönem ikamet izni şeklinde iki ana grupta düşünülebilir. Kısa dönem ikamet izni, Türkiye’de kalış amacı geçici nitelikte olan yabancılara, belirli gerekçelere dayanılarak verilen ikamet iznidir; kural olarak her defasında en fazla iki yıla kadar düzenlenir, ancak bazı özel bentlerde daha uzun süre öngörülebilir. Uzun dönem ikamet izni ise Türkiye’de uzun süre kesintisiz ve yasal olarak yaşamış, kanunda aranan şartları taşıyan yabancılara süresiz olarak verilen ikamet iznidir. Göç İdaresi’ne göre, Türkiye’de vize veya vize muafiyetinin sağladığı süreden ya da doksan günden fazla kalacak yabancıların, durumlarına uygun ikamet izni almaları gerekir.
+Kısa dönem ikamet izninin başlıca türleri şunlardır:
+Bilimsel araştırma amacıyla gelecekler
+Türkiye’de 200.000 USD’den daha yüksek değerde bir taşınmazı bulunanlar
+Vatandaşlıkta kullanılacak tutarda yatırım yapanlara özel olan yatırımcı ikameti sahipleri
+Ticari bağlantı veya iş kuracaklar
+Hizmet içi eğitim programına katılacaklar
+Türkiye Cumhuriyeti’nin taraf olduğu anlaşmalar ya da öğrenci değişim programları çerçevesinde eğitim veya benzeri amaçlarla gelecekler
+Turizm amaçlı kalacaklar
+Kamu sağlığına tehdit olarak nitelendirilen hastalıklardan birini taşımamak kaydıyla tedavi görecekler
+Adli veya idari makamların talep veya kararına bağlı olarak Türkiye’de kalması gerekenler
+Aile ikamet izninden kısa dönem ikamet iznine geçenler
+Türkçe öğrenme kurslarına katılacaklar
+Kamu kurumları aracılığıyla Türkiye’de eğitim, araştırma, staj ve kurslara katılacaklar
+Türkiye’de yükseköğrenimini tamamlayanlardan mezuniyet tarihinden itibaren altı ay içinde müracaat edenler
+Türkiye’de çalışmayan ancak Cumhurbaşkanınca belirlenen kapsam ve tutarda yatırım yapacaklar ile bunların aile üyeleri
+Kuzey Kıbrıs Türk Cumhuriyeti vatandaşı olanlar.
+
+Yatırımcı İkamet İzni (6458 Sayılı Kanun m. 31/1-j)
 6458 sayılı Kanun’un 31. maddesinin 1. fıkrasının (j) bendinde düzenlenen yatırımcı ikamet izni, bir kısa dönem ikamet izni türüdür. Türkiye’de çalışmayan ancak Cumhurbaşkanınca belirlenen kapsam ve tutarda yatırım yapacak yabancılar ile bunların yabancı eşi; kendisinin ve eşinin ergin olmayan veya bağımlı yabancı çocukları, bu ikamet iznine başvurma hakkına sahiptir.
 Bu noktada ayrıştırılması gereken konu şudur: aynı kanun maddesinin (b) bendinde düzenlenen gayrimenkul ikameti, bu ikamet türünden farklıdır. Bu başlık altında ele aldığımız (j) bendi yatırımcı ikamet izni; nitelikli yatırımcı statüsündeki kişilerin ve beraberlerindeki eş ve çocuklarının başvurabildiği ikamet izni türüdür. Tüm aile üyelerini kapsayan bu ikamet izni türü; en güvenli ve avantajlı ikamet izni türlerinden biri olarak değerlendirilmektedir. 2026 yılı itibarıyla yatırım değeri, (b) bendi gayrimenkul ikametinden farklı olarak 400.000 USD’dir. Ayrıca bu ikamet iznine sahip kişilerin, yatırımcı sıfatıyla Türk vatandaşlığına başvurma hakları da bulunmaktadır.
 2.3.1. Kimler Başvurabilir?
@@ -224,76 +243,89 @@ Sonuç olarak (j) bendi ikamet izni; vatandaşlık veren bir belge değil, yatı
 
 const LIST_RULES = new Map<
   string,
-  { count: number; titleMode: "description" | "title" }
+  {
+    count: number;
+    titleMode: "description" | "title";
+    type?: "bullet" | "plain-bullet" | "numbered";
+  }
 >([
   [
+    "Kısa dönem ikamet izninin başlıca türleri şunlardır:",
+    { count: 15, titleMode: "description", type: "plain-bullet" },
+  ],
+  [
     "Uzun dönem ikamet iznine geçişte, Kanun’un 43. maddesinde sayılan temel şartlar aranır. Bu şartlar şunlardır:",
-    { count: 5, titleMode: "description" },
+    { count: 5, titleMode: "description", type: "plain-bullet" },
   ],
   [
     "Resmî e-İkamet belge listesine göre uzun dönem ikamet izni başvurularında istenen temel belgeler şunlardır:",
-    { count: 10, titleMode: "description" },
+    { count: 10, titleMode: "description", type: "plain-bullet" },
   ],
   [
     "Belge detaylarında dikkat edilmesi gereken önemli noktalar şunlardır:",
-    { count: 6, titleMode: "description" },
+    { count: 6, titleMode: "description", type: "plain-bullet" },
   ],
   [
     "İkamet iznine başvuruda kullanılacak taşınmaz; oturuma hazır, tapulu ve iskânlı olmalıdır. Gayrimenkul satış vaadi sözleşmesi ile gayrimenkul ikamet iznine başvurmak mümkün değildir; dolayısıyla tapunun başvurucu adına devredilmiş olması gerekir.",
-    { count: 6, titleMode: "description" },
+    { count: 6, titleMode: "description", type: "plain-bullet" },
   ],
   [
     "Kapalı bölge; yabancıların taşınmaz edinimine bağlı olarak ikamet izni alamayacağı mahalle veya semtleri ifade eder. Kapalı bölge uygulamasının temel amaçları şunlardır:",
-    { count: 3, titleMode: "description" },
+    { count: 3, titleMode: "description", type: "plain-bullet" },
   ],
   [
     "Göç İdaresi; yabancı nüfus oranı belirli bir eşiği (uygulamada %20 sınırı esas alınmaktadır) aşan mahalleleri kapalı bölge olarak ilan etmektedir. Bu mahallelerde:",
-    { count: 3, titleMode: "description" },
+    { count: 3, titleMode: "description", type: "plain-bullet" },
   ],
   [
     "Açık bölge; yabancıların taşınmaz edinerek kısa dönem ikamet izni başvurusu yapabileceği mahalleleri ifade eder. Bu bölgelerde aşağıdaki koşulların sağlanması hâlinde ikamet izni başvurusu yapılabilir:",
-    { count: 3, titleMode: "description" },
+    { count: 3, titleMode: "description", type: "plain-bullet" },
   ],
   [
     "Kapalı ve açık bölgeler; il bazında değil, ilçe hatta mahalle bazında belirlenir. Göç İdaresi Başkanlığı:",
-    { count: 3, titleMode: "description" },
+    { count: 3, titleMode: "description", type: "plain-bullet" },
   ],
-  ["İlk başvuruda:", { count: 2, titleMode: "title" }],
-  ["Yenileme aşamasında:", { count: 2, titleMode: "title" }],
-  ["2.1.4. Gayrimenkulün Kullanımı", { count: 2, titleMode: "title" }],
+  ["İlk başvuruda:", { count: 2, titleMode: "title", type: "plain-bullet" }],
+  ["Yenileme aşamasında:", { count: 2, titleMode: "title", type: "plain-bullet" }],
+  ["2.1.4. Gayrimenkulün Kullanımı", { count: 2, titleMode: "title", type: "plain-bullet" }],
   [
     "Gayrimenkulün ticari amaçla kullanılması şu sonuçlara yol açabilir:",
-    { count: 2, titleMode: "description" },
+    { count: 2, titleMode: "description", type: "plain-bullet" },
   ],
-  ["2.1.5. Gerekli Belgeler", { count: 12, titleMode: "title" }],
+  ["2.1.5. Gerekli Belgeler", { count: 12, titleMode: "title", type: "plain-bullet" }],
   [
     "Bu yöntemle vatandaşlık yalnızca genel başvuru yoluyla mümkündür. Aranan koşullar şunlardır:",
-    { count: 3, titleMode: "description" },
+    { count: 3, titleMode: "description", type: "plain-bullet" },
   ],
   [
     "Aile ikamet izni, 6458 sayılı Kanun’un 34 ila 37. maddelerinde düzenlenmiştir. Bu izin; Türk vatandaşı, Mavi Kart sahibi, geçerli ikamet izni sahibi yabancı, mülteci veya ikincil koruma statüsü sahibi bir kişinin belirli aile fertlerine, aile birliğinin Türkiye’de korunması amacıyla verilen ikamet iznidir. Resmî tanıma göre aile ikamet izni şu kişiler için düzenlenebilir:",
-    { count: 3, titleMode: "description" },
+    { count: 3, titleMode: "description", type: "plain-bullet" },
   ],
-  ["Destekleyici Açısından Şartlar", { count: 5, titleMode: "title" }],
+  ["Destekleyici Açısından Şartlar", { count: 5, titleMode: "title", type: "plain-bullet" }],
   [
     "Başvuran (İkamet İzni Talep Eden) Açısından Şartlar",
-    { count: 5, titleMode: "title" },
+    { count: 5, titleMode: "title", type: "plain-bullet" },
   ],
-  ["Başvuran İçin Gerekli Belgeler", { count: 8, titleMode: "title" }],
+  ["Başvuran İçin Gerekli Belgeler", { count: 8, titleMode: "title", type: "plain-bullet" }],
   [
     "Çocuk adına yapılan başvurularda ayrıca aşağıdaki belgeler aranabilir:",
-    { count: 6, titleMode: "title" },
+    { count: 6, titleMode: "title", type: "plain-bullet" },
   ],
-  ["Destekleyici İçin Gerekli Belgeler", { count: 5, titleMode: "title" }],
+  ["Destekleyici İçin Gerekli Belgeler", { count: 5, titleMode: "title", type: "plain-bullet" }],
   [
     "Cumhurbaşkanınca belirlenen kapsam ve tutarda yatırım yapan yabancılarla birlikte aşağıdaki kişiler de yatırımcı ikamet iznine başvurma hakkına sahiptir (yatırım miktarı en az 400.000 USD veya en az 500.000 USD olmak üzere iki ayrı tutar üzerinden değerlendirilmektedir):",
-    { count: 4, titleMode: "description" },
+    { count: 4, titleMode: "description", type: "plain-bullet" },
   ],
-  ["2.3.2. Gerekli Evrak Listesi", { count: 9, titleMode: "title" }],
-  ["2.3.3. Önem Arz Eden Hususlar", { count: 6, titleMode: "title" }],
+  ["2.3.2. Gerekli Evrak Listesi", { count: 9, titleMode: "title", type: "plain-bullet" }],
+  ["2.3.3. Önem Arz Eden Hususlar", { count: 6, titleMode: "title", type: "plain-bullet" }],
 ]);
 
 const STANDALONE_HEADINGS = new Set([
+  "İKAMET İZNİ NEDİR?",
+  "Uzun Dönem İkamet İzni",
+  "Gayrimenkul İkamet İzni (6458 Sayılı Kanun m. 31/1-b)",
+  "Aile İkamet İzni (6458 Sayılı Kanun m. 34–37)",
+  "Yatırımcı İkamet İzni (6458 Sayılı Kanun m. 31/1-j)",
   "Kapalı Bölge Nedir?",
   "Açık Bölge Nedir?",
   "Bölgeler Nasıl Belirlenir?",
@@ -337,6 +369,8 @@ function buildSectionsFromExactText(text: string): PageSection[] {
     const rule = LIST_RULES.get(line);
 
     if (rule) {
+      const sectionType = rule.type ?? "plain-bullet";
+
       if (rule.titleMode === "description") {
         intro ??= createIntro();
         intro.paragraphs.push(line);
@@ -345,13 +379,21 @@ function buildSectionsFromExactText(text: string): PageSection[] {
         flushIntro();
       }
 
-      sections.push({
-        type: "numbered",
-        title: rule.titleMode === "title" ? line : undefined,
-        items: lines
-          .slice(index + 1, index + 1 + rule.count)
-          .map((item) => ({ title: item })),
-      });
+      if (sectionType === "plain-bullet") {
+        sections.push({
+          type: "plain-bullet",
+          title: rule.titleMode === "title" ? line : undefined,
+          items: lines.slice(index + 1, index + 1 + rule.count),
+        });
+      } else {
+        sections.push({
+          type: sectionType as "numbered" | "bullet",
+          title: rule.titleMode === "title" ? line : undefined,
+          items: lines
+            .slice(index + 1, index + 1 + rule.count)
+            .map((item) => ({ title: item })),
+        });
+      }
       index += rule.count;
       continue;
     }

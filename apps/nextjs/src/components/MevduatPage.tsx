@@ -34,6 +34,14 @@ export default function MevduatPage({
             title: copy.intro.title,
             paragraphs: copy.intro.paragraphs,
           },
+          ...(copy.intro.bullets && copy.intro.bullets.length > 0
+            ? [
+                {
+                  type: "plain-bullet" as const,
+                  items: copy.intro.bullets,
+                },
+              ]
+            : []),
         ]
       : []),
 
@@ -196,17 +204,7 @@ export default function MevduatPage({
         ]
       : []),
 
-    // SSS
-    ...(copy.faq?.items?.length > 0
-      ? [
-          {
-            type: "faq" as const,
-            eyebrow: copy.faq.eyebrow,
-            title: copy.faq.title,
-            items: copy.faq.items,
-          },
-        ]
-      : []),
+
   ];
 
   return (

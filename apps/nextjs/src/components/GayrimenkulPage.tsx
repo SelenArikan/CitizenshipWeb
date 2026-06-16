@@ -31,7 +31,16 @@ export default function GayrimenkulPage({
       paragraphs: copy.intro.paragraphs,
     },
 
-    // Yatırım Seçenekleri / Gereksinimler (numaralı)
+    // Süreç (numaralı) - BİRİNCİ BÖLÜM
+    {
+      type: "numbered",
+      eyebrow: copy.process.eyebrow,
+      title: copy.process.title,
+      description: copy.process.description,
+      items: copy.process.items.map((s) => ({ title: s.title, desc: s.desc, richDesc: s.richDesc, richDescFooter: s.richDescFooter, image: s.image })),
+    },
+
+    // Yatırım Seçenekleri / Gereksinimler (numaralı) - İKİNCİ BÖLÜM
     {
       type: "numbered",
       eyebrow: copy.requirements.eyebrow,
@@ -39,25 +48,7 @@ export default function GayrimenkulPage({
       items: copy.requirements.items,
     },
 
-    // Süreç (numaralı)
-    {
-      type: "numbered",
-      eyebrow: copy.process.eyebrow,
-      title: copy.process.title,
-      description: copy.process.description,
-      items: copy.process.items.map((s) => ({ title: s.title, desc: s.desc })),
-    },
-
-    // Avantajlar (bullet)
-    {
-      type: "bullet",
-      eyebrow: copy.benefits.eyebrow,
-      title: copy.benefits.title,
-      description: copy.benefits.description,
-      items: copy.benefits.items.map((b) => ({ title: b.title, desc: b.desc })),
-    },
-
-    // Mülk Türleri (bullet) — isteğe bağlı
+    // Mülk Türleri (bullet) — isteğe bağlı - ÜÇÜNCÜ BÖLÜM
     ...(copy.propertyTypes?.items?.length > 0
       ? [
           {
@@ -68,12 +59,13 @@ export default function GayrimenkulPage({
             items: copy.propertyTypes.items.map((i) => ({
               title: i.title,
               desc: i.desc,
+              image: i.image,
             })),
           },
         ]
       : []),
 
-    // Belgeler (numaralı) — isteğe bağlı
+    // Belgeler (numaralı) — isteğe bağlı - DÖRDÜNCÜ BÖLÜM
     ...(copy.documents?.items?.length > 0
       ? [
           {
@@ -108,17 +100,8 @@ export default function GayrimenkulPage({
         ]
       : []),
 
-    // SSS — isteğe bağlı
-    ...(copy.faq?.items?.length > 0
-      ? [
-          {
-            type: "faq" as const,
-            eyebrow: copy.faq.eyebrow,
-            title: copy.faq.title,
-            items: copy.faq.items,
-          },
-        ]
-      : []),
+
+
   ];
 
   return (

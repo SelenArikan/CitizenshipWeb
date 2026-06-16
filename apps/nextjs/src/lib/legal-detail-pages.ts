@@ -1399,24 +1399,62 @@ function buildSectionsFromDocumentText(text: string): PageSection[] {
     intro = null;
   }
 
-  lines.forEach((line, index) => {
-    if (isBulletLine(line)) {
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+
+    if (
+      line === "Aşama" &&
+      i + 1 < lines.length &&
+      lines[i + 1] === "Açıklama" &&
+      i + 2 < lines.length &&
+      /^\d+\.\s+/.test(lines[i + 2])
+    ) {
+      flushBullets();
       flushIntro();
-      bulletItems.push(line);
-      return;
+
+      const headers = ["Aşama", "Açıklama"];
+      const rows: string[][] = [];
+      let tempIndex = i + 2;
+
+      while (
+        tempIndex < lines.length &&
+        /^\d+\.\s+/.test(lines[tempIndex]) &&
+        tempIndex + 1 < lines.length
+      ) {
+        rows.push([lines[tempIndex], lines[tempIndex + 1]]);
+        tempIndex += 2;
+      }
+
+      sections.push({
+        type: "table",
+        headers,
+        rows,
+      });
+
+      i = tempIndex - 1;
+      continue;
+    }
+
+    if (isBulletLine(line)) {
+      if (intro) {
+        intro.paragraphs.push(line);
+      } else {
+        bulletItems.push(line);
+      }
+      continue;
     }
 
     flushBullets();
 
-    if (isHeading(line, index)) {
+    if (isHeading(line, i)) {
       flushIntro();
       intro = createIntro(line);
-      return;
+      continue;
     }
 
     intro ??= createIntro();
     intro.paragraphs.push(line);
-  });
+  }
 
   flushBullets();
   flushIntro();

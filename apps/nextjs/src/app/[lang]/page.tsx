@@ -180,7 +180,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
                 <p className="mb-1 text-xs font-bold uppercase tracking-[0.2em] text-red-700">
                   {dict.services?.tag ?? "Vatandaşlık Programları"}
                 </p>
-                <h2 className="text-3xl font-light tracking-tight text-gray-900">
+                <h2 className="text-3xl font-light tracking-tight text-red-800">
                   Yatırım Yoluyla Vatandaşlık
                 </h2>
               </div>
@@ -204,9 +204,6 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
                         {String(idx + 1).padStart(2, "0")}
                       </span>
                       <div>
-                        <p className="mb-0.5 text-[10px] font-bold uppercase tracking-[0.2em] text-red-700">
-                          Türkiye
-                        </p>
                         <h3 className="text-base font-medium text-gray-900 group-hover:text-red-700 transition-colors">
                           {service.title}
                         </h3>
@@ -232,8 +229,8 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
                 <p className="mb-1 text-xs font-bold uppercase tracking-[0.2em] text-red-700">
                   İkamet Programları
                 </p>
-                <h2 className="text-3xl font-light tracking-tight text-gray-900">
-                  Yatırım Yoluyla İkamet İzni
+                <h2 className="text-3xl font-light tracking-tight text-red-800">
+                  İkamet Türleri
                 </h2>
               </div>
               <Link
@@ -256,9 +253,6 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
                         {String(idx + 1).padStart(2, "0")}
                       </span>
                       <div>
-                        <p className="mb-0.5 text-[10px] font-bold uppercase tracking-[0.2em] text-red-700">
-                          {prog.country}
-                        </p>
                         <h3 className="text-base font-medium text-gray-900 group-hover:text-red-700 transition-colors">
                           {prog.program}
                         </h3>
@@ -276,48 +270,54 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
 
         {/* ════════════════════════════════════
             6. HUKUKİ HİZMETLER
-            (ketenci stili: yatay liste + ikon)
         ════════════════════════════════════ */}
         <section className="border-b border-gray-100 bg-white py-20">
           <div className="mx-auto max-w-6xl px-6">
-
-            {/* Hukuki hizmetler — kutucuk grid (başlıksız) */}
-            <div className="grid grid-cols-1 gap-px bg-gray-100 border border-gray-100 sm:grid-cols-2 lg:grid-cols-4">
-              {legalServices.map((svc) => (
-                <Link
-                  key={svc.title}
-                  href={svc.href}
-                  className="reveal reveal-fade-up group flex flex-col gap-4 bg-white p-8 transition-colors duration-200 hover:bg-gray-50"
-                >
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 text-gray-500 transition group-hover:border-red-700 group-hover:text-red-700">
-                    {svc.icon}
-                  </div>
-                  <h3 className="text-base font-semibold text-gray-900 group-hover:text-red-700 transition-colors">
-                    {svc.title}
-                  </h3>
-                </Link>
-              ))}
+            <div className="reveal reveal-fade-up mb-10 flex items-end justify-between">
+              <div>
+                <p className="mb-1 text-xs font-bold uppercase tracking-[0.2em] text-red-700">
+                  Hukuki Hizmetler
+                </p>
+                <h2 className="text-3xl font-light tracking-tight text-red-800">
+                  Hukuki Hizmetler
+                </h2>
+              </div>
+              <Link
+                href={`/${dict.lang}/services`}
+                className="hidden text-xs font-semibold uppercase tracking-widest text-gray-500 underline-offset-4 transition hover:text-red-700 hover:underline md:block"
+              >
+                Tümünü Gör
+              </Link>
             </div>
 
-            {/* Avantajlar — liste */}
-            {features.length > 0 && (
-              <div className="mt-14">
-                <h2 className="mb-6 text-2xl font-light tracking-tight text-gray-900">
-                  Türk Vatandaşlığının Öne Çıkan Avantajları
-                </h2>
-                <ul className="divide-y divide-gray-100 border-y border-gray-100">
-                  {features.map((feature, idx) => (
-                    <li key={idx} className="reveal reveal-fade-up flex gap-4 py-4">
-                      <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-red-700" />
+            <ul className="divide-y divide-gray-100 border-y border-gray-100">
+              {[
+                { title: "Hukuk Davaları", href: `/${dict.lang}/services` },
+                { title: "Tapu ve Vergi İşlemleri", href: `/${dict.lang}/services` },
+                { title: "Diğer Hizmetler", href: `/${dict.lang}/services` },
+              ].map((item, idx) => (
+                <li key={item.title}>
+                  <Link
+                    href={item.href}
+                    className="reveal reveal-fade-up group flex items-center justify-between py-5 transition-colors duration-150 hover:text-red-700"
+                  >
+                    <div className="flex items-center gap-5">
+                      <span className="w-5 text-center text-xs font-bold tabular-nums text-gray-300">
+                        {String(idx + 1).padStart(2, "0")}
+                      </span>
                       <div>
-                        <p className="font-semibold text-gray-900">{feature.title}</p>
-                        <p className="mt-0.5 text-sm leading-relaxed text-gray-500">{feature.desc}</p>
+                        <h3 className="text-base font-medium text-gray-900 group-hover:text-red-700 transition-colors">
+                          {item.title}
+                        </h3>
                       </div>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
+                    </div>
+                    <svg className="h-4 w-4 shrink-0 text-gray-300 transition-transform group-hover:translate-x-1 group-hover:text-red-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
 

@@ -248,13 +248,7 @@ Vatandaşlık amaçlı BES planları, normal BES sözleşmelerinden bazı yönle
 	•	Unvanında “yabancı” veya “dış borçlanma araçları” ibaresi bulunan fonlara (BEFAS fonları dâhil) vatandaşlık planlarında yer verilemez.
 	•	İlk 3 yıl boyunca plan değişikliği, emeklilik nedeniyle hesap birleştirme ve başka bir emeklilik şirketine aktarım (transfer) yapılamaz. Ancak çalışılan şirkete göre fon dağılımında 6 ile 12 kez değişiklik yapılabilir.
 Fon tarafında uygulamada şu ayrım önemlidir: “plan/şirket değişikliği ve aktarım” üç yıl boyunca kapalıyken; fon dağılımı yönetimi, emeklilik şirketinin vatandaşlık planı içinde sunduğu fon seti ve BES’in genel kuralları çerçevesinde değerlendirilir. Bu nedenle süreç, “Türkiye’deki her fona serbestçe geçiş” değil; vatandaşlık planının izin verdiği fonlar arasında fon dağılımının yönetilmesi şeklinde yürür.
-Sık Sorulan Sorular
-SEDDK Uygunluk Yazısı Ne İşe Yarar?
-BES yatırımının mevzuata uygun yapıldığını ve yatırım kriterinin sağlandığını teyit eden resmî belgedir. İstisnai vatandaşlık başvuru dosyasında, yatırım kriterini ispatlayan ana referans olarak kullanılır.
-3 Yıl Dolmadan Transfer veya Şirket Değişikliği Yapılabilir mi?
-Hayır. Vatandaşlık planlarında ilk 3 yıl boyunca başka bir emeklilik şirketine aktarım ve plan değişikliği yapılamaz.
-Kur Riski veya Kur Koruması Var mı?
-Bu yöntem; dövizin TCMB’ye satışıyla TL’ye dönüşüm ve fonlarda değerlendirme mantığıyla işler. Banka mevduatı türünde bir kur koruma ürünü gibi sunulmamalıdır. Döviz satışı ve işlemlerin çerçevesi, TCMB talimatlarında düzenlenir.
+
 Büromuz Ne Yapar? (Hizmet Kapsamı Örneği)
 Büromuz; yatırım yoluyla vatandaşlık sürecinde BES yatırımının hukuki kurgusunun yapılması, banka–emeklilik şirketi–SEDDK uygunluk sürecinin koordinasyonu, uygunluk yazısı sonrası VAT-4 dosyasının hazırlanması ve başvurunun ilgili merciler nezdinde takibi dâhil olmak üzere süreci uçtan uca yönetir.`;
 
@@ -290,7 +284,8 @@ function isDocumentHeading(line: string, index: number) {
   if (/^\d+(?:\.\d+)*[.)]?\s+/.test(line)) return true;
   if (/^[IVXLCDM]+\.\s+/.test(line)) return true;
   if (/^(BÖLÜM|AŞAMA|Adım)\s+/i.test(line)) return true;
-  if (/^(Başvuru Süreci|Hizmet Kapsamımız|Sık Sorulan Sorular|Kimler Başvurabilir\?|Yatırımı Yapan Kişi Dışında Kimler Vatandaşlık Alabilir\?|Kimler Bu Yoldan Vatandaşlık Alamaz\?|İstisnai Durumlar)$/i.test(line)) return true;
+  if (/\?\s*$/.test(line)) return true;
+  if (/^(Başvuru Süreci|Hizmet Kapsamımız|Sık Sorulan Sorular|Kimler Başvurabilir|Yatırımı Yapan Kişi Dışında Kimler Vatandaşlık Alabilir|Kimler Bu Yoldan Vatandaşlık Alamaz|İstisnai Durumlar|BES’e Özgü \(SEDDK Uygunluk Sürecinde\) Verilen Belgeler ve Bilgiler|BES Sistemiyle Vatandaşlık Başvurusu Süreç Akışı|Süreç Akışı \(Yatırımdan Vatandaşlık Başvurusuna\)|Vatandaşlık Planlarında Kritik Sınırlamalar \(3 Yıl Boyunca\)|Büromuz Ne Yapar\? \(Hizmet Kapsamı Örneği\))$/i.test(line)) return true;
   return isDocumentAllCapsHeading(line);
 }
 
@@ -659,14 +654,28 @@ function sectionHasContent(section: PageSection) {
     );
   }
 
-  return (
-    hasRenderableText(section.eyebrow) ||
-    hasRenderableText(section.title) ||
-    hasRenderableText(section.description) ||
-    section.items.some(
-      (item) => hasRenderableText(item.title) || hasRenderableText(item.desc)
-    )
-  );
+  if (section.type === "bullet") {
+    return (
+      hasRenderableText(section.eyebrow) ||
+      hasRenderableText(section.title) ||
+      hasRenderableText(section.description) ||
+      section.items.some(
+        (item) => hasRenderableText(item.title) || hasRenderableText(item.desc)
+      )
+    );
+  }
+
+  if (section.type === "table") {
+    return (
+      hasRenderableText(section.eyebrow) ||
+      hasRenderableText(section.title) ||
+      hasRenderableText(section.description) ||
+      section.headers.some(hasRenderableText) ||
+      section.rows.some((row) => row.some(hasRenderableText))
+    );
+  }
+
+  return false;
 }
 
 function hasCitizenshipDetailContent(copy: CitizenshipDetailPageCopy) {

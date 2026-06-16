@@ -2,7 +2,10 @@
   "hero": {
     "breadcrumbLabel": "Citizenship via Bank Deposit",
     "tag": "Citizenship by Investment",
-    "titleLines": ["Bank Deposit Account", "for Turkish Citizenship"],
+    "titleLines": [
+      "Bank Deposit Account",
+      "for Turkish Citizenship"
+    ],
     "highlightLineIndex": 1,
     "summary": "We manage the legal and administrative aspects of acquiring Turkish citizenship end-to-end by maintaining USD 500,000 in a Turkish bank for 3 years.",
     "primaryCta": "Free Consultation",
@@ -10,17 +13,38 @@
     "imageAlt": "Turkish Citizenship via Bank Deposit"
   },
   "stats": [
-    { "value": "USD 500,000", "label": "Minimum Deposit", "sub": "or equivalent foreign currency" },
-    { "value": "3 Years", "label": "Holding Requirement", "sub": "block / commitment" },
-    { "value": "BDDK", "label": "Competent Authority", "sub": "conformity certificate" },
-    { "value": "5–6 Months", "label": "Average Process", "sub": "application completion" }
+    {
+      "value": "USD 500,000",
+      "label": "Minimum Deposit",
+      "sub": "or equivalent foreign currency"
+    },
+    {
+      "value": "3 Years",
+      "label": "Holding Requirement",
+      "sub": "block / commitment"
+    },
+    {
+      "value": "BDDK",
+      "label": "Competent Authority",
+      "sub": "conformity certificate"
+    },
+    {
+      "value": "5–6 Months",
+      "label": "Average Process",
+      "sub": "application completion"
+    }
   ],
   "intro": {
     "eyebrow": "About the Process",
     "title": "Turkish Citizenship Application by Investment",
     "paragraphs": [
-      "Turkish citizenship by investment is a type of application made under the exceptional citizenship provisions of the Turkish Citizenship Law, through the use of certain investment instruments stipulated by the law.",
-      "The first and most critical step in this process is correctly identifying which investment instrument will be used to apply for citizenship. Depending on the type of investment, both the method of making the investment 'eligible for citizenship' and the institution issuing the conformity certificate differ."
+      "Turkish citizenship by investment is a type of application made under the exceptional citizenship provisions of the Turkish Citizenship Law, through the use of certain investment instruments stipulated by the law. The first and most critical step in this process is correctly identifying which investment instrument will be used to apply for citizenship. Depending on the type of investment, both the method of making the investment 'eligible for citizenship' and the institution issuing the conformity certificate differ.",
+      "The official document proving that the investment was made in accordance with citizenship criteria is referred to in practice as the 'Conformity Certificate'. The government institutions that issue the conformity certificate differ based on the investment method:"
+    ],
+    "bullets": [
+      "For investments made by holding money in a bank deposit account, the relevant institution is the BDDK.",
+      "For investments made through the BES (Individual Pension System), the conformity process and certificate are handled by the SEDDK.",
+      "For investments made via real estate purchase, it is processed through the Land Registry (Tapu Müdürlüğü)."
     ],
     "imageAlt": "Turkish citizenship via deposit investment",
     "cardValue": "BDDK Approved",
@@ -32,58 +56,57 @@
     "eyebrow": "Overview",
     "title": "The Framework of the Citizenship Process",
     "paragraphs": [
-      "The official document proving that the investment was made in accordance with citizenship criteria is referred to in practice as the 'Conformity Certificate'. For investments made by holding money in a bank deposit account, the relevant institution for issuing the conformity certificate and determining the eligibility of the investment is the BDDK.",
-      "Our office manages the entire process of structuring the investment from start to finish in compliance with legislation, making it eligible for citizenship, correctly establishing the required official records and transaction flow, and ultimately obtaining the conformity certificate from the relevant institution."
+      "The most common methods in practice are: purchasing real estate worth USD 400,000, holding USD 500,000 in a bank for 3 years, or depositing USD 500,000 into the BES system and keeping it in the system for 3 years. Although each method has its own unique technical and administrative requirements, the framework of the citizenship application is generally based on the same logic:"
     ],
     "bullets": [
       "Making the investment correctly according to citizenship legislation",
       "Obtaining the conformity certificate",
-      "Residence permit for the investor and family",
+      "Completing the residence permit process for the investor and family members",
       "Submitting the civil registry/citizenship application",
       "Following up on the completion of the process",
-      "Completing identity and passport procedures"
+      "Completing identity card/passport procedures after citizenship approval"
     ]
   },
   "process": {
     "eyebrow": "Step-by-Step Process",
     "title": "Citizenship via Bank Deposit Method",
-    "description": "In this method, the attorney's role does not end when 'money is deposited in the bank'; the transaction flow constituting the foundational element of the application must be correctly established and made verifiable in compliance with the legislation.",
+    "description": "All stages from planning the process within the scope of the bank deposit method to obtaining the identity card.",
     "items": [
       {
         "num": "01",
         "icon": "🏦",
         "title": "Selection of Investment Instrument and Process Planning",
-        "desc": "The investor's country situation, family structure, plans for entry/exit to Turkey, availability of documents, possibility of transactions with power of attorney, and the financial/operational details of the investment are evaluated together."
+        "desc": "The process begins with determining which investment method will be used on behalf of the applicant. At this stage, the investor's country situation, family structure, plans for entry/exit to Turkey, availability of documents, possibility of transactions with power of attorney, and the financial/operational details of the investment are evaluated together. After the investment method is selected, the transactions considered as the 'constitutive element of the citizenship application' for the selected method (payment flow, official records, annotations, conformity certificate application) are correctly structured from the very beginning."
       },
       {
         "num": "02",
         "icon": "💱",
-        "title": "Bank Selection and Account Opening",
-        "desc": "A deposit account is opened in their name at a bank operating in Turkey, with a minimum of USD 500,000 or equivalent foreign currency. It is critically important that money transfers and foreign currency transactions are made using the correct method."
+        "title": "Turkish Citizenship Application Process via Bank Deposit of USD 500,000 (3-Year Holding Requirement)",
+        "desc": "In this method, the investor opens a deposit account in their own name at a bank operating in Turkey with at least USD 500,000 or equivalent foreign currency, and undertakes not to withdraw this amount for 3 years. In practice, a 3-year block/commitment is established by the bank on the relevant amount, and following the structuring of the investment in accordance with citizenship criteria, the Conformity Certificate certifying the eligibility of the investment for the deposit method is obtained (the conformity determination process for this method is conducted under the BDDK framework). Following the acquisition of the conformity certificate, the J-clause residence permit and then the exceptional citizenship application (VAT-4) stages are completed respectively. The most critical risk in this method is the incorrect establishment of the block/commitment mechanism or the failure to properly document the movement of money despite the money being deposited; withdrawing the money or lifting the block before the 3-year period expires directly risks the process.\n\nLawyer's Role:\n- Coordinating bank selection and account opening\n- Executing money transfers and foreign currency transactions correctly\n- Preparing 3-year block-commitment texts and bank correspondence in compliance with legislation\n- Executing the conformity certificate process completely\n- Managing the subsequent residence permit and citizenship application file from a single center"
       },
       {
         "num": "03",
-        "icon": "🔒",
-        "title": "Establishment of 3-Year Block / Commitment",
-        "desc": "A 3-year block/commitment is established on the relevant amount. The block-commitment texts and bank correspondence must be prepared in compliance with legislation."
+        "icon": "📜",
+        "title": "After the Conformity Certificate: Preparation of the Citizenship File",
+        "desc": "After the conformity certificate is obtained, the documents required for the citizenship application are prepared. Although the document list generally has a standard framework, each file may differ based on the applicant's country, number of family members, special circumstances in documents, and the practices of the relevant country's consulate. While some countries' consulates in Turkey can issue documents with a power of attorney, some consulates do not accept power of attorney or do not issue certain documents. For this reason, file preparation should be handled as \"identifying and managing file-specific risks\" rather than \"submitting the standard list\" for each application."
       },
       {
         "num": "04",
-        "icon": "📜",
-        "title": "BDDK Conformity Certificate",
-        "desc": "The Conformity Certificate attesting to the eligibility of the deposit investment is obtained. For this method, the eligibility determination process is conducted within the BDDK framework."
+        "icon": "🏛️",
+        "title": "Residence Permit Stage (J-Clause)",
+        "desc": "In the process of citizenship by investment, one of the critical stages in practice is the requirement for the applicant and their spouse, if any, to obtain a valid \"J-clause residence permit\" in Turkey. The investment made allows the investor and their family to obtain a J-clause residence permit.\n\nFingerprint Obligation:\n- The investor and their spouse, if any, must come to Turkey for the J-clause residence permit application because it is mandatory to process fingerprint data into the Immigration Administration system. For this reason, the fingerprint process is completed first, and then the residence permit application is filed with the relevant Provincial Directorate of Immigration Administration with the required documents. Individuals must also personally attend the residence permit application.\n\nTravel Freedom:\n- After the residence permit application is submitted, if the person has no visa/residence violation in Turkey, in most cases they may not need to remain in Turkey continuously to wait for the approval process to be completed. When the residence permit is approved, the next stage is initiated.\n\nChildren's Status:\n- An important detail to know about the residence permit, which is the prerequisite for the citizenship application, is that while it is determined as a prerequisite for the investor and spouse to obtain a residence permit, there is no such requirement for children."
       },
       {
         "num": "05",
-        "icon": "🏛️",
-        "title": "J-Clause Residence Permit",
-        "desc": "After the conformity certificate, a J-clause residence permit application is made for the investor and their spouse. Physical presence in Turkey is required to collect fingerprint data."
+        "icon": "🇹🇷",
+        "title": "Citizenship Application (Civil Registry Office / Exceptional Citizenship)",
+        "desc": "After the residence permit is obtained and the documents required for the citizenship application are completed, the citizenship application stage is initiated. At this stage, applicants (except children) must be personally present at the Civil Registry Office during the application and sign the required documents. In practice, at this stage, photos of the applicants are taken and fingerprint data is collected for the second time. With the submission of the documents, the citizenship application is completed.\n\nThe point that needs to be particularly emphasized at this stage is this:\n- The applicant and their spouse, if any, must be physically present in Turkey twice during the residence permit and citizenship application stages to participate in the application.\n- Biometric procedures (fingerprint/photo) must be completed in person.\n- This requirement must be organized correctly at the beginning of the process in terms of travel planning."
       },
       {
         "num": "06",
-        "icon": "🇹🇷",
-        "title": "Citizenship Application (VAT-4)",
-        "desc": "After obtaining the residence permit, an exceptional citizenship application (VAT-4) is filed. Applicants are personally present at the civil registry office, where photo and fingerprint procedures are completed."
+        "icon": "💳",
+        "title": "Completion of the Application and Post-Citizenship Identity / Passport Procedures",
+        "desc": "The completion time of the citizenship application may vary periodically depending on factors such as the work volume of civil registry units, the country situation of the applicant, security investigations, and the clarity of the documents. In practice, the average completion time can mostly be expressed as 5-6 months.\n\nAfter the citizenship application is approved, a Turkish identity card and passport application is filed for the applicants and family members who have acquired Turkish citizenship as of the approval date. These applications can be made at civil registry offices in Turkey, or they can be completed through foreign missions when necessary; appointments for these procedures are obtained by lawyers. In passport and identity card applications, it is recommended that individuals perform these procedures at the Population and Citizenship Affairs Directorates in Turkey; because the preparation and delivery of identity cards and passports can take a long time at foreign missions, whereas they can be completed much faster at the General Directorate of Population and Citizenship Affairs in Turkey.\n\nThe important point to know at this stage is that:\n- All applicants (including children) must be present at the passport application."
       }
     ]
   },
@@ -110,45 +133,8 @@
       }
     ]
   },
-  "bes": {
-    "eyebrow": "Alternative Method",
-    "title": "USD 500,000 Investment via the BES System",
-    "paragraphs": [
-      "In the BES method, the investor joins a BES plan labeled 'citizenship' through an insurance company and deposits at least USD 500,000 or equivalent foreign currency as a contribution.",
-      "The money flow, in compliance with legislation, generally involves depositing foreign currency in a bank, converting it to Turkish Lira through sale to the Central Bank of Turkey, and the 3-year period begins from the date the contract takes effect with the transfer of the contribution to the insurance company.",
-      "The Conformity Certificate/conformity letter confirming that the investment was made in accordance with citizenship criteria is issued by SEDDK in this method."
-    ],
-    "restrictionsTitle": "Restrictions for the First 3 Years",
-    "restrictions": [
-      "Transfer to another company cannot be made in the first 3 years",
-      "Plan changes cannot be made",
-      "Restrictions exist for certain fund types (funds labeled 'foreign' or 'external debt instruments')",
-      "Exiting the system before 3 years jeopardizes the citizenship process"
-    ],
-    "officeRoleTitle": "Our Office's Role in the BES Method",
-    "officeRole": [
-      "Selection of the insurance company and structuring the contract in accordance with the citizenship plan",
-      "Correct documentation of the bank-Central Bank foreign currency sale process",
-      "Organizing the contribution to meet the 'cash transfer' requirement",
-      "Managing the first 3-year restrictions for the investor clearly and in writing",
-      "Complete filing of the SEDDK conformity letter application",
-      "Integrated follow-up of residence permit and citizenship applications"
-    ]
-  },
-  "postApproval": {
-    "eyebrow": "Post-Application",
-    "title": "Process After the Conformity Certificate",
-    "paragraphs": [
-      "After the conformity certificate is obtained, the documents required for the citizenship application are prepared. While the document list generally has a standard framework, each file may differ based on the applicant's country, number of family members, and the practices of the relevant country's consulate.",
-      "After the citizenship application is approved, a Turkish identity card and passport application is filed for the applicants and family members who have acquired Turkish citizenship as of the approval date. Processing through civil registry offices in Turkey is completed much more quickly."
-    ],
-    "bullets": [
-      "Preparation of the citizenship file",
-      "Organization of the civil registry application",
-      "Obtaining passport and identity card appointments",
-      "Inclusion of all family members in the process"
-    ]
-  },
+  "bes": null,
+  "postApproval": null,
   "whoCanApply": {
     "eyebrow": "Application Conditions",
     "title": "Who Can Acquire Citizenship?",
@@ -161,7 +147,8 @@
     "familyTitle": "Who Can Acquire Citizenship Together with the Investor?",
     "family": [
       "Spouse",
-      "Children under 18 (21 for Egyptian nationals, 19 for Algerian nationals)"
+      "Children under 18 (21 for Egyptian nationals, 19 for Algerian nationals)",
+      "Separate application and conditions are required for children over 18"
     ],
     "cannotTitle": "Who Cannot Acquire Citizenship This Way?",
     "cannot": [
@@ -172,10 +159,10 @@
     ],
     "specialTitle": "Exceptional Cases",
     "special": [
-      "In cases of multiple marriages, only the first spouse is entitled to citizenship",
-      "Children from the second/third/fourth spouse can acquire citizenship together with the investor",
-      "Children born out of wedlock can also apply together with the investor",
-      "Additional documents are requested in exceptional cases"
+      "In cases of multiple marriages, only the first spouse is entitled to citizenship (decided based on marriage certificate dates)",
+      "Children from the second, third, or fourth spouses can acquire citizenship together with the investor",
+      "Children born out of wedlock can also acquire Turkish citizenship together with the investor",
+      "Additional documents are requested in these exceptional cases"
     ]
   },
   "serviceScope": {
@@ -183,14 +170,14 @@
     "title": "End-to-End Management",
     "items": [
       "Selection of investment method and process planning",
-      "Coordination of bank selection and account opening",
-      "Correct execution of money transfer/foreign currency transactions",
-      "Preparation of 3-year block-commitment texts in compliance with legislation",
-      "Control and guidance of bank correspondence",
-      "Complete conduct of the BDDK conformity certificate process",
+      "Structuring the investment in accordance with citizenship",
+      "Examination, signing and payment coordination of contracts in Bank Deposit Account investments",
+      "Preparation of 3-year block-commitment texts and bank correspondence in compliance with legislation",
+      "Management of the BDDK conformity certificate process",
       "Structuring of contracts for BES investments in accordance with citizenship",
-      "Filing of the SEDDK conformity letter application",
-      "Preparation and follow-up of residence permit application",
+      "Correct documentation of the foreign currency sale process (bank and TCMB transactions)",
+      "Complete filing of the SEDDK conformity letter application",
+      "Preparation and follow-up of residence permit application (J-clause)",
       "Preparation of citizenship file and organization of civil registry application",
       "End-to-end management of the process including identity and passport application"
     ]

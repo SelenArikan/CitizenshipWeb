@@ -20,19 +20,17 @@ type AboutPageDict = {
 };
 
 const TEAM = [
-  { name: "Av. Necmettin Barman",        title: "Kurucu Avukat",        langs: "EN · AR", initials: "NB", founder: true },
-  { name: "Büşra Barman",                title: "Genel Müdür",          langs: "",         initials: "BB", founder: true },
-  { name: "Av. Nurten İnan",             title: "Avukat",               langs: "EN",       initials: "Nİ" },
-  { name: "Av. Hafsa Nur Osmani Damar",  title: "Avukat",               langs: "EN",       initials: "HN" },
-  { name: "Av. Ceyda Selin Şentürk",    title: "Avukat",               langs: "EN · DE · FR", initials: "CS" },
-  { name: "Stj. Av. Ömer Faruk Şimsek", title: "Stajyer Avukat",       langs: "",         initials: "ÖF" },
-  { name: "Natali Cenker",               title: "Tercüman",             langs: "RU · EN",  initials: "NC" },
-  { name: "Ariadna Tülay",               title: "Tercüman",             langs: "RU · EN",  initials: "AT" },
-  { name: "Madina Fidun",                title: "Tercüman",             langs: "RU",       initials: "MF" },
-  { name: "Zeynep Genç",                 title: "Tercüman",             langs: "AR",       initials: "ZG" },
-  { name: "Merve Genç",                  title: "Tercüman",             langs: "AR",       initials: "MG" },
-  { name: "Mürüvet Kazıcı",              title: "Muhasebe",             langs: "",         initials: "MK" },
-  { name: "Abdullah Sağlam",             title: "İş Takip Görevlisi",   langs: "",         initials: "AS" },
+  { name: "Av. Necmettin Barman",        title: "Kurucu Avukat",        langs: "EN · AR", phone: "+90 532 449 47 28", initials: "NB" },
+  { name: "Av. Nurten İnan",             title: "Avukat",               langs: "EN",       phone: "+90 532 449 47 28", initials: "Nİ" },
+  { name: "Av. Ceyda Selin Gündüz",      title: "Avukat",               langs: "EN · DE · FR", phone: "+90 532 449 47 28", initials: "CG" },
+  { name: "Av. Cankut Aydemir",          title: "Avukat",               langs: "EN",       phone: "+90 532 449 47 28", initials: "CA" },
+  { name: "Ariadna Tülay",               title: "Tercüman",             langs: "RU · EN",  phone: "+90 532 449 47 28", initials: "AT" },
+  { name: "Fatima Zahraa Sekkaki",       title: "Tercüman",             langs: "AR · EN · FR", phone: "+90 532 449 47 28", initials: "FS" },
+  { name: "Madina Fıdun",                title: "Tercüman",             langs: "RU",       phone: "+90 532 449 47 28", initials: "MF" },
+  { name: "Mesut Salman",                title: "İş Takip Görevlisi",   langs: "EN",       phone: "+90 532 449 47 28", initials: "MS" },
+  { name: "Abdullah Sağlam",             title: "İş Takip Görevlisi",   langs: "AR",       phone: "+90 532 449 47 28", initials: "AS" },
+  { name: "Selda Akkaya",                title: "Mali Müşavir",         langs: "",         phone: "+90 532 449 47 28", initials: "SA" },
+  { name: "Mürüvet Kazıcı",              title: "Muhasebe",             langs: "",         phone: "+90 532 449 47 28", initials: "MK" },
 ];
 
 const VALUE_CONFIG = [
@@ -117,27 +115,12 @@ export default async function AboutPageContent({ lang }: { lang: string }) {
               {d.hero_tag ?? "Hakkımızda"}
             </span>
             <h1 className="mt-4 text-5xl font-extrabold leading-[1.1] text-[#0a192f] sm:text-6xl md:text-7xl lg:text-8xl">
-              {d.hero_title ?? "Biz"}&nbsp;
-              <span
-                style={{
-                  WebkitTextStroke: "2px #8a1c1c",
-                  color: "transparent",
-                }}
-              >
-                {lang === "tr" ? "Kimiz" : lang === "en" ? "Who" : lang === "ar" ? "من نحن" : lang === "fa" ? "کی‌ایم" : "Кто мы"}
-              </span>
+              {lang === "tr" ? "Ekibimiz" : lang === "en" ? "Our Team" : lang === "ru" ? "Наша команда" : lang === "ar" ? "فريقنا" : "تیم ما"}
             </h1>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-[#0a192f]/60">
               {d.story_p1 ?? "CitizenshipWeb, 2013 yılından bu yana Türkiye vatandaşlık hukuku alanında saygın bir danışmanlık firmasıdır."}
             </p>
-            <div className="mt-10 flex flex-wrap gap-3">
-              {stats.map((s) => (
-                <div key={s.label} className="rounded-2xl border border-[#0a192f]/10 bg-white/80 px-6 py-4 text-center shadow-sm backdrop-blur-sm">
-                  <p className="text-2xl font-extrabold text-[#8a1c1c]">{s.num}</p>
-                  <p className="mt-0.5 text-xs font-semibold text-[#0a192f]/50">{s.label}</p>
-                </div>
-              ))}
-            </div>
+
           </div>
 
           {/* Right: quote card */}
@@ -188,74 +171,11 @@ export default async function AboutPageContent({ lang }: { lang: string }) {
         </div>
       </section>
 
-      {/* ══════════════════════════════════════════════════
-          VALUES — dark with large numbers
-      ══════════════════════════════════════════════════ */}
-      <section
-        className="relative py-24 lg:py-32"
-        id="about-values"
-        style={{ background: "linear-gradient(135deg, #E8EEF6 0%, #EEF2F8 50%, #F0F5FA 100%)" }}
-      >
-        {/* Subtle diagonal lines */}
-        <div
-          className="pointer-events-none absolute inset-0 opacity-[0.04]"
-          aria-hidden="true"
-          style={{
-            backgroundImage: "repeating-linear-gradient(45deg, #0a192f 0, #0a192f 1px, transparent 0, transparent 50%)",
-            backgroundSize: "24px 24px",
-          }}
-        />
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-16 flex flex-col items-start lg:flex-row lg:items-end lg:justify-between">
-            <div>
-              <span className="mb-3 inline-block text-xs font-bold uppercase tracking-widest text-[#8a1c1c]">
-                {d.values_tag ?? "Değerlerimiz"}
-              </span>
-              <h2 className="text-4xl font-extrabold text-[#0a192f] sm:text-5xl">
-                {d.values_title ?? "Çalışma Felsefemiz"}
-              </h2>
-            </div>
-          </div>
-
-          <div className="grid gap-4 lg:grid-cols-3">
-            {values.map((val, idx) => (
-              <div
-                key={val.title}
-                className="reveal reveal-fade-up group relative flex flex-col rounded-3xl border border-[#0a192f]/8 bg-white/80 p-10 shadow-sm backdrop-blur-sm transition hover:-translate-y-1 hover:shadow-md"
-                style={{ transitionDelay: `${idx * 80}ms` }}
-              >
-                {/* Large index number */}
-                <span
-                  className="mb-6 block font-extrabold leading-none select-none"
-                  style={{
-                    fontSize: "clamp(4rem,8vw,7rem)",
-                    WebkitTextStroke: "2px rgba(138,28,28,0.30)",
-                    color: "rgba(138,28,28,0.06)",
-                    lineHeight: 1,
-                  }}
-                >
-                  0{idx + 1}
-                </span>
-                {/* Icon */}
-                <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-[#8a1c1c]/10 text-[#8a1c1c]">
-                  {VALUE_CONFIG[idx]?.icon}
-                </div>
-                <h3 className="mb-3 text-xl font-bold text-[#0a192f]">{val.title}</h3>
-                <p className="text-sm leading-relaxed text-[#0a192f]/60">{val.desc}</p>
-                {/* Bottom accent line */}
-                <div className="mt-auto pt-8">
-                  <div className="h-px w-0 bg-[#8a1c1c] transition-all duration-500 group-hover:w-full" />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ══════════════════════════════════════════════════
           TEAM
       ══════════════════════════════════════════════════ */}
-      <section className="bg-[#E8ECF3] py-24 lg:py-32" id="about-team">
+      <section className="bg-white py-24 lg:py-32 border-t border-gray-100" id="about-team">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-16 text-center">
             <span className="mb-3 inline-block text-xs font-bold uppercase tracking-widest text-[#8a1c1c]">
@@ -266,65 +186,35 @@ export default async function AboutPageContent({ lang }: { lang: string }) {
             </h2>
           </div>
 
-          {/* Founders — 2-col large cards */}
-          <div className="mb-10 grid gap-6 sm:grid-cols-2">
-            {TEAM.filter((m) => m.founder).map((m) => (
+          {/* Simplified Side-by-Side Grid */}
+          <div className="grid grid-cols-2 gap-x-6 gap-y-12 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 justify-center">
+            {TEAM.map((m, idx) => (
               <div
                 key={m.name}
-                className="reveal reveal-fade-up group relative overflow-hidden rounded-3xl p-8 shadow-md border border-[#0a192f]/10"
-                style={{ background: "linear-gradient(135deg, #EEF2F8 0%, #F0F4FA 100%)" }}
+                className="reveal reveal-fade-up flex flex-col items-center text-center group"
+                style={{ transitionDelay: `${(idx % 5) * 50}ms` }}
               >
-                {/* Hover glow */}
-                <div
-                  className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-                  aria-hidden="true"
-                  style={{ background: "radial-gradient(circle at 30% 50%, rgba(138,28,28,0.25) 0%, transparent 60%)" }}
-                />
-                <div className="relative flex items-center gap-6">
-                  {/* Avatar */}
-                  <div
-                    className="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl text-2xl font-extrabold text-white"
-                    style={{ background: "linear-gradient(135deg,#8a1c1c,#c0392b)" }}
-                  >
-                    {m.initials}
-                  </div>
-                  <div>
-                    <p className="text-xl font-bold text-[#0a192f]">{m.name}</p>
-                    <p className="mt-1 text-sm font-semibold text-[#8a1c1c]">{m.title}</p>
-                    {m.langs && (
-                      <span className="mt-3 inline-block rounded-full bg-[#0a192f]/8 px-3 py-0.5 text-xs font-bold text-[#0a192f]/60">
-                        {m.langs}
-                      </span>
-                    )}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Rest — masonry-style 4-col grid */}
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {TEAM.filter((m) => !m.founder).map((m, idx) => (
-              <div
-                key={m.name}
-                className="reveal reveal-fade-up group relative overflow-hidden rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-[#8a1c1c]/30 hover:shadow-lg"
-                style={{ transitionDelay: `${(idx % 4) * 60}ms` }}
-              >
-                {/* Color strip top */}
-                <div className="mb-5 h-1 w-8 rounded-full bg-gray-200 transition-all duration-300 group-hover:w-14 group-hover:bg-[#8a1c1c]" />
-                {/* Initials */}
-                <div
-                  className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl font-bold text-white text-sm transition-all duration-300"
-                  style={{ background: "linear-gradient(135deg,#0a192f,#1a3a5c)" }}
-                >
-                  {m.initials}
-                </div>
-                <p className="font-bold text-[#0a192f] text-sm leading-snug">{m.name}</p>
-                <p className="mt-0.5 text-xs text-gray-500">{m.title}</p>
+                <p className="font-bold text-[#0a192f] text-base leading-snug">{m.name}</p>
+                <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-[#8a1c1c]">{m.title}</p>
+                
+                {/* Languages */}
                 {m.langs && (
-                  <span className="mt-3 inline-block rounded-full bg-[#E8ECF3] px-2.5 py-0.5 text-xs font-semibold text-[#0a192f]/60 transition group-hover:bg-[#fef2f2] group-hover:text-[#8a1c1c]">
+                  <p className="mt-1 text-xs text-gray-500 font-medium">
                     {m.langs}
-                  </span>
+                  </p>
+                )}
+                
+                {/* Phone */}
+                {m.phone && (
+                  <a
+                    href={`tel:${m.phone.replace(/\s+/g, "")}`}
+                    className="mt-1 flex items-center gap-1 text-[11px] text-gray-400 hover:text-[#8a1c1c] transition-colors"
+                  >
+                    <svg className="h-3 w-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    <span>{m.phone}</span>
+                  </a>
                 )}
               </div>
             ))}

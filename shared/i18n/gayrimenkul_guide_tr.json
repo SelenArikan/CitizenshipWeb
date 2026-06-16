@@ -13,10 +13,26 @@
     "imageAlt": "Türkiye'de gayrimenkul yatırımı"
   },
   "stats": [
-    { "value": "$400.000", "label": "Minimum Yatırım Tutarı", "sub": "USD" },
-    { "value": "3 Yıl", "label": "Satılamaz Şerh Süresi", "sub": "Tapuda Kayıtlı" },
-    { "value": "~120 Gün", "label": "Ortalama Süreç", "sub": "Başvurudan Pasaporta" },
-    { "value": "%100", "label": "Yasal Güvence", "sub": "Resmi Devlet Süreci" }
+    {
+      "value": "$400.000",
+      "label": "Minimum Yatırım Tutarı",
+      "sub": "USD"
+    },
+    {
+      "value": "3 Yıl",
+      "label": "Satılamaz Şerh Süresi",
+      "sub": "Tapuda Kayıtlı"
+    },
+    {
+      "value": "~120 Gün",
+      "label": "Ortalama Süreç",
+      "sub": "Başvurudan Pasaporta"
+    },
+    {
+      "value": "%100",
+      "label": "Yasal Güvence",
+      "sub": "Resmi Devlet Süreci"
+    }
   ],
   "intro": {
     "eyebrow": "Hakkında",
@@ -63,7 +79,7 @@
       {
         "num": "1.1.3",
         "title": "Diğer Şerhler",
-        "desc": "Başka türlü bir şerh var mı?\n\nŞerh; tapuya işlenen ve üçüncü kişilere karşı ileri sürülebilen hak veya kısıtlamalardır. Sık karşılaşılan şerh türleri:\n\nSatış Vaadi Şerhi: Taşınmazın önceden başka bir kişiye noterden satıldığını ve tapunun ileriki bir tarihte devredileceğini gösteren şerhtir.\n\nİhtiyati Tedbir Şerhi: Taşınmaz malikinin devam eden bir davası nedeniyle satışın engellenmiş olabileceğini gösterir.\n\nKat Karşılığı İnşaat Sözleşmesi Şerhi: Taşınmaz inşaatının hâlâ devam ettiğini ve inşaatın belirli bir aşamaya geldiğinde tapuların devredilebileceğini gösteren sözleşmeye işaret eder. Henüz satışa hazır olmayan bir taşınmaz için ödeme yapılmamalıdır.\n\nMahkeme Tedbir Kararı: Mahkeme tarafından verilen ve taşınmazın satışını veya devrini geçici olarak durduran karardır. Tedbir kaldırılmadan tapuda işlem yapılamaz.\n\nİflas Şerhi: Taşınmaz sahibinin iflas etmiş olması nedeniyle tapuya konulan kayıttır. Bu durumda taşınmaz üzerindeki tasarruf yetkisi genellikle iflas idaresine geçer ve satış için özel prosedür gerekir.\n\nKamulaştırma Şerhi: Devletin kamu yararı nedeniyle taşınmazı kamulaştırma sürecinde olduğunu gösteren kayıttır. Bu durumda satış işlemi kısıtlanabilir veya kamulaştırma tamamlanıncaya kadar mümkün olmayabilir.\n\nKültür Varlığı / Sit Alanı Kaydı: Taşınmazın kültürel veya tarihî değeri bulunduğunu ve koruma altında olduğunu gösterir. Bu tür taşınmazlarda kullanım ve yapılaşma ciddi biçimde sınırlıdır; bazı işlemler için özel izin gerekebilir.\n\nAskerî Yasak Bölge Kaydı: Taşınmazın askerî güvenlik açısından sınırlı bölgede bulunduğunu gösterir. Özellikle yabancıların taşınmaz edinimi veya bazı tasarruf işlemleri için özel izin gerekebilir.\n\nBu tür kayıtlar devir işlemini tamamen engelleyebilir ya da özel izin gerektireceğinden, tapu alımından önce mutlaka uzman bir avukat tarafından incelenmelidir.",
+        "desc": "Başka türlü bir şerh var mı?\n\nŞerh; tapuya işlenen ve üçüncü kişilere karşı ileri sürülebilen hak veya kısıtlamalardır. Sık karşılaşılan şerh türleri:\n\nSatış Vaadi Şerhi: Taşınmazın önceden başka bir kişiye noterden satıldığını ve tapunun ileriki bir tarihte devredileceğini gösteren şerhtir.\n\nİhtiyati Tedbir Şerhi: Taşınmaz malikinin devam eden bir davası nedeniyle satışın engellenmiş olabileceğini gösterir.\n\nKat Karşılığı İnşaat Sözleşmesi Şerhi: Taşınmaz inşaatının hâlâ devam ettiğini ve inşaatın belirli bir aşamaya geldiğinde tapuların devredilebileceğini gösteren sözleşmeye işaret eder. Henüz satışa hazır olmayan bir taşınmaz için ödeme yapılmamalıdır.\n\nMahkeme Tedbir Kararı: Mahkeme tarafından verilen ve taşınmazın satışını veya devrini geçici olarak durduran karardır. Tedbir kaldırılmadan tapuda işlem yapılamaz.\n\nİflas Şerhi: Taşınmaz sahibinin iflas etmiş olması nedeniyle tapuya konulan kayıttır. Bu durumda taşınmaz üzerindeki tasarruf yetkisi genellikle iflas idaresine geçer ve satış için özel prosedür gerekir.\n\nKamulaştırma Şerhi: Devletin kamu yararı nedeniyle taşınmazı kamulaştırma sürecinde olduğunu gösteren kayıttır. Bu durumda satış işlemi kısıtlanabilir veya kamulaştırma tamamlanıncaya kadar mümkün olmayabilir.\n\nKültür Varlığı / Sit Alanı Kaydı: Taşınmazın kültürel veya tarihî değeri bulunduğunu ve koruma altında olduğunu gösterir. Bu tür taşınmazlarda kullanım ve yapılaşma ciddi biçimde sınırlıdır; bazı işlemler için özel izin gerekebilir.\n\nAskerî Yasak Bölge Kaydı: Taşınmazın askerî güvenlik açısından sınırlı bölgede bulunduğunu gösterir. Özellikle yabancıların taşınmaz edinimi veya bazı tasarruf işlemleri için özel izin gerekebilir.\n\n> Bu tür kayıtlar devir işlemini tamamen engelleyebilir ya da özel izin gerektireceğinden, tapu alımından önce mutlaka uzman bir avukat tarafından incelenmelidir.",
         "icon": "📜"
       },
       {
@@ -75,7 +91,7 @@
       {
         "num": "1.2",
         "title": "Tapu Türünün Vatandaşlığa Uygunluğu",
-        "desc": "Tapunun niteliği, vatandaşlık başvurusu açısından mutlaka kontrol edilmelidir. Taşınmazın kat mülkiyetli veya kat irtifaklı olması esastır; bu iki tapu türü, bağımsız bölümün hukuken tanımlandığını ve projeye bağlı bir yapı yatırımının bulunduğunu gösterir.\n\nBuna karşılık boş arsa satın almak, tek başına vatandaşlık için uygun kabul edilmez. Arsa tapulu bir taşınmaz, ancak aşağıdaki şartların tamamının bir arada bulunması hâlinde vatandaşlık açısından değerlendirmeye alınabilir:\n- Arsa üzerinde ruhsatlı bir projenin bulunması\n- İnşaat için belediye onaylarının alınmış olması\n- Kat irtifakının kurulmuş olması\n- Bağımsız bölümlerin projede açıkça belirlenmiş olması\n- Ödemenin banka üzerinden yapılıp DAB ile ispatlanması\n- Değerleme raporunun vatandaşlık için gerekli asgari tutarı karşılaması\n\nBu şartlardan herhangi birinin eksik olması durumunda, arsa yatırımı vatandaşlık kapsamında kabul edilmez.",
+        "desc": "Tapunun niteliği, vatandaşlık başvurusu açısından mutlaka kontrol edilmelidir. Taşınmazın kat mülkiyetli veya kat irtifaklı olması esastır; bu iki tapu türü, bağımsız bölümün hukuken tanımlandığını ve projeye bağlı bir yapı yatırımının bulunduğunu gösterir.\n\nBuna karşılık boş arsa satın almak, tek başına vatandaşlık için uygun kabul edilmez. Arsa tapulu bir taşınmaz, ancak aşağıdaki şartların tamamının bir arada bulunması hâlinde vatandaşlık açısından değerlendirmeye alınabilir:\n- Arsa üzerinde ruhsatlı bir projenin bulunması\n- İnşaat için belediye onaylarının alınmış olması\n- Kat irtifakının kurulmuş olması\n- Bağımsız bölümlerin projede açıkça belirlenmiş olması\n- Ödemenin banka üzerinden yapılıp DAB ile ispatlanması\n- Değerleme raporunun vatandaşlık için gerekli asgari tutarı karşılaması\n\n> Bu şartlardan herhangi birinin eksik olması durumunda, arsa yatırımı vatandaşlık kapsamında kabul edilmez.",
         "icon": "🏗️"
       },
       {
@@ -87,7 +103,7 @@
       {
         "num": "1.4",
         "title": "Ekspertiz Ön Değerlendirmesi",
-        "desc": "Tek bir taşınmazla vatandaşlık başvurusu yapılıyorsa; İskân Bakanlığı'na bağlı GEDAŞ tarafından, satıcının e-Devlet girişi üzerinden Web Tapu aracılığıyla çevrimiçi değerleme raporu talep edilir.\n\nTaşınmazın değeri, vatandaşlık için gerekli asgari yatırım tutarını karşılıyorsa, raporun son sayfasında aşağıdaki ibare yer alır:\n\n\"Türk Vatandaşlığı Kanununun Uygulanmasına İlişkin Yönetmelik kapsamında aranan minimum yatırım tutarını karşılamaktadır.\"\n\nBirden fazla taşınmazla vatandaşlık başvurusu yapılması hâlinde ise her taşınmaz için ayrı değerleme raporu düzenlenir. Raporların son sayfasındaki \"Vatandaşlık kazanımına esas tutar değerlendirmesi\" bölümünde toplam yatırım tutarı belirtilir.\n\nHesaplamada esas alınacak tutar bakımından uygulanacak kural şudur:\n\nTaşınmaza ilişkin Döviz Alım Belgesi (DAB) tutarı, değerleme raporundaki tutardan daha düşük ise vatandaşlık hesabında DAB tutarı esas alınır. Değerleme raporundaki tutar daha düşük ise, bu durumda rapor tutarı esas alınır.\n\nVatandaşlık açısından geçerli yatırım tutarı: DAB ile değerleme raporundan hangisi daha düşükse, o tutardır.\n\nBu nedenle eksik kalan bir kısım bulunması hâlinde, yatırımın vatandaşlık eşiğine ulaşabilmesi için farkın tamamlanması gerekmektedir.\n\nYatırım amacıyla satın alınan taşınmazlarda değerleme raporu zorunlu değildir; değerleme raporu yalnızca vatandaşlık amacıyla satın alınan taşınmazlar için zorunlu bir unsurdur.",
+        "desc": "Tek bir taşınmazla vatandaşlık başvurusu yapılıyorsa; İskân Bakanlığı'na bağlı GEDAŞ tarafından, satıcının e-Devlet girişi üzerinden Web Tapu aracılığıyla çevrimiçi değerleme raporu talep edilir.\n\nTaşınmazın değeri, vatandaşlık için gerekli asgari yatırım tutarını karşılıyorsa, raporun son sayfasında aşağıdaki ibare yer alır:\n\n> \"Türk Vatandaşlığı Kanununun Uygulanmasına İlişkin Yönetmelik kapsamında aranan minimum yatırım tutarını karşılamaktadır.\"\n\nBirden fazla taşınmazla vatandaşlık başvurusu yapılması hâlinde ise her taşınmaz için ayrı değerleme raporu düzenlenir. Raporların son sayfasındaki \"Vatandaşlık kazanımına esas tutar değerlendirmesi\" bölümünde toplam yatırım tutarı belirtilir.\n\n![Değerleme Raporu – Örnek Sayfa](/gayrimenkul/degerleme-raporu-ornegi.png)\n\nHesaplamada esas alınacak tutar bakımından uygulanacak kural şudur:\n- Taşınmaza ilişkin Döviz Alım Belgesi (DAB) tutarı, değerleme raporundaki tutardan daha düşük ise vatandaşlık hesabında DAB tutarı esas alınır.\n- Değerleme raporundaki tutar daha düşük ise, bu durumda rapor tutarı esas alınır.\n\n![Geçerli Yatırım Tutarı Hesaplama Formülü](/gayrimenkul/gecerli-yatirim-hesaplama.png)\n\n> Vatandaşlık açısından geçerli yatırım tutarı: DAB ile değerleme raporundan hangisi daha düşükse, o tutardır.\n\nBu nedenle eksik kalan bir kısım bulunması hâlinde, yatırımın vatandaşlık eşiğine ulaşabilmesi için farkın tamamlanması gerekmektedir.\n\nYatırım amacıyla satın alınan taşınmazlarda değerleme raporu zorunlu değildir; değerleme raporu yalnızca vatandaşlık amacıyla satın alınan taşınmazlar için zorunlu bir unsurdur.",
         "icon": "💡"
       }
     ]
@@ -126,7 +142,7 @@
       {
         "icon": "📋",
         "title": "Tapu Satışı Öncesinde Zorunlu Belgeler",
-        "desc": "Zorunlu Deprem Sigortası (DASK): Satışa konu taşınmaz için geçerli bir DASK poliçesinin bulunması zorunludur. Kat mülkiyetli taşınmazlarda bu poliçe tapuda işlem yapılabilmesi için ön koşuldur.\n\nDeğerleme Raporu: Yabancıya yapılan taşınmaz satışlarında ekspertiz raporu zorunludur. Vatandaşlık amacı taşıyan işlemlerde bu rapor ayrıca talep olarak da istenmektedir. Tapu randevusu, eksper raporu sisteme yüklenmeden alınamamaktadır."
+        "desc": "### Zorunlu Deprem Sigortası (DASK)\n\nSatışa konu taşınmaz için geçerli bir DASK poliçesinin bulunması zorunludur. Kat mülkiyetli taşınmazlarda bu poliçe tapuda işlem yapılabilmesi için ön koşuldur.\n\n### Değerleme Raporu\n\nYabancıya yapılan taşınmaz satışlarında ekspertiz raporu zorunludur. Vatandaşlık amacı taşıyan işlemlerde bu rapor ayrıca talep olarak da istenmektedir. Tapu randevusu, eksper raporu sisteme yüklenmeden alınamamaktadır."
       },
       {
         "icon": "🖥️",
@@ -141,7 +157,7 @@
       {
         "icon": "✍️",
         "title": "Randevu Günü Tapuda Yapılacak İşlemler",
-        "desc": "Randevu günü taraflar tapu müdürlüğünde hazır bulunur. Yabancı alıcı için zorunlu unsurlar şunlardır:\n\n- Yabancı alıcı bizzat geliyorsa yeminli tercüman; gelmiyorsa alıcı avukat\n- Pasaport\n- Noter onaylı pasaport tercümesi\n- Banka ödeme belgeleri\n- Vatandaşlık başvurularında DAB belgesi\n\nSatış işlemi tapunun akit odasında gerçekleştirilir. Görevli memur süreci şöyle yürütür:\n- Varsa noter sözleşmesini tercüman aracılığıyla okur.\n- Satış bedelini sorgular.\n- Ödeme beyanını teyit eder.\n- Vatandaşlık şerhini sisteme işler.\n- Taraflardan imzaları alır.\n\nİmza aşamasının tamamlanmasıyla birlikte taşınmazın mülkiyeti alıcıya geçmiş olur."
+        "desc": "Randevu günü taraflar tapu müdürlüğünde hazır bulunur. Yabancı alıcı için zorunlu unsurlar şunlardır:\n\n- Yabancı alıcı bizzat geliyorsa yeminli tercüman; gelmiyorsa alıcı avukat\n- Pasaport\n- Noter onaylı pasaport tercümesi\n- Banka ödeme belgeleri\n- Vatandaşlık başvurularında DAB belgesi\n\nSatış işlemi tapunun akit odasında gerçekleştirilir. Görevli memur süreci şöyle yürütür:\n- Varsa noter sözleşmesini tercüman aracılığıyla okur.\n- Satış bedelini sorgular.\n- Ödeme beyanını teyit eder.\n- Vatandaşlık şerhini sisteme işler.\n- Taraflardan imzaları alır.\n\n> İmza aşamasının tamamlanmasıyla birlikte taşınmazın mülkiyeti alıcıya geçmiş olur."
       },
       {
         "icon": "💰",
@@ -180,7 +196,7 @@
       {
         "num": "4.4",
         "title": "Süre",
-        "desc": "İnceleme süresi ortalama 1–2 hafta arasındadır. Yoğunluk veya eksik evrak bulunması hâlinde bu süre uzayabilir."
+        "desc": "> İnceleme süresi ortalama 1–2 hafta arasındadır. Yoğunluk veya eksik evrak bulunması hâlinde bu süre uzayabilir."
       },
       {
         "num": "4.5",
@@ -194,10 +210,26 @@
     "title": "Türk Vatandaşlığının Avantajları",
     "description": "",
     "items": [
-      { "icon": "✈️", "title": "Geniş Seyahat İmkânı", "desc": "Türk pasaportu pek çok ülkeye vizesiz veya kolaylıkla vize alarak seyahat imkânı sunar." },
-      { "icon": "🏛️", "title": "Tam Vatandaşlık Hakları", "desc": "Türk vatandaşları ile aynı haklara sahip olunur; mülk edinimi, eğitim ve sağlık hizmetlerinden tam yararlanılır." },
-      { "icon": "👨‍👩‍👧‍👦", "title": "Aile Dahil", "desc": "Eş ve 18 yaş altı çocuklar aynı başvuruya dahil edilebilir." },
-      { "icon": "💼", "title": "Uzaktan Yönetilebilir Süreç", "desc": "Sürecin önemli bir bölümü Türkiye'de bulunmaksızın avukat vekaleti ile yürütülebilir." }
+      {
+        "icon": "✈️",
+        "title": "Geniş Seyahat İmkânı",
+        "desc": "Türk pasaportu pek çok ülkeye vizesiz veya kolaylıkla vize alarak seyahat imkânı sunar."
+      },
+      {
+        "icon": "🏛️",
+        "title": "Tam Vatandaşlık Hakları",
+        "desc": "Türk vatandaşları ile aynı haklara sahip olunur; mülk edinimi, eğitim ve sağlık hizmetlerinden tam yararlanılır."
+      },
+      {
+        "icon": "👨‍👩‍👧‍👦",
+        "title": "Aile Dahil",
+        "desc": "Eş ve 18 yaş altı çocuklar aynı başvuruya dahil edilebilir."
+      },
+      {
+        "icon": "💼",
+        "title": "Uzaktan Yönetilebilir Süreç",
+        "desc": "Sürecin önemli bir bölümü Türkiye'de bulunmaksızın avukat vekaleti ile yürütülebilir."
+      }
     ]
   },
   "legal": {
