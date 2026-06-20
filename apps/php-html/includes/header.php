@@ -62,13 +62,138 @@ $pageSeo = seo_page_meta($seoKey, $lang);
                />
              </a>
           </div>
-          <div class="hidden md:flex items-center gap-1">
+            <!-- Anasayfa -->
             <a href="<?= seo_page_href('home', $lang) ?>" class="rounded-lg px-3 py-2 text-sm font-medium text-[#0a192f] transition hover:bg-blue-50 hover:text-[#112240]"><?= __t('nav.home') ?></a>
-            <a href="<?= seo_page_href('services', $lang) ?>" class="rounded-lg px-3 py-2 text-sm font-medium text-[#0a192f] transition hover:bg-blue-50 hover:text-[#112240]"><?= __t('nav.services') ?></a>
-            <a href="<?= seo_page_href('citizenship', $lang) ?>" class="rounded-lg px-3 py-2 text-sm font-medium text-[#0a192f] transition hover:bg-blue-50 hover:text-[#112240]">Adımlar</a>
-            <a href="<?= seo_page_href('knowledge', $lang) ?>" class="rounded-lg px-3 py-2 text-sm font-medium text-[#0a192f] transition hover:bg-blue-50 hover:text-[#112240]">Bilgi Bankası</a>
-            <a href="<?= seo_page_href('news', $lang) ?>" class="rounded-lg px-3 py-2 text-sm font-medium text-[#0a192f] transition hover:bg-blue-50 hover:text-[#112240]">Haberler</a>
-            <a href="<?= seo_page_href('contact', $lang) ?>" class="ml-2 rounded-full bg-[#b52727] px-6 py-2 text-sm font-bold text-white shadow-lg transition hover:bg-[#cc3333] hover:text-white"><?= __t('nav.contact') ?></a>
+            
+            <!-- Biz Kimiz -->
+            <a href="<?= seo_page_href('home', $lang) ?>#about" class="rounded-lg px-3 py-2 text-sm font-medium text-[#0a192f] transition hover:bg-blue-50 hover:text-[#112240]"><?= __t('nav.about_company') ?></a>
+            
+            <!-- Türk Vatandaşlığı (Mega Menu) -->
+            <div class="relative group">
+              <button type="button" class="flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-medium text-[#0a192f] transition hover:bg-blue-50 hover:text-[#112240] focus:outline-none">
+                <?= __t('nav.mega_tc') ?>
+                <svg class="h-3.5 w-3.5 text-slate-400 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <!-- Dropdown Content -->
+              <div class="absolute left-1/2 -translate-x-1/2 mt-1 hidden group-hover:block z-[200] w-[600px] overflow-hidden rounded-2xl shadow-2xl bg-white border border-blue-50/50 p-6" style="background: rgba(255, 255, 255, 0.99); border: 1px solid rgba(15, 45, 94, 0.08); transform: translateX(-50%);">
+                <div class="grid grid-cols-2 gap-6">
+                  <div>
+                    <span class="mb-4 block text-[11px] font-bold uppercase tracking-[0.15em] text-[#8a1c1c]"><?= __t('nav.mega_h_invest') ?></span>
+                    <div class="flex flex-col gap-1">
+                      <a href="services.php?lang=<?= $lang ?>" class="rounded-lg px-3 py-2 text-sm text-[#0a192f]/80 transition hover:bg-blue-50 hover:text-[#0a192f] flex justify-between items-center">
+                        <span><?= __t('nav.investment_real_estate') ?></span>
+                        <span class="text-xs text-stone-400"><?= __t('nav.nav_desc_400') ?></span>
+                      </a>
+                      <a href="services.php?lang=<?= $lang ?>" class="rounded-lg px-3 py-2 text-sm text-[#0a192f]/80 transition hover:bg-blue-50 hover:text-[#0a192f] flex justify-between items-center">
+                        <span><?= __t('nav.investment_deposit') ?></span>
+                        <span class="text-xs text-stone-400"><?= __t('nav.nav_desc_500') ?></span>
+                      </a>
+                      <a href="services.php?lang=<?= $lang ?>" class="rounded-lg px-3 py-2 text-sm text-[#0a192f]/80 transition hover:bg-blue-50 hover:text-[#0a192f] flex justify-between items-center">
+                        <span><?= __t('nav.investment_bes') ?></span>
+                        <span class="text-xs text-stone-400"><?= __t('nav.nav_desc_500') ?></span>
+                      </a>
+                      <a href="services.php?lang=<?= $lang ?>" class="rounded-lg px-3 py-2 text-sm text-[#0a192f]/80 transition hover:bg-blue-50 hover:text-[#0a192f] flex justify-between items-center">
+                        <span><?= __t('nav.investment_employment') ?></span>
+                        <span class="text-xs text-stone-400"><?= __t('nav.nav_desc_emp') ?></span>
+                      </a>
+                      <a href="services.php?lang=<?= $lang ?>" class="rounded-lg px-3 py-2 text-sm text-[#0a192f]/80 transition hover:bg-blue-50 hover:text-[#0a192f] flex justify-between items-center">
+                        <span><?= __t('nav.investment_fund') ?></span>
+                        <span class="text-xs text-stone-400"><?= __t('nav.nav_desc_500') ?></span>
+                      </a>
+                      <a href="services.php?lang=<?= $lang ?>" class="rounded-lg px-3 py-2 text-sm text-[#0a192f]/80 transition hover:bg-blue-50 hover:text-[#0a192f] flex justify-between items-center">
+                        <span><?= __t('nav.investment_bonds') ?></span>
+                        <span class="text-xs text-stone-400"><?= __t('nav.nav_desc_500') ?></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <span class="mb-4 block text-[11px] font-bold uppercase tracking-[0.15em] text-[#8a1c1c]"><?= __t('nav.mega_h_other') ?></span>
+                    <div class="flex flex-col gap-1">
+                      <a href="citizenship.php?lang=<?= $lang ?>" class="rounded-lg px-3 py-2 text-sm text-[#0a192f]/80 transition hover:bg-blue-50 hover:text-[#0a192f]"><?= __t('nav.item_cit_gen') ?></a>
+                      <a href="citizenship.php?lang=<?= $lang ?>" class="rounded-lg px-3 py-2 text-sm text-[#0a192f]/80 transition hover:bg-blue-50 hover:text-[#0a192f]"><?= __t('nav.item_cit_marriage') ?></a>
+                      <div class="mt-2 border-t border-blue-100 pt-3">
+                        <a href="citizenship.php?lang=<?= $lang ?>" class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-[#0a192f]/80 transition hover:bg-blue-50 hover:text-[#0a192f]">
+                          <span class="h-1.5 w-1.5 shrink-0 rounded-full bg-[#8a1c1c]"></span>
+                          <span><?= __t('nav.item_cit_process') ?></span>
+                        </a>
+                        <a href="citizenship.php?lang=<?= $lang ?>" class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-[#0a192f]/80 transition hover:bg-blue-50 hover:text-[#0a192f]">
+                          <span class="h-1.5 w-1.5 shrink-0 rounded-full bg-[#8a1c1c]"></span>
+                          <span><?= __t('nav.item_cit_passport') ?></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Oturum İzni (Mega Menu) -->
+            <div class="relative group">
+              <button type="button" class="flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-medium text-[#0a192f] transition hover:bg-blue-50 hover:text-[#112240] focus:outline-none">
+                <?= __t('nav.mega_res') ?>
+                <svg class="h-3.5 w-3.5 text-slate-400 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <!-- Dropdown Content -->
+              <div class="absolute left-1/2 -translate-x-1/2 mt-1 hidden group-hover:block z-[200] w-[300px] overflow-hidden rounded-2xl shadow-2xl bg-white border border-blue-50/50 p-6" style="background: rgba(255, 255, 255, 0.99); border: 1px solid rgba(15, 45, 94, 0.08); transform: translateX(-50%);">
+                <span class="mb-4 block text-[11px] font-bold uppercase tracking-[0.15em] text-[#8a1c1c]"><?= __t('nav.mega_h_rtypes') ?></span>
+                <div class="flex flex-col gap-1">
+                  <a href="services.php?lang=<?= $lang ?>" class="rounded-lg px-3 py-2 text-sm text-[#0a192f]/80 transition hover:bg-blue-50 hover:text-[#0a192f]"><?= __t('nav.item_res_j') ?></a>
+                  <a href="services.php?lang=<?= $lang ?>" class="rounded-lg px-3 py-2 text-sm text-[#0a192f]/80 transition hover:bg-blue-50 hover:text-[#0a192f]"><?= __t('nav.item_res_re') ?></a>
+                  <a href="services.php?lang=<?= $lang ?>" class="rounded-lg px-3 py-2 text-sm text-[#0a192f]/80 transition hover:bg-blue-50 hover:text-[#0a192f]"><?= __t('nav.item_res_fam') ?></a>
+                  <a href="services.php?lang=<?= $lang ?>" class="rounded-lg px-3 py-2 text-sm text-[#0a192f]/80 transition hover:bg-blue-50 hover:text-[#0a192f]"><?= __t('nav.item_res_long') ?></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hukuki Hizmetler (Mega Menu) -->
+            <div class="relative group">
+              <button type="button" class="flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-medium text-[#0a192f] transition hover:bg-blue-50 hover:text-[#112240] focus:outline-none">
+                <?= __t('nav.mega_leg') ?>
+                <svg class="h-3.5 w-3.5 text-slate-400 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <!-- Dropdown Content -->
+              <div class="absolute left-1/2 -translate-x-1/2 mt-1 hidden group-hover:block z-[200] w-[750px] overflow-hidden rounded-2xl shadow-2xl bg-white border border-blue-50/50 p-6" style="background: rgba(255, 255, 255, 0.99); border: 1px solid rgba(15, 45, 94, 0.08); transform: translateX(-50%);">
+                <div class="grid grid-cols-3 gap-6">
+                  <div>
+                    <span class="mb-4 block text-[11px] font-bold uppercase tracking-[0.15em] text-[#8a1c1c]"><?= __t('nav.mega_h_tax') ?></span>
+                    <div class="flex flex-col gap-1">
+                      <a href="services.php?lang=<?= $lang ?>" class="rounded-lg px-3 py-2 text-sm text-[#0a192f]/80 transition hover:bg-blue-50 hover:text-[#0a192f]"><?= __t('nav.item_tax_exempt') ?></a>
+                      <a href="services.php?lang=<?= $lang ?>" class="rounded-lg px-3 py-2 text-sm text-[#0a192f]/80 transition hover:bg-blue-50 hover:text-[#0a192f]"><?= __t('nav.item_tax_deed') ?></a>
+                      <a href="services.php?lang=<?= $lang ?>" class="rounded-lg px-3 py-2 text-sm text-[#0a192f]/80 transition hover:bg-blue-50 hover:text-[#0a192f]"><?= __t('nav.item_tax_re') ?></a>
+                      <a href="services.php?lang=<?= $lang ?>" class="rounded-lg px-3 py-2 text-sm text-[#0a192f]/80 transition hover:bg-blue-50 hover:text-[#0a192f]"><?= __t('nav.item_tax_rent') ?></a>
+                    </div>
+                  </div>
+                  <div>
+                    <span class="mb-4 block text-[11px] font-bold uppercase tracking-[0.15em] text-[#8a1c1c]"><?= __t('nav.mega_h_law') ?></span>
+                    <div class="flex flex-col gap-1">
+                      <a href="services.php?lang=<?= $lang ?>" class="rounded-lg px-3 py-2 text-sm text-[#0a192f]/80 transition hover:bg-blue-50 hover:text-[#0a192f]"><?= __t('nav.item_law_rent') ?></a>
+                      <a href="services.php?lang=<?= $lang ?>" class="rounded-lg px-3 py-2 text-sm text-[#0a192f]/80 transition hover:bg-blue-50 hover:text-[#0a192f]"><?= __t('nav.item_law_com') ?></a>
+                      <a href="services.php?lang=<?= $lang ?>" class="rounded-lg px-3 py-2 text-sm text-[#0a192f]/80 transition hover:bg-blue-50 hover:text-[#0a192f]"><?= __t('nav.item_law_inherit') ?></a>
+                      <a href="services.php?lang=<?= $lang ?>" class="rounded-lg px-3 py-2 text-sm text-[#0a192f]/80 transition hover:bg-blue-50 hover:text-[#0a192f]"><?= __t('nav.item_law_pop') ?></a>
+                      <a href="services.php?lang=<?= $lang ?>" class="rounded-lg px-3 py-2 text-sm text-[#0a192f]/80 transition hover:bg-blue-50 hover:text-[#0a192f]"><?= __t('nav.item_law_enf') ?></a>
+                    </div>
+                  </div>
+                  <div>
+                    <span class="mb-4 block text-[11px] font-bold uppercase tracking-[0.15em] text-[#8a1c1c]"><?= __t('nav.mega_h_more') ?></span>
+                    <div class="flex flex-col gap-1">
+                      <a href="services.php?lang=<?= $lang ?>" class="rounded-lg px-3 py-2 text-sm text-[#0a192f]/80 transition hover:bg-blue-50 hover:text-[#0a192f]"><?= __t('nav.item_more_bank') ?></a>
+                      <a href="services.php?lang=<?= $lang ?>" class="rounded-lg px-3 py-2 text-sm text-[#0a192f]/80 transition hover:bg-blue-50 hover:text-[#0a192f]"><?= __t('nav.item_more_green') ?></a>
+                      <a href="services.php?lang=<?= $lang ?>" class="rounded-lg px-3 py-2 text-sm text-[#0a192f]/80 transition hover:bg-blue-50 hover:text-[#0a192f]"><?= __t('nav.item_more_license') ?></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SSS -->
+            <a href="questions.php?lang=<?= $lang ?>" class="rounded-lg px-3 py-2 text-sm font-medium text-[#0a192f] transition hover:bg-blue-50 hover:text-[#112240]"><?= __t('nav.faq') ?></a>
+            <a href="contact.php?lang=<?= $lang ?>" class="ml-2 rounded-full bg-[#b52727] px-6 py-2 text-sm font-bold text-white shadow-lg transition hover:bg-[#cc3333] hover:text-white"><?= __t('nav.contact') ?></a>
             
             <!-- Language Switcher Dropdown -->
             <div class="relative ml-2" id="langDropdownWrapper">
