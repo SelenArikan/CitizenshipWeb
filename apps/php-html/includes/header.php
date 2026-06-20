@@ -50,24 +50,30 @@ $pageSeo = seo_page_meta($seoKey, $lang);
 </head>
 <body class="min-h-full flex flex-col font-sans pt-20">
 
-    <nav class="fixed w-full z-50 top-0 bg-[#0a192f]/85 backdrop-blur-md text-white border-b border-white/10 shadow-sm">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-20">
+    <nav class="fixed top-0 z-50 w-full border-b border-blue-100 bg-white/96 text-[#0a192f] shadow-sm backdrop-blur-md">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-20 items-center justify-between">
           <div class="flex-shrink-0 flex items-center">
-             <a href="/" class="font-bold text-2xl tracking-wider text-white">Citizenship<span class="text-[#8a1c1c]">Web</span></a>
+             <a href="/" class="relative flex h-9 sm:h-12 max-w-[240px] sm:max-w-[280px] shrink-0 items-center">
+               <img
+                 src="logo/necmettin-barman-logo.png"
+                 alt="Necmettin Barman & Associates"
+                 class="h-9 sm:h-12 w-auto bg-transparent object-contain object-left"
+               />
+             </a>
           </div>
-          <div class="hidden md:flex items-center space-x-8">
-            <a href="<?= seo_page_href('home', $lang) ?>" class="text-sm font-medium text-gray-300 hover:text-white transition"><?= __t('nav.home') ?></a>
-            <a href="<?= seo_page_href('services', $lang) ?>" class="text-sm font-medium text-gray-300 hover:text-white transition"><?= __t('nav.services') ?></a>
-            <a href="<?= seo_page_href('citizenship', $lang) ?>" class="text-sm font-medium text-gray-300 hover:text-white transition">Adımlar</a>
-            <a href="<?= seo_page_href('knowledge', $lang) ?>" class="text-sm font-medium text-gray-300 hover:text-white transition">Bilgi Bankası</a>
-            <a href="<?= seo_page_href('news', $lang) ?>" class="text-sm font-medium text-gray-300 hover:text-white transition">Haberler</a>
-            <a href="<?= seo_page_href('contact', $lang) ?>" class="px-6 py-2 rounded-full bg-[#8a1c1c] hover:bg-[#a32222] transition text-sm font-bold shadow-lg"><?= __t('nav.contact') ?></a>
+          <div class="hidden md:flex items-center gap-1">
+            <a href="<?= seo_page_href('home', $lang) ?>" class="rounded-lg px-3 py-2 text-sm font-medium text-[#0a192f] transition hover:bg-blue-50 hover:text-[#112240]"><?= __t('nav.home') ?></a>
+            <a href="<?= seo_page_href('services', $lang) ?>" class="rounded-lg px-3 py-2 text-sm font-medium text-[#0a192f] transition hover:bg-blue-50 hover:text-[#112240]"><?= __t('nav.services') ?></a>
+            <a href="<?= seo_page_href('citizenship', $lang) ?>" class="rounded-lg px-3 py-2 text-sm font-medium text-[#0a192f] transition hover:bg-blue-50 hover:text-[#112240]">Adımlar</a>
+            <a href="<?= seo_page_href('knowledge', $lang) ?>" class="rounded-lg px-3 py-2 text-sm font-medium text-[#0a192f] transition hover:bg-blue-50 hover:text-[#112240]">Bilgi Bankası</a>
+            <a href="<?= seo_page_href('news', $lang) ?>" class="rounded-lg px-3 py-2 text-sm font-medium text-[#0a192f] transition hover:bg-blue-50 hover:text-[#112240]">Haberler</a>
+            <a href="<?= seo_page_href('contact', $lang) ?>" class="ml-2 rounded-full bg-[#b52727] px-6 py-2 text-sm font-bold text-white shadow-lg transition hover:bg-[#cc3333] hover:text-white"><?= __t('nav.contact') ?></a>
             
             <!-- Language Switcher -->
             <div class="ml-4 flex gap-2">
                <?php foreach ($supported_langs as $switchLang): ?>
-                 <a href="<?= seo_page_href($seoKey, $switchLang) ?>" class="text-xs <?= $lang == $switchLang ? 'text-white font-bold' : 'text-gray-500' ?>">
+                 <a href="<?= seo_page_href($seoKey, $switchLang) ?>" class="text-xs transition px-2 py-1 rounded hover:bg-blue-50 <?= $lang == $switchLang ? 'text-[#0a192f] font-bold' : 'text-gray-400' ?>">
                    <?= strtoupper($switchLang) ?>
                  </a>
                <?php endforeach; ?>
