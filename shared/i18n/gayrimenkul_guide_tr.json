@@ -193,7 +193,11 @@
       {
         "num": "4.1",
         "title": "Belgenin Tanımı ve Önemi",
-        "desc": "Taşınmaz Yatırım Tespit Belgesi; yabancı yatırımcının gerçekleştirdiği taşınmaz alımının, Türk vatandaşlığı için gerekli yatırım şartlarını karşıladığını devletin resmî olarak onayladığı belgedir.\n\nUygulamada bu belge; Uygunluk Belgesi, Citizenship Conformity Certificate veya Taşınmaz Uygunluk Yazısı gibi adlarla da anılmaktadır. Bu belge olmaksızın vatandaşlık başvurusu başlatılamaz."
+        "desc": "Taşınmaz Yatırım Tespit Belgesi; yabancı yatırımcının gerçekleştirdiği taşınmaz alımının, Türk vatandaşlığı için gerekli yatırım şartlarını karşıladığını devletin resmî olarak onayladığı belgedir.\n\nUygulamada bu belge; Uygunluk Belgesi, Citizenship Conformity Certificate veya Taşınmaz Uygunluk Yazısı gibi adlarla da anılmaktadır. Bu belge olmaksızın vatandaşlık başvurusu başlatılamaz.",
+        "image": {
+          "src": "/gayrimenkul/uygunluk-belgesi-ornegi.webp",
+          "caption": "Taşınmaz Yatırım Tespit Belgesi – Örnek"
+        }
       },
       {
         "num": "4.2",

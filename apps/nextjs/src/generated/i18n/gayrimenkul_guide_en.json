@@ -193,7 +193,11 @@
       {
         "num": "4.1",
         "title": "Definition and Importance of the Certificate",
-        "desc": "The Real Estate Investment Determination Certificate is the document through which the state officially approves that the real estate acquisition made by the foreign investor meets the investment conditions required for Turkish citizenship.\n\nIn practice, this certificate is also referred to as the Conformity Certificate, Citizenship Conformity Certificate, or Real Estate Conformity Letter. A citizenship application cannot be initiated without this certificate."
+        "desc": "The Real Estate Investment Determination Certificate is the document through which the state officially approves that the real estate acquisition made by the foreign investor meets the investment conditions required for Turkish citizenship.\n\nIn practice, this certificate is also referred to as the Conformity Certificate, Citizenship Conformity Certificate, or Real Estate Conformity Letter. A citizenship application cannot be initiated without this certificate.",
+        "image": {
+          "src": "/gayrimenkul/uygunluk-belgesi-ornegi.webp",
+          "caption": "Real Estate Investment Determination Certificate – Sample"
+        }
       },
       {
         "num": "4.2",

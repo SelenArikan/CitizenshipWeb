@@ -76,6 +76,7 @@ export default function GayrimenkulPage({
             items: copy.documents.items.map((d) => ({
               title: d.title,
               desc: d.desc,
+              image: d.image,
             })),
             notice:
               copy.documents.noticeTitle

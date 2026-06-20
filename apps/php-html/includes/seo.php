@@ -148,6 +148,40 @@ function seo_catalog(): array {
                 'fa' => 'ببینید CitizenshipWeb چگونه کوکی ها، فرم ها، داده های گفتگوی آنلاین و سوالات منتشرشده را پردازش می کند.',
             ],
         ],
+        'gayrimenkul-yatirimi' => [
+            'path' => '/gayrimenkul-yatirimi.php',
+            'titles' => [
+                'tr' => 'Gayrimenkul Yatırımı Yoluyla Türk Vatandaşlığı',
+                'en' => 'Turkish Citizenship by Real Estate Investment',
+                'ru' => 'Гражданство Турции за инвестиции в недвижимость',
+                'ar' => 'الجنسية التركية عبر الاستثمار العقاري',
+                'fa' => 'شهروندی ترکیه از طریق سرمایه گذاری ملکی',
+            ],
+            'descriptions' => [
+                'tr' => 'Taşınmaz satın alım yoluyla Türk vatandaşlığı edinme süreci, gerekli belgeler, tapu işlemleri ve yasal limitler hakkında kapsamlı bilgi edinin.',
+                'en' => 'Learn about the process of obtaining Turkish citizenship through real estate investment, requirements, title deed procedures, and legal thresholds.',
+                'ru' => 'Узнайте о процессе получения гражданства Турции при покупке недвижимости, требованиях, процедурах оформления ТАПУ и инвестиционных порогах.',
+                'ar' => 'تعرف على إجراءات الحصول على الجنسية التركية من خلال شراء عقار، والوثائق المطلوبة، ومعاملات الطابو، والحدود القانونية للاستثمار.',
+                'fa' => 'درباره فرآیند اخذ شهروندی ترکیه از طریق خرید ملک، مدارک لازم، مراحل سند زدن و حداقل میزان سرمایه‌گذاری اطلاعات کسب کنید.',
+            ],
+        ],
+        'mevduat-hesabi' => [
+            'path' => '/mevduat-hesabi.php',
+            'titles' => [
+                'tr' => 'Mevduat Hesabı ile Türk Vatandaşlığı',
+                'en' => 'Turkish Citizenship by Bank Deposit',
+                'ru' => 'Гражданство Турции через банковский депозит',
+                'ar' => 'الجنسية التركية عبر الوديعة المصرفية',
+                'fa' => 'شهروندی ترکیه از طریق سپرده بانکی',
+            ],
+            'descriptions' => [
+                'tr' => 'Türk bankalarında en az 500.000 USD mevduat hesabı açarak 3 yıl tutma taahhüdü ile Türk vatandaşlığı edinme süreci.',
+                'en' => 'Process of obtaining Turkish citizenship by opening a bank deposit account of at least $500,000 and holding it for 3 years.',
+                'ru' => 'Процесс получения гражданства Турции путем открытия банковского депозита на сумму от $500 000 сроком на 3 года.',
+                'ar' => 'إجراءات الحصول على الجنسية التركية عبر فتح حساب وديعة مصرفية بقيمة لا تقل عن 500,000 دولار والاحتفاظ بها لمدة 3 سنوات.',
+                'fa' => 'فرآیند اخذ شهروندی ترکیه از طریق افتتاح حساب سپرده بانکی به مبلغ حداقل ۵۰۰,۰۰۰ دلار و نگهداری آن به مدت ۳ سال.',
+            ],
+        ],
     ];
 }
 
