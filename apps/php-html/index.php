@@ -19,7 +19,7 @@ echo schema_render_scripts(schema_home_page($lang, __t('faq.list')));
           ];
         } else {
           foreach ($heroSlides as &$slide) {
-            $slide['image'] = 'assets/images/' . ltrim($slide['image'], '/');
+            $slide['image'] = ltrim($slide['image'], '/');
           }
           unset($slide);
         }
