@@ -70,14 +70,71 @@ $pageSeo = seo_page_meta($seoKey, $lang);
             <a href="<?= seo_page_href('news', $lang) ?>" class="rounded-lg px-3 py-2 text-sm font-medium text-[#0a192f] transition hover:bg-blue-50 hover:text-[#112240]">Haberler</a>
             <a href="<?= seo_page_href('contact', $lang) ?>" class="ml-2 rounded-full bg-[#b52727] px-6 py-2 text-sm font-bold text-white shadow-lg transition hover:bg-[#cc3333] hover:text-white"><?= __t('nav.contact') ?></a>
             
-            <!-- Language Switcher -->
-            <div class="ml-4 flex gap-2">
-               <?php foreach ($supported_langs as $switchLang): ?>
-                 <a href="<?= seo_page_href($seoKey, $switchLang) ?>" class="text-xs transition px-2 py-1 rounded hover:bg-blue-50 <?= $lang == $switchLang ? 'text-[#0a192f] font-bold' : 'text-gray-400' ?>">
-                   <?= strtoupper($switchLang) ?>
-                 </a>
-               <?php endforeach; ?>
+            <!-- Language Switcher Dropdown -->
+            <div class="relative ml-2" id="langDropdownWrapper">
+              <?php
+              $languages = [
+                ['code' => 'tr', 'name' => 'Türkçe', 'flag' => '🇹🇷'],
+                ['code' => 'en', 'name' => 'English', 'flag' => '🇬🇧'],
+                ['code' => 'ru', 'name' => 'Русский', 'flag' => '🇷🇺'],
+                ['code' => 'ar', 'name' => 'العربية', 'flag' => '🇸🇦'],
+                ['code' => 'fa', 'name' => 'فارسی', 'flag' => '🇮🇷'],
+              ];
+              $currentLangObj = array_values(array_filter($languages, function($l) use ($lang) { return $l['code'] === $lang; }))[0] ?? $languages[0];
+              ?>
+              <button
+                type="button"
+                id="langDropdownBtn"
+                class="flex items-center gap-1.5 rounded-lg px-2.5 py-2 text-lg transition hover:bg-blue-50 focus:outline-none"
+                title="<?= htmlspecialchars($currentLangObj['name']) ?>"
+              >
+                <span><?= $currentLangObj['flag'] ?></span>
+                <svg class="h-3 w-3 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              
+              <!-- Dropdown Menu -->
+              <div
+                id="langDropdownMenu"
+                class="hidden absolute right-0 z-50 mt-2 w-44 overflow-hidden rounded-xl py-1.5 shadow-xl bg-white border border-blue-50/50 backdrop-blur-md"
+                style="background: rgba(255, 255, 255, 0.99); border: 1px solid rgba(15, 45, 94, 0.10);"
+              >
+                <?php foreach ($languages as $l): ?>
+                  <a
+                    href="<?= seo_page_href($seoKey, $l['code']) ?>"
+                    class="flex items-center gap-3 px-4 py-2.5 text-sm font-medium transition hover:bg-blue-50 text-slate-700 hover:text-slate-900"
+                    style="color: <?= $lang === $l['code'] ? '#0a192f' : 'rgba(10,25,47,0.50)' ?>;"
+                  >
+                    <span class="text-xl"><?= $l['flag'] ?></span>
+                    <span><?= htmlspecialchars($l['name']) ?></span>
+                    <?php if ($lang === $l['code']): ?>
+                      <span class="ml-auto h-1.5 w-1.5 rounded-full bg-[#8a1c1c]"></span>
+                    <?php endif; ?>
+                  </a>
+                <?php endforeach; ?>
+              </div>
             </div>
+            <script>
+              document.addEventListener('DOMContentLoaded', function() {
+                var btn = document.getElementById('langDropdownBtn');
+                var menu = document.getElementById('langDropdownMenu');
+                var wrapper = document.getElementById('langDropdownWrapper');
+                
+                if (btn && menu) {
+                  btn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    menu.classList.toggle('hidden');
+                  });
+                  
+                  document.addEventListener('click', function(e) {
+                    if (wrapper && !wrapper.contains(e.target)) {
+                      menu.classList.add('hidden');
+                    }
+                  });
+                }
+              });
+            </script>
           </div>
         </div>
       </div>
