@@ -155,7 +155,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
               {/* Sağ — görsel */}
               <div className="reveal reveal-scale-in delay-200 relative h-80 w-full flex-shrink-0 overflow-hidden md:h-96 md:w-[420px]">
                 <Image
-                  src="/news2.png"
+                  src="/news2.webp"
                   alt="Necmettin Barman & Associates Attorneys at Law"
                   fill
                   sizes="(max-width: 768px) 100vw, 420px"

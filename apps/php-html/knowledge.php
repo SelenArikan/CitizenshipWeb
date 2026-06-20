@@ -37,7 +37,7 @@ echo schema_render_scripts(schema_collection_page('knowledge', $lang, $schemaArt
          <!-- Featured Article -->
          <div class="w-full bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition mb-16 flex flex-col md:flex-row group">
             <div class="w-full md:w-1/2 h-80 md:h-auto relative overflow-hidden">
-               <img src="assets/images/news1.png" alt="Featured" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+               <img src="assets/images/news1.webp" alt="Featured" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             </div>
             <div class="w-full md:w-1/2 p-10 flex flex-col justify-center">
                <span class="text-[#8a1c1c] font-bold text-sm tracking-widest uppercase mb-4">Öne Çıkan Rehber</span>
@@ -51,12 +51,12 @@ echo schema_render_scripts(schema_collection_page('knowledge', $lang, $schemaArt
          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <?php 
                $articles = [
-                  ["cat" => "Mülkiyet", "title" => "Yabancılar İçin Mülk Edinme Yasası Değişiklikleri", "img" => "assets/images/news2.png"],
-                  ["cat" => "Aile", "title" => "Eş ve Çocuklar İçin Eşzamanlı Başvuru Stratejisi", "img" => "assets/images/news3.png"],
-                  ["cat" => "Yatırım", "title" => "Global Fon Yatırımlarıyla AB Oturum İzni", "img" => "assets/images/news1.png"],
-                  ["cat" => "Seyahat", "title" => "Vizesiz Seyahat Gücü Yüksek En İyi 5 Pasaport", "img" => "assets/images/hero.png"],
-                  ["cat" => "Vatandaşlık", "title" => "Çifte Vatandaşlık Kabul Eden ve Etmeyen Ülkeler", "img" => "assets/images/news2.png"],
-                  ["cat" => "Oturum", "title" => "Dijital Göçebe (Digital Nomad) Vizeleri 2026", "img" => "assets/images/news3.png"]
+                  ["cat" => "Mülkiyet", "title" => "Yabancılar İçin Mülk Edinme Yasası Değişiklikleri", "img" => "assets/images/news2.webp"],
+                  ["cat" => "Aile", "title" => "Eş ve Çocuklar İçin Eşzamanlı Başvuru Stratejisi", "img" => "assets/images/news3.webp"],
+                  ["cat" => "Yatırım", "title" => "Global Fon Yatırımlarıyla AB Oturum İzni", "img" => "assets/images/news1.webp"],
+                  ["cat" => "Seyahat", "title" => "Vizesiz Seyahat Gücü Yüksek En İyi 5 Pasaport", "img" => "assets/images/hero.webp"],
+                  ["cat" => "Vatandaşlık", "title" => "Çifte Vatandaşlık Kabul Eden ve Etmeyen Ülkeler", "img" => "assets/images/news2.webp"],
+                  ["cat" => "Oturum", "title" => "Dijital Göçebe (Digital Nomad) Vizeleri 2026", "img" => "assets/images/news3.webp"]
                ];
                foreach($articles as $article):
             ?>

@@ -181,7 +181,7 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
       type: "mega",
       label: t.mega_tc,
       key: "vatandaslik",
-      featuredImage: "/news2.png",
+      featuredImage: "/news2.webp",
       groups: [
         {
           heading: t.mega_h_invest,
@@ -218,7 +218,7 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
       type: "mega",
       label: t.mega_res,
       key: "oturum",
-      featuredImage: "/hero/yatirimci-ikamet-izni.jpg",
+      featuredImage: "/hero/yatirimci-ikamet-izni.webp",
       groups: [
         {
           heading: t.mega_h_rtypes,
@@ -235,7 +235,7 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
       type: "mega",
       label: t.mega_leg,
       key: "hukuki",
-      featuredImage: "/hero/hukuki-hizmetler.jpg",
+      featuredImage: "/hero/hukuki-hizmetler.webp",
       groups: [
         {
           heading: t.mega_h_tax,

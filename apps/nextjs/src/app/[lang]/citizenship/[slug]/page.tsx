@@ -50,7 +50,7 @@ export default async function LangCitizenshipDetailRoute({
         hero={{
           breadcrumbLabel: pageData.copy.metadata.breadcrumbLabel,
           summary: pageData.copy.hero.summary,
-          backgroundImage: "/gayrimenkul-hero.jpg",
+          backgroundImage: "/gayrimenkul-hero.webp",
         }}
         sections={pageData.copy.sections}
         cta={pageData.cta}

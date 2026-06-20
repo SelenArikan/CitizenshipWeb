@@ -112,7 +112,7 @@ export default function GayrimenkulPage({
       hero={{
         breadcrumbLabel: copy.hero.breadcrumbLabel,
         summary: copy.hero.summary,
-        backgroundImage: "/gayrimenkul-hero.jpg",
+        backgroundImage: "/gayrimenkul-hero.webp",
       }}
       sections={sections}
       cta={{

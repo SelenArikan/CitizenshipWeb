@@ -850,7 +850,7 @@ export async function buildCitizenshipDetailMetadata(
       siteName: "CitizenshipWeb",
       images: [
         {
-          url: "/gayrimenkul-hero.jpg",
+          url: "/gayrimenkul-hero.webp",
           width: 1600,
           height: 900,
           alt: data.copy.metadata.title,
@@ -861,7 +861,7 @@ export async function buildCitizenshipDetailMetadata(
       card: "summary_large_image",
       title: data.copy.metadata.title,
       description: data.copy.metadata.description,
-      images: ["/gayrimenkul-hero.jpg"],
+      images: ["/gayrimenkul-hero.webp"],
     },
   };
 }
@@ -881,7 +881,7 @@ export async function buildCitizenshipDetailSchemas(locale: string, slug: string
       description: data.copy.metadata.description,
       url: pageUrl,
       inLanguage: safeLocale,
-      primaryImageOfPage: `${SITE_URL}/gayrimenkul-hero.jpg`,
+      primaryImageOfPage: `${SITE_URL}/gayrimenkul-hero.webp`,
     },
     {
       "@context": "https://schema.org",

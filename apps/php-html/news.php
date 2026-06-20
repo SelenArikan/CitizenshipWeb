@@ -12,10 +12,10 @@ include 'includes/header.php';
 
 <?php 
 $articles = [
-    ["cat" => "Mülkiyet", "title" => "Yabancılar İçin Mülk Edinme Yasası Değişiklikleri", "img" => "assets/images/news2.png", "date" => "10 Nisan 2026", "summary" => "2026 yılı itibarıyla yürürlüğe giren yeni gayrimenkul değerleme yasaları hakkında uzman görüşlerimiz..."],
-    ["cat" => "Aile", "title" => "Eş ve Çocuklar İçin Eşzamanlı Başvuru Stratejisi", "img" => "assets/images/news3.png", "date" => "08 Nisan 2026", "summary" => "Yeni bir ülkede hayata başlarken aileniz için en kaliteli eğitim ve kültürel adaptasyon adımları..."],
-    ["cat" => "Yatırım", "title" => "Global Fon Yatırımlarıyla AB Oturum İzni", "img" => "assets/images/news1.png", "date" => "01 Nisan 2026", "summary" => "Avrupa ve global altın vize programlarının karşılaştırmalı analizi yayında."],
-    ["cat" => "Vatandaşlık", "title" => "Çifte Vatandaşlık Kabul Eden Ülkeler", "img" => "assets/images/news2.png", "date" => "25 Mart 2026", "summary" => "Sınırlarınızı genişletmek için çifte pasaport kurallarının tam haritası."]
+    ["cat" => "Mülkiyet", "title" => "Yabancılar İçin Mülk Edinme Yasası Değişiklikleri", "img" => "assets/images/news2.webp", "date" => "10 Nisan 2026", "summary" => "2026 yılı itibarıyla yürürlüğe giren yeni gayrimenkul değerleme yasaları hakkında uzman görüşlerimiz..."],
+    ["cat" => "Aile", "title" => "Eş ve Çocuklar İçin Eşzamanlı Başvuru Stratejisi", "img" => "assets/images/news3.webp", "date" => "08 Nisan 2026", "summary" => "Yeni bir ülkede hayata başlarken aileniz için en kaliteli eğitim ve kültürel adaptasyon adımları..."],
+    ["cat" => "Yatırım", "title" => "Global Fon Yatırımlarıyla AB Oturum İzni", "img" => "assets/images/news1.webp", "date" => "01 Nisan 2026", "summary" => "Avrupa ve global altın vize programlarının karşılaştırmalı analizi yayında."],
+    ["cat" => "Vatandaşlık", "title" => "Çifte Vatandaşlık Kabul Eden Ülkeler", "img" => "assets/images/news2.webp", "date" => "25 Mart 2026", "summary" => "Sınırlarınızı genişletmek için çifte pasaport kurallarının tam haritası."]
 ];
 echo schema_render_scripts(schema_collection_page('news', $lang, $articles));
 ?>

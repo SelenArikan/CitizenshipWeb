@@ -865,7 +865,7 @@ export async function buildGreenPassportMetadata(locale: string): Promise<Metada
       siteName: "CitizenshipWeb",
       images: [
         {
-          url: "/hero/hukuki-hizmetler.jpg",
+          url: "/hero/hukuki-hizmetler.webp",
           width: 1600,
           height: 900,
           alt: copy.metadata.title,
@@ -876,7 +876,7 @@ export async function buildGreenPassportMetadata(locale: string): Promise<Metada
       card: "summary_large_image",
       title: copy.metadata.title,
       description: copy.metadata.description,
-      images: ["/hero/hukuki-hizmetler.jpg"],
+      images: ["/hero/hukuki-hizmetler.webp"],
     },
   };
 }
@@ -894,7 +894,7 @@ export async function buildGreenPassportSchemas(locale: string) {
       description: copy.metadata.description,
       url: pageUrl,
       inLanguage: safeLocale,
-      primaryImageOfPage: `${SITE_URL}/hero/hukuki-hizmetler.jpg`,
+      primaryImageOfPage: `${SITE_URL}/hero/hukuki-hizmetler.webp`,
     },
     {
       "@context": "https://schema.org",

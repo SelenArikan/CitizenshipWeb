@@ -5,7 +5,7 @@ import { getSafeLocale } from "@/lib/seo";
 
 const SITE_URL = "https://citizenshipweb.com";
 const PAGE_PATH = "/legal/ehliyet-tebdil";
-const HERO_IMAGE = "/hero/hukuki-hizmetler.jpg";
+const HERO_IMAGE = "/hero/hukuki-hizmetler.webp";
 const SUPPORTED_LOCALES = ["tr", "en", "ru", "ar", "fa"] as const;
 
 const EHLIYET_COUNTRY_GROUP_CODES = [

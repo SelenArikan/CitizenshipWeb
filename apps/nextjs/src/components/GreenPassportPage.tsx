@@ -49,7 +49,7 @@ export default function GreenPassportPage({
       <section className="relative bg-[#0a192f] pb-14 pt-28">
         <div className="absolute inset-0" aria-hidden="true">
           <Image
-            src="/hero/hukuki-hizmetler.jpg"
+            src="/hero/hukuki-hizmetler.webp"
             alt={copy.metadata.title}
             fill
             className="object-cover object-center"

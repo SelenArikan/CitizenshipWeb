@@ -60,27 +60,27 @@
     "slides": [
       {
         "label": "Turkish Citizenship via Real Estate Investment",
-        "image": "/hero/gayrimenkul-vatandaslik.jpg",
+        "image": "/hero/gayrimenkul-vatandaslik.webp",
         "href": "/en/services/gayrimenkul-yatirimi"
       },
       {
         "label": "Turkish Citizenship via Bank Investment",
-        "image": "/hero/banka-yatirimi-vatandaslik.jpg",
+        "image": "/hero/banka-yatirimi-vatandaslik.webp",
         "href": "/en/services/mevduat-hesabi"
       },
       {
         "label": "Investor Residence Permit",
-        "image": "/hero/yatirimci-ikamet-izni.jpg",
+        "image": "/hero/yatirimci-ikamet-izni.webp",
         "href": "/en/ikamet-izni/yatirimci-ikamet-izni"
       },
       {
         "label": "Real Estate Residence Permit",
-        "image": "/hero/gayrimenkul-ikamet-izni.jpg",
+        "image": "/hero/gayrimenkul-ikamet-izni.webp",
         "href": "/en/ikamet-izni/gayrimenkul-ikamet-izni"
       },
       {
         "label": "Tax Exemption",
-        "image": "/hero/vergi-muafiyeti.jpg",
+        "image": "/hero/vergi-muafiyeti.webp",
         "href": "/en/services"
       }
     ]
@@ -503,7 +503,7 @@
         "title": "Investor Residence Permit (J)",
         "description": "A short-term residence permit available to foreign investors who meet the qualifying investment threshold and to eligible family members.",
         "summary": "The investor residence permit under Article 31/1-j is a special short-term status granted to foreign investors who make a qualifying investment determined by the Presidency, together with their spouse and dependent children.",
-        "heroImage": "/hero/yatirimci-ikamet-izni.jpg",
+        "heroImage": "/hero/yatirimci-ikamet-izni.webp",
         "warning": "This route is different from the real-estate-based residence permit under Article 31/1-b. The investor permit depends on a certificate of conformity and forms the residence basis of the citizenship-by-investment process.",
         "quickFacts": [
           {
@@ -663,7 +663,7 @@
         "title": "Real Estate Residence Permit",
         "description": "A short-term residence permit available to foreign nationals who acquire residential real estate in Turkey.",
         "summary": "The real estate residence permit is a short-term residence status available to foreign nationals who acquire a residential property in Turkey. It is distinct from the investor residence route used in exceptional citizenship planning.",
-        "heroImage": "/hero/gayrimenkul-ikamet-izni.jpg",
+        "heroImage": "/hero/gayrimenkul-ikamet-izni.webp",
         "warning": "The real title deed value on the transfer date, the open-area status of the property, and title registration in the applicant's own name are the most critical elements of the application.",
         "quickFacts": [
           {
@@ -840,7 +840,7 @@
         "title": "Family Residence Permit",
         "description": "A residence permit granted to spouses and children connected to a Turkish citizen or another eligible sponsor, usually for up to three years at a time.",
         "summary": "The family residence permit may be issued to certain family members of a Turkish citizen, Blue Card holder, foreign national with valid residence status, refugee, or beneficiary of subsidiary protection, with the purpose of preserving family unity in Turkey.",
-        "heroImage": "/hero/hukuki-hizmetler.jpg",
+        "heroImage": "/hero/hukuki-hizmetler.webp",
         "warning": "The sponsor's income, insurance coverage, address registration, and prior residence status are important, but so are the documents proving marriage, custody, and the intention to live together.",
         "quickFacts": [
           {
@@ -1021,7 +1021,7 @@
         "title": "Long-Term Residence Permit",
         "description": "An indefinite residence status granted to foreign nationals who meet the eight-year lawful stay, income, insurance, and public order criteria.",
         "summary": "The long-term residence permit is an indefinite residence status that allows a foreign national to continue staying in Turkey without a fixed time limit. In this sense, it differs fundamentally from short-term permits based on repeated extensions.",
-        "heroImage": "/hero/hukuki-hizmetler.jpg",
+        "heroImage": "/hero/hukuki-hizmetler.webp",
         "warning": "Although indefinite, this status may still be cancelled for public order reasons or for certain continuous absences from Turkey lasting more than one year. It also does not replace a work permit.",
         "quickFacts": [
           {
@@ -1587,10 +1587,10 @@
         {
           "num": "1.2",
           "title": "Eligibility of Title Deed Type for Citizenship",
-          "desc": "The type of title deed must be checked for the purposes of the citizenship application. It is essential that the property has condominium ownership (kat mülkiyeti) or construction servitude (kat irtifakı); these two types of title deeds indicate that the independent unit has been legally defined and that there is a building investment associated with the project.\n\nIn contrast, purchasing a vacant plot of land is not considered eligible for citizenship on its own. A property with a land title deed may only be evaluated for citizenship purposes if all of the following conditions are met simultaneously:\n- The existence of a licensed project on the land\n- Municipal approvals for construction have been obtained\n- Construction servitude has been established\n- Independent units have been clearly identified in the project\n- Payment has been made through a bank and proven with the FEPC\n- The valuation report meets the minimum amount required for citizenship\n\nIf any of these conditions are missing, the land investment will not be accepted within the scope of citizenship.\n\n![Sample Title Deed View](/gayrimenkul/tapu-belgesi-ornegi.png)",
+          "desc": "The type of title deed must be checked for the purposes of the citizenship application. It is essential that the property has condominium ownership (kat mülkiyeti) or construction servitude (kat irtifakı); these two types of title deeds indicate that the independent unit has been legally defined and that there is a building investment associated with the project.\n\nIn contrast, purchasing a vacant plot of land is not considered eligible for citizenship on its own. A property with a land title deed may only be evaluated for citizenship purposes if all of the following conditions are met simultaneously:\n- The existence of a licensed project on the land\n- Municipal approvals for construction have been obtained\n- Construction servitude has been established\n- Independent units have been clearly identified in the project\n- Payment has been made through a bank and proven with the FEPC\n- The valuation report meets the minimum amount required for citizenship\n\nIf any of these conditions are missing, the land investment will not be accepted within the scope of citizenship.\n\n![Sample Title Deed View](/gayrimenkul/tapu-belgesi-ornegi.webp)",
           "icon": "🏗️",
           "image": {
-            "src": "/gayrimenkul/yatirim-tasınmaz-gorseli.png",
+            "src": "/gayrimenkul/yatirim-tasınmaz-gorseli.webp",
             "caption": "Investment Real Estate Image"
           }
         },
@@ -1600,14 +1600,14 @@
           "desc": "The property must be part of a project. The construction must be licensed and the construction servitude must be established. Sales made on vacant land and transactions based solely on contracts are not accepted for citizenship purposes.\n\nThe valuation report must meet a minimum amount of USD 400,000. Furthermore, before signing the notarial promise of sale agreement, the foreign investor as the buyer must have paid at least USD 400,000, and the Foreign Exchange Purchase Certificate (FEPC) related to this payment must have been issued no later than the date on which the notarial agreement is signed.\n\nThe notarial agreement method is generally preferred in installment sales in practice. In order to apply for citizenship, at least USD 400,000 must have been paid at the outset; the remaining amount may be paid in installments.\n\nIn particular, in projects under construction, since some companies do not complete the title deed transfer until the delivery stage, transactions in such cases are carried out through the notarial agreement method. In cases where the contractor company does not own the land, there must be a construction-for-land-share agreement between the company and the landowner; as the notarial agreement will subsequently be registered on the title deed together with the citizenship block.\n\nAfter the construction servitude title deeds are registered in the name of the company, a notarial sales agreement can be signed with the seller at the title deed registry. Provided that the other conditions are also met, citizenship proceedings may be conducted through the notarial agreement method.",
           "icon": "📋",
           "image": {
-            "src": "/gayrimenkul/tapu-belgesi-ornegi.png",
+            "src": "/gayrimenkul/tapu-belgesi-ornegi.webp",
             "caption": "Sample Promise to Sell Agreement View"
           }
         },
         {
           "num": "1.4",
           "title": "Preliminary Appraisal Assessment",
-          "desc": "If a citizenship application is to be made with a single property, an online valuation report is requested from GEDAŞ, affiliated with the Ministry of Housing, through the Web Tapu system via the seller's e-Government login.\n\nIf the value of the property meets the minimum investment amount required for citizenship, the following statement appears on the last page of the report:\n\n\"It meets the minimum investment amount required under the Regulation on the Implementation of the Turkish Citizenship Law.\"\n\nIf a citizenship application is to be made with more than one property, a separate valuation report is prepared for each property. The total investment amount is stated in the \"Assessment of amount forming the basis for acquisition of citizenship\" section on the last page of the reports.\n\nThe rule to be applied regarding the amount to be taken as the basis for the calculation is as follows:\n\nIf the Foreign Exchange Purchase Certificate (FEPC) amount related to the property is lower than the amount in the valuation report, the FEPC amount is taken as the basis for the citizenship calculation. If the amount in the valuation report is lower, then the report amount is taken as the basis.\n\nThe valid investment amount for citizenship purposes: whichever is lower between the FEPC and the valuation report.\n\nFor this reason, if there is a shortfall, the difference must be completed in order for the investment to reach the citizenship threshold.\n\nA valuation report is not mandatory for properties purchased for investment purposes; a valuation report is a mandatory element only for properties purchased for the purpose of citizenship.\n\n![Assessment of Amount Forming the Basis for Acquisition of Citizenship](/gayrimenkul/dab-banka-islemi.png)",
+          "desc": "If a citizenship application is to be made with a single property, an online valuation report is requested from GEDAŞ, affiliated with the Ministry of Housing, through the Web Tapu system via the seller's e-Government login.\n\nIf the value of the property meets the minimum investment amount required for citizenship, the following statement appears on the last page of the report:\n\n\"It meets the minimum investment amount required under the Regulation on the Implementation of the Turkish Citizenship Law.\"\n\nIf a citizenship application is to be made with more than one property, a separate valuation report is prepared for each property. The total investment amount is stated in the \"Assessment of amount forming the basis for acquisition of citizenship\" section on the last page of the reports.\n\nThe rule to be applied regarding the amount to be taken as the basis for the calculation is as follows:\n\nIf the Foreign Exchange Purchase Certificate (FEPC) amount related to the property is lower than the amount in the valuation report, the FEPC amount is taken as the basis for the citizenship calculation. If the amount in the valuation report is lower, then the report amount is taken as the basis.\n\nThe valid investment amount for citizenship purposes: whichever is lower between the FEPC and the valuation report.\n\nFor this reason, if there is a shortfall, the difference must be completed in order for the investment to reach the citizenship threshold.\n\nA valuation report is not mandatory for properties purchased for investment purposes; a valuation report is a mandatory element only for properties purchased for the purpose of citizenship.\n\n![Assessment of Amount Forming the Basis for Acquisition of Citizenship](/gayrimenkul/dab-banka-islemi.webp)",
           "icon": "💡"
         }
       ]
@@ -1624,7 +1624,7 @@
           "title": "Foreign Exchange Purchase Certificate (FEPC) Process – When Done by the Buyer",
           "desc": "The process works step by step as follows:\n\n1. The foreign buyer goes to the bank where they have an account in Turkey.\n2. They deposit the purchase price (USD, EUR, etc.) from their own account or by transferring from abroad. Cash deposits by hand are also possible.\n3. The bank converts the foreign currency into Turkish Lira at the Central Bank exchange rate of that day.\n4. The bank issues the Foreign Exchange Purchase Certificate (FEPC).\n\nInformation contained in the FEPC:\n- Name and passport number of the buyer\n- Information regarding the property to be purchased\n- Foreign currency amount and Turkish Lira equivalent\n\nThis document is sent to the land registry office by the bank via KEP (Registered Electronic Mail).",
           "image": {
-            "src": "/gayrimenkul/doviz-alim-belgesi-ornegi.png",
+            "src": "/gayrimenkul/doviz-alim-belgesi-ornegi.webp",
             "caption": "Foreign Exchange Purchase Certificate (FEPC) View"
           }
         },

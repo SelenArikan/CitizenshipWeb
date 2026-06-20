@@ -60,35 +60,35 @@
     "slides": [
       {
         "label": "Gayrimenkul Yatırımı Yoluyla Türk Vatandaşlığı",
-        "image": "/hero/gayrimenkul-vatandaslik.jpg",
+        "image": "/hero/gayrimenkul-vatandaslik.webp",
         "title1": "Gayrimenkul Yatırımı",
         "title2": "Yoluyla Vatandaşlık",
         "href": "/tr/services/gayrimenkul-yatirimi"
       },
       {
         "label": "Banka Yatırımı Yoluyla Türk Vatandaşlığı",
-        "image": "/hero/banka-yatirimi-vatandaslik.jpg",
+        "image": "/hero/banka-yatirimi-vatandaslik.webp",
         "title1": "Banka Yatırımı",
         "title2": "Yoluyla Vatandaşlık",
         "href": "/tr/services/mevduat-hesabi"
       },
       {
         "label": "Yatırımcı İkamet İzni",
-        "image": "/hero/yatirimci-ikamet-izni.jpg",
+        "image": "/hero/yatirimci-ikamet-izni.webp",
         "title1": "Yatırımcı",
         "title2": "İkamet İzni",
         "href": "/tr/ikamet-izni/yatirimci-ikamet-izni"
       },
       {
         "label": "Gayrimenkul İkamet İzni",
-        "image": "/hero/gayrimenkul-ikamet-izni.jpg",
+        "image": "/hero/gayrimenkul-ikamet-izni.webp",
         "title1": "Gayrimenkul",
         "title2": "İkamet İzni",
         "href": "/tr/ikamet-izni/gayrimenkul-ikamet-izni"
       },
       {
         "label": "Vergi Muafiyeti",
-        "image": "/hero/vergi-muafiyeti.jpg",
+        "image": "/hero/vergi-muafiyeti.webp",
         "title1": "Vergi",
         "title2": "Muafiyeti",
         "href": "/tr/services"
@@ -537,7 +537,7 @@
         "title": "Yatırımcı İkamet İzni (J)",
         "description": "Gerekli yatırım eşiğini sağlayan yabancı yatırımcıların ve uygun aile üyelerinin başvurabildiği kısa dönem ikamet izni.",
         "summary": "31/1-j bendi kapsamında düzenlenen yatırımcı ikamet izni; Cumhurbaşkanınca belirlenen kapsam ve tutarda yatırım yapan yabancı yatırımcıya, eşine ve bağımlı çocuklarına tanınan özel statülü kısa dönem ikamet iznidir.",
-        "heroImage": "/hero/yatirimci-ikamet-izni.jpg",
+        "heroImage": "/hero/yatirimci-ikamet-izni.webp",
         "warning": "Bu statü, taşınmaz edinimine dayalı 31/1-b ikametinden farklıdır. Yatırımcı ikameti, uygunluk belgesine dayalıdır ve yatırım yoluyla vatandaşlık sürecinin ikamet temelini oluşturur.",
         "quickFacts": [
           {
@@ -697,7 +697,7 @@
         "title": "Gayrimenkul İkamet İzni",
         "description": "Türkiye’de konut niteliğinde taşınmaz edinmiş yabancıların başvurabildiği kısa dönem ikamet izni.",
         "summary": "Gayrimenkul ikamet izni, yabancı uyruklu kişilerin Türkiye'de konut niteliğinde bir taşınmaz edinmeleri hâlinde başvurabildikleri kısa dönem ikamet iznidir. Bu statü vatandaşlık veren ayrıcalıklı yatırımcı ikametinden farklıdır.",
-        "heroImage": "/hero/gayrimenkul-ikamet-izni.jpg",
+        "heroImage": "/hero/gayrimenkul-ikamet-izni.webp",
         "warning": "Tapu devir tarihindeki gerçek değer, taşınmazın açık bölgede bulunması ve tapunun başvurucu adına devredilmiş olması başvurunun en kritik unsurlarıdır.",
         "quickFacts": [
           {
@@ -874,7 +874,7 @@
         "title": "Aile İkamet İzni",
         "description": "Türk vatandaşı veya uygun destekleyiciye bağlı olarak eş ve çocuklara verilen, her defasında en fazla üç yıl süreli ikamet izni.",
         "summary": "Aile ikamet izni; Türk vatandaşı, Mavi Kart sahibi, geçerli ikamet izni sahibi yabancı, mülteci veya ikincil koruma statüsü sahibi bir kişinin belirli aile fertlerine verilen ikamet iznidir.",
-        "heroImage": "/hero/hukuki-hizmetler.jpg",
+        "heroImage": "/hero/hukuki-hizmetler.webp",
         "warning": "Destekleyicinin gelir, sigorta, adres ve geçmiş ikamet şartları kadar; evlilik, velayet ve birlikte yaşama ilişkisini gösteren belgeler de kritik önemdedir.",
         "quickFacts": [
           {
@@ -1055,7 +1055,7 @@
         "title": "Uzun Dönem İkamet İzni",
         "description": "Sekiz yıllık yasal ikamet, gelir, sigorta ve kamu düzeni şartlarını sağlayan yabancılara verilen süresiz statü.",
         "summary": "Uzun dönem ikamet izni, yabancının Türkiye'de kalışını süre sınırı olmaksızın devam ettirmesine imkân tanıyan süresiz bir ikamet iznidir. Belirli aralıklarla uzatma mantığına dayanan kısa dönem izinlerden bu yönüyle ayrılır.",
-        "heroImage": "/hero/hukuki-hizmetler.jpg",
+        "heroImage": "/hero/hukuki-hizmetler.webp",
         "warning": "Uzun dönem ikamet izni süresizdir; ancak kamu düzeni gerekçeleri veya belirli istisnalar dışında bir yıldan uzun yurt dışı kalışı halinde iptal edilebilir. Ayrıca çalışma izni yerine geçmez.",
         "quickFacts": [
           {
@@ -1656,10 +1656,10 @@
         {
           "num": "1.2",
           "title": "Tapu Türünün Vatandaşlığa Uygunluğu",
-          "desc": "Tapunun niteliği, vatandaşlık başvurusu açısından mutlaka kontrol edilmelidir. Taşınmazın kat mülkiyetli veya kat irtifaklı olması esastır; bu iki tapu türü, bağımsız bölümün hukuken tanımlandığını ve projeye bağlı bir yapı yatırımının bulunduğunu gösterir.\n\nBuna karşılık boş arsa satın almak, tek başına vatandaşlık için uygun kabul edilmez. Arsa tapulu bir taşınmaz, ancak aşağıdaki şartların tamamının bir arada bulunması hâlinde vatandaşlık açısından değerlendirmeye alınabilir:\n- Arsa üzerinde ruhsatlı bir projenin bulunması\n- İnşaat için belediye onaylarının alınmış olması\n- Kat irtifakının kurulmuş olması\n- Bağımsız bölümlerin projede açıkça belirlenmiş olması\n- Ödemenin banka üzerinden yapılıp DAB ile ispatlanması\n- Değerleme raporunun vatandaşlık için gerekli asgari tutarı karşılaması\n\n> Bu şartlardan herhangi birinin eksik olması durumunda, arsa yatırımı vatandaşlık kapsamında kabul edilmez.\n\n![Örnek Tapu Belgesi Görünümü](/gayrimenkul/tapu-belgesi-ornegi.png)",
+          "desc": "Tapunun niteliği, vatandaşlık başvurusu açısından mutlaka kontrol edilmelidir. Taşınmazın kat mülkiyetli veya kat irtifaklı olması esastır; bu iki tapu türü, bağımsız bölümün hukuken tanımlandığını ve projeye bağlı bir yapı yatırımının bulunduğunu gösterir.\n\nBuna karşılık boş arsa satın almak, tek başına vatandaşlık için uygun kabul edilmez. Arsa tapulu bir taşınmaz, ancak aşağıdaki şartların tamamının bir arada bulunması hâlinde vatandaşlık açısından değerlendirmeye alınabilir:\n- Arsa üzerinde ruhsatlı bir projenin bulunması\n- İnşaat için belediye onaylarının alınmış olması\n- Kat irtifakının kurulmuş olması\n- Bağımsız bölümlerin projede açıkça belirlenmiş olması\n- Ödemenin banka üzerinden yapılıp DAB ile ispatlanması\n- Değerleme raporunun vatandaşlık için gerekli asgari tutarı karşılaması\n\n> Bu şartlardan herhangi birinin eksik olması durumunda, arsa yatırımı vatandaşlık kapsamında kabul edilmez.\n\n![Örnek Tapu Belgesi Görünümü](/gayrimenkul/tapu-belgesi-ornegi.webp)",
           "icon": "🏗️",
           "image": {
-            "src": "/gayrimenkul/yatirim-tasınmaz-gorseli.png",
+            "src": "/gayrimenkul/yatirim-tasınmaz-gorseli.webp",
             "caption": "Yatırım Amaçlı Taşınmaz Görseli"
           }
         },
@@ -1669,14 +1669,14 @@
           "desc": "Taşınmazın mutlaka bir proje kapsamında olması gerekmektedir. İnşaatın ruhsatlı olması ve kat irtifakının kurulmuş bulunması zorunludur. Boş arsa üzerinden yapılan satışlar ve yalnızca sözleşmeye dayalı işlemler vatandaşlık açısından kabul edilmez.\n\nDeğerleme raporunun en az 400.000 USD tutarını karşılaması zorunludur. Ayrıca noter satış vaadi sözleşmesi imzalanmadan önce, alıcı konumundaki yabancı yatırımcı tarafından asgari 400.000 USD'nin ödenmiş olması ve bu ödemeye ilişkin Döviz Alım Belgesinin (DAB) en geç noter sözleşmesinin imzalandığı tarihte düzenlenmiş olması gerekmektedir.\n\nNoter sözleşmesi yöntemi, uygulamada genellikle taksitli satışlarda tercih edilmektedir. Vatandaşlık başvurusu yapılabilmesi için ilk etapta en az 400.000 USD'nin ödenmiş olması şarttır; kalan tutar taksitlendirilerek ödenebilir.\n\nÖzellikle inşaatı devam eden projelerde, bazı şirketler tapu devrini teslim aşamasına kadar gerçekleştirmediğinden, bu tür durumlarda işlemler noter sözleşmesi yöntemi üzerinden yürütülmektedir. Yüklenici şirketin arsa sahibi olmadığı durumlarda, şirket ile arsa sahibi arasında kat karşılığı sözleşme bulunması gerekmektedir; zira noter sözleşmesi daha sonra tapuya vatandaşlık blokesiyle birlikte şerh olarak işlenmektedir.\n\nKat irtifakı tapuları şirket adına tescil edildikten sonra, satıcı ile tapuda noter satış sözleşmesi imzalanabilir. Diğer şartların da sağlanması hâlinde, noter sözleşmesi yöntemiyle vatandaşlık işlemleri yürütülebilmektedir.",
           "icon": "📋",
           "image": {
-            "src": "/gayrimenkul/tapu-belgesi-ornegi.png",
+            "src": "/gayrimenkul/tapu-belgesi-ornegi.webp",
             "caption": "Örnek Satış Vaadi Sözleşmesi Görünümü"
           }
         },
         {
           "num": "1.4",
           "title": "Ekspertiz Ön Değerlendirmesi",
-          "desc": "Tek bir taşınmazla vatandaşlık başvurusu yapılıyorsa; İskân Bakanlığı'na bağlı GEDAŞ tarafından, satıcının e-Devlet girişi üzerinden Web Tapu aracılığıyla çevrimiçi değerleme raporu talep edilir.\n\nTaşınmazın değeri, vatandaşlık için gerekli asgari yatırım tutarını karşılıyorsa, raporun son sayfasında aşağıdaki ibare yer alır:\n\n> \"Türk Vatandaşlığı Kanununun Uygulanmasına İlişkin Yönetmelik kapsamında aranan minimum yatırım tutarını karşılamaktadır.\"\n\nBirden fazla taşınmazla vatandaşlık başvurusu yapılması hâlinde ise her taşınmaz için ayrı değerleme raporu düzenlenir. Raporların son sayfasındaki \"Vatandaşlık kazanımına esas tutar değerlendirmesi\" bölümünde toplam yatırım tutarı belirtilir.\n\n![Değerleme Raporu – Örnek Sayfa](/gayrimenkul/degerleme-raporu-ornegi.png)\n\nHesaplamada esas alınacak tutar bakımından uygulanacak kural şudur:\n- Taşınmaza ilişkin Döviz Alım Belgesi (DAB) tutarı, değerleme raporundaki tutardan daha düşük ise vatandaşlık hesabında DAB tutarı esas alınır.\n- Değerleme raporundaki tutar daha düşük ise, bu durumda rapor tutarı esas alınır.\n\n![Geçerli Yatırım Tutarı Hesaplama Formülü](/gayrimenkul/gecerli-yatirim-hesaplama.png)\n\n> Vatandaşlık açısından geçerli yatırım tutarı: DAB ile değerleme raporundan hangisi daha düşükse, o tutardır.\n\nBu nedenle eksik kalan bir kısım bulunması hâlinde, yatırımın vatandaşlık eşiğine ulaşabilmesi için farkın tamamlanması gerekmektedir.\n\nYatırım amacıyla satın alınan taşınmazlarda değerleme raporu zorunlu değildir; değerleme raporu yalnızca vatandaşlık amacıyla satın alınan taşınmazlar için zorunlu bir unsurdur.\n\n![Vatandaşlık Kazanımına Esas Tutar Değerlendirmesi](/gayrimenkul/dab-banka-islemi.png)",
+          "desc": "Tek bir taşınmazla vatandaşlık başvurusu yapılıyorsa; İskân Bakanlığı'na bağlı GEDAŞ tarafından, satıcının e-Devlet girişi üzerinden Web Tapu aracılığıyla çevrimiçi değerleme raporu talep edilir.\n\nTaşınmazın değeri, vatandaşlık için gerekli asgari yatırım tutarını karşılıyorsa, raporun son sayfasında aşağıdaki ibare yer alır:\n\n> \"Türk Vatandaşlığı Kanununun Uygulanmasına İlişkin Yönetmelik kapsamında aranan minimum yatırım tutarını karşılamaktadır.\"\n\nBirden fazla taşınmazla vatandaşlık başvurusu yapılması hâlinde ise her taşınmaz için ayrı değerleme raporu düzenlenir. Raporların son sayfasındaki \"Vatandaşlık kazanımına esas tutar değerlendirmesi\" bölümünde toplam yatırım tutarı belirtilir.\n\n![Değerleme Raporu – Örnek Sayfa](/gayrimenkul/degerleme-raporu-ornegi.webp)\n\nHesaplamada esas alınacak tutar bakımından uygulanacak kural şudur:\n- Taşınmaza ilişkin Döviz Alım Belgesi (DAB) tutarı, değerleme raporundaki tutardan daha düşük ise vatandaşlık hesabında DAB tutarı esas alınır.\n- Değerleme raporundaki tutar daha düşük ise, bu durumda rapor tutarı esas alınır.\n\n![Geçerli Yatırım Tutarı Hesaplama Formülü](/gayrimenkul/gecerli-yatirim-hesaplama.webp)\n\n> Vatandaşlık açısından geçerli yatırım tutarı: DAB ile değerleme raporundan hangisi daha düşükse, o tutardır.\n\nBu nedenle eksik kalan bir kısım bulunması hâlinde, yatırımın vatandaşlık eşiğine ulaşabilmesi için farkın tamamlanması gerekmektedir.\n\nYatırım amacıyla satın alınan taşınmazlarda değerleme raporu zorunlu değildir; değerleme raporu yalnızca vatandaşlık amacıyla satın alınan taşınmazlar için zorunlu bir unsurdur.\n\n![Vatandaşlık Kazanımına Esas Tutar Değerlendirmesi](/gayrimenkul/dab-banka-islemi.webp)",
           "icon": "💡"
         }
       ]
@@ -1693,7 +1693,7 @@
           "title": "Döviz Alım Belgesi (DAB) Süreci – Alıcı Tarafından Yapılması Hâlinde",
           "desc": "Süreç adım adım şöyle işler:\n\n1. Yabancı alıcı, Türkiye'de hesabının bulunduğu bankaya gider.\n2. Satın alma bedelini (USD, EUR vb.) kendi hesabından veya yurt dışından transfer ederek bankaya yatırır. Elden nakit yatırımı da mümkündür.\n3. Banka, dövizi o günkü Merkez Bankası kuru üzerinden Türk Lirasına çevirir.\n4. Banka, Döviz Alım Belgesi (DAB) düzenler.\n\nDAB'ta yer alan bilgiler:\n- Alıcının adı ve pasaport numarası\n- Satın alınacak taşınmaza ilişkin bilgiler\n- Döviz tutarı ve Türk Lirası karşılığı\n\nBu belge, banka tarafından KEP (Kayıtlı Elektronik Posta) aracılığıyla tapu müdürlüğüne gönderilir.",
           "image": {
-            "src": "/gayrimenkul/doviz-alim-belgesi-ornegi.png",
+            "src": "/gayrimenkul/doviz-alim-belgesi-ornegi.webp",
             "caption": "Döviz Alım Belgesi (DAB) Görünümü"
           }
         },
@@ -1746,7 +1746,7 @@
           "title": "Vatandaşlık Dosyası Olan Satışlarda Ek Kontroller",
           "desc": "Satışın vatandaşlık amacı taşıması hâlinde aşağıdaki ek kontroller uygulanır:\n- DAB belgesi, satış bedeliyle uyumu açısından kontrol edilir.\n- Tapu kütüğüne 3 yıl süreyle satış yasağı şerhi konulur.",
           "image": {
-            "src": "/gayrimenkul/webtapu-vatandaslik-ekrani.png",
+            "src": "/gayrimenkul/webtapu-vatandaslik-ekrani.webp",
             "caption": "Web Tapu Sistemi – Vatandaşlık İşlemi Ekranı"
           }
         }
@@ -1764,7 +1764,7 @@
           "title": "Belgenin Tanımı ve Önemi",
           "desc": "Taşınmaz Yatırım Tespit Belgesi; yabancı yatırımcının gerçekleştirdiği taşınmaz alımının, Türk vatandaşlığı için gerekli yatırım şartlarını karşıladığını devletin resmî olarak onayladığı belgedir.\n\nUygulamada bu belge; Uygunluk Belgesi, Citizenship Conformity Certificate veya Taşınmaz Uygunluk Yazısı gibi adlarla da anılmaktadır. Bu belge olmaksızın vatandaşlık başvurusu başlatılamaz.",
           "image": {
-            "src": "/gayrimenkul/uygunluk-belgesi-ornegi.jpeg",
+            "src": "/gayrimenkul/uygunluk-belgesi-ornegi.webp",
             "caption": "Taşınmaz Yatırım Tespit Belgesi – Örnek"
           }
         },

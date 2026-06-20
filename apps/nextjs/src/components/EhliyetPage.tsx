@@ -78,7 +78,7 @@ export default function EhliyetPage({
       <section className="relative flex flex-col bg-[#0a192f] pb-0 pt-28">
         <div className="absolute inset-0" aria-hidden="true">
           <Image
-            src="/hero/hukuki-hizmetler.jpg"
+            src="/hero/hukuki-hizmetler.webp"
             alt={copy.hero.imageAlt}
             fill
             className="object-cover object-center"

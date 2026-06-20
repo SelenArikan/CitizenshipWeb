@@ -1519,7 +1519,7 @@ export async function getLegalOverviewPageData(
       hero: {
         summary:
           "Hukuki hizmetler, vergi, tapu, banka, kira, miras, nüfus kaydı, tenfiz, yeşil pasaport ve ehliyet tebdil başlıkları.",
-        backgroundImage: "/hero/hukuki-hizmetler.jpg",
+        backgroundImage: "/hero/hukuki-hizmetler.webp",
       },
       sections: [
         {
@@ -1583,7 +1583,7 @@ export async function getLegalDetailPageData(
       hero: {
         summary: entry.summary,
         imageAlt: entry.title + " sayfası görseli",
-        backgroundImage: "/hero/hukuki-hizmetler.jpg",
+        backgroundImage: "/hero/hukuki-hizmetler.webp",
       },
       sections: buildSectionsFromDocumentText(entry.text),
     },
@@ -1623,7 +1623,7 @@ export async function buildLegalDetailMetadata(
       siteName: "CitizenshipWeb",
       images: [
         {
-          url: "/hero/hukuki-hizmetler.jpg",
+          url: "/hero/hukuki-hizmetler.webp",
           width: 1600,
           height: 900,
           alt: data.copy.metadata.title,
@@ -1634,7 +1634,7 @@ export async function buildLegalDetailMetadata(
       card: "summary_large_image",
       title: data.copy.metadata.title,
       description: data.copy.metadata.description,
-      images: ["/hero/hukuki-hizmetler.jpg"],
+      images: ["/hero/hukuki-hizmetler.webp"],
     },
   };
 }
@@ -1669,7 +1669,7 @@ export async function buildLegalOverviewMetadata(
       siteName: "CitizenshipWeb",
       images: [
         {
-          url: "/hero/hukuki-hizmetler.jpg",
+          url: "/hero/hukuki-hizmetler.webp",
           width: 1600,
           height: 900,
           alt: data.copy.metadata.title,
@@ -1680,7 +1680,7 @@ export async function buildLegalOverviewMetadata(
       card: "summary_large_image",
       title: data.copy.metadata.title,
       description: data.copy.metadata.description,
-      images: ["/hero/hukuki-hizmetler.jpg"],
+      images: ["/hero/hukuki-hizmetler.webp"],
     },
   };
 }
@@ -1700,7 +1700,7 @@ export async function buildLegalDetailSchemas(locale: string, slug: string) {
       description: data.copy.metadata.description,
       url: pageUrl,
       inLanguage: safeLocale,
-      primaryImageOfPage: SITE_URL + "/hero/hukuki-hizmetler.jpg",
+      primaryImageOfPage: SITE_URL + "/hero/hukuki-hizmetler.webp",
     },
     {
       "@context": "https://schema.org",
@@ -1752,7 +1752,7 @@ export async function buildLegalOverviewSchemas(locale: string) {
       description: data.copy.metadata.description,
       url: pageUrl,
       inLanguage: safeLocale,
-      primaryImageOfPage: SITE_URL + "/hero/hukuki-hizmetler.jpg",
+      primaryImageOfPage: SITE_URL + "/hero/hukuki-hizmetler.webp",
     },
     {
       "@context": "https://schema.org",

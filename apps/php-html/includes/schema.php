@@ -4,7 +4,7 @@ require_once __DIR__ . '/seo.php';
 
 const SCHEMA_SITE_NAME = 'CitizenshipWeb';
 const SCHEMA_SITE_URL = 'https://citizenshipweb.com';
-const SCHEMA_HERO_IMAGE = 'https://citizenshipweb.com/assets/images/hero.png';
+const SCHEMA_HERO_IMAGE = 'https://citizenshipweb.com/assets/images/hero.webp';
 const SCHEMA_PHONE = '+90 212 555 00 00';
 const SCHEMA_EMAIL = 'info@citizenshipweb.com';
 

@@ -185,6 +185,6 @@ function seo_page_meta(string $pageKey, string $locale): array {
         'canonical' => seo_page_url($safePageKey, $safeLocale),
         'alternates' => $alternates,
         'ogLocale' => seo_locale_code_map()[$safeLocale] ?? 'tr_TR',
-        'image' => 'https://citizenshipweb.com/assets/images/hero.png',
+        'image' => 'https://citizenshipweb.com/assets/images/hero.webp',
     ];
 }
