@@ -102,9 +102,9 @@ export default function HeroSlider({
       {/* Gradient — label okunurluğu */}
       <div className="absolute inset-x-0 bottom-0 z-10 h-36 bg-gradient-to-t from-black/40 to-transparent pointer-events-none" />
 
-      {/* Label badge — sol alt (RTL için sağ) */}
+      {/* Label badge — sol üst (RTL için sağ) */}
       <div
-        className="absolute bottom-14 z-30 px-4"
+        className="absolute top-6 z-30 px-4"
         style={dir === "rtl" ? { right: "1.5rem" } : { left: "1.5rem" }}
       >
         <span

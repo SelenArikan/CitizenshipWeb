@@ -25,47 +25,6 @@ export default function MevduatPage({
   copy,
 }: Props) {
   const sections: PageSection[] = [
-    // Giriş
-    ...(copy.intro?.paragraphs?.length > 0
-      ? [
-          {
-            type: "intro" as const,
-            eyebrow: copy.intro.eyebrow,
-            title: copy.intro.title,
-            paragraphs: copy.intro.paragraphs,
-          },
-          ...(copy.intro.bullets && copy.intro.bullets.length > 0
-            ? [
-                {
-                  type: "plain-bullet" as const,
-                  items: copy.intro.bullets,
-                },
-              ]
-            : []),
-        ]
-      : []),
-
-    // Genel Bakış
-    ...(copy.overview
-      ? [
-          {
-            type: "intro" as const,
-            eyebrow: copy.overview.eyebrow,
-            title: copy.overview.title,
-            paragraphs: copy.overview.paragraphs ?? [],
-          },
-          // Genel bakış bullet'ları ayrı bir bölüm olarak
-          ...(copy.overview.bullets?.length > 0
-            ? [
-                {
-                  type: "plain-bullet" as const,
-                  items: copy.overview.bullets,
-                },
-              ]
-            : []),
-        ]
-      : []),
-
     // Süreç (numaralı)
     ...(copy.process?.items?.length > 0
       ? [

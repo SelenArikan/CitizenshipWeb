@@ -198,7 +198,51 @@ function SectionDesc({ text }: { text?: string }) {
  * - "1. ", "2. " ile başlayan satırları numaralı liste olarak gösterir
  * - Karma blokları (intro metin + bullet) doğru ayırır
  */
-function ParsedDesc({ text }: { text: string }) {
+function parseInline(text: string, lang: string): React.ReactNode {
+  const regex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const parts: React.ReactNode[] = [];
+  let lastIndex = 0;
+  let match;
+
+  while ((match = regex.exec(text)) !== null) {
+    const matchIndex = match.index;
+    if (matchIndex > lastIndex) {
+      parts.push(text.substring(lastIndex, matchIndex));
+    }
+    const linkText = match[1];
+    let linkUrl = match[2];
+
+    if (linkUrl.startsWith("/") && !linkUrl.startsWith(`/${lang}/`) && linkUrl !== `/${lang}`) {
+      const supportedLangs = ["tr", "en", "ru", "ar", "fa"];
+      const hasLangPrefix = supportedLangs.some(l => linkUrl.startsWith(`/${l}/`) || linkUrl === `/${l}`);
+      if (!hasLangPrefix) {
+        linkUrl = `/${lang}${linkUrl}`;
+      }
+    }
+
+    parts.push(
+      <Link key={matchIndex} href={linkUrl} className="text-red-700 hover:text-red-900 underline font-semibold transition-colors duration-200">
+        {linkText}
+      </Link>
+    );
+    lastIndex = regex.lastIndex;
+  }
+
+  if (lastIndex < text.length) {
+    parts.push(text.substring(lastIndex));
+  }
+
+  return parts.length > 0 ? <>{parts}</> : text;
+}
+
+/**
+ * desc metnini akıllıca render eder:
+ * - "\n\n" ile ayrılan blokları ayrı parıgraflar olarak gösterir
+ * - "- " ile başlayan satırları bullet list olarak gösterir
+ * - "1. ", "2. " ile başlayan satırları numaralı liste olarak gösterir
+ * - Karma blokları (intro metin + bullet) doğru ayırır
+ */
+function ParsedDesc({ text, lang = "tr" }: { text: string; lang?: string }) {
   const base = "text-[14px] leading-7 text-gray-600";
 
   const blocks = text.split(/\n\n+/);
@@ -212,7 +256,7 @@ function ParsedDesc({ text }: { text: string }) {
       const cleanText = trimmedBlock.replace(/^>\s*/, "");
       return (
         <blockquote key={idx} className="border-l-4 border-blue-600 bg-blue-50/50 px-4 py-3 text-blue-950 rounded-r-lg my-4 text-[14px] leading-relaxed font-normal not-italic">
-          {cleanText}
+          {parseInline(cleanText, lang)}
         </blockquote>
       );
     }
@@ -244,7 +288,7 @@ function ParsedDesc({ text }: { text: string }) {
       const cleanText = trimmedBlock.replace(/^###\s*/, "");
       return (
         <h4 key={idx} className="text-[15px] font-bold text-gray-900 mt-4 mb-2">
-          {cleanText}
+          {parseInline(cleanText, lang)}
         </h4>
       );
     }
@@ -264,7 +308,7 @@ function ParsedDesc({ text }: { text: string }) {
           {lines.map((line, j) => (
             <li key={j} className={`flex gap-2.5 ${base}`}>
               <span className="mt-[10px] h-1.5 w-1.5 shrink-0 rounded-full bg-red-700" />
-              <span>{line.replace(/^[\s\t\u200B\uFEFF•\-*✓✔◦‣▪]+\s*/, "")}</span>
+              <span>{parseInline(line.replace(/^[\s\t\u200B\uFEFF•\-*✓✔◦‣▪]+\s*/, ""), lang)}</span>
             </li>
           ))}
         </ul>
@@ -279,7 +323,7 @@ function ParsedDesc({ text }: { text: string }) {
             return (
               <li key={j} className={`flex gap-2 ${base}`}>
                 <span className="shrink-0 font-medium text-gray-500">{m?.[1] ?? j + 1}.</span>
-                <span>{m?.[2] ?? line}</span>
+                <span>{parseInline(m?.[2] ?? line, lang)}</span>
               </li>
             );
           })}
@@ -300,13 +344,13 @@ function ParsedDesc({ text }: { text: string }) {
       const useBullet = isBullet(listLines[0]);
       return (
         <div key={idx}>
-          <p className={base}>{introLines.join(' ')}</p>
+          <p className={base}>{parseInline(introLines.join(' '), lang)}</p>
           {useBullet ? (
             <ul className="list-none mt-2 space-y-1.5">
               {listLines.map((line, j) => (
                 <li key={j} className={`flex gap-2.5 ${base}`}>
                   <span className="mt-[10px] h-1.5 w-1.5 shrink-0 rounded-full bg-red-700" />
-                  <span>{line.replace(/^[\s\t\u200B\uFEFF•\-*✓✔◦‣▪]+\s*/, "")}</span>
+                  <span>{parseInline(line.replace(/^[\s\t\u200B\uFEFF•\-*✓✔◦‣▪]+\s*/, ""), lang)}</span>
                 </li>
               ))}
             </ul>
@@ -317,7 +361,7 @@ function ParsedDesc({ text }: { text: string }) {
                 return (
                   <li key={j} className={`flex gap-2 ${base}`}>
                     <span className="shrink-0 font-medium text-gray-500">{m?.[1] ?? j + 1}.</span>
-                    <span>{m?.[2] ?? line}</span>
+                    <span>{parseInline(m?.[2] ?? line, lang)}</span>
                   </li>
                 );
               })}
@@ -328,7 +372,7 @@ function ParsedDesc({ text }: { text: string }) {
     }
 
     // Düz paragraf
-    return <p key={idx} className={base}>{lines.join(' ')}</p>;
+    return <p key={idx} className={base}>{parseInline(lines.join(' '), lang)}</p>;
   };
 
   return (
@@ -438,7 +482,7 @@ function IntroBlock({ section }: { section: IntroSection }) {
 }
 
 /* Numaralı liste */
-function NumberedBlock({ section }: { section: NumberedSection }) {
+function NumberedBlock({ section, lang }: { section: NumberedSection; lang: string }) {
   const headingTag = section.eyebrow ? "h2" : "h3";
   return (
     <div className="mb-14 border-t border-gray-100 pt-10 first:border-t-0 first:pt-0">
@@ -455,7 +499,7 @@ function NumberedBlock({ section }: { section: NumberedSection }) {
             <div className="min-w-0 w-full">
               <p className="text-[15px] font-semibold leading-snug text-gray-900">{item.title.replace(/^[\s\t\u200B\uFEFF•\-*✓✔◦‣▪]+\s*/, "")}</p>
               {/* Sıradan açıklama — akıllı parse ile */}
-              {item.desc && <ParsedDesc text={item.desc} />}
+              {item.desc && <ParsedDesc text={item.desc} lang={lang} />}
               {/* Kalın terim + açıklama çiftleri */}
               {item.richDesc && item.richDesc.length > 0 && (
                 <ul className="mt-3 space-y-2">
@@ -514,7 +558,7 @@ function NumberedBlock({ section }: { section: NumberedSection }) {
 }
 
 /* Bullet liste (başlıklı madde) */
-function BulletBlock({ section }: { section: BulletSection }) {
+function BulletBlock({ section, lang }: { section: BulletSection; lang: string }) {
   const headingTag = section.eyebrow ? "h2" : "h3";
   return (
     <div className="mb-14 border-t border-gray-100 pt-10 first:border-t-0 first:pt-0">
@@ -527,7 +571,7 @@ function BulletBlock({ section }: { section: BulletSection }) {
             <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-red-700" />
             <div className="min-w-0 w-full">
               <p className="text-[15px] font-semibold leading-snug text-gray-900">{item.title.replace(/^[\s\t\u200B\uFEFF•\-*✓✔◦‣▪]+\s*/, "")}</p>
-              {item.desc && <ParsedDesc text={item.desc} />}
+              {item.desc && <ParsedDesc text={item.desc} lang={lang} />}
               {/* Dokümandan alınan görsel */}
               {item.image && (
                 <figure className="mt-5">
@@ -702,14 +746,14 @@ function TableBlock({ section }: { section: TableSection }) {
 }
 
 /* Bölüm dağıtıcı */
-function RenderSection({ section }: { section: PageSection }) {
+function RenderSection({ section, lang }: { section: PageSection; lang: string }) {
   switch (section.type) {
     case "intro":
       return <IntroBlock section={section} />;
     case "numbered":
-      return <NumberedBlock section={section} />;
+      return <NumberedBlock section={section} lang={lang} />;
     case "bullet":
-      return <BulletBlock section={section} />;
+      return <BulletBlock section={section} lang={lang} />;
     case "plain-bullet":
       return <PlainBulletBlock section={section} />;
     case "faq":
@@ -837,7 +881,7 @@ export default function ServicePageLayout({
             {/* SOL: bölümler */}
             <div className="min-w-0 flex-1">
               {sections.map((section, i) => (
-                <RenderSection key={i} section={section} />
+                <RenderSection key={i} section={section} lang={lang} />
               ))}
 
               {/* İletişim notu */}

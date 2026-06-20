@@ -39,6 +39,7 @@ type NavCopy = {
   mega_h_other?: string;
   item_cit_gen?: string;
   item_cit_marriage?: string;
+  item_cit_process?: string;
   item_cit_passport?: string;
   mega_h_rtypes?: string;
   item_res_j?: string;
@@ -65,7 +66,13 @@ type NavCopy = {
   nav_desc_emp?: string;
 };
 
-type SubItem = { label: string; href: string; desc?: string };
+type SubItem = {
+  label: string;
+  href: string;
+  desc?: string;
+  bullet?: boolean;
+  separatorBefore?: boolean;
+};
 type SubGroup = { heading?: string; items: SubItem[] };
 
 type MenuEntry =
@@ -192,7 +199,17 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
           items: [
             { label: t.item_cit_gen,      href: `/${L}/citizenship/basvuru-sureci` },
             { label: t.item_cit_marriage, href: `/${L}/citizenship/evlilik` },
-            { label: t.item_cit_passport, href: `/${L}/citizenship/pasaport` },
+            {
+              label: t.item_cit_process,
+              href: `/${L}/citizenship/basvuru-sureci`,
+              bullet: true,
+              separatorBefore: true,
+            },
+            {
+              label: t.item_cit_passport,
+              href: `/${L}/citizenship/pasaport`,
+              bullet: true,
+            },
           ],
         },
       ],
@@ -488,9 +505,18 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
                               key={item.href + item.label}
                               href={item.href}
                               onClick={() => setMobileOpen(false)}
-                              className="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]"
+                              className={`block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f] ${
+                                item.separatorBefore
+                                  ? "mt-2 border-t border-blue-100 pt-4"
+                                  : ""
+                              }`}
                             >
-                              {item.label}
+                              <span className="flex items-start gap-2">
+                                {item.bullet && (
+                                  <span className="mt-[0.42rem] h-1.5 w-1.5 shrink-0 rounded-full bg-[#8a1c1c]" />
+                                )}
+                                <span>{item.label}</span>
+                              </span>
                               {item.desc && <span className="ml-2 text-xs text-stone-400">{item.desc}</span>}
                             </Link>
                           ))}
@@ -569,8 +595,19 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
                           key={item.href + item.label}
                           href={item.href}
                           onClick={() => setActiveMenu(null)}
-                          className="group flex items-center justify-between rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5"
+                          className={`group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 ${
+                            item.separatorBefore
+                              ? "mt-2 border-t border-blue-100 pt-5"
+                              : ""
+                          } ${
+                            item.bullet
+                              ? "items-start justify-start gap-2"
+                              : "items-center justify-between"
+                          }`}
                         >
+                          {item.bullet && (
+                            <span className="mt-[0.42rem] h-1.5 w-1.5 shrink-0 rounded-full bg-[#8a1c1c]" />
+                          )}
                           <span className="leading-snug">{item.label}</span>
                         </Link>
                       ))}

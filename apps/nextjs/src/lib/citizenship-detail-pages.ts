@@ -697,6 +697,26 @@ function getEntry(slug: string) {
   return CITIZENSHIP_DETAIL_PAGES[slug as CitizenshipDetailSlug] ?? null;
 }
 
+function getCitizenshipRelatedLabel(
+  itemSlug: CitizenshipDetailSlug,
+  dict: CitizenshipDetailDictionaryLike,
+  fallbackDict: CitizenshipDetailDictionaryLike,
+  locale: LocaleKey
+) {
+  if (itemSlug === "basvuru-sureci") {
+    return (
+      dict.nav?.item_cit_gen ??
+      fallbackDict.nav?.item_cit_gen ??
+      CITIZENSHIP_DETAIL_PAGES[itemSlug].tr.metadata.breadcrumbLabel
+    );
+  }
+
+  return (
+    CITIZENSHIP_DETAIL_PAGES[itemSlug][locale]?.metadata.breadcrumbLabel ??
+    CITIZENSHIP_DETAIL_PAGES[itemSlug].tr.metadata.breadcrumbLabel
+  );
+}
+
 function getCanonicalPath(locale: string, slug: string) {
   return `/${locale}${PAGE_PATH_PREFIX}/${slug}`;
 }
@@ -743,10 +763,12 @@ export async function getCitizenshipDetailPageData(
     relatedLinks: [
       ...CITIZENSHIP_DETAIL_SLUGS.filter((itemSlug) => itemSlug !== slug).map(
         (itemSlug) => ({
-          label:
-            CITIZENSHIP_DETAIL_PAGES[itemSlug][safeLocale]?.metadata
-              .breadcrumbLabel ??
-            CITIZENSHIP_DETAIL_PAGES[itemSlug].tr.metadata.breadcrumbLabel,
+          label: getCitizenshipRelatedLabel(
+            itemSlug,
+            dict,
+            fallbackDict,
+            safeLocale
+          ),
           slug: itemSlug,
           href: `/${lang}${PAGE_PATH_PREFIX}/${itemSlug}`,
         })

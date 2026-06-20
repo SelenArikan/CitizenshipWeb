@@ -1360,10 +1360,11 @@ function isAllCapsHeading(line: string) {
 
 function isHeading(line: string, index: number) {
   if (index === 0) return true;
-  if (/^\d+(?:\.\d+)*[.)]?\s+/.test(line)) return true;
+  if (/^\d+(?:\.\d+)*[.)]\s+/.test(line)) return true;
   if (/^[IVXLCDM]+\.\s+/.test(line)) return true;
   if (/^(BÖLÜM|AŞAMA|Adım)\s+/i.test(line)) return true;
-  if (/^(Giriş|Sonuç|Hukuki Dayanak|Kimler Başvurabilir?|Başvuru Koşulları Nelerdir?|Gerekli Belgeler|Sık Sorulan Sorular)$/i.test(line)) return true;
+  if (/^(Giriş|Sonuç|Hukuki Dayanak|Kimler Başvurabilir\?|Başvuru Koşulları Nelerdir\?|Gerekli Belgeler|Sık Sorulan Sorular)$/i.test(line)) return true;
+  if (/^(Veraset İlamının Hukuki Niteliği ve Yasal Dayanağı|Görevli ve Yetkili Merci: Sulh Hukuk Mahkemesi ve Noter|Sulh Hukuk Mahkemesinin Görevi|Noterin Yetkisi ve Sınırları|Mirasçılığın Belirlenmesi: Yasal ve Atanmış Mirasçılar|Yasal Mirasçılar ve Zümre Sistemi|Atanmış Mirasçılar|Saklı Paylı Mirasçılar|Veraset İlamı Alma Süreci|Mirasın Kabulü, Reddi ve Borçlardan Sorumluluk|Mirasın Gerçek \(İradi\) Reddi|Mirasın Hükmen Reddi|Mirasın Resmî Defter Tutularak Kabulü|Veraset İlamının İptali|Sürecin Tamamlanma Süresi|Masraflar, Harçlar ve Vekâlet Ücreti|Yabancılık Unsuru İçeren Mirasçılık Belgesi Talepleri|Uygulanacak Hukukun Tespiti: MÖHUK|Yurt Dışından Temin Edilen Belgelerin Tasdiki|Yabancı Mahkeme Kararlarının Tanınması ve Tenfizi|Yabancılarda Türkiye’deki Taşınmazlara İlişkin Mütekabiliyet ve Sınırlamalar|Yabancı Uyruklu Kişilerden İstenebilecek Belgeler|Veraset ve İntikal Vergisi Yükümlülüğü|Uygulamada Sık Karşılaşılan Sorunlar|Sonuç ve Değerlendirme|İlgili Yargıtay Kararı:.*|Aşama \d+:.*|1968 Karayolu Trafiği Konvansiyonuna Taraf Ülkeler)$/.test(line)) return true;
   return isAllCapsHeading(line);
 }
 
