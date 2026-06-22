@@ -84,13 +84,30 @@ export default async function AboutPageContent({ lang }: { lang: string }) {
           HERO — split layout
       ══════════════════════════════════════════════════ */}
       <section
-        className="relative min-h-[75vh]"
+        className="relative min-h-[75vh] overflow-hidden"
         id="about-hero"
         style={{ background: "linear-gradient(135deg, #EEF2F8 0%, #F5F8FD 50%, #EBF0F8 100%)" }}
       >
+        {/* Background Video */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 h-full w-full object-cover pointer-events-none z-0"
+        >
+          <source src="/hero/Plan_Sekans_Ofis_v2.mp4" type="video/mp4" />
+        </video>
+
+        {/* Light Overlay for Text Readability */}
+        <div
+          className="pointer-events-none absolute inset-0 bg-[#EEF2F8]/40 backdrop-blur-[1px] z-0"
+          aria-hidden="true"
+        />
+
         {/* Subtle dot grid */}
         <div
-          className="pointer-events-none absolute inset-0 opacity-[0.06]"
+          className="pointer-events-none absolute inset-0 opacity-[0.06] z-10"
           aria-hidden="true"
           style={{
             backgroundImage: "radial-gradient(#0a192f 1px, transparent 1px)",
@@ -99,7 +116,7 @@ export default async function AboutPageContent({ lang }: { lang: string }) {
         />
         {/* Right burgundy wash — lighter */}
         <div
-          className="pointer-events-none absolute inset-y-0 right-0 w-1/2"
+          className="pointer-events-none absolute inset-y-0 right-0 w-1/2 z-10"
           aria-hidden="true"
           style={{
             background:
@@ -107,7 +124,7 @@ export default async function AboutPageContent({ lang }: { lang: string }) {
           }}
         />
 
-        <div className="relative mx-auto flex min-h-[75vh] max-w-7xl flex-col justify-end px-4 pb-20 pt-36 sm:px-6 lg:flex-row lg:items-center lg:pb-0 lg:px-8">
+        <div className="relative mx-auto flex min-h-[75vh] max-w-7xl flex-col justify-end px-4 pb-20 pt-36 sm:px-6 lg:flex-row lg:items-center lg:pb-0 lg:px-8 z-20">
           {/* Left: text */}
           <div className="flex-1 lg:pr-16">
             <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#8a1c1c]/30 bg-[#8a1c1c]/8 px-4 py-1 text-xs font-bold uppercase tracking-widest text-[#8a1c1c]">
