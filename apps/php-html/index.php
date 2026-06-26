@@ -138,7 +138,7 @@ echo schema_render_scripts(schema_home_page($lang, __t('faq.list')));
                 <?= htmlspecialchars(__t('about.p2')) ?>
               </p>
               <a
-                href="/services.php?lang=<?= $lang ?>"
+                href="<?= seo_page_href('about', $lang) ?>"
                 class="inline-block border-b border-gray-800 pb-0.5 text-sm font-semibold uppercase tracking-widest text-gray-800 transition hover:border-red-700 hover:text-red-700"
               >
                 Devamını Oku
