@@ -23,16 +23,50 @@ if (!$dict) {
 }
 
 function __t($keyPath) {
-    global $dict;
+    global $dict, $lang;
     $keys = explode('.', $keyPath);
+    
+    // 1. Try active language
     $val = $dict;
+    $found = true;
     foreach ($keys as $k) {
         if (isset($val[$k])) {
             $val = $val[$k];
         } else {
-            return "{" . $keyPath . "}";
+            $found = false;
+            break;
         }
     }
-    return $val;
+    if ($found) {
+        return $val;
+    }
+    
+    // 2. Fallback to Turkish if not already Turkish
+    if ($lang !== 'tr') {
+        static $tr_dict = null;
+        if ($tr_dict === null) {
+            $tr_path = __DIR__ . '/../../../shared/i18n/tr.json';
+            if (file_exists($tr_path)) {
+                $tr_dict = json_decode(file_get_contents($tr_path), true);
+            }
+        }
+        if ($tr_dict) {
+            $val = $tr_dict;
+            $found = true;
+            foreach ($keys as $k) {
+                if (isset($val[$k])) {
+                    $val = $val[$k];
+                } else {
+                    $found = false;
+                    break;
+                }
+            }
+            if ($found) {
+                return $val;
+            }
+        }
+    }
+    
+    return "{" . $keyPath . "}";
 }
 ?>

@@ -267,6 +267,23 @@ function seo_catalog(): array {
                 'fa' => 'فرآیند اخذ شهروندی ترکیه از طریق ازدواج با یک شهروند ترک به مدت حداقل ۳ سال و شرایط لازم.',
             ],
         ],
+        'bes-yatirimi' => [
+            'path' => '/bes-yatirimi.php',
+            'titles' => [
+                'tr' => 'Bireysel Emeklilik Sistemi (BES) ve Türk Vatandaşlığı',
+                'en' => 'BES Investment and Turkish Citizenship',
+                'ru' => 'Инвестиции BES и турецкое гражданство',
+                'ar' => 'استثمار BES والجنسية التركية',
+                'fa' => 'سرمایه‌گذاری BES ve شهروندی ترکیه',
+            ],
+            'descriptions' => [
+                'tr' => 'BES yatırımı yoluyla Türk vatandaşlığı başvurusu, SEDDK uygunluk yazısı ve 3 yıllık taahhüt süreci.',
+                'en' => 'Turkish citizenship application by BES investment, SEDDK conformity letter, and 3-year holding process.',
+                'ru' => 'Подача заявления на турецкое гражданство на основе инвестиций BES, письмо о соответствии от SEDDK и 3-летний процесс удержания.',
+                'ar' => 'طلب الحصول على الجنسية التركية عن طريق استثمار BES، خطاب المطابقة من SEDDK وعملية الاحتفاظ لمدة 3 سنوات.',
+                'fa' => 'درخواست شهروندی ترکیه از طریق سرمایه‌گذاری BES، تاییدیه SEDDK ve فرآیند نگهداری ۳ ساله.',
+            ],
+        ],
         'genel-yolla-vatandaslik' => [
             'path' => '/genel-yolla-vatandaslik.php',
             'titles' => [

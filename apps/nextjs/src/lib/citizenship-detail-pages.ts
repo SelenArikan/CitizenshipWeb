@@ -192,10 +192,14 @@ Evet, bütün işlemler vekâletname ile yürütülebilse de ikamet izni ve vata
 Türkiye’de nüfus müdürlüklerinden veya şartlara göre Türkiye’nin dış temsilcilikleri aracılığıyla başvurusu yapılabilir.`;
 
 const BES_CITIZENSHIP_TEXT = String.raw`Bireysel Emeklilik Sistemi (BES) ve Türk Vatandaşlığı
-Kapsamlı Rehber
+
+Türk vatandaşlığının yatırım yoluyla, istisnai yoldan kazanılması kapsamında başvurulabilecek yöntemlerden biri de kanunda öngörülen şekil ve şartlara uygun olarak Bireysel Emeklilik Sistemi’ne yatırım yapılmasıdır. Bu başvuru yolunda yabancı yatırımcı, belirli tutardaki katkı payını vatandaşlık başvurusuna uygun özel bir BES planı kapsamında sisteme aktararak, mevzuatta öngörülen süre boyunca sistemde kalmayı taahhüt eder. Bu nedenle BES yatırımı yoluyla vatandaşlık başvurusu, yalnızca bir emeklilik sözleşmesi kurulmasından ibaret olmayıp; yatırım tutarının aktarımı, fon planının seçimi, üç yıllık taahhüt süreci ve yetkili kurumlar nezdinde uygunluk belgesinin alınması gibi aşamaların hukuki ve teknik olarak doğru yürütülmesini gerektirir.
 
 Bireysel Emeklilik Sistemi (BES) Nedir?
-Türk vatandaşlığının yatırım yoluyla, istisnai yoldan kazanılması kapsamında başvurulabilecek yöntemlerden biri de kanunda öngörülen şekil ve şartlara uygun olarak Bireysel Emeklilik Sistemi’ne yatırım yapılmasıdır. Bu başvuru yolunda yabancı yatırımcı, belirli tutardaki katkı payını vatandaşlık başvurusuna uygun özel bir BES planı kapsamında sisteme aktararak, mevzuatta öngörülen süre boyunca sistemde kalmayı taahhüt eder. Bu nedenle BES yatırımı yoluyla vatandaşlık başvurusu, yalnızca bir emeklilik sözleşmesi kurulmasından ibaret olmayıp; yatırım tutarının aktarımı, fon planının seçimi, üç yıllık taahhüt süreci ve yetkili kurumlar nezdinde uygunluk belgesinin alınması gibi aşamaların hukuki ve teknik olarak doğru yürütülmesini gerektirir.
+Bireysel Emeklilik Sistemi (BES), Türkiye’de gönüllü olarak katılınan ve emeklilik döneminde birikim oluşturmayı amaçlayan, katkı paylarınızın “emeklilik yatırım fonları”nda değerlendirildiği uzun vadeli bir tasarruf sistemidir. Sisteme bir emeklilik şirketi üzerinden bir sözleşme ile girilir; siz düzenli ya da tek seferlik katkı payı ödersiniz, bu tutarlar seçtiğiniz fonlarda yatırıma yönlendirilir ve fonların performansına göre birikiminiz artabilir veya azalabilir.
+
+BES, banka mevduatı gibi “anapara veya kur garantisi” veren bir ürün değildir; birikiminizin değeri fonların piyasa performansına bağlıdır. Bununla birlikte sistemin önemli bir teşviki “Devlet katkısı” uygulamasıdır.
+
 BES Emeklilik Sistemine Yapılacak Yatırımla Türk Vatandaşlığına Başvurmak Mümkün müdür?
 Türkiye’de, belirli büyüklükte bir BES yatırımı yaparak “istisnai Türk vatandaşlığına başvuru hakkı” doğuran özel bir uygulama bulunmaktadır. Bu yol; en az 500.000 ABD Doları veya karşılığı diğer yabancı para döviz tutarındaki katkı payının, “vatandaşlık” ibaresi taşıyan özel bir BES planı kapsamında ve en az 3 yıl sistemde tutulması esasına dayanır.
 Türkiye Cumhuriyet Merkez Bankası (TCMB) ile yapılan satış süreci tamamlandıktan sonra elde edilen TL tutarın emeklilik şirketi hesaplarına nakden intikal etmesiyle BES sözleşmesi yürürlüğe girer ve 3 yıllık asgari sistemde kalma süresi bu tarihte başlar.

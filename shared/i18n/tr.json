@@ -2844,6 +2844,49 @@
       "secondaryCta": "Soru Sorun"
     }
   },
+  "bes_page": {
+    "hero": {
+      "breadcrumbLabel": "BES Yatırımı",
+      "tag": "Yatırım Yoluyla Vatandaşlık",
+      "titleLines": [
+        "Bireysel Emeklilik Sistemi (BES) ile",
+        "Türk Vatandaşlığı"
+      ],
+      "highlightLineIndex": 0,
+      "summary": "Bireysel Emeklilik Sistemi'ne (BES) yatırım yaparak SEDDK onaylı Türk vatandaşlığı sürecinizi yönetiyoruz.",
+      "primaryCta": "Ücretsiz Danışın",
+      "secondaryCta": "Sık Sorulan Sorular",
+      "imageAlt": "Bireysel Emeklilik Sistemi (BES) ile Türk Vatandaşlığı"
+    },
+    "stats": [
+      {
+        "value": "500K USD",
+        "label": "Minimum Yatırım",
+        "sub": "veya karşılığı döviz"
+      },
+      {
+        "value": "3 Yıl",
+        "label": "Sistemde Kalma",
+        "sub": "bireysel emeklilik taahhüdü"
+      },
+      {
+        "value": "SEDDK",
+        "label": "Yetkili Kurum",
+        "sub": "Sigortacılık Düzenleme Kurumu"
+      },
+      {
+        "value": "4-5 Ay",
+        "label": "Ortalama Süre",
+        "sub": "başvuru sonuçlanması"
+      }
+    ],
+    "cta": {
+      "title": "Dosyanızı Başlatmaya Hazır mısınız?",
+      "description": "Büromuz, BES yatırımınızın başından kimlik/pasaport teslimine kadar her adımı sizin adınıza yönetir. Süreci eksiksiz ve mevzuata uygun yürütmek için ",
+      "primaryCta": "Ücretsiz Danışın",
+      "secondaryCta": "SSS'yi İncele"
+    }
+  },
   "genel_yolla_page": {
     "hero": {
       "breadcrumbLabel": "Genel Yolla Vatandaşlık",

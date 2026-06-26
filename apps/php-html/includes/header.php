@@ -239,7 +239,7 @@ $pageSeo = seo_page_meta($seoKey, $lang);
               <a href="<?= seo_page_href('mevduat-hesabi', $lang) ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
                 <span><?= __t('nav.investment_deposit') ?></span>
               </a>
-              <a href="services.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
+              <a href="<?= seo_page_href('bes-yatirimi', $lang) ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
                 <span><?= __t('nav.investment_bes') ?></span>
               </a>
               <a href="<?= seo_page_href('istihdam-olusturmak', $lang) ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
@@ -401,7 +401,7 @@ $pageSeo = seo_page_meta($seoKey, $lang);
                   <a href="<?= seo_page_href('mevduat-hesabi', $lang) ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
                     <span class="leading-snug"><?= __t('nav.investment_deposit') ?></span>
                   </a>
-                  <a href="services.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
+                  <a href="<?= seo_page_href('bes-yatirimi', $lang) ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
                     <span class="leading-snug"><?= __t('nav.investment_bes') ?></span>
                   </a>
                   <a href="<?= seo_page_href('istihdam-olusturmak', $lang) ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
