@@ -1,0 +1,211 @@
+{
+  "hero": {
+    "breadcrumbLabel": "Evlilik Yoluyla Vatandaşlık",
+    "tag": "Vatandaşlık",
+    "titleLines": [
+      "Evlilik Yoluyla",
+      "Türk Vatandaşlığı"
+    ],
+    "highlightLineIndex": 0,
+    "summary": "Türk vatandaşı ile evli olan yabancıların evlilik yoluyla Türk vatandaşlığı başvurusunda aranan şartlar ve süreç rehberi.",
+    "primaryCta": "Ücretsiz Danışın",
+    "secondaryCta": "Sık Sorulan Sorular",
+    "imageAlt": "Evlilik Yoluyla Türk Vatandaşlığı"
+  },
+  "stats": [
+    {
+      "value": "3 Yıl",
+      "label": "Evlilik Süresi",
+      "sub": "asgari evlilik şartı"
+    },
+    {
+      "value": "Fiilen",
+      "label": "Birlikte Yaşama",
+      "sub": "aile birliği şartı"
+    },
+    {
+      "value": "Nüfus",
+      "label": "Yetkili Kurum",
+      "sub": "İl Nüfus Müdürlüğü"
+    },
+    {
+      "value": "5-6 Ay",
+      "label": "Ortalama Süre",
+      "sub": "başvuru sonuçlanması"
+    }
+  ],
+  "intro": {
+    "eyebrow": "Evlilik Yoluyla Vatandaşlık",
+    "title": "Evlilik Yoluyla Türk Vatandaşlığı Başvurusu",
+    "paragraphs": [
+      "Türk vatandaşlığının sonradan kazanılması yollarından biri de evlenme yoluyla Türk vatandaşlığının kazanılmasıdır. Ancak bir Türk batandaşı ile evlenmek, yabancı eşe doğrudan Türk vatandaşlığı kazandırmaz. Yabancı eşin Türk vatandaşlığına başvurabilmesi için evliliğin belirli bir süre devam etmiş olması, aile birliğinin fiilen sürdürülmesi ve kanunda aranan diğer şartların sağlanması gerekir.",
+      "5901 sayılı Türk Vatandaşlığı Kanunu madde 16 uyarınca, bir Türk vatandaşı ile en az üç yıldan beri evli olan ve evliliği devam eden yabancılar Türk vatandaşlığını kazanmak üzere başvuruda bulunabilir. Başvuru sahibinde aile birliği içinde yaşama, evlilik birliği ile bağdaşmayacak faaliyette bulunmama ve milli güvenlik ile kamu düzeni bakımından engel teşkil edecek bir hâlin bulunmaması şartları aranır.",
+      "Evlilik yoluyla vatandaşlık başvurusu, yalnızca evlilik cüzdanı veya evlenme belgesi sunulmasından ibaret değildir. Evliliğin gerçekliği, eşlerin birlikte yaşayıp yaşamadığı, aile birliğinin fiilen devam edip etmediği, evlenmenin yalnızca vatandaşlık elde etme amacıyla yapılıp yapılmadığı, başvuru sahibinin adli ve idari durumu ve kamu düzeni bakımından değerlendirmesi birlikte incelenir.",
+      "Bu rehber, Türk vatandaşı ile evli olan yabancıların evlilik yoluyla Türk vatandaşlığı başvurusunda aranan şartları, üç yıllık evlilik süresinin nasıl hesaplandığını, aile birliği içinde yaşama şartını, mülakat ve tahkikat sürecini, başvuru belgelerini ve dikkat edilmesi gereken temel hususları açıklamak amacıyla hazırlanmıştır.",
+      "Rehber yalnızca bilgilendirme amacıyla hazırlanmıştır. Hukuki danışmanlık için lütfen uzman bir avukattan destek alınız."
+    ],
+    "bullets": [],
+    "imageAlt": "Evlilik yoluyla vatandaşlık",
+    "cardValue": "Nüfus Onaylı",
+    "cardLabel": "Vatandaşlık Kararı",
+    "badgeValue": "3 Yıl",
+    "badgeLabel": "Minimum Evlilik"
+  },
+  "process": {
+    "eyebrow": "Adım Adım Süreç",
+    "title": "Evlilik Yoluyla Türk Vatandaşlığı Başvuru Adımları",
+    "description": "Evlilik yoluyla Türk vatandaşlığı başvurusunda 17 bölümden oluşan tüm adımlar:",
+    "items": [
+      {
+        "num": "01",
+        "icon": "⚖️",
+        "title": "BİRİNCİ BÖLÜM - EVLİLİK YOLUYLA TÜRK VATANDAŞLIĞI BAŞVURUSUNUN HUKUKİ DAYANAĞI",
+        "desc": "Evlilik yoluyla Türk vatandaşlığı başvurusu, 5901 sayılı Türk Vatandaşlığı Kanunu’nun 16. maddesi ve Türk Vatandaşlığı Kanununun Uygulanmasına İlişkin Yönetmelik hükümleri kapsamında düzenlenmektedir.\n\nKanuna göre bir Türk vatandaşı ile evlenmek, yabancı kişiye otomatik olarak Türk vatandaşlığı kazandırmaz. Yabancı eşin vatandaşlık başvurusu yapabilmesi için en az üç yıldan beri bir Türk vatandaşı ile evli olması ve evliliğin başvuru tarihinde devam ediyor olması gerekir.\n\nBu başvuru türünde esas olan, evliliğin gerçek bir aile birliği oluşturmasıdır. Bu nedenle idare, yalnızca resmi evlilik kaydının varlığıyla yetinmez; eşlerin birlikte yaşayıp yaşamadığını, evlilik birliğinin fiilen devam edip etmediği, evlenmenin yalnızca vatandaşlık elde etmek amacıyla formalite olarak yapılıp yapılmadığını araştırır."
+      },
+      {
+        "num": "02",
+        "icon": "📋",
+        "title": "İKİNCİ BÖLÜM - EVLİLİK YOLUYLA VATANDAŞLIK ŞARTLARI",
+        "desc": "Evlilik yoluyla Türk vatandaşlığı başvurusunda aranan temel şartlar şunlardır:\n• Başvuru sahibinin bir Türk vatandaşı ile evli olması,\n• Evliliğin en az üç yıldan beri devam ediyor olması,\n• Başvuru tarihinde evliliğin devam etmesi,\n• Eşlerin aile birliği içinde yaşaması,\n• Başvuru sahibinin evlilik birliği ile bağdaşmayacak bir faaliyette bulunmaması,\n• Başvuru sahibinin milli güvenlik ve kamu düzeni bakımından engel teşkil edecek bir hâlininin bulunmaması.\n\nBu şartların tamamı birlikte değerlendirilir. Üç yıllık evlilik süresinin dolması, tek başına Türk vatandaşlığının kazanılacağı anlamına gelmez. Başvuru sahibi, evlenmenin gerçek olduğunu, aile birliğinin sürdüğünü ve vatandaşlık başvurusu bakımından kamu düzeni veya milli güvenlik yönünden engel bulunmadığını gösterebilmelidir."
+      },
+      {
+        "num": "03",
+        "icon": "📅",
+        "title": "ÜÇÜNCÜ BÖLÜM - ÜÇ YILLIK EVLİLİK SÜRESİ NASIL HESAPLANIR?",
+        "desc": "Evlilik yoluyla vatandaşlık başvurusu yapılabilmesi için yabancı eşin, başvuru tarihinde en az üç yıldan beri bir Türk vatandaşı ile evli olması gerekir. Üç yıllık süre, kural olarak evliliğin resmi olarak kurulduğu tarihten itibaren hesaplanır.\n\nEvlilik Türkiye’de yapılmışsa, süre evlenme işleminin resmi makamlarca yapıldığı tarihten itibaren başlar. Evlilik yurtdışında yapılmışsa, evlenmenin Türk nüfus kayıtlarına tescil edilmesi önem taşır. Yurtdışında yapılan evliliklerin Türkiye’de tanınması ve nüfus kayıtlarına işlenmesi başvuru süreci bakımından gereklidir.\n\nÜç yıllık sürenin hesabında dikkat edilmesi gereken en önemli husus, evlilik tarihinin resmi belgelerde gün, ay ve yıl olarak açıkça yer almasıdır. Medeni hal belgesi, evlenme belgesi, nüfus kayıt örneği ve yabancı makamlarca düzenlenen belgelerde evlilik tarihi bakımından uyumsuzluk bulunması başvuru sürecinde sorun yaratabilir.\n\nEvlilik süresi üç yılı doldurmadan yapılan başvurular işleme alınmayabilir. Bu nedenle başvuru hazırlığına erken başlanabilse de, resmi başvurunun üç yıllık süre dolduktan sonra yapılması gerekir."
+      },
+      {
+        "num": "04",
+        "icon": "👤",
+        "title": "DÖRDÜNCÜ BÖLÜM - EŞİN TÜRK VATANDAŞLIĞI NE ZAMAN BAŞLAMIŞ OLMALIDIR?",
+        "desc": "Evlilik yoluyla vatandaşlık başvurusunda, başvuru sahibinin en az üç yıldan beri bir Türk vatandaşı ile evli olması aranır. Bu nedenle yalnızca üç yıllık evlilik süresinin dolması değil, evlilik ilişkisi içinde Türk vatandaşı eşin vatandaşlık statüsü de önemlidir.\n\nEğer eş doğumla Türk vatandaşı ise, evlilik tarihinden itibaren üç yıllık sürenin dolması başvuru bakımından temel ölçüt olacaktır. Ancak eş sonradan Türk vatandaşlığını kazanmışsa, başvuru sahibinin “Türk vatandaşı ile evli olma” şartının hangi tarihten itibaren gerçekleştiği ayrıca değerlendirilmelidir.\n\nBu nedenle eşin vatandaşlık statüsü, evlilik tarihi ve Türk nüfus kayıtlarındaki bilgiler başvuru öncesinde birlikte incelenmelidir. Evlilik tarihi, eşin Türk vatandaşlığını kazanma tarihi ve nüfus kayıtları arasında uyumsuzluk varsa, başvuru sürecinde ek belge veya açıklama gerekebilir."
+      },
+      {
+        "num": "05",
+        "icon": "💞",
+        "title": "BEŞİNCİ BÖLÜM - EVLİLİĞİN DEVAM ETMESİ ŞARTI",
+        "desc": "Evlilik yoluyla vatandaşlık başvurusu yapılabilmesi için evliliğin başvuru tarihinde devam ediyor olması gerekir. Boşanmış kişiler, eski Türk vatandaşı eşleri üzerinden evlilik yoluyla vatandaşlık başvurusu yapamaz.\n\nBaşvurudan önce boşanma davası açılmış olması, fiili ayrılık bulunması veya eşler arasında aile birliğinin sona erdiğini gösteren durumların bulunması dosya bakımından risk yaratabilir. Çünkü evlilik yoluyla vatandaşlık başvurusunda yalnızca resmi evlilik kaydının devam etmesi değil, aile birliğinin fiilen sürmesi de aranır.\n\nBaşvuru tarihinden sonra Türk vatandaşı eşin ölümü nedeniyle evliliğin sona ermesi hâlinde ise aile birliği içinde yaşama şartı aranmayabilir. Ancak bu durum başvurunun otomatik olarak kabul edileceği anlamına gelmez; dosyanın diğer şartlar bakımından incelenmesine devam edilir."
+      },
+      {
+        "num": "06",
+        "icon": "🏠",
+        "title": "ALTINCI BÖLÜM - AİLE BİRLİĞİ İÇİNDE YAŞAMA ŞARTI",
+        "desc": "Evlilik yoluyla vatandaşlık başvurularında en önemli şartlardan biri, eşlerin aile birliği içinde yaşamasıdır. Aile birliği içinde yaşama, eşlerin gerçek bir evlilik ilişkisi içinde ortak hayatı sürdürmesini ifade eder.\n\nBu şart kapsamında idare şu hususları değerlendirebilir:\n• Eşlerin aynı adreste yaşayıp yaşamadığı,\n• Ortak konutun bulunup bulunmadığı,\n• Eşlerin birbirlerinin aile, iş ve sosyal çevresini tanıyıp tanımadığı,\n• Evlenmenin fiilen devam edip etmediği,\n• Eşlerin ekonomik ve sosyal yaşamlarını birlikte sürdürüp sürdürmediği,\n• Evlenmenin yalnızca vatandaşlık başvurusu amacıyla yapılıp yapılmadığı,\n• Eşlerin beyanlarının birbiriyle uyumlu olup olmadığı.\n\nEşlerin iş, eğitim, sağlık, askerlik, ailevi zorunluluk veya benzeri haklı nedenlerle geçici olarak ayrı şehirlerde ya da ülkelerde bulunması, her durumda aile birliğinin bulunmadığı anlamına gelmez. Ancak bu durumda ayrılığın geçici, haklı ve açıklanabilir olması gerekir.\n\nEşlerin uzun süredir ayrı yaşaması, ortak adres kaydının bulunmaması, birbirleri hakkında temel bilgileri bilmemesi, ortak yaşamı destekleyen belgelerin olmaması veya evlenmenin şekli olduğu izlenimi veren durumlar başvurunun reddedilmesine neden olabilir."
+      },
+      {
+        "num": "07",
+        "icon": "🚫",
+        "title": "YEDİNCİ BÖLÜM - EVLİLİK BİRLİĞİ İLE BAĞDAŞMAYACAK FAALİYETTE BULUNMAMA",
+        "desc": "Kanun, evlilik yoluyla Türk vatandaşlığı başvurusunda bulunan yabancının evlilik birliği ile bağdaşmayacak bir faaliyette bulunmamasını şart koşar. Bu şart, evliliğin gerçekliğini ve başvuru sahibinin aile yaşamına uygun davranış içinde olup olmadığını değerlendirmeye yöneliktir.\n\nUygulamada bu kapsamda özellikle şu hususlar incelenebilir:\n• Evlenmenin formalite olup olmadığı,\n• Başvuru sahibinin başka biriyle fiili birliktelik yaşayıp yaşamadığı,\n• Evlilik birliğiyle bağdaşmayacak faaliyetler içinde bulunup bulunmadığı,\n• Evlenmenin kamu düzenini veya aile kurumunu kötüye kullanma amacı taşıyıp taşımadığı,\n• Başvuru sahibinin geçmiş adli veya idari kayıtları,\n• Kolluk araştırması ve komisyon değerlendirmesi.\n\nBu şart, yalnızca ceza hukuku bakımından suç teşkil eden davranışlarla sınırlı değildir. Evlenmenin amacına, aile birliğine ve kamu düzenine aykırı faaliyetler de başvuru bakımından olumsuz değerlendirilebilir."
+      },
+      {
+        "num": "08",
+        "icon": "🛡️",
+        "title": "SEKİZİNCİ BÖLÜM - MİLLİ GÜVENLİK VE KAMU DÜZENİ DEĞERLENDİRMESİ",
+        "desc": "Evlilik yoluyla vatandaşlık başvurusunda başvuru sahibinin milli güvenlik ve kamu düzeni bakımından engel teşkil edecek bir hâlininin bulunmaması gerekir. Bu şart, tüm vatandaşlık başvurularında olduğu gibi evlilik yoluyla başvurularda da temel değerlendirme kriterlerinden biridir.\n\nBu kapsamda başvuru sahibinin adli sicil kayıtları, hakkında devam eden soruşturma veya kovuşturma bulunup bulunmadığı, idari kayıtları, kamu düzeni bakımından risk oluşturabilecek faaliyetleri ve güvenlik araştırması sonuçları değerlendirilebilir.\n\nTürk vatandaşı ile üç yıldan fazla süredir evli olmak, milli güvenlik veya kamu düzeni bakımından olumsuz değerlendirme yapılması hâlinde vatandaşlık başvurusunun kabul edileceği anlamına gelmez. Bu nedenle başvuru öncesinde adli sicil, dava, idari tahdit ve benzeri risklerin kontrol edilmesi önemlidir."
+      },
+      {
+        "num": "09",
+        "icon": "🗣️",
+        "title": "DOKUZUNCU BÖLÜM - MÜLAKAT VE KOMİSYON SÜRECİ",
+        "desc": "Evlilik yoluyla Türk vatandaşlığı başvurularında mülakat ve inceleme süreci başvurunun en kritik aşamalarından biridir. Başvuru sahibi yabancı eş ve Türk vatandaşı eş, yetkili makamlar tarafından birlikte veya ayrı ayrı görüşmeye alınabilir.\n\nMülakat sürecinde genellikle şu konular değerlendirilebilir:\n• Eşlerin ne zaman ve nasıl tanıştığı,\n• Evlilik tarihleri,\n• Düğün veya evlilik süreci,\n• Ortak adres ve birlikte yaşam düzeni,\n• Eşlerin aileleri, işleri ve sosyal çevreleri,\n• Günlük yaşam alışkanlıkları,\n• Ev içi düzen ve ortak yaşam bilgileri,\n• Eşlerin birbirleri hakkındaki temel bilgileri,\n• Evlenmenin gerçek ve sürdürülen bir aile birliği olup olmadığı.\n\nKomisyon, eşlerin beyanlarının tutarlı olup olmadığını ve dosyadaki belgelerle uyum gösterip göstermediğini değerlendirir. Eşlerin birbirinden tamamen farklı bilgiler vermesi, temel aile bilgilerini bilmemesi veya ortak yaşamı destekleyen hiçbir belgenin bulunmaması başvuru açısından risk oluşturabilir.\n\nMülakatın amacı, evlenmenin gerçekliğini ve aile birliğinin devam edip etmediğini değerlendirmektir. Bu nedenle başvuru öncesinde dosya belgeleri ile eşlerin beyanlarının tutarlı olması sağlanmalıdır."
+      },
+      {
+        "num": "10",
+        "icon": "👮",
+        "title": "ONUNCU BÖLÜM - KOLLUK ARAŞTIRMASI VE ADRES İNCELEMESİ",
+        "desc": "Evlilik yoluyla vatandaşlık başvurularında mülakat dışında kolluk araştırması ve adres incelemesi de yapılabilir. Bu araştırma kapsamında eşlerin aynı adreste yaşayıp yaşamadığı, komşu veya çevre beyanları, ortak yaşam düzeni ve aile birliğinin gerçekliği incelenebilir.\n\nAdres kayıt sistemindeki adres ile fiili yaşam adresinin uyumlu olması önemlidir. Eşlerin farklı adreslerde kayıtlı olması, fiilen ayrı yaşamaları veya adres kayıtlarının güncel olmaması başvuru sürecinde ek açıklama gerektirebilir.\n\nKolluk araştırmasında olumsuz kanaat oluşması, komisyon değerlendirmesini ve nihai karar sürecini etkileyebilir. Bu nedenle başvuru yapılmadan önce adres kayıtları, kira sözleşmesi, tapu, fatura, ortak yaşam belgeleri ve aile birliğini destekleyen diğer belgeler kontrol edilmelidir."
+      },
+      {
+        "num": "11",
+        "icon": "✈️",
+        "title": "ON BİRİNCİ BÖLÜM - YURT İÇİNDEN VE YURT DIŞINDAN BAŞVURU",
+        "desc": "Evlilik yoluyla Türk vatandaşlığı başvuruları, başvuru sahibinin yerleşim yerine göre yurt içinde veya yurt dışında yapılabilir. Türkiye’de yaşayan yabancılar bakımından başvuru, yerleşim yerinin bulunduğu valilik, yani İl Nüfus ve Vatandaşlık Müdürlüğü üzerinden yapılır.\n\nYurt dışında yaşayan yabancılar ise dış temsilcilikler aracılığıyla başvuru yapabilir. Yurt dışı başvurularında evliliğin Türk nüfus kayıtlarına işlenmiş olması, belgelerin usulüne uygun şekilde hazırlanması ve başvuru sahibinin bulunduğu ülkedeki resmi belgelerin apostil veya konsolosluk onayı ile Türkçe tercümelerinin tamamlanması gerekir.\n\nTürkiye’de ikamet eden başvuru sahipleri bakımından en son tarihli ikamet izni belgesi başvuru dosyasında yer alabilir. Ancak evlilik yoluyla vatandaşlık başvurusu, genel yolla vatandaşlık başvurusundan farklı olarak beş yıllık ikamet şartına dayanmaz. Bununla birlikte başvuru sahibinin Türkiye’de bulunma statüsü, adres kaydı ve aile birliği içinde yaşama durumunun ispatı bakımından önem taşıyabilir."
+      },
+      {
+        "num": "12",
+        "icon": "👨‍👩‍👧‍👦",
+        "title": "ON İKİNCİ BÖLÜM - BAŞVURUNUN KİMLERİ KAPSADIĞI",
+        "desc": "Evlilik yoluyla Türk vatandaşlığı başvurusu esas olarak Türk vatandaşı ile evli olan yabancı eş tarafından yapılır. Türk vatandaşı eş zaten Türk vatandaşı olduğundan başvuru sahibi konumunda değildir; ancak başvuru sürecinde aile birliğinin ispatı, mülakat ve inceleme bakımından sürecin doğal tarafıdır.\n\nBaşvuru sahibinin önceki evliliğinden veya mevcut evlilikten ergin olmayan yabancı çocukları varsa, bu çocukların Türk vatandaşlığı kazanıp kazanamayacağı ayrı değerlendirilir. Yetkili makam kararıyla Türk vatandaşlığının kazanılması eşin vatandaşlığına etki etmez; ancak ana veya babanın velayeti kendisinde bulunan ergin olmayan çocukları, diğer ebeveynin muvafakatiyle Türk vatandaşlığını kazanabilir.\n\nErgin çocuklar, anne veya babanın evlilik yoluyla Türk vatandaşlığı kazanması nedeniyle otomatik olarak Türk vatandaşlığı kazanmaz. Bu kişiler şartları varsa kendi adlarına ayrıca vatandaşlık başvurusu yapmalıdır.\n\nBu nedenle evlilik yoluyla vatandaşlık başvurusu yapılırken başvuru sahibinin çocuklarının yaşı, velayet durumu, diğer ebeveynin muvafakati, çocukların kimlik ve doğum belgeleri ile aile bağını gösteren belgeler ayrıca değerlendirilmelidir."
+      },
+      {
+        "num": "13",
+        "icon": "📂",
+        "title": "ON ÜÇÜNCÜ BÖLÜM - BAŞVURU İÇİN GEREKLİ BELGELER",
+        "desc": "Evlilik yoluyla Türk vatandaşlığı başvurusunda genel olarak aşağıdaki belgeler hazırlanır:\n• Başvuru formu,\n• Biyometrik fotoğraf,\n• Başvuru sahibinin pasaportu veya pasaport yerine geçen belgesi,\n• Vatansızlık durumu varsa buna ilişkin belge,\n• Başvuru sahibinin kimlik bilgilerini gösteren doğum belgesi veya nüfus kayıt örneği,\n• Evlilik belgesi,\n• Türk vatandaşı eşe ait nüfus kayıt örneği,\n• Başvuru sahibinin medeni halini gösteren belge,\n• Yerleşim yeri Türkiye’de ise en son tarihli ikamet izni belgesi,\n• Kesinleşmiş mahkeme kararı varsa onaylı örneği,\n• Başvuru sahibinin doğum tarihinin ay ve günü bulunmuyorsa buna ilişkin belge veya beyan,\n• Hizmet bedeli makbuzu,\n• Gerekli görülmesi hâlinde aile birliğini ispatlayan ek belgeler.\n\nAile birliğini desteklemek amacıyla ayrıca şu belgeler de dosya bakımından faydalı olabilir:\n• Ortak adres kaydı,\n• Kira sözleşmesi veya tapu kaydı,\n• Ortak faturalar,\n• Ortak banka veya ödeme kayıtları,\n• Çocuklara ilişkin doğum belgeleri,\n• Fotoğraflar,\n• Seyahat kayıtları,\n• Evliliğin fiilen sürdüğünü gösteren diğer belgeler.\n\nYabancı ülkelerden alınan belgelerin usulüne uygun şekilde onaylanması, apostil veya konsolosluk tasdiklerinin yapılması ve noter onaylı Türkçe tercümelerinin hazırlanması gerekir."
+      },
+      {
+        "num": "14",
+        "icon": "📮",
+        "title": "ON DÖRDÜNCÜ BÖLÜM - BAŞVURU MAKAMI VE USUL",
+        "desc": "Evlilik yoluyla Türk vatandaşlığı başvurusu, yurt içinde yerleşim yerinin bulunduğu valiliğe, yurt dışında ise dış temsilciliklere yapılır. Başvuru bizzat veya bu hakkın kullanılmasına ilişkin özel vekâletname ile yapılabilir. Posta yoluyla yapılan başvurular kabul edilmez.\n\nBaşvuru süreci genel olarak şu aşamalardan oluşur:\n1. Evlilik süresinin ve Türk vatandaşı eşin vatandaşlık durumunun incelenmesi,\n2. Evliliğin Türk nüfus kayıtlarına işlenip işlenmediğinin kontrol edilmesi,\n3. Başvuru belgelerinin hazırlanması,\n4. İl Nüfus ve Vatandaşlık Müdürlüğü veya dış temsilcilik üzerinden başvuru yapılması,\n5. Ön inceleme yapılması,\n6. Eşlerin mülakata alınması,\n7. Kolluk ve adres araştırması yapılması,\n8. Aile birliği içinde yaşama şartının değerlendirilmesi,\n9. Milli güvenlik ve kamu düzeni araştırmasının tamamlanması,\n10. Dosyanın İçişleri Bakanlığına gönderilmesi,\n11. Başvurunun idari makamlarca değerlendirilmesi,\n12. Uygun görülmesi hâlinde Türk vatandaşlığının kazanılması.\n\nBaşvurunun işleme alınması, vatandaşlığın kesin olarak kazanılacağı anlamına gelmez. Nihai değerlendirme yetkili makamlar tarafından yapılır."
+      },
+      {
+        "num": "15",
+        "icon": "⚠️",
+        "title": "ON BEŞİNCİ BÖLÜM - BAŞVURU RİSKLERİ VE RED SEBEPLERİ",
+        "desc": "Evlilik yoluyla vatandaşlık başvurularında en sık karşılaşılan riskler şunlardır:\n• Evlilik süresinin üç yılı doldurmamış olması,\n• Evliliğin Türk nüfus kayıtlarına işlenmemiş olması,\n• Evlilik belgelerinde tarih veya kimlik uyumsuzluğu bulunması,\n• Eşlerin fiilen ayrı yaşaması,\n• Aile birliği içinde yaşama şartının ispatlanamaması,\n• Eşlerin mülakatta çelişkili beyanlarda bulunması,\n• Evlenmenin formalite olduğu yönünde kanaat oluşması,\n• Başvuru sahibinin evlilik birliğiyle bağdaşmayacak faaliyetlerde bulunduğunun değerlendirilmesi,\n• Adli sicil veya devam eden ceza yargılaması bulunması,\n• Milli güvenlik veya kamu düzeni bakımından olumsuz değerlendirme yapılması,\n• Adres kayıtları ile fiili yaşam adresinin uyumsuz olması,\n• Belgelerin eksik, hatalı veya usulüne uygun onaylanmamış olması.\n\nBu nedenle evlilik yoluyla vatandaşlık başvurusu yapılmadan önce evlilik süresi, aile birliği, ikamet ve adres kayıtları, yabancı belgeler ve mülakat süreci dikkatle hazırlanmalıdır."
+      },
+      {
+        "num": "16",
+        "icon": "💔",
+        "title": "ON ALTINCI BÖLÜM - BOŞANMA, ÖLÜM VE EVLİLİĞİN BUTLANI HÂLLERİ",
+        "desc": "Evlilik yoluyla vatandaşlık başvurusu yapılabilmesi için başvuru tarihinde evliliğin devam etmesi gerekir. Başvurudan önce boşanma gerçekleşmişse, yabancı eş eski evliliğe dayanarak vatandaşlık başvurusunda bulunamaz.\n\nBaşvuru yapıldıktan sonra Türk vatandaşı eşin ölümü nedeniyle evliliğin sona ermesi hâlinde, aile birliği içinde yaşama şartı aranmayabilir. Ancak başvurunun diğer şartlar bakımından incelenmesine devam edilir.\n\nEvlilik yoluyla Türk vatandaşlığını kazanan yabancının evliliğinin sonradan butlanına karar verilirse, kişi evlenmede iyi niyetli ise Türk vatandaşlığını muhafaza edebilir. Bu durum her somut olayın şartlarına göre değerlendirilir.\n\nBoşanma, ölüm veya butlan gibi durumlar başvuru sürecinde ya da vatandaşlık kazanıldıktan sonra önemli hukuki sonuçlar doğurabileceğinden, bu tür hâllerde mutlaka hukuki destek alınmalıdır."
+      },
+      {
+        "num": "17",
+        "icon": "💼",
+        "title": "ON YEDİNCİ BÖLÜM - AVUKAT DESTEĞİNİN ÖNEMİ",
+        "desc": "Evlilik yoluyla Türk vatandaşlığı başvurusu, yalnızca evlilik belgesi ibrazından ibaret olmayan, aile birliği ve evliliğin gerçekliği yönünden ayrıntılı inceleme gerektiren bir süreçtir.\n\nAvukat desteği özellikle şu aşamalarda önemlidir:\n• Üç yıllık evlilik süresinin doğru hesaplanması,\n• Yurtdışında yapılan evliliklerin Türkiye’de tescilinin kontrol edilmesi,\n• Türk vatandaşı eşin vatandaşlık statüsünün değerlendirilmesi,\n• Aile birliği içinde yaşama şartının ispatı için belgelerin hazırlanması,\n• Başvuru sahibinin ikamet ve adres kayıtlarının kontrol edilmesi,\n• Yabancı belgelerin apostil, tercüme ve noter işlemlerinin yürütülmesi,\n• Mülakat öncesi dosya tutarlılığının sağlanması,\n• Çocukların başvuru kapsamına alınıp alınamayacağının değerlendirilmesi,\n• Eksik belge veya ek bilgi taleplerinin karşılanması,\n• Red kararı hâlinde idari başvuru ve dava yollarının değerlendirilmesi.\n\nEksik veya hatalı hazırlanan başvurular, sürecin uzamasına veya başvurunun reddedilmesine neden olabilir. Bu nedenle evlilik yoluyla Türk vatandaşlığı başvurularında sürecin başından itibaren hukuki destek alınması tavsiye edilir."
+      }
+    ]
+  },
+  "processStages": {
+    "eyebrow": "Sürecin Genel Aşamaları",
+    "title": "Evlilik Yoluyla Türk Vatandaşlığı Başvurusu Genel Aşamaları",
+    "items": [
+      "1. Evlilik süresinin üç yılı doldurup doldurmadığının incelenmesi",
+      "2. Evliliğin Türk nüfus kayıtlarına işlenip işlenmediğinin kontrol edilmesi",
+      "3. Türk vatandaşı eşin vatandaşlık durumunun değerlendirilmesi",
+      "4. Başvuru sahibinin kimlik, medeni hal ve aile belgelerinin hazırlanması",
+      "5. Gerekli ise ikamet izni ve adres kayıtlarının kontrol edilmesi",
+      "6. Aile birliğini destekleyen belgelerin hazırlanması",
+      "7. İl Nüfus ve Vatandaşlık Müdürlüğü veya dış temsilcilik üzerinden başvuru yapılması",
+      "8. Emniyet Müdürlüğü nezdinde parmak izi verilmesi",
+      "9. Eşlerin mülakata alınması",
+      "10. Kolluk ve adres araştırmasının yapılması",
+      "11. Aile birliği içinde yaşama şartının değerlendirilmesi",
+      "12. Milli güvenlik ve kamu düzeni araştırmasının tamamlanması",
+      "13. Dosyanın yetkili makamlarca değerlendirilmesi",
+      "14. Uygun görülmesi hâlinde Türk vatandaşlığının kazanılması"
+    ]
+  },
+  "legal": {
+    "eyebrow": "Yasal Dayanak",
+    "title": "Hukuki Çerçevenin Yasal Dayanakları",
+    "items": [
+      {
+        "title": "5901 Sayılı Türk Vatandaşlığı Kanunu",
+        "text": "Türk vatandaşlığının kazanılması, kaybı ve vatandaşlığa ilişkin temel usul ve esasları düzenler."
+      },
+      {
+        "title": "5901 Sayılı Türk Vatandaşlığı Kanunu Madde 16",
+        "text": "Evlenme yoluyla Türk vatandaşlığının kazanılması şartlarını düzenler."
+      },
+      {
+        "title": "Türk Vatandaşlığı Kanununun Uygulanmasına İlişkin Yönetmelik",
+        "text": "Evlenme yoluyla vatandaşlık başvurusunun usul ve esaslarını düzenler."
+      },
+      {
+        "title": "5490 Sayılı Nüfus Hizmetleri Kanunu",
+        "text": "Nüfus kayıtları, evlilik tescili, doğum tarihi ve aile bağlarının belgelenmesi bakımından önem taşır."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Evlilik yoluyla vatandaşlık sürecini birlikte planlayalım",
+    "description": "Evlilik süresi, aile birliği şartı ve mülakat hazırlığı gibi tüm detayları uzman avukatlarımız eşliğinde güvenle tamamlayın. Süreci eksiksiz ve mevzuata uygun yürütmek için ",
+    "primaryCta": "Bize Ulaşın",
+    "secondaryCta": "Soru Sorun"
+  }
+}

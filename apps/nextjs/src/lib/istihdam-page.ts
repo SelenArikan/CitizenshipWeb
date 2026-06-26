@@ -1,19 +1,19 @@
 import { getDictionary } from "@/lib/dictionary";
 import { getSafeLocale } from "@/lib/seo";
 
-export type FonStepItem = {
+export type IstihdamStepItem = {
   num: string;
   title: string;
   desc: string;
   icon: string;
 };
 
-export type FonLegalItem = {
+export type IstihdamLegalItem = {
   title: string;
   text: string;
 };
 
-export type GayrimenkulFonPageCopy = {
+export type IstihdamPageCopy = {
   hero: {
     breadcrumbLabel: string;
     tag: string;
@@ -40,18 +40,12 @@ export type GayrimenkulFonPageCopy = {
     eyebrow: string;
     title: string;
     description: string;
-    items: FonStepItem[];
+    items: IstihdamStepItem[];
   };
-  processStages?: {
-    eyebrow: string;
-    title: string;
-    description?: string;
-    items: string[];
-  } | null;
   legal: {
     eyebrow: string;
     title: string;
-    items: FonLegalItem[];
+    items: IstihdamLegalItem[];
   };
   postApproval?: {
     eyebrow: string;
@@ -67,14 +61,14 @@ export type GayrimenkulFonPageCopy = {
   };
 };
 
-export type GayrimenkulFonPageData = {
+export type IstihdamPageData = {
   lang: string;
   dir: "ltr" | "rtl";
   backLabel: string;
-  copy: GayrimenkulFonPageCopy;
+  copy: IstihdamPageCopy;
 };
 
-type FonDictLike = {
+type IstihdamDictionaryLike = {
   lang?: string;
   dir?: string;
   nav?: {
@@ -83,19 +77,19 @@ type FonDictLike = {
   services_page?: {
     detail_back?: string;
   };
-  gayrimenkul_fon_page?: GayrimenkulFonPageCopy;
+  istihdam_page?: IstihdamPageCopy;
 };
 
-export async function getGayrimenkulFonPageData(
+export async function getIstihdamPageData(
   locale: string
-): Promise<GayrimenkulFonPageData> {
-  const dict = (await getDictionary(locale)) as FonDictLike;
+): Promise<IstihdamPageData> {
+  const dict = (await getDictionary(locale)) as IstihdamDictionaryLike;
   const fallbackDict =
-    locale === "tr" ? dict : ((await getDictionary("tr")) as FonDictLike);
-  const copy = dict.gayrimenkul_fon_page ?? fallbackDict.gayrimenkul_fon_page;
+    locale === "tr" ? dict : ((await getDictionary("tr")) as IstihdamDictionaryLike);
+  const copy = dict.istihdam_page ?? fallbackDict.istihdam_page;
 
   if (!copy) {
-    throw new Error("Missing gayrimenkul_fon_page translations in dictionary.");
+    throw new Error("Missing istihdam_page translations in dictionary.");
   }
 
   return {

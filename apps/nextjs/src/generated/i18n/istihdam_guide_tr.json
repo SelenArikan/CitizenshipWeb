@@ -1,0 +1,150 @@
+{
+  "hero": {
+    "breadcrumbLabel": "İstihdam ile Türk Vatandaşlığı",
+    "tag": "Yatırım Yoluyla Vatandaşlık",
+    "titleLines": [
+      "İstihdam Oluşturmak ile",
+      "Türk Vatandaşlığı"
+    ],
+    "highlightLineIndex": 1,
+    "summary": "Türkiye'de en az 50 kişilik istihdam oluşturarak Türk vatandaşlığı edinme sürecinin tüm aşamalarını uçtan uca yönetiyoruz.",
+    "primaryCta": "Ücretsiz Danışın",
+    "secondaryCta": "Sık Sorulan Sorular",
+    "imageAlt": "İstihdam Oluşturma ile Türk Vatandaşlığı"
+  },
+  "stats": [
+    {
+      "value": "50 Kişi",
+      "label": "Minimum İstihdam",
+      "sub": "Türk Vatandaşı Çalışan"
+    },
+    {
+      "value": "6 Ay",
+      "label": "Süreç Sürekliliği",
+      "sub": "son altı ay geriye dönük"
+    },
+    {
+      "value": "ÇSGB",
+      "label": "Yetkili Kurum",
+      "sub": "Çalışma ve Sosyal Güvenlik"
+    },
+    {
+      "value": "5–6 Ay",
+      "label": "Ortalama Süreç",
+      "sub": "başvuru sonuçlanması"
+    }
+  ],
+  "intro": {
+    "eyebrow": "Süreç Hakkında",
+    "title": "İstihdam Yatırımı, Uygunluk Belgesi ve Vatandaşlık Başvuru Süreci",
+    "paragraphs": [
+      "Türk vatandaşlığının yatırım yoluyla, istisnai yoldan kazanılması kapsamında başvurulabilecek yöntemlerden biri de Türkiye’de en az 50 kişilik istihdam oluşturulmasıdır. Türk Vatandaşlığı Kanununun Uygulanmasına İlişkin Yönetmelik madde 20/2-c uyarınca, en az 50 kişilik istihdam oluşturduğu Çalışma ve Sosyal Güvenlik Bakanlığı tarafından tespit edilen yabancı yatırımcılar, diğer başvuru şartlarını da sağlamaları hâlinde istisnai yoldan Türk vatandaşlığı başvurusunda bulunabilmektedir.",
+      "Bu başvuru yolu, yalnızca belirli sayıda personelin işe alınmasından ibaret değildir. Şirket yapısı, başvuru sahibinin şirketle hukuki bağı, çalışanların sigortalılık durumu, istihdamın sürekliliği, vergi ve sosyal güvenlik yükümlülükleri ile kamu kurumları nezdinde yapılacak uygunluk belgesi ve vatandaşlık başvurusu işlemleri birlikte değerlendirilir. Bu nedenle 50 kişi istihdam etme yoluyla Türk vatandaşlığı başvurusu, yatırım, şirketler hukuku, iş hukuku, sosyal güvenlik hukuku ve yabancılar hukuku bakımından birlikte ele alınması gereken çok aşamalı bir süreçtir.",
+      "Bu rehber, Türkiye’de istihdam oluşturarak Türk vatandaşlığına başvurmak isteyen yabancı yatırımcılara yönelik olarak başvuru şartlarını, uygunluk belgesi sürecini, gerekli belgeleri ve vatandaşlık başvurusu aşamalarını açıklamak amacıyla hazırlanmıştır.",
+      "Rehber yalnızca bilgilendirme amacıyla hazırlanmıştır. Hukuki danışmanlık için lütfen uzman bir avukattan destek alınız."
+    ],
+    "bullets": [],
+    "imageAlt": "İstihdam ile Türk vatandaşlığı",
+    "cardValue": "ÇSGB Onaylı",
+    "cardLabel": "Uygunluk Belgesi Süreci",
+    "badgeValue": "50 İşçi",
+    "badgeLabel": "Minimum Eşik"
+  },
+  "process": {
+    "eyebrow": "Adım Adım Süreç",
+    "title": "50 Kişi İstihdam Etme Yoluyla Türk Vatandaşlığı",
+    "description": "İstihdam oluşturarak Türk vatandaşlığı kazanma sürecindeki tüm adımlar ve yasal gereklilikler.",
+    "items": [
+      {
+        "num": "01",
+        "icon": "⚖️",
+        "title": "BİRİNCİ BÖLÜM - İSTİHDAM YOLUYLA VATANDAŞLIK BAŞVURUSUNUN HUKUKİ DAYANAĞI",
+        "desc": "Türkiye’de yatırım yoluyla vatandaşlık başvuru seçenekleri arasında taşınmaz yatırımı, banka mevduatı, devlet borçlanma araçları, yatırım fonları, bireysel emeklilik sistemi ve sabit sermaye yatırımı gibi farklı yöntemler bulunmaktadır. Bu yöntemlerden biri de Türkiye’de en az 50 kişilik istihdam oluşturulmasıdır.\n\nİstihdam yoluyla vatandaşlık başvurusunda temel şart, yabancı gerçek kişinin sahibi veya ortağı olduğu işyeri ya da işyerleri üzerinden Türkiye’de en az 50 Türk vatandaşı çalışan için istihdam oluşturduğunun resmi makamlarca tespit edilmesidir. Bu tespiti yapmaya yetkili kurum Çalışma ve Sosyal Güvenlik Bakanlığıdır.\n\nBu kapsamda başvurucu yabancı yatırımcının vatandaşlık sürecine geçebilmesi için öncelikle Çalışma ve Sosyal Güvenlik Bakanlığı Uluslararası İşgücü Genel Müdürlüğünden uygunluk belgesi alması gerekir. Uygunluk belgesi, istihdam şartının mevzuata uygun biçimde sağlandığını gösteren temel belgedir. Bu belge alınmadan vatandaşlık başvurusunun yatırım şartı tamamlanmış kabul edilmez."
+      },
+      {
+        "num": "02",
+        "icon": "👥",
+        "title": "İKİNCİ BÖLÜM - 50 KİŞİLİK İSTİHDAM ŞARTININ DEĞERLENDİRİLMESİ",
+        "desc": "İstihdam yoluyla vatandaşlık başvurusunda en önemli husus, çalışan sayısının yalnızca kağıt üzerinde değil, fiili ve hukuki olarak da mevcut olmasıdır. Başvuru sahibinin ortağı veya sahibi olduğu şirket ya da şirketlerde en az 50 Türk vatandaşı çalışanın son altı ay boyunca sürekli ve sigortalı olarak istihdam edilmesi gerekir. 50 işçi şartı son altı ay için her ayda sağlanıyor olmalı, eğer işçi çıkarılacaksa da öncelikle çıkarılacak işçi sayısı kadar işçi istihdam edilmeli, SGK’ya bildirilmeli, ardından çıkarılacak işçilerin şirketle ilişiği kesilmelidir. Aksi takdirde bu ara dönemde 1 günlük dahi olsa işçi sayısının 50’nin altına düşmesi vatandaşlık başvurusunun gecikmesine ya da imkansızlaşmasına sebebiyet verebilecektir.\n\nBu değerlendirme yapılırken yalnızca güncel çalışan sayısı değil, istihdamın sürekliliği de dikkate alınır. Uygulamada çalışanların tam zamanlı olarak çalışıp çalışmadığı, Sosyal Güvenlik Kurumu kayıtlarının güncel olup olmadığı ve istihdamın son dönemde istikrarlı şekilde devam edip etmediği incelenir.\n\nBu nedenle vatandaşlık başvurusu amacıyla istihdam planlaması yapılırken aşağıdaki hususların önceden değerlendirilmesi gerekir:\n• Şirketin güncel çalışan sayısı,\n• Gerekli çalışan sayısının resmi kayıtlarda son aydır sağlanıyor olup olmadığı,\n• Çalışanların Türk vatandaşı olup olmadığı,\n• Çalışanların SGK kayıtlarının usulüne uygun tutulup tutulmadığı,\n• Çalışanların tam zamanlı istihdam edilip edilmediği,\n• Şirketin vergi borcu bulunup bulunmadığı,\n• Şirketin sosyal güvenlik prim borcu bulunup bulunmadığı,\n• Şirketin ortaklık yapısı ve başvuru sahibinin sermaye payı,\n• Son dönemde idari para cezası veya denetim kaynaklı olumsuz kayıt bulunup bulunmadığı.\n\nBu şartların herhangi birinde eksiklik bulunması, uygunluk belgesi başvurusunun reddedilmesine veya sürecin uzamasına neden olabilir."
+      },
+      {
+        "num": "03",
+        "icon": "🔗",
+        "title": "ÜÇÜNCÜ BÖLÜM - BAŞVURU SAHİBİNİN ŞİRKETLE HUKUKİ BAĞI",
+        "desc": "50 kişilik istihdam yoluyla vatandaşlık başvurusu yapılabilmesi için başvuru sahibinin istihdamın bulunduğu şirket veya şirketlerle hukuken bağlantılı olması gerekir. Başka bir ifadeyle, yabancı yatırımcının söz konusu işyeri veya işyerlerinde yalnızca dışarıdan finansman sağlayan kişi konumunda olması yeterli olmayabilir.\n\nBaşvuru sahibinin şirket sahibi, ortağı veya sermaye payı sahibi olması, uygunluk belgesi değerlendirmesinde önem taşır. Bu nedenle başvuru öncesinde şirketin ticaret sicil kayıtları, ortaklık yapısı ve sermaye payları dikkatle incelenmelidir.\n\nÖzellikle birden fazla şirket üzerinden toplam 50 kişilik istihdam sağlanması hâlinde, başvuru sahibinin bu şirketlerdeki ortaklık ve sermaye ilişkisi ayrıca değerlendirilmelidir. Şirketlerin birbirinden bağımsız yapıda olması, başvuru sahibinin sermaye payının yetersiz görülmesi veya ortaklık yapısının açık olmaması başvuru sürecinde risk yaratabilir.\n\nBu nedenle istihdam yoluyla vatandaşlık başvurusu yapılmadan önce şirket yapısının ve başvuru sahibinin şirketlerdeki konumunun hukuki olarak analiz edilmesi gerekir."
+      },
+      {
+        "num": "04",
+        "icon": "📜",
+        "title": "DÖRDÜNCÜ BÖLÜM - UYGUNLUK BELGESİ NEDİR?",
+        "desc": "Uygunluk belgesi, yabancı yatırımcının Türk vatandaşlığı başvurusu için aranan asgari yatırım veya istihdam şartını sağladığını gösteren resmi belgedir. 50 kişilik istihdam yoluyla vatandaşlık başvurularında bu belge Çalışma ve Sosyal Güvenlik Bakanlığı Uluslararası İşgücü Genel Müdürlüğü tarafından düzenlenir.\n\nBu belge, vatandaşlık başvurusunun en kritik aşamalarından biridir. Çünkü başvuru sahibinin Türk vatandaşlığına başvurabilmesi için öncelikle yatırım şartını yerine getirdiğinin ilgili kamu kurumu tarafından kabul edilmesi gerekir.\n\nİstihdam yoluyla vatandaşlık başvurularında uygunluk belgesi şu hususları teyit eder:\n• Başvuru sahibinin Türkiye’de işyeri veya şirket bağlantısının bulunduğunu,\n• Başvuru sahibinin ilgili şirket veya şirketlerde yeterli ortaklık ya da sermaye ilişkisine sahip olduğunu,\n• En az 50 Türk vatandaşı çalışanın istihdam edildiğini,\n• Çalışanların SGK kayıtlarının mevcut olduğunu,\n• Şirketin vergi ve sosyal güvenlik yükümlülüklerinin başvuru açısından incelenebilir durumda olduğunu,\n• İstihdam şartının vatandaşlık başvurusu bakımından yeterli görüldüğünü.\n\nUygunluk belgesi alınmadan doğrudan vatandaşlık başvurusu yapılması mümkün değildir. Bu nedenle ilk aşamada istihdam şartının sağlanıp sağlanmadığı incelenmeli, ardından uygunluk belgesi için başvuru dosyası hazırlanmalıdır."
+      },
+      {
+        "num": "05",
+        "icon": "📁",
+        "title": "BEŞİNCİ BÖLÜM - UYGUNLUK BELGESİ BAŞVURUSU İÇİN GEREKLİ BELGELER",
+        "desc": "50 kişilik istihdam oluşturduğu gerekçesiyle uygunluk belgesi talebinde bulunacak yabancı gerçek kişiler, başvurularını Çalışma ve Sosyal Güvenlik Bakanlığı Uluslararası İşgücü Genel Müdürlüğüne yazılı olarak yapar.\n\nBaşvuru dosyasında genel olarak aşağıdaki belgeler yer alır:\n• Başvuru sahibi yabancı gerçek kişi tarafından imzalanmış başvuru dilekçesi,\n• Başvuru sahibine ait noterden alınmış imza beyannamesi,\n• Eksiksiz doldurulmuş istihdam bilgi formu,\n• Başvuru sahibinin pasaportunun kimlik bilgilerini içeren sayfalarının fotokopisi,\n• En az 50 kişilik Türk vatandaşı istihdamının bulunduğu şirket veya şirketlerin ortaklık ve sermaye paylarını gösteren ticaret sicil gazetesi kayıtları,\n• Güncel tarihli ticaret sicil tasdiknamesi,\n• Yabancı gerçek kişinin sahibi veya ortağı olduğu işyeri ya da işyerlerinde sigortalı olarak çalışan kişilerin listesini gösteren güncel tarihli son altı aylık SGK işyeri çalışan listesi,\n• Şirketin veya şirketlerin vergi borcu durumunu gösteren Gelir İdaresi Başkanlığı kayıtları,\n• Şirketin veya şirketlerin sosyal güvenlik prim borcu durumunu gösteren SGK kayıtları,\n• Kamu kurumları tarafından yapılan idari denetimlerde son altı ay içinde idari para cezası verilip verilmediğine ilişkin yazılı beyan,\n• Ceza uygulanmış ise buna ilişkin belgeler.\n\nBaşvuru dosyasının eksiksiz ve tutarlı hazırlanması son derece önemlidir. Belgeler arasında çelişki bulunması, ticaret sicil kayıtlarının güncel olmaması, SGK listelerinin istihdam şartını karşılamaması veya borç durumuna ilişkin belgelerde sorun bulunması hâlinde uygunluk belgesi süreci uzayabilir ya da başvuru reddedilebilir."
+      },
+      {
+        "num": "06",
+        "icon": "⏱️",
+        "title": "ALTINCI BÖLÜM - BAŞVURU VE DEĞERLENDİRME SÜRECİ",
+        "desc": "İstihdam yoluyla vatandaşlık başvurusunda ilk resmi aşama, uygunluk belgesi başvurusudur. Başvuru, Çalışma ve Sosyal Güvenlik Bakanlığı Uluslararası İşgücü Genel Müdürlüğü tarafından değerlendirilir.\n\nBaşvurunun eksiksiz yapılması hâlinde değerlendirme süreci daha hızlı ilerler. Ancak eksik bilgi veya belge bulunması hâlinde başvuru sahibine eksiklikleri tamamlaması için süre verilir. Eksikliklerin süresi içinde tamamlanmaması hâlinde başvuru reddedilebilir.\n\nDeğerlendirme sırasında Bakanlık, yalnızca çalışan sayısına bakmakla yetinmez. Şirketin hukuki yapısı, başvuru sahibinin şirketteki payı, istihdamın gerçekliği, sigortalılık kayıtları, vergi ve prim yükümlülükleri ile istihdamın sürekliliği birlikte incelenir.\n\nGerekli şartların sağlandığı tespit edilirse uygunluk belgesi düzenlenir ve başvuru sonucu hem başvuru sahibine hem de ilgili kurumlara bildirilir. Bu aşamadan sonra yabancı yatırımcı vatandaşlık başvurusu sürecine geçebilir."
+      },
+      {
+        "num": "07",
+        "icon": "⚠️",
+        "title": "YEDİNCİ BÖLÜM - İSTİHDAMIN SÜREKLİLİĞİ VE BAŞVURU RİSKLERİ",
+        "desc": "50 kişilik istihdam yoluyla vatandaşlık başvurularında en önemli risklerden biri, istihdamın başvuru tarihinde yalnızca şeklen sağlanmış olmasıdır. Kamu kurumları, çalışan sayısının gerçekliğini ve sürekliliğini değerlendirebilir.\n\nBu nedenle başvuru öncesinde kısa süreli, geçici veya yalnızca vatandaşlık dosyası için oluşturulmuş görünen istihdam yapılarından kaçınılmalıdır. Şirketin faaliyet alanı, çalışan sayısı, bordro yapısı, mali kayıtları ve ticari hacmi birbiriyle uyumlu olmalıdır.\n\nBaşvuru açısından risk oluşturabilecek bazı durumlar şunlardır:\n• 50 kişilik çalışan sayısının başvuruya çok yakın tarihte ani şekilde oluşturulması,\n• Çalışanların fiilen çalışmaması,\n• SGK kayıtlarının gerçeği yansıtmaması,\n• Şirketin ticari faaliyeti ile çalışan sayısı arasında uyumsuzluk bulunması,\n• Şirketin vergi veya SGK prim borçlarının bulunması,\n• Başvuru sahibinin şirketteki payının yetersiz veya tartışmalı olması,\n• Şirket kayıtları ile SGK kayıtları arasında uyumsuzluk bulunması,\n• Son dönemde idari para cezası veya denetim kaynaklı olumsuz kayıt bulunması.\n\nBu nedenle başvuru yapılmadan önce şirketin tüm kayıtları hukuki ve mali açıdan incelenmeli, eksiklikler giderilmeli ve uygunluk belgesi başvurusu buna göre hazırlanmalıdır."
+      },
+      {
+        "num": "08",
+        "icon": "💼",
+        "title": "SEKİZİNCİ BÖLÜM - AVUKAT DESTEĞİNİN ÖNEMİ",
+        "desc": "İstihdam yoluyla Türk vatandaşlığı başvurusu; şirketler hukuku, iş hukuku, sosyal güvenlik hukuku, vergi uygulamaları, yabancılar hukuku ve vatandaşlık hukuku bakımından çok yönlü değerlendirme gerektiren bir süreçtir.\n\nAvukat desteği özellikle şu aşamalarda önemlidir:\n• Başvuru sahibinin vatandaşlık şartlarına uygunluğunun değerlendirilmesi,\n• Şirket ortaklık yapısının incelenmesi,\n• Ticaret sicil kayıtlarının kontrol edilmesi,\n• SGK çalışan listelerinin başvuruya uygunluğunun değerlendirilmesi,\n• Vergi ve prim borcu kayıtlarının incelenmesi,\n• Uygunluk belgesi başvuru dosyasının hazırlanması,\n• Eksik belge veya kurum yazışmalarının takip edilmesi,\n• Kısa dönem ikamet izni sürecinin yürütülmesi,\n• Vatandaşlık başvuru dosyasının hazırlanması,\n• Eş ve çocukların başvuru dosyasına dahil edilmesi,\n• Başvuru sürecinin ilgili kurumlar nezdinde takip edilmesi.\n\nEksik veya hatalı hazırlanan başvurular yalnızca sürecin uzamasına değil, başvurunun reddedilmesine de neden olabilir. Bu nedenle 50 kişilik istihdam yoluyla Türk vatandaşlığı başvurularında sürecin başından itibaren profesyonel hukuki destek alınması tavsiye edilir."
+      },
+      {
+        "num": "09",
+        "icon": "🗺️",
+        "title": "DOKUZUNCU BÖLÜM - SÜRECİN GENEL AŞAMALARI",
+        "desc": "Türkiye’de 50 kişilik istihdam yoluyla Türk vatandaşlığı başvurusu genel olarak aşağıdaki aşamalardan oluşur:\n1. Başvuru sahibinin şirket yapısının ve ortaklık durumunun incelenmesi,\n2. Şirket veya şirketlerdeki çalışan sayısının değerlendirilmesi,\n3. SGK, vergi ve ticaret sicil kayıtlarının kontrol edilmesi,\n4. Eksik veya riskli hususların giderilmesi,\n5. Uygunluk belgesi başvuru dosyasının hazırlanması,\n6. Çalışma ve Sosyal Güvenlik Bakanlığı Uluslararası İşgücü Genel Müdürlüğüne başvuru yapılması,\n7. Uygunluk belgesinin alınması,\n8. Kısa dönem ikamet izni başvurusunun yapılması,\n9. Vatandaşlık başvuru dosyasının hazırlanması,\n10. İl Nüfus ve Vatandaşlık Müdürlüğü üzerinden başvuru yapılması,\n11. Güvenlik ve arşiv araştırması dahil idari inceleme sürecinin tamamlanması,\n12. Uygun görülmesi hâlinde Cumhurbaşkanı kararı ile Türk vatandaşlığının kazanılması.\n\nBu aşamaların her biri kendi içinde belge hazırlığı, kurum incelemesi ve hukuki değerlendirme gerektirir. Bu nedenle süreç baştan sona planlı ve kontrollü şekilde yürütülmelidir."
+      }
+    ]
+  },
+  "legal": {
+    "eyebrow": "HUKUKİ ÇERÇEVE",
+    "title": "Yasal Dayanak",
+    "items": [
+      {
+        "title": "5901 Sayılı Türk Vatandaşlığı Kanunu",
+        "text": "Türk vatandaşlığının kazanılması, kaybı ve vatandaşlığa ilişkin temel usul ve esasları düzenler."
+      },
+      {
+        "title": "Türk Vatandaşlığı Kanununun Uygulanmasına İlişkin Yönetmelik",
+        "text": "Yatırım yoluyla ve istisnai yoldan Türk vatandaşlığının kazanılmasına ilişkin başvuru şartlarını ve prosedürleri düzenler."
+      },
+      {
+        "title": "Türk Vatandaşlığı Kanununun Uygulanmasına İlişkin Yönetmelik Madde 20/2-c",
+        "text": "En az 50 kişilik istihdam oluşturduğu Çalışma ve Sosyal Güvenlik Bakanlığı tarafından tespit edilen yabancıların istisnai yoldan Türk vatandaşlığına başvurabilmesine ilişkin düzenlemedir."
+      },
+      {
+        "title": "6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu",
+        "text": "Yatırım yoluyla vatandaşlık başvurusu yapacak yabancıların kısa dönem ikamet izni süreçleri bakımından önem taşır."
+      }
+    ]
+  },
+  "postApproval": {
+    "eyebrow": "Uygunluk Belgesi Sonrası",
+    "title": "Başvuru İşlemleri",
+    "paragraphs": [
+      "Yukarıda yapılan açıklamalarda da belirtildiği üzere yatırım yoluyla vatandaşlık başvurusunda temel evrak yatırımın kanuna uygun olarak yapıldığını gösteren uygunluk belgesidir. Uygunluk belgesi temin edildikten sonra vatandaşlık başvurusu için gerekli diğer işlemler olan ikamet izni başvurusu ve vatandaşlık dosyasının hazırlanıp ilgili makamlara sunulması gerekmektedir. Uygunluk belgesinden sonraki süreçlere ilişkin detaylı bilgi için [Vatandaşlık Başvuru Süreci](/citizenship/basvuru-sureci) başlıklı yazımızı inceleyebilirsiniz."
+    ],
+    "bullets": []
+  },
+  "cta": {
+    "title": "Dosyanızı Başlatmaya Hazır mısınız?",
+    "description": "Büromuz, istihdam yatırımınızın başından kimlik/pasaport teslimine kadar her adımı sizin adınıza yönetir.",
+    "primaryCta": "Ücretsiz Danışın",
+    "secondaryCta": "SSS'yi İncele"
+  }
+}

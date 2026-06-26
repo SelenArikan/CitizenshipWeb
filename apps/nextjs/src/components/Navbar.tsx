@@ -8,11 +8,11 @@ import { useState, useRef, useEffect, useCallback, useMemo } from "react";
 import enNav from "../generated/i18n/en.json";
 
 const languages = [
-  { code: "tr", label: "TR", name: "Türkçe", flag: "🇹🇷" },
-  { code: "en", label: "EN", name: "English", flag: "🇬🇧" },
-  { code: "ru", label: "RU", name: "Русский", flag: "🇷🇺" },
-  { code: "ar", label: "AR", name: "العربية", flag: "🇸🇦" },
-  { code: "fa", label: "FA", name: "فارسی", flag: "🇮🇷" },
+  { code: "tr", label: "TR", name: "Türkçe", flag: "tr" },
+  { code: "en", label: "EN", name: "English", flag: "us" },
+  { code: "ru", label: "RU", name: "Русский", flag: "ru" },
+  { code: "ar", label: "AR", name: "العربية", flag: "sa" },
+  { code: "fa", label: "FA", name: "فارسی", flag: "ir" },
 ];
 
 type NavCopy = {
@@ -171,7 +171,7 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
     return `/${newLang}`;
   };
 
-  const currentFlag = languages.find((l) => l.code === L)?.flag ?? "🌐";
+  const currentFlag = languages.find((l) => l.code === L)?.flag ?? "tr";
 
   /** Tüm dillerde aynı mega yapı; metinler i18n `nav` altındaki anahtarlardan */
   const menuEntries: MenuEntry[] = [
@@ -197,7 +197,7 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
         {
           heading: t.mega_h_other,
           items: [
-            { label: t.item_cit_gen,      href: `/${L}/citizenship/basvuru-sureci` },
+            { label: t.item_cit_gen,      href: `/${L}/citizenship/genel-yolla-vatandaslik` },
             { label: t.item_cit_marriage, href: `/${L}/citizenship/evlilik` },
             {
               label: t.item_cit_process,
@@ -369,10 +369,14 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
               <button
                 type="button"
                 onClick={() => setLangOpen(!langOpen)}
-                className="flex items-center gap-1.5 rounded-lg px-2.5 py-2 text-lg transition hover:bg-blue-50"
+                className="flex items-center gap-1.5 rounded-lg px-2.5 py-2 transition hover:bg-blue-50"
                 title={languages.find((l) => l.code === L)?.name}
               >
-                <span>{currentFlag}</span>
+                <img
+                  src={`https://flagcdn.com/w40/${currentFlag}.png`}
+                  alt=""
+                  className="h-3.5 w-5 object-cover rounded-[2px] border border-slate-200"
+                />
                 <svg className="h-3 w-3 text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
@@ -394,7 +398,11 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
                       className="flex items-center gap-3 px-4 py-2.5 text-sm font-medium transition hover:bg-blue-50"
                       style={{ color: L === l.code ? "#0a192f" : "rgba(10,25,47,0.50)" }}
                     >
-                      <span className="text-xl">{l.flag}</span>
+                      <img
+                        src={`https://flagcdn.com/w40/${l.flag}.png`}
+                        alt=""
+                        className="h-3.5 w-5 object-cover rounded-[2px] border border-slate-200"
+                      />
                       <span>{l.name}</span>
                       {L === l.code && (
                         <span className="ml-auto h-1.5 w-1.5 rounded-full bg-[#8a1c1c]" />
@@ -412,9 +420,13 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
               <button
                 type="button"
                 onClick={() => setLangOpen(!langOpen)}
-                className="flex items-center gap-1 text-xl text-slate-700"
+                className="flex items-center gap-1.5 text-slate-700"
               >
-                {currentFlag}
+                <img
+                  src={`https://flagcdn.com/w40/${currentFlag}.png`}
+                  alt=""
+                  className="h-3.5 w-5 object-cover rounded-[2px] border border-slate-200"
+                />
                 <svg className="h-3 w-3 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
@@ -431,7 +443,11 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
                       onClick={() => setLangOpen(false)}
                       className="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-[#0a192f]/70 transition hover:bg-blue-50 hover:text-[#0a192f]"
                     >
-                      <span className="text-xl">{l.flag}</span>
+                      <img
+                        src={`https://flagcdn.com/w40/${l.flag}.png`}
+                        alt=""
+                        className="h-3.5 w-5 object-cover rounded-[2px] border border-slate-200"
+                      />
                       <span>{l.name}</span>
                     </Link>
                   ))}
@@ -517,7 +533,6 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
                                 )}
                                 <span>{item.label}</span>
                               </span>
-                              {item.desc && <span className="ml-2 text-xs text-stone-400">{item.desc}</span>}
                             </Link>
                           ))}
                         </div>

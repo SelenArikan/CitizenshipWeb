@@ -27,7 +27,7 @@ $pageSeo = seo_page_meta($seoKey, $lang);
     <meta name="twitter:title" content="<?= htmlspecialchars($pageSeo['title']) ?>">
     <meta name="twitter:description" content="<?= htmlspecialchars($pageSeo['description']) ?>">
     <meta name="twitter:image" content="<?= htmlspecialchars($pageSeo['image']) ?>">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -40,7 +40,7 @@ $pageSeo = seo_page_meta($seoKey, $lang);
               'burgundy-light': '#a32222',
             },
             fontFamily: {
-              sans: ['Outfit', 'sans-serif'],
+              sans: ['"Open Sans"', 'sans-serif'],
             }
           }
         }
@@ -120,21 +120,21 @@ $pageSeo = seo_page_meta($seoKey, $lang);
             <div class="relative ml-1" id="langDropdownWrapper">
               <?php
               $languages = [
-                ['code' => 'tr', 'name' => 'Türkçe', 'flag' => '🇹🇷'],
-                ['code' => 'en', 'name' => 'English', 'flag' => '🇬🇧'],
-                ['code' => 'ru', 'name' => 'Русский', 'flag' => '🇷🇺'],
-                ['code' => 'ar', 'name' => 'العربية', 'flag' => '🇸🇦'],
-                ['code' => 'fa', 'name' => 'فارسی', 'flag' => '🇮🇷'],
+                ['code' => 'tr', 'name' => 'Türkçe', 'flag' => 'tr'],
+                ['code' => 'en', 'name' => 'English', 'flag' => 'us'],
+                ['code' => 'ru', 'name' => 'Русский', 'flag' => 'ru'],
+                ['code' => 'ar', 'name' => 'العربية', 'flag' => 'sa'],
+                ['code' => 'fa', 'name' => 'فارسی', 'flag' => 'ir'],
               ];
               $currentLangObj = array_values(array_filter($languages, function($l) use ($lang) { return $l['code'] === $lang; }))[0] ?? $languages[0];
               ?>
               <button
                 type="button"
                 id="langDropdownBtn"
-                class="flex items-center gap-1.5 rounded-lg px-2.5 py-2 text-lg transition hover:bg-blue-50 focus:outline-none"
+                class="flex items-center gap-1.5 rounded-lg px-2.5 py-2 transition hover:bg-blue-50 focus:outline-none"
                 title="<?= htmlspecialchars($currentLangObj['name']) ?>"
               >
-                <span><?= $currentLangObj['flag'] ?></span>
+                <img src="https://flagcdn.com/w40/<?= $currentLangObj['flag'] ?>.png" alt="" class="h-3.5 w-5 object-cover rounded-[2px] border border-slate-200">
                 <svg class="h-3 w-3 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                 </svg>
@@ -152,7 +152,7 @@ $pageSeo = seo_page_meta($seoKey, $lang);
                     class="flex items-center gap-3 px-4 py-2.5 text-sm font-medium transition hover:bg-blue-50"
                     style="color: <?= $lang === $l['code'] ? '#0a192f' : 'rgba(10,25,47,0.50)' ?>;"
                   >
-                    <span class="text-xl"><?= $l['flag'] ?></span>
+                    <img src="https://flagcdn.com/w40/<?= $l['flag'] ?>.png" alt="" class="h-3.5 w-5 object-cover rounded-[2px] border border-slate-200">
                     <span><?= htmlspecialchars($l['name']) ?></span>
                     <?php if ($lang === $l['code']): ?>
                       <span class="ml-auto h-1.5 w-1.5 rounded-full bg-[#8a1c1c]"></span>
@@ -169,9 +169,9 @@ $pageSeo = seo_page_meta($seoKey, $lang);
               <button
                 type="button"
                 id="mobileLangBtn"
-                class="flex items-center gap-1 text-xl text-slate-700 focus:outline-none"
+                class="flex items-center gap-1.5 text-slate-700 focus:outline-none"
               >
-                <span><?= $currentLangObj['flag'] ?></span>
+                <img src="https://flagcdn.com/w40/<?= $currentLangObj['flag'] ?>.png" alt="" class="h-3.5 w-5 object-cover rounded-[2px] border border-slate-200">
                 <svg class="h-3 w-3 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                 </svg>
@@ -187,7 +187,7 @@ $pageSeo = seo_page_meta($seoKey, $lang);
                     href="<?= seo_page_href($seoKey, $l['code']) ?>"
                     class="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-[#0a192f]/70 transition hover:bg-blue-50 hover:text-[#0a192f]"
                   >
-                    <span class="text-xl"><?= $l['flag'] ?></span>
+                    <img src="https://flagcdn.com/w40/<?= $l['flag'] ?>.png" alt="" class="h-3.5 w-5 object-cover rounded-[2px] border border-slate-200">
                     <span><?= htmlspecialchars($l['name']) ?></span>
                   </a>
                 <?php endforeach; ?>
@@ -242,21 +242,21 @@ $pageSeo = seo_page_meta($seoKey, $lang);
               <a href="services.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
                 <span><?= __t('nav.investment_bes') ?></span>
               </a>
-              <a href="services.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
+              <a href="<?= seo_page_href('istihdam-olusturmak', $lang) ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
                 <span><?= __t('nav.investment_employment') ?></span>
               </a>
-              <a href="services.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
+              <a href="<?= seo_page_href('gayrimenkul-yatirim-fonu', $lang) ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
                 <span><?= __t('nav.investment_fund') ?></span>
               </a>
-              <a href="services.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
+              <a href="<?= seo_page_href('devlet-borclanma-araclari', $lang) ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
                 <span><?= __t('nav.investment_bonds') ?></span>
               </a>
               
               <span class="block px-3 py-1.5 text-xs font-bold uppercase tracking-widest text-[#8a1c1c] mt-2"><?= __t('nav.mega_h_other') ?></span>
-              <a href="citizenship.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
+              <a href="<?= seo_page_href('genel-yolla-vatandaslik', $lang) ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
                 <span><?= __t('nav.item_cit_gen') ?></span>
               </a>
-              <a href="citizenship.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
+              <a href="<?= seo_page_href('evlilik-yoluyla-vatandaslik', $lang) ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
                 <span><?= __t('nav.item_cit_marriage') ?></span>
               </a>
               <a href="citizenship.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f] mt-2 border-t border-blue-100 pt-4">
@@ -404,13 +404,13 @@ $pageSeo = seo_page_meta($seoKey, $lang);
                   <a href="services.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
                     <span class="leading-snug"><?= __t('nav.investment_bes') ?></span>
                   </a>
-                  <a href="services.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
+                  <a href="<?= seo_page_href('istihdam-olusturmak', $lang) ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
                     <span class="leading-snug"><?= __t('nav.investment_employment') ?></span>
                   </a>
-                  <a href="services.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
+                  <a href="<?= seo_page_href('gayrimenkul-yatirim-fonu', $lang) ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
                     <span class="leading-snug"><?= __t('nav.investment_fund') ?></span>
                   </a>
-                  <a href="services.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
+                  <a href="<?= seo_page_href('devlet-borclanma-araclari', $lang) ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
                     <span class="leading-snug"><?= __t('nav.investment_bonds') ?></span>
                   </a>
                 </div>
@@ -419,10 +419,10 @@ $pageSeo = seo_page_meta($seoKey, $lang);
               <div class="flex min-w-[200px] flex-col p-6 flex-1">
                 <span class="mb-4 text-[11px] font-bold uppercase tracking-[0.15em] text-[#8a1c1c]"><?= __t('nav.mega_h_other') ?></span>
                 <div class="flex flex-col gap-1">
-                  <a href="citizenship.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
+                  <a href="<?= seo_page_href('genel-yolla-vatandaslik', $lang) ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
                     <span class="leading-snug"><?= __t('nav.item_cit_gen') ?></span>
                   </a>
-                  <a href="citizenship.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
+                  <a href="<?= seo_page_href('evlilik-yoluyla-vatandaslik', $lang) ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
                     <span class="leading-snug"><?= __t('nav.item_cit_marriage') ?></span>
                   </a>
                   <a href="citizenship.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-start justify-start gap-2 mt-2 border-t border-blue-100 pt-5">

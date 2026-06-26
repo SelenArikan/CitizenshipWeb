@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
 import { headers } from "next/headers";
+import { Open_Sans } from "next/font/google";
 
 import "./globals.css";
+
+const openSans = Open_Sans({
+  subsets: ["latin", "latin-ext", "cyrillic"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+  variable: "--font-open-sans",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://citizenshipweb.com"),
@@ -41,7 +48,7 @@ export default async function RootLayout({
         <link rel="preconnect" href="https://maps.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://maps.googleapis.com" />
       </head>
-      <body className="min-h-full flex flex-col font-sans antialiased">{children}</body>
+      <body className={`${openSans.variable} min-h-full flex flex-col font-sans antialiased`}>{children}</body>
     </html>
   );
 }

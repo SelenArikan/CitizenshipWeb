@@ -1,6 +1,6 @@
 "use client";
 
-import type { GayrimenkulFonPageCopy } from "@/lib/gayrimenkul-fon-page";
+import type { BondsPageCopy } from "@/lib/bonds-page";
 import ServicePageLayout from "@/components/ServicePageLayout";
 import type { PageSection, OtherProgram } from "@/components/ServicePageLayout";
 
@@ -8,17 +8,17 @@ const OTHER_PROGRAMS: OtherProgram[] = [
   { label: "Gayrimenkul Yatırımı", slug: "gayrimenkul-yatirimi" },
   { label: "Mevduat Hesabı", slug: "mevduat-hesabi" },
   { label: "İstihdam Oluşturmak", slug: "istihdam-olusturmak" },
-  { label: "Devlet Borçlanma Araçları", slug: "devlet-borclanma-araclari" },
+  { label: "Gayrimenkul Yatırım Fonu", slug: "gayrimenkul-yatirim-fonu" },
 ];
 
 type Props = {
   lang?: string;
   dir?: "ltr" | "rtl";
   backLabel?: string;
-  copy: GayrimenkulFonPageCopy;
+  copy: BondsPageCopy;
 };
 
-export default function GayrimenkulFonPage({
+export default function BondsPage({
   lang = "tr",
   dir = "ltr",
   backLabel = "Yatırım Türleri",

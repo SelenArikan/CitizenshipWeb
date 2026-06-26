@@ -1,366 +1,189 @@
 {
   "hero": {
-    "breadcrumbLabel": "Taşınmaz Satın Alımı ile Vatandaşlık",
+    "breadcrumbLabel": "Gayrimenkul Yatırım Fonu",
     "tag": "Yatırım Yoluyla Vatandaşlık",
-    "summary": "400.000 USD değerinde gayrimenkul alımından uygunluk belgesine kadar tapu incelemesi, DAB süreci ve resmi başvuru aşamalarının tamamını hukuki güvenceyle yönetiyoruz.",
-    "primaryCta": "Ücretsiz Danışın",
-    "secondaryCta": "Sık Sorulan Sorular"
-  },
-  "bolum1": {
-    "eyebrow": "Birinci Bölüm",
-    "title": "Taşınmazın Vatandaşlığa Uygunluğunun Araştırılması ve Tespiti",
-    "intro": [
-      "Vatandaşlık sürecinde en kritik aşama, satın alınacak gayrimenkule ilişkin satın alma öncesinde yapılan hukuki ve teknik incelemedir.",
-      "Bir taşınmazın fiyatı 400.000 USD olsa bile, vatandaşlık mevzuatında yer alan yatırım yoluyla vatandaşlık başvuru kılavuzuna uygun değilse vatandaşlık başvurusu reddedilir. Bu nedenle yatırım öncesinde, taşınmazın vatandaşlığa uygunluğunun mutlaka araştırılması ve resmi olarak doğrulanması gerekmektedir.",
-      "Bu incelemeyi tam anlamıyla ancak avukat yapabilir. Avukat, Web Tapu üzerinden satın alınacak tapunun incelenmesi için randevu talep ederek tapu idaresinde ve belediye nezdinde bizzat incelemelerini gerçekleştirebilir."
+    "titleLines": [
+      "Gayrimenkul Yatırım Fonu ile",
+      "Türk Vatandaşlığı"
     ],
-    "tapu": {
-      "eyebrow": "1.1 – Tapu Hukuki Durum İncelemesi",
-      "title": "Tapu Kaydı Detaylı İnceleme",
-      "items": [
-        {
-          "num": "1.1.1",
-          "title": "İpotek Kaydı",
-          "paragraphs": [
-            "Tapu üzerine şerh edilmiş bir ipotek var mı?",
-            "Satıcının şirket olduğu durumlarda, projeler genellikle banka kredisi ile finanse edildiğinden taşınmaz üzerinde banka ipoteği bulunabilmektedir. Vatandaşlık başvurusu açısından, satış işlemi gerçekleştirilmeden önce söz konusu banka ipoteğinin mutlaka terkin (fek) edilmesi gerekmektedir."
-          ]
-        },
-        {
-          "num": "1.1.2",
-          "title": "Haciz Kaydı",
-          "paragraphs": [
-            "Tapu üzerinde bir haciz var mı?",
-            "Haciz; taşınmaz sahibinin borçları nedeniyle icra müdürlüğü tarafından konulan kısıtlamadır."
-          ],
-          "bullets": [
-            "Vergi ve emlak borcu kaynaklı hacizler",
-            "Şirket veya şahsa olan borca ilişkin icra takibi ya da fatura borçlarından kaynaklanan hacizler"
-          ]
-        },
-        {
-          "num": "1.1.3",
-          "title": "Diğer Şerhler",
-          "paragraphs": [
-            "Şerh; tapuya işlenen ve üçüncü kişilere karşı ileri sürülebilen hak veya kısıtlamalardır. Bu tür kayıtlar devir işlemini tamamen engelleyebilir ya da özel izin gerektireceğinden, tapu alımından önce mutlaka uzman bir avukat tarafından incelenmelidir."
-          ]
-        },
-        {
-          "num": "1.1.4",
-          "title": "Daha Önce Vatandaşlık İçin Kullanılmış mı?",
-          "paragraphs": [
-            "Türk vatandaşlığı kapsamında satın alınan taşınmazlara genellikle 3 yıl süreyle satış yasağı şerhi konulmaktadır. Aynı taşınmaz ikinci kez vatandaşlık başvurusunda kullanılamaz."
-          ],
-          "bullets": [
-            "Taşınmazın daha önce vatandaşlık dosyasına konu olup olmadığı",
-            "3 yıllık satış yasağı şerhinin bulunup bulunmadığı"
-          ]
-        }
-      ]
-    },
-    "sherhler": {
-      "eyebrow": "Şerh Türleri",
-      "title": "Dikkat Edilmesi Gereken Şerh Çeşitleri",
-      "items": [
-        {
-          "title": "Satış Vaadi Şerhi",
-          "desc": "Taşınmazın önceden başka bir kişiye noterden satıldığını ve tapunun ileriki bir tarihte devredileceğini gösteren şerhtir."
-        },
-        {
-          "title": "İhtiyati Tedbir Şerhi",
-          "desc": "Taşınmaz malikinin devam eden bir davası nedeniyle satışın engellenmiş olabileceğini gösterir."
-        },
-        {
-          "title": "Kat Karşılığı İnşaat Sözleşmesi Şerhi",
-          "desc": "Taşınmaz inşaatının hâlâ devam ettiğini ve inşaatın belirli bir aşamaya geldiğinde tapuların devredilebileceğini gösteren sözleşmeye işaret eder."
-        },
-        {
-          "title": "Mahkeme Tedbir Kararı",
-          "desc": "Mahkeme tarafından verilen ve taşınmazın satışını veya devrini geçici olarak durduran karardır."
-        },
-        {
-          "title": "İflas Şerhi",
-          "desc": "Taşınmaz sahibinin iflas etmiş olması nedeniyle tapuya konulan kayıttır."
-        },
-        {
-          "title": "Kamulaştırma Şerhi",
-          "desc": "Devletin kamu yararı nedeniyle taşınmazı kamulaştırma sürecinde olduğunu gösteren kayıttır."
-        },
-        {
-          "title": "Kültür Varlığı / Sit Alanı Kaydı",
-          "desc": "Taşınmazın kültürel veya tarihî değeri bulunduğunu ve koruma altında olduğunu gösterir."
-        },
-        {
-          "title": "Askerî Yasak Bölge Kaydı",
-          "desc": "Taşınmazın askerî güvenlik açısından sınırlı bölgede bulunduğunu gösterir."
-        }
-      ]
-    },
-    "tapuTuru": {
-      "eyebrow": "1.2 – Tapu Türünün Vatandaşlığa Uygunluğu",
-      "title": "Kat Mülkiyeti / Kat İrtifakı Zorunluluğu",
-      "paragraphs": [
-        "Tapunun niteliği, vatandaşlık başvurusu açısından mutlaka kontrol edilmelidir. Taşınmazın kat mülkiyetli veya kat irtifaklı olması esastır.",
-        "Boş arsa satın almak, tek başına vatandaşlık için uygun kabul edilmez."
-      ],
-      "arsaTitle": "Arsa ile Başvuru İçin Zorunlu Koşullar",
-      "arsaBullets": [
-        "Arsa üzerinde ruhsatlı bir projenin bulunması",
-        "İnşaat için belediye onaylarının alınmış olması",
-        "Kat irtifakının kurulmuş olması",
-        "Bağımsız bölümlerin projede açıkça belirlenmiş olması",
-        "Ödemenin banka üzerinden yapılıp DAB ile ispatlanması",
-        "Değerleme raporunun vatandaşlık için gerekli asgari tutarı karşılaması"
-      ]
-    },
-    "noter": {
-      "eyebrow": "1.3 – Noter Sözleşmesiyle Vatandaşlık",
-      "title": "Taksitli Satışlarda Tercih Edilen Yöntem",
-      "paragraphs": [
-        "Taşınmazın mutlaka bir proje kapsamında olması gerekmektedir. İnşaatın ruhsatlı olması ve kat irtifakının kurulmuş bulunması zorunludur.",
-        "Değerleme raporunun en az 400.000 USD tutarını karşılaması zorunludur.",
-        "Noter sözleşmesi yöntemi, uygulamada genellikle taksitli satışlarda tercih edilmektedir.",
-        "Özellikle inşaatı devam eden projelerde, bazı şirketler tapu devrini teslim aşamasına kadar gerçekleştirmediğinden bu yöntem kullanılmaktadır.",
-        "Kat irtifakı tapuları şirket adına tescil edildikten sonra noter satış sözleşmesi imzalanabilir."
-      ]
-    },
-    "ekspertiz": {
-      "eyebrow": "1.4 – Ekspertiz Ön Değerlendirmesi",
-      "title": "Değerleme Raporu ve Geçerli Tutar Hesaplama",
-      "paragraphs": [
-        "Tek bir taşınmazla vatandaşlık başvurusu yapılıyorsa; GEDAŞ tarafından, satıcının e-Devlet girişi üzerinden Web Tapu aracılığıyla çevrimiçi değerleme raporu talep edilir.",
-        "Taşınmazın değeri asgari yatırım tutarını karşılıyorsa, raporun son sayfasında uygunluk ibaresi yer alır.",
-        "Birden fazla taşınmazla başvuru yapılması hâlinde her taşınmaz için ayrı değerleme raporu düzenlenir.",
-        "Değerleme raporu yalnızca vatandaşlık amacıyla satın alınan taşınmazlar için zorunludur."
-      ],
-      "formula": {
-        "title": "Geçerli Yatırım Tutarı Hesaplama Formülü",
-        "desc": "DAB tutarı değerleme raporundan düşükse DAB tutarı esas alınır. Değerleme raporu daha düşükse rapor tutarı esas alınır. Geçerli tutar: ikisinden hangisi daha düşükse odur."
-      }
-    }
+    "highlightLineIndex": 0,
+    "summary": "GYF veya GSYF katılma payı alarak SPK onaylı Türk vatandaşlığı sürecinizi yönetiyoruz.",
+    "primaryCta": "Ücretsiz Danışın",
+    "secondaryCta": "Sık Sorulan Sorular",
+    "imageAlt": "Gayrimenkul Yatırım Fonu ile Türk Vatandaşlığı"
   },
-  "bolum2": {
-    "eyebrow": "İkinci Bölüm",
-    "title": "Yabancıya Tapu Satışı ve Ödeme Süreçleri (DAB ve Banka İşlemleri)",
+  "stats": [
+    {
+      "value": "500K USD",
+      "label": "Minimum Yatırım",
+      "sub": "veya karşılığı döviz"
+    },
+    {
+      "value": "3 Yıl",
+      "label": "Elde Tutma Şartı",
+      "sub": "MKK nezdinde blokaj"
+    },
+    {
+      "value": "SPK",
+      "label": "Yetkili Kurum",
+      "sub": "Sermaye Piyasası Kurulu"
+    },
+    {
+      "value": "4-5 Ay",
+      "label": "Ortalama Süre",
+      "sub": "başvuru sonuçlanması"
+    }
+  ],
+  "intro": {
+    "eyebrow": "Süreç Hakkında",
+    "title": "Fon Yatırımı, Uygunluk Belgesi ve Vatandaşlık Başvuru Süreci",
+    "paragraphs": [
+      "Türk vatandaşlığının yatırım yoluyla, istisnai yoldan kazanılması kapsamında başvurulabilecek yöntemlerden biri de kanunda öngörülen şekil ve şartlara uygun olarak gayrimenkul yatırım fonu veya girişim sermayesi yatırım fonu katılma payı satın alınmasıdır. Türk Vatandaşlığı Kanununun Uygulanmasına İlişkin Yönetmelik madde 20/2-e uyarınca, en az 500.000 Amerikan Doları veya karşılığı döviz tutarında gayrimenkul yatırım fonu katılma payı ya da girişim sermayesi yatırım fonu katılma payını en az üç yıl elinde tutmak şartıyla satın aldığı Sermaye Piyasası Kurulu tarafından tespit edilen yabancı yatırımcılar, diğer başvuru şartlarını da sağlamaları hâlinde istisnai yoldan Türk vatandaşlığı başvurusunda bulunabilmektedir.",
+      "Bu başvuru yolu, doğrudan taşınmaz satın almak istemeyen ancak Türkiye’de sermaye piyasası araçları üzerinden yatırım yapmak isteyen yabancı yatırımcılar açısından önemli bir alternatiftir. Gayrimenkul yatırım fonları, gayrimenkul projelerine ve gayrimenkule dayalı varlıklara yatırım yapılmasına imkân tanırken; girişim sermayesi yatırım fonları, girişim şirketlerine ve büyüme potansiyeli taşıyan şirketlere yatırım yapılmasına olanak sağlar.",
+      "Ancak fon katılma payı yoluyla vatandaşlık başvurusu, yalnızca bir yatırım fonu satın alınmasından ibaret değildir. Fonun vatandaşlık başvurusuna uygun nitelikte olması, yatırım tutarının mevzuatta öngörülen asgari eşiği karşılaması, döviz satış ve Türk Lirası işlem süreçlerinin usulüne uygun yapılması, katılma paylarının Merkezi Kayıt Kuruluşu nezdinde vatandaşlık blokaj alt hesabında bloke edilmesi, üç yıl boyunca elde tutulması ve Sermaye Piyasası Kurulundan uygunluk belgesi alınması gerekir.",
+      "Bu nedenle GYF veya GSYF katılma payı yoluyla Türk vatandaşlığı başvurusu; sermaye piyasası mevzuatı, yatırım fonu yapısı, saklama ve kayıt sistemi, döviz satış işlemleri, blokaj süreci, uygunluk belgesi ve vatandaşlık başvurusu aşamalarının birlikte yürütülmesini gerektiren çok aşamalı bir süreçtir.",
+      "Bu rehber, gayrimenkul yatırım fonu veya girişim sermayesi yatırım fonu katılma payı satın alarak Türk vatandaşlığına başvurmak isteyen yabancı yatırımcılara yönelik olarak başvuru şartlarını, fon yatırımı sürecini, uygunluk belgesi aşamasını, üç yıllık elde tutma yükümlülüğünü ve başvuruda dikkat edilmesi gereken temel hususları açıklamak amacıyla hazırlanmıştır.",
+      "Rehber yalnızca bilgilendirme amacıyla hazırlanmıştır. Hukuki danışmanlık için lütfen uzman bir avukattan destek alınız."
+    ],
+    "bullets": [],
+    "imageAlt": "Gayrimenkul yatırım fonu",
+    "cardValue": "SPK Onaylı",
+    "cardLabel": "Uygunluk Belgesi",
+    "badgeValue": "500K $",
+    "badgeLabel": "Minimum Eşik"
+  },
+  "process": {
+    "eyebrow": "Adım Adım Süreç",
+    "title": "Katılma Payı ile Türk Vatandaşlığı Yatırım Adımları",
+    "description": "Gayrimenkul Yatırım Fonu (GYF) veya Girişim Sermayesi Yatırım Fonu (GSYF) yoluyla vatandaşlık başvurusunda 11 bölümden oluşan tüm adımlar:",
     "items": [
       {
-        "num": "2.1",
-        "title": "Yabancı Alıcının Banka Hesabı",
-        "paragraphs": [
-          "Türkiye'de yabancı alıcının banka hesabı açması hukuken zorunlu değildir. Ancak özellikle ikinci el satışlarda ve vatandaşlık yatırımı kapsamında hesap açılması şiddetle tavsiye edilir.",
-          "Sebep: Döviz Alım Belgesi (DAB), yatırımın banka sistemi üzerinden gerçekleştiğini gösteren temel belgedir."
-        ]
+        "num": "01",
+        "icon": "⚖️",
+        "title": "BİRİNCİ BÖLÜM - FON YATIRIMI YOLUYLA VATANDAŞLIK BAŞVURUSUNUN HUKUKİ DAYANAĞI",
+        "desc": "Türk vatandaşlığının yatırım yoluyla kazanılması, 5901 sayılı Türk Vatandaşlığı Kanunu ve Türk Vatandaşlığı Kanununun Uygulanmasına İlişkin Yönetmelik kapsamında düzenlenmektedir. Yönetmelik madde 20’de, belirli yatırım şartlarını sağlayan yabancıların istisnai yoldan Türk vatandaşlığı kazanabilmesine imkân tanınmıştır.\n\nBu yatırım türlerinden biri, gayrimenkul yatırım fonu veya girişim sermayesi yatırım fonu katılma payı satın alınmasıdır. Yönetmelik madde 20/2-e kapsamında, en az 500.000 Amerikan Doları veya karşılığı döviz tutarında GYF ya da GSYF katılma payını en az üç yıl elinde tutmak şartıyla satın alan ve bu durumu Sermaye Piyasası Kurulu tarafından tespit edilen yabancı yatırımcılar, yatırım yoluyla vatandaşlık başvurusu yapabilir.\n\nBu başvuru yolunda yetkili kurum Sermaye Piyasası Kuruludur. Başvuru sahibinin vatandaşlık sürecine geçebilmesi için, yatırım şartının sağlandığı SPK tarafından uygunluk belgesi ile tespit edilmelidir. Uygunluk belgesi alınmadan vatandaşlık başvurusunun yatırım şartı tamamlanmış kabul edilmez."
       },
       {
-        "num": "2.2",
-        "title": "Döviz Alım Belgesi (DAB) Süreci",
-        "paragraphs": [],
-        "steps": [
-          "Yabancı alıcı, Türkiye'de hesabının bulunduğu bankaya gider.",
-          "Satın alma bedelini bankaya yatırır.",
-          "Banka dövizi Türk Lirasına çevirir.",
-          "Banka, Döviz Alım Belgesi (DAB) düzenler."
-        ],
-        "bullets": [
-          "Alıcının adı ve pasaport numarası",
-          "Satın alınacak taşınmaza ilişkin bilgiler",
-          "Döviz tutarı ve Türk Lirası karşılığı"
-        ]
+        "num": "02",
+        "icon": "🏢",
+        "title": "İKİNCİ BÖLÜM - GAYRİMENKUL YATIRIM FONU VE GİRİŞİM SERMAYESİ YATIRIM FONU NEDİR?",
+        "desc": "Gayrimenkul yatırım fonu, yatırımcılardan toplanan kaynakların gayrimenkule, gayrimenkul projelerine veya gayrimenkule dayalı varlıklara yönlendirilmesini sağlayan sermaye piyasası aracıdır. Bu fonlar, yatırımcının doğrudan taşınmaz satın almasına gerek olmaksızın gayrimenkul piyasasına dolaylı şekilde yatırım yapmasına imkân tanır.\n\nGirişim sermayesi yatırım fonu ise girişim şirketlerine, büyüme potansiyeli taşıyan işletmelere veya belirli yatırım stratejileri kapsamında sermaye ihtiyacı bulunan şirketlere yatırım yapılmasını sağlayan fon yapısıdır. Bu fonlar, genellikle daha yüksek büyüme potansiyeli taşıyan ancak aynı zamanda daha yüksek risk barındırabilen yatırım alanlarına yönelir.\n\nVatandaşlık başvurusu bakımından her iki fon türünde de temel şart, katılma paylarının mevzuatta öngörülen asgari tutarı karşılaması ve en az üç yıl süreyle elde tutulmasıdır. Ancak yatırım yapılacak fonun niteliği, likidite yapısı, risk profili, fon içtüzüğü, ihraç belgesi, geri alım şartları ve yatırımcının fondan çıkış imkânları başvuru öncesinde dikkatle incelenmelidir.\n\nFon yatırımı vatandaşlık başvurusu için uygun olsa dahi, yatırımcının mali hedefleri, risk algısı ve üç yıl boyunca yatırımda kalma zorunluluğu ayrıca değerlendirilmelidir."
       },
       {
-        "num": "2.3",
-        "title": "DAB Sonrası Ödeme Yönetimi",
-        "paragraphs": [
-          "DAB belgesindeki Türk Lirası karşılığı için alıcı bankasına talimat verebilir."
-        ],
-        "subItems": [
-          {
-            "title": "Seçenek 1 – Havale / Transfer",
-            "bullets": [
-              "Banka tutarı doğrudan satıcının hesabına transfer eder."
-            ]
-          },
-          {
-            "title": "Seçenek 2 – Bloke Çek",
-            "bullets": [
-              "Banka satış bedeli kadar bloke çek düzenler.",
-              "Çek satış günü satıcıya ibraz edilir.",
-              "Satıcı çeki bankadan tahsil eder."
-            ]
-          }
-        ]
+        "num": "03",
+        "icon": "💵",
+        "title": "ÜÇÜNCÜ BÖLÜM - ASGARİ YATIRIM TUTARI",
+        "desc": "GYF veya GSYF katılma payı yoluyla Türk vatandaşlığı başvurusunda asgari yatırım tutarı 500.000 Amerikan Doları veya karşılığı döviz tutarıdır. Bu tutar, fon katılma paylarının satın alınması aşamasında sağlanmalıdır.\n\nYatırım tutarının tespitinde, döviz satış işlemi, Türk Lirası karşılığı tutar, fon katılma payı alımı ve katılma paylarının Merkezi Kayıt Kuruluşu nezdinde kaydi olarak izlenmesi birlikte değerlendirilir.\n\nFon katılma paylarının değeri, yatırım yapıldıktan sonra piyasa koşullarına, fon portföyündeki varlıkların değerine veya döviz kurundaki değişikliklere bağlı olarak değişebilir. Yatırımcının kendi iradesiyle katılma paylarını satmaması, devretmemesi veya azaltmaması şartıyla, sonradan değer düşüşü yaşanması her durumda asgari yatırım şartının kaybedildiği anlamına gelmez.\n\nAncak yatırımcının kendi talebiyle fon katılma paylarını satması, devretmesi, blokajı kaldırması veya yatırım tutarını azaltması vatandaşlık başvurusu bakımından ciddi risk oluşturur. Bu nedenle fon yatırımı yapılmadan önce üç yıllık elde tutma şartı ve yatırımın likidite özellikleri dikkatle değerlendirilmelidir."
       },
       {
-        "num": "2.4",
-        "title": "Satıcının Şirket Olması Durumu",
-        "paragraphs": [
-          "DAB işlemi hem alıcı hem de satıcı şirket tarafından yapılabilir."
-        ],
-        "subItems": [
-          {
-            "title": "Senaryo A – Alıcı DAB Yaparsa",
-            "bullets": [
-              "Alıcı bankada DAB işlemini tamamlar ve satıcıya TL transferi gerçekleştirir."
-            ]
-          },
-          {
-            "title": "Senaryo B – Şirket DAB Yaparsa",
-            "bullets": [
-              "Şirket, yabancı alıcı adına DAB düzenler."
-            ]
-          }
-        ]
+        "num": "04",
+        "icon": "💱",
+        "title": "DÖVİZ SATIŞ İŞLEMİ VE FON ALIMI",
+        "desc": "Fon katılma payı yoluyla vatandaşlık başvurusunda, ilgili döviz tutarının işlem öncesinde Türkiye’de faaliyet gösteren bir bankaya satılması ve bankaca Türkiye Cumhuriyet Merkez Bankasına aktarılması gerekmektedir. Bu işlem sonucunda elde edilen Türk Lirası tutar ile GYF veya GSYF katılma payı satın alınır.\n\nBu nedenle yatırımcı, fon alımından önce döviz satış işleminin usulüne uygun şekilde yapıldığından emin olmalıdır. Döviz alım belgesi, işlem açıklamaları, pasaport veya yabancı kimlik numarası bilgileri ve işlem tutarı başvuru dosyası bakımından önem taşır.\n\nDöviz satış işlemi tamamlandıktan sonra işlemden vazgeçilmesi veya döviz satışının iptal edilmesi mümkün olmayabilir. Bu nedenle yatırımcı, döviz dönüşüm işlemini yapmadan önce fon seçimini, yatırım stratejisini, hukuki sonuçları ve vatandaşlık başvurusu bakımından uygunluğu netleştirmelidir.\n\nFon alımı sürecinde banka, yatırım kuruluşu, portföy yönetim şirketi, Merkezi Kayıt Kuruluşu ve Sermaye Piyasası Kurulu süreçleri birbiriyle bağlantılıdır. Bu nedenle işlemlerin hatasız ilerleyebilmesi için yatırım, hukuki danışmanlık ve finansal danışmanlık süreçleri koordineli yürütülmelidir."
       },
       {
-        "num": "2.5",
-        "title": "Pasaport Tercümesi ve Noter Onayı",
-        "paragraphs": [],
-        "bullets": [
-          "Pasaport yeminli tercüman tarafından çevrilir.",
-          "Çeviri noter tasdikinden geçirilir.",
-          "Tapu müdürlüğü tercümesiz pasaport kabul etmemektedir."
-        ]
+        "num": "05",
+        "icon": "🔒",
+        "title": "BEŞİNCİ BÖLÜM - MKK KAYDI VE VATANDAŞLIK BLOKAJ ALT HESABI",
+        "desc": "GYF veya GSYF katılma paylarının vatandaşlık başvurusuna esas gösterilebilmesi için katılma paylarının Merkezi Kayıt Kuruluşu nezdinde kaydi olarak takip edilmesi ve vatandaşlık blokaj alt hesabında bloke edilmesi gerekir.\n\nBu blokaj, yatırımcının katılma paylarını en az üç yıl süreyle elde tutacağını gösteren temel mekanizmadır. Blokaj işlemi, ilgili yatırım kuruluşu aracılığıyla MKK nezdinde gerçekleştirilir. Katılma paylarının yatırımcı hesabına aktarılması ve vatandaşlık başvurusu kapsamında bloke edilmesi, uygunluk belgesi değerlendirmesinin en önemli unsurlarındandır.\n\nBlokaj işlemi yatırımcının talebiyle tesis edilir. Yatırımcı kendi iradesiyle blokajı kaldırabilir; ancak bu durum vatandaşlık başvurusu bakımından başvurunun iptaline veya yatırım şartının kaybedildiğinin ilgili kurumlara bildirilmesine yol açabilir.\n\nBu nedenle yatırımcı, üç yıllık süre boyunca fon katılma payları üzerinde satış, devir, rehin, haciz, ihtiyati tedbir, ihtiyati haciz veya mülkiyet hakkını sınırlayabilecek herhangi bir işlem yapılmaması gerektiğini bilmelidir."
+      },
+      {
+        "num": "06",
+        "icon": "📅",
+        "title": "ALTINCI BÖLÜM - ÜÇ YILLIK ELDE TUTMA ŞARTI",
+        "desc": "GYF veya GSYF katılma payı yoluyla Türk vatandaşlığı başvurusunun temel şartlarından biri, katılma paylarının en az üç yıl süreyle elde tutulmasıdır. Bu süre, asgari yatırım şartının sağlandığı ve katılma paylarının uygun şekilde bloke edildiği tarih esas alınarak değerlendirilir.\n\nÜç yıllık süre içinde yatırımcı, vatandaşlık başvurusuna esas gösterdiği katılma paylarını kendi iradesiyle azaltmamalı, satmamalı, devretmemeli veya blokajı kaldırmamalıdır. Katılma paylarının üzerinde mülkiyet hakkını sınırlayan bir takyidat oluşması da başvuru bakımından risk yaratabilir.\n\nFonun değerinde piyasa koşulları nedeniyle düşüş yaşanması, kur değişiklikleri veya fon içtüzüğü kapsamında yatırımcının iradesi dışında gerçekleşen bazı değer hareketleri, başvuru şartının otomatik olarak kaybedildiği anlamına gelmeyebilir. Ancak yatırımcının aktif iradesiyle yapılan azaltıcı veya devredici işlemler başvuru açısından sorun oluşturur.\n\nBu nedenle üç yıllık süre boyunca yatırımın düzenli şekilde takip edilmesi ve MKK kayıtlarında vatandaşlık blokajının korunması gerekir."
+      },
+      {
+        "num": "07",
+        "icon": "📜",
+        "title": "YEDİNCİ BÖLÜM - UYGUNLUK BELGESİ NEDİR?",
+        "desc": "Uygunluk belgesi, yabancı yatırımcının Türk vatandaşlığı başvurusu için aranan asgari yatırım şartını sağladığını gösteren resmi belgedir. GYF veya GSYF katılma payı yoluyla vatandaşlık başvurularında bu belge Sermaye Piyasası Kurulu tarafından düzenlenir.\n\nSPK tarafından düzenlenen uygunluk belgesi, başvuru sahibinin ilgili fon katılma paylarını mevzuatta öngörülen tutar ve süre şartına uygun şekilde satın aldığını ve başvuruya esas yatırım şartını sağladığını gösterir.\n\nBu kapsamda uygunluk belgesi değerlendirmesinde genel olarak şu hususlar incelenir:\n• Başvuru sahibinin kimlik ve pasaport bilgileri,\n• Başvuru sahibine ait MKK sicil numarası,\n• Satın alınan GYF veya GSYF katılma paylarının türü ve tutarı,\n• Katılma paylarının vatandaşlık blokaj alt hesabında bloke edilip edilmediği,\n• Asgari 500.000 Amerikan Doları karşılığı yatırım şartının sağlanıp sağlanmadığı,\n• Döviz satış ve Türk Lirası ile fon alım sürecinin mevzuata uygun yürütülüp yürütülmediği,\n• Katılma paylarının en az üç yıl elde tutulmasına ilişkin şartın sağlanıp sağlanmadığı,\n• Katılma payları üzerinde mülkiyet hakkını sınırlayan takyidat bulunup bulunmadığı.\n\nUygunluk belgesi düzenlendikten sonra başvuru sahibi kısa dönem ikamet izni ve vatandaşlık başvurusu aşamalarına geçebilir."
+      },
+      {
+        "num": "08",
+        "icon": "📂",
+        "title": "SEKİZİNCİ BÖLÜM - UYGUNLUK BELGESİ BAŞVURUSU İÇİN GEREKLİ BELGELER",
+        "desc": "GYF veya GSYF katılma payı yoluyla uygunluk belgesi başvurusunda genel olarak aşağıdaki belgeler hazırlanır:\n• Başvuru sahibi yabancı gerçek kişiye ait pasaport fotokopisi,\n• Başvuru sahibinin adı, soyadı, doğum tarihi, yabancı kimlik numarası, adres ve iletişim bilgilerini içeren başvuru dilekçesi,\n• Başvuru sahibine ait MKK sicil numarası,\n• Satın alınan GYF veya GSYF katılma paylarına ilişkin yatırım bilgileri,\n• Katılma paylarının MKK nezdinde vatandaşlık blokaj alt hesabında bloke edildiğini gösteren belge,\n• Döviz satış işlemi yapılmış ise döviz alım belgesi,\n• Fon alım işlemini ve yatırım tutarını gösteren yatırım kuruluşu belgeleri,\n• Gerekli görülmesi hâlinde banka ve yatırım kuruluşu yazıları,\n• Başvuru vekil aracılığıyla yapılacaksa özel yetki içeren vekâletname.\n\nBelgelerde başvuru sahibinin kimlik bilgileri, pasaport bilgileri, MKK sicil numarası, yatırım tutarı, fon bilgileri ve blokaj durumu açık ve tutarlı şekilde yer almalıdır.\n\nEksik belge, hatalı işlem açıklaması, MKK kaydında uyumsuzluk, blokajın yanlış tesis edilmesi veya döviz satış sürecindeki eksiklikler uygunluk belgesi başvurusunun gecikmesine ya da reddedilmesine neden olabilir."
+      },
+      {
+        "num": "09",
+        "icon": "⚖️",
+        "title": "DOKUZUNCU BÖLÜM - FON SEÇİMİNDE DİKKAT EDİLMESİ GEREKEN HUSUSLAR",
+        "desc": "Vatandaşlık başvurusu amacıyla fon yatırımı yapılırken yalnızca asgari tutarın sağlanması yeterli değildir. Yatırım yapılacak fonun yapısı ve risk profili de dikkatle incelenmelidir.\n\nFon seçimi yapılırken özellikle şu hususlar değerlendirilmelidir:\n• Fonun gayrimenkul yatırım fonu mu yoksa girişim sermayesi yatırım fonu mu olduğu,\n• Fonun vatandaşlık başvurusu bakımından uygun işlem altyapısına sahip olup olmadığı,\n• Fon katılma paylarının MKK nezdinde izlenip izlenmediği,\n• Fon katılma paylarının vatandaşlık blokaj alt hesabına alınabilir olup olmadığı,\n• Fonun likidite koşulları,\n• Fonun geri alım ve çıkış şartları,\n• Fonun risk profili,\n• Fonun portföy yapısı,\n• Fonun geçmiş performansı,\n• Fon içtüzüğü ve ihraç belgesinde yer alan hükümler,\n• Üç yıllık elde tutma süresi boyunca yatırımcı açısından doğabilecek finansal sonuçlar.\n\nVatandaşlık başvurusu için uygun olan bir fon, yatırımcının kişisel risk profiline uygun olmayabilir. Bu nedenle fon seçimi yalnızca hukuki açıdan değil, finansal ve yatırım danışmanlığı açısından da değerlendirilmelidir."
+      },
+      {
+        "num": "10",
+        "icon": "⚠️",
+        "title": "ONUNCU BÖLÜM - BAŞVURU RİSKLERİ VE DİKKAT EDİLMESİ GEREKEN HUSUSLAR",
+        "desc": "GYF veya GSYF katılma payı yoluyla vatandaşlık başvurularında en önemli risklerden biri, fon yatırımı ve blokaj işlemlerinin teknik olarak hatalı yapılmasıdır. Katılma paylarının MKK nezdinde doğru hesaba alınmaması, vatandaşlık blokaj alt hesabında bloke edilmemesi veya yatırım tutarının asgari şartı karşılamaması başvuru açısından ciddi sorun yaratabilir.\n\nBaşvuru açısından risk oluşturabilecek bazı durumlar şunlardır:\n• Yatırım tutarının asgari 500.000 Amerikan Doları karşılığını sağlamaması,\n• Döviz satış işleminin usulüne uygun yapılmaması,\n• Fon katılma paylarının yanlış hesapta izlenmesi,\n• MKK vatandaşlık blokaj alt hesabının oluşturulmaması,\n• Katılma paylarının üç yıl dolmadan satılması veya devredilmesi,\n• Blokajın yatırımcı talebiyle kaldırılması,\n• Katılma payları üzerinde rehin, haciz, ihtiyati tedbir veya benzeri takyidat oluşması,\n• Fon seçiminin yatırımcının risk profiline uygun olmaması,\n• Vekâletnamede gerekli özel yetkilerin bulunmaması,\n• Vatandaşlık dosyasındaki kişisel belgelerde eksiklik veya uyumsuzluk bulunması.\n\nBu nedenle fon yatırımı yapılmadan önce hem fonun vatandaşlık başvurusuna uygunluğu hem de yatırımcının kişisel ve finansal durumu birlikte değerlendirilmelidir."
+      },
+      {
+        "num": "11",
+        "icon": "💼",
+        "title": "ON BİRİNCİ BÖLÜM - AVUKAT DESTEĞİNİN ÖNEMİ",
+        "desc": "GYF veya GSYF katılma payı yoluyla Türk vatandaşlığı başvurusu, sermaye piyasası işlemleri ile vatandaşlık hukukunun kesiştiği özel bir başvuru türüdür. Bu nedenle başvuru sürecinin yalnızca yatırım kuruluşu üzerinden değil, hukuki denetim altında yürütülmesi önemlidir.\n\nAvukat desteği özellikle şu aşamalarda önem taşır:\n• Başvuru sahibinin yatırım yoluyla vatandaşlık şartlarına uygunluğunun değerlendirilmesi,\n• Yatırım yapılacak fon türünün başvuruya uygunluğunun incelenmesi,\n• Fon içtüzüğü, ihraç belgesi ve yatırım şartlarının değerlendirilmesi,\n• Döviz satış ve döviz alım belgesi süreçlerinin kontrol edilmesi,\n• MKK vatandaşlık blokaj alt hesabı işlemlerinin takip edilmesi,\n• Uygunluk belgesi başvuru dosyasının hazırlanması,\n• Sermaye Piyasası Kurulu nezdindeki sürecin takip edilmesi,\n• Kısa dönem ikamet izni başvurusunun yürütülmesi,\n• Vatandaşlık başvuru dosyasının hazırlanması,\n• Eş ve çocukların başvuru kapsamına dahil edilmesi,\n• Başvuru sürecinin kamu kurumları nezdinde takip edilmesi.\n\nEksik veya hatalı yürütülen işlemler, başvurunun gecikmesine, uygunluk belgesi alınamamasına veya yatırım şartının geçersiz sayılmasına neden olabilir. Bu nedenle fon yatırımı yoluyla Türk vatandaşlığı başvurularında sürecin başından itibaren profesyonel hukuki destek alınması tavsiye edilir."
       }
     ]
   },
-  "bolum3": {
-    "eyebrow": "Üçüncü Bölüm",
-    "title": "Tapu Randevu ve Satış Süreci",
+  "processStages": {
+    "eyebrow": "Yatırım Süreci",
+    "title": "Sürecin Genel Aşamaları",
+    "description": "GYF veya GSYF katılma payı yoluyla Türk vatandaşlığı başvurusu genel olarak aşağıdaki aşamalardan oluşur:",
+    "items": [
+      "Başvuru sahibinin vatandaşlık şartlarına uygunluğunun değerlendirilmesi,",
+      "Yatırım yapılacak GYF veya GSYF’nin belirlenmesi,",
+      "Fonun vatandaşlık başvurusu bakımından uygunluğunun incelenmesi,",
+      "Gerekli döviz satış ve Türk Lirasına dönüşüm işlemlerinin yapılması,",
+      "En az 500.000 Amerikan Doları veya karşılığı tutarda fon katılma payı satın alınması,",
+      "Katılma paylarının MKK nezdinde vatandaşlık blokaj alt hesabında bloke edilmesi,",
+      "Fon alım, MKK ve blokaj belgelerinin hazırlanması,",
+      "Sermaye Piyasası Kuruluna uygunluk belgesi başvurusu yapılması,",
+      "Uygunluk belgesinin alınması,",
+      "Kısa dönem ikamet izni başvurusunun yapılması,",
+      "Vatandaşlık başvuru dosyasının hazırlanması,",
+      "İl Nüfus ve Vatandaşlık Müdürlüğü üzerinden vatandaşlık başvurusu yapılması,",
+      "İdari inceleme ve güvenlik araştırması sürecinin tamamlanması,",
+      "Uygun görülmesi hâlinde Cumhurbaşkanı kararı ile Türk vatandaşlığının kazanılması."
+    ]
+  },
+  "legal": {
+    "eyebrow": "HUKUKİ ÇERÇEVE",
+    "title": "Yasal Dayanak",
     "items": [
       {
-        "num": "3.1",
-        "title": "Tapu Satışı Öncesinde Zorunlu Belgeler",
-        "paragraphs": [
-          "Zorunlu Deprem Sigortası (DASK): Geçerli bir DASK poliçesinin bulunması zorunludur.",
-          "Değerleme Raporu: Yabancıya yapılan taşınmaz satışlarında ekspertiz raporu zorunludur."
-        ]
+        "title": "5901 Sayılı Türk Vatandaşlığı Kanunu",
+        "text": "Türk vatandaşlığının kazanılması, kaybı ve vatandaşlığa ilişkin temel usul ve esasları düzenler."
       },
       {
-        "num": "3.2",
-        "title": "Tapu Randevusunun Alınması",
-        "paragraphs": [
-          "Randevu, Web Tapu Sistemi üzerinden alınır. Başvuru satıcı tarafından yapılır."
-        ],
-        "bullets": [
-          "Alıcı ve satıcıya ait kimlik bilgileri",
-          "Taşınmaza ilişkin bilgiler",
-          "Alıcı adına kimlik beyan formu",
-          "Satış bedeli",
-          "Varsa vatandaşlık şerhi talebi"
-        ]
+        "title": "Türk Vatandaşlığı Kanununun Uygulanmasına İlişkin Yönetmelik",
+        "text": "Yatırım yoluyla ve istisnai yoldan Türk vatandaşlığının kazanılmasına ilişkin başvuru şartlarını ve prosedürleri düzenler."
       },
       {
-        "num": "3.3",
-        "title": "Tapu Müdürlüğünün İncelemesi",
-        "paragraphs": [
-          "Başvurunun ardından tapu müdürlüğü kontrolleri gerçekleştirir."
-        ],
-        "bullets": [
-          "Tapu kaydını inceler",
-          "Yabancı edinim sınırlarını kontrol eder",
-          "Askerî yasak bölge kontrolü yapar",
-          "Ekspertiz raporunu değerlendirir",
-          "Ödeme beyanını inceler"
-        ]
+        "title": "Türk Vatandaşlığı Kanununun Uygulanmasına İlişkin Yönetmelik Madde 20/2-e",
+        "text": "En az 500.000 Amerikan Doları veya karşılığı döviz tutarında gayrimenkul yatırım fonu katılma payı veya girişim sermayesi yatırım fonu katılma payını en az üç yıl elinde tutmak şartıyla satın aldığı Sermaye Piyasası Kurulunca tespit edilen yabancıların istisnai yoldan Türk vatandaşlığına başvurabilmesine ilişkin düzenlemedir."
       },
       {
-        "num": "3.4",
-        "title": "Randevu Günü Tapuda Yapılacak İşlemler",
-        "paragraphs": [
-          "Satış işlemi tapunun akit odasında gerçekleştirilir. İmzaların tamamlanmasıyla mülkiyet alıcıya geçer."
-        ],
-        "bullets": [
-          "Yeminli tercüman veya alıcı avukat",
-          "Pasaport ve noter onaylı pasaport tercümesi",
-          "Banka ödeme belgeleri",
-          "Vatandaşlık başvurularında DAB belgesi"
-        ],
-        "steps": [
-          "Varsa noter sözleşmesini okur",
-          "Satış bedelini sorgular",
-          "Ödeme beyanını teyit eder",
-          "Vatandaşlık şerhini sisteme işler",
-          "Taraflardan imzaları alır"
-        ]
+        "title": "Sermaye Piyasası Mevzuatı",
+        "text": "Gayrimenkul yatırım fonları, girişim sermayesi yatırım fonları, katılma payları, portföy yönetimi, MKK kaydı ve yatırımcı işlemleri bakımından önem taşır."
       },
       {
-        "num": "3.5",
-        "title": "Harçlar ve Masraflar",
-        "paragraphs": [
-          "Tapuya girmeden önce ödenmesi gereken masraflar:"
-        ],
-        "bullets": [
-          "Tapu harcı (genellikle %4)",
-          "Döner sermaye ücreti",
-          "Akit odasında ödeme alınmamaktadır"
-        ]
-      },
-      {
-        "num": "3.6",
-        "title": "Vatandaşlık Dosyası Olan Satışlarda Ek Kontroller",
-        "paragraphs": [
-          "Satışın vatandaşlık amacı taşıması hâlinde ek kontroller uygulanır:"
-        ],
-        "bullets": [
-          "DAB belgesi, satış bedeliyle uyumu açısından kontrol edilir",
-          "Tapu kütüğüne 3 yıl süreyle satış yasağı şerhi konulur"
-        ]
+        "title": "6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu",
+        "text": "Yatırım yoluyla vatandaşlık başvurusu yapacak yabancıların kısa dönem ikamet izni süreçleri bakımından önem taşır."
       }
     ]
   },
-  "bolum4": {
-    "eyebrow": "Dördüncü Bölüm",
-    "title": "Uygunluk Belgesi (Taşınmaz Yatırım Tespit Belgesi)",
-    "intro": "Taşınmaz Yatırım Tespit Belgesi; yabancı yatırımcının gerçekleştirdiği taşınmaz alımının, Türk vatandaşlığı için gerekli yatırım şartlarını karşıladığını devletin resmî olarak onayladığı belgedir.",
-    "denetim": {
-      "eyebrow": "4.2 – Belgenin Amacı ve Denetim Kapsamı",
-      "title": "Devletin İnceleme Kapsamı",
-      "bullets": [
-        "Yatırımın fiilen gerçekleşip gerçekleşmediği",
-        "Ödemenin banka sistemi üzerinden yapılıp yapılmadığı",
-        "DAB'ın usulüne uygun düzenlenip düzenlenmediği",
-        "Ekspertiz raporunun gerçeği yansıtıp yansıtmadığı",
-        "Taşınmazın daha önce vatandaşlık başvurusunda kullanılıp kullanılmadığı",
-        "Muvazaalı işlem bulunup bulunmadığı",
-        "Satış bedelinin şişirilip şişirilmediği",
-        "Akraba veya ilişkili taraflar arasında satış olup olmadığı",
-        "Projenin hukuki risk taşıyıp taşımadığı"
-      ]
-    },
-    "process": {
-      "eyebrow": "4.3 – Belgenin Alınma Süreci",
-      "title": "Üç Aşamalı Resmi Süreç",
-      "steps": [
-        {
-          "num": "Adım 1",
-          "title": "Tapu Satışının Gerçekleştirilmesi",
-          "desc": "Satış sırasında ekspertiz raporu sisteme yüklenir, DAB dosyaya eklenir ve tapu kütüğüne 3 yıl satış yasağı şerhi işlenir."
-        },
-        {
-          "num": "Adım 2",
-          "title": "Dosyanın Merkeze Gönderilmesi",
-          "desc": "Tapu müdürlüğü, satış dosyasını TKGM Yabancı İşlemler Birimi'ne iletir. Bu başvuru otomatik olarak gerçekleştirilir."
-        },
-        {
-          "num": "Adım 3",
-          "title": "Uygunluk Kararı",
-          "desc": "Şartların sağlandığı tespit edilirse Taşınmaz Yatırım Tespit Belgesi düzenlenir ve NVİGM'e bildirilir."
-        }
-      ]
-    },
-    "sure": {
-      "title": "İnceleme Süresi",
-      "desc": "İnceleme süresi ortalama 1–2 haftadır."
-    },
-    "sonrasi": {
-      "title": "Belge Çıktıktan Sonraki Aşama",
-      "desc": "Belgenin düzenlenmesiyle yatırım resmî olarak kabul edilir. Ardından ikamet izni başvurusu yapılır ve vatandaşlık sürecine devam edilir."
-    }
+  "postApproval": {
+    "eyebrow": "Uygunluk Belgesi Sonrası",
+    "title": "Başvuru İşlemleri",
+    "paragraphs": [
+      "Yukarıda yapılan açıklamalarda da belirtildiği üzere yatırım yoluyla vatandaşlık başvurusunda temel evrak yatırımın kanuna uygun olarak yapıldığını gösteren uygunluk belgesidir. Uygunluk belgesi temin edildikten sonra vatandaşlık başvurusu için gerekli diğer işlemler olan ikamet izni başvurusu ve vatandaşlık dosyasının hazırlanıp ilgili makamlara sunulması gerekmektedir. Uygunluk belgesinden sonraki süreçlere ilişkin detaylı bilgi için [Vatandaşlık Başvuru Süreci](/citizenship/basvuru-sureci) başlıklı yazımızı inceleyebilirsiniz."
+    ],
+    "bullets": []
   },
   "cta": {
-    "title": "Taşınmaz Yatırımınızı Vatandaşlığa Dönüştürün",
-    "description": "Tapu incelemesinden uygunluk belgesine, DAB sürecinden vatandaşlık başvurusuna kadar her adımı hukuki güvenceyle yönetiyoruz.",
+    "title": "Dosyanızı Başlatmaya Hazır mısınız?",
+    "description": "Büromuz, fon alımınızdan kimlik/pasaport teslimine kadar her adımı sizin adınıza yönetir.",
     "primaryCta": "Ücretsiz Danışın",
-    "secondaryCta": "Sık Sorulan Sorular"
+    "secondaryCta": "SSS'yi İncele"
   }
 }

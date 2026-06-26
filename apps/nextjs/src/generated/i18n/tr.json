@@ -1,6 +1,19 @@
 {
   "lang": "tr",
   "dir": "ltr",
+  "contact_form": {
+    "title": "Ücretsiz Vatandaşlık Danışmanlığı Alın",
+    "subtitle": "Bütçenizi ve iletişim bilgilerinizi bize iletin. Ekibimiz sizi uygun mülklerle eşleştirecek ve tüm süreci açıklayacaktır.",
+    "label_name": "Ad Soyad",
+    "label_email": "E-posta Adresi",
+    "label_phone": "Telefon Numarası",
+    "label_message": "Mesaj",
+    "placeholder_name": "Adınızı ve soyadınızı girin",
+    "placeholder_email": "E-posta adresinizi girin",
+    "placeholder_phone": "Ülke koduyla birlikte telefon numarası",
+    "placeholder_message": "Mesajınızı yazın...",
+    "btn_send": "Mesajı Gönder"
+  },
   "nav": {
     "home": "Anasayfa",
     "services": "Yatırım Türleri",
@@ -1568,8 +1581,7 @@
       "eyebrow": "Hakkında",
       "title": "Bu Rehber Hakkında",
       "paragraphs": [
-        "Bu rehber, Türkiye'de taşınmaz satın alım yoluyla vatandaşlık edinmek isteyen yabancı yatırımcılara yönelik hukuki süreçleri, tapu işlemlerini ve vatandaşlık başvuru aşamalarını kapsamlı biçimde açıklamaktadır.",
-        "Rehber yalnızca bilgilendirme amacıyla hazırlanmıştır. Hukuki danışmanlık için lütfen uzman bir avukattan destek alınız."
+        "Türk vatandaşlığının yatırım yoluyla, istisnai yoldan kazanılması kapsamında öne çıkan başvuru seçeneklerinden biri, kanunda öngörülen şekil ve şartlara uygun olarak taşınmaz yatırımı yapılmasıdır. Gayrimenkul yatırımı yoluyla vatandaşlık başvurusu, yalnızca belirli bir değerde taşınmaz satın alınmasıyla sınırlı olmayıp; taşınmazın niteliği, tapu kayıtları, ödeme süreçleri, değerleme raporu ve ilgili kamu kurumları nezdinde yürütülecek işlemlerin mevzuata uygun şekilde tamamlanmasını gerektirir. Bu nedenle başvuru sürecinin, yatırım aşamasından vatandaşlık başvurusunun sonuçlandırılmasına kadar bütüncül ve hukuki denetim altında yürütülmesi önem taşımaktadır."
       ],
       "bullets": [
         "Tapu hukuki durum incelemesi",
@@ -1876,14 +1888,14 @@
   },
   "mevduat_page": {
     "hero": {
-      "breadcrumbLabel": "Mevduat Hesabı ile Vatandaşlık",
+      "breadcrumbLabel": "Mevduat Hesabı ile Türk Vatandaşlığı",
       "tag": "Yatırım Yoluyla Vatandaşlık",
       "titleLines": [
-        "Banka Mevduat Hesabı",
-        "ile Türk Vatandaşlığı"
+        "Mevduat Hesabı ile",
+        "Türk Vatandaşlığı"
       ],
       "highlightLineIndex": 1,
-      "summary": "500.000 USD'yi 3 yıl boyunca Türkiye'deki bir bankada tutarak Türk vatandaşlığı edinme sürecinin hukuki ve idari boyutlarını uçtan uca yönetiyoruz.",
+      "summary": "500.000 USD Karşılığı Mevduatın 3 Yıl Süreyle Bankada Tutulması Yoluyla Türk Vatandaşlığı Başvurusu",
       "primaryCta": "Ücretsiz Danışın",
       "secondaryCta": "Sık Sorulan Sorular",
       "imageAlt": "Banka Mevduatı ile Türk Vatandaşlığı"
@@ -1914,14 +1926,11 @@
       "eyebrow": "Süreç Hakkında",
       "title": "Yatırım Yoluyla Türk Vatandaşlığı Başvurusu",
       "paragraphs": [
-        "Yatırım yoluyla Türk vatandaşlığı, Türk Vatandaşlığı Kanunu’nun istisnai vatandaşlık hükümleri kapsamında, kanunun öngördüğü belirli yatırım araçlarının kullanılması suretiyle gerçekleştirilen bir başvuru türüdür. Bu süreçte ilk ve en önemli adım, hangi yatırım aracı kullanılarak vatandaşlık başvurusu yapılacağının doğru şekilde belirlenmesidir. Çünkü yatırımın türüne göre hem yatırımın “vatandaşlığa uygun” hale getirilme yöntemi hem de uygunluk belgesini düzenleyen kurum değişmektedir.",
-        "Yatırımın vatandaşlık kriterlerine uygun olarak gerçekleştirildiğini gösteren resmi belgeye uygulamada “Uygunluk Belgesi” denilmektedir. Uygunluk belgesini düzenleyen hükümet kurumları, yatırım yöntemine göre farklıdır:"
+        "Bu rehber, Türkiye’de faaliyet gösteren bir bankada mevduat hesabı açarak yatırım yoluyla Türk vatandaşlığı başvurusu yapmak isteyen yabancı yatırımcılar için hazırlanmıştır. Mevduat yöntemi, taşınmaz satın alma zorunluluğu olmaksızın, belirli bir tutardaki yatırımın banka sistemi içinde 3 yıl süreyle tutulması esasına dayanan bir vatandaşlık başvuru yoludur.",
+        "Mevcut mevzuat kapsamında yabancı yatırımcı, en az 500.000 Amerikan Doları veya karşılığı döviz tutarındaki yatırımı, Türk vatandaşlığı başvurusu amacıyla Türkiye’de faaliyet gösteren bir bankada 3 yıl süreyle tutmayı taahhüt ederek istisnai vatandaşlık başvurusu sürecini başlatabilir. Bu yatırım türünde uygunluk tespiti Bankacılık Düzenleme ve Denetleme Kurumu, yani BDDK, tarafından yapılır.",
+        "Bu başlık altında mevduat hesabına yapılacak yatırım yoluyla vatandaşlık başvurusuna ilişkin detaylı bir behber sunulmuştur. İlgili yazı yalnızca bilgilendirme amacıyla hazırlanmış olup her başvuru; yatırımcının uyruğu, aile yapısı, belge durumu, banka uygulaması, para transfer yöntemi ve idari makamların değerlendirmesine göre farklılık gösterebilir. Bu nedenle başvuru öncesinde uzman bir avukattan hukuki destek alınması önemlidir."
       ],
-      "bullets": [
-        "Taşınmaz (gayrimenkul) satın alımı yöntemiyle yapılan yatırımlarda uygunluk belgesi Tapu Müdürlüğü süreçleri üzerinden alınır.",
-        "Banka mevduat hesabında para tutma yöntemiyle yapılan yatırımlarda uygunluk belgesinin düzenlenmesi ve yatırımın uygunluğunun tespiti bakımından ilgili kurum BDDK’dır.",
-        "BES (Bireysel Emeklilik Sistemi) üzerinden yapılan yatırımlarda ise uygunluk süreci ve uygunluk belgesi SEDDK tarafından yürütülür."
-      ],
+      "bullets": [],
       "imageAlt": "Mevduat yatırımı ile Türk vatandaşlığı",
       "cardValue": "BDDK Onaylı",
       "cardLabel": "Uygunluk Belgesi Süreci",
@@ -1951,38 +1960,38 @@
         {
           "num": "01",
           "icon": "🏦",
-          "title": "Yatırım Aracının Seçilmesi ve Sürecin Planlanması",
-          "desc": "Süreç, başvurucu adına hangi yatırım yönteminin kullanılacağının belirlenmesiyle başlar. Bu aşamada yatırımcının ülke durumu, aile yapısı, Türkiye’ye giriş-çıkış planı, belgelerin temin edilebilirliği, vekâletname ile işlem yapılabilme ihtimali ve yatırımın finansal/operasyonel detayları birlikte değerlendirilir. Yatırım yöntemi seçildikten sonra, seçilen yöntem bakımından “vatandaşlık başvurusunun kurucu unsuru” sayılan işlemler (ödeme akışı, resmi kayıtlar, şerhler, uygunluk belgesi başvurusu) en baştan doğru kurgulanır."
+          "title": "MEVDUAT YOLUYLA VATANDAŞLIK BAŞVURUSUNUN HUKUKİ ÇERÇEVESİ",
+          "desc": "Mevduat hesabı yoluyla vatandaşlık başvurusu, Türk Vatandaşlığı Kanunu’nun istisnai vatandaşlık hükümleri kapsamında değerlendirilir. Bu başvuru türünde vatandaşlık, doğrudan ve otomatik olarak kazanılmaz; yatırımın mevzuata uygun yapıldığının ilgili kurum tarafından tespit edilmesi, ikamet izni sürecinin tamamlanması, vatandaşlık dosyasının hazırlanması ve nihai idari değerlendirmenin olumlu sonuçlanması gerekir.\n\nBu yöntemde temel şart, yabancı yatırımcının Türkiye’de faaliyet gösteren bir bankaya en az 500.000 USD veya karşılığı döviz tutarında mevduat yatırması ve bu tutarı 3 yıl boyunca çekmeyeceğini taahhüt etmesidir. Yönetmelik, bu yatırım şartının BDDK tarafından tespit edilmesini öngörmektedir.\n\nMevduat yatırımı, gayrimenkul yatırımından farklı olarak tapu devri, ekspertiz raporu, satıcı incelemesi, ipotek/haciz kontrolü veya taşınmazın vatandaşlıkta daha önce kullanılıp kullanılmadığı gibi riskleri içermez. Buna karşılık bu yöntemde en kritik konu; para transferinin, döviz satışının, hesap açılışının, blokajın ve BDDK uygunluk belgesi sürecinin baştan doğru şekilde kurulmasıdır.\n\nMevduat yönteminde vatandaşlık süreci genel olarak şu aşamalardan oluşur:\n• Yatırımcı ve aile yapısının ön değerlendirmesi\n• Türkiye’de banka hesabı açılması\n• Yatırım tutarının bankaya transfer edilmesi\n• Döviz satış / TL mevduat / blokaj işlemlerinin yapılması\n• 3 yıl çekmeme taahhüdünün verilmesi\n• BDDK uygunluk belgesi sürecinin yürütülmesi\n• J bendi kısa dönem ikamet izni başvurusu\n• İstisnai vatandaşlık başvurusu\n• Başvurunun idari makamlarca değerlendirilmesi\n• Onay sonrası Türk kimlik kartı ve pasaport işlemleri"
         },
         {
           "num": "02",
           "icon": "💱",
-          "title": "Banka Mevduat Hesabına 500.000 USD Yatırım Yoluyla Vatandaşlık Başvurusu Süreci (3 Yıl Tutma Şartı)",
-          "desc": "Bu yöntemde yatırımcı, Türkiye’de faaliyet gösteren bir bankada kendi adına en az 500.000 USD veya karşılığı döviz tutarında mevduat hesabı açar ve bu tutarı 3 yıl boyunca çekmeyeceğini taahhüt eder. Uygulamada bankaca ilgili tutar üzerine 3 yıl süreli blokaj/taahhüt tesis edilir ve yatırımın vatandaşlık kriterlerine uygun biçimde kurgulanmasını takiben, mevduat yöntemine ilişkin yatırımın uygunluğunu tevsik eden Uygunluk Belgesi alınır (bu yöntem bakımından uygunluk tespit süreci BDDK çerçevesinde yürütülür). Uygunluk belgesinin temini sonrasında ise sırasıyla J bendi ikamet izni ve ardından istisnai vatandaşlık başvurusu (VAT-4) aşamasına geçilir. Bu yöntemde en kritik risk, paranın yatırılmış olmasına rağmen blokaj/taahhüt mekanizmasının hatalı kurulması veya para hareketinin doğru belgelendirilememesidir; 3 yıl dolmadan paranın çekilmesi veya blokajın kaldırılması yatırım şartını bozarak süreci doğrudan riske sokar.\n\nAvukatın Rolü:\n- Banka seçimi ve hesap açılışının koordinasyonu\n- Para transferi/döviz işlemlerinin doğru yöntemle yapılması\n- 3 yıllık blokaj-taahhüt metinlerinin ve banka yazışmalarının mevzuata uygun şekilde hazırlanması\n- Uygunluk belgesi sürecinin eksiksiz yürütülmesi\n- Sonrasındaki ikamet izni ile vatandaşlık başvurusu dosyasının tek merkezden yönetilmesi"
+          "title": "MEVDUAT YÖNTEMİNİN DİĞER YATIRIM YOLLARINDAN FARKI",
+          "desc": "Mevduat hesabı yöntemi, özellikle taşınmaz satın almak istemeyen, yatırımını daha sade ve banka sistemi üzerinden yönetmek isteyen yabancı yatırımcılar tarafından tercih edilmektedir. Bu yöntemde yatırımcı herhangi bir gayrimenkul almak zorunda değildir. Satıcı, tapu, ekspertiz, ipotek, proje ruhsatı veya taşınmazın hukuki durumu gibi gayrimenkul kaynaklı riskler bulunmaz.\n\nBununla birlikte mevduat yöntemi, “parayı bankaya yatırmak” kadar basit bir işlem olarak görülmemelidir. Vatandaşlık başvurusuna konu olacak mevduatın sıradan bir banka mevduatından farkı vardır. Bu tutar, vatandaşlık mevzuatına uygun şekilde yapılandırılmalı, gerekli banka belgeleri alınmalı, 3 yıl boyunca korunmalı ve BDDK nezdinde uygunluk tespitine konu edilmelidir.\n\nMevduat yönteminin avantajları şunlardır:\n• Taşınmaz satın alma zorunluluğu yoktur.\n• Satıcı, tapu, ekspertiz ve proje riski bulunmaz.\n• Yatırım bankacılık sistemi içinde takip edilir.\n• Süreç doğru kurulduğunda belge akışı daha öngörülebilirdir.\n• Yatırımcı, gayrimenkul seçimi yapmak zorunda kalmadan vatandaşlık sürecini başlatabilir.\n\nMevduat yönteminin dikkat edilmesi gereken yönleri ise şunlardır:\n• Yatırım 3 yıl boyunca çekilemez.\n• Blokaj / taahhüt mekanizması hatalı kurulursa başvuru riske girer.\n• Para transferinin kaynağı ve banka kayıtları net olmalıdır.\n• Bankanın iç uyum, yaptırım ve müşteri kabul politikaları süreci etkileyebilir.\n• 3 yıl dolmadan para çekilmesi veya blokajın kaldırılması vatandaşlık hakkını doğrudan riske sokabilir.\n\nBu nedenle mevduat yöntemi, operasyonel olarak sade görünse de belge ve banka süreci bakımından titiz yönetilmesi gereken bir vatandaşlık yoludur."
         },
         {
           "num": "03",
-          "icon": "📜",
-          "title": "Uygunluk Belgesi Sonrası: Vatandaşlık Dosyasının Hazırlanması",
-          "desc": "Uygunluk belgesi alındıktan sonra vatandaşlık başvurusu için gerekli belgeler hazırlanır. Evrak listesi genel olarak matbu bir çerçeveye sahip olsa da, başvurucunun ülkesi, aile üyesi sayısı, belgelerdeki özel durumlar ve ilgili ülke temsilciliğinin uygulaması nedeniyle her dosya kendi içinde farklılaşabilir. Bazı ülkelerin Türkiye’deki temsilcilikleri, vekâletname ile belge düzenleyebilirken; bazı temsilcilikler vekâletname kabul etmemekte veya belirli belgeleri düzenlememektedir. Bu nedenle dosya hazırlığı her başvuru için “standart listeyi sunmak”tan ziyade “dosyaya özgü riskleri tespit edip yönetmek” olarak ele alınmalıdır."
+          "icon": "🏦",
+          "title": "BANKA HESABI AÇILIŞI VE ÖN HAZIRLIK SÜRECİ",
+          "desc": "Mevduat yöntemiyle vatandaşlık başvurusu yapmak isteyen yabancı yatırımcı için ilk pratik aşama, Türkiye’de faaliyet gösteren bir bankada hesap açılmasıdır. Hesap açılışı, yalnızca teknik bir bankacılık işlemi değil; aynı zamanda vatandaşlık başvurusunun ilerleyen aşamalarını etkileyen temel adımdır.\n\nBankalar, hesap açılışı sırasında kendi iç uyum prosedürlerini uygular. Bu kapsamda yatırımcıdan genellikle pasaport, vergi kimlik numarası, adres bilgileri, iletişim bilgileri, meslek bilgileri, gelir veya fon kaynağına ilişkin açıklamalar ve gerektiğinde ilave belgeler talep edilebilir. Yatırımcının geldiği ülke, fonun gönderildiği banka, transferin açıklaması ve uluslararası yaptırım listeleri bankanın değerlendirmesinde önem taşıyabilir.\n\nBu aşamada dikkat edilmesi gereken en önemli husus, hesap açılışının baştan vatandaşlık başvurusuna uygun şekilde planlanmasıdır. Yatırımcı, normal bir kişisel banka hesabı açmış olsa bile, vatandaşlık başvurusuna konu edilecek tutar için ayrıca blokaj, taahhüt ve BDDK uygunluk süreci yürütülmelidir.\n\nHesap açılışında avukatın rolü özellikle şu başlıklarda önemlidir:\n• Yatırımcının vatandaşlık başvurusu için uygun banka sürecine yönlendirilmesi\n• Banka ile ön görüşmelerin yapılması\n• Hesap açılışı için gerekli belgelerin hazırlanması\n• Vekâletname ile işlem yapılabilecek alanlerin belirlenmesi\n• Bankanın talep ettiği uyum belgelerinin yatırımcıya açıklanması\n• Para transfer açıklamalarının ve belge akışının vatandaşlık dosyasına uygun kurgulanması\n\nBazı işlemler vekâletname ile yürütülebilse de bankaların uygulamaları farklılık gösterebilir. Bazı bankalar hesap açılışı veya imza süreçlerinde yatırımcının fiziken hazır bulunmasını isteyebilir. Bu nedenle yatırımcının Türkiye’ye geliş planı, hesap açılışı ve ikamet/vatandaşlık başvuru randevuları ile birlikte düşünülmelidir."
         },
         {
           "num": "04",
-          "icon": "🏛️",
-          "title": "İkamet İzni Aşaması (J Bendi)",
-          "desc": "Yatırım yoluyla vatandaşlık sürecinde uygulamada kritik aşamalardan biri, başvurucu ve varsa eşinin Türkiye’de geçerli bir “J bendi ikamet izni” alması gereğidir. Yapılan yatırım, yatırımcı ve ailesinin J bendi ikamet izni almasına imkân sağlar.\n\nBu başvurunun önemli bir özelliği şudur: J bendi ikamet izni başvurusu için yatırımcı ve varsa eşinin Türkiye’ye gelmesi gerekir. Çünkü ikamet izni sürecinde Göç İdaresi sistemine parmak izi verilerinin işlenmesi zorunludur. Bu nedenle önce parmak izi süreci tamamlanır, ardından gerekli evraklarla birlikte ilgili Göç İdaresi Müdürlüğü’ne ikamet izni başvurusu yapılır. İkamet izni başvurusuna da kişiler bizzat katılmalıdır.\n\nİkamet izni başvurusu yapıldıktan sonra, kişinin Türkiye’de vize/ikamet ihlali yoksa çoğu durumda onay sürecinin tamamlanmasını beklemek için Türkiye’de sürekli kalmasına gerek olmayabilir. İkamet izni onaylandığında bir sonraki aşamaya geçilir.\n\nVatandaşlık başvurusunun ön koşulu olan ikamet izninde bilinmesi gereken önemli bir ayrıntı ise yatırımcı ve eşinin ikamet izni alması bir ön koşul olarak belirlenmişken çocuklar için böyle bir şart bulunmamasıdır."
+          "icon": "💱",
+          "title": "PARA TRANSFERİ, DÖVİZ SATIŞI VE TL MEVDUAT SÜRECİ",
+          "desc": "Mevduat yoluyla vatandaşlık başvurusunda yatırım tutarının banka sistemi üzerinden izlenebilir olması gerekir. Bu nedenle para transferinin kaynağı, gönderici hesabı, alıcı hesabı, transfer açıklaması ve banka dekontları önemlidir.\n\nYatırımcı, yurtdışındaki kendi hesabından Türkiye’deki banka hesabına para transfer edebilir. Bazı durumlarda fonun yatırımcının yakın akrabasından veya şirketinden gelmesi söz konusu olabilir; ancak bu tür durumlarda fon kaynağının ve yatırımcı lehine işlem yapılmasının açıkça belgelenmesi gerekir. Bankalar, kara para aklamanın önlenmesi ve terörizmin finansmanıyla mücadele yükümlülükleri kapsamında ek açıklama ve belge talep edebilir.\n\nUygulamada, vatandaşlık başvurusuna konu döviz tutarları işlem öncesinde Türkiye’de faaliyet gösteren bir bankaya ve bu banka tarafından Merkez Bankası’na satılır; mevduat yöntemi bakımından satış sonucu elde edilen Türk Lirası tutar Türk Lirası mevduatta tutulur. Yönetmelik, döviz tutarlarının işlem öncesinde bankaya ve bankaca Merkez Bankasına satılacağını; mevduat yöntemi bakımından elde edilen TL tutarın Türk Lirası mevduatta 3 yıl süreyle tutulacağını belirtmektedir. Buradaki önemli husus 500.000 USD veya değerindeki dövizin Türk Lirası’na çevrilmek zorunda olduğu ve ilgili değerin 3 yıl boyunca Türk Lirası olarak mevduat hesabında kalması gerekliliğidir.\n\nBu aşamada genel akış şu şekilde özetlenebilir:\n• Yatırımcı, vatandaşlık başvurusuna konu fonu Türkiye’deki bankaya transfer eder.\n• Banka, yatırım tutarını vatandaşlık mevzuatına uygun döviz satış süreci kapsamında değerlendirir.\n• Döviz, ilgili uygulama çerçevesinde Türk Lirasına çevrilir.\n• Elde edilen Türk Lirası tutar, yatırımcı adına açılan mevduat hesabında tutulur.\n• Yatırımcı, bu tutarı 3 yıl boyunca çekmeyeceğine ilişkin taahhüt verir.\n• Banka, blokaj / taahhüt / hesap belgelerini düzenler.\n• BDDK uygunluk belgesi süreci için gerekli banka belgeleri hazırlanır.\n\nBu işlem zincirinde yapılan küçük bir hata, örneğin yanlış açıklamalı transfer, eksik dekont, hatalı döviz satış belgesi, eksik taahhüt metni veya başvuruya uygun olmayan hesap türü, uygunluk belgesi sürecini geciktirebilir veya riske sokabilir."
         },
         {
           "num": "05",
-          "icon": "🇹🇷",
-          "title": "Vatandaşlık Başvurusu (Nüfus Müdürlüğü / İstisnai Vatandaşlık)",
-          "desc": "İkamet izni alındıktan ve vatandaşlık başvurusu için gerekli evraklar tamamlandıktan sonra, vatandaşlık başvurusu aşamasına geçilir. Bu aşamada başvurucular (çocuklar hariç) başvuru sırasında Nüfus Müdürlüğü’nde bizzat bulunmalı ve gerekli evrakları imzalamalıdır. Uygulamada bu aşamada başvurucuların fotoğraf çekimi yapılır ve parmak izi verisi ikinci kez alınır. Evrakların teslim edilmesiyle birlikte vatandaşlık başvurusu tamamlanmış olur.\n\nBu noktada özellikle vurgulanması gereken husus şudur:\n- Başvurucu ve varsa eşi, ikamet izni ve vatandaşlık başvurusu aşamalarında iki kez fiziken Türkiye’de bulunarak başvuruya katılmak zorundadır.\n- Biyometrik işlemleri (parmak izi/fotoğraf) tamamlamak durumundadır.\n- Bu zorunluluk, seyahat planlaması açısından sürecin başında doğru şekilde organize edilmelidir."
+          "icon": "🔒",
+          "title": "3 YILLIK BLOKAJ VE TAAHHÜT MEKANİZMASI",
+          "desc": "Mevduat yöntemiyle vatandaşlık başvurusunun merkezinde 3 yıl tutma şartı yer alır. Yatırımcı, vatandaşlık başvurusuna esas mevduatı 3 yıl boyunca çekmeyeceğini ve mevzuata aykırı şekilde azaltmayacağını taahhüt eder.\n\nBu noktada bilinmesi gereken temel husus şudur: Vatandaşlık başvurusu yalnızca paranın bankaya yatırılmasıyla tamamlanmaz. Yatırım tutarının vatandaşlık amacıyla 3 yıl süreyle tutulacağının banka kayıtlarında, taahhüt belgelerinde ve uygunluk belgesi sürecinde açıkça gösterilmesi gerekir.\n\n3 yıllık süre içinde:\n• Ana yatırım tutarı korunmalıdır.\n• Blokaj / taahhüt kaldırılmamalıdır.\n• Hesap bakiyesi vatandaşlık için gerekli asgari şartın altına düşmemelidir.\n• Banka değişikliği, hesap devri veya fon hareketi gibi işlemler önceden hukuken değerlendirilmelidir.\n• Hesap üzerindeki haciz, tedbir, rehin veya benzeri kısıtlamalar başvuru açısından risk oluşturabilir.\n• Banka belgeleri ve hesap hareketleri vatandaşlık dosyasıyla uyumlu kalmalıdır.\n\nMevduatın vade sonunda yenilenmesi veya faiz/kâr payı doğurması mümkündür; ancak vatandaşlık başvurusuna esas ana tutarın korunması ve taahhüt şartının ihlal edilmemesi gerekir. Faiz veya kâr payı kullanımı bankanın ürün yapısına, hesap türüne ve vatandaşlık blokajının kapsamına göre ayrıca değerlendirilmelidir. Ancak genel olarak 500.000 USD karşılığı ana paranın hesapta korunması gerektiği, bu mevduata uygulanacak aylık ya da yıllık faiz ve getirinin değerlendirilebileceği, hesaptan çekilebileceği söylenebilir.\n\n3 yıl dolmadan yatırım tutarının çekilmesi, blokajın kaldırılması veya tutarın mevzuatta aranan seviyenin altına düşmesi, başvuru devam ediyorsa başvurunun reddedilmesine; vatandaşlık kazanılmışsa sonradan iptal riskinin doğmasına neden olabilir."
         },
         {
           "num": "06",
-          "icon": "💳",
-          "title": "Başvurunun Sonuçlanması ve Vatandaşlık Sonrası Kimlik / Pasaport İşlemleri",
-          "desc": "Vatandaşlık başvurusunun sonuçlanma süresi; nüfus birimlerinin iş yoğunluğu, başvurucunun ülke durumu, güvenlik incelemeleri ve evrakların açıklığı gibi faktörlere bağlı olarak dönemsel değişiklik gösterebilir. Uygulamada ortalama sonuçlanma süresi çoğunlukla 5–6 ay bandında ifade edilebilmektedir.\n\nVatandaşlık başvurusu onaylandıktan sonra, onay tarihinden itibaren Türk vatandaşlığını kazanan başvurucular ve aile bireyleri için Türk kimlik kartı ve pasaport başvurusu yapılır. Bu başvurular Türkiye’de nüfus müdürlüklerinden yapılabildiği gibi, gerekli durumlarda dış temsilcilikler aracılığıyla da gerçekleştirilebilir; bu işlemler için randevular avukatlar tarafından alınmaktadır. Pasaport ve kimlik başvurularında kişilerin bu işlemlerini Türkiye’deki Nüfus ve Vatandaşlık İşleri Müdürlüklerinden yapmaları tavsiye edilir; zira kimlik ve pasaportun hazırlanması ve vatandaşlara teslim süreçleri dış temsilciliklerde uzun sürebilmekteyken Türkiye’deki Nüfus ve Vatandaşlık İşleri Genel Müdürlüklerinde çok daha hızlı tamamlanabilmektedir.\n\nBu aşamada bilinmesi gereken önemli husus ise:\n- Pasaport başvurusunda başvurucuların tümünün (çocuklar dâhil) hazır bulunması gerekliliğidir."
+          "icon": "📜",
+          "title": "BDDK UYGUNLUK BELGESİ SÜRECİ",
+          "desc": "Mevduat yöntemiyle vatandaşlık başvurusunda yatırımın mevzuata uygun yapıldığını gösteren temel belge, BDDK tarafından yapılan uygunluk tespitidir. Uygulamada bu belge “Uygunluk Belgesi”, “uygunluk yazısı” veya “BDDK tespit yazısı” olarak adlandırılabilir.\n\nBDDK uygunluk sürecinin amacı, yatırımcının gerçekten mevzuatta öngörülen tutarda mevduat yatırıp yatırmadığını, bu tutarın doğru banka sistemi içinde tutulup tutulmadığını ve 3 yıl çekmeme şartına uygun taahhüt verilip verilmediğini tespit etmektir.\n\nVatandaşlık başvurusu yapan kişi 500.000 USD karşılığı tutarı kendi hesabına yatırır; kimlik tespiti, beyan formu, hesap ekstreleri, pasaport sureti ve döviz/efektifin yatırıldığını veya transfer edildiğini gösteren belgeler BDDK’ya iletilir. BDDK, şartları taşıyan başvurulara ilişkin tespiti Nüfus ve Vatandaşlık İşleri Genel Müdürlüğü ile Göç İdaresi Başkanlığı’na bildirir.\n\nBDDK sürecinde genellikle aşağıdaki belgeler önem taşır:\n• Pasaport sureti\n• Kimlik tespit belgeleri\n• Banka hesap açılış belgeleri\n• Hesap ekstresi\n• Para transfer dekontları\n• Döviz satış / dönüşüm belgeleri\n• 3 yıl çekmeme taahhüdü\n• Blokaj veya taahhüt yazısı\n• Banka tarafından düzenlenen başvuru yazıları\n• Vekâletname ile işlem yapılıyorsa uygun yetkileri içeren vekâletname\n\nUygunluk belgesi alınmadan vatandaşlık başvuru aşamasına sağlıklı biçimde geçilmemelidir. Çünkü vatandaşlık başvurusunun dayanağı, yatırımın ilgili kurum tarafından uygun bulunmuş olmasıdır. Taşınmaz Yatırım Tespit Belgesinin düzenlenmesiyle birlikte yatırım resmî olarak kabul edilmiş sayılır. Ardından yatırımcı ve varsa eşi Türkiye'ye geldikten sonra adlarına ikamet izni başvurusu yapılır ve vatandaşlık sürecine ilişkin işlemlere devam edilir. Uygunluk Belgesinin düzenlenmesinden sonraki vatandaşlık başvurusu işlemlerine ilişkin detaylı bilgi için [Vatandaşlık Başvuru Süreci](/citizenship/basvuru-sureci) başlıklı yazımızı inceleyebilirsiniz."
         }
       ]
     },
@@ -2109,368 +2118,922 @@
   },
   "gayrimenkul_fon_page": {
     "hero": {
-      "breadcrumbLabel": "Taşınmaz Satın Alımı ile Vatandaşlık",
+      "breadcrumbLabel": "Gayrimenkul Yatırım Fonu",
       "tag": "Yatırım Yoluyla Vatandaşlık",
-      "summary": "400.000 USD değerinde gayrimenkul alımından uygunluk belgesine kadar tapu incelemesi, DAB süreci ve resmi başvuru aşamalarının tamamını hukuki güvenceyle yönetiyoruz.",
-      "primaryCta": "Ücretsiz Danışın",
-      "secondaryCta": "Sık Sorulan Sorular"
-    },
-    "bolum1": {
-      "eyebrow": "Birinci Bölüm",
-      "title": "Taşınmazın Vatandaşlığa Uygunluğunun Araştırılması ve Tespiti",
-      "intro": [
-        "Vatandaşlık sürecinde en kritik aşama, satın alınacak gayrimenkule ilişkin satın alma öncesinde yapılan hukuki ve teknik incelemedir.",
-        "Bir taşınmazın fiyatı 400.000 USD olsa bile, vatandaşlık mevzuatında yer alan yatırım yoluyla vatandaşlık başvuru kılavuzuna uygun değilse vatandaşlık başvurusu reddedilir. Bu nedenle yatırım öncesinde, taşınmazın vatandaşlığa uygunluğunun mutlaka araştırılması ve resmi olarak doğrulanması gerekmektedir.",
-        "Bu incelemeyi tam anlamıyla ancak avukat yapabilir. Avukat, Web Tapu üzerinden satın alınacak tapunun incelenmesi için randevu talep ederek tapu idaresinde ve belediye nezdinde bizzat incelemelerini gerçekleştirebilir."
+      "titleLines": [
+        "Gayrimenkul Yatırım Fonu ile",
+        "Türk Vatandaşlığı"
       ],
-      "tapu": {
-        "eyebrow": "1.1 – Tapu Hukuki Durum İncelemesi",
-        "title": "Tapu Kaydı Detaylı İnceleme",
-        "items": [
-          {
-            "num": "1.1.1",
-            "title": "İpotek Kaydı",
-            "paragraphs": [
-              "Tapu üzerine şerh edilmiş bir ipotek var mı?",
-              "Satıcının şirket olduğu durumlarda, projeler genellikle banka kredisi ile finanse edildiğinden taşınmaz üzerinde banka ipoteği bulunabilmektedir. Vatandaşlık başvurusu açısından, satış işlemi gerçekleştirilmeden önce söz konusu banka ipoteğinin mutlaka terkin (fek) edilmesi gerekmektedir."
-            ]
-          },
-          {
-            "num": "1.1.2",
-            "title": "Haciz Kaydı",
-            "paragraphs": [
-              "Tapu üzerinde bir haciz var mı?",
-              "Haciz; taşınmaz sahibinin borçları nedeniyle icra müdürlüğü tarafından konulan kısıtlamadır."
-            ],
-            "bullets": [
-              "Vergi ve emlak borcu kaynaklı hacizler",
-              "Şirket veya şahsa olan borca ilişkin icra takibi ya da fatura borçlarından kaynaklanan hacizler"
-            ]
-          },
-          {
-            "num": "1.1.3",
-            "title": "Diğer Şerhler",
-            "paragraphs": [
-              "Şerh; tapuya işlenen ve üçüncü kişilere karşı ileri sürülebilen hak veya kısıtlamalardır. Bu tür kayıtlar devir işlemini tamamen engelleyebilir ya da özel izin gerektireceğinden, tapu alımından önce mutlaka uzman bir avukat tarafından incelenmelidir."
-            ]
-          },
-          {
-            "num": "1.1.4",
-            "title": "Daha Önce Vatandaşlık İçin Kullanılmış mı?",
-            "paragraphs": [
-              "Türk vatandaşlığı kapsamında satın alınan taşınmazlara genellikle 3 yıl süreyle satış yasağı şerhi konulmaktadır. Aynı taşınmaz ikinci kez vatandaşlık başvurusunda kullanılamaz."
-            ],
-            "bullets": [
-              "Taşınmazın daha önce vatandaşlık dosyasına konu olup olmadığı",
-              "3 yıllık satış yasağı şerhinin bulunup bulunmadığı"
-            ]
-          }
-        ]
-      },
-      "sherhler": {
-        "eyebrow": "Şerh Türleri",
-        "title": "Dikkat Edilmesi Gereken Şerh Çeşitleri",
-        "items": [
-          {
-            "title": "Satış Vaadi Şerhi",
-            "desc": "Taşınmazın önceden başka bir kişiye noterden satıldığını ve tapunun ileriki bir tarihte devredileceğini gösteren şerhtir."
-          },
-          {
-            "title": "İhtiyati Tedbir Şerhi",
-            "desc": "Taşınmaz malikinin devam eden bir davası nedeniyle satışın engellenmiş olabileceğini gösterir."
-          },
-          {
-            "title": "Kat Karşılığı İnşaat Sözleşmesi Şerhi",
-            "desc": "Taşınmaz inşaatının hâlâ devam ettiğini ve inşaatın belirli bir aşamaya geldiğinde tapuların devredilebileceğini gösteren sözleşmeye işaret eder."
-          },
-          {
-            "title": "Mahkeme Tedbir Kararı",
-            "desc": "Mahkeme tarafından verilen ve taşınmazın satışını veya devrini geçici olarak durduran karardır."
-          },
-          {
-            "title": "İflas Şerhi",
-            "desc": "Taşınmaz sahibinin iflas etmiş olması nedeniyle tapuya konulan kayıttır."
-          },
-          {
-            "title": "Kamulaştırma Şerhi",
-            "desc": "Devletin kamu yararı nedeniyle taşınmazı kamulaştırma sürecinde olduğunu gösteren kayıttır."
-          },
-          {
-            "title": "Kültür Varlığı / Sit Alanı Kaydı",
-            "desc": "Taşınmazın kültürel veya tarihî değeri bulunduğunu ve koruma altında olduğunu gösterir."
-          },
-          {
-            "title": "Askerî Yasak Bölge Kaydı",
-            "desc": "Taşınmazın askerî güvenlik açısından sınırlı bölgede bulunduğunu gösterir."
-          }
-        ]
-      },
-      "tapuTuru": {
-        "eyebrow": "1.2 – Tapu Türünün Vatandaşlığa Uygunluğu",
-        "title": "Kat Mülkiyeti / Kat İrtifakı Zorunluluğu",
-        "paragraphs": [
-          "Tapunun niteliği, vatandaşlık başvurusu açısından mutlaka kontrol edilmelidir. Taşınmazın kat mülkiyetli veya kat irtifaklı olması esastır.",
-          "Boş arsa satın almak, tek başına vatandaşlık için uygun kabul edilmez."
-        ],
-        "arsaTitle": "Arsa ile Başvuru İçin Zorunlu Koşullar",
-        "arsaBullets": [
-          "Arsa üzerinde ruhsatlı bir projenin bulunması",
-          "İnşaat için belediye onaylarının alınmış olması",
-          "Kat irtifakının kurulmuş olması",
-          "Bağımsız bölümlerin projede açıkça belirlenmiş olması",
-          "Ödemenin banka üzerinden yapılıp DAB ile ispatlanması",
-          "Değerleme raporunun vatandaşlık için gerekli asgari tutarı karşılaması"
-        ]
-      },
-      "noter": {
-        "eyebrow": "1.3 – Noter Sözleşmesiyle Vatandaşlık",
-        "title": "Taksitli Satışlarda Tercih Edilen Yöntem",
-        "paragraphs": [
-          "Taşınmazın mutlaka bir proje kapsamında olması gerekmektedir. İnşaatın ruhsatlı olması ve kat irtifakının kurulmuş bulunması zorunludur.",
-          "Değerleme raporunun en az 400.000 USD tutarını karşılaması zorunludur.",
-          "Noter sözleşmesi yöntemi, uygulamada genellikle taksitli satışlarda tercih edilmektedir.",
-          "Özellikle inşaatı devam eden projelerde, bazı şirketler tapu devrini teslim aşamasına kadar gerçekleştirmediğinden bu yöntem kullanılmaktadır.",
-          "Kat irtifakı tapuları şirket adına tescil edildikten sonra noter satış sözleşmesi imzalanabilir."
-        ]
-      },
-      "ekspertiz": {
-        "eyebrow": "1.4 – Ekspertiz Ön Değerlendirmesi",
-        "title": "Değerleme Raporu ve Geçerli Tutar Hesaplama",
-        "paragraphs": [
-          "Tek bir taşınmazla vatandaşlık başvurusu yapılıyorsa; GEDAŞ tarafından, satıcının e-Devlet girişi üzerinden Web Tapu aracılığıyla çevrimiçi değerleme raporu talep edilir.",
-          "Taşınmazın değeri asgari yatırım tutarını karşılıyorsa, raporun son sayfasında uygunluk ibaresi yer alır.",
-          "Birden fazla taşınmazla başvuru yapılması hâlinde her taşınmaz için ayrı değerleme raporu düzenlenir.",
-          "Değerleme raporu yalnızca vatandaşlık amacıyla satın alınan taşınmazlar için zorunludur."
-        ],
-        "formula": {
-          "title": "Geçerli Yatırım Tutarı Hesaplama Formülü",
-          "desc": "DAB tutarı değerleme raporundan düşükse DAB tutarı esas alınır. Değerleme raporu daha düşükse rapor tutarı esas alınır. Geçerli tutar: ikisinden hangisi daha düşükse odur."
-        }
-      }
+      "highlightLineIndex": 0,
+      "summary": "GYF veya GSYF katılma payı alarak SPK onaylı Türk vatandaşlığı sürecinizi yönetiyoruz.",
+      "primaryCta": "Ücretsiz Danışın",
+      "secondaryCta": "Sık Sorulan Sorular",
+      "imageAlt": "Gayrimenkul Yatırım Fonu ile Türk Vatandaşlığı"
     },
-    "bolum2": {
-      "eyebrow": "İkinci Bölüm",
-      "title": "Yabancıya Tapu Satışı ve Ödeme Süreçleri (DAB ve Banka İşlemleri)",
+    "stats": [
+      {
+        "value": "500K USD",
+        "label": "Minimum Yatırım",
+        "sub": "veya karşılığı döviz"
+      },
+      {
+        "value": "3 Yıl",
+        "label": "Elde Tutma Şartı",
+        "sub": "MKK nezdinde blokaj"
+      },
+      {
+        "value": "SPK",
+        "label": "Yetkili Kurum",
+        "sub": "Sermaye Piyasası Kurulu"
+      },
+      {
+        "value": "4-5 Ay",
+        "label": "Ortalama Süre",
+        "sub": "başvuru sonuçlanması"
+      }
+    ],
+    "intro": {
+      "eyebrow": "Süreç Hakkında",
+      "title": "Fon Yatırımı, Uygunluk Belgesi ve Vatandaşlık Başvuru Süreci",
+      "paragraphs": [
+        "Türk vatandaşlığının yatırım yoluyla, istisnai yoldan kazanılması kapsamında başvurulabilecek yöntemlerden biri de kanunda öngörülen şekil ve şartlara uygun olarak gayrimenkul yatırım fonu veya girişim sermayesi yatırım fonu katılma payı satın alınmasıdır. Türk Vatandaşlığı Kanununun Uygulanmasına İlişkin Yönetmelik madde 20/2-e uyarınca, en az 500.000 Amerikan Doları veya karşılığı döviz tutarında gayrimenkul yatırım fonu katılma payı ya da girişim sermayesi yatırım fonu katılma payını en az üç yıl elinde tutmak şartıyla satın aldığı Sermaye Piyasası Kurulu tarafından tespit edilen yabancı yatırımcılar, diğer başvuru şartlarını da sağlamaları hâlinde istisnai yoldan Türk vatandaşlığı başvurusunda bulunabilmektedir.",
+        "Bu başvuru yolu, doğrudan taşınmaz satın almak istemeyen ancak Türkiye’de sermaye piyasası araçları üzerinden yatırım yapmak isteyen yabancı yatırımcılar açısından önemli bir alternatiftir. Gayrimenkul yatırım fonları, gayrimenkul projelerine ve gayrimenkule dayalı varlıklara yatırım yapılmasına imkân tanırken; girişim sermayesi yatırım fonları, girişim şirketlerine ve büyüme potansiyeli taşıyan şirketlere yatırım yapılmasına olanak sağlar.",
+        "Ancak fon katılma payı yoluyla vatandaşlık başvurusu, yalnızca bir yatırım fonu satın alınmasından ibaret değildir. Fonun vatandaşlık başvurusuna uygun nitelikte olması, yatırım tutarının mevzuatta öngörülen asgari eşiği karşılaması, döviz satış ve Türk Lirası işlem süreçlerinin usulüne uygun yapılması, katılma paylarının Merkezi Kayıt Kuruluşu nezdinde vatandaşlık blokaj alt hesabında bloke edilmesi, üç yıl boyunca elde tutulması ve Sermaye Piyasası Kurulundan uygunluk belgesi alınması gerekir.",
+        "Bu nedenle GYF veya GSYF katılma payı yoluyla Türk vatandaşlığı başvurusu; sermaye piyasası mevzuatı, yatırım fonu yapısı, saklama ve kayıt sistemi, döviz satış işlemleri, blokaj süreci, uygunluk belgesi ve vatandaşlık başvurusu aşamalarının birlikte yürütülmesini gerektiren çok aşamalı bir süreçtir.",
+        "Bu rehber, gayrimenkul yatırım fonu veya girişim sermayesi yatırım fonu katılma payı satın alarak Türk vatandaşlığına başvurmak isteyen yabancı yatırımcılara yönelik olarak başvuru şartlarını, fon yatırımı sürecini, uygunluk belgesi aşamasını, üç yıllık elde tutma yükümlülüğünü ve başvuruda dikkat edilmesi gereken temel hususları açıklamak amacıyla hazırlanmıştır.",
+        "Rehber yalnızca bilgilendirme amacıyla hazırlanmıştır. Hukuki danışmanlık için lütfen uzman bir avukattan destek alınız."
+      ],
+      "bullets": [],
+      "imageAlt": "Gayrimenkul yatırım fonu",
+      "cardValue": "SPK Onaylı",
+      "cardLabel": "Uygunluk Belgesi",
+      "badgeValue": "500K $",
+      "badgeLabel": "Minimum Eşik"
+    },
+    "process": {
+      "eyebrow": "Adım Adım Süreç",
+      "title": "Katılma Payı ile Türk Vatandaşlığı Yatırım Adımları",
+      "description": "Gayrimenkul Yatırım Fonu (GYF) veya Girişim Sermayesi Yatırım Fonu (GSYF) yoluyla vatandaşlık başvurusunda 11 bölümden oluşan tüm adımlar:",
       "items": [
         {
-          "num": "2.1",
-          "title": "Yabancı Alıcının Banka Hesabı",
-          "paragraphs": [
-            "Türkiye'de yabancı alıcının banka hesabı açması hukuken zorunlu değildir. Ancak özellikle ikinci el satışlarda ve vatandaşlık yatırımı kapsamında hesap açılması şiddetle tavsiye edilir.",
-            "Sebep: Döviz Alım Belgesi (DAB), yatırımın banka sistemi üzerinden gerçekleştiğini gösteren temel belgedir."
-          ]
+          "num": "01",
+          "icon": "⚖️",
+          "title": "BİRİNCİ BÖLÜM - FON YATIRIMI YOLUYLA VATANDAŞLIK BAŞVURUSUNUN HUKUKİ DAYANAĞI",
+          "desc": "Türk vatandaşlığının yatırım yoluyla kazanılması, 5901 sayılı Türk Vatandaşlığı Kanunu ve Türk Vatandaşlığı Kanununun Uygulanmasına İlişkin Yönetmelik kapsamında düzenlenmektedir. Yönetmelik madde 20’de, belirli yatırım şartlarını sağlayan yabancıların istisnai yoldan Türk vatandaşlığı kazanabilmesine imkân tanınmıştır.\n\nBu yatırım türlerinden biri, gayrimenkul yatırım fonu veya girişim sermayesi yatırım fonu katılma payı satın alınmasıdır. Yönetmelik madde 20/2-e kapsamında, en az 500.000 Amerikan Doları veya karşılığı döviz tutarında GYF ya da GSYF katılma payını en az üç yıl elinde tutmak şartıyla satın alan ve bu durumu Sermaye Piyasası Kurulu tarafından tespit edilen yabancı yatırımcılar, yatırım yoluyla vatandaşlık başvurusu yapabilir.\n\nBu başvuru yolunda yetkili kurum Sermaye Piyasası Kuruludur. Başvuru sahibinin vatandaşlık sürecine geçebilmesi için, yatırım şartının sağlandığı SPK tarafından uygunluk belgesi ile tespit edilmelidir. Uygunluk belgesi alınmadan vatandaşlık başvurusunun yatırım şartı tamamlanmış kabul edilmez."
         },
         {
-          "num": "2.2",
-          "title": "Döviz Alım Belgesi (DAB) Süreci",
-          "paragraphs": [],
-          "steps": [
-            "Yabancı alıcı, Türkiye'de hesabının bulunduğu bankaya gider.",
-            "Satın alma bedelini bankaya yatırır.",
-            "Banka dövizi Türk Lirasına çevirir.",
-            "Banka, Döviz Alım Belgesi (DAB) düzenler."
-          ],
-          "bullets": [
-            "Alıcının adı ve pasaport numarası",
-            "Satın alınacak taşınmaza ilişkin bilgiler",
-            "Döviz tutarı ve Türk Lirası karşılığı"
-          ]
+          "num": "02",
+          "icon": "🏢",
+          "title": "İKİNCİ BÖLÜM - GAYRİMENKUL YATIRIM FONU VE GİRİŞİM SERMAYESİ YATIRIM FONU NEDİR?",
+          "desc": "Gayrimenkul yatırım fonu, yatırımcılardan toplanan kaynakların gayrimenkule, gayrimenkul projelerine veya gayrimenkule dayalı varlıklara yönlendirilmesini sağlayan sermaye piyasası aracıdır. Bu fonlar, yatırımcının doğrudan taşınmaz satın almasına gerek olmaksızın gayrimenkul piyasasına dolaylı şekilde yatırım yapmasına imkân tanır.\n\nGirişim sermayesi yatırım fonu ise girişim şirketlerine, büyüme potansiyeli taşıyan işletmelere veya belirli yatırım stratejileri kapsamında sermaye ihtiyacı bulunan şirketlere yatırım yapılmasını sağlayan fon yapısıdır. Bu fonlar, genellikle daha yüksek büyüme potansiyeli taşıyan ancak aynı zamanda daha yüksek risk barındırabilen yatırım alanlarına yönelir.\n\nVatandaşlık başvurusu bakımından her iki fon türünde de temel şart, katılma paylarının mevzuatta öngörülen asgari tutarı karşılaması ve en az üç yıl süreyle elde tutulmasıdır. Ancak yatırım yapılacak fonun niteliği, likidite yapısı, risk profili, fon içtüzüğü, ihraç belgesi, geri alım şartları ve yatırımcının fondan çıkış imkânları başvuru öncesinde dikkatle incelenmelidir.\n\nFon yatırımı vatandaşlık başvurusu için uygun olsa dahi, yatırımcının mali hedefleri, risk algısı ve üç yıl boyunca yatırımda kalma zorunluluğu ayrıca değerlendirilmelidir."
         },
         {
-          "num": "2.3",
-          "title": "DAB Sonrası Ödeme Yönetimi",
-          "paragraphs": [
-            "DAB belgesindeki Türk Lirası karşılığı için alıcı bankasına talimat verebilir."
-          ],
-          "subItems": [
-            {
-              "title": "Seçenek 1 – Havale / Transfer",
-              "bullets": [
-                "Banka tutarı doğrudan satıcının hesabına transfer eder."
-              ]
-            },
-            {
-              "title": "Seçenek 2 – Bloke Çek",
-              "bullets": [
-                "Banka satış bedeli kadar bloke çek düzenler.",
-                "Çek satış günü satıcıya ibraz edilir.",
-                "Satıcı çeki bankadan tahsil eder."
-              ]
-            }
-          ]
+          "num": "03",
+          "icon": "💵",
+          "title": "ÜÇÜNCÜ BÖLÜM - ASGARİ YATIRIM TUTARI",
+          "desc": "GYF veya GSYF katılma payı yoluyla Türk vatandaşlığı başvurusunda asgari yatırım tutarı 500.000 Amerikan Doları veya karşılığı döviz tutarıdır. Bu tutar, fon katılma paylarının satın alınması aşamasında sağlanmalıdır.\n\nYatırım tutarının tespitinde, döviz satış işlemi, Türk Lirası karşılığı tutar, fon katılma payı alımı ve katılma paylarının Merkezi Kayıt Kuruluşu nezdinde kaydi olarak izlenmesi birlikte değerlendirilir.\n\nFon katılma paylarının değeri, yatırım yapıldıktan sonra piyasa koşullarına, fon portföyündeki varlıkların değerine veya döviz kurundaki değişikliklere bağlı olarak değişebilir. Yatırımcının kendi iradesiyle katılma paylarını satmaması, devretmemesi veya azaltmaması şartıyla, sonradan değer düşüşü yaşanması her durumda asgari yatırım şartının kaybedildiği anlamına gelmez.\n\nAncak yatırımcının kendi talebiyle fon katılma paylarını satması, devretmesi, blokajı kaldırması veya yatırım tutarını azaltması vatandaşlık başvurusu bakımından ciddi risk oluşturur. Bu nedenle fon yatırımı yapılmadan önce üç yıllık elde tutma şartı ve yatırımın likidite özellikleri dikkatle değerlendirilmelidir."
         },
         {
-          "num": "2.4",
-          "title": "Satıcının Şirket Olması Durumu",
-          "paragraphs": [
-            "DAB işlemi hem alıcı hem de satıcı şirket tarafından yapılabilir."
-          ],
-          "subItems": [
-            {
-              "title": "Senaryo A – Alıcı DAB Yaparsa",
-              "bullets": [
-                "Alıcı bankada DAB işlemini tamamlar ve satıcıya TL transferi gerçekleştirir."
-              ]
-            },
-            {
-              "title": "Senaryo B – Şirket DAB Yaparsa",
-              "bullets": [
-                "Şirket, yabancı alıcı adına DAB düzenler."
-              ]
-            }
-          ]
+          "num": "04",
+          "icon": "💱",
+          "title": "DÖVİZ SATIŞ İŞLEMİ VE FON ALIMI",
+          "desc": "Fon katılma payı yoluyla vatandaşlık başvurusunda, ilgili döviz tutarının işlem öncesinde Türkiye’de faaliyet gösteren bir bankaya satılması ve bankaca Türkiye Cumhuriyet Merkez Bankasına aktarılması gerekmektedir. Bu işlem sonucunda elde edilen Türk Lirası tutar ile GYF veya GSYF katılma payı satın alınır.\n\nBu nedenle yatırımcı, fon alımından önce döviz satış işleminin usulüne uygun şekilde yapıldığından emin olmalıdır. Döviz alım belgesi, işlem açıklamaları, pasaport veya yabancı kimlik numarası bilgileri ve işlem tutarı başvuru dosyası bakımından önem taşır.\n\nDöviz satış işlemi tamamlandıktan sonra işlemden vazgeçilmesi veya döviz satışının iptal edilmesi mümkün olmayabilir. Bu nedenle yatırımcı, döviz dönüşüm işlemini yapmadan önce fon seçimini, yatırım stratejisini, hukuki sonuçları ve vatandaşlık başvurusu bakımından uygunluğu netleştirmelidir.\n\nFon alımı sürecinde banka, yatırım kuruluşu, portföy yönetim şirketi, Merkezi Kayıt Kuruluşu ve Sermaye Piyasası Kurulu süreçleri birbiriyle bağlantılıdır. Bu nedenle işlemlerin hatasız ilerleyebilmesi için yatırım, hukuki danışmanlık ve finansal danışmanlık süreçleri koordineli yürütülmelidir."
         },
         {
-          "num": "2.5",
-          "title": "Pasaport Tercümesi ve Noter Onayı",
-          "paragraphs": [],
-          "bullets": [
-            "Pasaport yeminli tercüman tarafından çevrilir.",
-            "Çeviri noter tasdikinden geçirilir.",
-            "Tapu müdürlüğü tercümesiz pasaport kabul etmemektedir."
-          ]
+          "num": "05",
+          "icon": "🔒",
+          "title": "BEŞİNCİ BÖLÜM - MKK KAYDI VE VATANDAŞLIK BLOKAJ ALT HESABI",
+          "desc": "GYF veya GSYF katılma paylarının vatandaşlık başvurusuna esas gösterilebilmesi için katılma paylarının Merkezi Kayıt Kuruluşu nezdinde kaydi olarak takip edilmesi ve vatandaşlık blokaj alt hesabında bloke edilmesi gerekir.\n\nBu blokaj, yatırımcının katılma paylarını en az üç yıl süreyle elde tutacağını gösteren temel mekanizmadır. Blokaj işlemi, ilgili yatırım kuruluşu aracılığıyla MKK nezdinde gerçekleştirilir. Katılma paylarının yatırımcı hesabına aktarılması ve vatandaşlık başvurusu kapsamında bloke edilmesi, uygunluk belgesi değerlendirmesinin en önemli unsurlarındandır.\n\nBlokaj işlemi yatırımcının talebiyle tesis edilir. Yatırımcı kendi iradesiyle blokajı kaldırabilir; ancak bu durum vatandaşlık başvurusu bakımından başvurunun iptaline veya yatırım şartının kaybedildiğinin ilgili kurumlara bildirilmesine yol açabilir.\n\nBu nedenle yatırımcı, üç yıllık süre boyunca fon katılma payları üzerinde satış, devir, rehin, haciz, ihtiyati tedbir, ihtiyati haciz veya mülkiyet hakkını sınırlayabilecek herhangi bir işlem yapılmaması gerektiğini bilmelidir."
+        },
+        {
+          "num": "06",
+          "icon": "📅",
+          "title": "ALTINCI BÖLÜM - ÜÇ YILLIK ELDE TUTMA ŞARTI",
+          "desc": "GYF veya GSYF katılma payı yoluyla Türk vatandaşlığı başvurusunun temel şartlarından biri, katılma paylarının en az üç yıl süreyle elde tutulmasıdır. Bu süre, asgari yatırım şartının sağlandığı ve katılma paylarının uygun şekilde bloke edildiği tarih esas alınarak değerlendirilir.\n\nÜç yıllık süre içinde yatırımcı, vatandaşlık başvurusuna esas gösterdiği katılma paylarını kendi iradesiyle azaltmamalı, satmamalı, devretmemeli veya blokajı kaldırmamalıdır. Katılma paylarının üzerinde mülkiyet hakkını sınırlayan bir takyidat oluşması da başvuru bakımından risk yaratabilir.\n\nFonun değerinde piyasa koşulları nedeniyle düşüş yaşanması, kur değişiklikleri veya fon içtüzüğü kapsamında yatırımcının iradesi dışında gerçekleşen bazı değer hareketleri, başvuru şartının otomatik olarak kaybedildiği anlamına gelmeyebilir. Ancak yatırımcının aktif iradesiyle yapılan azaltıcı veya devredici işlemler başvuru açısından sorun oluşturur.\n\nBu nedenle üç yıllık süre boyunca yatırımın düzenli şekilde takip edilmesi ve MKK kayıtlarında vatandaşlık blokajının korunması gerekir."
+        },
+        {
+          "num": "07",
+          "icon": "📜",
+          "title": "YEDİNCİ BÖLÜM - UYGUNLUK BELGESİ NEDİR?",
+          "desc": "Uygunluk belgesi, yabancı yatırımcının Türk vatandaşlığı başvurusu için aranan asgari yatırım şartını sağladığını gösteren resmi belgedir. GYF veya GSYF katılma payı yoluyla vatandaşlık başvurularında bu belge Sermaye Piyasası Kurulu tarafından düzenlenir.\n\nSPK tarafından düzenlenen uygunluk belgesi, başvuru sahibinin ilgili fon katılma paylarını mevzuatta öngörülen tutar ve süre şartına uygun şekilde satın aldığını ve başvuruya esas yatırım şartını sağladığını gösterir.\n\nBu kapsamda uygunluk belgesi değerlendirmesinde genel olarak şu hususlar incelenir:\n• Başvuru sahibinin kimlik ve pasaport bilgileri,\n• Başvuru sahibine ait MKK sicil numarası,\n• Satın alınan GYF veya GSYF katılma paylarının türü ve tutarı,\n• Katılma paylarının vatandaşlık blokaj alt hesabında bloke edilip edilmediği,\n• Asgari 500.000 Amerikan Doları karşılığı yatırım şartının sağlanıp sağlanmadığı,\n• Döviz satış ve Türk Lirası ile fon alım sürecinin mevzuata uygun yürütülüp yürütülmediği,\n• Katılma paylarının en az üç yıl elde tutulmasına ilişkin şartın sağlanıp sağlanmadığı,\n• Katılma payları üzerinde mülkiyet hakkını sınırlayan takyidat bulunup bulunmadığı.\n\nUygunluk belgesi düzenlendikten sonra başvuru sahibi kısa dönem ikamet izni ve vatandaşlık başvurusu aşamalarına geçebilir."
+        },
+        {
+          "num": "08",
+          "icon": "📂",
+          "title": "SEKİZİNCİ BÖLÜM - UYGUNLUK BELGESİ BAŞVURUSU İÇİN GEREKLİ BELGELER",
+          "desc": "GYF veya GSYF katılma payı yoluyla uygunluk belgesi başvurusunda genel olarak aşağıdaki belgeler hazırlanır:\n• Başvuru sahibi yabancı gerçek kişiye ait pasaport fotokopisi,\n• Başvuru sahibinin adı, soyadı, doğum tarihi, yabancı kimlik numarası, adres ve iletişim bilgilerini içeren başvuru dilekçesi,\n• Başvuru sahibine ait MKK sicil numarası,\n• Satın alınan GYF veya GSYF katılma paylarına ilişkin yatırım bilgileri,\n• Katılma paylarının MKK nezdinde vatandaşlık blokaj alt hesabında bloke edildiğini gösteren belge,\n• Döviz satış işlemi yapılmış ise döviz alım belgesi,\n• Fon alım işlemini ve yatırım tutarını gösteren yatırım kuruluşu belgeleri,\n• Gerekli görülmesi hâlinde banka ve yatırım kuruluşu yazıları,\n• Başvuru vekil aracılığıyla yapılacaksa özel yetki içeren vekâletname.\n\nBelgelerde başvuru sahibinin kimlik bilgileri, pasaport bilgileri, MKK sicil numarası, yatırım tutarı, fon bilgileri ve blokaj durumu açık ve tutarlı şekilde yer almalıdır.\n\nEksik belge, hatalı işlem açıklaması, MKK kaydında uyumsuzluk, blokajın yanlış tesis edilmesi veya döviz satış sürecindeki eksiklikler uygunluk belgesi başvurusunun gecikmesine ya da reddedilmesine neden olabilir."
+        },
+        {
+          "num": "09",
+          "icon": "⚖️",
+          "title": "DOKUZUNCU BÖLÜM - FON SEÇİMİNDE DİKKAT EDİLMESİ GEREKEN HUSUSLAR",
+          "desc": "Vatandaşlık başvurusu amacıyla fon yatırımı yapılırken yalnızca asgari tutarın sağlanması yeterli değildir. Yatırım yapılacak fonun yapısı ve risk profili de dikkatle incelenmelidir.\n\nFon seçimi yapılırken özellikle şu hususlar değerlendirilmelidir:\n• Fonun gayrimenkul yatırım fonu mu yoksa girişim sermayesi yatırım fonu mu olduğu,\n• Fonun vatandaşlık başvurusu bakımından uygun işlem altyapısına sahip olup olmadığı,\n• Fon katılma paylarının MKK nezdinde izlenip izlenmediği,\n• Fon katılma paylarının vatandaşlık blokaj alt hesabına alınabilir olup olmadığı,\n• Fonun likidite koşulları,\n• Fonun geri alım ve çıkış şartları,\n• Fonun risk profili,\n• Fonun portföy yapısı,\n• Fonun geçmiş performansı,\n• Fon içtüzüğü ve ihraç belgesinde yer alan hükümler,\n• Üç yıllık elde tutma süresi boyunca yatırımcı açısından doğabilecek finansal sonuçlar.\n\nVatandaşlık başvurusu için uygun olan bir fon, yatırımcının kişisel risk profiline uygun olmayabilir. Bu nedenle fon seçimi yalnızca hukuki açıdan değil, finansal ve yatırım danışmanlığı açısından da değerlendirilmelidir."
+        },
+        {
+          "num": "10",
+          "icon": "⚠️",
+          "title": "ONUNCU BÖLÜM - BAŞVURU RİSKLERİ VE DİKKAT EDİLMESİ GEREKEN HUSUSLAR",
+          "desc": "GYF veya GSYF katılma payı yoluyla vatandaşlık başvurularında en önemli risklerden biri, fon yatırımı ve blokaj işlemlerinin teknik olarak hatalı yapılmasıdır. Katılma paylarının MKK nezdinde doğru hesaba alınmaması, vatandaşlık blokaj alt hesabında bloke edilmemesi veya yatırım tutarının asgari şartı karşılamaması başvuru açısından ciddi sorun yaratabilir.\n\nBaşvuru açısından risk oluşturabilecek bazı durumlar şunlardır:\n• Yatırım tutarının asgari 500.000 Amerikan Doları karşılığını sağlamaması,\n• Döviz satış işleminin usulüne uygun yapılmaması,\n• Fon katılma paylarının yanlış hesapta izlenmesi,\n• MKK vatandaşlık blokaj alt hesabının oluşturulmaması,\n• Katılma paylarının üç yıl dolmadan satılması veya devredilmesi,\n• Blokajın yatırımcı talebiyle kaldırılması,\n• Katılma payları üzerinde rehin, haciz, ihtiyati tedbir veya benzeri takyidat oluşması,\n• Fon seçiminin yatırımcının risk profiline uygun olmaması,\n• Vekâletnamede gerekli özel yetkilerin bulunmaması,\n• Vatandaşlık dosyasındaki kişisel belgelerde eksiklik veya uyumsuzluk bulunması.\n\nBu nedenle fon yatırımı yapılmadan önce hem fonun vatandaşlık başvurusuna uygunluğu hem de yatırımcının kişisel ve finansal durumu birlikte değerlendirilmelidir."
+        },
+        {
+          "num": "11",
+          "icon": "💼",
+          "title": "ON BİRİNCİ BÖLÜM - AVUKAT DESTEĞİNİN ÖNEMİ",
+          "desc": "GYF veya GSYF katılma payı yoluyla Türk vatandaşlığı başvurusu, sermaye piyasası işlemleri ile vatandaşlık hukukunun kesiştiği özel bir başvuru türüdür. Bu nedenle başvuru sürecinin yalnızca yatırım kuruluşu üzerinden değil, hukuki denetim altında yürütülmesi önemlidir.\n\nAvukat desteği özellikle şu aşamalarda önem taşır:\n• Başvuru sahibinin yatırım yoluyla vatandaşlık şartlarına uygunluğunun değerlendirilmesi,\n• Yatırım yapılacak fon türünün başvuruya uygunluğunun incelenmesi,\n• Fon içtüzüğü, ihraç belgesi ve yatırım şartlarının değerlendirilmesi,\n• Döviz satış ve döviz alım belgesi süreçlerinin kontrol edilmesi,\n• MKK vatandaşlık blokaj alt hesabı işlemlerinin takip edilmesi,\n• Uygunluk belgesi başvuru dosyasının hazırlanması,\n• Sermaye Piyasası Kurulu nezdindeki sürecin takip edilmesi,\n• Kısa dönem ikamet izni başvurusunun yürütülmesi,\n• Vatandaşlık başvuru dosyasının hazırlanması,\n• Eş ve çocukların başvuru kapsamına dahil edilmesi,\n• Başvuru sürecinin kamu kurumları nezdinde takip edilmesi.\n\nEksik veya hatalı yürütülen işlemler, başvurunun gecikmesine, uygunluk belgesi alınamamasına veya yatırım şartının geçersiz sayılmasına neden olabilir. Bu nedenle fon yatırımı yoluyla Türk vatandaşlığı başvurularında sürecin başından itibaren profesyonel hukuki destek alınması tavsiye edilir."
         }
       ]
     },
-    "bolum3": {
-      "eyebrow": "Üçüncü Bölüm",
-      "title": "Tapu Randevu ve Satış Süreci",
+    "processStages": {
+      "eyebrow": "Yatırım Süreci",
+      "title": "Sürecin Genel Aşamaları",
+      "description": "GYF veya GSYF katılma payı yoluyla Türk vatandaşlığı başvurusu genel olarak aşağıdaki aşamalardan oluşur:",
+      "items": [
+        "Başvuru sahibinin vatandaşlık şartlarına uygunluğunun değerlendirilmesi,",
+        "Yatırım yapılacak GYF veya GSYF’nin belirlenmesi,",
+        "Fonun vatandaşlık başvurusu bakımından uygunluğunun incelenmesi,",
+        "Gerekli döviz satış ve Türk Lirasına dönüşüm işlemlerinin yapılması,",
+        "En az 500.000 Amerikan Doları veya karşılığı tutarda fon katılma payı satın alınması,",
+        "Katılma paylarının MKK nezdinde vatandaşlık blokaj alt hesabında bloke edilmesi,",
+        "Fon alım, MKK ve blokaj belgelerinin hazırlanması,",
+        "Sermaye Piyasası Kuruluna uygunluk belgesi başvurusu yapılması,",
+        "Uygunluk belgesinin alınması,",
+        "Kısa dönem ikamet izni başvurusunun yapılması,",
+        "Vatandaşlık başvuru dosyasının hazırlanması,",
+        "İl Nüfus ve Vatandaşlık Müdürlüğü üzerinden vatandaşlık başvurusu yapılması,",
+        "İdari inceleme ve güvenlik araştırması sürecinin tamamlanması,",
+        "Uygun görülmesi hâlinde Cumhurbaşkanı kararı ile Türk vatandaşlığının kazanılması."
+      ]
+    },
+    "legal": {
+      "eyebrow": "HUKUKİ ÇERÇEVE",
+      "title": "Yasal Dayanak",
       "items": [
         {
-          "num": "3.1",
-          "title": "Tapu Satışı Öncesinde Zorunlu Belgeler",
-          "paragraphs": [
-            "Zorunlu Deprem Sigortası (DASK): Geçerli bir DASK poliçesinin bulunması zorunludur.",
-            "Değerleme Raporu: Yabancıya yapılan taşınmaz satışlarında ekspertiz raporu zorunludur."
-          ]
+          "title": "5901 Sayılı Türk Vatandaşlığı Kanunu",
+          "text": "Türk vatandaşlığının kazanılması, kaybı ve vatandaşlığa ilişkin temel usul ve esasları düzenler."
         },
         {
-          "num": "3.2",
-          "title": "Tapu Randevusunun Alınması",
-          "paragraphs": [
-            "Randevu, Web Tapu Sistemi üzerinden alınır. Başvuru satıcı tarafından yapılır."
-          ],
-          "bullets": [
-            "Alıcı ve satıcıya ait kimlik bilgileri",
-            "Taşınmaza ilişkin bilgiler",
-            "Alıcı adına kimlik beyan formu",
-            "Satış bedeli",
-            "Varsa vatandaşlık şerhi talebi"
-          ]
+          "title": "Türk Vatandaşlığı Kanununun Uygulanmasına İlişkin Yönetmelik",
+          "text": "Yatırım yoluyla ve istisnai yoldan Türk vatandaşlığının kazanılmasına ilişkin başvuru şartlarını ve prosedürleri düzenler."
         },
         {
-          "num": "3.3",
-          "title": "Tapu Müdürlüğünün İncelemesi",
-          "paragraphs": [
-            "Başvurunun ardından tapu müdürlüğü kontrolleri gerçekleştirir."
-          ],
-          "bullets": [
-            "Tapu kaydını inceler",
-            "Yabancı edinim sınırlarını kontrol eder",
-            "Askerî yasak bölge kontrolü yapar",
-            "Ekspertiz raporunu değerlendirir",
-            "Ödeme beyanını inceler"
-          ]
+          "title": "Türk Vatandaşlığı Kanununun Uygulanmasına İlişkin Yönetmelik Madde 20/2-e",
+          "text": "En az 500.000 Amerikan Doları veya karşılığı döviz tutarında gayrimenkul yatırım fonu katılma payı veya girişim sermayesi yatırım fonu katılma payını en az üç yıl elinde tutmak şartıyla satın aldığı Sermaye Piyasası Kurulunca tespit edilen yabancıların istisnai yoldan Türk vatandaşlığına başvurabilmesine ilişkin düzenlemedir."
         },
         {
-          "num": "3.4",
-          "title": "Randevu Günü Tapuda Yapılacak İşlemler",
-          "paragraphs": [
-            "Satış işlemi tapunun akit odasında gerçekleştirilir. İmzaların tamamlanmasıyla mülkiyet alıcıya geçer."
-          ],
-          "bullets": [
-            "Yeminli tercüman veya alıcı avukat",
-            "Pasaport ve noter onaylı pasaport tercümesi",
-            "Banka ödeme belgeleri",
-            "Vatandaşlık başvurularında DAB belgesi"
-          ],
-          "steps": [
-            "Varsa noter sözleşmesini okur",
-            "Satış bedelini sorgular",
-            "Ödeme beyanını teyit eder",
-            "Vatandaşlık şerhini sisteme işler",
-            "Taraflardan imzaları alır"
-          ]
+          "title": "Sermaye Piyasası Mevzuatı",
+          "text": "Gayrimenkul yatırım fonları, girişim sermayesi yatırım fonları, katılma payları, portföy yönetimi, MKK kaydı ve yatırımcı işlemleri bakımından önem taşır."
         },
         {
-          "num": "3.5",
-          "title": "Harçlar ve Masraflar",
-          "paragraphs": [
-            "Tapuya girmeden önce ödenmesi gereken masraflar:"
-          ],
-          "bullets": [
-            "Tapu harcı (genellikle %4)",
-            "Döner sermaye ücreti",
-            "Akit odasında ödeme alınmamaktadır"
-          ]
-        },
-        {
-          "num": "3.6",
-          "title": "Vatandaşlık Dosyası Olan Satışlarda Ek Kontroller",
-          "paragraphs": [
-            "Satışın vatandaşlık amacı taşıması hâlinde ek kontroller uygulanır:"
-          ],
-          "bullets": [
-            "DAB belgesi, satış bedeliyle uyumu açısından kontrol edilir",
-            "Tapu kütüğüne 3 yıl süreyle satış yasağı şerhi konulur"
-          ]
+          "title": "6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu",
+          "text": "Yatırım yoluyla vatandaşlık başvurusu yapacak yabancıların kısa dönem ikamet izni süreçleri bakımından önem taşır."
         }
       ]
     },
-    "bolum4": {
-      "eyebrow": "Dördüncü Bölüm",
-      "title": "Uygunluk Belgesi (Taşınmaz Yatırım Tespit Belgesi)",
-      "intro": "Taşınmaz Yatırım Tespit Belgesi; yabancı yatırımcının gerçekleştirdiği taşınmaz alımının, Türk vatandaşlığı için gerekli yatırım şartlarını karşıladığını devletin resmî olarak onayladığı belgedir.",
-      "denetim": {
-        "eyebrow": "4.2 – Belgenin Amacı ve Denetim Kapsamı",
-        "title": "Devletin İnceleme Kapsamı",
-        "bullets": [
-          "Yatırımın fiilen gerçekleşip gerçekleşmediği",
-          "Ödemenin banka sistemi üzerinden yapılıp yapılmadığı",
-          "DAB'ın usulüne uygun düzenlenip düzenlenmediği",
-          "Ekspertiz raporunun gerçeği yansıtıp yansıtmadığı",
-          "Taşınmazın daha önce vatandaşlık başvurusunda kullanılıp kullanılmadığı",
-          "Muvazaalı işlem bulunup bulunmadığı",
-          "Satış bedelinin şişirilip şişirilmediği",
-          "Akraba veya ilişkili taraflar arasında satış olup olmadığı",
-          "Projenin hukuki risk taşıyıp taşımadığı"
-        ]
-      },
-      "process": {
-        "eyebrow": "4.3 – Belgenin Alınma Süreci",
-        "title": "Üç Aşamalı Resmi Süreç",
-        "steps": [
-          {
-            "num": "Adım 1",
-            "title": "Tapu Satışının Gerçekleştirilmesi",
-            "desc": "Satış sırasında ekspertiz raporu sisteme yüklenir, DAB dosyaya eklenir ve tapu kütüğüne 3 yıl satış yasağı şerhi işlenir."
-          },
-          {
-            "num": "Adım 2",
-            "title": "Dosyanın Merkeze Gönderilmesi",
-            "desc": "Tapu müdürlüğü, satış dosyasını TKGM Yabancı İşlemler Birimi'ne iletir. Bu başvuru otomatik olarak gerçekleştirilir."
-          },
-          {
-            "num": "Adım 3",
-            "title": "Uygunluk Kararı",
-            "desc": "Şartların sağlandığı tespit edilirse Taşınmaz Yatırım Tespit Belgesi düzenlenir ve NVİGM'e bildirilir."
-          }
-        ]
-      },
-      "sure": {
-        "title": "İnceleme Süresi",
-        "desc": "İnceleme süresi ortalama 1–2 haftadır."
-      },
-      "sonrasi": {
-        "title": "Belge Çıktıktan Sonraki Aşama",
-        "desc": "Belgenin düzenlenmesiyle yatırım resmî olarak kabul edilir. Ardından ikamet izni başvurusu yapılır ve vatandaşlık sürecine devam edilir."
-      }
+    "postApproval": {
+      "eyebrow": "Uygunluk Belgesi Sonrası",
+      "title": "Başvuru İşlemleri",
+      "paragraphs": [
+        "Yukarıda yapılan açıklamalarda da belirtildiği üzere yatırım yoluyla vatandaşlık başvurusunda temel evrak yatırımın kanuna uygun olarak yapıldığını gösteren uygunluk belgesidir. Uygunluk belgesi temin edildikten sonra vatandaşlık başvurusu için gerekli diğer işlemler olan ikamet izni başvurusu ve vatandaşlık dosyasının hazırlanıp ilgili makamlara sunulması gerekmektedir. Uygunluk belgesinden sonraki süreçlere ilişkin detaylı bilgi için [Vatandaşlık Başvuru Süreci](/citizenship/basvuru-sureci) başlıklı yazımızı inceleyebilirsiniz."
+      ],
+      "bullets": []
     },
     "cta": {
-      "title": "Taşınmaz Yatırımınızı Vatandaşlığa Dönüştürün",
-      "description": "Tapu incelemesinden uygunluk belgesine, DAB sürecinden vatandaşlık başvurusuna kadar her adımı hukuki güvenceyle yönetiyoruz.",
+      "title": "Dosyanızı Başlatmaya Hazır mısınız?",
+      "description": "Büromuz, fon alımınızdan kimlik/pasaport teslimine kadar her adımı sizin adınıza yönetir.",
       "primaryCta": "Ücretsiz Danışın",
-      "secondaryCta": "Sık Sorulan Sorular"
+      "secondaryCta": "SSS'yi İncele"
+    }
+  },
+  "istihdam_page": {
+    "hero": {
+      "breadcrumbLabel": "İstihdam ile Türk Vatandaşlığı",
+      "tag": "Yatırım Yoluyla Vatandaşlık",
+      "titleLines": [
+        "İstihdam Oluşturmak ile",
+        "Türk Vatandaşlığı"
+      ],
+      "highlightLineIndex": 1,
+      "summary": "Türkiye'de en az 50 kişilik istihdam oluşturarak Türk vatandaşlığı edinme sürecinin tüm aşamalarını uçtan uca yönetiyoruz.",
+      "primaryCta": "Ücretsiz Danışın",
+      "secondaryCta": "Sık Sorulan Sorular",
+      "imageAlt": "İstihdam Oluşturma ile Türk Vatandaşlığı"
+    },
+    "stats": [
+      {
+        "value": "50 Kişi",
+        "label": "Minimum İstihdam",
+        "sub": "Türk Vatandaşı Çalışan"
+      },
+      {
+        "value": "6 Ay",
+        "label": "Süreç Sürekliliği",
+        "sub": "son altı ay geriye dönük"
+      },
+      {
+        "value": "ÇSGB",
+        "label": "Yetkili Kurum",
+        "sub": "Çalışma ve Sosyal Güvenlik"
+      },
+      {
+        "value": "5–6 Ay",
+        "label": "Ortalama Süreç",
+        "sub": "başvuru sonuçlanması"
+      }
+    ],
+    "intro": {
+      "eyebrow": "Süreç Hakkında",
+      "title": "İstihdam Yatırımı, Uygunluk Belgesi ve Vatandaşlık Başvuru Süreci",
+      "paragraphs": [
+        "Türk vatandaşlığının yatırım yoluyla, istisnai yoldan kazanılması kapsamında başvurulabilecek yöntemlerden biri de Türkiye’de en az 50 kişilik istihdam oluşturulmasıdır. Türk Vatandaşlığı Kanununun Uygulanmasına İlişkin Yönetmelik madde 20/2-c uyarınca, en az 50 kişilik istihdam oluşturduğu Çalışma ve Sosyal Güvenlik Bakanlığı tarafından tespit edilen yabancı yatırımcılar, diğer başvuru şartlarını da sağlamaları hâlinde istisnai yoldan Türk vatandaşlığı başvurusunda bulunabilmektedir.",
+        "Bu başvuru yolu, yalnızca belirli sayıda personelin işe alınmasından ibaret değildir. Şirket yapısı, başvuru sahibinin şirketle hukuki bağı, çalışanların sigortalılık durumu, istihdamın sürekliliği, vergi ve sosyal güvenlik yükümlülükleri ile kamu kurumları nezdinde yapılacak uygunluk belgesi ve vatandaşlık başvurusu işlemleri birlikte değerlendirilir. Bu nedenle 50 kişi istihdam etme yoluyla Türk vatandaşlığı başvurusu, yatırım, şirketler hukuku, iş hukuku, sosyal güvenlik hukuku ve yabancılar hukuku bakımından birlikte ele alınması gereken çok aşamalı bir süreçtir.",
+        "Bu rehber, Türkiye’de istihdam oluşturarak Türk vatandaşlığına başvurmak isteyen yabancı yatırımcılara yönelik olarak başvuru şartlarını, uygunluk belgesi sürecini, gerekli belgeleri ve vatandaşlık başvurusu aşamalarını açıklamak amacıyla hazırlanmıştır.",
+        "Rehber yalnızca bilgilendirme amacıyla hazırlanmıştır. Hukuki danışmanlık için lütfen uzman bir avukattan destek alınız."
+      ],
+      "bullets": [],
+      "imageAlt": "İstihdam ile Türk vatandaşlığı",
+      "cardValue": "ÇSGB Onaylı",
+      "cardLabel": "Uygunluk Belgesi Süreci",
+      "badgeValue": "50 İşçi",
+      "badgeLabel": "Minimum Eşik"
+    },
+    "process": {
+      "eyebrow": "Adım Adım Süreç",
+      "title": "50 Kişi İstihdam Etme Yoluyla Türk Vatandaşlığı",
+      "description": "İstihdam oluşturarak Türk vatandaşlığı kazanma sürecindeki tüm adımlar ve yasal gereklilikler.",
+      "items": [
+        {
+          "num": "01",
+          "icon": "⚖️",
+          "title": "BİRİNCİ BÖLÜM - İSTİHDAM YOLUYLA VATANDAŞLIK BAŞVURUSUNUN HUKUKİ DAYANAĞI",
+          "desc": "Türkiye’de yatırım yoluyla vatandaşlık başvuru seçenekleri arasında taşınmaz yatırımı, banka mevduatı, devlet borçlanma araçları, yatırım fonları, bireysel emeklilik sistemi ve sabit sermaye yatırımı gibi farklı yöntemler bulunmaktadır. Bu yöntemlerden biri de Türkiye’de en az 50 kişilik istihdam oluşturulmasıdır.\n\nİstihdam yoluyla vatandaşlık başvurusunda temel şart, yabancı gerçek kişinin sahibi veya ortağı olduğu işyeri ya da işyerleri üzerinden Türkiye’de en az 50 Türk vatandaşı çalışan için istihdam oluşturduğunun resmi makamlarca tespit edilmesidir. Bu tespiti yapmaya yetkili kurum Çalışma ve Sosyal Güvenlik Bakanlığıdır.\n\nBu kapsamda başvurucu yabancı yatırımcının vatandaşlık sürecine geçebilmesi için öncelikle Çalışma ve Sosyal Güvenlik Bakanlığı Uluslararası İşgücü Genel Müdürlüğünden uygunluk belgesi alması gerekir. Uygunluk belgesi, istihdam şartının mevzuata uygun biçimde sağlandığını gösteren temel belgedir. Bu belge alınmadan vatandaşlık başvurusunun yatırım şartı tamamlanmış kabul edilmez."
+        },
+        {
+          "num": "02",
+          "icon": "👥",
+          "title": "İKİNCİ BÖLÜM - 50 KİŞİLİK İSTİHDAM ŞARTININ DEĞERLENDİRİLMESİ",
+          "desc": "İstihdam yoluyla vatandaşlık başvurusunda en önemli husus, çalışan sayısının yalnızca kağıt üzerinde değil, fiili ve hukuki olarak da mevcut olmasıdır. Başvuru sahibinin ortağı veya sahibi olduğu şirket ya da şirketlerde en az 50 Türk vatandaşı çalışanın son altı ay boyunca sürekli ve sigortalı olarak istihdam edilmesi gerekir. 50 işçi şartı son altı ay için her ayda sağlanıyor olmalı, eğer işçi çıkarılacaksa da öncelikle çıkarılacak işçi sayısı kadar işçi istihdam edilmeli, SGK’ya bildirilmeli, ardından çıkarılacak işçilerin şirketle ilişiği kesilmelidir. Aksi takdirde bu ara dönemde 1 günlük dahi olsa işçi sayısının 50’nin altına düşmesi vatandaşlık başvurusunun gecikmesine ya da imkansızlaşmasına sebebiyet verebilecektir.\n\nBu değerlendirme yapılırken yalnızca güncel çalışan sayısı değil, istihdamın sürekliliği de dikkate alınır. Uygulamada çalışanların tam zamanlı olarak çalışıp çalışmadığı, Sosyal Güvenlik Kurumu kayıtlarının güncel olup olmadığı ve istihdamın son dönemde istikrarlı şekilde devam edip etmediği incelenir.\n\nBu nedenle vatandaşlık başvurusu amacıyla istihdam planlaması yapılırken aşağıdaki hususların önceden değerlendirilmesi gerekir:\n• Şirketin güncel çalışan sayısı,\n• Gerekli çalışan sayısının resmi kayıtlarda son aydır sağlanıyor olup olmadığı,\n• Çalışanların Türk vatandaşı olup olmadığı,\n• Çalışanların SGK kayıtlarının usulüne uygun tutulup tutulmadığı,\n• Çalışanların tam zamanlı istihdam edilip edilmediği,\n• Şirketin vergi borcu bulunup bulunmadığı,\n• Şirketin sosyal güvenlik prim borcu bulunup bulunmadığı,\n• Şirketin ortaklık yapısı ve başvuru sahibinin sermaye payı,\n• Son dönemde idari para cezası veya denetim kaynaklı olumsuz kayıt bulunup bulunmadığı.\n\nBu şartların herhangi birinde eksiklik bulunması, uygunluk belgesi başvurusunun reddedilmesine veya sürecin uzamasına neden olabilir."
+        },
+        {
+          "num": "03",
+          "icon": "🔗",
+          "title": "ÜÇÜNCÜ BÖLÜM - BAŞVURU SAHİBİNİN ŞİRKETLE HUKUKİ BAĞI",
+          "desc": "50 kişilik istihdam yoluyla vatandaşlık başvurusu yapılabilmesi için başvuru sahibinin istihdamın bulunduğu şirket veya şirketlerle hukuken bağlantılı olması gerekir. Başka bir ifadeyle, yabancı yatırımcının söz konusu işyeri veya işyerlerinde yalnızca dışarıdan finansman sağlayan kişi konumunda olması yeterli olmayabilir.\n\nBaşvuru sahibinin şirket sahibi, ortağı veya sermaye payı sahibi olması, uygunluk belgesi değerlendirmesinde önem taşır. Bu nedenle başvuru öncesinde şirketin ticaret sicil kayıtları, ortaklık yapısı ve sermaye payları dikkatle incelenmelidir.\n\nÖzellikle birden fazla şirket üzerinden toplam 50 kişilik istihdam sağlanması hâlinde, başvuru sahibinin bu şirketlerdeki ortaklık ve sermaye ilişkisi ayrıca değerlendirilmelidir. Şirketlerin birbirinden bağımsız yapıda olması, başvuru sahibinin sermaye payının yetersiz görülmesi veya ortaklık yapısının açık olmaması başvuru sürecinde risk yaratabilir.\n\nBu nedenle istihdam yoluyla vatandaşlık başvurusu yapılmadan önce şirket yapısının ve başvuru sahibinin şirketlerdeki konumunun hukuki olarak analiz edilmesi gerekir."
+        },
+        {
+          "num": "04",
+          "icon": "📜",
+          "title": "DÖRDÜNCÜ BÖLÜM - UYGUNLUK BELGESİ NEDİR?",
+          "desc": "Uygunluk belgesi, yabancı yatırımcının Türk vatandaşlığı başvurusu için aranan asgari yatırım veya istihdam şartını sağladığını gösteren resmi belgedir. 50 kişilik istihdam yoluyla vatandaşlık başvurularında bu belge Çalışma ve Sosyal Güvenlik Bakanlığı Uluslararası İşgücü Genel Müdürlüğü tarafından düzenlenir.\n\nBu belge, vatandaşlık başvurusunun en kritik aşamalarından biridir. Çünkü başvuru sahibinin Türk vatandaşlığına başvurabilmesi için öncelikle yatırım şartını yerine getirdiğinin ilgili kamu kurumu tarafından kabul edilmesi gerekir.\n\nİstihdam yoluyla vatandaşlık başvurularında uygunluk belgesi şu hususları teyit eder:\n• Başvuru sahibinin Türkiye’de işyeri veya şirket bağlantısının bulunduğunu,\n• Başvuru sahibinin ilgili şirket veya şirketlerde yeterli ortaklık ya da sermaye ilişkisine sahip olduğunu,\n• En az 50 Türk vatandaşı çalışanın istihdam edildiğini,\n• Çalışanların SGK kayıtlarının mevcut olduğunu,\n• Şirketin vergi ve sosyal güvenlik yükümlülüklerinin başvuru açısından incelenebilir durumda olduğunu,\n• İstihdam şartının vatandaşlık başvurusu bakımından yeterli görüldüğünü.\n\nUygunluk belgesi alınmadan doğrudan vatandaşlık başvurusu yapılması mümkün değildir. Bu nedenle ilk aşamada istihdam şartının sağlanıp sağlanmadığı incelenmeli, ardından uygunluk belgesi için başvuru dosyası hazırlanmalıdır."
+        },
+        {
+          "num": "05",
+          "icon": "📁",
+          "title": "BEŞİNCİ BÖLÜM - UYGUNLUK BELGESİ BAŞVURUSU İÇİN GEREKLİ BELGELER",
+          "desc": "50 kişilik istihdam oluşturduğu gerekçesiyle uygunluk belgesi talebinde bulunacak yabancı gerçek kişiler, başvurularını Çalışma ve Sosyal Güvenlik Bakanlığı Uluslararası İşgücü Genel Müdürlüğüne yazılı olarak yapar.\n\nBaşvuru dosyasında genel olarak aşağıdaki belgeler yer alır:\n• Başvuru sahibi yabancı gerçek kişi tarafından imzalanmış başvuru dilekçesi,\n• Başvuru sahibine ait noterden alınmış imza beyannamesi,\n• Eksiksiz doldurulmuş istihdam bilgi formu,\n• Başvuru sahibinin pasaportunun kimlik bilgilerini içeren sayfalarının fotokopisi,\n• En az 50 kişilik Türk vatandaşı istihdamının bulunduğu şirket veya şirketlerin ortaklık ve sermaye paylarını gösteren ticaret sicil gazetesi kayıtları,\n• Güncel tarihli ticaret sicil tasdiknamesi,\n• Yabancı gerçek kişinin sahibi veya ortağı olduğu işyeri ya da işyerlerinde sigortalı olarak çalışan kişilerin listesini gösteren güncel tarihli son altı aylık SGK işyeri çalışan listesi,\n• Şirketin veya şirketlerin vergi borcu durumunu gösteren Gelir İdaresi Başkanlığı kayıtları,\n• Şirketin veya şirketlerin sosyal güvenlik prim borcu durumunu gösteren SGK kayıtları,\n• Kamu kurumları tarafından yapılan idari denetimlerde son altı ay içinde idari para cezası verilip verilmediğine ilişkin yazılı beyan,\n• Ceza uygulanmış ise buna ilişkin belgeler.\n\nBaşvuru dosyasının eksiksiz ve tutarlı hazırlanması son derece önemlidir. Belgeler arasında çelişki bulunması, ticaret sicil kayıtlarının güncel olmaması, SGK listelerinin istihdam şartını karşılamaması veya borç durumuna ilişkin belgelerde sorun bulunması hâlinde uygunluk belgesi süreci uzayabilir ya da başvuru reddedilebilir."
+        },
+        {
+          "num": "06",
+          "icon": "⏱️",
+          "title": "ALTINCI BÖLÜM - BAŞVURU VE DEĞERLENDİRME SÜRECİ",
+          "desc": "İstihdam yoluyla vatandaşlık başvurusunda ilk resmi aşama, uygunluk belgesi başvurusudur. Başvuru, Çalışma ve Sosyal Güvenlik Bakanlığı Uluslararası İşgücü Genel Müdürlüğü tarafından değerlendirilir.\n\nBaşvurunun eksiksiz yapılması hâlinde değerlendirme süreci daha hızlı ilerler. Ancak eksik bilgi veya belge bulunması hâlinde başvuru sahibine eksiklikleri tamamlaması için süre verilir. Eksikliklerin süresi içinde tamamlanmaması hâlinde başvuru reddedilebilir.\n\nDeğerlendirme sırasında Bakanlık, yalnızca çalışan sayısına bakmakla yetinmez. Şirketin hukuki yapısı, başvuru sahibinin şirketteki payı, istihdamın gerçekliği, sigortalılık kayıtları, vergi ve prim yükümlülükleri ile istihdamın sürekliliği birlikte incelenir.\n\nGerekli şartların sağlandığı tespit edilirse uygunluk belgesi düzenlenir ve başvuru sonucu hem başvuru sahibine hem de ilgili kurumlara bildirilir. Bu aşamadan sonra yabancı yatırımcı vatandaşlık başvurusu sürecine geçebilir."
+        },
+        {
+          "num": "07",
+          "icon": "⚠️",
+          "title": "YEDİNCİ BÖLÜM - İSTİHDAMIN SÜREKLİLİĞİ VE BAŞVURU RİSKLERİ",
+          "desc": "50 kişilik istihdam yoluyla vatandaşlık başvurularında en önemli risklerden biri, istihdamın başvuru tarihinde yalnızca şeklen sağlanmış olmasıdır. Kamu kurumları, çalışan sayısının gerçekliğini ve sürekliliğini değerlendirebilir.\n\nBu nedenle başvuru öncesinde kısa süreli, geçici veya yalnızca vatandaşlık dosyası için oluşturulmuş görünen istihdam yapılarından kaçınılmalıdır. Şirketin faaliyet alanı, çalışan sayısı, bordro yapısı, mali kayıtları ve ticari hacmi birbiriyle uyumlu olmalıdır.\n\nBaşvuru açısından risk oluşturabilecek bazı durumlar şunlardır:\n• 50 kişilik çalışan sayısının başvuruya çok yakın tarihte ani şekilde oluşturulması,\n• Çalışanların fiilen çalışmaması,\n• SGK kayıtlarının gerçeği yansıtmaması,\n• Şirketin ticari faaliyeti ile çalışan sayısı arasında uyumsuzluk bulunması,\n• Şirketin vergi veya SGK prim borçlarının bulunması,\n• Başvuru sahibinin şirketteki payının yetersiz veya tartışmalı olması,\n• Şirket kayıtları ile SGK kayıtları arasında uyumsuzluk bulunması,\n• Son dönemde idari para cezası veya denetim kaynaklı olumsuz kayıt bulunması.\n\nBu nedenle başvuru yapılmadan önce şirketin tüm kayıtları hukuki ve mali açıdan incelenmeli, eksiklikler giderilmeli ve uygunluk belgesi başvurusu buna göre hazırlanmalıdır."
+        },
+        {
+          "num": "08",
+          "icon": "💼",
+          "title": "SEKİZİNCİ BÖLÜM - AVUKAT DESTEĞİNİN ÖNEMİ",
+          "desc": "İstihdam yoluyla Türk vatandaşlığı başvurusu; şirketler hukuku, iş hukuku, sosyal güvenlik hukuku, vergi uygulamaları, yabancılar hukuku ve vatandaşlık hukuku bakımından çok yönlü değerlendirme gerektiren bir süreçtir.\n\nAvukat desteği özellikle şu aşamalarda önemlidir:\n• Başvuru sahibinin vatandaşlık şartlarına uygunluğunun değerlendirilmesi,\n• Şirket ortaklık yapısının incelenmesi,\n• Ticaret sicil kayıtlarının kontrol edilmesi,\n• SGK çalışan listelerinin başvuruya uygunluğunun değerlendirilmesi,\n• Vergi ve prim borcu kayıtlarının incelenmesi,\n• Uygunluk belgesi başvuru dosyasının hazırlanması,\n• Eksik belge veya kurum yazışmalarının takip edilmesi,\n• Kısa dönem ikamet izni sürecinin yürütülmesi,\n• Vatandaşlık başvuru dosyasının hazırlanması,\n• Eş ve çocukların başvuru dosyasına dahil edilmesi,\n• Başvuru sürecinin ilgili kurumlar nezdinde takip edilmesi.\n\nEksik veya hatalı hazırlanan başvurular yalnızca sürecin uzamasına değil, başvurunun reddedilmesine de neden olabilir. Bu nedenle 50 kişilik istihdam yoluyla Türk vatandaşlığı başvurularında sürecin başından itibaren profesyonel hukuki destek alınması tavsiye edilir."
+        },
+        {
+          "num": "09",
+          "icon": "🗺️",
+          "title": "DOKUZUNCU BÖLÜM - SÜRECİN GENEL AŞAMALARI",
+          "desc": "Türkiye’de 50 kişilik istihdam yoluyla Türk vatandaşlığı başvurusu genel olarak aşağıdaki aşamalardan oluşur:\n1. Başvuru sahibinin şirket yapısının ve ortaklık durumunun incelenmesi,\n2. Şirket veya şirketlerdeki çalışan sayısının değerlendirilmesi,\n3. SGK, vergi ve ticaret sicil kayıtlarının kontrol edilmesi,\n4. Eksik veya riskli hususların giderilmesi,\n5. Uygunluk belgesi başvuru dosyasının hazırlanması,\n6. Çalışma ve Sosyal Güvenlik Bakanlığı Uluslararası İşgücü Genel Müdürlüğüne başvuru yapılması,\n7. Uygunluk belgesinin alınması,\n8. Kısa dönem ikamet izni başvurusunun yapılması,\n9. Vatandaşlık başvuru dosyasının hazırlanması,\n10. İl Nüfus ve Vatandaşlık Müdürlüğü üzerinden başvuru yapılması,\n11. Güvenlik ve arşiv araştırması dahil idari inceleme sürecinin tamamlanması,\n12. Uygun görülmesi hâlinde Cumhurbaşkanı kararı ile Türk vatandaşlığının kazanılması.\n\nBu aşamaların her biri kendi içinde belge hazırlığı, kurum incelemesi ve hukuki değerlendirme gerektirir. Bu nedenle süreç baştan sona planlı ve kontrollü şekilde yürütülmelidir."
+        }
+      ]
+    },
+    "legal": {
+      "eyebrow": "HUKUKİ ÇERÇEVE",
+      "title": "Yasal Dayanak",
+      "items": [
+        {
+          "title": "5901 Sayılı Türk Vatandaşlığı Kanunu",
+          "text": "Türk vatandaşlığının kazanılması, kaybı ve vatandaşlığa ilişkin temel usul ve esasları düzenler."
+        },
+        {
+          "title": "Türk Vatandaşlığı Kanununun Uygulanmasına İlişkin Yönetmelik",
+          "text": "Yatırım yoluyla ve istisnai yoldan Türk vatandaşlığının kazanılmasına ilişkin başvuru şartlarını ve prosedürleri düzenler."
+        },
+        {
+          "title": "Türk Vatandaşlığı Kanununun Uygulanmasına İlişkin Yönetmelik Madde 20/2-c",
+          "text": "En az 50 kişilik istihdam oluşturduğu Çalışma ve Sosyal Güvenlik Bakanlığı tarafından tespit edilen yabancıların istisnai yoldan Türk vatandaşlığına başvurabilmesine ilişkin düzenlemedir."
+        },
+        {
+          "title": "6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu",
+          "text": "Yatırım yoluyla vatandaşlık başvurusu yapacak yabancıların kısa dönem ikamet izni süreçleri bakımından önem taşır."
+        }
+      ]
+    },
+    "postApproval": {
+      "eyebrow": "Uygunluk Belgesi Sonrası",
+      "title": "Başvuru İşlemleri",
+      "paragraphs": [
+        "Yukarıda yapılan açıklamalarda da belirtildiği üzere yatırım yoluyla vatandaşlık başvurusunda temel evrak yatırımın kanuna uygun olarak yapıldığını gösteren uygunluk belgesidir. Uygunluk belgesi temin edildikten sonra vatandaşlık başvurusu için gerekli diğer işlemler olan ikamet izni başvurusu ve vatandaşlık dosyasının hazırlanıp ilgili makamlara sunulması gerekmektedir. Uygunluk belgesinden sonraki süreçlere ilişkin detaylı bilgi için [Vatandaşlık Başvuru Süreci](/citizenship/basvuru-sureci) başlıklı yazımızı inceleyebilirsiniz."
+      ],
+      "bullets": []
+    },
+    "cta": {
+      "title": "Dosyanızı Başlatmaya Hazır mısınız?",
+      "description": "Büromuz, istihdam yatırımınızın başından kimlik/pasaport teslimine kadar her adımı sizin adınıza yönetir.",
+      "primaryCta": "Ücretsiz Danışın",
+      "secondaryCta": "SSS'yi İncele"
+    }
+  },
+  "bonds_page": {
+    "hero": {
+      "breadcrumbLabel": "Devlet Borçlanma Araçları",
+      "tag": "Yatırım Yoluyla Vatandaşlık",
+      "titleLines": [
+        "Devlet Borçlanma Araçları ile",
+        "Türk Vatandaşlığı"
+      ],
+      "highlightLineIndex": 0,
+      "summary": "Devlet borçlanma aracı alarak Hazine onaylı Türk vatandaşlığı sürecinizi yönetiyoruz.",
+      "primaryCta": "Ücretsiz Danışın",
+      "secondaryCta": "Sık Sorulan Sorular",
+      "imageAlt": "Devlet Borçlanma Araçları ile Türk Vatandaşlığı"
+    },
+    "stats": [
+      {
+        "value": "500K USD",
+        "label": "Minimum Yatırım",
+        "sub": "veya karşılığı döviz"
+      },
+      {
+        "value": "3 Yıl",
+        "label": "Elde Tutma Şartı",
+        "sub": "banka nezdinde blokaj"
+      },
+      {
+        "value": "HM",
+        "label": "Yetkili Kurum",
+        "sub": "Hazine ve Maliye Bakanlığı"
+      },
+      {
+        "value": "4-5 Ay",
+        "label": "Ortalama Süre",
+        "sub": "başvuru sonuçlanması"
+      }
+    ],
+    "intro": {
+      "eyebrow": "Yatırım Yoluyla Vatandaşlık",
+      "title": "Devlet Borçlanma Araçları ile Türk Vatandaşlığı",
+      "paragraphs": [
+        "Türk vatandaşlığının yatırım yoluyla, istisnai yoldan kazanılması kapsamında başvurulabilecek yöntemlerden biri de kanunda öngörülen şekil ve şartlara uygun olarak Devlet borçlanma araçlarının satın alınmasıdır. Türk Vatandaşlığı Kanununun Uygulanmasına İlişkin Yönetmelik madde 20/2-d uyarınca, en az 500.000 Amerikan Doları veya karşılığı tutarda Devlet borçlanma aracını en az üç yıl elinde tutmak şartıyla satın aldığı Hazine ve Maliye Bakanlığı tarafından tespit edilen yabancı yatırımcılar, diğer başvuru şartlarını da sağlamaları hâlinde istisnai yoldan Türk vatandaşlığı başvurusunda bulunabilmektedir.",
+        "Bu başvuru yolu, doğrudan taşınmaz satın almak istemeyen veya banka mevduatı yerine devletin ihraç ettiği güvenli borçlanma araçları üzerinden yatırım yapmayı tercih eden yabancı yatırımcılar açısından önemli bir alternatiftir.",
+        "Ancak borçlanma araçları yoluyla vatandaşlık başvurusu, yalnızca bu finansal araçların satın alınmasından ibaret değildir. Yatırımın, mevzuatta öngörülen asgari tutarı karşılaması, başvuru sahibinin adına açılmış yatırım hesabında takip edilmesi, üç yıl süreyle tutulacağına ilişkin blokaj veya taahhüt işlemlerinin yapılması ve Hazine ve Maliye Bakanlığından uygunluk belgesi alınması gerekir.",
+        "Bu rehber, Devlet borçlanma araçları satın alarak Türk vatandaşlığına başvurmak isteyen yabancı yatırımcılara yönelik olarak başvuru şartlarını, yatırım sürecini, uygunluk belgesi aşamasını, üç yıllık elde tutma yükümlülüğünü ve başvuruda dikkat edilmesi gereken temel hususları açıklamak amacıyla hazırlanmıştır.",
+        "Rehber yalnızca bilgilendirme amacıyla hazırlanmıştır. Hukuki danışmanlık için lütfen uzman bir avukattan destek alınız."
+      ],
+      "bullets": [],
+      "imageAlt": "Devlet borçlanma araçları",
+      "cardValue": "Hazine Onaylı",
+      "cardLabel": "Uygunluk Belgesi",
+      "badgeValue": "500K $",
+      "badgeLabel": "Minimum Eşik"
+    },
+    "process": {
+      "eyebrow": "Adım Adım Süreç",
+      "title": "Devlet Borçlanma Araçları ile Türk Vatandaşlığı Yatırım Adımları",
+      "description": "Devlet borçlanma araçları yoluyla vatandaşlık başvurusunda 10 bölümden oluşan tüm adımlar:",
+      "items": [
+        {
+          "num": "01",
+          "icon": "⚖️",
+          "title": "BİRİNCİ BÖLÜM - DEVLET BORÇLANMA ARAÇLARINA YATIRIM YOLUYLA VATANDAŞLIK BAŞVURUSUNUN HUKUKİ DAYANAĞI",
+          "desc": "Türk vatandaşlığının yatırım yoluyla kazanılması, 5901 sayılı Türk Vatandaşlığı Kanunu ve Türk Vatandaşlığı Kanununun Uygulanmasına İlişkin Yönetmelik kapsamında düzenlenmektedir. Yönetmelik madde 20’de, belirli yatırım şartlarını sağlayan yabancıların istisnai yoldan Türk vatandaşlığı kazanabilmesine imkân tanınmıştır.\n\nBu yatırım türlerinden biri, Devlet borçlanma araçlarının satın alınmasıdır. Yönetmelik madde 20/2-d kapsamında, en az 500.000 Amerikan Doları veya karşılığı tutarda Devlet borçlanma aracını üç yıl tutmak şartıyla satın alan ve bu durumu Hazine ve Maliye Bakanlığı tarafından tespit edilen yabancı yatırımcılar, yatırım yoluyla vatandaşlık başvurusu yapabilir.\n\nBu kapsamda başvurunun yatırım yönünden tamamlanmış kabul edilebilmesi için yalnızca yatırım aracının satın alınması yeterli değildir. Yatırımın, mevzuatta öngörülen asgari tutarı karşılaması, başvuru sahibinin adına açılmış yatırım hesabında takip edilmesi, üç yıl süreyle tutulacağına ilişkin blokaj veya taahhüt işlemlerinin yapılması ve Hazine ve Maliye Bakanlığından uygunluk belgesi alınması gerekir."
+        },
+        {
+          "num": "02",
+          "icon": "📈",
+          "title": "İKİNCİ BÖLÜM - DEVLET BORÇLANMA ARAÇLARI NEDİR?",
+          "desc": "Devlet borçlanma araçları, devletin finansman ihtiyacını karşılamak amacıyla ihraç edilen ve yatırımcısına belirli dönemlerde faiz, kupon veya kira getirisi sağlayabilen finansal araçlardır. Bu kapsamda Devlet iç borçlanma senetleri, yurt dışı piyasalarda ihraç edilen tahviller ve ilgili mevzuat kapsamında ihraç edilen kira sertifikaları başvuru konusu yatırım aracı olarak değerlendirilebilir.\n\nVatandaşlık başvurusu bakımından önemli olan husus, yatırım aracının başvuruya uygun nitelikte olması, ilgili banka nezdinde başvuru sahibinin adına açılmış yatırım hesabında takip edilmesi ve asgari yatırım tutarının mevzuata uygun şekilde sağlanmasıdır.\n\nHer Devlet borçlanma aracı vatandaşlık başvurusu bakımından pratik olarak aynı sonucu doğurmayabilir. Yatırım aracının vadesi, saklama yapısı, bloke edilebilirliği, piyasa değeri ve başvuru sürecinde üç yıllık elde tutma şartını karşılayıp karşılamadığı ayrıca değerlendirilmelidir.\n\nÖzellikle vadesine üç yıldan az kalan Devlet borçlanma araçlarının vatandaşlık başvurusu bakımından uygunluğu ayrıca incelenmelidir. Çünkü başvuru kapsamında esas olan, yatırımın üç yıl süreyle kesintisiz şekilde korunabilmesidir."
+        },
+        {
+          "num": "03",
+          "icon": "💵",
+          "title": "ÜÇÜNCÜ BÖLÜM - ASGARİ YATIRIM TUTARI",
+          "desc": "Devlet borçlanma araçlarına yatırım yoluyla Türk vatandaşlığı başvurusunda asgari yatırım tutarı 500.000 Amerikan Dolarıdır. Bu tutarın karşılığı döviz veya Türk Lirası üzerinden işlem yapılması mümkündür; ancak dövizle yapılan işlemlerde ilgili döviz satış ve dönüşüm süreçlerinin mevzuata uygun şekilde yürütülmesi gerekir.\n\nYatırım tutarının hesaplanmasında yatırımın yapıldığı ve blokaj işleminin tesis edildiği tarih önemlidir. Başvuru peyderpey yapılan yatırımlarla tamamlanıyorsa, asgari yatırım şartının hangi tarihte sağlandığı ayrıca belirlenmelidir. Üç yıllık sürenin başlangıcı da yatırım şartının eksiksiz sağlandığı ve ilgili blokaj işleminin tamamlandığı tarih üzerinden değerlendirilebilir.\n\nKur değişiklikleri veya piyasa koşulları nedeniyle yatırımın sonradan 500.000 Amerikan Doları karşılığının altına düşmesi, yatırımcının kendi iradesiyle satış veya devir yapmaması şartıyla her durumda başvurunun otomatik olarak geçersiz olacağı anlamına gelmez. Ancak yatırımcının kendi talebiyle yatırım hesabındaki tutarı azaltması, blokajı kaldırması, yatırım araçlarını satması veya devretmesi vatandaşlık başvurusu bakımından ciddi risk oluşturur.\n\nBu nedenle yatırım yapılmadan önce yatırım tutarı, yatırım aracı, vade yapısı ve blokaj süreci birlikte değerlendirilmelidir."
+        },
+        {
+          "num": "04",
+          "icon": "🏦",
+          "title": "DÖRDÜNCÜ BÖLÜM - YATIRIM HESABI VE BANKA İŞLEMLERİ",
+          "desc": "Devlet borçlanma araçlarına yatırım yoluyla vatandaşlık başvurusunda yatırım hesabı Türkiye’de faaliyet gösteren bir bankanın yurt içi şubesi nezdinde açılmalıdır. Türkiye’de kurulu bir bankanın yurt dışı şubesi, iştiraki veya temsilciliği nezdinde bulunan yatırım hesapları vatandaşlık başvurusu bakımından yeterli kabul edilmeyebilir.\n\nYatırım hesabının başvuru sahibi yabancı gerçek kişi adına açılması gerekir. Hesapta yer alan Devlet borçlanma araçlarının vatandaşlık başvurusuna esas gösterilebilmesi için yatırımcının açık talebi ve beyanı doğrultusunda üç yıl süreyle bloke edilmesi gerekir.\n\nBu aşamada banka tarafından düzenlenen belgeler büyük önem taşır. Banka, yatırım hesabının başvuru sahibine ait olduğunu, Devlet borçlanma araçlarının vatandaşlık başvurusu kapsamında bloke edildiğini, yatırım tutarının mevzuatta öngörülen asgari tutarı karşıladığını ve gerekli döviz satış işlemlerinin yapıldığını gösteren belgeleri düzenler.\n\nBaşvuru dosyasında bankadan alınan belgeler ile başvuru sahibinin kimlik, pasaport ve diğer resmi belgeleri arasında herhangi bir çelişki bulunmamalıdır. Ad-soyad yazımı, pasaport numarası, yabancı kimlik numarası, doğum tarihi ve iletişim bilgileri belgelerde tutarlı olmalıdır."
+        },
+        {
+          "num": "05",
+          "icon": "💱",
+          "title": "BEŞİNCİ BÖLÜM - DÖVİZ SATIŞ İŞLEMİ AND TÜRK LİRASI YATIRIM",
+          "desc": "Yatırım yoluyla vatandaşlık başvurularında, belirli yatırım türlerinde döviz satışına ilişkin özel kurallar uygulanmaktadır. Devlet borçlanma araçlarına yatırım yoluyla vatandaşlık başvurularında da ilgili döviz tutarlarının, işlem öncesinde Türkiye’de faaliyet gösteren bir bankaya satılması ve bankaca Türkiye Cumhuriyet Merkez Bankasına aktarılması gereken durumlar söz konusu olabilir.\n\nBu süreçte yatırımcı tarafından getirilen döviz, ilgili banka aracılığıyla Türk Lirasına çevrilir ve elde edilen Türk Lirası tutar Devlet borçlanma araçlarının satın alınmasında kullanılır.\n\nDöviz satış işleminin mevzuata uygun şekilde yapılması, döviz alım belgesinin düzenlenmesi ve işlem bilgilerinin doğru açıklama ile kayda alınması başvuru bakımından önemlidir.\n\nDöviz satış işlemi tamamlandıktan sonra bu işlemden vazgeçilmesi veya işlemin iptal edilmesi mümkün olmayabilir. Bu nedenle yatırımcı, döviz bozdurma ve yatırım aracını satın alma aşamasına geçmeden önce hukuki ve finansal sonuçları değerlendirmelidir.\n\nDöviz satış işlemi, yatırım tutarının ispatı bakımından vatandaşlık başvuru dosyasının kritik parçalarından biridir. Bu nedenle işlem banka, yatırımcı, avukat ve gerekiyorsa mali danışman koordinasyonunda yürütülmelidir."
+        },
+        {
+          "num": "06",
+          "icon": "🔒",
+          "title": "ALTINCI BÖLÜM - ÜÇ YILLIK ELDE TUTMA VE BLOKAJ ŞARTI",
+          "desc": "Devlet borçlanma araçlarına yatırım yoluyla vatandaşlık başvurusunda temel şartlardan biri, yatırımın üç yıl süreyle elde tutulmasıdır. Bu süre boyunca vatandaşlık başvurusuna esas gösterilen Devlet borçlanma araçlarının yatırımcı iradesiyle satılmaması, devredilmemesi veya azaltılmaması gerekir.\n\nBlokaj işlemi teknik olarak yatırımcının talebiyle tesis edilen bir işlem olmakla birlikte, vatandaşlık başvurusu bakımından yatırımın üç yıl boyunca korunacağını gösteren temel mekanizmadır. Yatırımcı kendi iradesiyle blokajı kaldırabilir; ancak bu durum vatandaşlık başvurusunun iptaline veya kazanılmış vatandaşlık bakımından idari değerlendirmeye konu olabilecek risklere yol açabilir.\n\nBloke edilen yatırım hesabının asgari yatırım tutarının altına düşmesi, yatırım araçlarının satılması, devredilmesi, hesaba haciz veya benzeri kısıtlayıcı işlemler uygulanması hâlinde ilgili banka bu durumu yetkili kurumlara bildirebilir.\n\nBu nedenle başvuru sürecinde yatırım hesabı üzerinde herhangi bir tasarruf işlemi yapılmadan önce mutlaka hukuki değerlendirme alınmalıdır."
+        },
+        {
+          "num": "07",
+          "icon": "📜",
+          "title": "YEDİNCİ BÖLÜM - UYGUNLUK BELGESİ NEDİR?",
+          "desc": "Uygunluk belgesi, yabancı yatırımcının Türk vatandaşlığı başvurusu için aranan asgari yatırım şartını sağladığını gösteren resmi belgedir. Devlet borçlanma araçlarına yatırım yoluyla vatandaşlık başvurularında bu belge Hazine ve Maliye Bakanlığı tarafından düzenlenir.\n\nUygunluk belgesi, vatandaşlık başvurusunun yatırım şartı bakımından tamamlandığını gösterir. Bu belge olmaksızın yatırım yoluyla vatandaşlık başvuru sürecinin ilerlemesi mümkün değildir.\n\nDevlet borçlanma araçlarına yatırım kapsamında uygunluk belgesi, genel olarak şu hususların tespitine dayanır:\n• Başvuru sahibinin Türkiye’de faaliyet gösteren bir banka nezdinde yatırım hesabı açtığı,\n• Yatırım hesabının başvuru sahibi adına olduğu,\n• En az 500.000 Amerikan Doları veya karşılığı tutarda Devlet borçlanma aracı satın alındığı,\n• Yatırım araçlarının vatandaşlık başvurusu kapsamında üç yıl süreyle bloke edildiği,\n• Gerekli banka belgelerinin düzenlendiği,\n• Döviz satış işlemlerinin mevzuata uygun şekilde yapıldığı,\n• Yatırımın Hazine ve Maliye Bakanlığı tarafından vatandaşlık başvurusu bakımından yeterli görüldüğü.\n\nUygunluk belgesi alındıktan sonra başvuru sahibi kısa dönem ikamet izni ve vatandaşlık başvurusu aşamalarına geçebilir."
+        },
+        {
+          "num": "08",
+          "icon": "📂",
+          "title": "SEKİZİNCİ BÖLÜM - UYGUNLUK BELGESİ BAŞVURUSU İÇİN GEREKLİ BELGELER",
+          "desc": "Devlet borçlanma araçlarına yatırım yoluyla uygunluk belgesi başvurusunda genel olarak aşağıdaki belgeler hazırlanır:\n• Başvuru sahibi yabancı gerçek kişiye ait pasaport fotokopisi,\n• Başvuru sahibinin kimlik ve iletişim bilgilerini içeren başvuru formu veya dilekçe,\n• Banka nezdinde açılmış yatırım hesabına ilişkin belgeler,\n• Devlet borçlanma araçlarının satın alındığını gösteren banka yazısı,\n• Yatırım hesabının üç yıl süreyle bloke edildiğine ilişkin yatırımcı beyanı,\n• Banka tarafından düzenlenen blokaj yazısı,\n• Döviz satış işlemi yapılmış ise döviz alım belgesi,\n• Yatırım tutarının asgari şartı karşıladığını gösteren hesaplama ve banka kayıtları,\n• Başvuru vekil aracılığıyla yapılacaksa özel yetki içeren vekâletname,\n• Gerekli görülmesi hâlinde ek banka veya kimlik belgeleri.\n\nBanka yazılarında yatırımcının adı, pasaport bilgileri, hesap bilgileri, yatırım tutarı, blokaj süresi ve yatırım aracının niteliği açık şekilde belirtilmelidir.\n\nEksik veya hatalı belge sunulması uygunluk belgesi sürecinin uzamasına veya başvurunun reddedilmesine neden olabilir."
+        },
+        {
+          "num": "09",
+          "icon": "⚠️",
+          "title": "DOKUZUNCU BÖLÜM - BAŞVURU RİSKLERİ VE DİKKAT EDİLMESİ GEREKEN HUSUSLAR",
+          "desc": "Devlet borçlanma araçlarına yatırım yoluyla vatandaşlık başvurularında en önemli risklerden biri, yatırım aracının üç yıllık elde tutma şartına uygun seçilmemesidir. Vadesi kısa olan, bloke edilmeye elverişli olmayan veya başvuru sahibinin adına doğru şekilde kaydedilmeyen yatırım araçları başvuru sürecinde sorun yaratabilir.\n\nDiğer önemli riskler şunlardır:\n• Yatırım tutarının asgari 500.000 Amerikan Doları karşılığını sağlamaması,\n• Döviz satış işleminin usulüne uygun yapılmaması,\n• Banka belgelerinde kimlik veya hesap bilgilerinin hatalı yer alması,\n• Yatırım hesabının yurt dışı şube veya temsilcilik nezdinde takip edilmesi,\n• Blokaj süresi tamamlanmadan yatırım araçlarının satılması,\n• Yatırım araçları üzerinde haciz, rehin, tedbir veya benzeri kısıtlama bulunması,\n• Yatırımın başka bir kişiye ait hesap üzerinden yapılması,\n• Vekâletnamede gerekli özel yetkilerin bulunmaması,\n• Vatandaşlık dosyasındaki kişisel belgelerin eksik veya uyumsuz olması.\n\nBu nedenle yatırım yapılmadan önce yatırım aracının başvuruya uygunluğu, banka belgeleri, döviz satış süreci ve üç yıllık blokaj şartı birlikte değerlendirilmelidir."
+        },
+        {
+          "num": "10",
+          "icon": "💼",
+          "title": "ONUNCU BÖLÜM - AVUKAT DESTEĞİNİN ÖNEMİ",
+          "desc": "Devlet borçlanma araçlarına yatırım yoluyla Türk vatandaşlığı başvurusu, finansal işlem niteliği taşıdığı kadar hukuki sonuç doğuran bir vatandaşlık sürecidir. Bu nedenle yatırımın yapılmasından önce hukuki danışmanlık alınması önemlidir.\n\nAvukat desteği özellikle şu aşamalarda önem taşır:\n• Başvuru sahibinin yatırım yoluyla vatandaşlık şartlarına uygunluğunun değerlendirilmesi,\n• Yatırım aracının vatandaşlık başvurusuna uygun olup olmadığının incelenmesi,\n• Banka ve yatırım hesabı işlemlerinin kontrol edilmesi,\n• Döviz satış ve döviz alım belgesi süreçlerinin değerlendirilmesi,\n• Blokaj beyanı ve banka yazılarının incelenmesi,\n• Uygunluk belgesi başvuru dosyasının hazırlanması,\n• Kısa dönem ikamet izni başvurusunun yürütülmesi,\n• Vatandaşlık başvuru dosyasının hazırlanması,\n• Eş ve çocukların başvuru kapsamına dahil edilmesi,\n• Başvuru sürecinin kamu kurumları nezdinde takip edilmesi.\n\nEksik, hatalı veya mevzuata aykırı işlem yapılması, yalnızca başvurunun gecikmesine değil, yatırım şartının geçersiz sayılmasına da neden olabilir. Bu nedenle sürecin başından itibaren hukuki denetim altında yürütülmesi tavsiye edilir."
+        }
+      ]
+    },
+    "processStages": {
+      "eyebrow": "Yatırım Süreci",
+      "title": "Sürecin Genel Aşamaları",
+      "description": "Devlet borçlanma araçlarına yatırım yoluyla Türk vatandaşlığı başvurusu genel olarak aşağıdaki aşamalardan oluşur:",
+      "items": [
+        "Başvuru sahibinin vatandaşlık şartlarına uygunluğunun değerlendirilmesi,",
+        "Yatırım yapılacak banka ve yatırım hesabının belirlenmesi,",
+        "Devlet borçlanma aracının türü, tutarı ve vadesinin incelenmesi,",
+        "Gerekli döviz satış ve Türk Lirasına dönüşüm işlemlerinin yapılması,",
+        "En az 500.000 Amerikan Doları veya karşılığı tutarda Devlet borçlanma aracının satın alınması,",
+        "Yatırım hesabı üzerinde üç yıllık blokaj işleminin tesis edilmesi,",
+        "Banka yazıları ve yatırım belgelerinin hazırlanması,",
+        "Hazine ve Maliye Bakanlığına uygunluk belgesi başvurusu yapılması,",
+        "Uygunluk belgesinin alınması,",
+        "Kısa dönem ikamet izni başvurusunun yapılması,",
+        "Vatandaşlık başvuru dosyasının hazırlanması,",
+        "İl Nüfus ve Vatandaşlık Müdürlüğü üzerinden vatandaşlık başvurusu yapılması,",
+        "İdari inceleme ve güvenlik araştırması sürecinin tamamlanması,",
+        "Uygun görülmesi hâlinde Cumhurbaşkanı kararı ile Türk vatandaşlığının kazanılması."
+      ]
+    },
+    "legal": {
+      "eyebrow": "HUKUKİ ÇERÇEVE",
+      "title": "Yasal Dayanak",
+      "items": [
+        {
+          "title": "5901 Sayılı Türk Vatandaşlığı Kanunu",
+          "text": "Türk vatandaşlığının kazanılması, kaybı ve vatandaşlığa ilişkin temel usul ve esasları düzenler."
+        },
+        {
+          "title": "Türk Vatandaşlığı Kanununun Uygulanmasına İlişkin Yönetmelik",
+          "text": "Yatırım yoluyla ve istisnai yoldan Türk vatandaşlığının kazanılmasına ilişkin başvuru şartlarını ve prosedürleri düzenler."
+        },
+        {
+          "title": "Türk Vatandaşlığı Kanununun Uygulanmasına İlişkin Yönetmelik Madde 20/2-d",
+          "text": "En az 500.000 Amerikan Doları veya karşılığı tutarda Devlet borçlanma araçlarını üç yıl tutmak şartıyla satın aldığı Hazine ve Maliye Bakanlığınca tespit edilen yabancıların istisnai yoldan Türk vatandaşlığına başvurabilmesine ilişkin düzenlemedir."
+        },
+        {
+          "title": "6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu",
+          "text": "Yatırım yoluyla vatandaşlık başvurusu yapacak yabancıların kısa dönem ikamet izni süreçleri bakımından önem taşır."
+        }
+      ]
+    },
+    "postApproval": {
+      "eyebrow": "Uygunluk Belgesi Sonrası",
+      "title": "Başvuru İşlemleri",
+      "paragraphs": [
+        "Yukarıda yapılan açıklamalarda da belirtildiği üzere yatırım yoluyla vatandaşlık başvurusunda temel evrak yatırımın kanuna uygun olarak yapıldığını gösteren uygunluk belgesidir. Uygunluk belgesi temin edildikten sonra vatandaşlık başvurusu için gerekli diğer işlemler olan ikamet izni başvurusu ve vatandaşlık dosyasının hazırlanıp ilgili makamlara sunulması gerekmektedir. Uygunluk belgesinden sonraki süreçlere ilişkin detaylı bilgi için [Vatandaşlık Başvuru Süreci](/citizenship/basvuru-sureci) başlıklı yazımızı inceleyebilirsiniz."
+      ],
+      "bullets": []
+    },
+    "cta": {
+      "title": "Dosyanızı Başlatmaya Hazır mısınız?",
+      "description": "Büromuz, borçlanma araçları alımınızdan kimlik/pasaport teslimine kadar her adımı sizin adınıza yönetir.",
+      "primaryCta": "Ücretsiz Danışın",
+      "secondaryCta": "SSS'yi İncele"
+    }
+  },
+  "marriage_page": {
+    "hero": {
+      "breadcrumbLabel": "Evlilik Yoluyla Vatandaşlık",
+      "tag": "Vatandaşlık",
+      "titleLines": [
+        "Evlilik Yoluyla",
+        "Türk Vatandaşlığı"
+      ],
+      "highlightLineIndex": 0,
+      "summary": "Türk vatandaşı ile evli olan yabancıların evlilik yoluyla Türk vatandaşlığı başvurusunda aranan şartlar ve süreç rehberi.",
+      "primaryCta": "Ücretsiz Danışın",
+      "secondaryCta": "Sık Sorulan Sorular",
+      "imageAlt": "Evlilik Yoluyla Türk Vatandaşlığı"
+    },
+    "stats": [
+      {
+        "value": "3 Yıl",
+        "label": "Evlilik Süresi",
+        "sub": "asgari evlilik şartı"
+      },
+      {
+        "value": "Fiilen",
+        "label": "Birlikte Yaşama",
+        "sub": "aile birliği şartı"
+      },
+      {
+        "value": "Nüfus",
+        "label": "Yetkili Kurum",
+        "sub": "İl Nüfus Müdürlüğü"
+      },
+      {
+        "value": "5-6 Ay",
+        "label": "Ortalama Süre",
+        "sub": "başvuru sonuçlanması"
+      }
+    ],
+    "intro": {
+      "eyebrow": "Evlilik Yoluyla Vatandaşlık",
+      "title": "Evlilik Yoluyla Türk Vatandaşlığı Başvurusu",
+      "paragraphs": [
+        "Türk vatandaşlığının sonradan kazanılması yollarından biri de evlenme yoluyla Türk vatandaşlığının kazanılmasıdır. Ancak bir Türk batandaşı ile evlenmek, yabancı eşe doğrudan Türk vatandaşlığı kazandırmaz. Yabancı eşin Türk vatandaşlığına başvurabilmesi için evliliğin belirli bir süre devam etmiş olması, aile birliğinin fiilen sürdürülmesi ve kanunda aranan diğer şartların sağlanması gerekir.",
+        "5901 sayılı Türk Vatandaşlığı Kanunu madde 16 uyarınca, bir Türk vatandaşı ile en az üç yıldan beri evli olan ve evliliği devam eden yabancılar Türk vatandaşlığını kazanmak üzere başvuruda bulunabilir. Başvuru sahibinde aile birliği içinde yaşama, evlilik birliği ile bağdaşmayacak faaliyette bulunmama ve milli güvenlik ile kamu düzeni bakımından engel teşkil edecek bir hâlin bulunmaması şartları aranır.",
+        "Evlilik yoluyla vatandaşlık başvurusu, yalnızca evlilik cüzdanı veya evlenme belgesi sunulmasından ibaret değildir. Evliliğin gerçekliği, eşlerin birlikte yaşayıp yaşamadığı, aile birliğinin fiilen devam edip etmediği, evlenmenin yalnızca vatandaşlık elde etme amacıyla yapılıp yapılmadığı, başvuru sahibinin adli ve idari durumu ve kamu düzeni bakımından değerlendirmesi birlikte incelenir.",
+        "Bu rehber, Türk vatandaşı ile evli olan yabancıların evlilik yoluyla Türk vatandaşlığı başvurusunda aranan şartları, üç yıllık evlilik süresinin nasıl hesaplandığını, aile birliği içinde yaşama şartını, mülakat ve tahkikat sürecini, başvuru belgelerini ve dikkat edilmesi gereken temel hususları açıklamak amacıyla hazırlanmıştır.",
+        "Rehber yalnızca bilgilendirme amacıyla hazırlanmıştır. Hukuki danışmanlık için lütfen uzman bir avukattan destek alınız."
+      ],
+      "bullets": [],
+      "imageAlt": "Evlilik yoluyla vatandaşlık",
+      "cardValue": "Nüfus Onaylı",
+      "cardLabel": "Vatandaşlık Kararı",
+      "badgeValue": "3 Yıl",
+      "badgeLabel": "Minimum Evlilik"
+    },
+    "process": {
+      "eyebrow": "Adım Adım Süreç",
+      "title": "Evlilik Yoluyla Türk Vatandaşlığı Başvuru Adımları",
+      "description": "Evlilik yoluyla Türk vatandaşlığı başvurusunda 17 bölümden oluşan tüm adımlar:",
+      "items": [
+        {
+          "num": "01",
+          "icon": "⚖️",
+          "title": "BİRİNCİ BÖLÜM - EVLİLİK YOLUYLA TÜRK VATANDAŞLIĞI BAŞVURUSUNUN HUKUKİ DAYANAĞI",
+          "desc": "Evlilik yoluyla Türk vatandaşlığı başvurusu, 5901 sayılı Türk Vatandaşlığı Kanunu’nun 16. maddesi ve Türk Vatandaşlığı Kanununun Uygulanmasına İlişkin Yönetmelik hükümleri kapsamında düzenlenmektedir.\n\nKanuna göre bir Türk vatandaşı ile evlenmek, yabancı kişiye otomatik olarak Türk vatandaşlığı kazandırmaz. Yabancı eşin vatandaşlık başvurusu yapabilmesi için en az üç yıldan beri bir Türk vatandaşı ile evli olması ve evliliğin başvuru tarihinde devam ediyor olması gerekir.\n\nBu başvuru türünde esas olan, evliliğin gerçek bir aile birliği oluşturmasıdır. Bu nedenle idare, yalnızca resmi evlilik kaydının varlığıyla yetinmez; eşlerin birlikte yaşayıp yaşamadığını, evlilik birliğinin fiilen devam edip etmediği, evlenmenin yalnızca vatandaşlık elde etmek amacıyla formalite olarak yapılıp yapılmadığını araştırır."
+        },
+        {
+          "num": "02",
+          "icon": "📋",
+          "title": "İKİNCİ BÖLÜM - EVLİLİK YOLUYLA VATANDAŞLIK ŞARTLARI",
+          "desc": "Evlilik yoluyla Türk vatandaşlığı başvurusunda aranan temel şartlar şunlardır:\n• Başvuru sahibinin bir Türk vatandaşı ile evli olması,\n• Evliliğin en az üç yıldan beri devam ediyor olması,\n• Başvuru tarihinde evliliğin devam etmesi,\n• Eşlerin aile birliği içinde yaşaması,\n• Başvuru sahibinin evlilik birliği ile bağdaşmayacak bir faaliyette bulunmaması,\n• Başvuru sahibinin milli güvenlik ve kamu düzeni bakımından engel teşkil edecek bir hâlininin bulunmaması.\n\nBu şartların tamamı birlikte değerlendirilir. Üç yıllık evlilik süresinin dolması, tek başına Türk vatandaşlığının kazanılacağı anlamına gelmez. Başvuru sahibi, evlenmenin gerçek olduğunu, aile birliğinin sürdüğünü ve vatandaşlık başvurusu bakımından kamu düzeni veya milli güvenlik yönünden engel bulunmadığını gösterebilmelidir."
+        },
+        {
+          "num": "03",
+          "icon": "📅",
+          "title": "ÜÇÜNCÜ BÖLÜM - ÜÇ YILLIK EVLİLİK SÜRESİ NASIL HESAPLANIR?",
+          "desc": "Evlilik yoluyla vatandaşlık başvurusu yapılabilmesi için yabancı eşin, başvuru tarihinde en az üç yıldan beri bir Türk vatandaşı ile evli olması gerekir. Üç yıllık süre, kural olarak evliliğin resmi olarak kurulduğu tarihten itibaren hesaplanır.\n\nEvlilik Türkiye’de yapılmışsa, süre evlenme işleminin resmi makamlarca yapıldığı tarihten itibaren başlar. Evlilik yurtdışında yapılmışsa, evlenmenin Türk nüfus kayıtlarına tescil edilmesi önem taşır. Yurtdışında yapılan evliliklerin Türkiye’de tanınması ve nüfus kayıtlarına işlenmesi başvuru süreci bakımından gereklidir.\n\nÜç yıllık sürenin hesabında dikkat edilmesi gereken en önemli husus, evlilik tarihinin resmi belgelerde gün, ay ve yıl olarak açıkça yer almasıdır. Medeni hal belgesi, evlenme belgesi, nüfus kayıt örneği ve yabancı makamlarca düzenlenen belgelerde evlilik tarihi bakımından uyumsuzluk bulunması başvuru sürecinde sorun yaratabilir.\n\nEvlilik süresi üç yılı doldurmadan yapılan başvurular işleme alınmayabilir. Bu nedenle başvuru hazırlığına erken başlanabilse de, resmi başvurunun üç yıllık süre dolduktan sonra yapılması gerekir."
+        },
+        {
+          "num": "04",
+          "icon": "👤",
+          "title": "DÖRDÜNCÜ BÖLÜM - EŞİN TÜRK VATANDAŞLIĞI NE ZAMAN BAŞLAMIŞ OLMALIDIR?",
+          "desc": "Evlilik yoluyla vatandaşlık başvurusunda, başvuru sahibinin en az üç yıldan beri bir Türk vatandaşı ile evli olması aranır. Bu nedenle yalnızca üç yıllık evlilik süresinin dolması değil, evlilik ilişkisi içinde Türk vatandaşı eşin vatandaşlık statüsü de önemlidir.\n\nEğer eş doğumla Türk vatandaşı ise, evlilik tarihinden itibaren üç yıllık sürenin dolması başvuru bakımından temel ölçüt olacaktır. Ancak eş sonradan Türk vatandaşlığını kazanmışsa, başvuru sahibinin “Türk vatandaşı ile evli olma” şartının hangi tarihten itibaren gerçekleştiği ayrıca değerlendirilmelidir.\n\nBu nedenle eşin vatandaşlık statüsü, evlilik tarihi ve Türk nüfus kayıtlarındaki bilgiler başvuru öncesinde birlikte incelenmelidir. Evlilik tarihi, eşin Türk vatandaşlığını kazanma tarihi ve nüfus kayıtları arasında uyumsuzluk varsa, başvuru sürecinde ek belge veya açıklama gerekebilir."
+        },
+        {
+          "num": "05",
+          "icon": "💞",
+          "title": "BEŞİNCİ BÖLÜM - EVLİLİĞİN DEVAM ETMESİ ŞARTI",
+          "desc": "Evlilik yoluyla vatandaşlık başvurusu yapılabilmesi için evliliğin başvuru tarihinde devam ediyor olması gerekir. Boşanmış kişiler, eski Türk vatandaşı eşleri üzerinden evlilik yoluyla vatandaşlık başvurusu yapamaz.\n\nBaşvurudan önce boşanma davası açılmış olması, fiili ayrılık bulunması veya eşler arasında aile birliğinin sona erdiğini gösteren durumların bulunması dosya bakımından risk yaratabilir. Çünkü evlilik yoluyla vatandaşlık başvurusunda yalnızca resmi evlilik kaydının devam etmesi değil, aile birliğinin fiilen sürmesi de aranır.\n\nBaşvuru tarihinden sonra Türk vatandaşı eşin ölümü nedeniyle evliliğin sona ermesi hâlinde ise aile birliği içinde yaşama şartı aranmayabilir. Ancak bu durum başvurunun otomatik olarak kabul edileceği anlamına gelmez; dosyanın diğer şartlar bakımından incelenmesine devam edilir."
+        },
+        {
+          "num": "06",
+          "icon": "🏠",
+          "title": "ALTINCI BÖLÜM - AİLE BİRLİĞİ İÇİNDE YAŞAMA ŞARTI",
+          "desc": "Evlilik yoluyla vatandaşlık başvurularında en önemli şartlardan biri, eşlerin aile birliği içinde yaşamasıdır. Aile birliği içinde yaşama, eşlerin gerçek bir evlilik ilişkisi içinde ortak hayatı sürdürmesini ifade eder.\n\nBu şart kapsamında idare şu hususları değerlendirebilir:\n• Eşlerin aynı adreste yaşayıp yaşamadığı,\n• Ortak konutun bulunup bulunmadığı,\n• Eşlerin birbirlerinin aile, iş ve sosyal çevresini tanıyıp tanımadığı,\n• Evlenmenin fiilen devam edip etmediği,\n• Eşlerin ekonomik ve sosyal yaşamlarını birlikte sürdürüp sürdürmediği,\n• Evlenmenin yalnızca vatandaşlık başvurusu amacıyla yapılıp yapılmadığı,\n• Eşlerin beyanlarının birbiriyle uyumlu olup olmadığı.\n\nEşlerin iş, eğitim, sağlık, askerlik, ailevi zorunluluk veya benzeri haklı nedenlerle geçici olarak ayrı şehirlerde ya da ülkelerde bulunması, her durumda aile birliğinin bulunmadığı anlamına gelmez. Ancak bu durumda ayrılığın geçici, haklı ve açıklanabilir olması gerekir.\n\nEşlerin uzun süredir ayrı yaşaması, ortak adres kaydının bulunmaması, birbirleri hakkında temel bilgileri bilmemesi, ortak yaşamı destekleyen belgelerin olmaması veya evlenmenin şekli olduğu izlenimi veren durumlar başvurunun reddedilmesine neden olabilir."
+        },
+        {
+          "num": "07",
+          "icon": "🚫",
+          "title": "YEDİNCİ BÖLÜM - EVLİLİK BİRLİĞİ İLE BAĞDAŞMAYACAK FAALİYETTE BULUNMAMA",
+          "desc": "Kanun, evlilik yoluyla Türk vatandaşlığı başvurusunda bulunan yabancının evlilik birliği ile bağdaşmayacak bir faaliyette bulunmamasını şart koşar. Bu şart, evliliğin gerçekliğini ve başvuru sahibinin aile yaşamına uygun davranış içinde olup olmadığını değerlendirmeye yöneliktir.\n\nUygulamada bu kapsamda özellikle şu hususlar incelenebilir:\n• Evlenmenin formalite olup olmadığı,\n• Başvuru sahibinin başka biriyle fiili birliktelik yaşayıp yaşamadığı,\n• Evlilik birliğiyle bağdaşmayacak faaliyetler içinde bulunup bulunmadığı,\n• Evlenmenin kamu düzenini veya aile kurumunu kötüye kullanma amacı taşıyıp taşımadığı,\n• Başvuru sahibinin geçmiş adli veya idari kayıtları,\n• Kolluk araştırması ve komisyon değerlendirmesi.\n\nBu şart, yalnızca ceza hukuku bakımından suç teşkil eden davranışlarla sınırlı değildir. Evlenmenin amacına, aile birliğine ve kamu düzenine aykırı faaliyetler de başvuru bakımından olumsuz değerlendirilebilir."
+        },
+        {
+          "num": "08",
+          "icon": "🛡️",
+          "title": "SEKİZİNCİ BÖLÜM - MİLLİ GÜVENLİK VE KAMU DÜZENİ DEĞERLENDİRMESİ",
+          "desc": "Evlilik yoluyla vatandaşlık başvurusunda başvuru sahibinin milli güvenlik ve kamu düzeni bakımından engel teşkil edecek bir hâlininin bulunmaması gerekir. Bu şart, tüm vatandaşlık başvurularında olduğu gibi evlilik yoluyla başvurularda da temel değerlendirme kriterlerinden biridir.\n\nBu kapsamda başvuru sahibinin adli sicil kayıtları, hakkında devam eden soruşturma veya kovuşturma bulunup bulunmadığı, idari kayıtları, kamu düzeni bakımından risk oluşturabilecek faaliyetleri ve güvenlik araştırması sonuçları değerlendirilebilir.\n\nTürk vatandaşı ile üç yıldan fazla süredir evli olmak, milli güvenlik veya kamu düzeni bakımından olumsuz değerlendirme yapılması hâlinde vatandaşlık başvurusunun kabul edileceği anlamına gelmez. Bu nedenle başvuru öncesinde adli sicil, dava, idari tahdit ve benzeri risklerin kontrol edilmesi önemlidir."
+        },
+        {
+          "num": "09",
+          "icon": "🗣️",
+          "title": "DOKUZUNCU BÖLÜM - MÜLAKAT VE KOMİSYON SÜRECİ",
+          "desc": "Evlilik yoluyla Türk vatandaşlığı başvurularında mülakat ve inceleme süreci başvurunun en kritik aşamalarından biridir. Başvuru sahibi yabancı eş ve Türk vatandaşı eş, yetkili makamlar tarafından birlikte veya ayrı ayrı görüşmeye alınabilir.\n\nMülakat sürecinde genellikle şu konular değerlendirilebilir:\n• Eşlerin ne zaman ve nasıl tanıştığı,\n• Evlilik tarihleri,\n• Düğün veya evlilik süreci,\n• Ortak adres ve birlikte yaşam düzeni,\n• Eşlerin aileleri, işleri ve sosyal çevreleri,\n• Günlük yaşam alışkanlıkları,\n• Ev içi düzen ve ortak yaşam bilgileri,\n• Eşlerin birbirleri hakkındaki temel bilgileri,\n• Evlenmenin gerçek ve sürdürülen bir aile birliği olup olmadığı.\n\nKomisyon, eşlerin beyanlarının tutarlı olup olmadığını ve dosyadaki belgelerle uyum gösterip göstermediğini değerlendirir. Eşlerin birbirinden tamamen farklı bilgiler vermesi, temel aile bilgilerini bilmemesi veya ortak yaşamı destekleyen hiçbir belgenin bulunmaması başvuru açısından risk oluşturabilir.\n\nMülakatın amacı, evlenmenin gerçekliğini ve aile birliğinin devam edip etmediğini değerlendirmektir. Bu nedenle başvuru öncesinde dosya belgeleri ile eşlerin beyanlarının tutarlı olması sağlanmalıdır."
+        },
+        {
+          "num": "10",
+          "icon": "👮",
+          "title": "ONUNCU BÖLÜM - KOLLUK ARAŞTIRMASI VE ADRES İNCELEMESİ",
+          "desc": "Evlilik yoluyla vatandaşlık başvurularında mülakat dışında kolluk araştırması ve adres incelemesi de yapılabilir. Bu araştırma kapsamında eşlerin aynı adreste yaşayıp yaşamadığı, komşu veya çevre beyanları, ortak yaşam düzeni ve aile birliğinin gerçekliği incelenebilir.\n\nAdres kayıt sistemindeki adres ile fiili yaşam adresinin uyumlu olması önemlidir. Eşlerin farklı adreslerde kayıtlı olması, fiilen ayrı yaşamaları veya adres kayıtlarının güncel olmaması başvuru sürecinde ek açıklama gerektirebilir.\n\nKolluk araştırmasında olumsuz kanaat oluşması, komisyon değerlendirmesini ve nihai karar sürecini etkileyebilir. Bu nedenle başvuru yapılmadan önce adres kayıtları, kira sözleşmesi, tapu, fatura, ortak yaşam belgeleri ve aile birliğini destekleyen diğer belgeler kontrol edilmelidir."
+        },
+        {
+          "num": "11",
+          "icon": "✈️",
+          "title": "ON BİRİNCİ BÖLÜM - YURT İÇİNDEN VE YURT DIŞINDAN BAŞVURU",
+          "desc": "Evlilik yoluyla Türk vatandaşlığı başvuruları, başvuru sahibinin yerleşim yerine göre yurt içinde veya yurt dışında yapılabilir. Türkiye’de yaşayan yabancılar bakımından başvuru, yerleşim yerinin bulunduğu valilik, yani İl Nüfus ve Vatandaşlık Müdürlüğü üzerinden yapılır.\n\nYurt dışında yaşayan yabancılar ise dış temsilcilikler aracılığıyla başvuru yapabilir. Yurt dışı başvurularında evliliğin Türk nüfus kayıtlarına işlenmiş olması, belgelerin usulüne uygun şekilde hazırlanması ve başvuru sahibinin bulunduğu ülkedeki resmi belgelerin apostil veya konsolosluk onayı ile Türkçe tercümelerinin tamamlanması gerekir.\n\nTürkiye’de ikamet eden başvuru sahipleri bakımından en son tarihli ikamet izni belgesi başvuru dosyasında yer alabilir. Ancak evlilik yoluyla vatandaşlık başvurusu, genel yolla vatandaşlık başvurusundan farklı olarak beş yıllık ikamet şartına dayanmaz. Bununla birlikte başvuru sahibinin Türkiye’de bulunma statüsü, adres kaydı ve aile birliği içinde yaşama durumunun ispatı bakımından önem taşıyabilir."
+        },
+        {
+          "num": "12",
+          "icon": "👨‍👩‍👧‍👦",
+          "title": "ON İKİNCİ BÖLÜM - BAŞVURUNUN KİMLERİ KAPSADIĞI",
+          "desc": "Evlilik yoluyla Türk vatandaşlığı başvurusu esas olarak Türk vatandaşı ile evli olan yabancı eş tarafından yapılır. Türk vatandaşı eş zaten Türk vatandaşı olduğundan başvuru sahibi konumunda değildir; ancak başvuru sürecinde aile birliğinin ispatı, mülakat ve inceleme bakımından sürecin doğal tarafıdır.\n\nBaşvuru sahibinin önceki evliliğinden veya mevcut evlilikten ergin olmayan yabancı çocukları varsa, bu çocukların Türk vatandaşlığı kazanıp kazanamayacağı ayrı değerlendirilir. Yetkili makam kararıyla Türk vatandaşlığının kazanılması eşin vatandaşlığına etki etmez; ancak ana veya babanın velayeti kendisinde bulunan ergin olmayan çocukları, diğer ebeveynin muvafakatiyle Türk vatandaşlığını kazanabilir.\n\nErgin çocuklar, anne veya babanın evlilik yoluyla Türk vatandaşlığı kazanması nedeniyle otomatik olarak Türk vatandaşlığı kazanmaz. Bu kişiler şartları varsa kendi adlarına ayrıca vatandaşlık başvurusu yapmalıdır.\n\nBu nedenle evlilik yoluyla vatandaşlık başvurusu yapılırken başvuru sahibinin çocuklarının yaşı, velayet durumu, diğer ebeveynin muvafakati, çocukların kimlik ve doğum belgeleri ile aile bağını gösteren belgeler ayrıca değerlendirilmelidir."
+        },
+        {
+          "num": "13",
+          "icon": "📂",
+          "title": "ON ÜÇÜNCÜ BÖLÜM - BAŞVURU İÇİN GEREKLİ BELGELER",
+          "desc": "Evlilik yoluyla Türk vatandaşlığı başvurusunda genel olarak aşağıdaki belgeler hazırlanır:\n• Başvuru formu,\n• Biyometrik fotoğraf,\n• Başvuru sahibinin pasaportu veya pasaport yerine geçen belgesi,\n• Vatansızlık durumu varsa buna ilişkin belge,\n• Başvuru sahibinin kimlik bilgilerini gösteren doğum belgesi veya nüfus kayıt örneği,\n• Evlilik belgesi,\n• Türk vatandaşı eşe ait nüfus kayıt örneği,\n• Başvuru sahibinin medeni halini gösteren belge,\n• Yerleşim yeri Türkiye’de ise en son tarihli ikamet izni belgesi,\n• Kesinleşmiş mahkeme kararı varsa onaylı örneği,\n• Başvuru sahibinin doğum tarihinin ay ve günü bulunmuyorsa buna ilişkin belge veya beyan,\n• Hizmet bedeli makbuzu,\n• Gerekli görülmesi hâlinde aile birliğini ispatlayan ek belgeler.\n\nAile birliğini desteklemek amacıyla ayrıca şu belgeler de dosya bakımından faydalı olabilir:\n• Ortak adres kaydı,\n• Kira sözleşmesi veya tapu kaydı,\n• Ortak faturalar,\n• Ortak banka veya ödeme kayıtları,\n• Çocuklara ilişkin doğum belgeleri,\n• Fotoğraflar,\n• Seyahat kayıtları,\n• Evliliğin fiilen sürdüğünü gösteren diğer belgeler.\n\nYabancı ülkelerden alınan belgelerin usulüne uygun şekilde onaylanması, apostil veya konsolosluk tasdiklerinin yapılması ve noter onaylı Türkçe tercümelerinin hazırlanması gerekir."
+        },
+        {
+          "num": "14",
+          "icon": "📮",
+          "title": "ON DÖRDÜNCÜ BÖLÜM - BAŞVURU MAKAMI VE USUL",
+          "desc": "Evlilik yoluyla Türk vatandaşlığı başvurusu, yurt içinde yerleşim yerinin bulunduğu valiliğe, yurt dışında ise dış temsilciliklere yapılır. Başvuru bizzat veya bu hakkın kullanılmasına ilişkin özel vekâletname ile yapılabilir. Posta yoluyla yapılan başvurular kabul edilmez.\n\nBaşvuru süreci genel olarak şu aşamalardan oluşur:\n1. Evlilik süresinin ve Türk vatandaşı eşin vatandaşlık durumunun incelenmesi,\n2. Evliliğin Türk nüfus kayıtlarına işlenip işlenmediğinin kontrol edilmesi,\n3. Başvuru belgelerinin hazırlanması,\n4. İl Nüfus ve Vatandaşlık Müdürlüğü veya dış temsilcilik üzerinden başvuru yapılması,\n5. Ön inceleme yapılması,\n6. Eşlerin mülakata alınması,\n7. Kolluk ve adres araştırması yapılması,\n8. Aile birliği içinde yaşama şartının değerlendirilmesi,\n9. Milli güvenlik ve kamu düzeni araştırmasının tamamlanması,\n10. Dosyanın İçişleri Bakanlığına gönderilmesi,\n11. Başvurunun idari makamlarca değerlendirilmesi,\n12. Uygun görülmesi hâlinde Türk vatandaşlığının kazanılması.\n\nBaşvurunun işleme alınması, vatandaşlığın kesin olarak kazanılacağı anlamına gelmez. Nihai değerlendirme yetkili makamlar tarafından yapılır."
+        },
+        {
+          "num": "15",
+          "icon": "⚠️",
+          "title": "ON BEŞİNCİ BÖLÜM - BAŞVURU RİSKLERİ VE RED SEBEPLERİ",
+          "desc": "Evlilik yoluyla vatandaşlık başvurularında en sık karşılaşılan riskler şunlardır:\n• Evlilik süresinin üç yılı doldurmamış olması,\n• Evliliğin Türk nüfus kayıtlarına işlenmemiş olması,\n• Evlilik belgelerinde tarih veya kimlik uyumsuzluğu bulunması,\n• Eşlerin fiilen ayrı yaşaması,\n• Aile birliği içinde yaşama şartının ispatlanamaması,\n• Eşlerin mülakatta çelişkili beyanlarda bulunması,\n• Evlenmenin formalite olduğu yönünde kanaat oluşması,\n• Başvuru sahibinin evlilik birliğiyle bağdaşmayacak faaliyetlerde bulunduğunun değerlendirilmesi,\n• Adli sicil veya devam eden ceza yargılaması bulunması,\n• Milli güvenlik veya kamu düzeni bakımından olumsuz değerlendirme yapılması,\n• Adres kayıtları ile fiili yaşam adresinin uyumsuz olması,\n• Belgelerin eksik, hatalı veya usulüne uygun onaylanmamış olması.\n\nBu nedenle evlilik yoluyla vatandaşlık başvurusu yapılmadan önce evlilik süresi, aile birliği, ikamet ve adres kayıtları, yabancı belgeler ve mülakat süreci dikkatle hazırlanmalıdır."
+        },
+        {
+          "num": "16",
+          "icon": "💔",
+          "title": "ON ALTINCI BÖLÜM - BOŞANMA, ÖLÜM VE EVLİLİĞİN BUTLANI HÂLLERİ",
+          "desc": "Evlilik yoluyla vatandaşlık başvurusu yapılabilmesi için başvuru tarihinde evliliğin devam etmesi gerekir. Başvurudan önce boşanma gerçekleşmişse, yabancı eş eski evliliğe dayanarak vatandaşlık başvurusunda bulunamaz.\n\nBaşvuru yapıldıktan sonra Türk vatandaşı eşin ölümü nedeniyle evliliğin sona ermesi hâlinde, aile birliği içinde yaşama şartı aranmayabilir. Ancak başvurunun diğer şartlar bakımından incelenmesine devam edilir.\n\nEvlilik yoluyla Türk vatandaşlığını kazanan yabancının evliliğinin sonradan butlanına karar verilirse, kişi evlenmede iyi niyetli ise Türk vatandaşlığını muhafaza edebilir. Bu durum her somut olayın şartlarına göre değerlendirilir.\n\nBoşanma, ölüm veya butlan gibi durumlar başvuru sürecinde ya da vatandaşlık kazanıldıktan sonra önemli hukuki sonuçlar doğurabileceğinden, bu tür hâllerde mutlaka hukuki destek alınmalıdır."
+        },
+        {
+          "num": "17",
+          "icon": "💼",
+          "title": "ON YEDİNCİ BÖLÜM - AVUKAT DESTEĞİNİN ÖNEMİ",
+          "desc": "Evlilik yoluyla Türk vatandaşlığı başvurusu, yalnızca evlilik belgesi ibrazından ibaret olmayan, aile birliği ve evliliğin gerçekliği yönünden ayrıntılı inceleme gerektiren bir süreçtir.\n\nAvukat desteği özellikle şu aşamalarda önemlidir:\n• Üç yıllık evlilik süresinin doğru hesaplanması,\n• Yurtdışında yapılan evliliklerin Türkiye’de tescilinin kontrol edilmesi,\n• Türk vatandaşı eşin vatandaşlık statüsünün değerlendirilmesi,\n• Aile birliği içinde yaşama şartının ispatı için belgelerin hazırlanması,\n• Başvuru sahibinin ikamet ve adres kayıtlarının kontrol edilmesi,\n• Yabancı belgelerin apostil, tercüme ve noter işlemlerinin yürütülmesi,\n• Mülakat öncesi dosya tutarlılığının sağlanması,\n• Çocukların başvuru kapsamına alınıp alınamayacağının değerlendirilmesi,\n• Eksik belge veya ek bilgi taleplerinin karşılanması,\n• Red kararı hâlinde idari başvuru ve dava yollarının değerlendirilmesi.\n\nEksik veya hatalı hazırlanan başvurular, sürecin uzamasına veya başvurunun reddedilmesine neden olabilir. Bu nedenle evlilik yoluyla Türk vatandaşlığı başvurularında sürecin başından itibaren hukuki destek alınması tavsiye edilir."
+        }
+      ]
+    },
+    "processStages": {
+      "eyebrow": "Sürecin Genel Aşamaları",
+      "title": "Evlilik Yoluyla Türk Vatandaşlığı Başvurusu Genel Aşamaları",
+      "items": [
+        "1. Evlilik süresinin üç yılı doldurup doldurmadığının incelenmesi",
+        "2. Evliliğin Türk nüfus kayıtlarına işlenip işlenmediğinin kontrol edilmesi",
+        "3. Türk vatandaşı eşin vatandaşlık durumunun değerlendirilmesi",
+        "4. Başvuru sahibinin kimlik, medeni hal ve aile belgelerinin hazırlanması",
+        "5. Gerekli ise ikamet izni ve adres kayıtlarının kontrol edilmesi",
+        "6. Aile birliğini destekleyen belgelerin hazırlanması",
+        "7. İl Nüfus ve Vatandaşlık Müdürlüğü veya dış temsilcilik üzerinden başvuru yapılması",
+        "8. Emniyet Müdürlüğü nezdinde parmak izi verilmesi",
+        "9. Eşlerin mülakata alınması",
+        "10. Kolluk ve adres araştırmasının yapılması",
+        "11. Aile birliği içinde yaşama şartının değerlendirilmesi",
+        "12. Milli güvenlik ve kamu düzeni araştırmasının tamamlanması",
+        "13. Dosyanın yetkili makamlarca değerlendirilmesi",
+        "14. Uygun görülmesi hâlinde Türk vatandaşlığının kazanılması"
+      ]
+    },
+    "legal": {
+      "eyebrow": "Yasal Dayanak",
+      "title": "Hukuki Çerçevenin Yasal Dayanakları",
+      "items": [
+        {
+          "title": "5901 Sayılı Türk Vatandaşlığı Kanunu",
+          "text": "Türk vatandaşlığının kazanılması, kaybı ve vatandaşlığa ilişkin temel usul ve esasları düzenler."
+        },
+        {
+          "title": "5901 Sayılı Türk Vatandaşlığı Kanunu Madde 16",
+          "text": "Evlenme yoluyla Türk vatandaşlığının kazanılması şartlarını düzenler."
+        },
+        {
+          "title": "Türk Vatandaşlığı Kanununun Uygulanmasına İlişkin Yönetmelik",
+          "text": "Evlenme yoluyla vatandaşlık başvurusunun usul ve esaslarını düzenler."
+        },
+        {
+          "title": "5490 Sayılı Nüfus Hizmetleri Kanunu",
+          "text": "Nüfus kayıtları, evlilik tescili, doğum tarihi ve aile bağlarının belgelenmesi bakımından önem taşır."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Evlilik yoluyla vatandaşlık sürecini birlikte planlayalım",
+      "description": "Evlilik süresi, aile birliği şartı ve mülakat hazırlığı gibi tüm detayları uzman avukatlarımız eşliğinde güvenle tamamlayın. Süreci eksiksiz ve mevzuata uygun yürütmek için ",
+      "primaryCta": "Bize Ulaşın",
+      "secondaryCta": "Soru Sorun"
+    }
+  },
+  "genel_yolla_page": {
+    "hero": {
+      "breadcrumbLabel": "Genel Yolla Vatandaşlık",
+      "tag": "Genel Yolla Vatandaşlık",
+      "titleLines": [
+        "Genel Yolla",
+        "Türk Vatandaşlığı"
+      ],
+      "highlightLineIndex": 0,
+      "summary": "Türkiye’de 5 Yıl İkamet Sonrasında Türk Vatandaşlığının Kazanılması",
+      "primaryCta": "Ücretsiz Danışın",
+      "secondaryCta": "Sık Sorulan Sorular",
+      "imageAlt": "Genel Yolla Vatandaşlık"
+    },
+    "stats": [
+      {
+        "value": "5 Yıl",
+        "label": "İkamet Şartı",
+        "sub": "yasal ve kesintisiz"
+      },
+      {
+        "value": "Çalışma/Aile",
+        "label": "Geçerli İkamet",
+        "sub": "turistik hariç"
+      },
+      {
+        "value": "NVİ",
+        "label": "Yetkili Kurum",
+        "sub": "Nüfus ve Vatandaşlık"
+      },
+      {
+        "value": "Emniyet",
+        "label": "Gün Sayımı",
+        "sub": "giriş-çıkış kontrolü"
+      }
+    ],
+    "intro": {
+      "eyebrow": "Genel Yolla Vatandaşlık",
+      "title": "Genel Yolla Türk Vatandaşlığı Başvurusu",
+      "paragraphs": [
+        "Türk vatandaşlığının sonradan kazanılması yollarından biri, Türkiye’de kesintisiz şekilde belirli süre ikamet eden yabancıların genel hükümler kapsamında Türk vatandaşlığı başvurusunda bulunmasıdır. Genel yolla Türk vatandaşlığı başvurusu, yatırım yoluyla vatandaşlık başvurularından farklı olarak belirli bir yatırım tutarına değil; başvuru sahibinin Türkiye’de yasal, kesintisiz ve yerleşme niyetini gösteren bir ikamet geçmişine sahip olmasına dayanır.",
+        "5901 sayılı Türk Vatandaşlığı Kanunu madde 11 kapsamında, Türk vatandaşlığını genel yolla kazanmak isteyen yabancının başvuru tarihinden geriye doğru Türkiye’de kesintisiz beş yıl ikamet etmiş olması gerekir. Ancak beş yıllık ikamet süresinin tamamlanması tek başına vatandaşlık hakkı doğurmaz. Başvuru sahibinin ayrıca ergin ve ayırt etme gücüne sahip olması, Türkiye’de yerleşmeye karar verdiğini davranışlarıyla göstermesi, genel sağlık bakımından tehlike teşkil eden bir hastalığının bulunmaması, iyi ahlak sahibi olması, yeterli düzeyde Türkçe konuşabilmesi, kendisinin ve bakmakla yükümlü olduğu kişilerin geçimini sağlayacak gelire veya mesleğe sahip olması ve milli güvenlik ile kamu düzeni bakımından engel teşkil edecek bir hâlinin bulunmaması gerekir.",
+        "Bu başvuru yolu, özellikle Türkiye’de çalışma izniyle çalışan, aile ikamet izniyle yaşayan, uzun dönem ikamet iznine sahip olan, Türkiye’de taşınmazı veya ticari faaliyeti bulunan, Türkiye’de aile düzeni kurmuş ya da Türkiye’de kalıcı biçimde yerleşme iradesi gösteren yabancılar bakımından önem taşır.",
+        "Bu rehber, Türkiye’de beş yıl ikamet izni sonrasında genel yolla Türk vatandaşlığına başvurmak isteyen yabancılara yönelik olarak ikamet süresi, geçerli ikamet türleri, gün sayımı, başvuru belgeleri, başvurunun kimleri kapsadığı ve vatandaşlık sürecinde dikkat edilmesi gereken temel hususları açıklamak amacıyla hazırlanmıştır.",
+        "Rehber yalnızca bilgilendirme amacıyla hazırlanmıştır. Hukuki danışmanlık için lütfen uzman bir avukattan destek alınız."
+      ],
+      "bullets": [],
+      "imageAlt": "Genel yolla vatandaşlık",
+      "cardValue": "5 Yıl İkamet",
+      "cardLabel": "Temel Kriter",
+      "badgeValue": "Yasal",
+      "badgeLabel": "İkamet Geçmişi"
+    },
+    "process": {
+      "eyebrow": "Adım Adım Süreç",
+      "title": "Genel Yolla Türk Vatandaşlığı Başvuru Adımları",
+      "description": "Genel yolla vatandaşlık başvurusunda 15 bölümden oluşan tüm adımlar:",
+      "items": [
+        {
+          "num": "01",
+          "icon": "⚖️",
+          "title": "BİRİNCİ BÖLÜM - GENEL YOLLA TÜRK VATANDAŞLIĞI BAŞVURUSUNUN HUKUKİ DAYANAĞI",
+          "desc": "Genel yolla Türk vatandaşlığı başvurusu, 5901 sayılı Türk Vatandaşlığı Kanunu’nun 11. maddesi ve Türk Vatandaşlığı Kanununun Uygulanmasına İlişkin Yönetmelik hükümleri kapsamında düzenlenmektedir. Bu başvuru türünde vatandaşlık, doğrudan veya otomatik olarak kazanılmaz. Başvuru sahibi, kanunda öngörülen şartları taşıdığını belgelemeli ve idari makamlar tarafından yapılacak inceleme sonucunda vatandaşlığa alınmasının uygun görülmesi gerekir.\n\nGenel yolla vatandaşlık başvurusunda temel şart, başvuru tarihinden geriye doğru Türkiye’de kesintisiz beş yıl ikamet etmiş olmaktır. Ancak bu beş yıllık sürenin yalnızca takvimsel olarak dolması yeterli değildir. İkametin yasal olması, Türkiye’de yerleşme niyetini göstermesi, kabul edilen ikamet türlerine dayanması ve yurtdışı kalış süreleri nedeniyle kesintiye uğramamış olması gerekir.\n\nBu nedenle genel yolla vatandaşlık başvurusu yapılmadan önce başvuru sahibinin son beş yıllık ikamet geçmişi, ikamet izin türleri, Türkiye’ye giriş ve çıkış kayıtları, çalışma izni veya ikamet izni süreleri, adres kayıtları ve aile durumu birlikte değerlendirilmelidir."
+        },
+        {
+          "num": "02",
+          "icon": "📜",
+          "title": "İKİNCİ BÖLÜM - GENEL YOLLA TÜRK VATANDAŞLIĞI ŞARTLARI",
+          "desc": "Genel yolla Türk vatandaşlığı başvurusunda aranan temel şartlar şunlardır:\n• Başvuru sahibinin kendi milli kanununa, vatansız ise Türk Medeni Kanunu’na göre ergin ve ayırt etme gücüne sahip olması,\n• Başvuru tarihinden geriye doğru Türkiye’de kesintisiz beş yıl ikamet etmiş olması,\n• Türkiye’de yerleşmeye karar verdiğini davranışlarıyla teyit etmesi,\n• Genel sağlık bakımından tehlike teşkil eden bir hastalığının bulunmaması,\n• İyi ahlak sahibi olması,\n• Toplumsal yaşama uyum sağlayabilecek düzeyde Türkçe konuşabilmesi,\n• Türkiye’de kendisinin ve bakmakla yükümlü olduğu kişilerin geçimini sağlayacak gelire veya mesleğe sahip olması,\n• Milli güvenlik ve kamu düzeni bakımından engel teşkil edecek bir hâlinin bulunmaması.\n\nBu şartların tamamı birlikte değerlendirilir. Beş yıllık ikamet süresini tamamlayan her yabancının vatandaşlık başvurusu kendiliğinden kabul edilmez. İdare, başvuru sahibinin Türkiye ile kurduğu fiili bağı, sosyal uyumunu, gelir durumunu, adli sicilini, kamu düzeni bakımından durumunu ve Türkiye’de kalıcı olarak yerleşme iradesini inceler."
+        },
+        {
+          "num": "03",
+          "icon": "📅",
+          "title": "ÜÇÜNCÜ BÖLÜM - BEŞ YILLIK İKAMET ŞARTI",
+          "desc": "Genel yolla Türk vatandaşlığı başvurusu yapabilmek için başvuru sahibinin başvuru tarihinden geriye doğru Türkiye’de kesintisiz beş yıl ikamet etmiş olması gerekir. Bu süre, ileriye dönük değil, başvuru tarihinden geriye doğru hesaplanır.\n\nÖrneğin başvuru tarihi 1 Temmuz 2026 ise, başvuru sahibinin 1 Temmuz 2021 tarihinden itibaren Türkiye’de kesintisiz ve yasal ikamet geçmişine sahip olması beklenir. Bu süre içinde ikamet izinleri arasında uzun boşluklar bulunmamalı, başvuru sahibi vize ihlali veya izinsiz kalış durumuna düşmemeli ve yurtdışı kalış süreleri ikameti kesintiye uğratacak seviyeye ulaşmamalıdır.\n\nBeş yıllık sürenin hesabında yalnızca Türkiye’de fiilen bulunulan günler değil, aynı zamanda bu kalışın hangi hukuki statüye dayandığı da önemlidir. Yasal ikamet izni bulunmaksızın Türkiye’de geçirilen süreler genel yolla vatandaşlık başvurusu bakımından geçerli ikamet olarak kabul edilmez."
+        },
+        {
+          "num": "04",
+          "icon": "✈️",
+          "title": "DÖRDÜNCÜ BÖLÜM - GÜN SAYIMI VE YURTDIŞINDA KALIŞ SÜRELERİ",
+          "desc": "Genel yolla vatandaşlık başvurularında en önemli konulardan biri, başvuru sahibinin Türkiye dışında geçirdiği sürelerin ikamet şartını kesip kesmediğidir. Başvuru tarihinden geriye doğru beş yıllık dönem içinde yabancının Türkiye’ye giriş ve çıkış kayıtları incelenir.\n\nUygulamada gün sayımı yapılırken özellikle şu hususlara dikkat edilmelidir:\n• Son beş yıl içinde Türkiye dışında geçirilen toplam süre,\n• Son bir yıl içinde Türkiye dışında geçirilen toplam süre,\n• Yurtdışı kalışların zorunlu kamu hizmeti, eğitim veya sağlık gibi haklı nedenlere dayanıp dayanmadığı,\n• Yabancının Türkiye’de geçerli ikamet izni veya çalışma izni bulunup bulunmadığı,\n• İkamet izinleri arasında boşluk olup olmadığı,\n• Yabancının Türkiye’de yerleşme niyetini gösteren fiili bağlarının devam edip etmediği.\n\nGenel ikamet hukuku bakımından, zorunlu kamu hizmeti, eğitim ve sağlık nedenleri hariç olmak üzere, bir yılda toplam altı ayı geçen veya son beş yıl içinde toplam bir yılı aşan Türkiye dışında kalışlar ikamette kesinti olarak değerlendirilebilir. Bu nedenle genel yolla vatandaşlık başvurusu planlayan kişilerin son beş yıllık dönemde toplam bir yıldan fazla; özellikle son bir yıllık dönemde ise toplam altı aydan fazla yurtdışında kalmamaya dikkat etmesi gerekir.\n\nBununla birlikte vatandaşlık başvurularında idari uygulama daha ihtiyatlı değerlendirilebilmektedir. Nüfus ve Vatandaşlık İşleri uygulamasında, aranan ikamet süresi içinde Türkiye dışında geçirilen toplam sürenin altı ayı aşması hâlinde ikamet süresinin kesildiği yönünde değerlendirme yapılabildiğinden, başvuru öncesinde giriş-çıkış kayıtları ayrıntılı şekilde incelenmelidir.\n\nBu nedenle genel yolla vatandaşlık başvurusu yapılmadan önce başvuru sahibinin Emniyet veya ilgili makamlar nezdindeki yurda giriş-çıkış kayıtları alınmalı, son beş yıllık dönem gün gün hesaplanmalı ve başvurunun risk taşıyıp taşımadı değerlendirilmelidir."
+        },
+        {
+          "num": "05",
+          "icon": "💳",
+          "title": "BEŞİNCİ BÖLÜM - HANGİ İKAMET İZİNLERİ GEÇERLİ KABUL EDİLİR?",
+          "desc": "Genel yolla Türk vatandaşlığı başvurusunda her ikamet izni türü otomatik olarak geçerli ikamet kabul edilmez. Yasal ikamet izni bulunması gerekir; ancak bu ikamet izninin Türkiye’de yerleşme niyetini gösteren nitelikte olması da önemlidir.\n\nGenel olarak Türkiye’de yerleşme iradesini gösterebilecek ikamet veya izin türleri şunlardır:\n• Çalışma izni,\n• Aile ikamet izni,\n• Uzun dönem ikamet izni,\n• Türkiye’de taşınmaz sahibi olmaya dayalı kısa dönem ikamet izni,\n• Ticari bağlantı, iş kurma, yatırım veya benzeri yerleşme niyetini gösteren kısa dönem ikamet izinleri,\n• Türkiye’de aile düzeni kurulduğunu gösteren ikamet izinleri,\n• Türkiye’de uzun süreli ve kesintisiz yaşamaya dayanak oluşturan diğer yasal ikamet izinleri.\n\nÇalışma izni, kanun gereği ikamet izni yerine de geçtiğinden, çalışma izniyle Türkiye’de bulunan yabancıların bu süreleri genel yolla vatandaşlık başvurusu bakımından önem taşıyabilir. Ancak çalışma izni sürelerinde de Türkiye’de fiilen bulunma, yurtdışı kalış süresi ve izinler arasında kesinti bulunup bulunmadığı ayrıca incelenmelidir.\n\nBuna karşılık, Türkiye’de yerleşme niyetini göstermeyen bazı ikamet türleri vatandaşlık başvurusu bakımından geçerli ikamet olarak kabul edilmeyebilir. Özellikle turistik amaçlı ikamet izni, öğrenim ikamet izni, öğrenim gören çocuğa refakat amacıyla alınan ikamet izni, tedavi amacıyla alınan ikamet izni, sığınma veya iltica başvuruya dayalı kalışlar ve diplomatik veya konsüler ayrıcalık sağlayan yabancı misyon personeli kimlik kartları genel yolla vatandaşlık başvurusunda geçerli ikamet olarak değerlendirilmeyebilir.\n\nBu nedenle başvuru sahibinin yalnızca beş yıldır Türkiye’de bulunması yeterli değildir. Türkiye’de hangi ikamet izniyle bulunduğu, bu ikametin Türkiye’de kalıcı yerleşme niyetini gösterip göstermediği ve önceki ikamet türlerinin başvuru bakımından sayılıp sayılmayacağı ayrıca değerlendirilmelidir."
+        },
+        {
+          "num": "06",
+          "icon": "⚠️",
+          "title": "ALTINCI BÖLÜM - TURİSTİK İKAMET İZNİ VE ÖĞRENCİ İKAMET İZNİ BAKIMINDAN DİKKAT EDİLMESİ GEREKENLER",
+          "desc": "Turistik ikamet izni, genel yolla vatandaşlık başvurularında en sık sorun yaratan ikamet türlerinden biridir. Çünkü turistik amaçla alınan ikamet izni, kural olarak Türkiye’de yerleşme niyetini gösteren bir ikamet türü olarak değerlendirilmez. Bu nedenle yalnızca turistik ikamet izniyle Türkiye’de beş yıl kalmış olmak, genel yolla Türk vatandaşlığı başvurusu için yeterli kabul edilmez. Turistik ikamet izni vatandaşlık başvurusu açısından oldukça sıkıntılı bir ikamet izni türüdür. Turistik ikamet izniyle geçirilen süreler gün sayımına dahil edilmediği gibi, vatandaşlık başvurusuna esas kabul edilebilecek olan ikamet izni türlerinden(aile, taşınmaz vb.) birine sahip olarak Türkiye’de geçirilen sürelerin ardından kısa bir dönem için dahi olsa bir süreliğine turistik ikamet izni almış olmak önceki ikamet izni türlerinde geçirilen süreleri sıfırlar ve kişinin vatandaşlık başvurusuna esas teşkil edebilecek Türkiye’de kalış süresi yokmuş gibi düşünülür.\n\nÖğrenci ikamet izni bakımından da benzer şekilde dikkatli olunmalıdır. Türkiye’de eğitim amacıyla bulunan yabancıların öğrenim ikamet izinleri, genel yolla vatandaşlık başvurusunda doğrudan yerleşme niyeti gösteren ikamet türü olarak kabul edilmeyebilir. Ancak başvuru sahibinin Türkiye’de eğitimini tamamlaması, sonrasında çalışma izni, aile ikameti, taşınmaz, iş kurma veya uzun dönem ikamet gibi geçerli kabul edilebilecek bir statüye geçmesi durumunda dosya özelinde değerlendirme yapılabilir. Öğrenci ikamet izni ile Türkiye’de kalınan süreler vatandaşlık başvurusu için gerekli 5 yıllık sürenin hesabında dikkate alınır ve geçerli ikamet izni olarak değerlendirilecekse de; 5 yıllık sürenin sonunda vatandaşlık başvurusu yapılmak istendiği sırada aktif öğrenci ikamet izninin bulunuyor olması vatandaşlık başvurusuna engeldir. Bu aşamada kişi mevzuatta belirtilen geçerli ikamet izinlerinden birine ya da çalışma iznine geçiş yapmış olmak zorundadır.\n\nBu nedenle turistik veya öğrenci ikametiyle Türkiye’de uzun süre kalmış kişilerin genel yolla vatandaşlık başvurusu yapmadan önce ikamet geçmişleri ayrıntılı biçimde incelenmelidir. Özellikle turistik ikamet sürelerinin sonradan geçerli bir ikamet türüne geçilse dahi hesaba katılıp katılmayacağı bakımından dikkatli olunmalıdır."
+        },
+        {
+          "num": "07",
+          "icon": "🆔",
+          "title": "YEDİNCİ BÖLÜM - BAŞVURU SIRASINDA GEÇERLİ İKAMET İZNİ VEYA ÇALIŞMA İZNİ BULUNMASI",
+          "desc": "Genel yolla Türk vatandaşlığı başvurusu yapılırken başvuru sahibinin Türkiye’de geçerli bir ikamet izni veya çalışma izni bulunmalıdır. Başvuru tarihinden geriye doğru beş yıllık ikamet şartı sağlanmış olsa dahi, başvuru anında geçerli bir ikamet izninin bulunmaması dosyanın işleme alınmasını engelleyebilir.\n\nBaşvuru belgeleri arasında, başvuru tarihinden ileriye doğru vatandaşlık işlemlerinin sonuçlandırılmasına yetecek süreli ikamet tezkeresi aranır. Bu nedenle ikamet izninin süresinin dolmasına çok kısa süre kalmış başvurularda, sürecin sağlıklı yürütülebilmesi için ikamet izni uzatma işlemleri vatandaşlık başvurusundan önce planlanmalıdır.\n\nÇalışma izni olan yabancılar bakımından ayrıca ikamet izni alınması gerekmeyebilir; çünkü çalışma izni belirli koşullarda ikamet izni yerine geçer. Ancak çalışma izninin geçerli olması, başvuru sırasında süresinin devam etmesi ve önceki çalışma izni sürelerinde boşluk bulunmaması önemlidir.\n\nBaşvuru sahibinin yasal statüsünün başvuru sırasında sona ermiş olması, uzatma başvurusunun yapılmamış olması veya ikamet izni ihlali bulunması vatandaşlık başvurusu bakımından ciddi risk oluşturur. Nitekim ikamet izni süresinin bitmesine 1 aydan az kalan başvurucuların başvuruları Nüfus ve Vatandaşlık İşleri Genel Müdürlüğü tarafından genellikle kabul edilmemektedir.\n\nBu aşamada en önemli husus vatandaşlık başvurusu ya da başvuruya esas gün sayımı yapılmak istendiği sırada mevzuatta belirtilen ikamet izni türlerinden birine sahip olma zorunluluğudur. Aksi takdirde, diğer ikamet izni türleriyle gün sayımı yaptırmak ve vatandaşlık başvurusu yapmak mümkün değildir. Gün sayımı başvurusu sırasında başvurucular taşınmaz ikamet izni(b), aile ikamet izni(a), uzun dönem ikamet izni ya da çalışma izninden birine sahip olmak zorundadır. Bu türler dışındaki ikamet izinlerine sahip kişilerin vatandaşlık başvurusu ya da gün sayımı talepleri kabul edilmeyecektir."
+        },
+        {
+          "num": "08",
+          "icon": "🏠",
+          "title": "SEKİZİNCİ BÖLÜM - TÜRKİYE’DE YERLEŞME NİYETİNİN GÖSTERİLMESİ",
+          "desc": "Genel yolla vatandaşlık başvurusunda yalnızca beş yıl ikamet etmek yeterli değildir. Başvuru sahibinin Türkiye’de yerleşmeye karar verdiğini davranışlarıyla göstermesi gerekir.\n\nTürkiye’de yerleşme niyetini gösterebilecek bazı durumlar şunlardır:\n• Türkiye’de taşınmaz edinmek,\n• Türkiye’de iş kurmak,\n• Türkiye’de yatırım yapmak,\n• Ticaret veya iş merkezini Türkiye’ye taşımak,\n• Çalışma iznine tabi olarak bir iş yerinde çalışmak,\n• Ailece Türkiye’de ikamet etmek,\n• Türk vatandaşı ile evli olmak,\n• Daha önce Türk vatandaşlığını kazanmış ana, baba, kardeş veya çocuk sahibi olmak,\n• Eğitimini Türkiye’de tamamlamış olmak,\n• Uzun süreli ikamet iznine bağlı olarak Türkiye’de yaşamak,\n• Türkiye’de sosyal, ekonomik ve ailevi bağlar kurmak.\n\nBu unsurların tamamının aynı anda bulunması gerekmez. Ancak başvuru sahibinin Türkiye’de geçici, turistik veya kısa süreli kalış amacıyla değil, kalıcı biçimde yerleşme amacıyla bulunduğunu gösterebilmesi gerekir."
+        },
+        {
+          "num": "09",
+          "icon": "💼",
+          "title": "DOKUZUNCU BÖLÜM - GELİR, MESLEK VE GEÇİM ŞARTI",
+          "desc": "Genel yolla Türk vatandaşlığı başvurusunda başvuru sahibinin Türkiye’de kendisinin ve bakmakla yükümlü olduğu kişilerin geçimini sağlayabilecek gelire veya mesleğe sahip olması gerekir.\n\nBu şart, başvuru sahibinin Türkiye’de sosyal yardım ihtiyacı olmaksızın yaşamını sürdürebilecek ekonomik imkâna sahip olup olmadığının değerlendirilmesi bakımından önemlidir. Gelir veya meslek durumunun ispatında şu belgeler kullanılabilir:\n• Çalışma izni,\n• Maaş bordrosu,\n• İş sözleşmesi,\n• Vergi levhası,\n• Şirket ortaklık belgeleri,\n• Banka hesap dökümleri,\n• Taşınmaz kira gelirleri,\n• Emeklilik gelirleri,\n• Düzenli gelir veya mesleki faaliyeti gösteren diğer belgeler.\n\nGelirin düzenli, sürdürülebilir ve başvuru sahibinin aile yükümlülükleriyle uyumlu olması gerekir. Yalnızca kısa süreli veya belirsiz kaynaklı para hareketleri, geçim şartının ispatı bakımından her zaman yeterli görülmeyebilir."
+        },
+        {
+          "num": "10",
+          "icon": "🗣️",
+          "title": "ONUNCU BÖLÜM - TÜRKÇE BİLME VE MÜLAKAT SÜRECİ",
+          "desc": "Genel yolla vatandaşlık başvurusunda başvuru sahibinin toplumsal yaşama uyum sağlayabilecek düzeyde Türkçe konuşabilmesi gerekir. Bu şart, başvuru sahibinin ileri akademik düzeyde Türkçe bilmesini zorunlu kılmaz; ancak günlük yaşamda kendisini ifade edebilmesi, basit sorulara cevap verebilmesi ve Türkiye’de sosyal hayata uyum sağlayabilecek iletişim becerisine sahip olması beklenir.\n\nBaşvuru sürecinde başvuru sahibi vatandaşlık inceleme komisyonu tarafından mülakata alınabilir. Mülakatta genellikle başvuru sahibinin Türkçe konuşma becerisi, Türkiye’deki yaşamı, aile durumu, mesleği, gelir durumu, Türkiye’de yerleşme amacı, sosyal çevresi ve vatandaşlık başvurusuna ilişkin beyanları değerlendirilir.\n\nMülakat aşamasında verilen cevapların dosyadaki belgelerle uyumlu olması önemlidir. Türkiye’de fiilen yaşamayan, adres kaydı ile gerçek yaşam yeri arasında uyumsuzluk bulunan veya Türkiye’de yerleşme niyetini yeterince gösteremeyen başvurular risk taşıyabilir."
+        },
+        {
+          "num": "11",
+          "icon": "👨‍👩‍👧‍👦",
+          "title": "ON BİRİNCİ BÖLÜM - BAŞVURUNUN KİMLERİ KAPSADIĞI",
+          "desc": "Genel yolla Türk vatandaşlığı başvurusu esas olarak başvuru sahibi yabancı gerçek kişi hakkında sonuç doğurur. Yetkili makam kararıyla Türk vatandaşlığının kazanılması, kural olarak başvuru sahibinin eşinin vatandaşlığına doğrudan etki etmez. Bu nedenle eş, yalnızca başvuru sahibinin vatandaşlık kazanmasıyla otomatik olarak Türk vatandaşı olmaz.\n\nBaşvuru sahibinin ergin olmayan çocukları bakımından ise ayrı değerlendirme yapılır. Ana veya babadan birinin Türk vatandaşlığını kazanması hâlinde, velayet kendisinde bulunan ergin olmayan çocuklar, diğer eşin muvafakatiyle birlikte Türk vatandaşlığını kazanabilir. Ana ve baba birlikte Türk vatandaşlığını kazanıyorsa, ergin olmayan çocuklar da belirli şartlar altında birlikte işlem görebilir.\n\nErgin çocuklar ise anne veya babaya bağlı olarak otomatik şekilde vatandaşlık kazanmaz. Başvuru süreci devam ederken ergin hale gelen çocuklar bakımından da kişisel statü değişeceğinden, bu kişilerin ayrı başvuru yapması gerekebilir.\n\nBu nedenle genel yolla vatandaşlık başvurusu yapılırken aile bireylerinin kimlerden oluştuğu, çocukların yaşları, velayet durumu, diğer ebeveynin muvafakati ve aile belgeleri başvuru öncesinde ayrıntılı şekilde değerlendirilmelidir."
+        },
+        {
+          "num": "12",
+          "icon": "📂",
+          "title": "ON İKİNCİ BÖLÜM - BAŞVURU İÇİN GEREKLİ BELGELER",
+          "desc": "Genel yolla Türk vatandaşlığı başvurusunda genel olarak aşağıdaki belgeler hazırlanır:\n• Başvuru formu,\n• Biyometrik fotoğraf,\n• Pasaport veya pasaport yerine geçen belge,\n• Vatansızlık durumu varsa buna ilişkin belge,\n• Doğum belgesi veya kimlik bilgilerini gösteren resmi belge,\n• Medeni hal belgesi,\n• Evli ise evlenme belgesi,\n• Boşanmış ise boşanmayı gösteren belge,\n• Dul ise eşe ait ölüm belgesi,\n• Eş ve çocuklarla aile bağını gösteren nüfus kayıt örneği veya benzeri belge,\n• Genel sağlık bakımından tehlike teşkil eden hastalığı bulunmadığını gösteren sağlık raporu,\n• Gelir veya meslek durumunu gösteren belgeler,\n• Çalışma izni, banka kaydı veya benzeri belgeler,\n• Başvuru tarihinden geriye doğru Türkiye’de kesintisiz beş yıl ikamet edildiğini gösteren yurda giriş-çıkış kayıtları,\n• Başvuru tarihinden ileriye doğru yeterli süreli ikamet izni veya çalışma izni,\n• Kesinleşmiş mahkeme kararı varsa onaylı örneği,\n• Hizmet bedeli makbuzu,\n• Gerekli görülmesi hâlinde ek bilgi ve belgeler.\n\nYabancı ülkelerden alınan belgelerin usulüne uygun şekilde apostil veya konsolosluk onayı yapılmalı, Türkçe tercümeleri noter onaylı olarak hazırlanmalıdır. Belgelerde ad, soyad, doğum tarihi, doğum yeri, medeni hal ve aile bağı bilgilerinin tutarlı olması gerekir."
+        },
+        {
+          "num": "13",
+          "icon": "📮",
+          "title": "ON ÜÇÜNCÜ BÖLÜM - BAŞVURU MAKAMI VE SÜRECİN İŞLEYİŞİ",
+          "desc": "Genel yolla Türk vatandaşlığı başvuruları yurt içinde yerleşim yerinin bulunduğu valiliğe, yani İl Nüfus ve Vatandaşlık Müdürlüğüne yapılır. Başvuru, bizzat veya bu hakkın kullanılmasına ilişkin özel vekâletname ile yapılabilir. Posta yoluyla yapılan başvurular kabul edilmez.\n\nBaşvuru süreci genel olarak şu aşamalardan oluşur:\n1. Başvuru sahibinin ikamet geçmişinin ve şartlara uygunluğunun değerlendirilmesi,\n2. Giriş-çıkış kayıtlarının ve ikamet izinlerinin incelenmesi,\n3. Geçerli ikamet izni veya çalışma izni durumunun kontrol edilmesi,\n4. Gerekli belgelerin hazırlanması,\n5. Başvurunun İl Nüfus ve Vatandaşlık Müdürlüğüne yapılması,\n6. Kişinin Emniyet Müdürlüğü nezdinde parmak izinin alınması,\n7. Dosyanın ön incelemeye alınması,\n8. Eksik belge varsa tamamlanması,\n9. Komisyon veya mülakat sürecinin yürütülmesi,\n10. Güvenlik ve arşiv araştırmasının yapılması,\n11. Dosyanın İçişleri Bakanlığına gönderilmesi,\n12. Başvurunun idari makamlarca değerlendirilmesi,\n13. Uygun görülmesi hâlinde Türk vatandaşlığının kazanılması.\n\nBaşvurunun işleme alınması, vatandaşlığın mutlaka kazanılacağı anlamına gelmez. Yetkili makamlar başvuru sahibinin tüm şartları taşıyıp taşımadığını ayrıca değerlendirir."
+        },
+        {
+          "num": "14",
+          "icon": "⚠️",
+          "title": "ON DÖRDÜNCÜ BÖLÜM - BAŞVURU RİSKLERİ VE RED SEBEPLERİ",
+          "desc": "Genel yolla vatandaşlık başvurularında en sık karşılaşılan riskler şunlardır:\n• Beş yıllık ikamet süresinin kesintisiz olmaması,\n• Başvuru sahibinin son beş yıl içinde uzun süre yurtdışında kalmış olması,\n• Son bir yıl içinde altı aydan fazla yurtdışında kalınması,\n• İkamet izinleri arasında boşluk bulunması,\n• Turistik ikametle geçirilen sürelerin vatandaşlık için yeterli sanılması,\n• Başvuru sırasında geçerli ikamet izni veya çalışma izni bulunmaması,\n• Türkiye’de yerleşme niyetinin yeterince gösterilememesi,\n• Gelir veya meslek durumunun yeterli şekilde ispatlanamaması,\n• Türkçe yeterliliğinin mülakatta yeterli görülmesi,\n• Adli sicil veya devam eden ceza yargılaması bulunması,\n• Milli güvenlik veya kamu düzeni bakımından olumsuz değerlendirme yapılması,\n• Belgelerde kimlik, tarih veya medeni hal uyumsuzlukları bulunması,\n• İdarenin takdir yetkisi.\n\nBu riskler nedeniyle genel yolla vatandaşlık başvurusu yapılmadan önce dosya ayrıntılı olarak incelenmeli ve başvurunun zamanlaması doğru belirlenmelidir."
+        },
+        {
+          "num": "15",
+          "icon": "💼",
+          "title": "ON BEŞİNCİ BÖLÜM - AVUKAT DESTEĞİNİN ÖNEMİ",
+          "desc": "Genel yolla Türk vatandaşlığı başvurusu, yalnızca form doldurma ve evrak tesliminden ibaret değildir. Başvuru öncesinde ikamet süresi, giriş-çıkış kayıtları, ikamet izni türleri, çalışma izni, aile durumu, gelir belgeleri ve kamu düzeni bakımından olası riskler birlikte değerlendirilmelidir.\n\nAvukat desteği özellikle şu aşamalarda önemlidir:\n• Beş yıllık ikamet süresinin hesaplanması,\n• Yurtdışı kalış sürelerinin değerlendirilmesi,\n• Geçerli ve geçersiz ikamet türlerinin ayrıştırılması,\n• Başvuru sırasında gerekli ikamet izni veya çalışma izninin kontrol edilmesi,\n• Aile bireylerinin başvuru kapsamına alınıp alınamayacağının değerlendirilmesi,\n• Gerekli belgelerin hazırlanması,\n• Yabancı belgelerin apostil, tercüme ve noter süreçlerinin yürütülmesi,\n• Mülakat öncesi dosya tutarlılığının sağlanması,\n• Eksik belge veya ek bilgi taleplerinin karşılanması,\n• Red kararı hâlinde idari başvuru veya dava yollarının değerlendirilmesi.\n\nEksik veya hatalı hazırlanan başvurular, yalnızca sürecin uzamasına değil, başvurunun reddedilmesine de neden olabilir. Bu nedenle genel yolla Türk vatandaşlığı başvurularında sürecin başından itibaren hukuki destek alınması tavsiye edilir."
+        }
+      ]
+    },
+    "processStages": {
+      "eyebrow": "Sürecin Genel Aşamaları",
+      "title": "Genel Yolla Türk Vatandaşlığı Başvurusu Genel Aşamaları",
+      "items": [
+        "1. Başvuru sahibinin ikamet geçmişinin incelenmesi",
+        "2. Son beş yıllık giriş-çıkış kayıtlarının değerlendirilmesi",
+        "3. Yurtdışı kalış sürelerinin hesaplanması",
+        "4. İkamet izni türlerinin vatandaşlık başvurusu bakımından uygunluğunun kontrol edilmesi",
+        "5. Başvuru sırasında geçerli ikamet izni veya çalışma izni bulunup bulunmadığının tespiti",
+        "6. Türkiye’de yerleşme niyetini gösteren belgelerin hazırlanması",
+        "7. Gelir, meslek, sağlık, medeni hal ve aile belgelerinin tamamlanması",
+        "8. İl Nüfus ve Vatandaşlık Müdürlüğüne başvuru yapılması",
+        "9. Emniyet Genel Müdürlüğü nezdinde parmak izi verme işleminin tamamlanması",
+        "10. Ön inceleme, mülakat ve komisyon süreçlerinin yürütülmesi",
+        "11. Güvenlik ve arşiv araştırmasının tamamlanması",
+        "12. Dosyanın yetkili makamlarca değerlendirilmesi",
+        "13. Uygun görülmesi hâlinde Türk vatandaşlığının kazanılması"
+      ]
+    },
+    "legal": {
+      "eyebrow": "HUKUKİ ÇERÇEVE",
+      "title": "Yasal Dayanak",
+      "items": [
+        {
+          "title": "5901 Sayılı Türk Vatandaşlığı Kanunu",
+          "text": "Türk vatandaşlığının kazanılması, kaybı ve vatandaşlığa ilişkin temel usul ve esasları düzenler."
+        },
+        {
+          "title": "5901 Sayılı Türk Vatandaşlığı Kanunu Madde 11",
+          "text": "Genel yolla Türk vatandaşlığının kazanılması için aranan şartları düzenler."
+        },
+        {
+          "title": "Türk Vatandaşlığı Kanununun Uygulanmasına İlişkin Yönetmelik",
+          "text": "Genel yolla vatandaşlık başvurusunun usul ve esaslarını düzenler."
+        },
+        {
+          "title": "6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu",
+          "text": "İkamet izni, çalışma izninin ikamet izni yerine geçmesi ve ikamette kesinti hükümleri bakımından önem taşır."
+        }
+      ]
     }
   }
 }

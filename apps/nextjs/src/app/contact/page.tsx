@@ -28,6 +28,18 @@ export default function Contact({ lang = "tr" }: { lang?: string }) {
                 <br />
                 GINZA PLAZA, 34015 Zeytinburnu, Istanbul
               </p>
+              <div className="mt-3 overflow-hidden rounded-2xl border border-gray-100 shadow-sm">
+                <iframe
+                  src="https://maps.google.com/maps?q=Seyitnizam%20Mah.%20Mevlana%20Cad.%20No:81/83%20Kat:2%20GINZA%20PLAZA,%2034015%20Zeytinburnu,%20Istanbul&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  width="100%"
+                  height="220"
+                  style={{ border: 0 }}
+                  allowFullScreen={true}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="w-full"
+                />
+              </div>
             </div>
             <div>
               <h4 className="mb-1 text-sm font-bold uppercase text-burgundy">{copy.emailLabel}</h4>
@@ -46,44 +58,79 @@ export default function Contact({ lang = "tr" }: { lang?: string }) {
         </div>
 
         <div className="w-full lg:w-1/2">
-          <div className="relative rounded-3xl border border-gray-100 bg-white p-10 shadow-lg">
-            <h3 className="mb-6 text-2xl font-bold text-navy">{copy.formTitle}</h3>
-            <form className="flex flex-col space-y-5">
-              <div className="flex flex-col gap-5 md:flex-row">
-                <input
-                  type="text"
-                  placeholder={copy.placeholders.firstName}
-                  className="flex-1 rounded-xl bg-[#E8ECF3] px-4 py-4 text-navy outline-none focus:ring-2 focus:ring-burgundy"
-                  required
+          <div className="relative rounded-3xl border border-gray-100 bg-white p-8 sm:p-10 shadow-xl">
+            {/* Form Header with Avatar */}
+            <div className="flex flex-col sm:flex-row items-center gap-6 mb-8 pb-6 border-b border-gray-100">
+              <div className="relative h-28 w-28 shrink-0 overflow-hidden rounded-full border-4 border-slate-100 shadow-sm bg-gray-50">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/team/sevim-dumanli.png"
+                  alt="Sevim Dumanlı - Property Consultant"
+                  className="h-full w-full object-cover"
                 />
+              </div>
+              <div className="text-center sm:text-left min-w-0">
+                <h3 className="text-xl font-bold leading-tight text-[#0a192f] md:text-2xl">
+                  {copy.formTitle}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-gray-500">
+                  {copy.formSubtitle}
+                </p>
+              </div>
+            </div>
+
+            <form className="flex flex-col space-y-5">
+              <div className="flex flex-col">
+                <label className="mb-1.5 text-sm font-semibold text-gray-700">
+                  {copy.labels.fullName}
+                </label>
                 <input
                   type="text"
-                  placeholder={copy.placeholders.lastName}
-                  className="flex-1 rounded-xl bg-[#E8ECF3] px-4 py-4 text-navy outline-none focus:ring-2 focus:ring-burgundy"
+                  placeholder={copy.placeholders.fullName}
+                  className="w-full rounded-xl border border-gray-200 bg-white px-4 py-3.5 text-gray-900 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
                   required
                 />
               </div>
-              <input
-                type="email"
-                placeholder={copy.placeholders.email}
-                className="w-full rounded-xl bg-[#E8ECF3] px-4 py-4 text-navy outline-none focus:ring-2 focus:ring-burgundy"
-                required
-              />
-              <input
-                type="tel"
-                placeholder={copy.placeholders.phone}
-                className="w-full rounded-xl bg-[#E8ECF3] px-4 py-4 text-navy outline-none focus:ring-2 focus:ring-burgundy"
-                required
-              />
-              <textarea
-                placeholder={copy.placeholders.message}
-                rows={5}
-                className="w-full rounded-xl bg-[#E8ECF3] px-4 py-4 text-navy outline-none focus:ring-2 focus:ring-burgundy"
-                required
-              ></textarea>
+
+              <div className="flex flex-col">
+                <label className="mb-1.5 text-sm font-semibold text-gray-700">
+                  {copy.labels.email}
+                </label>
+                <input
+                  type="email"
+                  placeholder={copy.placeholders.email}
+                  className="w-full rounded-xl border border-gray-200 bg-white px-4 py-3.5 text-gray-900 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+                  required
+                />
+              </div>
+
+              <div className="flex flex-col">
+                <label className="mb-1.5 text-sm font-semibold text-gray-700">
+                  {copy.labels.phone}
+                </label>
+                <input
+                  type="tel"
+                  placeholder={copy.placeholders.phone}
+                  className="w-full rounded-xl border border-gray-200 bg-white px-4 py-3.5 text-gray-900 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+                  required
+                />
+              </div>
+
+              <div className="flex flex-col">
+                <label className="mb-1.5 text-sm font-semibold text-gray-700">
+                  {copy.labels.message}
+                </label>
+                <textarea
+                  placeholder={copy.placeholders.message}
+                  rows={4}
+                  className="w-full rounded-xl border border-gray-200 bg-white px-4 py-3.5 text-gray-900 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+                  required
+                ></textarea>
+              </div>
+
               <button
                 type="submit"
-                className="w-full rounded-xl bg-burgundy py-5 text-lg font-bold text-white shadow-md transition hover:bg-burgundy-light"
+                className="w-full rounded-full bg-blue-600 py-4 text-base font-bold text-white shadow-md transition duration-200 hover:bg-blue-700 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
               >
                 {copy.submitLabel}
               </button>

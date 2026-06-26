@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
 /* ============================================================
    ADMIN PANEL — CitizanShip
    ============================================================ */
@@ -7,7 +9,7 @@
   display: flex;
   min-height: 100vh;
   background: #f0f2f5;
-  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  font-family: 'Open Sans', 'Segoe UI', system-ui, sans-serif;
   font-size: 14px;
   color: #1a2035;
 }

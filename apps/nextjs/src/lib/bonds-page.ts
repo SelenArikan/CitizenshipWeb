@@ -1,19 +1,19 @@
 import { getDictionary } from "@/lib/dictionary";
 import { getSafeLocale } from "@/lib/seo";
 
-export type FonStepItem = {
+export type BondsStepItem = {
   num: string;
   title: string;
   desc: string;
   icon: string;
 };
 
-export type FonLegalItem = {
+export type BondsLegalItem = {
   title: string;
   text: string;
 };
 
-export type GayrimenkulFonPageCopy = {
+export type BondsPageCopy = {
   hero: {
     breadcrumbLabel: string;
     tag: string;
@@ -40,7 +40,7 @@ export type GayrimenkulFonPageCopy = {
     eyebrow: string;
     title: string;
     description: string;
-    items: FonStepItem[];
+    items: BondsStepItem[];
   };
   processStages?: {
     eyebrow: string;
@@ -51,7 +51,7 @@ export type GayrimenkulFonPageCopy = {
   legal: {
     eyebrow: string;
     title: string;
-    items: FonLegalItem[];
+    items: BondsLegalItem[];
   };
   postApproval?: {
     eyebrow: string;
@@ -67,14 +67,14 @@ export type GayrimenkulFonPageCopy = {
   };
 };
 
-export type GayrimenkulFonPageData = {
+export type BondsPageData = {
   lang: string;
   dir: "ltr" | "rtl";
   backLabel: string;
-  copy: GayrimenkulFonPageCopy;
+  copy: BondsPageCopy;
 };
 
-type FonDictLike = {
+type BondsDictionaryLike = {
   lang?: string;
   dir?: string;
   nav?: {
@@ -83,19 +83,19 @@ type FonDictLike = {
   services_page?: {
     detail_back?: string;
   };
-  gayrimenkul_fon_page?: GayrimenkulFonPageCopy;
+  bonds_page?: BondsPageCopy;
 };
 
-export async function getGayrimenkulFonPageData(
+export async function getBondsPageData(
   locale: string
-): Promise<GayrimenkulFonPageData> {
-  const dict = (await getDictionary(locale)) as FonDictLike;
+): Promise<BondsPageData> {
+  const dict = (await getDictionary(locale)) as BondsDictionaryLike;
   const fallbackDict =
-    locale === "tr" ? dict : ((await getDictionary("tr")) as FonDictLike);
-  const copy = dict.gayrimenkul_fon_page ?? fallbackDict.gayrimenkul_fon_page;
+    locale === "tr" ? dict : ((await getDictionary("tr")) as BondsDictionaryLike);
+  const copy = dict.bonds_page ?? fallbackDict.bonds_page;
 
   if (!copy) {
-    throw new Error("Missing gayrimenkul_fon_page translations in dictionary.");
+    throw new Error("Missing bonds_page translations in dictionary.");
   }
 
   return {

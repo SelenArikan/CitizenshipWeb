@@ -15,7 +15,7 @@
 
 body {
   margin: 0;
-  font-family: 'Outfit', Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   background-color: var(--background);
   color: var(--foreground);
   -webkit-font-smoothing: antialiased;

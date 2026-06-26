@@ -182,6 +182,91 @@ function seo_catalog(): array {
                 'fa' => 'فرآیند اخذ شهروندی ترکیه از طریق افتتاح حساب سپرده بانکی به مبلغ حداقل ۵۰۰,۰۰۰ دلار و نگهداری آن به مدت ۳ سال.',
             ],
         ],
+        'istihdam-olusturmak' => [
+            'path' => '/istihdam-olusturmak.php',
+            'titles' => [
+                'tr' => 'İstihdam Oluşturma ile Türk Vatandaşlığı',
+                'en' => 'Turkish Citizenship by Job Creation',
+                'ru' => 'Гражданство Турции через создание рабочих мест',
+                'ar' => 'الجنسية التركية عبر توظيف العمالة',
+                'fa' => 'شهروندی ترکیه از طریق ایجاد اشتغال',
+            ],
+            'descriptions' => [
+                "tr" => "Türkiye'de en az 50 kişilik istihdam oluşturarak Çalışma ve Sosyal Güvenlik Bakanlığı onayıyla Türk vatandaşlığı edinme süreci.",
+                'en' => 'Process of obtaining Turkish citizenship by creating employment for at least 50 people with the approval of the Ministry of Labour.',
+                'ru' => 'Процесс получения гражданства Турции путем создания рабочих мест как минимум для 50 человек с одобрения Министерства труда.',
+                'ar' => 'إجراءات الحصول على الجنسية التركية عبر توظيف 50 شخصاً على الأقل في تركيا بموافقة وزارة العمل والضمان الاجتماعي.',
+                'fa' => 'فرآیند اخذ شهروندی ترکیه از طریق ایجاد اشتغال برای حداقل ۵۰ نفر با تایید وزارت کار ve تامین اجتماعی.',
+            ],
+        ],
+        'gayrimenkul-yatirim-fonu' => [
+            'path' => '/gayrimenkul-yatirim-fonu.php',
+            'titles' => [
+                'tr' => 'Gayrimenkul Yatırım Fonu ile Türk Vatandaşlığı',
+                'en' => 'Turkish Citizenship by Real Estate Investment Fund',
+                'ru' => 'Гражданство Турции через Инвестиционный фонд недвижимости',
+                'ar' => 'الجنسية التركية عبر صندوق الاستثمار العقاري',
+                'fa' => 'شهروندی ترکیه از طریق صندوق سرمایه گذاری ملکی',
+            ],
+            'descriptions' => [
+                "tr" => "Türkiye'de gayrimenkul yatırım fonu (GYF) veya girişim sermayesi yatırım fonu (GSYF) katılma payı satın alarak Türk vatandaşlığı edinme süreci.",
+                'en' => 'Process of obtaining Turkish citizenship by purchasing shares in a real estate investment fund (GYF) or venture capital investment fund (GSYF).',
+                'ru' => 'Процесс получения гражданства Турции путем приобретения паев в инвестиционном фонде недвижимости (GYF) или фонде венчурного капитала (GSYF).',
+                'ar' => 'إجراءات الحصول على الجنسية التركية عبر شراء حصص في صندوق الاستثمار العقاري أو صندوق رأس المال الاستثماري في تركيا.',
+                'fa' => 'فرآیند اخذ شهروندی ترکیه از طریق خرید واحدهای صندوق سرمایه گذاری ملکی یا صندوق سرمایه گذاری جسورانه.',
+            ],
+        ],
+        'devlet-borclanma-araclari' => [
+            'path' => '/devlet-borclanma-araclari.php',
+            'titles' => [
+                'tr' => 'Devlet Borçlanma Araçları ile Türk Vatandaşlığı',
+                'en' => 'Turkish Citizenship by Government Bonds',
+                'ru' => 'Гражданство Турции через государственные облигации',
+                'ar' => 'الجنسية التركية عبر سندات الدين الحكومية',
+                'fa' => 'شهروندی ترکیه از طریق اوراق قرضه دولتی',
+            ],
+            'descriptions' => [
+                'tr' => 'En az 500.000 USD tutarında Devlet borçlanma aracını satın alıp 3 yıl süreyle elde tutarak istisnai yoldan Türk vatandaşlığı kazanma süreci.',
+                'en' => 'Process of obtaining Turkish citizenship by purchasing government bonds of at least $500,000 and holding them for 3 years.',
+                'ru' => 'Процесс получения гражданства Турции путем приобретения государственных облигаций на сумму не менее $500 000 сроком на 3 года.',
+                'ar' => 'إجراءات الحصول على الجنسية التركية عبر شراء سندات الدين الحكومية بقيمة لا تقل عن 500,000 دولار والاحتفاظ بها لمدة 3 سنوات.',
+                'fa' => 'فرآیند اخذ شهروندی ترکیه از طریق خرید اوراق قرضه دولتی به مبلغ حداقل ۵۰۰,۰۰۰ دلار و نگهداری آن به مدت ۳ سال.',
+            ],
+        ],
+        'evlilik-yoluyla-vatandaslik' => [
+            'path' => '/evlilik-yoluyla-vatandaslik.php',
+            'titles' => [
+                'tr' => 'Evlilik Yoluyla Türk Vatandaşlığı Başvurusu',
+                'en' => 'Turkish Citizenship by Marriage',
+                'ru' => 'Гражданство Турции через брак',
+                'ar' => 'الجنسية التركية عن طريق الزواج',
+                'fa' => 'شهروندی ترکیه از طریق ازدواج',
+            ],
+            'descriptions' => [
+                'tr' => 'Türk vatandaşı ile en az 3 yıldır evli olan yabancı eşlerin istisnai yoldan Türk vatandaşlığı kazanma süreci ve başvuru şartları.',
+                'en' => 'Process of obtaining Turkish citizenship through marriage with a Turkish citizen for at least 3 years, requirements and steps.',
+                'ru' => 'Процесс получения гражданства Турции через брак с гражданином Турции в течение не менее 3 лет.',
+                'ar' => 'إجراءات الحصول على الجنسية التركية عن طريق الزواج من مواطن تركي لمدة 3 سنوات على الأقل والشروط المطلوبة.',
+                'fa' => 'فرآیند اخذ شهروندی ترکیه از طریق ازدواج با یک شهروند ترک به مدت حداقل ۳ سال و شرایط لازم.',
+            ],
+        ],
+        'genel-yolla-vatandaslik' => [
+            'path' => '/genel-yolla-vatandaslik.php',
+            'titles' => [
+                'tr' => 'Genel Yolla Türk Vatandaşlığı Başvurusu',
+                'en' => 'Turkish Citizenship by General Way (5 Years Residence)',
+                'ru' => 'Гражданство Турции в общем порядке (5 лет проживания)',
+                'ar' => 'الجنسية التركية بالطريق العام (إقامة 5 سنوات)',
+                'fa' => 'شهروندی ترکیه از طریق عمومی (۵ سال اقامت)',
+            ],
+            'descriptions' => [
+                'tr' => 'Türkiye’de 5 yıl yasal ve kesintisiz ikamet sonrasında genel hükümler kapsamında Türk vatandaşlığı edinme şartları ve başvuru süreci.',
+                'en' => 'Requirements and application process for obtaining Turkish citizenship under general provisions after 5 years of legal and continuous residence in Turkey.',
+                'ru' => 'Требования и process подачи документов на гражданство Турции на общих основаниях после 5 лет легального и непрерывного проживания в Турции.',
+                'ar' => 'الشروط وإجراءات طلب الحصول على الجنسية التركية بموجب الأحكام العامة بعد إقامة قانونية ومتواصلة لمدة 5 سنوات في تركيا.',
+                'fa' => 'شرایط و فرآیند درخواست اخذ شهروندی ترکیه طبق مقررات عمومی پس از ۵ سال اقامت قانونی و بدون وقفه در ترکیه.',
+            ],
+        ],
     ];
 }
 

@@ -1,6 +1,19 @@
 {
   "lang": "en",
   "dir": "ltr",
+  "contact_form": {
+    "title": "Get Free Citizenship Consultation",
+    "subtitle": "Tell us your budget and contact details. Our team will match you with eligible properties and explain the full process.",
+    "label_name": "Full Name",
+    "label_email": "Email Address",
+    "label_phone": "Phone Number",
+    "label_message": "Message",
+    "placeholder_name": "Enter your full name",
+    "placeholder_email": "Enter your email address",
+    "placeholder_phone": "Phone number with country code",
+    "placeholder_message": "Enter your message...",
+    "btn_send": "Send Message"
+  },
   "nav": {
     "home": "Home",
     "services": "Services",

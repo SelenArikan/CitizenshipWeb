@@ -184,10 +184,10 @@ function SectionTitle({
   );
 }
 
-function SectionDesc({ text }: { text?: string }) {
+function SectionDesc({ text, lang = "tr" }: { text?: string; lang?: string }) {
   if (!text) return null;
   return (
-    <p className="mb-6 text-[15px] leading-7 text-gray-600">{text}</p>
+    <p className="mb-6 text-[15px] leading-7 text-gray-600">{parseInline(text, lang)}</p>
   );
 }
 
@@ -383,7 +383,7 @@ function ParsedDesc({ text, lang = "tr" }: { text: string; lang?: string }) {
 }
 
 /* Giriş paragrafları */
-function IntroBlock({ section }: { section: IntroSection }) {
+function IntroBlock({ section, lang = "tr" }: { section: IntroSection; lang?: string }) {
   /* eyebrow varsa ana başlık (h2), yoksa alt başlık (h3) */
   const headingTag = section.eyebrow ? "h2" : "h3";
   const hasParagraphs = section.paragraphs.some((p) => p.trim().length > 0);
@@ -436,7 +436,7 @@ function IntroBlock({ section }: { section: IntroSection }) {
         if (block.type === "paragraph") {
           return (
             <p key={i} className="mb-4 text-base leading-7 text-gray-700">
-              {block.text}
+              {parseInline(block.text, lang)}
             </p>
           );
         }
@@ -444,7 +444,7 @@ function IntroBlock({ section }: { section: IntroSection }) {
         if (block.type === "quote") {
           return (
             <blockquote key={i} className="border-l-4 border-blue-600 bg-blue-50/50 px-4 py-3 text-blue-950 rounded-r-lg my-4 text-base leading-relaxed font-normal not-italic">
-              {block.text}
+              {parseInline(block.text, lang)}
             </blockquote>
           );
         }
@@ -455,7 +455,7 @@ function IntroBlock({ section }: { section: IntroSection }) {
               {block.items.map((item, j) => (
                 <li key={j} className="flex gap-3 text-base leading-relaxed text-gray-700">
                   <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-red-700" />
-                  <span>{item}</span>
+                  <span>{parseInline(item, lang)}</span>
                 </li>
               ))}
             </ul>
@@ -468,7 +468,7 @@ function IntroBlock({ section }: { section: IntroSection }) {
               {block.items.map((item, j) => (
                 <li key={j} className="flex gap-2 text-base leading-relaxed text-gray-700">
                   <span className="shrink-0 font-bold text-slate-900">{item.num}.</span>
-                  <span>{item.text}</span>
+                  <span>{parseInline(item.text, lang)}</span>
                 </li>
               ))}
             </ol>
@@ -488,7 +488,7 @@ function NumberedBlock({ section, lang }: { section: NumberedSection; lang: stri
     <div className="mb-14 border-t border-gray-100 pt-10 first:border-t-0 first:pt-0">
       <SectionEyebrow text={section.eyebrow} />
       <SectionTitle text={section.title} as={headingTag} />
-      <SectionDesc text={section.description} />
+      <SectionDesc text={section.description} lang={lang} />
       <ol className="space-y-4">
         {section.items.map((item, i) => (
           <li key={i} className="flex gap-4 rounded-lg border border-gray-100 bg-gray-50 p-5">
@@ -506,7 +506,7 @@ function NumberedBlock({ section, lang }: { section: NumberedSection; lang: stri
                   {item.richDesc.map((entry, j) => (
                     <li key={j} className="text-[14px] leading-7 text-gray-600">
                       <strong className="font-semibold text-gray-800">{entry.term}:</strong>{" "}
-                      {entry.explanation}
+                      {parseInline(entry.explanation, lang)}
                     </li>
                   ))}
                 </ul>
@@ -515,11 +515,11 @@ function NumberedBlock({ section, lang }: { section: NumberedSection; lang: stri
               {item.richDescFooter && (
                 item.richDescFooter.trim().startsWith(">") ? (
                   <blockquote className="mt-3 border-l-4 border-blue-600 bg-blue-50/50 px-4 py-3 text-blue-950 rounded-r-lg text-[14px] leading-relaxed font-normal not-italic">
-                    {item.richDescFooter.trim().replace(/^>\s*/, "")}
+                    {parseInline(item.richDescFooter.trim().replace(/^>\s*/, ""), lang)}
                   </blockquote>
                 ) : (
                   <p className="mt-3 text-[14px] leading-7 text-gray-500 italic">
-                    {item.richDescFooter}
+                    {parseInline(item.richDescFooter, lang)}
                   </p>
                 )
               )}
@@ -549,7 +549,7 @@ function NumberedBlock({ section, lang }: { section: NumberedSection; lang: stri
             {section.notice.title}
           </p>
           <p className="mt-1 text-[14px] leading-7 text-gray-600">
-            {section.notice.text}
+            {parseInline(section.notice.text, lang)}
           </p>
         </div>
       )}
@@ -564,7 +564,7 @@ function BulletBlock({ section, lang }: { section: BulletSection; lang: string }
     <div className="mb-14 border-t border-gray-100 pt-10 first:border-t-0 first:pt-0">
       <SectionEyebrow text={section.eyebrow} />
       <SectionTitle text={section.title} as={headingTag} />
-      <SectionDesc text={section.description} />
+      <SectionDesc text={section.description} lang={lang} />
       <ul className="list-none space-y-4">
         {section.items.map((item, i) => (
           <li key={i} className="flex gap-4 rounded-lg border border-gray-100 bg-gray-50 p-5">
@@ -597,27 +597,45 @@ function BulletBlock({ section, lang }: { section: BulletSection; lang: string }
 }
 
 /* Saf metin bullet */
-function PlainBulletBlock({ section }: { section: PlainBulletSection }) {
+function PlainBulletBlock({ section, lang = "tr" }: { section: PlainBulletSection; lang?: string }) {
   const headingTag = section.eyebrow ? "h2" : "h3";
+  const isNumbered = section.items.length > 0 && section.items.every(item => /^\d+[.)]\s/.test(item.trim()));
+
   return (
     <div className="mb-10">
       <SectionEyebrow text={section.eyebrow} />
       <SectionTitle text={section.title} as={headingTag} />
-      <SectionDesc text={section.description} />
-      <ul className="list-none divide-y divide-gray-100 border-y border-gray-100">
-        {section.items.map((item, i) => (
-          <li key={i} className="flex gap-3 py-3 text-sm leading-relaxed text-gray-700">
-            <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-red-700" />
-            {item.replace(/^[\s\t\u200B\uFEFF•\-*✓✔◦‣▪]+\s*/, "")}
-          </li>
-        ))}
-      </ul>
+      <SectionDesc text={section.description} lang={lang} />
+      {isNumbered ? (
+        <ol className="space-y-1.5 list-none border-y border-gray-100 divide-y divide-gray-100">
+          {section.items.map((item, i) => {
+            const m = item.trim().match(/^(\d+)[.)]\s+(.*)/);
+            const num = m?.[1] ?? (i + 1).toString();
+            const cleanText = m?.[2] ?? item;
+            return (
+              <li key={i} className="flex gap-3 py-3 text-sm leading-relaxed text-gray-700">
+                <span className="shrink-0 font-medium text-gray-500">{num}.</span>
+                <span>{parseInline(cleanText, lang)}</span>
+              </li>
+            );
+          })}
+        </ol>
+      ) : (
+        <ul className="list-none divide-y divide-gray-100 border-y border-gray-100">
+          {section.items.map((item, i) => (
+            <li key={i} className="flex gap-3 py-3 text-sm leading-relaxed text-gray-700">
+              <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-red-700" />
+              <span>{parseInline(item.replace(/^[\s\t\u200B\uFEFF•\-*✓✔◦‣▪]+\s*/, ""), lang)}</span>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }
 
 /* SSS Accordion */
-function FaqBlock({ section }: { section: FaqSection }) {
+function FaqBlock({ section, lang = "tr" }: { section: FaqSection; lang?: string }) {
   const [open, setOpen] = useState<number | null>(null);
   const headingTag = section.eyebrow ? "h2" : "h3";
   return (
@@ -636,7 +654,7 @@ function FaqBlock({ section }: { section: FaqSection }) {
             }}
           >
             <summary className="flex cursor-pointer list-none items-center justify-between py-4 text-sm font-semibold text-gray-900 [&::-webkit-details-marker]:hidden">
-              {faq.q}
+              {parseInline(faq.q, lang)}
               <span className="ml-4 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-gray-200 text-gray-400 transition group-open:border-red-700 group-open:text-red-700">
                 <svg
                   className="h-3 w-3 transition-transform group-open:rotate-45"
@@ -655,7 +673,7 @@ function FaqBlock({ section }: { section: FaqSection }) {
             </summary>
             {open === i && (
               <p className="pb-4 text-sm leading-relaxed text-gray-500">
-                {faq.a}
+                {parseInline(faq.a, lang)}
               </p>
             )}
           </details>
@@ -666,20 +684,20 @@ function FaqBlock({ section }: { section: FaqSection }) {
 }
 
 /* Info Kutusu */
-function InfoBoxBlock({ section }: { section: InfoBoxSection }) {
+function InfoBoxBlock({ section, lang = "tr" }: { section: InfoBoxSection; lang?: string }) {
   return (
     <div className="mb-10">
       <SectionEyebrow text={section.eyebrow} />
       <div className="rounded-lg border border-gray-200 bg-gray-50 p-5">
-        <p className="mb-1 text-sm font-semibold text-gray-800">{section.title}</p>
-        <p className="text-sm leading-relaxed text-gray-600">{section.desc}</p>
+        <p className="mb-1 text-sm font-semibold text-gray-800">{parseInline(section.title, lang)}</p>
+        <p className="text-sm leading-relaxed text-gray-600">{parseInline(section.desc, lang)}</p>
       </div>
     </div>
   );
 }
 
 /* Hukuki */
-function LegalBlock({ section }: { section: LegalSection }) {
+function LegalBlock({ section, lang = "tr" }: { section: LegalSection; lang?: string }) {
   const headingTag = section.eyebrow ? "h2" : "h3";
   return (
     <div className="mb-14 border-t border-gray-100 pt-10 first:border-t-0 first:pt-0">
@@ -688,9 +706,9 @@ function LegalBlock({ section }: { section: LegalSection }) {
       <ul className="space-y-4">
         {section.items.map((item, i) => (
           <li key={i} className="rounded-lg border border-gray-100 bg-gray-50 p-5">
-            <p className="text-[15px] font-semibold text-gray-900">{item.title}</p>
+            <p className="text-[15px] font-semibold text-gray-900">{parseInline(item.title, lang)}</p>
             <p className="mt-2 text-[14px] leading-7 text-gray-600">
-              {item.text}
+              {parseInline(item.text, lang)}
             </p>
           </li>
         ))}
@@ -700,13 +718,13 @@ function LegalBlock({ section }: { section: LegalSection }) {
 }
 
 /* Tablo */
-function TableBlock({ section }: { section: TableSection }) {
+function TableBlock({ section, lang = "tr" }: { section: TableSection; lang?: string }) {
   const headingTag = section.eyebrow ? "h2" : "h3";
   return (
     <div className="mb-14 border-t border-gray-100 pt-10 first:border-t-0 first:pt-0">
       <SectionEyebrow text={section.eyebrow} />
       <SectionTitle text={section.title} as={headingTag} />
-      <SectionDesc text={section.description} />
+      <SectionDesc text={section.description} lang={lang} />
       <div className="mt-4 overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm">
         <div className="overflow-x-auto">
           <table className="min-w-full divide-y divide-gray-200 text-sm">
@@ -717,7 +735,7 @@ function TableBlock({ section }: { section: TableSection }) {
                     key={i}
                     className="px-6 py-3.5 text-left font-bold text-slate-900 border-b border-gray-200"
                   >
-                    {header}
+                    {parseInline(header, lang)}
                   </th>
                 ))}
               </tr>
@@ -732,7 +750,7 @@ function TableBlock({ section }: { section: TableSection }) {
                         j === 0 ? "font-semibold text-slate-900 whitespace-nowrap" : "font-normal"
                       }`}
                     >
-                      {cell}
+                      {parseInline(cell, lang)}
                     </td>
                   ))}
                 </tr>
@@ -749,21 +767,21 @@ function TableBlock({ section }: { section: TableSection }) {
 function RenderSection({ section, lang }: { section: PageSection; lang: string }) {
   switch (section.type) {
     case "intro":
-      return <IntroBlock section={section} />;
+      return <IntroBlock section={section} lang={lang} />;
     case "numbered":
       return <NumberedBlock section={section} lang={lang} />;
     case "bullet":
       return <BulletBlock section={section} lang={lang} />;
     case "plain-bullet":
-      return <PlainBulletBlock section={section} />;
+      return <PlainBulletBlock section={section} lang={lang} />;
     case "faq":
-      return <FaqBlock section={section} />;
+      return <FaqBlock section={section} lang={lang} />;
     case "info-box":
-      return <InfoBoxBlock section={section} />;
+      return <InfoBoxBlock section={section} lang={lang} />;
     case "legal":
-      return <LegalBlock section={section} />;
+      return <LegalBlock section={section} lang={lang} />;
     case "table":
-      return <TableBlock section={section} />;
+      return <TableBlock section={section} lang={lang} />;
   }
 }
 

@@ -6,7 +6,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">';
 
 $locales = ['tr', 'en', 'ru', 'ar', 'fa'];
-$pages = ['home', 'services', 'citizenship', 'knowledge', 'news', 'questions', 'contact', 'privacy'];
+$pages = array_keys(seo_catalog());
 
 foreach ($pages as $pageKey) {
     foreach ($locales as $locale) {

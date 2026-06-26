@@ -19,19 +19,69 @@ type AboutPageDict = {
   cta_btn?: string;
 };
 
-const TEAM = [
-  { name: "Av. Necmettin Barman",        title: "Kurucu Avukat",        langs: "EN · AR", phone: "+90 532 449 47 28", initials: "NB" },
-  { name: "Av. Nurten İnan",             title: "Avukat",               langs: "EN",       phone: "+90 532 449 47 28", initials: "Nİ" },
-  { name: "Av. Ceyda Selin Gündüz",      title: "Avukat",               langs: "EN · DE · FR", phone: "+90 532 449 47 28", initials: "CG" },
-  { name: "Av. Cankut Aydemir",          title: "Avukat",               langs: "EN",       phone: "+90 532 449 47 28", initials: "CA" },
-  { name: "Ariadna Tülay",               title: "Tercüman",             langs: "RU · EN",  phone: "+90 532 449 47 28", initials: "AT" },
-  { name: "Fatima Zahraa Sekkaki",       title: "Tercüman",             langs: "AR · EN · FR", phone: "+90 532 449 47 28", initials: "FS" },
-  { name: "Madina Fıdun",                title: "Tercüman",             langs: "RU",       phone: "+90 532 449 47 28", initials: "MF" },
-  { name: "Mesut Salman",                title: "İş Takip Görevlisi",   langs: "EN",       phone: "+90 532 449 47 28", initials: "MS" },
-  { name: "Abdullah Sağlam",             title: "İş Takip Görevlisi",   langs: "AR",       phone: "+90 532 449 47 28", initials: "AS" },
-  { name: "Selda Akkaya",                title: "Mali Müşavir",         langs: "",         phone: "+90 532 449 47 28", initials: "SA" },
-  { name: "Mürüvet Kazıcı",              title: "Muhasebe",             langs: "",         phone: "+90 532 449 47 28", initials: "MK" },
+interface TeamMember {
+  name: string;
+  title: string;
+  langs: string;
+  initials: string;
+  phone?: string;
+}
+
+const TEAM: TeamMember[] = [
+  { name: "Av. Necmettin Barman",        title: "Kurucu Avukat",        langs: "EN · AR", initials: "NB" },
+  { name: "Büşra Barman",                title: "Genel Müdür",          langs: "",        initials: "BB" },
+  { name: "Av. Nurten İnan",             title: "Avukat",               langs: "EN",       initials: "Nİ" },
+  { name: "Av. Ceyda Selin Gündüz",      title: "Avukat",               langs: "EN · DE · FR", initials: "CG" },
+  { name: "Av. Cankut Aydemir",          title: "Avukat",               langs: "EN",       initials: "CA" },
+  { name: "Ariadna Tülay",               title: "Tercüman",             langs: "RU · EN",  initials: "AT" },
+  { name: "Fatima Zahraa Sekkaki",       title: "Tercüman",             langs: "AR · EN · FR", initials: "FS" },
+  { name: "Madina Fıdun",                title: "Tercüman",             langs: "RU",       initials: "MF" },
+  { name: "Mesut Salman",                title: "İş Takip Görevlisi",   langs: "EN",       initials: "MS" },
+  { name: "Abdullah Sağlam",             title: "İş Takip Görevlisi",   langs: "AR",       initials: "AS" },
+  { name: "Selda Akkaya",                title: "Mali Müşavir",         langs: "",         initials: "SA" },
+  { name: "Mürüvet Kazıcı",              title: "Muhasebe",             langs: "",         initials: "MK" },
+  { name: "Fatma Odabaş",                title: "Hukuk Asistanı",       langs: "",         initials: "FO" },
+  { name: "Eren Memiş",                  title: "IT Uzmanı",            langs: "",         initials: "EM" },
+  { name: "Talip Sağlam",                title: "Ulaşım Sorumlusu",     langs: "",         initials: "TS" },
 ];
+
+const CONTACT_LINES = {
+  tr: [
+    { label: "Kurucu Avukat Necmettin Barman (Arapça, Türkçe)", phone: "+90 532 175 18 29", info: "" },
+    { label: "Rusça İrtibat Hattı", phone: "+90 535 245 14 55", info: "Ariadna Tülay" },
+    { label: "Arapça İrtibat Hattı", phone: "+90 532 449 47 28", info: "Fatima Zahraa Sekkaki" },
+    { label: "Türkçe İrtibat Hattı", phone: "+90 532 175 18 29", info: "Av. Necmettin Barman" },
+    { label: "İngilizce İrtibat Hattı", phone: "+90 530 153 10 41", info: "Av. Ceyda Selin Gündüz" },
+  ],
+  en: [
+    { label: "Founding Atty. Necmettin Barman (Arabic, Turkish)", phone: "+90 532 175 18 29", info: "" },
+    { label: "Russian Hotline", phone: "+90 535 245 14 55", info: "Ariadna Tülay" },
+    { label: "Arabic Hotline", phone: "+90 532 449 47 28", info: "Fatima Zahraa Sekkaki" },
+    { label: "Turkish Hotline", phone: "+90 532 175 18 29", info: "Atty. Necmettin Barman" },
+    { label: "English Hotline", phone: "+90 530 153 10 41", info: "Atty. Ceyda Selin Gündüz" },
+  ],
+  ru: [
+    { label: "Учредитель Некметтин Барман (арабский, турецкий)", phone: "+90 532 175 18 29", info: "" },
+    { label: "Горячая линия на русском", phone: "+90 535 245 14 55", info: "Ариадна Тюлай" },
+    { label: "Горячая линия на арабском", phone: "+90 532 449 47 28", info: "Фатима Захра Секкаки" },
+    { label: "Горячая линия на турецком", phone: "+90 532 175 18 29", info: "Адв. Некметтин Барман" },
+    { label: "Горячая линия на английском", phone: "+90 530 153 10 41", info: "Адв. Джейда Селин Гюндюз" },
+  ],
+  ar: [
+    { label: "المحامي المؤسس نجم الدين بارمان (العربية، التركية)", phone: "+90 532 175 18 29", info: "" },
+    { label: "خط الاتصال بالروسية", phone: "+90 535 245 14 55", info: "أريادنا تولاي" },
+    { label: "خط الاتصال بالعربية", phone: "+90 532 449 47 28", info: "فاطمة الزهراء سكاكي" },
+    { label: "خط الاتصال بالتركية", phone: "+90 532 175 18 29", info: "المحامي نجم الدين بارمان" },
+    { label: "خط الاتصال بالإنجليزية", phone: "+90 530 153 10 41", info: "المحامية جيدة سيلين غوندوز" },
+  ],
+  fa: [
+    { label: "وکیل مؤسس نجم‌الدین بارمان (عربی، ترکی)", phone: "+90 532 175 18 29", info: "" },
+    { label: "خط ارتباطی روسی", phone: "+90 535 245 14 55", info: "آریادنا تولای" },
+    { label: "خط ارتباطی عربی", phone: "+90 532 449 47 28", info: "فاطمه زهرا سکاکی" },
+    { label: "خط ارتباطی ترکی", phone: "+90 532 175 18 29", info: "وکیل نجم‌الدین بارمان" },
+    { label: "خط ارتباطی انگلیسی", phone: "+90 530 153 10 41", info: "وکیل جیدا سلین گوندوز" },
+  ],
+};
 
 const VALUE_CONFIG = [
   {
@@ -236,6 +286,43 @@ export default async function AboutPageContent({ lang }: { lang: string }) {
               </div>
             ))}
           </div>
+
+          {/* İrtibat Hatları / Hotline Lines Section */}
+          <div className="mt-20 max-w-4xl mx-auto rounded-3xl border border-gray-100 bg-gray-50/50 p-8 sm:p-10 shadow-sm">
+            <h3 className="text-xl font-bold text-[#0a192f] text-center mb-8 flex items-center justify-center gap-2">
+              <svg className="h-5 w-5 text-[#8a1c1c]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              {lang === "tr" ? "İrtibat Hatları" : lang === "en" ? "Hotlines" : lang === "ru" ? "Горячие линии" : lang === "ar" ? "خطوط الاتصال" : "خطوط ارتباطی"}
+            </h3>
+            
+            <div className="grid gap-4 sm:grid-cols-2">
+              {((CONTACT_LINES as any)[lang] || CONTACT_LINES.tr).map((line: any, idx: number) => (
+                <div 
+                  key={idx} 
+                  className={`flex flex-col sm:flex-row sm:items-center justify-between p-4 rounded-xl border border-white bg-white shadow-sm hover:border-[#8a1c1c]/20 transition-all duration-200 ${idx === 0 ? 'sm:col-span-2 bg-[#8a1c1c]/5 border-[#8a1c1c]/10' : ''}`}
+                >
+                  <div className="min-w-0">
+                    <p className="text-xs font-bold text-gray-400 uppercase tracking-wider">
+                      {line.label}
+                    </p>
+                    {line.info && (
+                      <p className="text-sm font-semibold text-[#0a192f] mt-0.5">
+                        {line.info}
+                      </p>
+                    )}
+                  </div>
+                  <a 
+                    href={`tel:${line.phone.replace(/\s+/g, "")}`}
+                    className="mt-2 sm:mt-0 inline-flex items-center gap-2 text-base font-bold text-[#8a1c1c] hover:text-[#a32222] transition-colors"
+                  >
+                    <span>{line.phone}</span>
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
+
         </div>
       </section>
 

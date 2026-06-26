@@ -44,9 +44,17 @@ export type ContactPageCopy = {
   weekdays: string;
   weekend: string;
   formTitle: string;
+  formSubtitle: string;
+  labels: {
+    fullName: string;
+    email: string;
+    phone: string;
+    message: string;
+  };
   placeholders: {
     firstName: string;
     lastName: string;
+    fullName: string;
     email: string;
     phone: string;
     message: string;
@@ -97,13 +105,21 @@ const CONTACT_COPY: Record<SeoLocale, ContactPageCopy> = {
     hoursLabel: "Çalışma Saatleri",
     weekdays: "Pazartesi - Cuma: 08:30 - 18:00",
     weekend: "Cumartesi - Pazar: Kapalı",
-    formTitle: "İletişim Formu",
+    formTitle: "Ücretsiz Vatandaşlık Danışmanlığı Alın",
+    formSubtitle: "Bütçenizi ve iletişim bilgilerinizi bize iletin. Ekibimiz sizi uygun mülklerle eşleştirecek ve tüm süreci açıklayacaktır.",
+    labels: {
+      fullName: "Ad Soyad",
+      email: "E-posta Adresi",
+      phone: "Telefon Numarası",
+      message: "Mesaj",
+    },
     placeholders: {
       firstName: "Adınız",
       lastName: "Soyadınız",
-      email: "E-posta Adresiniz",
-      phone: "Telefon Numaranız",
-      message: "Hangi yatırım modelini düşündüğünüzü, aile dosyanızı veya merak ettiğiniz soruyu kısaca yazın...",
+      fullName: "Adınızı ve soyadınızı girin",
+      email: "E-posta adresinizi girin",
+      phone: "Ülke koduyla birlikte telefon numarası",
+      message: "Mesajınızı yazın...",
     },
     submitLabel: "Mesajı Gönder",
   },
@@ -119,13 +135,21 @@ const CONTACT_COPY: Record<SeoLocale, ContactPageCopy> = {
     hoursLabel: "Working Hours",
     weekdays: "Monday - Friday: 08:30 - 18:00",
     weekend: "Saturday - Sunday: Closed",
-    formTitle: "Contact Form",
+    formTitle: "Get Free Citizenship Consultation",
+    formSubtitle: "Tell us your budget and contact details. Our team will match you with eligible properties and explain the full process.",
+    labels: {
+      fullName: "Full Name",
+      email: "Email Address",
+      phone: "Phone Number",
+      message: "Message",
+    },
     placeholders: {
       firstName: "First name",
       lastName: "Last name",
-      email: "Email address",
-      phone: "Phone number",
-      message: "Briefly describe the investment route you are considering, your family file, or the question you want us to review...",
+      fullName: "Enter your full name",
+      email: "Enter your email address",
+      phone: "Phone number with country code",
+      message: "Enter your message...",
     },
     submitLabel: "Send Message",
   },
@@ -141,13 +165,21 @@ const CONTACT_COPY: Record<SeoLocale, ContactPageCopy> = {
     hoursLabel: "Часы работы",
     weekdays: "Понедельник - Пятница: 08:30 - 18:00",
     weekend: "Суббота - Воскресенье: выходной",
-    formTitle: "Контактная форма",
+    formTitle: "Получите бесплатную консультацию по гражданству",
+    formSubtitle: "Укажите ваш бюджет и контактные данные. Наша команда подберет подходящую недвижимость и объяснит весь процесс.",
+    labels: {
+      fullName: "Полное имя",
+      email: "Адрес электронной почты",
+      phone: "Номер телефона",
+      message: "Сообщение",
+    },
     placeholders: {
       firstName: "Имя",
       lastName: "Фамилия",
-      email: "Адрес электронной почты",
-      phone: "Номер телефона",
-      message: "Кратко опишите интересующую вас инвестиционную модель, семейное досье или вопрос, который вы хотите обсудить...",
+      fullName: "Введите ваше полное имя",
+      email: "Введите ваш адрес электронной почты",
+      phone: "Номер телефона с кодом страны",
+      message: "Введите ваше сообщение...",
     },
     submitLabel: "Отправить сообщение",
   },
@@ -163,13 +195,21 @@ const CONTACT_COPY: Record<SeoLocale, ContactPageCopy> = {
     hoursLabel: "ساعات العمل",
     weekdays: "الاثنين - الجمعة: 08:30 - 18:00",
     weekend: "السبت - الأحد: مغلق",
-    formTitle: "نموذج التواصل",
+    formTitle: "احصل على استشارة مجانية للحصول على الجنسية",
+    formSubtitle: "أخبرنا بميزانيتك وتفاصيل الاتصال الخاصة بك. سيقوم فريقنا بمطابقتك مع العقارات المؤهلة وشرح العملية بالكامل.",
+    labels: {
+      fullName: "الاسم الكامل",
+      email: "البريد الإلكتروني",
+      phone: "رقم الهاتف",
+      message: "الرسالة",
+    },
     placeholders: {
       firstName: "الاسم الأول",
       lastName: "اسم العائلة",
-      email: "البريد الإلكتروني",
-      phone: "رقم الهاتف",
-      message: "اكتب باختصار نموذج الاستثمار الذي تفكر فيه أو تفاصيل ملف العائلة أو السؤال الذي ترغب في مراجعته...",
+      fullName: "أدخل اسمك الكامل",
+      email: "أدخل عنوان بريدك الإلكتروني",
+      phone: "رقم الهاتف مع رمز الدولة",
+      message: "أدخل رسالتك...",
     },
     submitLabel: "إرسال الرسالة",
   },
@@ -185,13 +225,21 @@ const CONTACT_COPY: Record<SeoLocale, ContactPageCopy> = {
     hoursLabel: "ساعات کاری",
     weekdays: "دوشنبه تا جمعه: 08:30 - 18:00",
     weekend: "شنبه و یکشنبه: تعطیل",
-    formTitle: "فرم تماس",
+    formTitle: "دریافت مشاوره رایگان شهروندی",
+    formSubtitle: "بودجه و اطلاعات تماس خود را به ما بگویید. تیم ما شما را با املاک واجد شرایط مطابقت می دهد و کل فرآیند را توضیح می دهد.",
+    labels: {
+      fullName: "نام کامل",
+      email: "آدرس ایمیل",
+      phone: "شماره تلفن",
+      message: "پیام",
+    },
     placeholders: {
       firstName: "نام",
       lastName: "نام خانوادگی",
-      email: "آدرس ایمیل",
-      phone: "شماره تلفن",
-      message: "به طور خلاصه مدل سرمایه گذاری مورد نظر، وضعیت پرونده خانوادگی یا سوالی را که می خواهید بررسی کنیم بنویسید...",
+      fullName: "نام کامل خود را وارد کنید",
+      email: "آدرس ایمیل خود را وارد کنید",
+      phone: "شماره تلفن همراه با کد کشور",
+      message: "پیام خود را وارد کنید...",
     },
     submitLabel: "ارسال پیام",
   },

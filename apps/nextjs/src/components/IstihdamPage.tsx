@@ -1,13 +1,13 @@
 "use client";
 
-import type { GayrimenkulFonPageCopy } from "@/lib/gayrimenkul-fon-page";
+import type { IstihdamPageCopy } from "@/lib/istihdam-page";
 import ServicePageLayout from "@/components/ServicePageLayout";
 import type { PageSection, OtherProgram } from "@/components/ServicePageLayout";
 
 const OTHER_PROGRAMS: OtherProgram[] = [
   { label: "Gayrimenkul Yatırımı", slug: "gayrimenkul-yatirimi" },
   { label: "Mevduat Hesabı", slug: "mevduat-hesabi" },
-  { label: "İstihdam Oluşturmak", slug: "istihdam-olusturmak" },
+  { label: "Gayrimenkul Yatırım Fonu", slug: "gayrimenkul-yatirim-fonu" },
   { label: "Devlet Borçlanma Araçları", slug: "devlet-borclanma-araclari" },
 ];
 
@@ -15,10 +15,10 @@ type Props = {
   lang?: string;
   dir?: "ltr" | "rtl";
   backLabel?: string;
-  copy: GayrimenkulFonPageCopy;
+  copy: IstihdamPageCopy;
 };
 
-export default function GayrimenkulFonPage({
+export default function IstihdamPage({
   lang = "tr",
   dir = "ltr",
   backLabel = "Yatırım Türleri",
@@ -49,19 +49,6 @@ export default function GayrimenkulFonPage({
               title: s.title,
               desc: s.desc,
             })),
-          },
-        ]
-      : []),
-
-    // Yatırım Süreci Aşamaları
-    ...(copy.processStages && copy.processStages.items && copy.processStages.items.length > 0
-      ? [
-          {
-            type: "plain-bullet" as const,
-            eyebrow: copy.processStages.eyebrow,
-            title: copy.processStages.title,
-            description: copy.processStages.description,
-            items: copy.processStages.items,
           },
         ]
       : []),

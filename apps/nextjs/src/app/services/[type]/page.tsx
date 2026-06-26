@@ -8,6 +8,10 @@ import GayrimenkulPage from "@/components/GayrimenkulPage";
 import MevduatPage from "@/components/MevduatPage";
 import GayrimenkulFonPage from "@/components/GayrimenkulFonPage";
 import { getGayrimenkulFonPageData } from "@/lib/gayrimenkul-fon-page";
+import { getIstihdamPageData } from "@/lib/istihdam-page";
+import IstihdamPage from "@/components/IstihdamPage";
+import { getBondsPageData } from "@/lib/bonds-page";
+import BondsPage from "@/components/BondsPage";
 
 type ServicePageDictionary = {
   dir?: string;
@@ -82,6 +86,32 @@ export default async function ServiceDetailPage({ slug, lang = "tr" }: { slug: s
     const pageData = await getGayrimenkulFonPageData(lang);
     return (
       <GayrimenkulFonPage
+        lang={pageData.lang}
+        dir={pageData.dir}
+        backLabel={pageData.backLabel}
+        copy={pageData.copy}
+      />
+    );
+  }
+
+  // Dedicated rich page for istihdam-olusturmak
+  if (slug === "istihdam-olusturmak") {
+    const pageData = await getIstihdamPageData(lang);
+    return (
+      <IstihdamPage
+        lang={pageData.lang}
+        dir={pageData.dir}
+        backLabel={pageData.backLabel}
+        copy={pageData.copy}
+      />
+    );
+  }
+
+  // Dedicated rich page for devlet-borclanma-araclari
+  if (slug === "devlet-borclanma-araclari") {
+    const pageData = await getBondsPageData(lang);
+    return (
+      <BondsPage
         lang={pageData.lang}
         dir={pageData.dir}
         backLabel={pageData.backLabel}

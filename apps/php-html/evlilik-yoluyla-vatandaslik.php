@@ -1,6 +1,6 @@
 <?php
 require_once 'includes/schema.php';
-$seoKey = 'mevduat-hesabi';
+$seoKey = 'evlilik-yoluyla-vatandaslik';
 include 'includes/header.php';
 
 // Helper functions for parsing inline markdown
@@ -287,15 +287,37 @@ function render_plain_bullet_section($section, $lang) {
         $html .= '<p class="mb-6 text-[15px] leading-7 text-gray-600">' . parse_inline_links($section['description'], $lang) . '</p>';
     }
     
-    $html .= '<ul class="list-none divide-y divide-gray-100 border-y border-gray-100">';
+    $isNumbered = true;
     foreach ($section['items'] as $item) {
-        $cleanLine = preg_replace('/^[\s\t•\-*✓✔◦‣▪]+\s*/', '', trim($item));
-        $html .= '<li class="flex gap-3 py-3 text-sm leading-relaxed text-gray-700">';
-        $html .= '<span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-red-700"></span>';
-        $html .= '<span>' . parse_inline_links($cleanLine, $lang) . '</span>';
-        $html .= '</li>';
+        if (!preg_match('/^\d+[.)]\s/', trim($item))) {
+            $isNumbered = false;
+            break;
+        }
     }
-    $html .= '</ul>';
+    
+    if ($isNumbered) {
+        $html .= '<ol class="space-y-1.5 list-none border-y border-gray-100 divide-y divide-gray-100">';
+        foreach ($section['items'] as $i => $item) {
+            preg_match('/^(\d+)[.)]\s+(.*)/', trim($item), $m);
+            $num = isset($m[1]) ? $m[1] : ($i + 1);
+            $cleanLine = isset($m[2]) ? $m[2] : $item;
+            $html .= '<li class="flex gap-3 py-3 text-sm leading-relaxed text-gray-700">';
+            $html .= '<span class="shrink-0 font-medium text-gray-500">' . htmlspecialchars($num) . '.</span>';
+            $html .= '<span>' . parse_inline_links($cleanLine, $lang) . '</span>';
+            $html .= '</li>';
+        }
+        $html .= '</ol>';
+    } else {
+        $html .= '<ul class="list-none divide-y divide-gray-100 border-y border-gray-100">';
+        foreach ($section['items'] as $item) {
+            $cleanLine = preg_replace('/^[\s\t•\-*✓✔◦‣▪]+\s*/', '', trim($item));
+            $html .= '<li class="flex gap-3 py-3 text-sm leading-relaxed text-gray-700">';
+            $html .= '<span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-red-700"></span>';
+            $html .= '<span>' . parse_inline_links($cleanLine, $lang) . '</span>';
+            $html .= '</li>';
+        }
+        $html .= '</ul>';
+    }
     $html .= '</div>';
     return $html;
 }
@@ -330,14 +352,14 @@ $consultationLabel = $consultationLabels[$lang] ?? 'Danışmanlık';
             <span>/</span>
             <a href="services.php?lang=<?= $lang ?>" class="transition hover:text-gray-700"><?= htmlspecialchars($backLabel) ?></a>
             <span>/</span>
-            <span class="text-gray-700 font-medium"><?= htmlspecialchars(__t('mevduat_page.hero.breadcrumbLabel') ?? '') ?></span>
+            <span class="text-gray-700 font-medium"><?= htmlspecialchars(__t('marriage_page.hero.breadcrumbLabel') ?? '') ?></span>
           </nav>
 
           <!-- Başlık -->
           <h1 class="text-3xl font-extrabold leading-tight tracking-tight text-gray-950 md:text-4xl">
-            <?= htmlspecialchars(__t('mevduat_page.hero.breadcrumbLabel') ?? '') ?>
+            <?= htmlspecialchars(__t('marriage_page.hero.breadcrumbLabel') ?? '') ?>
           </h1>
-          <?php if ($summary = __t('mevduat_page.hero.summary')): ?>
+          <?php if ($summary = __t('marriage_page.hero.summary')): ?>
             <p class="mt-4 max-w-2xl text-sm leading-relaxed text-gray-500">
               <?= htmlspecialchars($summary) ?>
             </p>
@@ -353,43 +375,33 @@ $consultationLabel = $consultationLabels[$lang] ?? 'Danışmanlık';
             <!-- SOL: İçerik Bölümleri -->
             <div class="min-w-0 flex-1">
               <?php
-              $copy = __t('mevduat_page');
+              $copy = __t('marriage_page');
               
-              // 1. Süreç (process)
+              // 1. Giriş (intro)
+              if (!empty($copy['intro'])) {
+                  echo render_intro_section($copy['intro'], $lang);
+              }
+              
+              // 2. Süreç (process)
               if (!empty($copy['process'])) {
                   echo render_numbered_section($copy['process'], $lang);
               }
               
-              // 2. Kritik Riskler (risks)
-              if (!empty($copy['risks'])) {
-                  echo render_bullet_section($copy['risks'], $lang);
+              // 3. Yatırım Süreci Aşamaları (processStages)
+              if (!empty($copy['processStages'])) {
+                  echo render_plain_bullet_section([
+                      'eyebrow' => $copy['processStages']['eyebrow'] ?? '',
+                      'title' => $copy['processStages']['title'] ?? '',
+                      'items' => $copy['processStages']['items'] ?? []
+                  ], $lang);
               }
               
-              // 3. BES Yöntemi (bes)
-              if (!empty($copy['bes'])) {
-                  $bes = $copy['bes'];
-                  echo render_intro_section($bes, $lang);
-                  
-                  if (!empty($bes['restrictions'])) {
-                      echo render_plain_bullet_section([
-                          'title' => $bes['restrictionsTitle'] ?? '',
-                          'items' => $bes['restrictions']
-                      ], $lang);
-                  }
-                  
-                  if (!empty($bes['officeRole'])) {
-                      $items = [];
-                      foreach ($bes['officeRole'] as $role) {
-                          $items[] = ['title' => $role];
-                      }
-                      echo render_numbered_section([
-                          'title' => $bes['officeRoleTitle'] ?? '',
-                          'items' => $items
-                      ], $lang);
-                  }
+              // 4. Hukuki Çerçeve (legal)
+              if (!empty($copy['legal'])) {
+                  echo render_legal_section($copy['legal'], $lang);
               }
               
-              // 4. Uygunluk Belgesi Sonrası (postApproval)
+              // 5. Uygunluk Belgesi Sonrası (postApproval)
               if (!empty($copy['postApproval'])) {
                   $postApproval = $copy['postApproval'];
                   echo render_intro_section($postApproval, $lang);
@@ -400,60 +412,17 @@ $consultationLabel = $consultationLabels[$lang] ?? 'Danışmanlık';
                       ], $lang);
                   }
               }
-              
-              // 5. Kimler Başvurabilir (whoCanApply)
-              if (!empty($copy['whoCanApply'])) {
-                  $wca = $copy['whoCanApply'];
-                  
-                  if (!empty($wca['conditions'])) {
-                      echo render_plain_bullet_section([
-                          'eyebrow' => $wca['eyebrow'] ?? '',
-                          'title' => $wca['conditionsTitle'] ?? '',
-                          'items' => $wca['conditions']
-                      ], $lang);
-                  }
-                  
-                  if (!empty($wca['family'])) {
-                      echo render_plain_bullet_section([
-                          'title' => $wca['familyTitle'] ?? '',
-                          'items' => $wca['family']
-                      ], $lang);
-                  }
-                  
-                  if (!empty($wca['cannot'])) {
-                      echo render_plain_bullet_section([
-                          'title' => $wca['cannotTitle'] ?? '',
-                          'items' => $wca['cannot']
-                      ], $lang);
-                  }
-                  
-                  if (!empty($wca['special'])) {
-                      echo render_plain_bullet_section([
-                          'title' => $wca['specialTitle'] ?? '',
-                          'items' => $wca['special']
-                      ], $lang);
-                  }
-              }
-              
-              // 6. Hizmet Kapsamı (serviceScope)
-              if (!empty($copy['serviceScope'])) {
-                  echo render_plain_bullet_section([
-                      'eyebrow' => $copy['serviceScope']['eyebrow'] ?? '',
-                      'title' => $copy['serviceScope']['title'] ?? '',
-                      'items' => $copy['serviceScope']['items'] ?? []
-                  ], $lang);
-              }
               ?>
 
               <!-- İletişim Notu -->
               <div class="border-t border-gray-100 pt-10 text-sm leading-relaxed text-gray-500">
                 <p>
-                  <?= htmlspecialchars(__t('mevduat_page.cta.description') ?? '') ?>
+                  <?= htmlspecialchars(__t('marriage_page.cta.description') ?? '') ?>
                   <a
                     href="contact.php?lang=<?= $lang ?>"
                     class="border-b border-gray-400 pb-px font-semibold text-gray-800 transition hover:border-red-700 hover:text-red-700"
                   >
-                    <?= htmlspecialchars(__t('mevduat_page.cta.primaryCta') ?? 'Ücretsiz Danışın') ?>
+                    <?= htmlspecialchars(__t('marriage_page.cta.primaryCta') ?? 'Ücretsiz Danışın') ?>
                   </a>
                 </p>
               </div>
@@ -469,15 +438,15 @@ $consultationLabel = $consultationLabels[$lang] ?? 'Danışmanlık';
                     <?= htmlspecialchars($consultationLabel) ?>
                   </p>
                   <p class="mb-5 text-sm leading-relaxed text-gray-600">
-                    <?= htmlspecialchars(__t('mevduat_page.cta.title') ?? '') ?>
+                    <?= htmlspecialchars(__t('marriage_page.cta.title') ?? '') ?>
                   </p>
                   <a
                     href="contact.php?lang=<?= $lang ?>"
                     class="block border border-gray-900 bg-gray-900 px-5 py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-white transition hover:bg-gray-800"
                   >
-                    <?= htmlspecialchars(__t('mevduat_page.cta.primaryCta') ?? 'Ücretsiz Danışın') ?>
+                    <?= htmlspecialchars(__t('marriage_page.cta.primaryCta') ?? 'Ücretsiz Danışın') ?>
                   </a>
-                  <?php if ($secCta = __t('mevduat_page.cta.secondaryCta')): ?>
+                  <?php if ($secCta = __t('marriage_page.cta.secondaryCta')): ?>
                     <a
                       href="questions.php?lang=<?= $lang ?>"
                       class="mt-2 block border border-gray-200 px-5 py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-gray-600 transition hover:border-gray-400"
@@ -498,10 +467,10 @@ $consultationLabel = $consultationLabels[$lang] ?? 'Danışmanlık';
                     <?php
                     $otherPrograms = [
                       ['label' => __t('nav.investment_real_estate') ?? 'Gayrimenkul Yatırımı', 'href' => 'gayrimenkul-yatirimi.php?lang=' . $lang],
+                      ['label' => __t('nav.investment_deposit') ?? 'Mevduat Hesabı', 'href' => 'mevduat-hesabi.php?lang=' . $lang],
                       ['label' => __t('nav.investment_employment') ?? 'İstihdam Oluşturmak', 'href' => 'istihdam-olusturmak.php?lang=' . $lang],
                       ['label' => __t('nav.investment_fund') ?? 'Gayrimenkul Yatırım Fonu', 'href' => 'gayrimenkul-yatirim-fonu.php?lang=' . $lang],
                       ['label' => __t('nav.investment_bonds') ?? 'Devlet Borçlanma Araçları', 'href' => 'devlet-borclanma-araclari.php?lang=' . $lang],
-                      ['label' => __t('nav.item_cit_marriage') ?? 'Evlilik Yoluyla Vatandaşlık', 'href' => 'evlilik-yoluyla-vatandaslik.php?lang=' . $lang],
                       ['label' => __t('nav.item_cit_gen') ?? 'Genel Yolla Vatandaşlık', 'href' => 'genel-yolla-vatandaslik.php?lang=' . $lang],
                     ];
                     foreach ($otherPrograms as $prog):
