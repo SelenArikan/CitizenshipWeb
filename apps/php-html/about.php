@@ -87,7 +87,7 @@ $faq_labels = [
     'tr' => 'SSS',
     'en' => 'FAQ',
     'ru' => 'FAQ',
-    'ar' => 'الأسئلة الشائعة',
+    'ar' => 'الأسئلة Şaika',
     'fa' => 'سوالات متداول'
 ];
 $faq_label = $faq_labels[$lang] ?? $faq_labels['tr'];
@@ -111,7 +111,7 @@ $contact_lines_all = [
     [ 'label' => "Учредитель Некметтин Барман (арабский, турецкий)", 'phone' => "+90 532 175 18 29", 'info' => "" ],
     [ 'label' => "Горячая линия на русском", 'phone' => "+90 535 245 14 55", 'info' => "Ариадна Тюлай" ],
     [ 'label' => "Горячая линия на арабском", 'phone' => "+90 532 449 47 28", 'info' => "Фатима Захра Секкаки" ],
-    [ 'label' => "Горячая линия на турецком", 'phone' => "+90 532 175 18 29", 'info' => "Адв. Некметtin Барман" ],
+    [ 'label' => "Горячая линия на турецком", 'phone' => "+90 532 175 18 29", 'info' => "Адв. Некметтин Барман" ],
     [ 'label' => "Горячая линия на английском", 'phone' => "+90 530 153 10 41", 'info' => "Адв. Джейда Селин Гюндюз" ],
   ],
   'ar' => [
@@ -123,7 +123,7 @@ $contact_lines_all = [
   ],
   'fa' => [
     [ 'label' => "وکیل مؤسس نجم‌الدین بارمان (عربی، ترکی)", 'phone' => "+90 532 175 18 29", 'info' => "" ],
-    [ 'label' => "خط ارتباطی روسی", 'phone' => "+90 535 245 14 55", 'info' => "آریادنا تویli" ],
+    [ 'label' => "خط ارتباطی روسی", 'phone' => "+90 535 245 14 55", 'info' => "آریادنا تویلی" ],
     [ 'label' => "خط ارتباطی عربی", 'phone' => "+90 532 449 47 28", 'info' => "فاطمه زهرا سکاکی" ],
     [ 'label' => "خط ارتباطی ترکی", 'phone' => "+90 532 175 18 29", 'info' => "وکیل نجم‌الدین بارمان" ],
     [ 'label' => "خط ارتباطی انگلیسی", 'phone' => "+90 530 153 10 41", 'info' => "وکیل جیدا سلین گوندوز" ],
@@ -131,23 +131,94 @@ $contact_lines_all = [
 ];
 $contact_lines = $contact_lines_all[$lang] ?? $contact_lines_all['tr'];
 
-$team = [
-  [ 'name' => "Av. Necmettin Barman",        'title' => "Kurucu Avukat",        'langs' => "EN · AR" ],
-  [ 'name' => "Büşra Barman",                'title' => "Genel Müdür",          'langs' => "" ],
-  [ 'name' => "Av. Nurten İnan",             'title' => "Avukat",               'langs' => "EN" ],
-  [ 'name' => "Av. Ceyda Selin Gündüz",      'title' => "Avukat",               'langs' => "EN · DE · FR" ],
-  [ 'name' => "Av. Cankut Aydemir",          'title' => "Avukat",               'langs' => "EN" ],
-  [ 'name' => "Ariadna Tülay",               'title' => "Tercüman",             'langs' => "RU · EN" ],
-  [ 'name' => "Fatima Zahraa Sekkaki",       'title' => "Tercüman",             'langs' => "AR · EN · FR" ],
-  [ 'name' => "Madina Fıdun",                'title' => "Tercüman",             'langs' => "RU" ],
-  [ 'name' => "Mesut Salman",                'title' => "İş Takip Görevlisi",   'langs' => "EN" ],
-  [ 'name' => "Abdullah Sağlam",             'title' => "İş Takip Görevlisi",   'langs' => "AR" ],
-  [ 'name' => "Selda Akkaya",                'title' => "Mali Müşavir",         'langs' => "" ],
-  [ 'name' => "Mürüvet Kazıcı",              'title' => "Muhasebe",             'langs' => "" ],
-  [ 'name' => "Fatma Odabaş",                'title' => "Hukuk Asistanı",       'langs' => "" ],
-  [ 'name' => "Eren Memiş",                  'title' => "IT Uzmanı",            'langs' => "" ],
-  [ 'name' => "Talip Sağlam",                'title' => "Ulaşım Sorumlusu",     'langs' => "" ],
+$team_translations = [
+  'tr' => [
+    [ 'name' => "Av. Necmettin Barman",        'title' => "Kurucu Avukat",        'langs' => "EN · AR" ],
+    [ 'name' => "Büşra Barman",                'title' => "Genel Müdür",          'langs' => "" ],
+    [ 'name' => "Av. Nurten İnan",             'title' => "Avukat",               'langs' => "EN" ],
+    [ 'name' => "Av. Ceyda Selin Gündüz",      'title' => "Avukat",               'langs' => "EN · DE · FR" ],
+    [ 'name' => "Av. Cankut Aydemir",          'title' => "Avukat",               'langs' => "EN" ],
+    [ 'name' => "Ariadna Tülay",               'title' => "Tercüman",             'langs' => "RU · EN" ],
+    [ 'name' => "Fatima Zahraa Sekkaki",       'title' => "Tercüman",             'langs' => "AR · EN · FR" ],
+    [ 'name' => "Madina Fıdun",                'title' => "Tercüman",             'langs' => "RU" ],
+    [ 'name' => "Mesut Salman",                'title' => "İş Takip Görevlisi",   'langs' => "EN" ],
+    [ 'name' => "Abdullah Sağlam",             'title' => "İş Takip Görevlisi",   'langs' => "AR" ],
+    [ 'name' => "Selda Akkaya",                'title' => "Mali Müşavir",         'langs' => "" ],
+    [ 'name' => "Mürüvet Kazıcı",              'title' => "Muhasebe",             'langs' => "" ],
+    [ 'name' => "Fatma Odabaş",                'title' => "Hukuk Asistanı",       'langs' => "" ],
+    [ 'name' => "Eren Memiş",                  'title' => "IT Uzmanı",            'langs' => "" ],
+    [ 'name' => "Talip Sağlam",                'title' => "Ulaşım Sorumlusu",     'langs' => "" ],
+  ],
+  'en' => [
+    [ 'name' => "Atty. Necmettin Barman",      'title' => "Founding Attorney",    'langs' => "EN · AR" ],
+    [ 'name' => "Büşra Barman",                'title' => "General Manager",      'langs' => "" ],
+    [ 'name' => "Atty. Nurten İnan",             'title' => "Attorney",             'langs' => "EN" ],
+    [ 'name' => "Atty. Ceyda Selin Gündüz",      'title' => "Attorney",             'langs' => "EN · DE · FR" ],
+    [ 'name' => "Atty. Cankut Aydemir",          'title' => "Attorney",             'langs' => "EN" ],
+    [ 'name' => "Ariadna Tülay",               'title' => "Translator",           'langs' => "RU · EN" ],
+    [ 'name' => "Fatima Zahraa Sekkaki",       'title' => "Translator",           'langs' => "AR · EN · FR" ],
+    [ 'name' => "Madina Fıdun",                'title' => "Translator",           'langs' => "RU" ],
+    [ 'name' => "Mesut Salman",                'title' => "Operations Officer",   'langs' => "EN" ],
+    [ 'name' => "Abdullah Sağlam",             'title' => "Operations Officer",   'langs' => "AR" ],
+    [ 'name' => "Selda Akkaya",                'title' => "Financial Advisor",    'langs' => "" ],
+    [ 'name' => "Mürüvet Kazıcı",              'title' => "Accounting",           'langs' => "" ],
+    [ 'name' => "Fatma Odabaş",                'title' => "Legal Assistant",      'langs' => "" ],
+    [ 'name' => "Eren Memiş",                  'title' => "IT Specialist",        'langs' => "" ],
+    [ 'name' => "Talip Sağlam",                'title' => "Transportation",       'langs' => "" ],
+  ],
+  'ru' => [
+    [ 'name' => "Адв. Некметтин Барман",        'title' => "Учредитель / Адвокат", 'langs' => "EN · AR" ],
+    [ 'name' => "Бюшра Барман",                'title' => "Генеральный директор", 'langs' => "" ],
+    [ 'name' => "Адв. Нуртен Инан",             'title' => "Адвокат",              'langs' => "EN" ],
+    [ 'name' => "Адв. Джейда Селин Гюндюз",      'title' => "Адвокат",              'langs' => "EN · DE · FR" ],
+    [ 'name' => "Адв. Джанкут Айдемир",          'title' => "Адвокат",              'langs' => "EN" ],
+    [ 'name' => "Ариадна Тюлай",               'title' => "Переводчик",           'langs' => "RU · EN" ],
+    [ 'name' => "Фатима Захра Секкаки",        'title' => "Переводчик",           'langs' => "AR · EN · FR" ],
+    [ 'name' => "Мадина Фидун",                'title' => "Переводчик",           'langs' => "RU" ],
+    [ 'name' => "Месут Салман",                'title' => "Специалист по сопровождению", 'langs' => "EN" ],
+    [ 'name' => "Абдулла Саглам",              'title' => "Специалист по сопровождению", 'langs' => "AR" ],
+    [ 'name' => "Сельда Аккая",                'title' => "Финансовый консультант", 'langs' => "" ],
+    [ 'name' => "Мюрювет Казыджи",              'title' => "Бухгалтерия",          'langs' => "" ],
+    [ 'name' => "Фатма Одабаш",                'title' => "Ассистент юриста",     'langs' => "" ],
+    [ 'name' => "Эрен Мемиш",                  'title' => "IT-специалист",        'langs' => "" ],
+    [ 'name' => "Талип Саглам",                'title' => "Координатор по транспорту", 'langs' => "" ],
+  ],
+  'ar' => [
+    [ 'name' => "المحامي نجم الدين بارمان",      'title' => "المحامي المؤسس",       'langs' => "EN · AR" ],
+    [ 'name' => "بشرى بارمان",                'title' => "المدير العام",          'langs' => "" ],
+    [ 'name' => "المحامية نورتين إينان",         'title' => "محامي",                'langs' => "EN" ],
+    [ 'name' => "المحامية جيدة سيلين غوندوز",      'title' => "محامي",                'langs' => "EN · DE · FR" ],
+    [ 'name' => "المحامي جانكوت أيديمير",         'title' => "محامي",                'langs' => "EN" ],
+    [ 'name' => "أريادنا تولاي",               'title' => "مترجم",                'langs' => "RU · EN" ],
+    [ 'name' => "فاطمة الزهراء سكاكي",        'title' => "مترجم",                'langs' => "AR · EN · FR" ],
+    [ 'name' => "مادينا فيدون",                'title' => "مترجم",                'langs' => "RU" ],
+    [ 'name' => "مسعود سلمان",                'title' => "مسؤول متابعة المعاملات", 'langs' => "EN" ],
+    [ 'name' => "عبد الله sağlam",             'title' => "مسؤول متابعة المعاملات", 'langs' => "AR" ],
+    [ 'name' => "سيلدا أكايا",                'title' => "مستشار مالي",          'langs' => "" ],
+    [ 'name' => "موروفت كازيتشي",              'title' => "المحاسبة",             'langs' => "" ],
+    [ 'name' => "فاطمة أوداباش",               'title' => "مساعد قانوني",         'langs' => "" ],
+    [ 'name' => "إرين ميميش",                  'title' => "أخصائي تكنولوجيا المعلومات", 'langs' => "" ],
+    [ 'name' => "طالب sağlam",                 'title' => "مسؤول النقل",          'langs' => "" ],
+  ],
+  'fa' => [
+    [ 'name' => "وکیل نجم‌الدین بارمان",         'title' => "وکیل مؤسس",            'langs' => "EN · AR" ],
+    [ 'name' => "بشرا بارمان",                 'title' => "مدیر عامل",            'langs' => "" ],
+    [ 'name' => "وکیل نورتن اینان",            'title' => "وکیل",                 'langs' => "EN" ],
+    [ 'name' => "وکیل جیدا سلین گوندوز",       'title' => "وکیل",                 'langs' => "EN · DE · FR" ],
+    [ 'name' => "وکیل جانکوت آیدمیر",          'title' => "وکیل",                 'langs' => "EN" ],
+    [ 'name' => "آریادنا تویلی",               'title' => "مترجم",                'langs' => "RU · EN" ],
+    [ 'name' => "فاطمه زهرا سکاکی",            'title' => "مترجم",                'langs' => "AR · EN · FR" ],
+    [ 'name' => "مدینه فیدون",                 'title' => "مترجم",                'langs' => "RU" ],
+    [ 'name' => "مسعود سلمان",                 'title' => "مسئول پیگیری امور",   'langs' => "EN" ],
+    [ 'name' => "عبدالله sağlam",              'title' => "مسئول پیگیری امور",   'langs' => "AR" ],
+    [ 'name' => "سلدا آکایا",                 'title' => "مشاور مالی",            'langs' => "" ],
+    [ 'name' => "موروت کازیچی",                'title' => "حسابداری",             'langs' => "" ],
+    [ 'name' => "فاطمه اوداباش",               'title' => "دستیار حقوقی",         'langs' => "" ],
+    [ 'name' => "ارن ممیش",                    'title' => "متخصص IT",             'langs' => "" ],
+    [ 'name' => "طالب sağlam",                 'title' => "مسئول حمل و نقل",      'langs' => "" ],
+  ]
 ];
+$team = $team_translations[$lang] ?? $team_translations['tr'];
 
 $value_icons = [
   // index 0
@@ -164,6 +235,7 @@ $value_icons = [
   </svg>'
 ];
 
+$dir = isset($dict['dir']) ? $dict['dir'] : 'ltr';
 $isRtl = $dir === 'rtl';
 ?>
 
