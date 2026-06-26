@@ -14,8 +14,8 @@ echo schema_render_scripts(schema_home_page($lang, __t('faq.list')));
             ['label' => 'Gayrimenkul Yatırımı Yoluyla Türk Vatandaşlığı', 'image' => 'assets/images/hero_slide1.webp'],
             ['label' => 'Banka Yatırımı Yoluyla Türk Vatandaşlığı', 'image' => 'assets/images/hero_slide2.webp'],
             ['label' => 'Yatırımcı İkamet İzni', 'image' => 'assets/images/hero_slide3.webp'],
-            ['label' => 'Gayrimenkul İkamet İzni', 'image' => 'assets/images/hero_slide4.webp'],
-            ['label' => 'Vergi Muafiyeti', 'image' => 'assets/images/hero_slide5.webp'],
+            ['label' => 'Gayrimenkul İkamet İzni', 'image' => 'assets/images/hero_slide4.jpeg'],
+            ['label' => 'Vergi Muafiyeti', 'image' => 'assets/images/hero_slide5.jpeg'],
           ];
         } else {
           foreach ($heroSlides as &$slide) {

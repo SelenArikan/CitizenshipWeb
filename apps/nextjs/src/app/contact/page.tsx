@@ -64,7 +64,7 @@ export default function Contact({ lang = "tr" }: { lang?: string }) {
               <div className="relative h-28 w-28 shrink-0 overflow-hidden rounded-full border-4 border-slate-100 shadow-sm bg-gray-50">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/team/sevim-dumanli.png"
+                  src="/team/sevim-dumanli.jpeg"
                   alt="Sevim Dumanlı - Property Consultant"
                   className="h-full w-full object-cover"
                 />

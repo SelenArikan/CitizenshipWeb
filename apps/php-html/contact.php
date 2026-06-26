@@ -55,7 +55,7 @@ echo schema_render_scripts(schema_contact_page($lang));
                 <div class="flex flex-col sm:flex-row items-center gap-6 mb-8 pb-6 border-b border-gray-100">
                    <div class="relative h-28 w-28 shrink-0 overflow-hidden rounded-full border-4 border-slate-100 shadow-sm bg-gray-50">
                       <img
-                         src="assets/images/team/sevim-dumanli.png"
+                         src="assets/images/team/sevim-dumanli.jpeg"
                          alt="Sevim Dumanlı - Property Consultant"
                          class="h-full w-full object-cover"
                       />

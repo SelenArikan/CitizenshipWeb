@@ -1,4 +1,5 @@
 import { getDictionary } from "@/lib/dictionary";
+import Image from "next/image";
 
 type AboutPageDict = {
   hero_tag?: string;
@@ -207,8 +208,19 @@ export default async function AboutPageContent({ lang }: { lang: string }) {
       {/* ══════════════════════════════════════════════════
           STORY — timeline-style
       ══════════════════════════════════════════════════ */}
-      <section className="bg-white py-24 lg:py-32" id="about-story">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-white py-24 lg:py-32 overflow-hidden" id="about-story">
+        {/* Background shadow image */}
+        <div className="absolute inset-0 z-0 pointer-events-none select-none">
+          <Image
+            src="/team/story-bg.jpeg"
+            alt=""
+            fill
+            className="object-cover object-center opacity-[0.15] pointer-events-none"
+            unoptimized
+          />
+        </div>
+
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-16 lg:grid-cols-2 lg:gap-24 lg:items-start">
             {/* Left sticky header */}
             <div className="lg:sticky lg:top-28">
