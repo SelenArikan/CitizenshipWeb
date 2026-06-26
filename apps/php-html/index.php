@@ -484,23 +484,6 @@ echo schema_render_scripts(schema_home_page($lang, __t('faq.list')));
           });
         }
       })();
-
-      document.addEventListener("DOMContentLoaded", () => {
-        // --- Scroll Reveal Logic ---
-        const observer = new IntersectionObserver((entries) => {
-           entries.forEach(entry => {
-             if(entry.isIntersecting) {
-               entry.target.classList.add('is-revealed');
-             }
-           });
-         }, { threshold: 0.05, rootMargin: '50px 0px -20px 0px' });
-
-        const observeElements = () => {
-           document.querySelectorAll('.reveal:not(.is-revealed)').forEach(el => observer.observe(el));
-        };
-        observeElements();
-        setInterval(observeElements, 1000);
-      });
     </script>
 
 <?php include 'includes/consent-banner.php'; ?>

@@ -119,5 +119,43 @@ $isRtl = $lang === 'ar' || $lang === 'fa';
       </div>
     </footer>
     <?php include __DIR__ . '/chat-widget.php'; ?>
+    <script>
+      (function() {
+        if (!('IntersectionObserver' in window)) {
+          document.querySelectorAll('.reveal').forEach(function(el) {
+            el.classList.add('is-revealed');
+          });
+          return;
+        }
+        var observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-revealed');
+            }
+          });
+        }, { threshold: 0.05, rootMargin: '80px 0px -10px 0px' });
+
+        function observeElements() {
+          document.querySelectorAll('.reveal:not(.is-revealed)').forEach(function(el) {
+            observer.observe(el);
+          });
+        }
+        
+        observeElements();
+        var interval = setInterval(observeElements, 800);
+
+        var fallback = setTimeout(function() {
+          document.querySelectorAll('.reveal:not(.is-revealed)').forEach(function(el) {
+            el.classList.add('is-revealed');
+          });
+        }, 2000);
+
+        window.addEventListener('beforeunload', function() {
+          clearInterval(interval);
+          clearTimeout(fallback);
+          observer.disconnect();
+        });
+      })();
+    </script>
 </body>
 </html>
