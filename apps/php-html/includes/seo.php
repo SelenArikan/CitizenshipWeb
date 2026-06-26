@@ -29,6 +29,23 @@ function seo_catalog(): array {
                 'fa' => 'تیم متخصص ما در مسیرهای شهروندی، اقامت و مهاجرت کنار شماست. برای دریافت مشاوره بین المللی مطمئن، یک جلسه اولیه رایگان رزرو کنید.',
             ],
         ],
+        'about' => [
+            'path' => '/about.php',
+            'titles' => [
+                'tr' => 'Hakkımızda — Biz Kimiz',
+                'en' => 'About Us — Who We Are',
+                'ru' => 'О нас — Кто мы',
+                'ar' => 'من نحن — عن الشركة',
+                'fa' => 'درباره ما — ما کی هستیم',
+            ],
+            'descriptions' => [
+                'tr' => 'Necmettin Barman & Associates Hukuk Bürosu ve uzman kadromuz hakkında detaylı bilgi edinin.',
+                'en' => 'Learn more about Necmettin Barman & Associates Law Firm and our expert team.',
+                'ru' => 'Узнайте больше о юридической фирме Necmettin Barman & Associates и нашей команде экспертов.',
+                'ar' => 'تعرف على المزيد حول مكتب المحاماة نجم الدين بارمان وشركاؤه وفريقنا المتخصص.',
+                'fa' => 'درباره دفتر حقوقی نجم‌الدین بارمان و شرکا ve تیم متخصص ما بیشتر بدانید.',
+            ],
+        ],
         'services' => [
             'path' => '/services.php',
             'titles' => [

@@ -71,7 +71,7 @@ $pageSeo = seo_page_meta($seoKey, $lang);
             <a href="<?= seo_page_href('home', $lang) ?>" class="rounded-lg px-3 py-2 text-sm font-medium text-[#0a192f] transition hover:bg-blue-50 hover:text-[#112240]"><?= __t('nav.home') ?></a>
             
             <!-- Biz Kimiz -->
-            <a href="<?= seo_page_href('home', $lang) ?>#about" class="rounded-lg px-3 py-2 text-sm font-medium text-[#0a192f] transition hover:bg-blue-50 hover:text-[#112240]"><?= __t('nav.about_company') ?></a>
+            <a href="<?= seo_page_href('about', $lang) ?>" class="rounded-lg px-3 py-2 text-sm font-medium text-[#0a192f] transition hover:bg-blue-50 hover:text-[#112240]"><?= __t('nav.about_company') ?></a>
             
             <!-- Türk Vatandaşlığı (Mega Menu) -->
             <div class="relative mega-trigger" data-menu="vatandaslik">
@@ -218,7 +218,7 @@ $pageSeo = seo_page_meta($seoKey, $lang);
           <a href="<?= seo_page_href('home', $lang) ?>" class="rounded-lg px-4 py-3 text-sm font-medium text-[#0a192f] transition hover:bg-blue-50"><?= __t('nav.home') ?></a>
           
           <!-- Biz Kimiz -->
-          <a href="<?= seo_page_href('home', $lang) ?>#about" class="rounded-lg px-4 py-3 text-sm font-medium text-[#0a192f] transition hover:bg-blue-50"><?= __t('nav.about_company') ?></a>
+          <a href="<?= seo_page_href('about', $lang) ?>" class="rounded-lg px-4 py-3 text-sm font-medium text-[#0a192f] transition hover:bg-blue-50"><?= __t('nav.about_company') ?></a>
           
           <!-- Türk Vatandaşlığı (Collapsible Accordion) -->
           <div class="mobile-accordion" data-menu="vatandaslik">
