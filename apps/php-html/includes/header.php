@@ -27,7 +27,7 @@ $pageSeo = seo_page_meta($seoKey, $lang);
     <meta name="twitter:title" content="<?= htmlspecialchars($pageSeo['title']) ?>">
     <meta name="twitter:description" content="<?= htmlspecialchars($pageSeo['description']) ?>">
     <meta name="twitter:image" content="<?= htmlspecialchars($pageSeo['image']) ?>">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
