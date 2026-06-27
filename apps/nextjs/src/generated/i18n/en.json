@@ -53,6 +53,7 @@
     "mega_h_law": "Litigation",
     "item_law_rent": "Landlord–Tenant Disputes",
     "item_law_com": "Commercial Cases",
+    "item_law_re_lawsuits": "Real Estate Lawsuits",
     "item_law_inherit": "Inheritance Cases",
     "item_law_pop": "Civil Registry Corrections",
     "item_law_enf": "Enforcement (Tenfiz) Cases",
@@ -2413,5 +2414,214 @@
       "primaryCta": "Free Consultation",
       "secondaryCta": "Frequently Asked Questions"
     }
+  },
+  "contact_page": {
+    "title": "Contact Us",
+    "summary": "Let us review your Turkey citizenship by investment file, budget, and family structure together.",
+    "officeTitle": "Istanbul Office",
+    "officeIntro": "During the first call, we can walk through the right investment route for your case, the required documents, and the expected timeline.",
+    "addressLabel": "Office Address",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "hoursLabel": "Working Hours",
+    "weekdays": "Monday - Friday: 08:30 - 18:00",
+    "weekend": "Saturday - Sunday: Closed",
+    "formTitle": "Get Free Citizenship Consultation",
+    "formSubtitle": "Tell us your budget and contact details. Our team will match you with eligible properties and explain the full process.",
+    "labels": {
+      "fullName": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "message": "Message"
+    },
+    "placeholders": {
+      "fullName": "Enter your full name",
+      "email": "Enter your email address",
+      "phone": "Phone number with country code",
+      "message": "Enter your message..."
+    },
+    "submitLabel": "Send Message"
+  },
+  "citizenship_page": {
+    "title": "Benefits of Turkish Citizenship",
+    "summary": "Review the core advantages Turkish citizenship can provide for travel, healthcare, education, business planning, and family mobility.",
+    "benefits": [
+      {
+        "title": "Flexible visa-free and visa-on-arrival travel",
+        "desc": "A Turkish passport can support broader travel planning through visa-free, visa-on-arrival, and e-visa access across many destinations."
+      },
+      {
+        "title": "Access to healthcare and education infrastructure",
+        "desc": "After naturalization, public services, healthcare infrastructure, and educational institutions can provide a stronger long-term relocation base."
+      },
+      {
+        "title": "Dual citizenship and strategic mobility planning",
+        "desc": "Turkey permits multiple citizenships, which can support broader travel, family, and business planning while preserving your existing nationality structure."
+      },
+      {
+        "title": "Process management without a permanent stay requirement",
+        "desc": "With the right power of attorney and document flow, major stages of the investment and application process can be coordinated remotely."
+      }
+    ],
+    "ctaTitle": "Match the benefits with the right investment route",
+    "ctaDesc": "Before you commit, let us compare the most suitable investment option against your family structure, liquidity plan, and timeline expectations.",
+    "servicesLabel": "Review Investment Types",
+    "contactLabel": "Contact Us"
+  },
+  "news_page": {
+    "title": "News and Bulletins",
+    "summary": "Stay informed about regulatory changes, market movements, and new investment opportunities affecting citizenship and residence planning.",
+    "categoriesTitle": "Categories",
+    "categories": [
+      "Investment Opportunities",
+      "Legal Updates",
+      "Case Highlights",
+      "Visa & Residence"
+    ],
+    "allLabel": "All News",
+    "readMoreLabel": "Read the Story",
+    "featuredLabel": "Featured Bulletin",
+    "articles": [
+      {
+        "cat": "Legal Updates",
+        "title": "2026 Real Estate Valuation Updates",
+        "img": "assets/images/news2.webp",
+        "date": "April 10, 2026",
+        "summary": "The latest valuation practice directly affects file timing, appraisal strategy, and the order of official application steps."
+      },
+      {
+        "cat": "Case Highlights",
+        "title": "Concurrent Filing Strategy for Family Cases",
+        "img": "assets/images/news3.webp",
+        "date": "April 08, 2026",
+        "summary": "Adding spouses and children in the correct sequence can reduce documentary friction and accelerate the official review chain."
+      },
+      {
+        "cat": "Investment Opportunities",
+        "title": "A New Balance in the Fund Investment Route",
+        "img": "assets/images/news1.webp",
+        "date": "April 01, 2026",
+        "summary": "The right balance between fund selection and filing timing is becoming more important for investors who prioritize liquidity planning."
+      },
+      {
+        "cat": "Citizenship",
+        "title": "Countries Accepting Dual Citizenship",
+        "img": "assets/images/news2.webp",
+        "date": "March 25, 2026",
+        "summary": "A complete map of dual passport rules to expand your horizons."
+      }
+    ]
+  },
+  "knowledge_page": {
+    "title": "Knowledge Base",
+    "summary": "Explore reference guides on citizenship, residence, property, and investor mobility in one organized library.",
+    "categories": [
+      "All",
+      "Citizenship",
+      "Residence",
+      "Property",
+      "Investment",
+      "Family",
+      "Travel"
+    ],
+    "featuredLabel": "Featured Guide",
+    "readMoreLabel": "Read Article",
+    "featuredTitle": "Europe and the Caribbean: 2026 Investor Passport Comparison",
+    "featuredDesc": "Which passports offer the most suitable solution in cross-border tax planning? Our complete list analysis with the most up-to-date bilateral agreements.",
+    "featuredReadMore": "Read Article",
+    "articles": [
+      {
+        "cat": "Property",
+        "title": "Amendments to the Property Acquisition Law for Foreigners",
+        "img": "assets/images/news2.webp"
+      },
+      {
+        "cat": "Family",
+        "title": "Concurrent Filing Strategy for Spouse and Children",
+        "img": "assets/images/news3.webp"
+      },
+      {
+        "cat": "Investment",
+        "title": "EU Residence Permit via Global Fund Investments",
+        "img": "assets/images/news1.webp"
+      },
+      {
+        "cat": "Travel",
+        "title": "Top 5 Passports with Strong Visa-Free Travel Access",
+        "img": "assets/images/hero.webp"
+      },
+      {
+        "cat": "Citizenship",
+        "title": "Countries That Do and Do Not Accept Dual Citizenship",
+        "img": "assets/images/news2.webp"
+      },
+      {
+        "cat": "Residence",
+        "title": "Digital Nomad Visas in 2026",
+        "img": "assets/images/news3.webp"
+      }
+    ]
+  },
+  "timeline_page": {
+    "title": "Step-by-Step Citizenship Application Process",
+    "summary": "Avoid any surprises on the way to your dream passport.",
+    "steps": [
+      {
+        "num": 1,
+        "title": "Strategic Evaluation",
+        "desc": "Analyzing the citizenship program (investment, fund, donation) suitable for your situation.",
+        "pills": [
+          "Passport Copy",
+          "CV"
+        ]
+      },
+      {
+        "num": 2,
+        "title": "Pre-Approval & Document Preparation",
+        "desc": "Translation and notary processes of official application documents according to the selected program.",
+        "pills": [
+          "Criminal Record",
+          "Birth Certificate",
+          "Bank Receipt"
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Completion of Investment",
+        "desc": "Real estate purchase, fund investment, or donation transactions through official channels.",
+        "pills": [
+          "Title Deed/Share",
+          "Valuation Report"
+        ]
+      },
+      {
+        "num": 4,
+        "title": "Submission of Official Application",
+        "desc": "Delivery of your file to the Citizenship and Immigration office of the respective country.",
+        "pills": [
+          "Complete File Approval"
+        ]
+      },
+      {
+        "num": 5,
+        "title": "Background Check",
+        "desc": "Following the background check process conducted by the authorities of the respective country.",
+        "pills": [
+          "Waiting Period"
+        ]
+      },
+      {
+        "num": 6,
+        "title": "Passport Delivery",
+        "desc": "Receiving the certificate of approval and delivering the passports/IDs for your family.",
+        "pills": [
+          "Citizenship Certificate",
+          "Passport"
+        ]
+      }
+    ],
+    "ctaTitle": "Evaluate Your File with Our Expert",
+    "ctaDesc": "Let us analyze for free how long your process will take and which steps will be unique to you.",
+    "ctaBtn": "Contact Us Now &rarr;"
   }
 }

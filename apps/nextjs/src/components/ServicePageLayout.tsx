@@ -918,7 +918,7 @@ export default function ServicePageLayout({
 
             {/* SAĞ: sticky sidebar */}
             <aside className="w-full lg:w-64 lg:shrink-0">
-              <div className="lg:sticky lg:top-28 space-y-5">
+              <div className="lg:sticky lg:top-28 lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto pr-2 scrollbar-thin space-y-5">
 
                 {/* Danışmanlık kutusu */}
                 <div className="border border-gray-100 p-5">

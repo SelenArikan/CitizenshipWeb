@@ -250,7 +250,7 @@ export default function Navbar({ dict, lang }: { dict: NavCopy; lang: string }) 
           heading: t.mega_h_law,
           items: [
             { label: t.item_law_rent, href: `/${L}/legal/kira-hukuku-davalari` },
-            { label: t.item_law_com, href: `/${L}/services` },
+            { label: t.item_law_com, href: `/${L}/legal/ticari-davalar` },
             { label: t.item_law_inherit, href: `/${L}/legal/veraset-ilami` },
             { label: t.item_law_pop, href: `/${L}/legal/nufus-kaydi-duzeltme` },
             { label: t.item_law_enf, href: `/${L}/legal/tanima-tenfiz` },

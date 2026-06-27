@@ -7,16 +7,16 @@ $questionSubmitted = ($_GET['question_submitted'] ?? '') === '1';
 $questionError = $_GET['question_error'] ?? '';
 if ($questionSubmitted) {
     $questionMessage = $formCopy['success'];
-    $questionMessageClass = 'text-xs text-emerald-300 mt-2 text-center';
+    $questionMessageClass = 'text-xs text-emerald-600 mt-2 text-center font-semibold';
 } elseif ($questionError === 'required') {
     $questionMessage = $formCopy['error_required'];
-    $questionMessageClass = 'text-xs text-rose-300 mt-2 text-center';
+    $questionMessageClass = 'text-xs text-rose-500 mt-2 text-center font-semibold';
 } elseif ($questionError !== '') {
     $questionMessage = $formCopy['error_generic'];
-    $questionMessageClass = 'text-xs text-rose-300 mt-2 text-center';
+    $questionMessageClass = 'text-xs text-rose-500 mt-2 text-center font-semibold';
 } else {
     $questionMessage = $formCopy['helper'];
-    $questionMessageClass = 'text-xs text-gray-400 mt-2 text-center';
+    $questionMessageClass = 'text-xs text-slate-400 mt-2 text-center';
 }
 ?>
 
@@ -36,7 +36,7 @@ $faqs = [
 echo schema_render_scripts(schema_questions_page($lang, $faqs));
 ?>
 
-      <section class="w-full max-w-7xl px-8 py-20 flex flex-col md:flex-row gap-16">
+      <section class="mx-auto w-full max-w-7xl px-8 py-20 flex flex-col md:flex-row gap-16">
          <div class="w-full md:w-2/3">
             <h2 class="text-3xl font-bold text-[#0a192f] mb-8">Sıkça Sorulan Sorular</h2>
             <div class="space-y-4">
@@ -55,15 +55,15 @@ echo schema_render_scripts(schema_questions_page($lang, $faqs));
          </div>
 
          <div class="w-full md:w-1/3">
-            <div id="newsletterContainer" class="bg-[#0a192f] p-8 rounded-3xl shadow-lg sticky top-32 text-white border border-white/10">
-               <h3 class="text-2xl font-bold mb-4">Uzmana Sorun</h3>
-               <p class="text-gray-300 mb-6 text-sm">Sorularınızı iletişime geçmeden önce bize anonim olarak iletebilirsiniz. Uzmanlarımız sorunuzu yanıtlayarak bu ekranda yayımlayacaktır.</p>
+            <div id="newsletterContainer" class="relative rounded-3xl p-8 shadow-xl lg:sticky lg:top-32 border border-[#0a192f]/10 bg-white text-[#0a192f]">
+               <h3 class="text-2xl font-bold mb-4 text-[#0a192f]">Uzmana Sorun</h3>
+               <p class="text-gray-500 mb-6 text-sm">Sorularınızı iletişime geçmeden önce bize anonim olarak iletebilirsiniz. Uzmanlarımız sorunuzu yanıtlayarak bu ekranda yayımlayacaktır.</p>
                <form class="flex flex-col space-y-4" method="POST" action="api/ask_question.php">
-                  <input type="text" name="name" placeholder="Adınız (İsteğe bağlı)" class="px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#8a1c1c]" />
-                  <textarea name="question" placeholder="<?= htmlspecialchars($formCopy['placeholder']) ?>" rows="4" class="px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#8a1c1c]" required></textarea>
+                  <input type="text" name="name" placeholder="Adınız (İsteğe bağlı)" class="w-full rounded-xl border border-gray-200 bg-white px-4 py-3.5 text-gray-900 outline-none transition focus:border-[#8a1c1c] placeholder-slate-400" />
+                  <textarea name="question" placeholder="<?= htmlspecialchars($formCopy['placeholder']) ?>" rows="4" class="w-full rounded-xl border border-gray-200 bg-white px-4 py-3.5 text-gray-900 outline-none transition focus:border-[#8a1c1c] placeholder-slate-400" required></textarea>
                   <input type="hidden" name="lang" value="<?= htmlspecialchars($lang) ?>">
                   <input type="hidden" name="redirect" value="<?= htmlspecialchars(seo_page_href('questions', $lang)) ?>">
-                  <button type="submit" class="w-full py-4 bg-[#8a1c1c] hover:bg-[#a32222] rounded-xl font-bold transition shadow-md">
+                  <button type="submit" class="w-full py-4 bg-[#8a1c1c] hover:bg-[#a32222] rounded-full font-bold transition shadow-lg hover:shadow-[#8a1c1c]/20 text-white">
                      <?= htmlspecialchars($formCopy['btn']) ?>
                   </button>
                   <p class="<?= $questionMessageClass ?>"><?= htmlspecialchars($questionMessage) ?></p>

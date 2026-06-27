@@ -28,7 +28,7 @@ export default async function Questions({
         <p className="relative text-xl font-light text-[#0a192f]/60 max-w-2xl mx-auto">{pageCopy.desc}</p>
       </div>
 
-      <section className="w-full max-w-7xl px-8 py-20 flex flex-col md:flex-row gap-16">
+      <section className="mx-auto w-full max-w-7xl px-8 py-20 flex flex-col md:flex-row gap-16">
         <div className="w-full md:w-2/3">
           <h2 className="text-3xl font-bold text-navy mb-8">{dict.faq?.title ?? "Sıkça Sorulan Sorular"}</h2>
           {publicFaqs.length === 0 && (
@@ -54,7 +54,7 @@ export default async function Questions({
 
         <div className="w-full md:w-1/3">
           <div
-            className="relative rounded-3xl p-8 shadow-md sticky top-32 border border-[#0a192f]/10"
+            className="relative rounded-3xl p-8 shadow-md lg:sticky lg:top-32 border border-[#0a192f]/10"
             style={{ background: "linear-gradient(135deg, #EEF2F8 0%, #F0F4FA 100%)" }}
           >
             <h3 className="text-2xl font-bold mb-4 text-[#0a192f]">{pageCopy.form_title}</h3>

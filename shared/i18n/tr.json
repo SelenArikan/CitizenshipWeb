@@ -53,6 +53,7 @@
     "mega_h_law": "Hukuk Davaları",
     "item_law_rent": "Kira Hukuku Davaları",
     "item_law_com": "Ticari Davalar",
+    "item_law_re_lawsuits": "Gayrimenkul Davaları",
     "item_law_inherit": "Miras Davaları",
     "item_law_pop": "Nüfus Kaydı Düzeltme",
     "item_law_enf": "Tenfiz Davaları",
@@ -3078,5 +3079,214 @@
         }
       ]
     }
+  },
+  "contact_page": {
+    "title": "Bizimle İletişime Geçin",
+    "summary": "Türkiye yatırım yoluyla vatandaşlık dosyanızı, bütçenizi ve aile yapınızı birlikte değerlendirelim.",
+    "officeTitle": "İstanbul Ofisi",
+    "officeIntro": "İlk görüşmede dosyanızın hangi yatırım modeliyle daha sağlıklı ilerleyeceğini, gerekli belgeleri ve süre beklentisini adım adım konuşabiliriz.",
+    "addressLabel": "Açık Adres",
+    "emailLabel": "E-Posta",
+    "phoneLabel": "Telefon",
+    "hoursLabel": "Çalışma Saatleri",
+    "weekdays": "Pazartesi - Cuma: 08:30 - 18:00",
+    "weekend": "Cumartesi - Pazar: Kapalı",
+    "formTitle": "Ücretsiz Vatandaşlık Danışmanlığı Alın",
+    "formSubtitle": "Bütçenizi ve iletişim bilgilerinizi bize iletin. Ekibimiz sizi uygun mülklerle eşleştirecek ve tüm süreci açıklayacaktır.",
+    "labels": {
+      "fullName": "Ad Soyad",
+      "email": "E-posta Adresi",
+      "phone": "Telefon Numarası",
+      "message": "Mesaj"
+    },
+    "placeholders": {
+      "fullName": "Adınızı ve soyadınızı girin",
+      "email": "E-posta adresinizi girin",
+      "phone": "Ülke koduyla birlikte telefon numarası",
+      "message": "Mesajınızı yazın..."
+    },
+    "submitLabel": "Mesajı Gönder"
+  },
+  "citizenship_page": {
+    "title": "Türk Vatandaşı Olmanın Avantajları",
+    "summary": "Seyahat, sağlık, eğitim, ticaret ve aile planlaması açısından Türk vatandaşlığının sunduğu temel avantajları bir arada inceleyin.",
+    "benefits": [
+      {
+        "title": "Vizesiz veya kolay vizeli seyahat esnekliği",
+        "desc": "Türk pasaportu pek çok destinasyonda vizesiz, kapıda vize veya e-vize ile erişim planlamasında yatırımcı ailelerine güçlü bir hareket alanı sağlar."
+      },
+      {
+        "title": "Sağlık sistemi ve eğitim altyapısına erişim",
+        "desc": "Vatandaşlık sonrasında kamu hizmetleri, sağlık altyapısı ve eğitim kurumları uzun vadeli yaşam planlaması için güçlü bir zemin sunar."
+      },
+      {
+        "title": "Çifte vatandaşlık ve stratejik mobilite",
+        "desc": "Türkiye çoklu vatandaşlığa izin verir; bu da mevcut vatandaşlıkları korurken yeni seyahat ve iş planlarını daha esnek kurgulamanıza yardımcı olabilir."
+      },
+      {
+        "title": "Türkiye'de yaşama zorunluluğu olmadan süreç yönetimi",
+        "desc": "Yatırım ve başvuru dosyası, uygun vekalet ve resmi akış planlamasıyla uzaktan da ilerletilebilir."
+      }
+    ],
+    "ctaTitle": "Avantajları doğru yatırım modeliyle birleştirin",
+    "ctaDesc": "Vatandaşlık kararından önce hangi yatırım seçeneğinin sizin için daha uygun olduğunu, aile dosyanız ve bütçe yapınızla birlikte değerlendirelim.",
+    "servicesLabel": "Yatırım Türlerini İncele",
+    "contactLabel": "Bizimle İletişime Geç"
+  },
+  "news_page": {
+    "title": "Haberler ve Bültenler",
+    "summary": "Sektörel gelişmelerden, mevzuat değişikliklerinden ve yeni yatırım fırsatlarından ilk siz haberdar olun.",
+    "categoriesTitle": "Kategoriler",
+    "categories": [
+      "Güncel Yatırım Fırsatları",
+      "Hukuki Değişiklikler",
+      "Başarı Hikayeleri",
+      "Vize & Oturum"
+    ],
+    "allLabel": "Tüm Haberler",
+    "readMoreLabel": "Haberin Devamı",
+    "featuredLabel": "Öne Çıkan Bülten",
+    "articles": [
+      {
+        "cat": "Hukuk",
+        "title": "2026 Gayrimenkul Değerleme Güncellemeleri",
+        "img": "assets/images/news2.webp",
+        "date": "10 Nisan 2026",
+        "summary": "Yeni değerleme pratiği yatırım dosyalarında zamanlama, ekspertiz seçimi ve resmi başvuru sırasını doğrudan etkiliyor."
+      },
+      {
+        "cat": "Başarı Hikayeleri",
+        "title": "Aile Dosyalarında Eşzamanlı Başvuru Planı",
+        "img": "assets/images/news3.webp",
+        "date": "08 Nisan 2026",
+        "summary": "Eş ve çocukların dosyaya doğru sırayla eklenmesi, resmi işlem zincirini hızlandırır ve ek belge ihtiyacını azaltır."
+      },
+      {
+        "cat": "Güncel Yatırım Fırsatları",
+        "title": "Fon Yatırımı Rotasında Yeni Denge",
+        "img": "assets/images/news1.webp",
+        "date": "01 Nisan 2026",
+        "summary": "Fon seçimi ile başvuru takvimi arasındaki doğru denge, likidite ihtiyacı olan yatırımcılar için kritik hale geliyor."
+      },
+      {
+        "cat": "Vatandaşlık",
+        "title": "Çifte Vatandaşlık Kabul Eden Ülkeler",
+        "img": "assets/images/news2.webp",
+        "date": "25 Mart 2026",
+        "summary": "Sınırlarınızı genişletmek için çifte pasaport kurallarının tam haritası."
+      }
+    ]
+  },
+  "knowledge_page": {
+    "title": "Bilgi Bankası",
+    "summary": "Vatandaşlık, oturum ve yatırım hakları hakkında hazırlanmış referans rehberleri tek kütüphanede inceleyin.",
+    "categories": [
+      "Tümü",
+      "Vatandaşlık",
+      "Oturum",
+      "Mülkiyet",
+      "Yatırım",
+      "Aile",
+      "Seyahat"
+    ],
+    "featuredLabel": "Öne Çıkan Rehber",
+    "readMoreLabel": "Makaleyi Oku",
+    "featuredTitle": "Avrupa ve Karayipler: 2026 Yatırımcı Pasaportu Kıyaslaması",
+    "featuredDesc": "Hangi pasaportlar sınır ötesi vergi planlamasında en uygun çözümü sunuyor? En güncel ikili anlaşmalarla tam liste analizimiz.",
+    "featuredReadMore": "Makaleyi Oku",
+    "articles": [
+      {
+        "cat": "Mülkiyet",
+        "title": "Yabancılar İçin Mülk Edinme Yasası Değişiklikleri",
+        "img": "assets/images/news2.webp"
+      },
+      {
+        "cat": "Aile",
+        "title": "Eş ve Çocuklar İçin Eşzamanlı Başvuru Stratejisi",
+        "img": "assets/images/news3.webp"
+      },
+      {
+        "cat": "Yatırım",
+        "title": "Global Fon Yatırımlarıyla AB Oturum İzni",
+        "img": "assets/images/news1.webp"
+      },
+      {
+        "cat": "Seyahat",
+        "title": "Vizesiz Seyahat Gücü Yüksek En İyi 5 Pasaport",
+        "img": "assets/images/hero.webp"
+      },
+      {
+        "cat": "Vatandaşlık",
+        "title": "Çifte Vatandaşlık Kabul Eden ve Etmeyen Ülkeler",
+        "img": "assets/images/news2.webp"
+      },
+      {
+        "cat": "Oturum",
+        "title": "Dijital Göçebe (Digital Nomad) Vizeleri 2026",
+        "img": "assets/images/news3.webp"
+      }
+    ]
+  },
+  "timeline_page": {
+    "title": "Adım Adım Vatandaşlık Başvuru Süreci",
+    "summary": "Hayalinizdeki pasaporta ulaşırken hiçbir sürprizle karşılaşmayın.",
+    "steps": [
+      {
+        "num": 1,
+        "title": "Stratejik Değerlendirme",
+        "desc": "Durumunuza uygun vatandaşlık programının (yatırım, fon, bağış) analiz edilmesi.",
+        "pills": [
+          "Pasaport Kopyası",
+          "Özgeçmiş"
+        ]
+      },
+      {
+        "num": 2,
+        "title": "Ön Onay ve Evrak Hazırlığı",
+        "desc": "Seçilen programa göre resmi başvuru evraklarının tercüme ve noter süreçleri.",
+        "pills": [
+          "Adli Sicil",
+          "Doğum Belgesi",
+          "Banka Dekontu"
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Yatırımın Tamamlanması",
+        "desc": "Emlak alımı, fon yatırımı veya bağış işlemlerinin resmi kanallarla yapılması.",
+        "pills": [
+          "Tapu/Hisse",
+          "Değerleme Raporu"
+        ]
+      },
+      {
+        "num": 4,
+        "title": "Resmi Başvurunun İletilmesi",
+        "desc": "Dosyanızın ilgili ülkenin Vatandaşlık ve Göçmenlik ofisine teslim edilmesi.",
+        "pills": [
+          "Eksiksiz Dosya Onayı"
+        ]
+      },
+      {
+        "num": 5,
+        "title": "Güvenlik Soruşturması",
+        "desc": "İlgili ülke makamlarınca yapılan geçmiş arka plan araştırması sürecinin takibi.",
+        "pills": [
+          "Bekleme Süreci"
+        ]
+      },
+      {
+        "num": 6,
+        "title": "Pasaport Teslimatı",
+        "desc": "Onay sertifikasının alınması ve ailenizin pasaport/kimlik teslimatının yapılması.",
+        "pills": [
+          "Vatandaşlık Sertifikası",
+          "Pasaport"
+        ]
+      }
+    ],
+    "ctaTitle": "Dosyanızı Uzmanımızla Değerlendirin",
+    "ctaDesc": "Sürecinizin ne kadar süreceğini ve hangi adımların size özel olacağını ücretsiz analiz edelim.",
+    "ctaBtn": "Hemen Bize Ulaşın &rarr;"
   }
 }

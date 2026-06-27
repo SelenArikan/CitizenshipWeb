@@ -4,7 +4,7 @@ import fa from "../generated/i18n/fa.json";
 import ru from "../generated/i18n/ru.json";
 import tr from "../generated/i18n/tr.json";
 
-const dictionaries = {
+export const dictionaries = {
   tr,
   en,
   ru,

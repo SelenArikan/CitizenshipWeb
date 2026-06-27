@@ -15,7 +15,7 @@ export default function Contact({ lang = "tr" }: { lang?: string }) {
         <p className="relative mx-auto max-w-3xl text-xl font-light text-[#0a192f]/60">{copy.summary}</p>
       </div>
 
-      <section className="flex w-full max-w-7xl flex-col gap-16 px-8 py-20 lg:flex-row">
+      <section className="mx-auto flex w-full max-w-7xl flex-col gap-16 px-8 py-20 lg:flex-row">
         <div className="flex w-full flex-col space-y-8 lg:w-1/2">
           <h2 className="text-3xl font-bold text-navy">{copy.officeTitle}</h2>
           <p className="text-lg text-gray-600">{copy.officeIntro}</p>

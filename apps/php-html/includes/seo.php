@@ -1,5 +1,27 @@
 <?php
 
+function get_translation_from_file(string $lang, string $keyPath): string {
+    static $dicts = [];
+    if (!isset($dicts[$lang])) {
+        $path = __DIR__ . '/../../../shared/i18n/' . $lang . '.json';
+        if (file_exists($path)) {
+            $dicts[$lang] = json_decode(file_get_contents($path), true);
+        } else {
+            $dicts[$lang] = [];
+        }
+    }
+    $keys = explode('.', $keyPath);
+    $val = $dicts[$lang];
+    foreach ($keys as $k) {
+        if (is_array($val) && isset($val[$k])) {
+            $val = $val[$k];
+        } else {
+            return '';
+        }
+    }
+    return is_string($val) ? $val : '';
+}
+
 function seo_locale_code_map(): array {
     return [
         'tr' => 'tr_TR',
@@ -299,6 +321,278 @@ function seo_catalog(): array {
                 'ru' => 'Требования и process подачи документов на гражданство Турции на общих основаниях после 5 лет легального и непрерывного проживания в Турции.',
                 'ar' => 'الشروط وإجراءات طلب الحصول على الجنسية التركية بموجب الأحكام العامة بعد إقامة قانونية ومتواصلة لمدة 5 سنوات في تركيا.',
                 'fa' => 'شرایط و فرآیند درخواست اخذ شهروندی ترکیه طبق مقررات عمومی پس از ۵ سال اقامت قانونی و بدون وقفه در ترکیه.',
+            ],
+        ],
+        'yatirimci-ikamet-izni' => [
+            'path' => '/yatirimci-ikamet-izni.php',
+            'titles' => [
+                'tr' => get_translation_from_file('tr', 'residence_page.permits.yatirimci-ikamet-izni.title'),
+                'en' => get_translation_from_file('en', 'residence_page.permits.yatirimci-ikamet-izni.title'),
+                'ru' => get_translation_from_file('ru', 'residence_page.permits.yatirimci-ikamet-izni.title'),
+                'ar' => get_translation_from_file('ar', 'residence_page.permits.yatirimci-ikamet-izni.title'),
+                'fa' => get_translation_from_file('fa', 'residence_page.permits.yatirimci-ikamet-izni.title'),
+            ],
+            'descriptions' => [
+                'tr' => get_translation_from_file('tr', 'residence_page.permits.yatirimci-ikamet-izni.description'),
+                'en' => get_translation_from_file('en', 'residence_page.permits.yatirimci-ikamet-izni.description'),
+                'ru' => get_translation_from_file('ru', 'residence_page.permits.yatirimci-ikamet-izni.description'),
+                'ar' => get_translation_from_file('ar', 'residence_page.permits.yatirimci-ikamet-izni.description'),
+                'fa' => get_translation_from_file('fa', 'residence_page.permits.yatirimci-ikamet-izni.description'),
+            ],
+        ],
+        'gayrimenkul-ikamet-izni' => [
+            'path' => '/gayrimenkul-ikamet-izni.php',
+            'titles' => [
+                'tr' => get_translation_from_file('tr', 'residence_page.permits.gayrimenkul-ikamet-izni.title'),
+                'en' => get_translation_from_file('en', 'residence_page.permits.gayrimenkul-ikamet-izni.title'),
+                'ru' => get_translation_from_file('ru', 'residence_page.permits.gayrimenkul-ikamet-izni.title'),
+                'ar' => get_translation_from_file('ar', 'residence_page.permits.gayrimenkul-ikamet-izni.title'),
+                'fa' => get_translation_from_file('fa', 'residence_page.permits.gayrimenkul-ikamet-izni.title'),
+            ],
+            'descriptions' => [
+                'tr' => get_translation_from_file('tr', 'residence_page.permits.gayrimenkul-ikamet-izni.description'),
+                'en' => get_translation_from_file('en', 'residence_page.permits.gayrimenkul-ikamet-izni.description'),
+                'ru' => get_translation_from_file('ru', 'residence_page.permits.gayrimenkul-ikamet-izni.description'),
+                'ar' => get_translation_from_file('ar', 'residence_page.permits.gayrimenkul-ikamet-izni.description'),
+                'fa' => get_translation_from_file('fa', 'residence_page.permits.gayrimenkul-ikamet-izni.description'),
+            ],
+        ],
+        'aile-ikamet-izni' => [
+            'path' => '/aile-ikamet-izni.php',
+            'titles' => [
+                'tr' => get_translation_from_file('tr', 'residence_page.permits.aile-ikamet-izni.title'),
+                'en' => get_translation_from_file('en', 'residence_page.permits.aile-ikamet-izni.title'),
+                'ru' => get_translation_from_file('ru', 'residence_page.permits.aile-ikamet-izni.title'),
+                'ar' => get_translation_from_file('ar', 'residence_page.permits.aile-ikamet-izni.title'),
+                'fa' => get_translation_from_file('fa', 'residence_page.permits.aile-ikamet-izni.title'),
+            ],
+            'descriptions' => [
+                'tr' => get_translation_from_file('tr', 'residence_page.permits.aile-ikamet-izni.description'),
+                'en' => get_translation_from_file('en', 'residence_page.permits.aile-ikamet-izni.description'),
+                'ru' => get_translation_from_file('ru', 'residence_page.permits.aile-ikamet-izni.description'),
+                'ar' => get_translation_from_file('ar', 'residence_page.permits.aile-ikamet-izni.description'),
+                'fa' => get_translation_from_file('fa', 'residence_page.permits.aile-ikamet-izni.description'),
+            ],
+        ],
+        'uzun-donem-ikamet-izni' => [
+            'path' => '/uzun-donem-ikamet-izni.php',
+            'titles' => [
+                'tr' => get_translation_from_file('tr', 'residence_page.permits.uzun-donem-ikamet-izni.title'),
+                'en' => get_translation_from_file('en', 'residence_page.permits.uzun-donem-ikamet-izni.title'),
+                'ru' => get_translation_from_file('ru', 'residence_page.permits.uzun-donem-ikamet-izni.title'),
+                'ar' => get_translation_from_file('ar', 'residence_page.permits.uzun-donem-ikamet-izni.title'),
+                'fa' => get_translation_from_file('fa', 'residence_page.permits.uzun-donem-ikamet-izni.title'),
+            ],
+            'descriptions' => [
+                'tr' => get_translation_from_file('tr', 'residence_page.permits.uzun-donem-ikamet-izni.description'),
+                'en' => get_translation_from_file('en', 'residence_page.permits.uzun-donem-ikamet-izni.description'),
+                'ru' => get_translation_from_file('ru', 'residence_page.permits.uzun-donem-ikamet-izni.description'),
+                'ar' => get_translation_from_file('ar', 'residence_page.permits.uzun-donem-ikamet-izni.description'),
+                'fa' => get_translation_from_file('fa', 'residence_page.permits.uzun-donem-ikamet-izni.description'),
+            ],
+        ],
+        'vergi-muafiyeti' => [
+            'path' => '/vergi-muafiyeti.php',
+            'titles' => [
+                'tr' => 'Taşınmaz Teslimlerinde KDV İstisnası',
+                'en' => 'Taşınmaz Teslimlerinde KDV İstisnası',
+                'ru' => 'Taşınmaz Teslimlerinde KDV İstisnası',
+                'ar' => 'Taşınmaz Teslimlerinde KDV İstisnası',
+                'fa' => 'Taşınmaz Teslimlerinde KDV İstisnası',
+            ],
+            'descriptions' => [
+                'tr' => '3065 sayılı KDV Kanunu 13/i maddesi kapsamında taşınmaz teslimlerinde KDV istisnası hakkında kapsamlı hukuki rehber.',
+                'en' => '3065 sayılı KDV Kanunu 13/i maddesi kapsamında taşınmaz teslimlerinde KDV istisnası hakkında kapsamlı hukuki rehber.',
+                'ru' => '3065 sayılı KDV Kanunu 13/i maddesi kapsamında taşınmaz teslimlerinde KDV istisnası hakkında kapsamlı hukuki rehber.',
+                'ar' => '3065 sayılı KDV Kanunu 13/i maddesi kapsamında taşınmaz teslimlerinde KDV istisnası hakkında kapsamlı hukuki rehber.',
+                'fa' => '3065 sayılı KDV Kanunu 13/i maddesi kapsamında taşınmaz teslimlerinde KDV istisnası hakkında kapsamlı hukuki rehber.',
+            ],
+        ],
+        'tapu-islemleri' => [
+            'path' => '/tapu-islemleri.php',
+            'titles' => [
+                'tr' => 'Tapu Kaydının Türk Kimliğine Göre Güncellenmesi',
+                'en' => 'Tapu Kaydının Türk Kimliğine Göre Güncellenmesi',
+                'ru' => 'Tapu Kaydının Türk Kimliğine Göre Güncellenmesi',
+                'ar' => 'Tapu Kaydının Türk Kimliğine Göre Güncellenmesi',
+                'fa' => 'Tapu Kaydının Türk Kimliğine Göre Güncellenmesi',
+            ],
+            'descriptions' => [
+                'tr' => 'Türk vatandaşlığı kazanımı sonrası tapu kayıtlarının Türk kimliği bilgilerine göre güncellenmesi işlemi.',
+                'en' => 'Türk vatandaşlığı kazanımı sonrası tapu kayıtlarının Türk kimliği bilgilerine göre güncellenmesi işlemi.',
+                'ru' => 'Türk vatandaşlığı kazanımı sonrası tapu kayıtlarının Türk kimliği bilgilerine göre güncellenmesi işlemi.',
+                'ar' => 'Türk vatandaşlığı kazanımı sonrası tapu kayıtlarının Türk kimliği bilgilerine göre güncellenmesi işlemi.',
+                'fa' => 'Türk vatandaşlığı kazanımı sonrası tapu kayıtlarının Türk kimliği bilgilerine göre güncellenmesi işlemi.',
+            ],
+        ],
+        'emlak-vergisi-beyannamesi' => [
+            'path' => '/emlak-vergisi-beyannamesi.php',
+            'titles' => [
+                'tr' => 'Emlak Beyanı ve Emlak Vergisi',
+                'en' => 'Emlak Beyanı ve Emlak Vergisi',
+                'ru' => 'Emlak Beyanı ve Emlak Vergisi',
+                'ar' => 'Emlak Beyanı ve Emlak Vergisi',
+                'fa' => 'Emlak Beyanı ve Emlak Vergisi',
+            ],
+            'descriptions' => [
+                'tr' => 'Türkiye’de taşınmaz sahibi yabancılar için emlak beyanı ve emlak vergisi yükümlülükleri.',
+                'en' => 'Türkiye’de taşınmaz sahibi yabancılar için emlak beyanı ve emlak vergisi yükümlülükleri.',
+                'ru' => 'Türkiye’de taşınmaz sahibi yabancılar için emlak beyanı ve emlak vergisi yükümlülükleri.',
+                'ar' => 'Türkiye’de taşınmaz sahibi yabancılar için emlak beyanı ve emlak vergisi yükümlülükleri.',
+                'fa' => 'Türkiye’de taşınmaz sahibi yabancılar için emlak beyanı ve emlak vergisi yükümlülükleri.',
+            ],
+        ],
+        'kira-geliri-vergisi' => [
+            'path' => '/kira-geliri-vergisi.php',
+            'titles' => [
+                'tr' => 'Kira Geliri Vergisi',
+                'en' => 'Kira Geliri Vergisi',
+                'ru' => 'Kira Geliri Vergisi',
+                'ar' => 'Kira Geliri Vergisi',
+                'fa' => 'Kira Geliri Vergisi',
+            ],
+            'descriptions' => [
+                'tr' => 'Türkiye’de kira geliri elde eden yabancılara yönelik vergi rehberi.',
+                'en' => 'Türkiye’de kira geliri elde eden yabancılara yönelik vergi rehberi.',
+                'ru' => 'Türkiye’de kira geliri elde eden yabancılara yönelik vergi rehberi.',
+                'ar' => 'Türkiye’de kira geliri elde eden yabancılara yönelik vergi rehberi.',
+                'fa' => 'Türkiye’de kira geliri elde eden yabancılara yönelik vergi rehberi.',
+            ],
+        ],
+        'kira-hukuku-davalari' => [
+            'path' => '/kira-hukuku-davalari.php',
+            'titles' => [
+                'tr' => 'Kira Hukukundan Kaynaklanan Davalar ve Tahliye Süreçleri',
+                'en' => 'Kira Hukukundan Kaynaklanan Davalar ve Tahliye Süreçleri',
+                'ru' => 'Kira Hukukundan Kaynaklanan Davalar ve Tahliye Süreçleri',
+                'ar' => 'Kira Hukukundan Kaynaklanan Davalar ve Tahliye Süreçleri',
+                'fa' => 'Kira Hukukundan Kaynaklanan Davalar ve Tahliye Süreçleri',
+            ],
+            'descriptions' => [
+                'tr' => 'Kira hukukundan kaynaklanan davalar ve tahliye süreçleri hakkında kapsamlı rehber.',
+                'en' => 'Kira hukukundan kaynaklanan davalar ve tahliye süreçleri hakkında kapsamlı rehber.',
+                'ru' => 'Kira hukukundan kaynaklanan davalar ve tahliye süreçleri hakkında kapsamlı rehber.',
+                'ar' => 'Kira hukukundan kaynaklanan davalar ve tahliye süreçleri hakkında kapsamlı rehber.',
+                'fa' => 'Kira hukukundan kaynaklanan davalar ve tahliye süreçleri hakkında kapsamlı rehber.',
+            ],
+        ],
+        'veraset-ilami' => [
+            'path' => '/veraset-ilami.php',
+            'titles' => [
+                'tr' => 'Veraset İlamı',
+                'en' => 'Veraset İlamı',
+                'ru' => 'Veraset İlamı',
+                'ar' => 'Veraset İlamı',
+                'fa' => 'Veraset İlamı',
+            ],
+            'descriptions' => [
+                'tr' => 'Veraset ilamının hukuki niteliği, süreç, belgeler ve yabancılık unsuru bakımından kapsamlı değerlendirme.',
+                'en' => 'Veraset ilamının hukuki niteliği, süreç, belgeler ve yabancılık unsuru bakımından kapsamlı değerlendirme.',
+                'ru' => 'Veraset ilamının hukuki niteliği, süreç, belgeler ve yabancılık unsuru bakımından kapsamlı değerlendirme.',
+                'ar' => 'Veraset ilamının hukuki niteliği, süreç, belgeler ve yabancılık unsuru bakımından kapsamlı değerlendirme.',
+                'fa' => 'Veraset ilamının hukuki niteliği, süreç, belgeler ve yabancılık unsuru bakımından kapsamlı değerlendirme.',
+            ],
+        ],
+        'nufus-kaydi-duzeltme' => [
+            'path' => '/nufus-kaydi-duzeltme.php',
+            'titles' => [
+                'tr' => 'Nüfus Kaydının Düzeltilmesi Davası',
+                'en' => 'Nüfus Kaydının Düzeltilmesi Davası',
+                'ru' => 'Nüfus Kaydının Düzeltilmesi Davası',
+                'ar' => 'Nüfus Kaydının Düzeltilmesi Davası',
+                'fa' => 'Nüfus Kaydının Düzeltilmesi Davası',
+            ],
+            'descriptions' => [
+                'tr' => 'Nüfus kayıtlarının düzeltilmesi, aile kaydı birleştirme ve babalık davalarına ilişkin hukuki rehber.',
+                'en' => 'Nüfus kayıtlarının düzeltilmesi, aile kaydı birleştirme ve babalık davalarına ilişkin hukuki rehber.',
+                'ru' => 'Nüfus kayıtlarının düzeltilmesi, aile kaydı birleştirme ve babalık davalarına ilişkin hukuki rehber.',
+                'ar' => 'Nüfus kayıtlarının düzeltilmesi, aile kaydı birleştirme ve babalık davalarına ilişkin hukuki rehber.',
+                'fa' => 'Nüfus kayıtlarının düzeltilmesi, aile kaydı birleştirme ve babalık davalarına ilişkin hukuki rehber.',
+            ],
+        ],
+        'tanima-tenfiz' => [
+            'path' => '/tanima-tenfiz.php',
+            'titles' => [
+                'tr' => 'Tanıma ve Tenfiz Davaları',
+                'en' => 'Tanıma ve Tenfiz Davaları',
+                'ru' => 'Tanıma ve Tenfiz Davaları',
+                'ar' => 'Tanıma ve Tenfiz Davaları',
+                'fa' => 'Tanıma ve Tenfiz Davaları',
+            ],
+            'descriptions' => [
+                'tr' => 'Yabancı mahkeme kararlarının Türkiye’de hüküm ve sonuç doğurması için tanıma ve tenfiz süreçleri.',
+                'en' => 'Yabancı mahkeme kararlarının Türkiye’de hüküm and sonuç doğurması için tanıma ve tenfiz süreçleri.',
+                'ru' => 'Yabancı mahkeme kararlarının Türkiye’de hüküm and sonuç doğurması için tanıma ve tenfiz süreçleri.',
+                'ar' => 'Yabancı mahkeme kararlarının Türkiye’de hüküm and sonuç doğurması için tanıma ve tenfiz süreçleri.',
+                'fa' => 'Yabancı mahkeme kararlarının Türkiye’de hüküm and sonuç doğurması için tanıma ve tenfiz süreçleri.',
+            ],
+        ],
+        'ticari-davalar' => [
+            'path' => '/ticari-davalar.php',
+            'titles' => [
+                'tr' => 'Gayrimenkul Davaları ve Taşınmaz Satış Vaadi Sözleşmesi',
+                'en' => 'Gayrimenkul Davaları ve Taşınmaz Satış Vaadi Sözleşmesi',
+                'ru' => 'Gayrimenkul Davaları ve Taşınmaz Satış Vaadi Sözleşmesi',
+                'ar' => 'Gayrimenkul Davaları ve Taşınmaz Satış Vaadi Sözleşmesi',
+                'fa' => 'Gayrimenkul Davaları ve Taşınmaz Satış Vaadi Sözleşmesi',
+            ],
+            'descriptions' => [
+                'tr' => 'Gayrimenkul uyuşmazlıkları, satış vaadi sözleşmesinden doğan ifa, tapu iptal ve tescil, dönme, tazminat ve bedel iadesi davaları hakkında kapsamlı rehber.',
+                'en' => 'Gayrimenkul uyuşmazlıkları, satış vaadi sözleşmesinden doğan ifa, tapu iptal ve tescil, dönme, tazminat ve bedel iadesi davaları hakkında kapsamlı rehber.',
+                'ru' => 'Gayrimenkul uyuşmazlıkları, satış vaadi sözleşmesinden doğan ifa, tapu iptal ve tescil, dönme, tazminat ve bedel iadesi davaları hakkında kapsamlı rehber.',
+                'ar' => 'Gayrimenkul uyuşmazlıkları, satış vaadi sözleşmesinden doğan ifa, tapu iptal ve tescil, dönme, tazminat ve bedel iadesi davaları hakkında kapsamlı rehber.',
+                'fa' => 'Gayrimenkul uyuşmazlıkları, satış vaadi sözleşmesinden doğan ifa, tapu iptal ve tescil, dönme, tazminat ve bedel iadesi davaları hakkında kapsamlı rehber.',
+            ],
+        ],
+        'banka-islemleri' => [
+            'path' => '/banka-islemleri.php',
+            'titles' => [
+                'tr' => 'Yeni Vatandaş Olduktan Sonra Banka ve Finans İşlemleri',
+                'en' => 'Yeni Vatandaş Olduktan Sonra Banka ve Finans İşlemleri',
+                'ru' => 'Yeni Vatandaş Olduktan Sonra Banka ve Finans İşlemleri',
+                'ar' => 'Yeni Vatandaş Olduktan Sonra Banka ve Finans İşlemleri',
+                'fa' => 'Yeni Vatandaş Olduktan Sonra Banka ve Finans İşlemleri',
+            ],
+            'descriptions' => [
+                'tr' => 'Vatandaşlık sonrası banka müşteri kaydının Türk kimliğiyle güncellenmesi ve finans işlemleri.',
+                'en' => 'Vatandaşlık sonrası banka müşteri kaydının Türk kimliğiyle güncellenmesi ve finans işlemleri.',
+                'ru' => 'Vatandaşlık sonrası banka müşteri kaydının Türk kimliğiyle güncellenmesi ve finans işlemleri.',
+                'ar' => 'Vatandaşlık sonrası banka müşteri kaydının Türk kimliğiyle güncellenmesi ve finans işlemleri.',
+                'fa' => 'Vatandaşlık sonrası banka müşteri kaydının Türk kimliğiyle güncellenmesi ve finans işlemleri.',
+            ],
+        ],
+        'yesil-pasaport' => [
+            'path' => '/yesil-pasaport.php',
+            'titles' => [
+                'tr' => 'Yeşil Pasaport',
+                'en' => 'Yeşil Pasaport',
+                'ru' => 'Yeşil Pasaport',
+                'ar' => 'Yeşil Pasaport',
+                'fa' => 'Yeşil Pasaport',
+            ],
+            'descriptions' => [
+                'tr' => 'İhracatçı şirketlere tanınan yeşil pasaport hakkı, başvuru şartları ve süreç bilgileri.',
+                'en' => 'İhracatçı şirketlere tanınan yeşil pasaport hakkı, başvuru şartları ve süreç bilgileri.',
+                'ru' => 'İhracatçı şirketlere tanınan yeşil pasaport hakkı, başvuru şartları ve süreç bilgileri.',
+                'ar' => 'İhracatçı şirketlere tanınan yeşil pasaport hakkı, başvuru şartları ve süreç bilgileri.',
+                'fa' => 'İhracatçı şirketlere tanınan yeşil pasaport hakkı, başvuru şartları ve süreç bilgileri.',
+            ],
+        ],
+        'ehliyet-tebdil' => [
+            'path' => '/ehliyet-tebdil.php',
+            'titles' => [
+                'tr' => 'Ehliyet Tebdil İşlemleri',
+                'en' => 'Ehliyet Tebdil İşlemleri',
+                'ru' => 'Ehliyet Tebdil İşlemleri',
+                'ar' => 'Ehliyet Tebdil İşlemleri',
+                'fa' => 'Ehliyet Tebdil İşlemleri',
+            ],
+            'descriptions' => [
+                'tr' => 'Yabancıların Türkiye’de araç kullanabilmesi ve yabancı ehliyetin Türk sürücü belgesine çevrilmesi süreci.',
+                'en' => 'Yabancıların Türkiye’de araç kullanabilmesi ve yabancı ehliyetin Türk sürücü belgesine çevrilmesi süreci.',
+                'ru' => 'Yabancıların Türkiye’de araç kullanabilmesi ve yabancı ehliyetin Türk sürücü belgesine çevrilmesi süreci.',
+                'ar' => 'Yabancıların Türkiye’de araç kullanabilmesi ve yabancı ehliyetin Türk sürücü belgesine çevrilmesi süreci.',
+                'fa' => 'Yabancıların Türkiye’de araç kullanabilmesi ve yabancı ehliyetin Türk sürücü belgesine çevrilmesi süreci.',
             ],
         ],
     ];

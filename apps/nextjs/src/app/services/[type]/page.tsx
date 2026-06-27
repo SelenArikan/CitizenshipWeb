@@ -207,7 +207,7 @@ export default async function ServiceDetailPage({ slug, lang = "tr" }: { slug: s
             </div>
 
             {/* Right — sticky sidebar */}
-            <div className="lg:sticky lg:top-28 space-y-5">
+            <div className="lg:sticky lg:top-28 lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto pr-2 scrollbar-thin space-y-5">
               {/* Threshold card */}
               <div
                 className="overflow-hidden rounded-3xl border border-[#0a192f]/10 shadow-md"

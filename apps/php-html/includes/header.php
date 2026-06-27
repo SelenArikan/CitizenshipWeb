@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__ . '/i18n.php';
 require_once __DIR__ . '/seo.php';
+require_once __DIR__ . '/helpers.php';
 
 $seoKey = $seoKey ?? 'home';
 $pageSeo = seo_page_meta($seoKey, $lang);
@@ -27,6 +28,8 @@ $pageSeo = seo_page_meta($seoKey, $lang);
     <meta name="twitter:title" content="<?= htmlspecialchars($pageSeo['title']) ?>">
     <meta name="twitter:description" content="<?= htmlspecialchars($pageSeo['description']) ?>">
     <meta name="twitter:image" content="<?= htmlspecialchars($pageSeo['image']) ?>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -259,13 +262,13 @@ $pageSeo = seo_page_meta($seoKey, $lang);
               <a href="<?= seo_page_href('evlilik-yoluyla-vatandaslik', $lang) ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
                 <span><?= __t('nav.item_cit_marriage') ?></span>
               </a>
-              <a href="citizenship.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f] mt-2 border-t border-blue-100 pt-4">
+              <a href="basvuru-sureci.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f] mt-2 border-t border-blue-100 pt-4">
                 <span class="flex items-start gap-2">
                   <span class="mt-[0.42rem] h-1.5 w-1.5 shrink-0 rounded-full bg-[#8a1c1c]"></span>
                   <span><?= __t('nav.item_cit_process') ?></span>
                 </span>
               </a>
-              <a href="citizenship.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
+              <a href="pasaport.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
                 <span class="flex items-start gap-2">
                   <span class="mt-[0.42rem] h-1.5 w-1.5 shrink-0 rounded-full bg-[#8a1c1c]"></span>
                   <span><?= __t('nav.item_cit_passport') ?></span>
@@ -287,16 +290,16 @@ $pageSeo = seo_page_meta($seoKey, $lang);
             </button>
             <div class="accordion-content hidden ml-4 mt-1 flex flex-col gap-0.5 border-l border-blue-100 pl-4">
               <span class="block px-3 py-1.5 text-xs font-bold uppercase tracking-widest text-[#8a1c1c]"><?= __t('nav.mega_h_rtypes') ?></span>
-              <a href="services.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
+              <a href="yatirimci-ikamet-izni.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
                 <span><?= __t('nav.item_res_j') ?></span>
               </a>
-              <a href="services.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
+              <a href="gayrimenkul-ikamet-izni.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
                 <span><?= __t('nav.item_res_re') ?></span>
               </a>
-              <a href="services.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
+              <a href="aile-ikamet-izni.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
                 <span><?= __t('nav.item_res_fam') ?></span>
               </a>
-              <a href="services.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
+              <a href="uzun-donem-ikamet-izni.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
                 <span><?= __t('nav.item_res_long') ?></span>
               </a>
             </div>
@@ -315,44 +318,44 @@ $pageSeo = seo_page_meta($seoKey, $lang);
             </button>
             <div class="accordion-content hidden ml-4 mt-1 flex flex-col gap-0.5 border-l border-blue-100 pl-4">
               <span class="block px-3 py-1.5 text-xs font-bold uppercase tracking-widest text-[#8a1c1c]"><?= __t('nav.mega_h_tax') ?></span>
-              <a href="services.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
+              <a href="vergi-muafiyeti.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
                 <span><?= __t('nav.item_tax_exempt') ?></span>
               </a>
-              <a href="services.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
+              <a href="tapu-islemleri.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
                 <span><?= __t('nav.item_tax_deed') ?></span>
               </a>
-              <a href="services.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
+              <a href="emlak-vergisi-beyannamesi.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
                 <span><?= __t('nav.item_tax_re') ?></span>
               </a>
-              <a href="services.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
+              <a href="kira-geliri-vergisi.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
                 <span><?= __t('nav.item_tax_rent') ?></span>
               </a>
 
               <span class="block px-3 py-1.5 text-xs font-bold uppercase tracking-widest text-[#8a1c1c] mt-2"><?= __t('nav.mega_h_law') ?></span>
-              <a href="services.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
+              <a href="kira-hukuku-davalari.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
                 <span><?= __t('nav.item_law_rent') ?></span>
               </a>
-              <a href="services.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
+              <a href="ticari-davalar.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
                 <span><?= __t('nav.item_law_com') ?></span>
               </a>
-              <a href="services.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
+              <a href="veraset-ilami.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
                 <span><?= __t('nav.item_law_inherit') ?></span>
               </a>
-              <a href="services.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
+              <a href="nufus-kaydi-duzeltme.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
                 <span><?= __t('nav.item_law_pop') ?></span>
               </a>
-              <a href="services.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
+              <a href="tanima-tenfiz.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
                 <span><?= __t('nav.item_law_enf') ?></span>
               </a>
 
               <span class="block px-3 py-1.5 text-xs font-bold uppercase tracking-widest text-[#8a1c1c] mt-2"><?= __t('nav.mega_h_more') ?></span>
-              <a href="services.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
+              <a href="banka-islemleri.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
                 <span><?= __t('nav.item_more_bank') ?></span>
               </a>
-              <a href="services.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
+              <a href="yesil-pasaport.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
                 <span><?= __t('nav.item_more_green') ?></span>
               </a>
-              <a href="services.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
+              <a href="ehliyet-tebdil.php?lang=<?= $lang ?>" class="block rounded-lg px-3 py-2.5 text-sm text-[#0a192f]/80 transition hover:text-[#0a192f]">
                 <span><?= __t('nav.item_more_license') ?></span>
               </a>
             </div>
@@ -425,11 +428,11 @@ $pageSeo = seo_page_meta($seoKey, $lang);
                   <a href="<?= seo_page_href('evlilik-yoluyla-vatandaslik', $lang) ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
                     <span class="leading-snug"><?= __t('nav.item_cit_marriage') ?></span>
                   </a>
-                  <a href="citizenship.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-start justify-start gap-2 mt-2 border-t border-blue-100 pt-5">
+                  <a href="basvuru-sureci.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-start justify-start gap-2 mt-2 border-t border-blue-100 pt-5">
                     <span class="mt-[0.42rem] h-1.5 w-1.5 shrink-0 rounded-full bg-[#8a1c1c]"></span>
                     <span class="leading-snug"><?= __t('nav.item_cit_process') ?></span>
                   </a>
-                  <a href="citizenship.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-start justify-start gap-2">
+                  <a href="pasaport.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-start justify-start gap-2">
                     <span class="mt-[0.42rem] h-1.5 w-1.5 shrink-0 rounded-full bg-[#8a1c1c]"></span>
                     <span class="leading-snug"><?= __t('nav.item_cit_passport') ?></span>
                   </a>
@@ -467,16 +470,16 @@ $pageSeo = seo_page_meta($seoKey, $lang);
               <div class="flex min-w-[200px] flex-col p-6 flex-1">
                 <span class="mb-4 text-[11px] font-bold uppercase tracking-[0.15em] text-[#8a1c1c]"><?= __t('nav.mega_h_rtypes') ?></span>
                 <div class="flex flex-col gap-1">
-                  <a href="services.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
+                  <a href="yatirimci-ikamet-izni.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
                     <span class="leading-snug"><?= __t('nav.item_res_j') ?></span>
                   </a>
-                  <a href="services.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
+                  <a href="gayrimenkul-ikamet-izni.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
                     <span class="leading-snug"><?= __t('nav.item_res_re') ?></span>
                   </a>
-                  <a href="services.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
+                  <a href="aile-ikamet-izni.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
                     <span class="leading-snug"><?= __t('nav.item_res_fam') ?></span>
                   </a>
-                  <a href="services.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
+                  <a href="uzun-donem-ikamet-izni.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
                     <span class="leading-snug"><?= __t('nav.item_res_long') ?></span>
                   </a>
                 </div>
@@ -513,16 +516,16 @@ $pageSeo = seo_page_meta($seoKey, $lang);
               <div class="flex min-w-[200px] flex-col p-6 flex-1">
                 <span class="mb-4 text-[11px] font-bold uppercase tracking-[0.15em] text-[#8a1c1c]"><?= __t('nav.mega_h_tax') ?></span>
                 <div class="flex flex-col gap-1">
-                  <a href="services.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
+                  <a href="vergi-muafiyeti.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
                     <span class="leading-snug"><?= __t('nav.item_tax_exempt') ?></span>
                   </a>
-                  <a href="services.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
+                  <a href="tapu-islemleri.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
                     <span class="leading-snug"><?= __t('nav.item_tax_deed') ?></span>
                   </a>
-                  <a href="services.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
+                  <a href="emlak-vergisi-beyannamesi.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
                     <span class="leading-snug"><?= __t('nav.item_tax_re') ?></span>
                   </a>
-                  <a href="services.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
+                  <a href="kira-geliri-vergisi.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
                     <span class="leading-snug"><?= __t('nav.item_tax_rent') ?></span>
                   </a>
                 </div>
@@ -531,19 +534,19 @@ $pageSeo = seo_page_meta($seoKey, $lang);
               <div class="flex min-w-[200px] flex-col p-6 flex-1">
                 <span class="mb-4 text-[11px] font-bold uppercase tracking-[0.15em] text-[#8a1c1c]"><?= __t('nav.mega_h_law') ?></span>
                 <div class="flex flex-col gap-1">
-                  <a href="services.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
+                  <a href="kira-hukuku-davalari.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
                     <span class="leading-snug"><?= __t('nav.item_law_rent') ?></span>
                   </a>
-                  <a href="services.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
+                  <a href="ticari-davalar.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
                     <span class="leading-snug"><?= __t('nav.item_law_com') ?></span>
                   </a>
-                  <a href="services.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
+                  <a href="veraset-ilami.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
                     <span class="leading-snug"><?= __t('nav.item_law_inherit') ?></span>
                   </a>
-                  <a href="services.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
+                  <a href="nufus-kaydi-duzeltme.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
                     <span class="leading-snug"><?= __t('nav.item_law_pop') ?></span>
                   </a>
-                  <a href="services.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
+                  <a href="tanima-tenfiz.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
                     <span class="leading-snug"><?= __t('nav.item_law_enf') ?></span>
                   </a>
                 </div>
@@ -552,13 +555,13 @@ $pageSeo = seo_page_meta($seoKey, $lang);
               <div class="flex min-w-[200px] flex-col p-6 flex-1">
                 <span class="mb-4 text-[11px] font-bold uppercase tracking-[0.15em] text-[#8a1c1c]"><?= __t('nav.mega_h_more') ?></span>
                 <div class="flex flex-col gap-1">
-                  <a href="services.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
+                  <a href="banka-islemleri.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
                     <span class="leading-snug"><?= __t('nav.item_more_bank') ?></span>
                   </a>
-                  <a href="services.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
+                  <a href="yesil-pasaport.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
                     <span class="leading-snug"><?= __t('nav.item_more_green') ?></span>
                   </a>
-                  <a href="services.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
+                  <a href="ehliyet-tebdil.php?lang=<?= $lang ?>" class="group flex rounded-lg px-3 py-3 text-[0.9375rem] text-[#0a192f]/80 transition-all duration-150 hover:bg-blue-50 hover:text-[#0a192f] hover:translate-x-0.5 items-center justify-between">
                     <span class="leading-snug"><?= __t('nav.item_more_license') ?></span>
                   </a>
                 </div>
