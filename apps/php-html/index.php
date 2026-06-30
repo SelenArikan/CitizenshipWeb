@@ -54,7 +54,8 @@ echo schema_render_scripts(schema_home_page($lang, __t('faq.list')));
           <img
             src="<?= htmlspecialchars($slide['image']) ?>"
             alt="<?= htmlspecialchars($slide['label']) ?>"
-            class="w-full h-full object-cover object-center"
+            class="w-full h-full object-cover"
+            style="object-position: <?= (strpos($slide['image'], 'Barman_banner') !== false) ? '15% center' : 'center' ?>;"
           />
         </a>
         <?php endforeach; ?>
@@ -67,7 +68,7 @@ echo schema_render_scripts(schema_home_page($lang, __t('faq.list')));
           <span
             id="heroLabel"
             class="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold text-white"
-            style="background-color: #9b1c1c; transition: opacity 0.4s, transform 0.4s;"
+            style="background-color: #9b1c1c; transition: opacity 0.4s, transform 0.4s; <?= (strpos($heroSlides[0]['image'], 'Barman_banner') !== false) ? 'display: none;' : '' ?>"
           >
             <span class="inline-block w-2 h-2 rounded-full bg-white/80"></span>
             <span id="heroLabelText"><?= htmlspecialchars($heroSlides[0]['label']) ?></span>
@@ -456,9 +457,15 @@ echo schema_render_scripts(schema_home_page($lang, __t('faq.list')));
           slideEls[current].setAttribute('tabindex', '0');
           
           setTimeout(function() {
-            labelTextEl.textContent = slides[current].label;
-            labelEl.style.opacity = '1';
-            labelEl.style.transform = 'translateY(0)';
+            var isBarman = slides[current].image.indexOf('Barman_banner') !== -1;
+            if (isBarman) {
+              labelEl.style.display = 'none';
+            } else {
+              labelEl.style.display = 'inline-flex';
+              labelTextEl.textContent = slides[current].label;
+              labelEl.style.opacity = '1';
+              labelEl.style.transform = 'translateY(0)';
+            }
             updateDots(current);
             animating = false;
           }, 400);

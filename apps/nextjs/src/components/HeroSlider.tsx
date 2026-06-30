@@ -91,7 +91,10 @@ export default function HeroSlider({
               fill
               // Masaüstü için 1920px, tablet 1280px, mobil 768px — gereksiz veri indirimi önler
               sizes="100vw"
-              className="object-cover object-center"
+              className="object-cover"
+              style={{
+                objectPosition: s.image.includes("Barman_banner") ? "15% center" : "center"
+              }}
               priority={idx === 0}   // Yalnızca ilk slayt → LCP görseli
               unoptimized
             />
@@ -103,23 +106,25 @@ export default function HeroSlider({
       <div className="absolute inset-x-0 bottom-0 z-10 h-36 bg-gradient-to-t from-black/40 to-transparent pointer-events-none" />
 
       {/* Label badge — sol üst (RTL için sağ) */}
-      <div
-        className="absolute top-6 z-30 px-4"
-        style={dir === "rtl" ? { right: "1.5rem" } : { left: "1.5rem" }}
-      >
-        <span
-          className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold text-white"
-          style={{
-            backgroundColor: "#9b1c1c",
-            opacity: animating ? 0 : 1,
-            transform: animating ? "translateY(6px)" : "translateY(0)",
-            transition: "opacity 0.4s, transform 0.4s",
-          }}
+      {slide && !slide.image.includes("Barman_banner") && (
+        <div
+          className="absolute top-6 z-30 px-4"
+          style={dir === "rtl" ? { right: "1.5rem" } : { left: "1.5rem" }}
         >
-          <span className="inline-block h-2 w-2 rounded-full bg-white/80" />
-          {slide?.label}
-        </span>
-      </div>
+          <span
+            className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold text-white"
+            style={{
+              backgroundColor: "#9b1c1c",
+              opacity: animating ? 0 : 1,
+              transform: animating ? "translateY(6px)" : "translateY(0)",
+              transition: "opacity 0.4s, transform 0.4s",
+            }}
+          >
+            <span className="inline-block h-2 w-2 rounded-full bg-white/80" />
+            {slide?.label}
+          </span>
+        </div>
+      )}
 
       {/* Sol ok */}
       <button
