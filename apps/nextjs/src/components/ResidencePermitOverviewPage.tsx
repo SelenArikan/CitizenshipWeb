@@ -60,7 +60,7 @@ export default function ResidencePermitOverviewPage({
             <p className="mt-6 text-lg leading-8 text-gray-200">
               {copy.overview.summary}
             </p>
-            <div className="mt-6 rounded-3xl border border-white/10 bg-white/5 p-5 text-sm leading-7 text-gray-200">
+            <div className="mt-6 rounded-3xl border border-white/10 bg-white/5 p-5 text-sm leading-7 text-gray-200 text-justify">
               {copy.overview.notice}
             </div>
             <div className="mt-8 flex flex-wrap gap-4">
@@ -114,7 +114,7 @@ export default function ResidencePermitOverviewPage({
               className="rounded-[28px] border border-gray-200 bg-[#E8ECF3] p-8 shadow-sm"
             >
               <h3 className="text-2xl font-bold text-[#0a192f]">{group.title}</h3>
-              <p className="mt-4 leading-8 text-gray-700">{group.description}</p>
+              <p className="mt-4 leading-8 text-gray-700 text-justify">{group.description}</p>
             </article>
           ))}
         </div>
@@ -164,7 +164,7 @@ export default function ResidencePermitOverviewPage({
               <h3 className="mt-3 text-2xl font-bold text-[#0a192f]">
                 {entry.title}
               </h3>
-              <p className="mt-4 leading-8 text-gray-700">
+              <p className="mt-4 leading-8 text-gray-700 text-justify">
                 {entry.cardDescription}
               </p>
               <Link
@@ -192,7 +192,7 @@ export default function ResidencePermitOverviewPage({
               {copy.overview.notes.map((note) => (
                 <div
                   key={note}
-                  className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-sm leading-7 text-gray-200"
+                  className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-sm leading-7 text-gray-200 text-justify"
                 >
                   {note}
                 </div>
@@ -202,7 +202,7 @@ export default function ResidencePermitOverviewPage({
 
           <div className="rounded-[32px] border border-white/10 bg-white/5 p-8">
             <h3 className="text-2xl font-bold">{copy.overview.ctaTitle}</h3>
-            <p className="mt-4 leading-8 text-gray-300">
+            <p className="mt-4 leading-8 text-gray-300 text-justify">
               {copy.overview.ctaDescription}
             </p>
             <div className="mt-8 flex flex-wrap gap-4">

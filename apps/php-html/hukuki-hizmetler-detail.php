@@ -270,7 +270,7 @@ function render_table_section($section, $lang) {
         $html .= '<h2 class="mb-4 text-xl font-bold leading-snug tracking-tight text-gray-900 sm:text-2xl">' . htmlspecialchars($section['title']) . '</h2>';
     }
     if (!empty($section['description'])) {
-        $html .= '<p class="mb-6 text-[15px] leading-7 text-gray-600">' . parse_inline_links($section['description'], $lang) . '</p>';
+        $html .= '<p class="mb-6 text-[15px] leading-7 text-gray-600 text-justify">' . parse_inline_links($section['description'], $lang) . '</p>';
     }
     
     $html .= '<div class="mt-4 overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm">';

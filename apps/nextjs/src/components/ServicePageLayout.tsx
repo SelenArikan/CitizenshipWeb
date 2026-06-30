@@ -187,7 +187,7 @@ function SectionTitle({
 function SectionDesc({ text, lang = "tr" }: { text?: string; lang?: string }) {
   if (!text) return null;
   return (
-    <p className="mb-6 text-[15px] leading-7 text-gray-600">{parseInline(text, lang)}</p>
+    <p className="mb-6 text-[15px] leading-7 text-gray-600 text-justify">{parseInline(text, lang)}</p>
   );
 }
 
@@ -243,7 +243,7 @@ function parseInline(text: string, lang: string): React.ReactNode {
  * - Karma blokları (intro metin + bullet) doğru ayırır
  */
 function ParsedDesc({ text, lang = "tr" }: { text: string; lang?: string }) {
-  const base = "text-[14px] leading-7 text-gray-600";
+  const base = "text-[14px] leading-7 text-gray-600 text-justify";
 
   const blocks = text.split(/\n\n+/);
 
@@ -435,7 +435,7 @@ function IntroBlock({ section, lang = "tr" }: { section: IntroSection; lang?: st
       {grouped.map((block, i) => {
         if (block.type === "paragraph") {
           return (
-            <p key={i} className="mb-4 text-base leading-7 text-gray-700">
+            <p key={i} className="mb-4 text-base leading-7 text-gray-700 text-justify">
               {parseInline(block.text, lang)}
             </p>
           );
@@ -443,7 +443,7 @@ function IntroBlock({ section, lang = "tr" }: { section: IntroSection; lang?: st
 
         if (block.type === "quote") {
           return (
-            <blockquote key={i} className="border-l-4 border-blue-600 bg-blue-50/50 px-4 py-3 text-blue-950 rounded-r-lg my-4 text-base leading-relaxed font-normal not-italic">
+            <blockquote key={i} className="border-l-4 border-blue-600 bg-blue-50/50 px-4 py-3 text-blue-950 rounded-r-lg my-4 text-base leading-relaxed font-normal not-italic text-justify">
               {parseInline(block.text, lang)}
             </blockquote>
           );
@@ -514,11 +514,11 @@ function NumberedBlock({ section, lang }: { section: NumberedSection; lang: stri
               {/* Kapanış cümlesi */}
               {item.richDescFooter && (
                 item.richDescFooter.trim().startsWith(">") ? (
-                  <blockquote className="mt-3 border-l-4 border-blue-600 bg-blue-50/50 px-4 py-3 text-blue-950 rounded-r-lg text-[14px] leading-relaxed font-normal not-italic">
+                  <blockquote className="mt-3 border-l-4 border-blue-600 bg-blue-50/50 px-4 py-3 text-blue-950 rounded-r-lg text-[14px] leading-relaxed font-normal not-italic text-justify">
                     {parseInline(item.richDescFooter.trim().replace(/^>\s*/, ""), lang)}
                   </blockquote>
                 ) : (
-                  <p className="mt-3 text-[14px] leading-7 text-gray-500 italic">
+                  <p className="mt-3 text-[14px] leading-7 text-gray-500 italic text-justify">
                     {parseInline(item.richDescFooter, lang)}
                   </p>
                 )
@@ -548,7 +548,7 @@ function NumberedBlock({ section, lang }: { section: NumberedSection; lang: stri
           <p className="text-xs font-bold uppercase tracking-widest text-red-700">
             {section.notice.title}
           </p>
-          <p className="mt-1 text-[14px] leading-7 text-gray-600">
+          <p className="mt-1 text-[14px] leading-7 text-gray-600 text-justify">
             {parseInline(section.notice.text, lang)}
           </p>
         </div>
@@ -672,7 +672,7 @@ function FaqBlock({ section, lang = "tr" }: { section: FaqSection; lang?: string
               </span>
             </summary>
             {open === i && (
-              <p className="pb-4 text-sm leading-relaxed text-gray-500">
+              <p className="pb-4 text-sm leading-relaxed text-gray-500 text-justify">
                 {parseInline(faq.a, lang)}
               </p>
             )}
@@ -690,7 +690,7 @@ function InfoBoxBlock({ section, lang = "tr" }: { section: InfoBoxSection; lang?
       <SectionEyebrow text={section.eyebrow} />
       <div className="rounded-lg border border-gray-200 bg-gray-50 p-5">
         <p className="mb-1 text-sm font-semibold text-gray-800">{parseInline(section.title, lang)}</p>
-        <p className="text-sm leading-relaxed text-gray-600">{parseInline(section.desc, lang)}</p>
+        <p className="text-sm leading-relaxed text-gray-600 text-justify">{parseInline(section.desc, lang)}</p>
       </div>
     </div>
   );
@@ -707,7 +707,7 @@ function LegalBlock({ section, lang = "tr" }: { section: LegalSection; lang?: st
         {section.items.map((item, i) => (
           <li key={i} className="rounded-lg border border-gray-100 bg-gray-50 p-5">
             <p className="text-[15px] font-semibold text-gray-900">{parseInline(item.title, lang)}</p>
-            <p className="mt-2 text-[14px] leading-7 text-gray-600">
+            <p className="mt-2 text-[14px] leading-7 text-gray-600 text-justify">
               {parseInline(item.text, lang)}
             </p>
           </li>

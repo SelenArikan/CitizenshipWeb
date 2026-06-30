@@ -7,7 +7,7 @@
       "Türk Vatandaşlığı"
     ],
     "highlightLineIndex": 1,
-    "summary": "500.000 USD Karşılığı Mevduatın 3 Yıl Süreyle Bankada Tutulması Yoluyla Türk Vatandaşlığı Başvurusu",
+    "summary": "",
     "primaryCta": "Ücretsiz Danışın",
     "secondaryCta": "Sık Sorulan Sorular",
     "imageAlt": "Banka Mevduatı ile Türk Vatandaşlığı"
@@ -132,53 +132,8 @@
   },
   "bes": null,
   "postApproval": null,
-  "whoCanApply": {
-    "eyebrow": "Başvuru Koşulları",
-    "title": "Kimler Vatandaşlık Alabilir?",
-    "conditionsTitle": "Başvuru Koşulları",
-    "conditions": [
-      "Reşit (18 yaşını doldurmuş) olmak",
-      "Ayırt etme gücüne sahip olmak",
-      "Kamu güvenliği açısından sakıncası bulunmamak"
-    ],
-    "familyTitle": "Yatırımcıyla Birlikte Kimler Vatandaşlık Alabilir?",
-    "family": [
-      "Eşi",
-      "18 yaş altı çocukları (Mısır uyruklu kişiler için 21 yaş, Cezayir uyruklu kişiler için 19 yaş)",
-      "18 yaş üstü çocuklar için ayrı başvuru ve ayrı şartlar gerekir"
-    ],
-    "cannotTitle": "Kimler Bu Yoldan Vatandaşlık Alamaz?",
-    "cannot": [
-      "18 yaş altı, tek başına başvuran kişiler",
-      "Açık adli kayıtları nedeniyle kamu güvenliği açısından sakıncalı görülen kişiler",
-      "Yatırım yapmış olsa da bu şartı mevzuatın gösterdiği rutin şartlara göre yerine getirmeyenler",
-      "3 yıl elde tutma şartını ihlal edenler (vatandaşlık almış olsalar dahi vatandaşlıkları düşer)"
-    ],
-    "specialTitle": "İstisnai Durumlar",
-    "special": [
-      "Birden fazla evliliği olan kişilerde yalnızca ilk eş vatandaşlığa hak kazanır (evlilik belgesindeki tarihlere göre karar verilir)",
-      "Birden fazla eşi olan kişilerin ikinci, üçüncü veya dördüncü eşlerinden olan çocukları yatırımcıyla birlikte vatandaşlık alabilir",
-      "Evlilik dışı dünyaya gelen çocuklar da yatırımcıyla birlikte Türk vatandaşlığına hak kazanır",
-      "Bu istisnai durumlarda ek evraklar talep edilir"
-    ]
-  },
-  "serviceScope": {
-    "eyebrow": "Hizmet Kapsamımız",
-    "title": "Uçtan Uca Yönetim",
-    "items": [
-      "Yatırım yönteminin seçimi ve süreç planlaması",
-      "Yatırımın vatandaşlığa uygun şekilde yapılandırılması",
-      "Banka Mevduat Hesabı yatırımlarında sözleşmelerin incelenmesi, imzalanması ve para transferi koordinasyonu",
-      "3 yıllık blokaj-taahhüt metinlerinin ve banka yazışmalarının mevzuata uygun şekilde hazırlanması",
-      "BDDK uygunluk belgesi sürecinin yönetimi",
-      "BES yatırımlarında sözleşmelerin vatandaşlığa uygun kurgulanması",
-      "Döviz satış sürecinin (banka ve TCMB işlemleri) doğru belgelenmesi",
-      "SEDDK uygunluk yazısı başvurusunun eksiksiz dosyalanması",
-      "İkamet izni başvurusu hazırlığı ve takipi (J bendi)",
-      "Vatandaşlık dosyasının hazırlanması ve nüfus başvurusunun organize edilmesi",
-      "Kimlik ve pasaport başvurusu dâhil olmak üzere sürecin uçtan uca yönetilmesi"
-    ]
-  },
+  "whoCanApply": null,
+  "serviceScope": null,
   "faq": {
     "eyebrow": "Sık Sorulan Sorular",
     "title": "Merak Edilenler",

@@ -135,53 +135,8 @@
   },
   "bes": null,
   "postApproval": null,
-  "whoCanApply": {
-    "eyebrow": "Application Conditions",
-    "title": "Who Can Acquire Citizenship?",
-    "conditionsTitle": "Application Conditions",
-    "conditions": [
-      "To be of legal age (18 years old)",
-      "To have capacity to act",
-      "To have no objection from a public security standpoint"
-    ],
-    "familyTitle": "Who Can Acquire Citizenship Together with the Investor?",
-    "family": [
-      "Spouse",
-      "Children under 18 (21 for Egyptian nationals, 19 for Algerian nationals)",
-      "Separate application and conditions are required for children over 18"
-    ],
-    "cannotTitle": "Who Cannot Acquire Citizenship This Way?",
-    "cannot": [
-      "Persons under 18 applying alone",
-      "Persons deemed objectionable from a public security standpoint due to open criminal records",
-      "Those who have not made the investment as stipulated by the legislation",
-      "Those who violate the 3-year holding requirement (citizenship is subsequently revoked)"
-    ],
-    "specialTitle": "Exceptional Cases",
-    "special": [
-      "In cases of multiple marriages, only the first spouse is entitled to citizenship (decided based on marriage certificate dates)",
-      "Children from the second, third, or fourth spouses can acquire citizenship together with the investor",
-      "Children born out of wedlock can also acquire Turkish citizenship together with the investor",
-      "Additional documents are requested in these exceptional cases"
-    ]
-  },
-  "serviceScope": {
-    "eyebrow": "Our Service Scope",
-    "title": "End-to-End Management",
-    "items": [
-      "Selection of investment method and process planning",
-      "Structuring the investment in accordance with citizenship",
-      "Examination, signing and payment coordination of contracts in Bank Deposit Account investments",
-      "Preparation of 3-year block-commitment texts and bank correspondence in compliance with legislation",
-      "Management of the BDDK conformity certificate process",
-      "Structuring of contracts for BES investments in accordance with citizenship",
-      "Correct documentation of the foreign currency sale process (bank and TCMB transactions)",
-      "Complete filing of the SEDDK conformity letter application",
-      "Preparation and follow-up of residence permit application (J-clause)",
-      "Preparation of citizenship file and organization of civil registry application",
-      "End-to-end management of the process including identity and passport application"
-    ]
-  },
+  "whoCanApply": null,
+  "serviceScope": null,
   "faq": {
     "eyebrow": "Frequently Asked Questions",
     "title": "Common Questions",

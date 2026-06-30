@@ -35,7 +35,7 @@ export default function CitizenshipBenefits({ lang = "tr" }: { lang?: string }) 
                 </svg>
               </div>
               <h2 className="mb-4 text-2xl font-bold text-navy">{benefit.title}</h2>
-              <p className="leading-relaxed text-gray-600">{benefit.desc}</p>
+              <p className="leading-relaxed text-gray-600 text-justify">{benefit.desc}</p>
             </div>
           ))}
         </div>

@@ -285,7 +285,7 @@ function isDocumentAllCapsHeading(line: string) {
 
 function isDocumentHeading(line: string, index: number) {
   if (index === 0) return true;
-  if (/^\d+(?:\.\d+)*[.)]?\s+/.test(line)) return true;
+  if (/^(?:\d+(?:\.\d+)+[.)]?|\d+[.)])\s+/.test(line)) return true;
   if (/^[IVXLCDM]+\.\s+/.test(line)) return true;
   if (/^(BÖLÜM|AŞAMA|Adım)\s+/i.test(line)) return true;
   if (/\?\s*$/.test(line)) return true;

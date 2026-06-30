@@ -486,7 +486,7 @@ function render_faq_section($section, $lang) {
         $html .= '</svg>';
         $html .= '</span>';
         $html .= '</summary>';
-        $html .= '<p class="mt-3 text-sm leading-relaxed text-gray-500">';
+        $html .= '<p class="mt-3 text-sm leading-relaxed text-gray-500 text-justify">';
         $html .= parse_inline_links($faq['a'], $lang);
         $html .= '</p>';
         $html .= '</details>';
@@ -504,7 +504,7 @@ function render_info_box_section($section, $lang) {
     }
     $html .= '<div class="rounded-lg border border-gray-200 bg-gray-50 p-5">';
     $html .= '<p class="mb-1 text-sm font-semibold text-gray-800">' . parse_inline_links($section['title'], $lang) . '</p>';
-    $html .= '<p class="text-sm leading-relaxed text-gray-600">' . parse_inline_links($section['desc'], $lang) . '</p>';
+    $html .= '<p class="text-sm leading-relaxed text-gray-600 text-justify">' . parse_inline_links($section['desc'], $lang) . '</p>';
     $html .= '</div>';
     $html .= '</div>';
     return $html;

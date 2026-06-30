@@ -61,7 +61,7 @@ export type MevduatPageCopy = {
     paragraphs: string[];
     bullets: string[];
   } | null;
-  whoCanApply: {
+  whoCanApply?: {
     eyebrow: string;
     title: string;
     conditionsTitle: string;
@@ -72,12 +72,12 @@ export type MevduatPageCopy = {
     cannot: string[];
     specialTitle: string;
     special: string[];
-  };
-  serviceScope: {
+  } | null;
+  serviceScope?: {
     eyebrow: string;
     title: string;
     items: string[];
-  };
+  } | null;
   faq: {
     eyebrow: string;
     title: string;

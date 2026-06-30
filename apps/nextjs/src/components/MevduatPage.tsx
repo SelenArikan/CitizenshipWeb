@@ -152,7 +152,7 @@ export default function MevduatPage({
       : []),
 
     // Hizmet Kapsamı
-    ...(copy.serviceScope?.items?.length > 0
+    ...(copy.serviceScope && copy.serviceScope.items && copy.serviceScope.items.length > 0
       ? [
           {
             type: "plain-bullet" as const,

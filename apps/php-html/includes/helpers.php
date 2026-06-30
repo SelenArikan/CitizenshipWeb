@@ -56,7 +56,7 @@ if (!function_exists('parse_inline_links')) {
 
 if (!function_exists('render_parsed_desc')) {
     function render_parsed_desc(string $text, string $lang): string {
-        $baseClass = "text-[14px] leading-7 text-gray-600";
+        $baseClass = "text-[14px] leading-7 text-gray-600 text-justify";
         $blocks = preg_split('/\n\n+/', $text);
         $html = '<div class="mt-2 space-y-3">';
         
@@ -220,7 +220,7 @@ if (!function_exists('render_intro_section')) {
                     $clean = preg_replace('/^[\s\t•\-*✓✔◦‣▪]+\s*/', '', $trimmed);
                     $html .= '<ul class="list-none mb-4 space-y-1.5 pl-1"><li class="flex gap-3 text-base leading-relaxed text-gray-700"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-red-700"></span><span>' . parse_inline_links($clean, $lang) . '</span></li></ul>';
                 } else {
-                    $html .= '<p class="mb-4 text-base leading-7 text-gray-700">' . parse_inline_links($p, $lang) . '</p>';
+                    $html .= '<p class="mb-4 text-base leading-7 text-gray-700 text-justify">' . parse_inline_links($p, $lang) . '</p>';
                 }
             }
         }
@@ -240,7 +240,7 @@ if (!function_exists('render_numbered_section')) {
             $html .= '<h2 class="mb-4 text-xl font-bold leading-snug tracking-tight text-gray-900 sm:text-2xl">' . htmlspecialchars($section['title']) . '</h2>';
         }
         if (!empty($section['description'])) {
-            $html .= '<p class="mb-6 text-[15px] leading-7 text-gray-600">' . parse_inline_links($section['description'], $lang) . '</p>';
+            $html .= '<p class="mb-6 text-[15px] leading-7 text-gray-600 text-justify">' . parse_inline_links($section['description'], $lang) . '</p>';
         }
         
         $html .= '<ol class="space-y-4">';
@@ -274,7 +274,7 @@ if (!function_exists('render_bullet_section')) {
             $html .= '<h2 class="mb-4 text-xl font-bold leading-snug tracking-tight text-gray-900 sm:text-2xl">' . htmlspecialchars($section['title']) . '</h2>';
         }
         if (!empty($section['description'])) {
-            $html .= '<p class="mb-6 text-[15px] leading-7 text-gray-600">' . parse_inline_links($section['description'], $lang) . '</p>';
+            $html .= '<p class="mb-6 text-[15px] leading-7 text-gray-600 text-justify">' . parse_inline_links($section['description'], $lang) . '</p>';
         }
         
         $html .= '<ul class="list-none space-y-4">';
@@ -311,7 +311,7 @@ if (!function_exists('render_plain_bullet_section')) {
             $html .= '<' . $headingTag . ' class="' . $titleClass . '">' . htmlspecialchars($section['title']) . '</' . $headingTag . '>';
         }
         if (!empty($section['description'])) {
-            $html .= '<p class="mb-6 text-[15px] leading-7 text-gray-600">' . parse_inline_links($section['description'], $lang) . '</p>';
+            $html .= '<p class="mb-6 text-[15px] leading-7 text-gray-600 text-justify">' . parse_inline_links($section['description'], $lang) . '</p>';
         }
         
         $html .= '<ul class="list-none divide-y divide-gray-100 border-y border-gray-100">';
@@ -343,7 +343,7 @@ if (!function_exists('render_legal_section')) {
             foreach ($section['items'] as $item) {
                 $html .= '<li class="rounded-lg border border-gray-100 bg-gray-50 p-5">';
                 $html .= '<p class="text-[15px] font-semibold text-gray-900">' . htmlspecialchars($item['title']) . '</p>';
-                $html .= '<p class="mt-2 text-[14px] leading-7 text-gray-600">' . parse_inline_links($item['text'], $lang) . '</p>';
+                $html .= '<p class="mt-2 text-[14px] leading-7 text-gray-600 text-justify">' . parse_inline_links($item['text'], $lang) . '</p>';
                 $html .= '</li>';
             }
             $html .= '</ul>';

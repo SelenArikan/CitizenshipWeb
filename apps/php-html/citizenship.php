@@ -30,7 +30,7 @@ echo schema_render_scripts(schema_citizenship_page($lang, $steps));
                        <div class="bg-[#f4f6f8] p-8 rounded-2xl shadow-sm hover:shadow-xl transition transform hover:-translate-y-2 duration-300">
                          <span class="text-[#8a1c1c] font-bold text-lg mb-2 block">Aşama <?php echo $step['num']; ?></span>
                          <h3 class="text-2xl font-bold text-[#0a192f] mb-3"><?php echo htmlspecialchars($step['title']); ?></h3>
-                         <p class="text-gray-600 mb-4"><?php echo htmlspecialchars($step['desc']); ?></p>
+                         <p class="text-gray-600 mb-4 text-justify"><?php echo htmlspecialchars($step['desc']); ?></p>
                          <div class="flex flex-wrap gap-2 <?php echo ($idx % 2 === 0) ? 'justify-start' : 'justify-start md:justify-end'; ?>">
                            <?php foreach ($step['pills'] as $pill): ?>
                              <span class="bg-white px-3 py-1 text-xs font-bold text-[#0a192f] border border-gray-200 rounded-full"><?php echo htmlspecialchars($pill); ?></span>
