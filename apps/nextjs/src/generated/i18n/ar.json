@@ -73,8 +73,13 @@
     "btn_secondary": "اكتشف العملية",
     "slides": [
       {
-        "label": "الجنسية التركية عبر الاستثمار العقاري",
+        "label": "مكتب المحامي نجم الدين بارمان وشركاؤه",
         "image": "/hero/Barman_banner.png",
+        "href": "/ar/contact"
+      },
+      {
+        "label": "الجنسية التركية عبر الاستثمار العقاري",
+        "image": "/hero/gayrimenkul-vatandaslik.webp",
         "href": "/ar/services/gayrimenkul-yatirimi"
       },
       {

@@ -73,8 +73,13 @@
     "btn_secondary": "Discover the Process",
     "slides": [
       {
-        "label": "Turkish Citizenship via Real Estate Investment",
+        "label": "Necmettin Barman & Associates Attorneys at Law",
         "image": "/hero/Barman_banner.png",
+        "href": "/en/contact"
+      },
+      {
+        "label": "Turkish Citizenship via Real Estate Investment",
+        "image": "/hero/gayrimenkul-vatandaslik.webp",
         "href": "/en/services/gayrimenkul-yatirimi"
       },
       {

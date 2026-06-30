@@ -73,8 +73,13 @@
     "btn_secondary": "کشف روند",
     "slides": [
       {
-        "label": "شهروندی ترکیه از طریق سرمایه‌گذاری ملکی",
+        "label": "دفتر حقوقی نجم الدین بارمان و شرکاء",
         "image": "/hero/Barman_banner.png",
+        "href": "/fa/contact"
+      },
+      {
+        "label": "شهروندی ترکیه از طریق سرمایه‌گذاری ملکی",
+        "image": "/hero/gayrimenkul-vatandaslik.webp",
         "href": "/fa/services/gayrimenkul-yatirimi"
       },
       {

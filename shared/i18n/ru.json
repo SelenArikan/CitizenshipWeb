@@ -73,8 +73,13 @@
     "btn_secondary": "Начать процесс",
     "slides": [
       {
-        "label": "Гражданство Турции через инвестиции в недвижимость",
+        "label": "Юридическая фирма Necmettin Barman & Associates",
         "image": "/hero/Barman_banner.png",
+        "href": "/ru/contact"
+      },
+      {
+        "label": "Гражданство Турции через инвестиции в недвижимость",
+        "image": "/hero/gayrimenkul-vatandaslik.webp",
         "href": "/ru/services/gayrimenkul-yatirimi"
       },
       {

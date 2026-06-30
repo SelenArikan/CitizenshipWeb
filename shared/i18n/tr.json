@@ -73,8 +73,15 @@
     "btn_secondary": "SSS Sayfasına Git",
     "slides": [
       {
-        "label": "Gayrimenkul Yatırımı Yoluyla Türk Vatandaşlığı",
+        "label": "Necmettin Barman Hukuk Bürosu",
         "image": "/hero/Barman_banner.png",
+        "title1": "Necmettin Barman",
+        "title2": "Hukuk Bürosu",
+        "href": "/tr/contact"
+      },
+      {
+        "label": "Gayrimenkul Yatırımı Yoluyla Türk Vatandaşlığı",
+        "image": "/hero/gayrimenkul-vatandaslik.webp",
         "title1": "Gayrimenkul Yatırımı",
         "title2": "Yoluyla Vatandaşlık",
         "href": "/tr/services/gayrimenkul-yatirimi"
